@@ -4,13 +4,14 @@ import os
 
 from mongo_db import save_to_mongo
 
+from langchain.agents import AgentExecutor, initialize_agent, AgentType
 from langchain.memory import ConversationBufferMemory
 from langchain.callbacks import StreamlitCallbackHandler
 from langchain.memory.chat_message_histories import StreamlitChatMessageHistory
 from dotenv import load_dotenv, find_dotenv
 
 import streamlit as st
-from haa_agent import agent_executor, agent_chain, agent_executor_cb
+from haa_agent import agent_executor_lcel, agent_chain, tools, open_ai_agent
 
 _ = load_dotenv(find_dotenv())  # read local .env file
 openai.api_key = os.environ['OPENAI_API_KEY']
@@ -32,7 +33,6 @@ st.write("# 🚇 Humetro AI Assistant")
 st.write("### 🤖 인공지능 어시스턴트에게 질문해보세요!")
 st.write('**이전 대화목록 확인하기(아래 클릭)**')
 st.json(st.session_state, expanded=False)
-st.write(chat_history.messages)
 
 output_container = st.empty()
 answer_container = st.empty()
@@ -53,11 +53,16 @@ if user_input := st.chat_input('이곳에 질문을 입력하세요.'):
     answer_container = output_container.chat_message("assistant")
     st_callback = StreamlitCallbackHandler(answer_container)
 
-    answer = agent_executor.invoke({"input":user_input})
-    answer_container.write(answer['output'])
-
-
-    # 메시지를 메시지를 보관하는 세션에 저장한다.
-    chat_history.add_user_message(user_input)
-    chat_history.add_ai_message(answer['output'])
-    save_to_mongo(user_input, answer)
+    stream = True
+    if stream: # 스트리밍 지원하는 코드
+        answer=open_ai_agent.run({"input":user_input}, callbacks=[st_callback])
+        answer_container.write(answer)
+        # 메시지를 메시지를 보관하는 세션에 저장한다.
+        chat_history.add_user_message(user_input)
+        chat_history.add_ai_message(answer)
+        save_to_mongo(user_input, answer)
+    else:
+        answer = agent_executor_lcel.invoke({"input":user_input})
+        answer_container.write(answer['input'])
+        chat_history.add_user_message(user_input)
+        chat_history.add_ai_message(answer['input'])
