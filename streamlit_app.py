@@ -10,7 +10,7 @@ from langchain.memory.chat_message_histories import StreamlitChatMessageHistory
 from dotenv import load_dotenv, find_dotenv
 
 import streamlit as st
-from streamlit_agent import haa_executor
+from haa_agent import agent_executor, agent_chain, agent_executor_cb
 
 _ = load_dotenv(find_dotenv())  # read local .env file
 openai.api_key = os.environ['OPENAI_API_KEY']
@@ -46,17 +46,18 @@ if len(st.session_state.langchain_messages) == 1:
 for msg in st.session_state.langchain_messages[:-2]:
     output_container.chat_message(msg.type).write(msg.content)
 
+
 if user_input := st.chat_input('이곳에 질문을 입력하세요.'):
     output_container.chat_message("user").write(user_input)
 
     answer_container = output_container.chat_message("assistant")
     st_callback = StreamlitCallbackHandler(answer_container)
 
-    haa_executor.memory = memory
-    answer = haa_executor.run({"input":user_input}, callbacks=[st_callback])
-    answer_container.write(answer)
+    answer = agent_executor.invoke({"input":user_input})
+    answer_container.write(answer['output'])
+
 
     # 메시지를 메시지를 보관하는 세션에 저장한다.
     chat_history.add_user_message(user_input)
-    chat_history.add_ai_message(answer)
+    chat_history.add_ai_message(answer['output'])
     save_to_mongo(user_input, answer)
