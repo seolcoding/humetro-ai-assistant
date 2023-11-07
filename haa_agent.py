@@ -82,17 +82,14 @@ system_prompt = f"""너는 부산교통공사 1호선 하단역에서 근무하�
     절대로 임의로 대답을 생성하지 말고 주어진 도구를 사용해서 대답해야 해.\
     주어진 도구는 다음과 같아 {tools_string}
     만약 적절한 대답을 찾을 수 없으면. "죄송합니다. 해당 질문에 대한 답변을 찾지 못했습니다." 라고 응답해.\
-    그리고 모든 출력과 생각은 항상 한국어로 해야 해.
     """
+
 prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
     ("user", "{input}"),
     MessagesPlaceholder(variable_name="agent_scratchpad")
 ])
 
-questions = ["어린이와 청소년요금을 알려주세요",
-             "정기 승차권을 구입하려합니다.",
-             "하단역의 첫차와 막차 시간을 알려주세요",]
 
 chain = prompt | model | OpenAIFunctionsAgentOutputParser()
 agent_chain = RunnablePassthrough.assign(
@@ -120,10 +117,12 @@ function_agent = initialize_agent(tools,
 # Override the default prompt for the agent
 function_agent.agent.prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
+    MessagesPlaceholder(variable_name="output_language"),
     MessagesPlaceholder(variable_name="chat_history"),
     ("user", "{input}"),
     MessagesPlaceholder(variable_name="agent_scratchpad")
 ])
+pass
 
 multi_function_agent = initialize_agent(tools,
                         ChatOpenAI(model='gpt-3.5-turbo-16k', temperature=0, streaming=True),
