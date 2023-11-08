@@ -9,9 +9,9 @@ from langchain.agents import AgentExecutor
 from langchain.agents.format_scratchpad import format_to_openai_functions
 from langchain.agents.output_parsers import OpenAIFunctionsAgentOutputParser
 
-from llm_tools.HumetroWebSearchTool import HumetroWebSearchTool
-from llm_tools.HumetroFareTool import HumetroFareTool
-from llm_tools.GoogleRoutes import GoogleRouteTool
+from llm_tools.HumetroWebSearch import HumetroWebSearchTool
+from llm_tools.HumetroFare import HumetroFareTool
+from llm_tools.GoogleRoutes_legacy import GoogleRouteTool
 from llm_tools.prompts import humetro_system_prompt
 
 import os

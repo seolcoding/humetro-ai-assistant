@@ -22,12 +22,13 @@ st.set_page_config(page_title="Humetro-AI-Assistant",
 
 if 'langchain_messages' not in st.session_state:
     st.session_state.langchain_messages = []
-    
+
 if 'output_language' not in st.session_state:
     st.session_state.output_language = 'KOREAN'
 
 chat_history = StreamlitChatMessageHistory(key="langchain_messages")
-memory = ConversationBufferMemory(memory_key='chat_history', k=3, return_messages=True, chat_memory=chat_history)
+memory = ConversationBufferMemory(
+    memory_key='chat_history', k=3, return_messages=True, chat_memory=chat_history)
 
 welcome_messages = {
     'KOREAN': '하단역의 인공지능 어시스턴트입니다. 궁금한 것이 있으시면 물어보세요!',
@@ -37,7 +38,8 @@ welcome_messages = {
 }
 
 if len(chat_history.messages) == 0:
-    chat_history.add_ai_message(welcome_messages[st.session_state.output_language])
+    chat_history.add_ai_message(
+        welcome_messages[st.session_state.output_language])
 else:
     chat_history.messages[0].content = welcome_messages[st.session_state.output_language]
 
@@ -73,29 +75,29 @@ for msg in st.session_state.langchain_messages:
 
 if user_input := st.chat_input('이곳에 질문을 입력하세요.'):
 
-# 중복을 배제하기 위해 마지막 두개의 메시지를 제외한 메시지를 출력한다.
+    # 중복을 배제하기 위해 마지막 두개의 메시지를 제외한 메시지를 출력한다.
 
     output_container.chat_message("user").write(user_input)
     answer_container = output_container.chat_message("assistant")
     st_callback = StreamlitCallbackHandler(answer_container)
-    
+
     output_language = st.session_state.output_language
     stream = True
-    
+
     import langchain
     langchain.debug = True
-    if stream: # 스트리밍 지원하는 코드
-        answer=function_agent.run({"input":user_input,
-                                   "chat_history": chat_history.messages,
-                                   "output_language":[SystemMessage(content=f"!!!IMPORTANT : You MUST ANSWER IN {output_language}")]},
-                                  callbacks=[st_callback])
+    if stream:  # 스트리밍 지원하는 코드
+        answer = function_agent.run({"input": user_input,
+                                     "chat_history": chat_history.messages,
+                                    "output_language": [SystemMessage(content=f"!!!IMPORTANT : You MUST ANSWER IN {output_language}")]},
+                                    callbacks=[st_callback])
         answer_container.write(answer)
         # 메시지를 메시지를 보관하는 세션에 저장한다.
         chat_history.add_user_message(user_input)
         chat_history.add_ai_message(answer)
         save_to_mongo(user_input, answer)
-    else: #lcel 사용한 코드
-        answer = agent_executor_lcel.invoke({"input":user_input})
+    else:  # lcel 사용한 코드
+        answer = agent_executor_lcel.invoke({"input": user_input})
         answer_container.write(answer['input'])
         chat_history.add_user_message(user_input)
         chat_history.add_ai_message(answer['input'])

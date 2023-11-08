@@ -37,44 +37,49 @@ langchain.debug = True
 # result = get_search.run({"query":"문화행사"})
 # print(result)
 
+
 def route(result):
     if isinstance(result, AgentFinish):
         return result.return_values['output']
     else:
         tools = {
-                "get_wiki": get_wiki,
-                "get_distance": get_distance,
-                "get_schedule": get_schedule,
-                "get_routes": get_routes,
-                "get_fares": get_fares,
-                "get_search": get_search,
+            "get_wiki": get_wiki,
+            "get_distance": get_distance,
+            "get_schedule": get_schedule,
+            "get_routes": get_routes,
+            "get_fares": get_fares,
+            "get_search": get_search,
         }
         return tools[result.tool].run(result.tool_input)
+
 
 def run_agent(user_input):
     intermediate_steps = []
     while True:
         result = chain.invoke({
-            "input": user_input, 
+            "input": user_input,
             "agent_scratchpad": format_to_openai_functions(intermediate_steps)
         })
         if isinstance(result, AgentFinish):
             return result
         tool = {
-                "get_wiki": get_wiki,
-                "get_distance": get_distance,
-                "get_schedule": get_schedule,
-                "get_routes": get_routes,
-                "get_fares": get_fares,
-                "get_search": get_search,
+            "get_wiki": get_wiki,
+            "get_distance": get_distance,
+            "get_schedule": get_schedule,
+            "get_routes": get_routes,
+            "get_fares": get_fares,
+            "get_search": get_search,
         }[result.tool]
         observation = tool.run(result.tool_input)
         intermediate_steps.append((result, observation))
 
-tools = [get_routes, get_fares, get_search, get_schedule, get_distance, get_wiki]
+
+tools = [get_routes, get_fares, get_search,
+         get_schedule, get_distance, get_wiki]
 functions = [format_tool_to_openai_function(t) for t in tools]
 tools_string = "\n".join([t.name + " : " + t.description for t in tools])
-model = ChatOpenAI(model='gpt-3.5-turbo-16k', temperature=0, streaming=True, verbose=True).bind(functions=functions)
+model = ChatOpenAI(model='gpt-3.5-turbo-16k', temperature=0,
+                   streaming=True, verbose=True).bind(functions=functions)
 
 system_prompt = f"""너는 부산교통공사 1호선 하단역에서 근무하고 있는 인공지능 역무 보조 어시스턴트야. \
 넌 '설동헌 대리(seoldonghun@humetro.busan.kr)'가 개발했어.\
@@ -93,26 +98,29 @@ prompt = ChatPromptTemplate.from_messages([
 
 chain = prompt | model | OpenAIFunctionsAgentOutputParser()
 agent_chain = RunnablePassthrough.assign(
-    agent_scratchpad= lambda x: format_to_openai_functions(x["intermediate_steps"])
+    agent_scratchpad=lambda x: format_to_openai_functions(
+        x["intermediate_steps"])
 ) | chain
 
-agent_executor_lcel = AgentExecutor(agent=agent_chain, tools=tools, verbose=True)
+agent_executor_lcel = AgentExecutor(
+    agent=agent_chain, tools=tools, verbose=True)
 
 agent_executor_cb = AgentExecutor.from_agent_and_tools(
-        agent=agent_chain,
-        tools=tools,
-        return_intermediate_steps=True,
-        handle_parsing_errors=True,
+    agent=agent_chain,
+    tools=tools,
+    return_intermediate_steps=True,
+    handle_parsing_errors=True,
 )
 
 
 # from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
 # below agent implementation is from langchain/agents/openai_functions_agent/
 function_agent = initialize_agent(tools,
-                        ChatOpenAI(model='gpt-3.5-turbo-16k', temperature=0, streaming=True),
-                        agent=AgentType.OPENAI_FUNCTIONS,
-                        verbose=True,
-)
+                                  ChatOpenAI(model='gpt-3.5-turbo-16k',
+                                             temperature=0, streaming=True),
+                                  agent=AgentType.OPENAI_FUNCTIONS,
+                                  verbose=True,
+                                  )
 
 # Override the default prompt for the agent
 function_agent.agent.prompt = ChatPromptTemplate.from_messages([
@@ -125,10 +133,11 @@ function_agent.agent.prompt = ChatPromptTemplate.from_messages([
 pass
 
 multi_function_agent = initialize_agent(tools,
-                        ChatOpenAI(model='gpt-3.5-turbo-16k', temperature=0, streaming=True),
-                        agent=AgentType.OPENAI_MULTI_FUNCTIONS,
-                        verbose=True,
-)
+                                        ChatOpenAI(
+                                            model='gpt-3.5-turbo-16k', temperature=0, streaming=True),
+                                        agent=AgentType.OPENAI_MULTI_FUNCTIONS,
+                                        verbose=True,
+                                        )
 multi_function_agent.agent.prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
     MessagesPlaceholder(variable_name="chat_history"),
