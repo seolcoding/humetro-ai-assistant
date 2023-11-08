@@ -24,6 +24,7 @@ class HumetroWebSearchInput(BaseModel):
     query: str = Field(...,
                        description="Query to search on http://www.humetro.busan.kr/. Query must be in KOREAN.")
 
+
 @tool(args_schema=HumetroWebSearchInput)
 def get_search(query: str) -> str:
     """Use this tool get information that might changed from times. searches Humetro official website"""
@@ -52,10 +53,10 @@ def get_search(query: str) -> str:
         vectordb = Chroma.from_documents(
             documents=splits,
             embedding=embedding,
-            persist_directory='./chroma/web', #chroma/web for web search, chroma/wiki for wiki search
+            # chroma/web for web search, chroma/wiki for wiki search
+            persist_directory='./chroma/web',
         )
         return vectordb
-
 
     def run(query):
         prefix = "site:http://www.humetro.busan.kr/homepage/default/ "

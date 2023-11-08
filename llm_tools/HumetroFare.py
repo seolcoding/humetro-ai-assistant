@@ -3,7 +3,7 @@ from langchain.agents import tool
 from typing import List
 
 
-#TODO: add better filters
+# TODO: add better filters
 class HumetroFaresInput(BaseModel):
     ages: List[str] = Field(
         ..., description="list of extracted age of the user. element must be one of 유아, 어린이, 청소년, 성인, 다자녀, 장애인, 국가유공자, 만65세 이상, 전체 if not specified, pass [전체]")
@@ -38,5 +38,5 @@ def get_fares(ages: List[str]) -> str:
 다자녀(주소지가 부산이며 세자녀 이상이고 막내가 만18세 이하.): 교통카드는 1구간 750원, 2구간 850원이며, QR승차권은 1구간 800원, 2구간 900원입니다. 다자녀 할인은 동해남부선에 적용되지 않습니다.
 만 65세 이상의 노인, 장애인 복지카드, 국가유공자는 유효한 신분증이나 카드를 소지한 경우 1구간과 2구간모두 무료입니다.
 """
-        
+
     return result

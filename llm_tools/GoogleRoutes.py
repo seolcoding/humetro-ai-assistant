@@ -15,17 +15,19 @@ base_location = os.environ['BASE_LOCATION']
 
 
 class GoogleRoutesInput(BaseModel):
-    departure: str = Field(..., description="Departure to get directions if not specified you must use 하단역")
+    departure: str = Field(
+        ..., description="Departure to get directions if not specified you must use 하단역")
     destination: str = Field(..., description="Destination to get directions")
+
 
 @tool(args_schema=GoogleRoutesInput)
 def get_routes(departure: str, destination: str) -> str:
     """Use Google Routes API to get directions from departure to destination"""
 
-    def get_departure( address: str) -> str:
+    def get_departure(address: str) -> str:
         return "부산광역시 사하구 낙동남로 지하1415 (하단동)"
 
-    def call_api(departure: str, destination: str) -> Response :
+    def call_api(departure: str, destination: str) -> Response:
         endpoint = 'https://routes.googleapis.com/directions/v2:computeRoutes'
 
         headers = {
@@ -46,7 +48,8 @@ def get_routes(departure: str, destination: str) -> str:
             # "travelMode": "WALK",
             "computeAlternativeRoutes": False,
             "transitPreferences": {
-                "routingPreference": "LESS_WALKING", #FEWER_TRANSFERS, LESS_WALKING
+                "allowedTravelModes": ["SUBWAY"],
+                "routingPreference": "FEWER_TRANSFERS",
             },
             "languageCode": "ko-KR",
             "units": "METRIC"
@@ -93,7 +96,7 @@ def get_routes(departure: str, destination: str) -> str:
         else:
             return station + '역'
 
-    def run(departure: str, destination:str) -> str:
+    def run(departure: str, destination: str) -> str:
         response = call_api(departure, destination)
         result_prefix = "<<HUMETRO_AI_DIRECTIONS>>\n"
         if response.status_code != 200:
@@ -107,7 +110,7 @@ def get_routes(departure: str, destination: str) -> str:
         recommened_route = response.json()['routes'][0]['legs'][0]
 
         return result_prefix + parse_route_to_string(departure, destination, recommened_route)
-    
+
     return run(departure, destination)
 
 

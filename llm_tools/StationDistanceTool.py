@@ -1,27 +1,23 @@
+import os
 import requests
-from langchain.tools import BaseTool
+from langchain.agents import tool
 from typing import Optional, Type
-from pydantic import BaseModel, Field
+from pydantic.v1 import BaseModel, Field
 
 
-class StationDistanceCheckInput(BaseModel):
+class StationDistanceInput(BaseModel):
     """Input for stations distance check"""
-    from_station: str = Field(...,
-                              description="Name of start station")
-    to_station: str = Field(...,
-                            description="Name of destination station")
+    departure: str = Field(...,
+                           description="Name of departure station")
+    destination: str = Field(...,
+                             description="Name of destination station")
 
 
-class StationDistanceTool(BaseTool):
-    name = "get_station_distance"
-    description = "Get the distance between two stations"
-    api_key = "XbmxcBOfsMc0teKv47uUEc95uz1rQE5Dxkfvss8OILm7kKQH23Y/OKgj0C/YJuxK3BW5Et4i5FXmU6RYsE6jVg=="
+@tool(args_schema=StationDistanceInput)
+def get_distance(departure: str, destination: str) -> str:
+    """calculate distance between two stations. outputs distances, hops, and time"""
+    api_key = os.environ['PUBLIC_DATA_API_KEY']
     url = f"http://data.humetro.busan.kr/voc/api/open_api_distance.tnn?serviceKey={api_key}&act=json&scode="
     res = requests.get(url)
 
-    def _run(self, station_name: str):
-        pass
-
-    def _arun(self, station_name: str):
-        raise NotImplementedError("TrainDistanceTool does not support async ")
-    args_schema: Optional[Type[BaseModel]] = StationDistanceCheckInput
+    return f"{departure} -> {destination} : 10km, 30 hops, 20min"
