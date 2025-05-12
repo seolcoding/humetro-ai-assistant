@@ -1,27 +1,26 @@
-from langchain.memory import ConversationTokenBufferMemory
-from langchain.chat_models import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.tools import Tool
-from langchain.tools.render import format_tool_to_openai_function
-from langchain.schema.runnable import RunnablePassthrough
+import os
+import warnings
 
+import langchain
+import openai
+from dotenv import find_dotenv, load_dotenv
 from langchain.agents import AgentExecutor
 from langchain.agents.format_scratchpad import format_to_openai_functions
 from langchain.agents.output_parsers import OpenAIFunctionsAgentOutputParser
+from langchain.chat_models import ChatOpenAI
+from langchain.memory import ConversationTokenBufferMemory
+from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain.schema.runnable import RunnablePassthrough
+from langchain.tools import Tool
+from langchain.tools.render import format_tool_to_openai_function
 
-from llm_tools.HumetroWebSearch import HumetroWebSearchTool
-from llm_tools.HumetroFare import HumetroFareTool
 from llm_tools.GoogleRoutes_legacy import GoogleRouteTool
+from llm_tools.HumetroFare import HumetroFareTool
+from llm_tools.HumetroWebSearch import HumetroWebSearchTool
 from llm_tools.prompts import humetro_system_prompt
 
-import os
-import openai
-import langchain
-import warnings
-
-from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv())  # read local .env file
-openai.api_key = os.environ['OPENAI_API_KEY']
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
 langchain.debug = True
@@ -40,14 +39,15 @@ tools = [
 
 functions = [format_tool_to_openai_function(t) for t in tools]
 
-llm = ChatOpenAI(
-    temperature=0, model="gpt-3.5-turbo-16k").bind(functions=functions)
+llm = ChatOpenAI(temperature=0, model="gpt-4o-mini-16k").bind(functions=functions)
 
-prompt = ChatPromptTemplate.from_messages([
-    ("system", humetro_system_prompt),
-    ("user", "{input}"),
-    MessagesPlaceholder(variable_name='agent_scratchpad')
-])
+prompt = ChatPromptTemplate.from_messages(
+    [
+        ("system", humetro_system_prompt),
+        ("user", "{input}"),
+        MessagesPlaceholder(variable_name="agent_scratchpad"),
+    ]
+)
 
 memory = ConversationTokenBufferMemory(
     llm=ChatOpenAI(),
@@ -57,10 +57,12 @@ memory = ConversationTokenBufferMemory(
 
 chain = prompt | llm | OpenAIFunctionsAgentOutputParser()
 
-agent_chain = RunnablePassthrough.assign(
-    agent_scratchpad=lambda x: format_to_openai_functions(
-        x['intermediate_steps'])
-) | chain
+agent_chain = (
+    RunnablePassthrough.assign(
+        agent_scratchpad=lambda x: format_to_openai_functions(x["intermediate_steps"])
+    )
+    | chain
+)
 
 agent_executor = AgentExecutor(
     agent=agent_chain,
@@ -74,12 +76,13 @@ agent_executor = AgentExecutor(
 # Testing only single turn conversations.
 if __name__ == "__main__":
     import datetime
+
     questions = [
-        '어린이 요금과 해운대 해수욕장까지 가는 길을 알려줘',
-        '하단역 근처에 큐병원이 있다는데 어떻게 가지?',
-        '감천문화마을에 가는 길을 알려줄래?',
-        '자갈치시장에 가려햅니다.',
-        '거제도가는 버스가 있다던데 몇번인가요?',
+        "어린이 요금과 해운대 해수욕장까지 가는 길을 알려줘",
+        "하단역 근처에 큐병원이 있다는데 어떻게 가지?",
+        "감천문화마을에 가는 길을 알려줄래?",
+        "자갈치시장에 가려햅니다.",
+        "거제도가는 버스가 있다던데 몇번인가요?",
     ]
     mass_phrases = [
         "화장실이 어디있나요?",
@@ -124,19 +127,18 @@ if __name__ == "__main__":
         "거스름돈으로 바꾸고 싶어요.",
         "휴대폰으로 탔는데 배터리가 다됐어요",
         "구간초과라고 떠요",
-        "표를 잃어버렸어요."
+        "표를 잃어버렸어요.",
     ]
 
     for q in mass_phrases:
-        result = agent_executor.invoke(
-            {"input": q})
+        result = agent_executor.invoke({"input": q})
         timestring = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        with open('log.txt', 'a') as f:
+        with open("log.txt", "a") as f:
             f.write("INPUT : " + q)
             f.write("\n")
             f.write(timestring)
             f.write("\n")
-            f.write('OUTPUT : ' + str(result['output']))
+            f.write("OUTPUT : " + str(result["output"]))
             f.write("\n\n")
 # result = agent_executor.invoke(
 #     {"input": "이걸 관리하는 담당자 이름과 전화번호도 알려주세요."})

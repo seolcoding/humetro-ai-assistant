@@ -1,0 +1,55 @@
+"""
+RAG configuration for AutoRAG optimization.
+"""
+
+nodes:
+  - node_id: retrieval
+    node_type: retrieval
+    search_type: similarity
+    top_k: 5
+    modules:
+      - module_type: reranking
+        model_name: MonoT5
+        device: cpu
+        batch_size: 4
+        
+      - module_type: query_expansion
+        llm_model: gpt-4o-mini
+        
+      - module_type: embedding
+        model_name: BAAI/bge-small-en-v1.5
+        device: cpu
+        batch_size: 32
+        
+      - module_type: vector_store
+        vector_store: faiss
+        
+  - node_id: prompt_maker
+    node_type: prompt_maker
+    modules:
+      - module_type: langchain
+        system_prompt: |
+          당신은 부산 지하철 정보 안내를 위한 AI 어시스턴트입니다.
+          다음 컨텍스트를 기반으로 주어진 질문에 명확하고 정확하게 답변하세요.
+          컨텍스트에 없는 정보에 대해서는 "죄송합니다. 해당 질문에 대한 답변을 찾지 못했습니다."라고 대답하세요.
+          답변은 반드시 한국어로 작성해주세요.
+          
+          컨텍스트:
+          {context}
+          
+          질문: {question}
+          답변:
+  
+  - node_id: generator
+    node_type: generator
+    modules:
+      - module_type: openai
+        model_name: gpt-4o-mini
+        temperature: 0.7
+        max_tokens: 512
+
+flows:
+  - from: retrieval
+    to: prompt_maker
+  - from: prompt_maker
+    to: generator
