@@ -10,7 +10,14 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_teddynote import logging
 from tqdm import tqdm
+
+logging.langsmith("HUMETRO_EVAL_TEST")
+
+OPENROUTER_API_KEY = (
+    "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"
+)
 
 
 # 2. 임베딩 모델 생성
@@ -90,18 +97,50 @@ def create_llm_ollama(model_name: str, temperature: float = 0.1) -> Any:
         return ChatOpenAI(model=model_name, temperature=temperature)
 
 
-def create_llm_lms(model_signature: str, temperature: float = 0.1) -> Any:
+def create_llm(model_signature: str, temperature: float = 0.1) -> Any:
+    OPENROUTER_API_KEY = (
+        "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"
+    )
+    OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+    local_models = [
+        "exaone-3.5-2.4b-instruct",
+        "kakaocorp.kanana-nano-2.1b-instruct",
+        "hyperclovax-seed-text-instruct-1.5b-hf-i1",
+    ]
+    open_router_models = [
+        "qwen/qwen3-4b:free",
+        "google/gemma-3-4b-it:free",
+        "deepseek/deepseek-chat-v3-0324:free",
+    ]
     if "gpt" in model_signature:
         return ChatOpenAI(model=model_signature, temperature=temperature)
-    try:
-        subprocess.run(["lms", "unload", "-a"])
-        print("모든 lms 언로드 완료")
-        subprocess.run(["lms", "load", model_signature])
-        print(f"lms 모델 {model_signature} 로드 완료")
-    except Exception as e:
-        print(f"lms 명령 실행 중 오류 발생: {e}")
-        print("lms가 설치되어 있고 실행 중인지 확인하세요.")
-    return ChatOpenAI(base_url="http://localhost:1234/v1", model=model_signature)
+    if model_signature in local_models:
+        try:
+            subprocess.run(["lms", "unload", "-a"])
+            print("모든 lms 언로드 완료")
+            subprocess.run(["lms", "load", model_signature])
+            print(f"lms 모델 {model_signature} 로드 완료")
+            return ChatOpenAI(
+                base_url="http://localhost:1234/v1", model=model_signature
+            )
+        except Exception as e:
+            print(f"lms 명령 실행 중 오류 발생: {e}")
+            print("lms가 설치되어 있고 실행 중인지 확인하세요.")
+    if model_signature in open_router_models:
+        llm = ChatOpenAI(
+            openai_api_key=os.getenv("OPENROUTER_API_KEY"),
+            openai_api_base=OPENROUTER_BASE_URL,
+            model_name=model_signature,
+            temperature=temperature,
+            # model_kwargs={
+            #     "headers": {
+            #         "HTTP-Referer": getenv("YOUR_SITE_URL"),
+            #         "X-Title": getenv("YOUR_SITE_NAME"),
+            #     }
+            # },
+        )
+        return llm
+    return None
 
 
 # 5. RAG 체인 생성 함수
@@ -137,18 +176,26 @@ def create_rag_chain(llm: Any, retriever: Any) -> Any:
 
 
 def sanitize_filename(filename):
-    return re.sub(r"[^a-zA-Z0-9_.]", "_", filename)[:20] + ".json"
+    filename.replace(".json", "")
+    return re.sub(r"[^a-zA-Z0-9_.]", "_", filename)[:30] + ".json"
 
 
 if __name__ == "__main__":
-    lms_models = {
-        # "qwen3-1.7b": "qwen3-1.7b",
-        "exaone-3.5-2.4b-instruct": "exaone-3.5-2.4b-instruct",
-        "kakaocorp.kanana-nano-2.1b-instruct": "kakaocorp.kanana-nano-2.1b-instruct",
-        "hyperclovax-seed-text-instruct-1.5b-hf-i1": "hyperclovax-seed-text-instruct-1.5b-hf-i1",
-        "qwen3-4b": "qwen3-4b",
-        "gpt-4o-mini": "gpt-4o-mini",
-    }
+    import os
+
+    os.environ["OPENROUTER_API_KEY"] = (
+        "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"
+    )
+
+    target_models = [
+        "qwen/qwen3-4b:free",
+        "google/gemma-3-4b-it:free",
+        "deepseek/deepseek-chat-v3-0324:free",
+        "hyperclovax-seed-text-instruct-1.5b-hf-i1",
+        "kakaocorp.kanana-nano-2.1b-instruct",
+        "exaone-3.5-2.4b-instruct",
+        "gpt-4o-mini",
+    ]
     embeddings = create_embeddings()
     vectorstore = load_vectorstore(
         persist_directory="vectorstore", embeddings=embeddings
@@ -159,17 +206,17 @@ if __name__ == "__main__":
         raise ValueError("vectorstore is empty")
 
     # 질문 데이터 불러오기
-    question_data = pd.read_csv("./translated_output.csv")
+    question_data = pd.read_csv("./dataset_200.csv")
     questions = list(question_data["user_input"])
     print(questions[:10])
 
-    for model_name, model_signature in lms_models.items():
+    for model_signature in target_models:
         try:
-            print(f"Loading {model_name}...")
-            llm = create_llm_lms(model_signature)
+            print(f"Loading {model_signature}...")
+            llm = create_llm(model_signature)
             retriever = create_retriever(vectorstore)
             rag_chain = create_rag_chain(llm, retriever)
-            filename = sanitize_filename(f"result_{model_name}.json")
+            filename = sanitize_filename(f"result_{model_signature}.json")
             try:
                 with open(filename, "r") as f:
                     result_list = json.load(f)
@@ -180,7 +227,7 @@ if __name__ == "__main__":
             processed_question = [i["question"] for i in result_list]
             questions = [i for i in questions if i not in processed_question]
 
-            for question in tqdm(questions, desc=f"Evaluating {model_name}"):
+            for question in tqdm(questions, desc=f"Evaluating {model_signature}"):
                 result = rag_chain.invoke(question)
                 result_list.append({"question": question, "answer": result})
                 if len(result_list) % 10 == 0:  # 10개마다 저장하기
@@ -190,5 +237,5 @@ if __name__ == "__main__":
             with open(filename, "w") as f:  # 최종 결과 저장하기
                 json.dump(result_list, f, ensure_ascii=False)
         except Exception as e:
-            print(f"Error: while generating {model_name}: {e}")
+            print(f"Error: while generating {model_signature}: {e}")
             continue
