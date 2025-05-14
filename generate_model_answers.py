@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import subprocess
 from typing import Any
@@ -14,10 +15,6 @@ from langchain_teddynote import logging
 from tqdm import tqdm
 
 logging.langsmith("HUMETRO_EVAL_TEST")
-
-OPENROUTER_API_KEY = (
-    "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"
-)
 
 
 # 2. 임베딩 모델 생성
@@ -98,9 +95,6 @@ def create_llm_ollama(model_name: str, temperature: float = 0.1) -> Any:
 
 
 def create_llm(model_signature: str, temperature: float = 0.1) -> Any:
-    OPENROUTER_API_KEY = (
-        "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"
-    )
     OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
     local_models = [
         "exaone-3.5-2.4b-instruct",
@@ -181,20 +175,14 @@ def sanitize_filename(filename):
 
 
 if __name__ == "__main__":
-    import os
-
-    os.environ["OPENROUTER_API_KEY"] = (
-        "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"
-    )
-
     target_models = [
-        "qwen/qwen3-4b:free",
-        "google/gemma-3-4b-it:free",
+        # "qwen/qwen3-4b:free",
+        # "google/gemma-3-4b-it:free",
         "deepseek/deepseek-chat-v3-0324:free",
-        "hyperclovax-seed-text-instruct-1.5b-hf-i1",
-        "kakaocorp.kanana-nano-2.1b-instruct",
-        "exaone-3.5-2.4b-instruct",
-        "gpt-4o-mini",
+        # "hyperclovax-seed-text-instruct-1.5b-hf-i1",
+        # "kakaocorp.kanana-nano-2.1b-instruct",
+        # "exaone-3.5-2.4b-instruct",
+        # "gpt-4o-mini",
     ]
     embeddings = create_embeddings()
     vectorstore = load_vectorstore(
@@ -207,8 +195,8 @@ if __name__ == "__main__":
 
     # 질문 데이터 불러오기
     question_data = pd.read_csv("./dataset_200.csv")
-    questions = list(question_data["user_input"])
-    print(questions[:10])
+    base_questions = list(question_data["user_input"])
+    print(base_questions[:10])
 
     for model_signature in target_models:
         try:
@@ -225,15 +213,25 @@ if __name__ == "__main__":
 
             # 이미 처리된 질문 제외
             processed_question = [i["question"] for i in result_list]
-            questions = [i for i in questions if i not in processed_question]
+            target_questions = [
+                i for i in base_questions if i not in processed_question
+            ]
 
-            for question in tqdm(questions, desc=f"Evaluating {model_signature}"):
-                result = rag_chain.invoke(question)
-                result_list.append({"question": question, "answer": result})
-                if len(result_list) % 10 == 0:  # 10개마다 저장하기
-                    print(f"checkpoint, saved {len(result_list)}")
+            for question in tqdm(
+                target_questions, desc=f"Evaluating {model_signature}"
+            ):
+                try:
+                    result = rag_chain.invoke(question)
+                    result_list.append({"question": question, "answer": result})
+                    if len(result_list) % 10 == 0:  # 10개마다 저장하기
+                        print(f"checkpoint, saved {len(result_list)}")
                     with open(filename, "w") as f:
                         json.dump(result_list, f, ensure_ascii=False)
+                except Exception as e:
+                    print(
+                        f"Error: while generating {model_signature} single question {question}: {e}"
+                    )
+                    continue
             with open(filename, "w") as f:  # 최종 결과 저장하기
                 json.dump(result_list, f, ensure_ascii=False)
         except Exception as e:
