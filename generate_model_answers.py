@@ -176,13 +176,13 @@ def sanitize_filename(filename):
 
 if __name__ == "__main__":
     target_models = [
-        # "qwen/qwen3-4b:free",
-        # "google/gemma-3-4b-it:free",
+        "qwen/qwen3-4b:free",
+        "google/gemma-3-4b-it:free",
         "deepseek/deepseek-chat-v3-0324:free",
-        # "hyperclovax-seed-text-instruct-1.5b-hf-i1",
-        # "kakaocorp.kanana-nano-2.1b-instruct",
-        # "exaone-3.5-2.4b-instruct",
-        # "gpt-4o-mini",
+        "hyperclovax-seed-text-instruct-1.5b-hf-i1",
+        "kakaocorp.kanana-nano-2.1b-instruct",
+        "exaone-3.5-2.4b-instruct",
+        "gpt-4o-mini",
     ]
     embeddings = create_embeddings()
     vectorstore = load_vectorstore(
