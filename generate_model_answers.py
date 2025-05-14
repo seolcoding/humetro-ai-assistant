@@ -142,7 +142,7 @@ def sanitize_filename(filename):
 
 if __name__ == "__main__":
     lms_models = {
-        "qwen3-1.7b": "qwen3-1.7b",
+        # "qwen3-1.7b": "qwen3-1.7b",
         "exaone-3.5-2.4b-instruct": "exaone-3.5-2.4b-instruct",
         "kakaocorp.kanana-nano-2.1b-instruct": "kakaocorp.kanana-nano-2.1b-instruct",
         "hyperclovax-seed-text-instruct-1.5b-hf-i1": "hyperclovax-seed-text-instruct-1.5b-hf-i1",
