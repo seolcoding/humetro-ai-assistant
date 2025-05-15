@@ -1,0 +1,30 @@
+{
+  "kakaocorp.kanana_nano_2": {
+    "faithfulness": 0.4089,
+    "factual_correctness(mode=f1)": 0.3714
+  },
+  "hyperclovax_seed_text_i": {
+    "faithfulness": 0.3661,
+    "factual_correctness(mode=f1)": 0.302
+  },
+  "exaone_3.5_2.4b_instruc": {
+    "faithfulness": 0.4023,
+    "factual_correctness(mode=f1)": 0.371
+  },
+  "google_gemma_3_4b_it_fr": {
+    "faithfulness": 0.5984,
+    "factual_correctness(mode=f1)": 0.4223
+  },
+  "deepseek_deepseek_chat_": {
+    "faithfulness": 0.5682,
+    "factual_correctness(mode=f1)": 0.44
+  },
+  "gpt_4o_mini": {
+    "faithfulness": 0.6388,
+    "factual_correctness(mode=f1)": 0.4881
+  },
+  "qwen_qwen3_4b_free": {
+    "faithfulness": 0.509,
+    "factual_correctness(mode=f1)": 0.4147
+  }
+}

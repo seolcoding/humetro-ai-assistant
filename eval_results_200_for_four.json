@@ -1,0 +1,18 @@
+{
+  "kanana_nano_2": {
+    "faithfulness": 0.3908,
+    "factual_correctness(mode=f1)": 0.3561
+  },
+  "hyperclovax_seed_text_i": {
+    "faithfulness": 0.3563,
+    "factual_correctness(mode=f1)": 0.2941
+  },
+  "exaone_3.5_2.4b_instruc": {
+    "faithfulness": 0.4134,
+    "factual_correctness(mode=f1)": 0.3592
+  },
+  "google_gemma_3_4b_it_fr": {
+    "faithfulness": 0.5712,
+    "factual_correctness(mode=f1)": 0.4217
+  }
+}
