@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 from typing import List, Any
 
 from duckduckgo_search import ddg
-from langchain.document_loaders import WebBaseLoader
 from langchain.schema import Document
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -14,6 +13,7 @@ from langchain.agents import tool
 from pydantic.v1 import BaseModel, Field
 
 from dotenv import load_dotenv, find_dotenv
+
 _ = load_dotenv(find_dotenv())  # read local .env file
 
 # this supresses the warning for using https without certificate
@@ -21,8 +21,10 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 
 class HumetroWebSearchInput(BaseModel):
-    query: str = Field(...,
-                       description="Query to search on http://www.humetro.busan.kr/. Query must be in KOREAN.")
+    query: str = Field(
+        ...,
+        description="Query to search on http://www.humetro.busan.kr/. Query must be in KOREAN.",
+    )
 
 
 @tool(args_schema=HumetroWebSearchInput)
@@ -30,13 +32,13 @@ def get_search(query: str) -> str:
     """Use this tool get information that might changed from times. searches Humetro official website"""
 
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Encoding': 'gzip, deflate, sdch, br',
-        'Accept-Language': 'en-US,en;q=0.8',
-        'Connection': 'keep-alive',
-        'Upgrade-Insecure-Requests': '1',
-        'Cache-Control': 'max-age=0',
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, sdch, br",
+        "Accept-Language": "en-US,en;q=0.8",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Cache-Control": "max-age=0",
     }
 
     embedding = OpenAIEmbeddings()
@@ -45,8 +47,8 @@ def get_search(query: str) -> str:
         chunk_size = 2000
         chunk_overlap = 200
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap)
+            chunk_size=chunk_size, chunk_overlap=chunk_overlap
+        )
         return text_splitter.split_documents(docs)
 
     def gen_vectordb(splits: List[Document]) -> Chroma:
@@ -54,14 +56,14 @@ def get_search(query: str) -> str:
             documents=splits,
             embedding=embedding,
             # chroma/web for web search, chroma/wiki for wiki search
-            persist_directory='./chroma/web',
+            persist_directory="./chroma/web",
         )
         return vectordb
 
     def run(query):
         prefix = "site:http://www.humetro.busan.kr/homepage/default/ "
         query = prefix + query
-        search_results = [i['href'] for i in ddg(query, max_results=5)]
+        search_results = [i["href"] for i in ddg(query, max_results=5)]
         target_urls = set()
         docs = []
         splits = []
@@ -90,16 +92,21 @@ def get_search(query: str) -> str:
         return result
 
     def clean_whitespace(text):
-        text = text.replace(
-            "\n현재 열람하신 페이지의 내용이나 사용 편의성에 만족하십니까?\n\n\xa0\xa0매우만족(5점)\n\n\n\xa0\xa0만족(4점)\n\n\n\xa0\xa0보통(3점)\n\n\n\xa0\xa0불만족(2점)\n\n\n\xa0\xa0매우불만족(1점)\n\n\n평가하기\n",
-            ""
-        ).replace("\n글자크기\n글자크기 확대하기\n글자크기 축소하기\n", "").replace('\xa0', ' ').replace('\t', ' ')
+        text = (
+            text.replace(
+                "\n현재 열람하신 페이지의 내용이나 사용 편의성에 만족하십니까?\n\n\xa0\xa0매우만족(5점)\n\n\n\xa0\xa0만족(4점)\n\n\n\xa0\xa0보통(3점)\n\n\n\xa0\xa0불만족(2점)\n\n\n\xa0\xa0매우불만족(1점)\n\n\n평가하기\n",
+                "",
+            )
+            .replace("\n글자크기\n글자크기 확대하기\n글자크기 축소하기\n", "")
+            .replace("\xa0", " ")
+            .replace("\t", " ")
+        )
 
         # Split text into lines and remove empty lines
-        lines = [line for line in text.split('\n') if line.strip()]
+        lines = [line for line in text.split("\n") if line.strip()]
 
         # Join the lines back into a string
-        cleaned_text = '\n'.join(lines)
+        cleaned_text = "\n".join(lines)
         return cleaned_text
 
     def parse_response(url) -> Document | bool:
@@ -107,11 +114,11 @@ def get_search(query: str) -> str:
         if res.status_code != 200:
             return False
 
-        soup = BeautifulSoup(res.content, 'html.parser')
-        if '올바른 메뉴가 아닙니다.' in soup.text:
+        soup = BeautifulSoup(res.content, "html.parser")
+        if "올바른 메뉴가 아닙니다." in soup.text:
             return False
 
-        content_tag = soup.select_one('#contents')
+        content_tag = soup.select_one("#contents")
         if content_tag is None:
             return False
         content_text = content_tag.text
@@ -122,8 +129,8 @@ def get_search(query: str) -> str:
             metadata={
                 "url": url,
                 "title": soup.title.text.strip(),
-                "description": soup.find("meta", {"name": "description"})["content"]
-            }
+                "description": soup.find("meta", {"name": "description"})["content"],
+            },
         )
         return doc
 
