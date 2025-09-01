@@ -118,7 +118,7 @@ async def main(target_urls):
                 filepath = Path(f"crawl_result/{title}.md")
             with open(filepath, "w") as f:
                 f.write(result.markdown)
-        except Exception as e:
+        except Exception:
             print(f"마크다운 저장 실패: {result.url}")
 
 
