@@ -6,7 +6,9 @@ from typing import List
 # TODO: add better filters
 class HumetroFaresInput(BaseModel):
     ages: List[str] = Field(
-        ..., description="list of extracted age of the user. element must be one of 유아, 어린이, 청소년, 성인, 다자녀, 장애인, 국가유공자, 만65세 이상, 전체 if not specified, pass [전체]")
+        ...,
+        description="list of extracted age of the user. element must be one of 유아, 어린이, 청소년, 성인, 다자녀, 장애인, 국가유공자, 만65세 이상, 전체 if not specified, pass [전체]",
+    )
 
 
 @tool(args_schema=HumetroFaresInput)

@@ -11,7 +11,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationTokenBufferMemory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.runnable import RunnablePassthrough
-from langchain.tools import Tool
 from langchain.tools.render import format_tool_to_openai_function
 
 from llm_tools.GoogleRoutes_legacy import GoogleRouteTool

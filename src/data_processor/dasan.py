@@ -1,8 +1,5 @@
 import pandas as pd
-import json
-import os
 
-import sys
 
 dasan1 = "datasets/민원(콜센터) 질의응답_다산콜센터_대중교통 안내_Training.json"
 df1 = pd.read_json(dasan1)

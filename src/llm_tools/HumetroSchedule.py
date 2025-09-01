@@ -13,8 +13,11 @@ base_location = os.getenv("BASE_LOCATION")
 
 class TrainScheduleInput(BaseModel):
     """Input for Train Schedule Check"""
+
     station_name: str = Field(
-        ..., description=f"Name of the station to check, if not provided always use {base_location}")
+        ...,
+        description=f"Name of the station to check, if not provided always use {base_location}",
+    )
 
 
 @tool(args_schema=TrainScheduleInput)
@@ -46,7 +49,7 @@ def get_schedule(station_name: str) -> str:
         params = {
             "serviceKey": os.environ.get("TRAIN_PORTAL_API_KEY"),
             "dayCd": dayCd,
-            "lnCd":  stinCd[0],
+            "lnCd": stinCd[0],
             "stinCd": stinCd,
             "format": "json",
             # 부산교통공사 코드
@@ -55,15 +58,18 @@ def get_schedule(station_name: str) -> str:
 
         endpoint = "https://openapi.kric.go.kr/openapi/trainUseInfo/subwayTimetable"
         res = requests.get(endpoint, params=params)
-        schedule = res.json()['body']
-        schedule.sort(key=lambda x: x['arvTm'])
+        schedule = res.json()["body"]
+        schedule.sort(key=lambda x: x["arvTm"])
 
         # 4시30분을 기준으로 첫차부터 정렬하는 로직
-        schedule.sort(key=lambda x: int(x['arvTm']) if int(
-            x['arvTm']) >= 43000 else int(x['arvTm']) + 240000)
+        schedule.sort(
+            key=lambda x: int(x["arvTm"])
+            if int(x["arvTm"]) >= 43000
+            else int(x["arvTm"]) + 240000
+        )
 
-        uplines = [s for s in schedule if int(s['trnNo'][0]) % 2 != 0]
-        downlines = [s for s in schedule if int(s['trnNo'][0]) % 2 == 0]
+        uplines = [s for s in schedule if int(s["trnNo"][0]) % 2 != 0]
+        downlines = [s for s in schedule if int(s["trnNo"][0]) % 2 == 0]
 
         def in_timerange(target: str):
             # 뒤로 15분, 앞으로 1시간 이내의 스케쥴만 추출합니다.
@@ -73,7 +79,8 @@ def get_schedule(station_name: str) -> str:
             target_sec = target[4:]
             # 추출한 시간 정보를 오늘 날짜와 결합하여 datetime 객체를 생성합니다.
             target_datetime = datetime.datetime.strptime(
-                f'{today} {target_hour}:{target_min}:{target_sec}', '%Y-%m-%d %H:%M:%S')
+                f"{today} {target_hour}:{target_min}:{target_sec}", "%Y-%m-%d %H:%M:%S"
+            )
             if target_datetime.hour < 4:
                 target_datetime = target_datetime + datetime.timedelta(days=1)
 
@@ -82,10 +89,16 @@ def get_schedule(station_name: str) -> str:
                 return True
             return False
 
-        target_uplines = [
-            uplines[0]] + [s for s in uplines if in_timerange(s['arvTm'])] + uplines[-2:]
-        target_downlines = [
-            downlines[0]] + [s for s in downlines if in_timerange(s['arvTm'])] + downlines[-2:]
+        target_uplines = (
+            [uplines[0]]
+            + [s for s in uplines if in_timerange(s["arvTm"])]
+            + uplines[-2:]
+        )
+        target_downlines = (
+            [downlines[0]]
+            + [s for s in downlines if in_timerange(s["arvTm"])]
+            + downlines[-2:]
+        )
 
         def extract_time(schedule: dict):
             result = f"{schedule['arvTm'][:2]}시 {schedule['arvTm'][2:4]}분"
@@ -93,15 +106,33 @@ def get_schedule(station_name: str) -> str:
 
         result = f"{station_name}역의 열차 시간표입니다. 현재시각:{now.strftime('%H:%M:%S')}\n"
         result += "상행선(다대포해수욕장)\n"
-        result += "첫차: " + extract_time(target_uplines[0]) + " " + "막차: " + extract_time(
-            target_uplines[-2]) + ', ' + extract_time(target_uplines[-1]) + "\n"
-        result += "상행선 최근 열차\n" + \
-            "\n".join(extract_time(s) for s in target_uplines[1:-2])
+        result += (
+            "첫차: "
+            + extract_time(target_uplines[0])
+            + " "
+            + "막차: "
+            + extract_time(target_uplines[-2])
+            + ", "
+            + extract_time(target_uplines[-1])
+            + "\n"
+        )
+        result += "상행선 최근 열차\n" + "\n".join(
+            extract_time(s) for s in target_uplines[1:-2]
+        )
         result += "\n하행선(노포)\n"
-        result += "첫차: " + extract_time(target_downlines[0]) + " " + "막차: " + extract_time(
-            target_downlines[-2]) + ', ' + extract_time(target_downlines[-1]) + "\n"
-        result += "하선 최근 열차\n" + \
-            "\n".join(extract_time(s) for s in target_downlines[1:-2])
+        result += (
+            "첫차: "
+            + extract_time(target_downlines[0])
+            + " "
+            + "막차: "
+            + extract_time(target_downlines[-2])
+            + ", "
+            + extract_time(target_downlines[-1])
+            + "\n"
+        )
+        result += "하선 최근 열차\n" + "\n".join(
+            extract_time(s) for s in target_downlines[1:-2]
+        )
 
         return result
 
