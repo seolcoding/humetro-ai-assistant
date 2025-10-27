@@ -203,3 +203,4 @@ temp/
 tmp/
 *.tmp
 data/dasan_call/raw/aihubshell
+Neo4j*.txt
