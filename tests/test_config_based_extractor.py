@@ -6,8 +6,8 @@ import pytest
 from pathlib import Path
 from unittest.mock import Mock, AsyncMock, patch
 
-from crawler.extractors.config_based import ConfigBasedExtractor
-from config.site_config import SiteConfig
+from src.crawler.extractors.config_based import ConfigBasedExtractor
+from src.config.site_config import SiteConfig
 
 
 class TestConfigBasedExtractor:
@@ -16,7 +16,7 @@ class TestConfigBasedExtractor:
     @pytest.fixture
     def seoul_config(self):
         """Load Seoul Traffic News configuration"""
-        config_path = Path(__file__).parent.parent / "config" / "sites" / "news.seoul.go.kr.yaml"
+        config_path = Path(__file__).parent.parent / "src" / "config" / "sites" / "news.seoul.go.kr.yaml"
         return SiteConfig.from_yaml(config_path)
 
     @pytest.fixture
@@ -52,7 +52,7 @@ class TestConfigBasedExtractor:
 
     def test_get_attachment_type(self, extractor):
         """Test attachment type detection"""
-        from config.schemas import AttachmentType
+        from src.config.schemas import AttachmentType
 
         assert extractor._get_attachment_type('pdf') == AttachmentType.PDF
         assert extractor._get_attachment_type('hwpx') == AttachmentType.HWP

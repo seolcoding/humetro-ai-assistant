@@ -14,7 +14,7 @@ import logging
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
 from playwright.async_api import Browser, BrowserContext, Page
 
-from config.schemas import (
+from src.config.schemas import (
     PageMetadata,
     PageType,
     LinkContext,
@@ -22,9 +22,9 @@ from config.schemas import (
     AttachedDocument,
     AttachmentType
 )
-from config.site_config import SiteConfig, load_site_config
-from crawler.extractors import ConfigBasedExtractor
-from utils.entity_preview import SimpleEntityExtractor
+from src.config.site_config import SiteConfig, load_site_config
+from src.crawler.extractors import ConfigBasedExtractor
+from src.utils.entity_preview import SimpleEntityExtractor
 
 logger = logging.getLogger(__name__)
 

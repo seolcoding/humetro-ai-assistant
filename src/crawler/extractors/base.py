@@ -12,8 +12,8 @@ from datetime import datetime
 from playwright.async_api import Page
 from bs4 import BeautifulSoup
 
-from config.site_config import SiteConfig
-from config.schemas import PageMetadata, AttachedDocument
+from src.config.site_config import SiteConfig
+from src.config.schemas import PageMetadata, AttachedDocument
 
 
 @dataclass
@@ -89,10 +89,7 @@ class AbstractExtractor(ABC):
 
     @abstractmethod
     async def extract_from_page(
-        self,
-        page: Page,
-        html: str,
-        url: str
+        self, page: Page, html: str, url: str
     ) -> ExtractionResult:
         """
         Extract content from a page.
@@ -109,10 +106,7 @@ class AbstractExtractor(ABC):
 
     @abstractmethod
     async def extract_attachments(
-        self,
-        page: Page,
-        html: str,
-        result: ExtractionResult
+        self, page: Page, html: str, result: ExtractionResult
     ) -> List[AttachedDocument]:
         """
         Extract and process attachments from a page.
@@ -128,11 +122,7 @@ class AbstractExtractor(ABC):
         pass
 
     @abstractmethod
-    async def extract_popup_content(
-        self,
-        popup_page: Page,
-        popup_url: str
-    ) -> str:
+    async def extract_popup_content(self, popup_page: Page, popup_url: str) -> str:
         """
         Extract content from popup window.
 
@@ -146,10 +136,7 @@ class AbstractExtractor(ABC):
         pass
 
     def extract_with_selector(
-        self,
-        soup: BeautifulSoup,
-        selector_config: Any,
-        default: Any = None
+        self, soup: BeautifulSoup, selector_config: Any, default: Any = None
     ) -> Any:
         """
         Extract content using SelectorConfig.
@@ -178,7 +165,9 @@ class AbstractExtractor(ABC):
 
             if not elements:
                 if selector_config.required:
-                    raise ValueError(f"Required selector not found: {selector_config.selector}")
+                    raise ValueError(
+                        f"Required selector not found: {selector_config.selector}"
+                    )
                 return default
 
             # Extract attribute or text
@@ -199,7 +188,7 @@ class AbstractExtractor(ABC):
                 else:
                     return elem.get_text(strip=True) or default
 
-        except Exception as e:
+        except Exception:
             if selector_config.required:
                 raise
             return default
@@ -210,6 +199,7 @@ class AbstractExtractor(ABC):
             return False
 
         import re
+
         for pattern in self.config.url_patterns.article_patterns:
             if re.match(pattern, url):
                 return True
@@ -221,6 +211,7 @@ class AbstractExtractor(ABC):
             return False
 
         import re
+
         for pattern in self.config.url_patterns.list_patterns:
             if re.match(pattern, url):
                 return True
@@ -232,10 +223,11 @@ class AbstractExtractor(ABC):
             return False
 
         import re
+
         for pattern in self.config.url_patterns.exclude_patterns:
             if re.match(pattern, url):
                 return True
         return False
 
 
-__all__ = ['AbstractExtractor', 'ExtractionResult']
+__all__ = ["AbstractExtractor", "ExtractionResult"]

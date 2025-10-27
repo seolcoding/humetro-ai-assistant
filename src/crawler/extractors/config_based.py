@@ -13,8 +13,8 @@ from datetime import datetime
 from playwright.async_api import Page
 from bs4 import BeautifulSoup
 
-from config.site_config import SiteConfig
-from config.schemas import AttachedDocument, AttachmentType, AttachmentSource
+from src.config.site_config import SiteConfig
+from src.config.schemas import AttachedDocument, AttachmentType, AttachmentSource
 from .base import AbstractExtractor, ExtractionResult
 
 logger = logging.getLogger(__name__)

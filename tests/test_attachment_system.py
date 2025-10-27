@@ -14,10 +14,10 @@ from pathlib import Path
 from unittest.mock import Mock, AsyncMock, patch
 from datetime import datetime
 
-from crawler.popup_handler import PopupWindowHandler
-from crawler.document_parser import DocumentParser
-from crawler.content_extractor import SeoulTrafficContentExtractor
-from config.schemas import (
+from src.crawler.popup_handler import PopupWindowHandler
+from src.crawler.document_parser import DocumentParser
+from src.crawler.content_extractor import SeoulTrafficContentExtractor
+from src.config.schemas import (
     AttachedDocument,
     AttachmentType,
     AttachmentSource,
@@ -78,7 +78,7 @@ class TestDocumentParser:
     @pytest.fixture
     def parser(self, tmp_path):
         """Create DocumentParser instance"""
-        from utils.entity_preview import SimpleEntityExtractor
+        from src.utils.entity_preview import SimpleEntityExtractor
         return DocumentParser(
             attachments_dir=tmp_path / "attachments",
             entity_extractor=SimpleEntityExtractor()

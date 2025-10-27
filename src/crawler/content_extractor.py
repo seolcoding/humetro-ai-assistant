@@ -15,7 +15,7 @@ import logging
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
 from playwright.async_api import Browser, BrowserContext, Page
 
-from config.schemas import (
+from src.config.schemas import (
     PageMetadata,
     PageType,
     LinkContext,
@@ -23,11 +23,11 @@ from config.schemas import (
     AttachedDocument,
     AttachmentType
 )
-from crawler.popup_handler import PopupWindowHandler
-from crawler.document_parser import DocumentParser
-from crawler.tree_analyzer import TreeStructureAnalyzer
-from crawler.link_analyzer import LinkContextAnalyzer
-from utils.entity_preview import SimpleEntityExtractor
+from src.crawler.popup_handler import PopupWindowHandler
+from src.crawler.document_parser import DocumentParser
+from src.crawler.tree_analyzer import TreeStructureAnalyzer
+from src.crawler.link_analyzer import LinkContextAnalyzer
+from src.utils.entity_preview import SimpleEntityExtractor
 
 logger = logging.getLogger(__name__)
 
@@ -456,7 +456,7 @@ Generated: {datetime.utcnow().isoformat()}
 # Example usage
 async def main():
     """Example usage of ContentExtractor"""
-    from crawler.url_discovery import SeoulTrafficURLDiscovery
+    from src.crawler.url_discovery import SeoulTrafficURLDiscovery
 
     # Step 1: Discover URLs
     discovery = SeoulTrafficURLDiscovery(
