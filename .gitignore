@@ -182,6 +182,7 @@ old_*/
 data/raw/*/*
 data/processed/*/*
 data/knowledge_graphs/*/*
+data/crawled/*/*
 !data/**/.gitkeep
 
 # Results (keep structure, ignore content)

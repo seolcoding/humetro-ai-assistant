@@ -24,6 +24,7 @@ from src.config.schemas import (
 )
 from src.config.site_config import SiteConfig, load_site_config
 from src.crawler.extractors import ConfigBasedExtractor
+from src.crawler.extractors.base import ExtractionResult
 from src.utils.entity_preview import SimpleEntityExtractor
 
 logger = logging.getLogger(__name__)
@@ -217,35 +218,44 @@ class SeoulTrafficContentExtractorV2:
             markdown = result.markdown
             links = result.links.get('internal', [])
 
-            # Step 2: Access browser context and page
-            browser: Browser = crawler.crawler_strategy.browser
-            context: BrowserContext = await browser.new_context(
-                accept_downloads=True
-            )
-            page: Page = await context.new_page()
+            # Step 2: Extract content using ConfigBasedExtractor (HTML-only mode)
+            # Note: Browser access removed due to crawl4ai 0.7.6 API changes
+            # Attachment processing will be re-implemented using hooks later
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(html, 'html.parser')
 
-            # Navigate to page
-            await page.goto(url, wait_until="domcontentloaded")
-            await page.wait_for_timeout(1000)
+            extraction_result = ExtractionResult(url=url, html=html)
 
-            # Step 3: Extract content using ConfigBasedExtractor
-            extraction_result = await self.extractor.extract_from_page(
-                page=page,
-                html=html,
-                url=url
-            )
+            # Extract title
+            if self.site_config.article and self.site_config.article.title:
+                title_elem = soup.select_one(self.site_config.article.title.selector)
+                if title_elem:
+                    extraction_result.title = title_elem.get_text(strip=True)
 
-            # Step 4: Process attachments
-            attached_documents = await self.extractor.extract_attachments(
-                page=page,
-                html=html,
-                result=extraction_result
-            )
+            # Extract content
+            if self.site_config.article and self.site_config.article.content:
+                content_elem = soup.select_one(self.site_config.article.content.selector)
+                if content_elem:
+                    extraction_result.content = content_elem.get_text(separator='\n', strip=True)
 
-            logger.debug(f"Found {len(attached_documents)} attachments")
+            # Extract breadcrumb
+            if self.site_config.navigation and self.site_config.navigation.breadcrumb:
+                extraction_result.breadcrumb_links = []
+                for bc_elem in soup.select(self.site_config.navigation.breadcrumb.selector):
+                    link = bc_elem.get('href', '')
+                    text = bc_elem.get_text(strip=True)
+                    if link and text:
+                        extraction_result.breadcrumb_links.append({'url': link, 'text': text})
 
-            # Clean up browser context
-            await context.close()
+            # Extract outgoing links
+            extraction_result.outgoing_links = [
+                a.get('href') for a in soup.select('a[href]')
+                if a.get('href') and not a.get('href').startswith('#')
+            ]
+
+            # Temporary: Skip attachment processing (requires browser access)
+            attached_documents = []
+            logger.debug("Attachment processing temporarily disabled (requires hook implementation)")
 
             # Step 5: Build metadata
             metadata = await self._build_metadata(
