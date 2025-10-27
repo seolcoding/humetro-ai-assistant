@@ -32,6 +32,11 @@ humetro-ai-assistant/
 │   └── knowledge_graphs/        # 지식 그래프
 │       ├── gpt5_generated/      # GPT-5 생성 (핵심 자산)
 │       └── opensource_kg/       # 비교용
+├── docs/                        # 📚 연구 문서 (NEW - 계획 중)
+│   ├── 01_citations/            # 학술 인용 자료
+│   ├── 02_research/             # 조사 및 분석 자료
+│   ├── 03_ai_references/        # AI 생성 종합 자료
+│   └── 04_project_docs/         # 프로젝트 문서
 ├── experiments/                 # 실험 관리
 │   ├── configs/                 # 실험 설정
 │   ├── models/                  # 모델별 실험
@@ -41,8 +46,13 @@ humetro-ai-assistant/
 │   ├── rag_pipeline/            # RAG 파이프라인
 │   └── evaluation/              # 평가 시스템
 ├── scripts/                     # 자동화 스크립트
-└── thesis/                      # 논문 자료
+└── thesis/                      # 논문 작성 영역
+    ├── manuscript/              # 논문 원고 (섹션별)
+    ├── figures/                 # 그림
+    └── tables/                  # 표
 ```
+
+> **📋 Documentation Refactoring**: 문서 구조 개선 계획은 [DOCUMENTATION_REFACTORING_PLAN.md](./DOCUMENTATION_REFACTORING_PLAN.md)와 [docs_structure_comparison.md](./docs_structure_comparison.md)를 참조하세요.
 
 ## 🚀 Quick Start
 
