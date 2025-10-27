@@ -199,3 +199,6 @@ data/vectorstore/
 temp/
 tmp/
 *.tmp
+data/dasan_call/raw/aihubshell
+.gitignore
+.DS_Store
