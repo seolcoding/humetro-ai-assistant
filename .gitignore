@@ -165,3 +165,37 @@ documents/**
 
 # macOS system files
 .DS_Store
+
+# Archive and old files
+archive/
+old_*/
+*.bak
+
+# Model files
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+
+# Data files (keep structure, ignore content)
+data/raw/*/*
+data/processed/*/*
+data/knowledge_graphs/*/*
+!data/**/.gitkeep
+
+# Results (keep structure, ignore content)
+results/*/
+!results/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Vectorstore
+data/vectorstore/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
