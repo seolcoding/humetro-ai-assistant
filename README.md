@@ -1,97 +1,199 @@
-# Humetro AI Assistant
+# 🚊 Humetro AI Assistant - Graph RAG Research
 
-부산 도시철도(Humetro) AI 어시스턴트를 위한 RAG(Retrieval-Augmented Generation) 시스템입니다.
+> **온프레미스 오픈소스 기반 Graph RAG 시스템의 공공부문 적용 연구**
+>
+> 다산콜센터 사례를 중심으로 한 실증 연구
 
-## 프로젝트 개요
+## 📌 Research Overview
 
-이 프로젝트는 부산 도시철도 이용자에게 정확한 정보를 제공하기 위한 대화형 AI 어시스턴트를 개발하는 것을 목표로 합니다. RAG 기술을 활용하여 도시철도 관련 정보를 검색하고 사용자의 질문에 답변합니다.
+본 연구는 공공부문에서 데이터 주권과 비용 효율성을 유지하면서도 고성능 AI 서비스를 제공할 수 있는 **온프레미스 Graph RAG 시스템**의 실용성을 실증합니다.
 
-## 주요 기능
+### 🎯 핵심 목표
 
-- 부산 도시철도 정보 웹사이트 크롤링
-- 수집된 데이터를 활용한 QA 데이터셋 생성
-- AutoRAG를 활용한 최적의 RAG 파이프라인 구성
-- 검색 기반 질의응답 시스템
+1. **기술 주권 확보**: 해외 빅테크 API 의존 없이 고성능 달성
+2. **비용 효율성**: 5년 TCO 36% 절감
+3. **성능 동등성**: 온프레미스 시스템이 상용 API와 동등한 성능 달성
 
-## 시작하기
+### 🔬 실험 설계
 
-### 요구사항
+- **4개 오픈소스 LLM** × **4개 RAG 방식** = **16개 시스템 비교**
+- **평가 데이터**: 다산콜센터 FAQ 3,000개 + AI Hub Q&A 10,000개
+- **평가 지표**: RAGAS + LLM-as-Judge (GPT-4o)
 
-- Python 3.10 이상
-- OpenAI API 키
-- 필요한 패키지는 requirements.txt에 명시되어 있습니다.
-
-### 설치
-
-1. 저장소 클론
-
-```bash
-git clone https://github.com/yourusername/humetro-ai-assistant.git
-cd humetro-ai-assistant
-```
-
-2. 가상환경 생성 및 활성화
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows의 경우: .venv\Scripts\activate
-```
-
-3. 필요한 패키지 설치
-
-```bash
-pip install -r requirements.txt
-```
-
-4. 환경 변수 설정
-
-`.env.example` 파일을 `.env` 파일로 복사하고 필요한 API 키를 입력합니다.
-
-```bash
-cp .env.example .env
-```
-
-### 사용 방법
-
-#### 데이터 수집 및 QA 데이터셋 생성
-
-```bash
-# 웹사이트 크롤링
-python -m src.data_processor.crawler
-
-# QA 데이터셋 생성
-python main.py generate --num-samples 100 --questions-per-content 2
-```
-
-#### RAG 파이프라인 평가
-
-```bash
-# RAG 파이프라인 구성 검증
-python main.py validate
-
-# RAG 파이프라인 평가
-python main.py evaluate
-```
-
-## 프로젝트 구조
+## 🏗️ Project Structure
 
 ```
 humetro-ai-assistant/
-├── assets/                 # 정적 파일(이미지 등)
-├── crawl_result/           # 크롤링된 마크다운 파일
-├── datasets/               # 데이터셋 파일
-│   ├── final_docs/         # 최종 처리된 데이터셋
-│   └── rag_evaluation/     # RAG 평가 결과
-├── src/                    # 소스 코드
-│   ├── common/             # 공통 유틸리티 함수
-│   ├── data_processor/     # 데이터 처리 관련 코드
-│   └── llm_tools/          # LLM 도구 관련 코드
-├── .env.example            # 환경 변수 예제 파일
-├── main.py                 # 메인 CLI 스크립트
-├── README.md               # 프로젝트 설명
-└── requirements.txt        # 필요한, 패키지 목록
+├── data/                        # 데이터 자산
+│   ├── raw/                     # 원본 데이터
+│   │   ├── dasan_faq/           # 다산콜센터 FAQ
+│   │   └── aihub_qa/            # AI Hub 데이터셋
+│   ├── processed/               # 전처리 데이터
+│   └── knowledge_graphs/        # 지식 그래프
+│       ├── gpt5_generated/      # GPT-5 생성 (핵심 자산)
+│       └── opensource_kg/       # 비교용
+├── experiments/                 # 실험 관리
+│   ├── configs/                 # 실험 설정
+│   ├── models/                  # 모델별 실험
+│   └── rag_methods/             # RAG 방법별
+├── results/                     # 실험 결과
+├── src/                         # 소스 코드
+│   ├── rag_pipeline/            # RAG 파이프라인
+│   └── evaluation/              # 평가 시스템
+├── scripts/                     # 자동화 스크립트
+└── thesis/                      # 논문 자료
 ```
 
-## 라이선스
+## 🚀 Quick Start
 
-이 프로젝트는 [MIT 라이선스](LICENSE)를 따릅니다.
+### Prerequisites
+
+```bash
+# Python 3.11+
+python --version
+
+# CUDA 12.1+ (for GPU)
+nvidia-smi
+
+# Neo4j (for Graph RAG)
+neo4j --version
+```
+
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/humetro-ai-assistant.git
+cd humetro-ai-assistant
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download models (optional - for local execution)
+python scripts/download_models.py
+```
+
+### Running Experiments
+
+```bash
+# Run all experiments (16 combinations)
+python scripts/run_experiment.py --config experiments/configs/base_config.yaml
+
+# Run specific model-method combination
+python scripts/run_experiment.py \
+    --models gemma_3_12b \
+    --methods graph_rag
+
+# Analyze results
+python scripts/analyze_results.py \
+    --results-dir results/20251027_120000_humetro_graph_rag_comparison
+```
+
+## 📊 Key Components
+
+### 1. RAG Pipeline Hierarchy
+
+```python
+BaseRAG (Abstract)
+├── BaselineRAG     # Pure LLM (No retrieval)
+├── NaiveRAG        # Vector search only
+├── AdvancedRAG     # Hybrid search (BM25 + Semantic)
+└── GraphRAG        # Knowledge graph with multi-hop
+```
+
+### 2. Evaluation System
+
+- **RAGAS Metrics**:
+  - Faithfulness
+  - Answer Relevancy
+  - Context Precision
+  - Context Recall
+  - Answer Correctness
+
+- **LLM-as-Judge**:
+  - Accuracy
+  - Completeness
+  - Relevance
+  - Coherence
+  - Domain Specificity
+
+### 3. Knowledge Graph Construction
+
+```python
+# One-time construction with GPT-5
+kg_builder = KnowledgeGraphBuilder(model="gpt-5")
+kg = kg_builder.build_from_documents(documents)
+
+# Save for permanent use
+kg.save("data/knowledge_graphs/gpt5_generated")
+```
+
+## 📈 Expected Results
+
+### Performance Comparison
+
+| Model         | Baseline | Naive RAG | Advanced RAG | Graph RAG |
+|---------------|----------|-----------|--------------|-----------|
+| Gemma 3 12B   | 0.45     | 0.62      | 0.71         | **0.78**  |
+| Qwen 3 8B     | 0.42     | 0.59      | 0.68         | **0.75**  |
+| EXAONE 7.8B   | 0.43     | 0.60      | 0.69         | **0.76**  |
+| GPT-OSS 20B   | 0.47     | 0.64      | 0.73         | **0.80**  |
+
+### Cost Analysis (5-Year TCO)
+
+- **Pure API Approach**: $12,775
+- **Hybrid (Our Approach)**: $8,200 (36% savings)
+- **Break-even Point**: 18 months
+
+## 🔧 Hardware Requirements
+
+### Minimum (Development)
+- GPU: NVIDIA RTX 3090 (24GB VRAM)
+- RAM: 32GB
+- Storage: 500GB SSD
+
+### Recommended (Production)
+- GPU: NVIDIA RTX 4090 or A100
+- RAM: 64GB
+- Storage: 1TB NVMe SSD
+
+## 📝 Citation
+
+```bibtex
+@article{humetro2025,
+  title={온프레미스 오픈소스 기반 Graph RAG 시스템의 공공부문 적용 연구},
+  author={Your Name},
+  journal={Journal Name},
+  year={2025}
+}
+```
+
+## 🤝 Contributing
+
+연구 협력 및 기여를 환영합니다:
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/NewFeature`)
+3. Commit changes (`git commit -m 'Add NewFeature'`)
+4. Push to branch (`git push origin feature/NewFeature`)
+5. Open Pull Request
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file
+
+## 🙏 Acknowledgments
+
+- 서울시 120 다산콜센터
+- AI Hub 데이터 제공
+- 오픈소스 커뮤니티
+
+## 📧 Contact
+
+- **Research Lead**: [your-email@example.com]
+- **Project Repository**: [GitHub](https://github.com/your-username/humetro-ai-assistant)
+- **Issues**: [GitHub Issues](https://github.com/your-username/humetro-ai-assistant/issues)
+
+---
+
+> **Note**: 이 프로젝트는 학술 연구 목적으로 진행되며, 실제 배포 전 추가적인 보안 검토가 필요합니다.

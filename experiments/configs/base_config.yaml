@@ -1,0 +1,189 @@
+# Base Experiment Configuration for Humetro AI Assistant Research
+# 4 LLMs × 4 RAG Methods = 16 Systems Comparison
+
+experiment:
+  name: "humetro_graph_rag_comparison"
+  description: "온프레미스 Graph RAG vs 상용 API 성능 비교 실험"
+  timestamp: "2025-10-27"
+  seed: 42
+
+# Language Models Configuration
+models:
+  opensource:
+    - name: "gemma_3_12b"
+      path: "google/gemma-3-12b"
+      quantization: "4bit"  # For 24GB VRAM constraint
+      max_length: 2048
+      temperature: 0.7
+
+    - name: "qwen_3_8b"
+      path: "Qwen/Qwen3-8B"
+      quantization: "8bit"
+      max_length: 2048
+      temperature: 0.7
+
+    - name: "exaone_7.8b"
+      path: "LGAI-EXAONE/EXAONE-3.5-7.8B"
+      quantization: "8bit"
+      max_length: 2048
+      temperature: 0.7
+
+    - name: "gpt_oss_20b"
+      path: "EleutherAI/gpt-neox-20b"
+      quantization: "4bit"  # Requires aggressive quantization
+      max_length: 2048
+      temperature: 0.7
+
+  baseline:
+    - name: "gpt_4o_mini"
+      api: "openai"
+      model: "gpt-4o-mini"
+      max_tokens: 2048
+      temperature: 0.7
+
+    - name: "gemini_2_5_flash"
+      api: "google"
+      model: "gemini-2.0-flash-exp"
+      max_tokens: 2048
+      temperature: 0.7
+
+# RAG Methods Configuration
+rag_methods:
+  baseline:
+    name: "Pure LLM (No RAG)"
+    type: "baseline"
+    config: {}
+
+  naive_rag:
+    name: "Naive RAG (Vector Search)"
+    type: "naive"
+    config:
+      embedding_model: "BAAI/bge-small-en-v1.5"
+      vector_store: "faiss"
+      top_k: 5
+      similarity_threshold: 0.7
+
+  advanced_rag:
+    name: "Advanced RAG (Hybrid Search)"
+    type: "advanced"
+    config:
+      embedding_model: "BAAI/bge-small-en-v1.5"
+      vector_store: "faiss"
+      bm25_weight: 0.3
+      semantic_weight: 0.7
+      reranker: "MonoT5"
+      top_k: 10
+      rerank_top_k: 5
+
+  graph_rag:
+    name: "Graph RAG (Knowledge Graph)"
+    type: "graph"
+    config:
+      graph_db: "neo4j"
+      embedding_model: "BAAI/bge-small-en-v1.5"
+      max_hops: 2
+      relation_weight: 0.5
+      top_k: 5
+      kg_builder: "gpt-5"  # For one-time KG construction
+
+# Data Configuration
+data:
+  knowledge_base:
+    source: "data/raw/dasan_faq"
+    processed: "data/processed/knowledge_base"
+    size: 3000  # Number of documents
+
+  evaluation:
+    source: "data/raw/aihub_qa"
+    processed: "data/processed/evaluation"
+    test_size: 1000  # Subset for testing
+    validation_size: 500
+
+  knowledge_graph:
+    gpt5_kg: "data/knowledge_graphs/gpt5_generated"
+    opensource_kg: "data/knowledge_graphs/opensource_kg"
+
+# Evaluation Configuration
+evaluation:
+  metrics:
+    # RAGAS Metrics
+    ragas:
+      - faithfulness
+      - answer_relevancy
+      - context_precision
+      - context_recall
+      - answer_correctness
+
+    # LLM as Judge
+    llm_judge:
+      model: "gpt-4o"
+      criteria:
+        - accuracy
+        - completeness
+        - relevance
+        - coherence
+        - domain_specificity
+
+    # Performance Metrics
+    performance:
+      - latency_ms
+      - tokens_per_second
+      - memory_usage_gb
+
+  # Ablation Study Settings
+  ablation:
+    components:
+      - "retrieval_only"
+      - "reranking_effect"
+      - "graph_structure_contribution"
+      - "multi_hop_reasoning"
+
+# Infrastructure Configuration
+infrastructure:
+  hardware:
+    gpu: "NVIDIA RTX 3090Ti"
+    vram: 24  # GB
+    cpu: "AMD Ryzen 9 5950X"
+    ram: 64  # GB
+
+  software:
+    python: "3.11"
+    cuda: "12.1"
+    pytorch: "2.1.0"
+    langchain: "0.2.0"
+    neo4j: "5.18"
+    vllm: "0.4.0"
+
+# Cost Analysis Configuration
+cost_analysis:
+  hardware_cost:
+    gpu: 2000  # USD
+    server: 500  # USD
+    total_initial: 2500
+
+  api_costs:
+    gpt5_kg_construction: 500  # One-time cost
+    gpt4o_evaluation: 100  # For LLM-as-Judge
+
+  operational_period: 5  # Years
+  daily_queries: 4000
+
+# Output Configuration
+output:
+  results_dir: "results/{timestamp}_{experiment_name}"
+  artifacts:
+    save_retrieved_contexts: true
+    save_generated_answers: true
+    save_evaluation_details: true
+
+  reports:
+    generate_tables: true
+    generate_figures: true
+    format: ["json", "csv", "latex"]
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "logs/{timestamp}_experiment.log"
+  console: true
+  track_wandb: false  # Set to true if using Weights & Biases
