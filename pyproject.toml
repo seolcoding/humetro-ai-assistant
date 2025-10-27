@@ -8,6 +8,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "python-dotenv>=1.2.1",
     "requests>=2.32.5",
+    "tqdm>=4.67.1",
 ]
 
 [dependency-groups]

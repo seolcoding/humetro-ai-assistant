@@ -17,11 +17,13 @@ import time
 import sqlite3
 import logging
 import threading
+import sys
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import requests
+from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
@@ -31,10 +33,14 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler('dasan_scan.log'),
-        logging.StreamHandler()
+        logging.StreamHandler(sys.stdout)
     ]
 )
 logger = logging.getLogger(__name__)
+
+# Force flush output for real-time logging
+sys.stdout.reconfigure(line_buffering=True)
+sys.stderr.reconfigure(line_buffering=True)
 
 
 class DasanCacheDB:
@@ -307,55 +313,58 @@ class DasanFetcherWithCache:
                 self.stats["total_valid"] += 1
             return (seq, is_valid)
 
-        # Scan in batches for better progress tracking
-        batch_size = max_workers * 10
-        current = start
+        # Use tqdm for progress bar
+        with tqdm(total=total, desc=f"Scanning {type_name}", unit="seq",
+                 bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, {rate_fmt}]') as pbar:
 
-        while current <= end:
-            batch_end = min(current + batch_size - 1, end)
-            batch_sequences = range(current, batch_end + 1)
+            # Scan in batches for better progress tracking
+            batch_size = max_workers * 10
+            current = start
 
-            # Process batch in parallel
-            with ThreadPoolExecutor(max_workers=max_workers) as executor:
-                futures = {
-                    executor.submit(check_seq, seq): seq
-                    for seq in batch_sequences
-                }
+            while current <= end:
+                batch_end = min(current + batch_size - 1, end)
+                batch_sequences = range(current, batch_end + 1)
 
-                for future in as_completed(futures):
-                    seq, is_valid = future.result()
+                # Process batch in parallel
+                with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                    futures = {
+                        executor.submit(check_seq, seq): seq
+                        for seq in batch_sequences
+                    }
 
-                    if is_valid:
-                        valid_sequences.append(seq)
-                        logger.info(f"✓ Found: {seq}")
+                    for future in as_completed(futures):
+                        seq, is_valid = future.result()
 
-                    # Progress reporting
-                    processed = self.stats["total_checked"]
-                    if processed % checkpoint_interval == 0:
-                        elapsed = time.time() - scan_start_time
-                        rate = processed / elapsed if elapsed > 0 else 0
-                        remaining = total - processed
-                        eta_seconds = remaining / rate if rate > 0 else 0
-                        eta = timedelta(seconds=int(eta_seconds))
+                        if is_valid:
+                            valid_sequences.append(seq)
+                            tqdm.write(f"✓ Found: {seq}")
 
-                        percent = (processed / total) * 100
+                        # Update progress bar
+                        pbar.update(1)
+                        pbar.set_postfix({
+                            'valid': self.stats['total_valid'],
+                            'cache': f"{(self.stats['cache_hits']/max(1,self.stats['total_checked'])*100):.0f}%",
+                            'api': self.stats['api_calls']
+                        })
 
-                        logger.info("=" * 70)
-                        logger.info(f"Progress: {processed:,}/{total:,} ({percent:.1f}%)")
-                        logger.info(f"Valid: {self.stats['total_valid']:,} | Cache hits: {self.stats['cache_hits']:,} | API calls: {self.stats['api_calls']:,}")
-                        logger.info(f"Rate: {rate:.1f} seq/s | ETA: {eta}")
-                        logger.info("=" * 70)
+                        # Save checkpoint periodically
+                        processed = self.stats["total_checked"]
+                        if processed % checkpoint_interval == 0:
+                            self.db.save_progress(
+                                scan_id, data_type, start, end, seq,
+                                self.stats["total_valid"], processed, False
+                            )
 
-                        # Save checkpoint
-                        self.db.save_progress(
-                            scan_id, data_type, start, end, seq,
-                            self.stats["total_valid"], processed, False
-                        )
-                        last_checkpoint_time = time.time()
+                            # Log summary
+                            elapsed = time.time() - scan_start_time
+                            rate = processed / elapsed if elapsed > 0 else 0
+                            tqdm.write(f"Checkpoint: {processed:,}/{total:,} | "
+                                     f"Valid: {self.stats['total_valid']:,} | "
+                                     f"Rate: {rate:.1f}/s")
 
-                    time.sleep(0.05)  # Rate limiting
+                        time.sleep(0.05)  # Rate limiting
 
-            current = batch_end + 1
+                current = batch_end + 1
 
         # Save final progress
         self.db.save_progress(
