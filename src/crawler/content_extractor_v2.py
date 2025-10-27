@@ -341,6 +341,9 @@ class SeoulTrafficContentExtractorV2:
                 doc.entities_preview
             )
 
+        # Check if this is an error page
+        is_error, error_reason = self._is_error_page(title, main_text)
+
         return PageMetadata(
             url=url,
             title=title,
@@ -360,7 +363,9 @@ class SeoulTrafficContentExtractorV2:
             has_attachments=has_attachments,
             attachment_types=attachment_types,
             total_attachment_size=total_attachment_size,
-            attachment_count=len(attached_documents)
+            attachment_count=len(attached_documents),
+            is_error_page=is_error,
+            error_reason=error_reason
         )
 
     def _classify_page_type(self, url: str, html: str, title: str) -> PageType:
@@ -371,6 +376,30 @@ class SeoulTrafficContentExtractorV2:
             return PageType.LIST
         else:
             return PageType.OTHER
+
+    def _is_error_page(self, title: str, content: str) -> tuple[bool, Optional[str]]:
+        """
+        Detect if page is an error page based on title and content.
+
+        Returns:
+            (is_error, error_reason)
+        """
+        error_keywords = [
+            '오류', '에러', 'error', 'not found', '404', '500',
+            '찾을 수 없', '페이지가 없', 'page not found',
+            '잘못된 접근', 'invalid', 'forbidden', '403'
+        ]
+
+        title_lower = title.lower()
+        content_lower = content[:500].lower()  # Check first 500 chars
+
+        for keyword in error_keywords:
+            if keyword in title_lower:
+                return True, f"Error keyword in title: '{keyword}'"
+            if keyword in content_lower and len(content) < 200:  # Short content with error keywords
+                return True, f"Error keyword in content: '{keyword}'"
+
+        return False, None
 
     def _find_siblings(self, url: str, url_tree: Dict[str, Dict]) -> List[str]:
         """Find sibling URLs in the tree"""
@@ -393,19 +422,28 @@ class SeoulTrafficContentExtractorV2:
     ) -> None:
         """
         Save HTML, Markdown, and JSON metadata to disk.
+
+        For error pages:
+        - HTML is saved for debugging
+        - Markdown is NOT saved (filtered out)
+        - Metadata JSON is saved with error flags
         """
         # Generate filename from URL
         from urllib.parse import urlparse
         parsed = urlparse(metadata.url)
         filename = parsed.path.strip('/').replace('/', '_') or 'index'
 
-        # Save HTML
+        # Save HTML (always, even for error pages)
         html_path = self.raw_html_dir / f"{filename}.html"
         html_path.write_text(html, encoding='utf-8')
 
-        # Save Markdown
-        md_path = self.markdown_dir / f"{filename}.md"
-        md_path.write_text(markdown, encoding='utf-8')
+        # Save Markdown (skip for error pages)
+        if not metadata.is_error_page:
+            md_path = self.markdown_dir / f"{filename}.md"
+            md_path.write_text(markdown, encoding='utf-8')
+            logger.debug(f"Saved markdown: {md_path}")
+        else:
+            logger.info(f"Skipped markdown for error page: {metadata.url} ({metadata.error_reason})")
 
         # Save metadata JSON
         json_path = self.metadata_dir / f"{filename}.json"

@@ -110,6 +110,8 @@ class PageMetadata(BaseModel):
     attachment_types: List[AttachmentType] = Field(default_factory=list)
     total_attachment_size: int = 0
     attachment_count: int = 0
+    is_error_page: bool = False
+    error_reason: Optional[str] = None
 
     class Config:
         json_encoders = {datetime: lambda v: v.isoformat()}
