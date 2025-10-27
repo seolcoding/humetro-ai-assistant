@@ -195,10 +195,11 @@ logs/
 # Vectorstore
 data/vectorstore/
 
+# API Cache
+data/dasan_api_cache/
+
 # Temporary files
 temp/
 tmp/
 *.tmp
 data/dasan_call/raw/aihubshell
-.gitignore
-.DS_Store

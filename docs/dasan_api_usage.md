@@ -25,6 +25,7 @@ http://openAPI.seoul.go.kr:8088/{KEY}/json/{SERVICE}/1/1/{FAQ_TP}/{SEQ_NO}/
 ### Data Format
 
 #### FAQ Response
+
 ```json
 {
   "SearchDetailsFAQService": {
@@ -45,6 +46,7 @@ http://openAPI.seoul.go.kr:8088/{KEY}/json/{SERVICE}/1/1/{FAQ_TP}/{SEQ_NO}/
 ```
 
 #### Work Manual Response
+
 ```json
 {
   "SearchDetailsSeoulWorkmanualService": {
@@ -77,6 +79,7 @@ uv run python scripts/fetch_dasan_api_data.py
 ```
 
 **Features:**
+
 - Fetches sample data from known sequences
 - Caches responses locally
 - Handles rate limiting
@@ -101,6 +104,7 @@ uv run python scripts/fetch_all_dasan_types.py --start 280000 --end 300000
 ```
 
 **Features:**
+
 - Scans ranges of sequence numbers to find valid entries
 - Parallel scanning with configurable workers
 - Fetches all three FAQ types (F, S, J)
@@ -112,6 +116,7 @@ uv run python scripts/fetch_all_dasan_types.py --start 280000 --end 300000
 Utility for discovering valid sequence numbers.
 
 **Features:**
+
 - Binary search to find valid sequence ranges
 - Parallel sequence checking
 - Smart scanning strategies
@@ -168,11 +173,13 @@ fetcher.save_data("faq", faq_sequences, faq_details, "my_scan")
 ## Environment Setup
 
 1. Create `.env` file:
+
 ```bash
 SEOUL_DATA_API_KEY=your_api_key_here
 ```
 
 2. Install dependencies:
+
 ```bash
 uv add python-dotenv requests types-requests
 ```
@@ -204,6 +211,6 @@ uv add python-dotenv requests types-requests
 
 ## Related Documentation
 
-- Seoul Open Data Portal: https://data.seoul.go.kr
+- Seoul Open Data Portal: <https://data.seoul.go.kr>
 - API Documentation: Check `docs/api_documentation/`
 - Dataset Analysis: See `notebooks/dasan_call_center_eda.ipynb`

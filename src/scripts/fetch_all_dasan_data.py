@@ -71,7 +71,7 @@ class CompleteDasanAPIClient:
                 if attempt == max_retries - 1:
                     print(f"Request failed: {e}")
                     return None
-                time.sleep(2 ** attempt)
+                time.sleep(2**attempt)
 
         return None
 
@@ -90,10 +90,7 @@ class CompleteDasanAPIClient:
         return None
 
     def fetch_faq_list(
-        self,
-        start_idx: int = 1,
-        end_idx: int = 1000,
-        use_cache: bool = True
+        self, start_idx: int = 1, end_idx: int = 1000, use_cache: bool = True
     ) -> Optional[Dict]:
         """
         Fetch FAQ list using the list API.
@@ -121,7 +118,7 @@ class CompleteDasanAPIClient:
             "SearchFAQKnowlegeService",
             "ListFAQService",
             "SearchFAQListService",
-            "FAQListService"
+            "FAQListService",
         ]
 
         for service_name in possible_services:
@@ -138,10 +135,7 @@ class CompleteDasanAPIClient:
         return None
 
     def fetch_workmanual_list(
-        self,
-        start_idx: int = 1,
-        end_idx: int = 1000,
-        use_cache: bool = True
+        self, start_idx: int = 1, end_idx: int = 1000, use_cache: bool = True
     ) -> Optional[Dict]:
         """
         Fetch work manual list using the list API.
@@ -165,7 +159,7 @@ class CompleteDasanAPIClient:
         possible_services = [
             "SearchSeoulWorkmanualService",
             "ListWorkmanualService",
-            "WorkmanualListService"
+            "WorkmanualListService",
         ]
 
         for service_name in possible_services:
@@ -187,7 +181,7 @@ class CompleteDasanAPIClient:
         batch_size: int = 1000,
         max_items: Optional[int] = None,
         use_cache: bool = True,
-        delay: float = 1.0
+        delay: float = 1.0,
     ) -> List[Dict]:
         """
         Fetch all items using pagination.
@@ -240,7 +234,9 @@ class CompleteDasanAPIClient:
                 print(f"  → Got {len(items)} items (total so far: {len(all_items)})")
 
                 # Check if we've reached the end
-                if end_idx >= total_count or (max_items and len(all_items) >= max_items):
+                if end_idx >= total_count or (
+                    max_items and len(all_items) >= max_items
+                ):
                     break
             else:
                 break
@@ -252,10 +248,7 @@ class CompleteDasanAPIClient:
         return all_items
 
     def fetch_detail(
-        self,
-        service_type: str,
-        seq_no: str,
-        use_cache: bool = True
+        self, service_type: str, seq_no: str, use_cache: bool = True
     ) -> Optional[Dict]:
         """
         Fetch detailed information for a specific item.
@@ -309,10 +302,7 @@ def main():
     print("\n[1/2] Attempting to fetch FAQ list...")
     print("-" * 70)
     faq_list = client.fetch_all_with_pagination(
-        "faq",
-        batch_size=1000,
-        use_cache=True,
-        delay=1.0
+        "faq", batch_size=1000, use_cache=True, delay=1.0
     )
 
     if faq_list:
@@ -324,7 +314,11 @@ def main():
 
         # Extract sequence numbers and fetch details
         print("\nFetching FAQ details...")
-        seq_numbers = [str(int(item.get("FAQ_SEQNO", 0))) for item in faq_list if "FAQ_SEQNO" in item]
+        seq_numbers = [
+            str(int(item.get("FAQ_SEQNO", 0)))
+            for item in faq_list
+            if "FAQ_SEQNO" in item
+        ]
         print(f"Found {len(seq_numbers)} FAQ sequence numbers")
 
         # Fetch first 10 details as sample
@@ -341,10 +335,7 @@ def main():
     print("\n[2/2] Attempting to fetch work manual list...")
     print("-" * 70)
     workmanual_list = client.fetch_all_with_pagination(
-        "workmanual",
-        batch_size=1000,
-        use_cache=True,
-        delay=1.0
+        "workmanual", batch_size=1000, use_cache=True, delay=1.0
     )
 
     if workmanual_list:
@@ -356,7 +347,11 @@ def main():
 
         # Extract sequence numbers and fetch details
         print("\nFetching work manual details...")
-        seq_numbers = [str(int(item.get("FAQ_SEQNO", 0))) for item in workmanual_list if "FAQ_SEQNO" in item]
+        seq_numbers = [
+            str(int(item.get("FAQ_SEQNO", 0)))
+            for item in workmanual_list
+            if "FAQ_SEQNO" in item
+        ]
         print(f"Found {len(seq_numbers)} work manual sequence numbers")
 
         # Fetch first 10 details as sample

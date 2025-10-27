@@ -60,14 +60,11 @@ class SequenceScanner:
 
             return False
 
-        except Exception as e:
+        except Exception:
             return False
 
     def binary_search_range(
-        self,
-        service_type: str,
-        min_seq: int,
-        max_seq: int
+        self, service_type: str, min_seq: int, max_seq: int
     ) -> tuple[int, int]:
         """
         Use binary search to find the approximate range of valid sequences.
@@ -101,7 +98,7 @@ class SequenceScanner:
             time.sleep(0.2)
 
         if not first_valid:
-            print(f"No valid sequences found in range")
+            print("No valid sequences found in range")
             return (0, 0)
 
         # Find last valid sequence
@@ -131,7 +128,7 @@ class SequenceScanner:
         start: int,
         end: int,
         step: int = 1,
-        max_workers: int = 5
+        max_workers: int = 5,
     ) -> List[int]:
         """
         Scan a range of sequence numbers to find valid ones.
@@ -172,7 +169,9 @@ class SequenceScanner:
 
                 completed += 1
                 if completed % 100 == 0:
-                    print(f"  Progress: {completed}/{total} ({completed*100//total}%)")
+                    print(
+                        f"  Progress: {completed}/{total} ({completed * 100 // total}%)"
+                    )
 
                 time.sleep(0.1)  # Rate limiting
 
@@ -183,7 +182,7 @@ class SequenceScanner:
         self,
         service_type: str,
         estimated_range: tuple[int, int] = (1, 400000),
-        sample_step: int = 1000
+        sample_step: int = 1000,
     ) -> List[int]:
         """
         Smart scanning strategy combining binary search and sampling.
@@ -196,15 +195,13 @@ class SequenceScanner:
         Returns:
             List of all valid sequence numbers
         """
-        print(f"\n{'='*70}")
+        print(f"\n{'=' * 70}")
         print(f"Smart Scan: {service_type}")
-        print(f"{'='*70}")
+        print(f"{'=' * 70}")
 
         # Step 1: Binary search to find approximate range
         first_valid, last_valid = self.binary_search_range(
-            service_type,
-            estimated_range[0],
-            estimated_range[1]
+            service_type, estimated_range[0], estimated_range[1]
         )
 
         if first_valid == 0:
@@ -213,18 +210,14 @@ class SequenceScanner:
         # Step 2: Do a coarse scan to identify dense regions
         print(f"\nPhase 2: Coarse sampling (step={sample_step})...")
         coarse_valid = self.scan_range(
-            service_type,
-            first_valid,
-            last_valid,
-            step=sample_step,
-            max_workers=5
+            service_type, first_valid, last_valid, step=sample_step, max_workers=5
         )
 
         print(f"\nFound {len(coarse_valid)} sequences in coarse scan")
 
         # Step 3: Fine scan around found sequences
         all_valid = set(coarse_valid)
-        print(f"\nPhase 3: Fine scanning around found sequences...")
+        print("\nPhase 3: Fine scanning around found sequences...")
 
         for seq in coarse_valid:
             # Scan in a window around each found sequence
@@ -233,11 +226,7 @@ class SequenceScanner:
 
             print(f"  Scanning window around {seq} ({window_start}-{window_end})...")
             window_valid = self.scan_range(
-                service_type,
-                window_start,
-                window_end,
-                step=1,
-                max_workers=10
+                service_type, window_start, window_end, step=1, max_workers=10
             )
             all_valid.update(window_valid)
 
@@ -280,7 +269,7 @@ def main():
         faq_sequences = scanner.smart_scan(
             "faq",
             estimated_range=(280000, 300000),  # Based on sample data
-            sample_step=100
+            sample_step=100,
         )
         scanner.save_sequences("faq", faq_sequences)
 
@@ -289,7 +278,7 @@ def main():
         manual_sequences = scanner.smart_scan(
             "workmanual",
             estimated_range=(280000, 300000),  # Based on sample data
-            sample_step=100
+            sample_step=100,
         )
         scanner.save_sequences("workmanual", manual_sequences)
 
