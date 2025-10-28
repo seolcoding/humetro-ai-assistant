@@ -10,8 +10,11 @@ from pathlib import Path
 from typing import List, Dict, Optional
 from datetime import datetime
 import logging
+import aiofiles
 
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
+from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
+from crawl4ai.deep_crawling.filters import FilterChain, URLPatternFilter
 from playwright.async_api import Browser, BrowserContext, Page
 
 from src.config.schemas import (
@@ -113,12 +116,162 @@ class SeoulTrafficContentExtractorV2:
             **kwargs
         )
 
+    def _get_filename_from_url(self, url: str) -> str:
+        """Generate filename from URL."""
+        from urllib.parse import urlparse
+        parsed = urlparse(url)
+        return parsed.path.strip('/').replace('/', '_') or 'index'
+
+    def _is_page_cached(self, url: str) -> bool:
+        """
+        Check if a page has already been crawled.
+
+        Args:
+            url: Page URL to check
+
+        Returns:
+            True if metadata file exists, False otherwise
+        """
+        filename = self._get_filename_from_url(url)
+        metadata_path = self.metadata_dir / f"{filename}.json"
+        return metadata_path.exists()
+
+    def _load_cached_metadata(self, url: str) -> Optional[PageMetadata]:
+        """
+        Load cached metadata for a URL.
+
+        Args:
+            url: Page URL to load
+
+        Returns:
+            PageMetadata if cached, None otherwise
+        """
+        filename = self._get_filename_from_url(url)
+        metadata_path = self.metadata_dir / f"{filename}.json"
+
+        if not metadata_path.exists():
+            return None
+
+        try:
+            import json
+            with open(metadata_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return PageMetadata(**data)
+        except Exception as e:
+            logger.warning(f"Failed to load cached metadata for {url}: {e}")
+            return None
+
+    async def extract_with_deep_crawl(
+        self,
+        start_url: str,
+        max_pages: int = 200,
+        batch_size: int = 10,
+        delay_between_batches: float = 2.0,
+        skip_existing: bool = True
+    ) -> List[PageMetadata]:
+        """
+        Extract content using deep crawling from a start URL.
+
+        Uses BFSDeepCrawlStrategy to automatically discover article URLs,
+        then extracts content from discovered pages.
+
+        Args:
+            start_url: Starting URL (category/list page)
+            max_pages: Maximum number of pages to crawl
+            batch_size: Number of URLs to process in parallel
+            delay_between_batches: Delay in seconds between batches
+            skip_existing: If True, skip URLs that have already been crawled (default: True)
+
+        Returns:
+            List of PageMetadata objects with complete information
+        """
+        # URL pattern filter for all Seoul Traffic News URLs
+        url_filter = URLPatternFilter(
+            patterns=["*news.seoul.go.kr/traffic/*"]
+        )
+
+        # Deep crawl strategy
+        deep_crawl_strategy = BFSDeepCrawlStrategy(
+            max_depth=4,  # Deep recursive discovery
+            include_external=False,
+            max_pages=max_pages,
+            filter_chain=FilterChain([url_filter])
+        )
+
+        # Build URL tree from start
+        url_tree = {start_url: {"parent_url": None, "depth": 0}}
+        urls = [{"url": start_url, "depth": 0}]
+
+        logger.info(f"🔍 Starting deep crawl from: {start_url}")
+        logger.info(f"   Max pages: {max_pages}, Batch size: {batch_size}")
+
+        # Configure crawler with deep crawl strategy
+        browser_config = BrowserConfig(
+            headless=self.headless,
+            verbose=self.verbose,
+            extra_args=["--disable-blink-features=AutomationControlled"],
+            downloads_path=str(self.download_dir)
+        )
+
+        # Exclude menu elements
+        excluded_elements = [
+            '#head', '#gnb_part', '#gnb_sec', '#search', '.top-area', '.gnb',
+            '#skipNavi', '#AllBox', '.gnbsingle', '#lnb', '.lnb_tit',
+            '.lnb_1depth', '.lnb_2depth', '#sub_h3', '.loc', '.invisible'
+        ]
+
+        crawler_config = CrawlerRunConfig(
+            word_count_threshold=10,
+            excluded_tags=['nav', 'footer', 'aside'],
+            excluded_selector=', '.join(excluded_elements),
+            exclude_external_links=True,
+            process_iframes=True,
+            remove_overlay_elements=True,
+            screenshot=False,
+            deep_crawl_strategy=deep_crawl_strategy,  # Enable deep crawling
+            cache_mode="enabled"  # Enable crawl4ai's built-in cache
+        )
+
+        # Run deep crawl
+        async with AsyncWebCrawler(config=browser_config) as crawler:
+            logger.info("🕷️  Running deep crawl...")
+            result = await crawler.arun(url=start_url, config=crawler_config)
+
+            # Extract discovered URLs from deep crawl results
+            # crawl4ai returns list of results when deep_crawl_strategy is used
+            crawl_results = result if isinstance(result, list) else [result]
+
+            discovered_urls = []
+            for crawl_result in crawl_results:
+                if crawl_result.success:
+                    # Include all /traffic/** URLs
+                    discovered_urls.append(crawl_result.url)
+                    url_tree[crawl_result.url] = {
+                        "parent_url": start_url,
+                        "depth": 1
+                    }
+
+            logger.info(f"✓ Discovered {len(discovered_urls)} article URLs")
+
+        # Convert to URL dict format
+        url_dicts = [{"url": url, "depth": 1} for url in discovered_urls]
+
+        # Extract content from discovered URLs using existing method
+        return await self.extract_with_metadata(
+            urls=url_dicts,
+            url_tree=url_tree,
+            batch_size=batch_size,
+            delay_between_batches=delay_between_batches,
+            skip_existing=skip_existing
+        )
+
     async def extract_with_metadata(
         self,
         urls: List[Dict],
         url_tree: Dict[str, Dict],
         batch_size: int = 5,
-        delay_between_batches: float = 2.0
+        delay_between_batches: float = 2.0,
+        skip_existing: bool = True
     ) -> List[PageMetadata]:
         """
         Extract content from URLs with rich metadata including attachments.
@@ -128,6 +281,7 @@ class SeoulTrafficContentExtractorV2:
             url_tree: Tree structure metadata from TreeStructureAnalyzer
             batch_size: Number of URLs to process in parallel
             delay_between_batches: Delay in seconds between batches
+            skip_existing: If True, skip URLs that have already been crawled (default: True)
 
         Returns:
             List of PageMetadata objects with complete information
@@ -142,14 +296,36 @@ class SeoulTrafficContentExtractorV2:
             downloads_path=str(self.download_dir)
         )
 
-        # Crawler configuration
+        # Crawler configuration with menu exclusion
+        # Exclude all navigation and menu elements
+        excluded_elements = [
+            '#head',           # Header
+            '#gnb_part',       # Global navigation part
+            '#gnb_sec',        # Global navigation section
+            '#search',         # Search area
+            '.top-area',       # Top navigation area
+            '.gnb',            # Global navigation bar
+            '#skipNavi',       # Skip navigation
+            '#AllBox',         # All menu box
+            '.gnbsingle',      # Global navigation single
+            '#lnb',            # Left navigation bar
+            '.lnb_tit',        # LNB title
+            '.lnb_1depth',     # LNB depth 1
+            '.lnb_2depth',     # LNB depth 2
+            '#sub_h3',         # Sub heading
+            '.loc',            # Location/breadcrumb
+            '.invisible',      # Invisible elements (skip to content, etc)
+        ]
+
         crawler_config = CrawlerRunConfig(
             word_count_threshold=10,
             excluded_tags=['nav', 'footer', 'aside'],
+            excluded_selector=', '.join(excluded_elements),
             exclude_external_links=True,
             process_iframes=True,
             remove_overlay_elements=True,
-            screenshot=False
+            screenshot=False,
+            cache_mode="enabled"  # Enable crawl4ai's built-in cache
         )
 
         async with AsyncWebCrawler(config=browser_config) as crawler:
@@ -158,27 +334,49 @@ class SeoulTrafficContentExtractorV2:
                 batch = urls[i:i + batch_size]
                 logger.info(f"Processing batch {i//batch_size + 1}: {len(batch)} URLs")
 
-                # Extract batch in parallel
-                batch_results = await asyncio.gather(
-                    *[
-                        self._extract_single_page(
-                            crawler,
-                            url_info,
-                            url_tree,
-                            crawler_config
-                        )
-                        for url_info in batch
-                    ],
-                    return_exceptions=True
-                )
+                # Filter batch: check cache if skip_existing is enabled
+                urls_to_crawl = []
+                cached_count = 0
+                for url_info in batch:
+                    url = url_info['url']
 
-                # Collect successful results
-                for result in batch_results:
-                    if isinstance(result, PageMetadata):
-                        all_metadata.append(result)
-                        logger.info(f"✓ Extracted: {result.url}")
-                    elif isinstance(result, Exception):
-                        logger.error(f"✗ Extraction failed: {result}")
+                    if skip_existing and self._is_page_cached(url):
+                        # Load from cache
+                        cached_metadata = self._load_cached_metadata(url)
+                        if cached_metadata:
+                            all_metadata.append(cached_metadata)
+                            cached_count += 1
+                            print(f"⚡ Cached: {url}")
+                            logger.info(f"⚡ Cached: {url}")
+                            continue
+
+                    urls_to_crawl.append(url_info)
+
+                if cached_count > 0:
+                    print(f"   Skipped {cached_count} cached pages in batch")
+
+                # Extract uncached URLs in parallel
+                if urls_to_crawl:
+                    batch_results = await asyncio.gather(
+                        *[
+                            self._extract_single_page(
+                                crawler,
+                                url_info,
+                                url_tree,
+                                crawler_config
+                            )
+                            for url_info in urls_to_crawl
+                        ],
+                        return_exceptions=True
+                    )
+
+                    # Collect successful results
+                    for result in batch_results:
+                        if isinstance(result, PageMetadata):
+                            all_metadata.append(result)
+                            logger.info(f"✓ Extracted: {result.url}")
+                        elif isinstance(result, Exception):
+                            logger.error(f"✗ Extraction failed: {result}")
 
                 # Delay between batches
                 if i + batch_size < len(urls):
@@ -421,36 +619,41 @@ class SeoulTrafficContentExtractorV2:
         markdown: str
     ) -> None:
         """
-        Save HTML, Markdown, and JSON metadata to disk.
+        Save HTML, Markdown, and JSON metadata to disk with async I/O.
 
         For error pages:
         - HTML is saved for debugging
         - Markdown is NOT saved (filtered out)
         - Metadata JSON is saved with error flags
+
+        Uses aiofiles for proper async file I/O with explicit flushing
+        to ensure immediate persistence (no buffering).
         """
         # Generate filename from URL
-        from urllib.parse import urlparse
-        parsed = urlparse(metadata.url)
-        filename = parsed.path.strip('/').replace('/', '_') or 'index'
+        filename = self._get_filename_from_url(metadata.url)
 
-        # Save HTML (always, even for error pages)
+        # Save HTML (always, even for error pages) - async with explicit flush
         html_path = self.raw_html_dir / f"{filename}.html"
-        html_path.write_text(html, encoding='utf-8')
+        async with aiofiles.open(html_path, 'w', encoding='utf-8') as f:
+            await f.write(html)
+            await f.flush()  # Explicit flush for immediate persistence
 
-        # Save Markdown (skip for error pages)
+        # Save Markdown (skip for error pages) - async with explicit flush
         if not metadata.is_error_page:
             md_path = self.markdown_dir / f"{filename}.md"
-            md_path.write_text(markdown, encoding='utf-8')
+            async with aiofiles.open(md_path, 'w', encoding='utf-8') as f:
+                await f.write(markdown)
+                await f.flush()  # Explicit flush for immediate persistence
             logger.debug(f"Saved markdown: {md_path}")
         else:
             logger.info(f"Skipped markdown for error page: {metadata.url} ({metadata.error_reason})")
 
-        # Save metadata JSON
+        # Save metadata JSON - async with explicit flush
         json_path = self.metadata_dir / f"{filename}.json"
-        json_path.write_text(
-            metadata.model_dump_json(indent=2),
-            encoding='utf-8'
-        )
+        json_content = metadata.model_dump_json(indent=2)
+        async with aiofiles.open(json_path, 'w', encoding='utf-8') as f:
+            await f.write(json_content)
+            await f.flush()  # Explicit flush for immediate persistence
 
         logger.debug(f"Saved files for: {filename}")
 
@@ -475,9 +678,7 @@ class SeoulTrafficContentExtractorV2:
             metadata.incoming_links = incoming_map.get(metadata.url, [])
 
             # Re-save updated metadata
-            from urllib.parse import urlparse
-            parsed = urlparse(metadata.url)
-            filename = parsed.path.strip('/').replace('/', '_') or 'index'
+            filename = self._get_filename_from_url(metadata.url)
             json_path = self.metadata_dir / f"{filename}.json"
             json_path.write_text(
                 metadata.model_dump_json(indent=2),
