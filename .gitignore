@@ -130,6 +130,7 @@ venv.bak/
 
 # MCP configuration (contains API keys)
 .mcp.json
+smith.key
 
 # Spyder project settings
 .spyderproject
