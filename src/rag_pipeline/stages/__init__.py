@@ -12,10 +12,16 @@ from src.rag_pipeline.stages.stage_02_chunking import (
     ChunkingStage,
     create_chunking_stage
 )
+from src.rag_pipeline.stages.stage_03_embedding import (
+    EmbeddingStage,
+    create_embedding_stage
+)
 
 __all__ = [
     "DataCollectionStage",
     "create_data_collection_stage",
     "ChunkingStage",
     "create_chunking_stage",
+    "EmbeddingStage",
+    "create_embedding_stage",
 ]

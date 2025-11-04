@@ -162,7 +162,7 @@ class DataCollectionStage:
             glob="*.md",
             loader_cls=TextLoader,
             loader_kwargs={"encoding": "utf-8"},
-            show_progress=True if self.logger and self.logger.verbose else False
+            show_progress=False  # Don't show progress bar
         )
 
         documents = loader.load()
