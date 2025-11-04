@@ -128,6 +128,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# MCP configuration (contains API keys)
+.mcp.json
+
 # Spyder project settings
 .spyderproject
 .spyproject
