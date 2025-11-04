@@ -1,30 +1,33 @@
 """
 Knowledge graph generation module.
 
-This module provides knowledge graph generation functionality
-using RAGAS framework for enhanced RAG retrieval.
+PLACEHOLDER: This module will provide knowledge graph generation
+functionality using RAGAS framework for enhanced RAG retrieval.
+
+Status: Not implemented yet - deferred to later phase.
+
+Planned features:
+- RAGAS-based knowledge graph construction from documents
+- Node extraction (headlines, keyphrases, entities)
+- Relationship building between entities
+- Graph statistics and visualization support
+- Integration with evaluation framework
+
+Dependencies:
+- ragas.testset.graph: KnowledgeGraph, Node, NodeType
+- ragas.testset.transforms: apply_transforms, extractors
 """
 
-from typing import List, Optional
+from typing import List, Optional, Any
 from langchain_core.documents import Document
-from ragas.testset import KnowledgeGraph
-from ragas.testset.graph import Node, NodeType
-from ragas.testset.transforms import (
-    Transforms,
-    HeadlinesExtractor,
-    HeadlineSplitter,
-    KeyphrasesExtractor
-)
-
 from src.common.logger import RAGLogger
 
 
 class KnowledgeGraphBuilder:
     """
-    Builds knowledge graphs from documents using RAGAS.
+    PLACEHOLDER: Knowledge graph builder using RAGAS.
 
-    Creates structured knowledge representation for improved
-    RAG retrieval and evaluation.
+    This class will be implemented in a later phase.
     """
 
     def __init__(
@@ -32,121 +35,34 @@ class KnowledgeGraphBuilder:
         llm_model: str = "gpt-4o-mini",
         logger: Optional[RAGLogger] = None
     ):
-        """
-        Initialize knowledge graph builder.
-
-        Args:
-            llm_model: LLM model for knowledge extraction
-            logger: Optional RAG logger
-        """
+        """Initialize placeholder KG builder."""
         self.llm_model = llm_model
         self.logger = logger
+        if self.logger:
+            self.logger.warning("KnowledgeGraphBuilder is a placeholder - not implemented yet")
 
-        # Initialize transforms
-        self.transforms = self._create_transforms()
-
-    def _create_transforms(self) -> Transforms:
+    def build_from_documents(self, documents: List[Document]) -> Any:
         """
-        Create RAGAS transforms for knowledge extraction.
-
-        Returns:
-            Transforms instance
-        """
-        return Transforms(
-            HeadlinesExtractor(),
-            HeadlineSplitter(),
-            KeyphrasesExtractor()
-        )
-
-    def build_from_documents(self, documents: List[Document]) -> KnowledgeGraph:
-        """
-        Build knowledge graph from documents.
+        PLACEHOLDER: Build knowledge graph from documents.
 
         Args:
             documents: List of documents to process
 
         Returns:
-            KnowledgeGraph instance
+            None (not implemented)
+
+        Raises:
+            NotImplementedError: This feature is not yet implemented
         """
-        if self.logger:
-            self.logger.info(f"Building knowledge graph from {len(documents)} documents")
-
-        # Create initial knowledge graph
-        kg = KnowledgeGraph()
-
-        # Add documents as nodes
-        for doc in documents:
-            node = Node(
-                type=NodeType.DOCUMENT,
-                properties={
-                    "content": doc.page_content,
-                    "metadata": doc.metadata
-                }
-            )
-            kg.nodes.append(node)
-
-        if self.logger:
-            self.logger.info(f"Created initial KG with {len(kg.nodes)} document nodes")
-
-        # Apply transforms
-        if self.logger:
-            self.logger.info("Applying knowledge extraction transforms...")
-
-        kg = self.transforms.apply(kg)
-
-        if self.logger:
-            self.logger.info(f"KG transformation complete: {len(kg.nodes)} total nodes")
-
-        return kg
-
-    def get_kg_stats(self, kg: KnowledgeGraph) -> dict:
-        """
-        Get knowledge graph statistics.
-
-        Args:
-            kg: Knowledge graph instance
-
-        Returns:
-            Dictionary with KG statistics
-        """
-        node_types = {}
-        for node in kg.nodes:
-            node_type = node.type.value if hasattr(node.type, 'value') else str(node.type)
-            node_types[node_type] = node_types.get(node_type, 0) + 1
-
-        return {
-            "total_nodes": len(kg.nodes),
-            "total_relationships": len(kg.relationships),
-            "node_types": node_types
-        }
-
-    def print_stats(self, kg: KnowledgeGraph):
-        """Print knowledge graph statistics."""
-        stats = self.get_kg_stats(kg)
-
-        print(f"\n{'='*60}")
-        print(f"KNOWLEDGE GRAPH STATISTICS")
-        print(f"{'='*60}")
-        print(f"Total nodes: {stats['total_nodes']:,}")
-        print(f"Total relationships: {stats['total_relationships']:,}")
-        print(f"\nNode types:")
-        for node_type, count in stats['node_types'].items():
-            print(f"  - {node_type}: {count:,}")
-        print(f"{'='*60}\n")
+        raise NotImplementedError(
+            "Knowledge graph building is deferred to a later phase. "
+            "Use other core modules (chunking, embedding, retrieval) for now."
+        )
 
 
 def create_kg_builder(
     llm_model: str = "gpt-4o-mini",
     logger: Optional[RAGLogger] = None
 ) -> KnowledgeGraphBuilder:
-    """
-    Create knowledge graph builder.
-
-    Args:
-        llm_model: LLM model for knowledge extraction
-        logger: Optional RAG logger
-
-    Returns:
-        KnowledgeGraphBuilder instance
-    """
+    """Create placeholder KG builder."""
     return KnowledgeGraphBuilder(llm_model=llm_model, logger=logger)
