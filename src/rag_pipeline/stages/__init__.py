@@ -8,8 +8,14 @@ from src.rag_pipeline.stages.stage_01_data_collection import (
     DataCollectionStage,
     create_data_collection_stage
 )
+from src.rag_pipeline.stages.stage_02_chunking import (
+    ChunkingStage,
+    create_chunking_stage
+)
 
 __all__ = [
     "DataCollectionStage",
     "create_data_collection_stage",
+    "ChunkingStage",
+    "create_chunking_stage",
 ]
