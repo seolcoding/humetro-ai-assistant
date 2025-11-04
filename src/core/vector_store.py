@@ -8,8 +8,8 @@ FAISS backend and caching strategy.
 from typing import List, Optional
 from pathlib import Path
 from langchain_community.vectorstores import FAISS
-from langchain.schema import Document
-from langchain.embeddings.base import Embeddings
+from langchain_core.documents import Document
+from langchain_core.embeddings import Embeddings
 
 from src.common.logger import RAGLogger
 

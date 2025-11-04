@@ -8,7 +8,7 @@ to avoid duplicate API calls and reduce costs.
 from typing import List, Optional
 from pathlib import Path
 from langchain_openai import OpenAIEmbeddings
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 from src.experiments.cache_manager import VectorEmbeddingCache
 from src.common.logger import RAGLogger

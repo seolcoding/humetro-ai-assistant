@@ -7,9 +7,7 @@ including similarity search and retriever creation.
 
 from typing import List, Optional
 from langchain_community.vectorstores import FAISS
-from langchain.schema import Document
-from langchain.retrievers import ContextualCompressionRetriever
-from langchain.retrievers.document_compressors import LLMChainExtractor
+from langchain_core.documents import Document
 
 from src.common.logger import RAGLogger
 

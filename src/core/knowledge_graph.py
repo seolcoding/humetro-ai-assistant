@@ -6,7 +6,7 @@ using RAGAS framework for enhanced RAG retrieval.
 """
 
 from typing import List, Optional
-from langchain.schema import Document
+from langchain_core.documents import Document
 from ragas.testset import KnowledgeGraph
 from ragas.testset.graph import Node, NodeType
 from ragas.testset.transforms import (

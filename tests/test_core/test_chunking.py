@@ -1,7 +1,7 @@
 """Tests for TextChunker."""
 
 import pytest
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 from src.core.chunking import TextChunker, create_chunker
 
