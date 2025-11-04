@@ -1,0 +1,178 @@
+{
+  "config": {
+    "base_url": "http://100.95.220.92:11434",
+    "experiment": {
+      "max_tokens": 256,
+      "temperature": 0.1,
+      "top_p": 0.9,
+      "repeat_penalty": 1.1,
+      "timeout": 120,
+      "batch_size": 5
+    },
+    "metrics": [
+      "response_time",
+      "tokens_per_second",
+      "memory_usage",
+      "accuracy",
+      "relevance"
+    ]
+  },
+  "results": [
+    {
+      "model": "EXAONE-3.5-7.8B",
+      "ollama_name": "exaone3.5:7.8b",
+      "size": "7.8B",
+      "category": "korean",
+      "status": "success",
+      "load_time": 1.9627647399902344,
+      "responses": [
+        {
+          "prompt": "서울시 120 다산콜센터는 무엇인가요?",
+          "category": "정보",
+          "response": "서울시 120 다산콜센터는 서울시민들이 다양한 행정 정보와 서비스에 쉽게 접근할 수 있도록 도와주는 **통합 민원 안내 및 상담 시스템**입니다. \n\n주요 기능은 다음과 같습니다:\n\n* **행정 안내:** 서울시 정책, 제도, 시설 등에 대한 문의 답변 제공\n* **민원 처리 지원:**  허가 신청, 신고 접수 등의 행정 업무 안내 및 지원\n* **교통 정보 제공:** 버스 노선, 지하철 운행 정보 등 실시간 교통 상황 안내\n* **생활 정보 제공:** 병원, 학교, 도서관 등 생활 편의시설 위치 안내\n* **긴급 상황 대처:** 재난 상황 발생 시 연락처 안내 등 긴급 상황 대응 지원\n\n**전화번호는 120번으로 통일되어 있으며,  다양한 언어로 상담 서비스를 제공합니다.**  \n\n더 자세한 정보나 특정 분야에 대한 문의 사항이 있으시면 알려주세요! 😊",
+          "inference_time": 1.7695081233978271,
+          "response_length": 427
+        },
+        {
+          "prompt": "코로나19 백신 접종 예약은 어떻게 하나요?",
+          "category": "절차",
+          "response": "코로나19 백신 접종 예약 방법은 국가와 지역에 따라 다르지만, 일반적으로 다음과 같은 단계를 따르실 수 있습니다:\n\n### 한국의 경우 (질병관리청 안내):\n1. **예방접종도우미 사이트 방문**: [https://nip.kdca.go.kr/](https://nip.kdca.go.kr) 에서 예약을 진행합니다.\n2. **로그인 또는 회원가입**: 주민등록번호나 외국인등록번호를 이용한 로그인이 필요할 수 있습니다 (첫 방문자는 회원가입 필수).\n3. **접종 대상 확인 및 선택**: 본인의 연령, 직업 등에 따라 접종 가능 여부와 우선순위가 달라집니다. 해당 정보를 입력하고 맞는 옵션을 선택합니다.\n4. **예약 날짜 및 장소 선택**: 가까운 접종 기관과 예약 가능한 시간을 선택하세요.\n5. **개인정보 확인 후 완료**: 모든 정보를 정확히 입력하고 예약을 완료합니다.\n6. **문자 또는 이메일 알림**: 예약이 완료되면 예약 확인서와 함께 접종 일정에 대한 안내 문자나 이메일을 받게 됩니다.\n7. **접종 전 확인사항**: 예약 날짜가 다가오",
+          "inference_time": 2.201331853866577,
+          "response_length": 537
+        },
+        {
+          "prompt": "주민등록등본을 온라인으로 발급받는 방법을 알려주세요.",
+          "category": "민원",
+          "response": "온라인으로 주민등록등본을 발급받으려면 다음 단계를 따라 해보세요:\n\n1. **정부24 홈페이지 방문**: \n   - 웹 브라우저에서 [정부24](https://www.gov.kr/) 사이트로 접속합니다.\n\n2. **로그인**:\n   - 회원가입이 되어 있지 않다면, 기본 발급 서비스를 이용할 수 있습니다. 아이디와 비밀번호로 로그인하거나, 공인인증서 등을 이용한 인증 절차를 거칩니다 (필요한 경우).\n     - **비회원 발급**: 별도의 회원가입 없이도 발급 가능합니다.\n   - 개인정보 보호를 위해 필요한 인증 단계를 완료해야 합니다.\n\n3. **서비스 선택**:\n   - 사이트 상단 메뉴에서 \"주민등록\" 또는 검색 창에 \"등본발급\"을 입력하여 관련 서비스를 찾습니다.\n     - 보통 \"민원신청\" > \"주민등록\" > \"등본발급\" 등의 경로로 이동합니다.\n\n4. **발급 신청**:\n   - 원하는 발급 항목 (예: 본인, 가족 등)과 발급 사유를 선택하고, 필요한 정보(이름, 주민번호",
+          "inference_time": 2.182159900665283,
+          "response_length": 504
+        }
+      ],
+      "metrics": {
+        "avg_response_time": 2.050999959309896,
+        "total_time": 6.1529998779296875,
+        "tokens_per_second": 52.98228611532004,
+        "avg_response_length": 489.3333333333333
+      },
+      "error": null,
+      "timestamp": "2025-10-29T23:13:23.695976"
+    },
+    {
+      "model": "Qwen3-8B",
+      "ollama_name": "qwen3:8b",
+      "size": "8B",
+      "category": "multilingual",
+      "status": "success",
+      "load_time": 4.758129835128784,
+      "responses": [
+        {
+          "prompt": "서울시 120 다산콜센터는 무엇인가요?",
+          "category": "정보",
+          "response": "<think>\nOkay, the user is asking about Seoul's 120 Dason Call Center. First, I need to confirm what exactly they're referring to. The term \"Dason\" might be a typo or a specific name. Let me think.\n\nIn South Korea, there's a well-known emergency number called 119 for fire and rescue services. However, the user mentioned 120, which is commonly used in some countries like China for emergencies. But Seoul, being part of South Korea, would use 119. Maybe there's confusion here.\n\nWait, could it be that \"Dason\" refers to a specific service or organization? I'm not immediately familiar with a \"Dason Call Center\" in Seoul. Let me check if there's any official information about this. \n\nAlternatively, maybe the user is referring to the 120 emergency number but mistakenly called it Dason. Or perhaps they're mixing up different services. It's possible that the user meant the Seoul Metropolitan Government's general inquiry line or another service.\n\nI should also consider that sometimes local governments have their own hotlines for specific issues, like public transportation or health. For example, Seoul has a 120 number for emergency medical services, but I",
+          "inference_time": 2.4156782627105713,
+          "response_length": 1161
+        },
+        {
+          "prompt": "코로나19 백신 접종 예약은 어떻게 하나요?",
+          "category": "절차",
+          "response": "<think>\nOkay, the user is asking how to book a COVID-19 vaccine appointment. Let me start by recalling the different methods available in South Korea.\n\nFirst, there's the official government website, which I think is \"코로나19 백신 예약\" or something similar. They might have an online portal where you can select your preferred vaccine and location. Also, there are mobile apps like \"질병관리청 앱\" that provide real-time updates on available slots.\n\nThen there's the phone reservation system. I remember there's a dedicated number for this, maybe 1339 or something else? Wait, in South Korea, the health hotline is often 1339, so that might be it. They should have options to book through the call center.\n\nAnother option is using local government websites. Each city or province has their own site where you can check availability and make a reservation. For example, Seoul's website would have specific information for residents there.\n\nHealthcare institutions like hospitals and clinics also offer in-person reservations. People might prefer this if they want to avoid online steps. They should contact the facility directly to schedule an appointment.\n\nI should mention that it's important to check eligibility first. The government has certain criteria",
+          "inference_time": 3.228817939758301,
+          "response_length": 1246
+        },
+        {
+          "prompt": "주민등록등본을 온라인으로 발급받는 방법을 알려주세요.",
+          "category": "민원",
+          "response": "<think>\nOkay, the user is asking how to get a resident registration certificate online. Let me start by recalling the process in South Korea.\n\nFirst, I need to mention the official website for this. The National Tax Service (NTS) has an online service called \"My Number\" or \"주민등록증 발급\". Wait, actually, the correct term might be \"주민등록등본\" which is the resident registration certificate. \n\nSo, the steps would involve logging into the NTS website with a My Number. But wait, some people might not have their My Number yet. Maybe they can use other methods like a bank account or mobile phone number? I should check that.\n\nAlso, there's an option to get it through the National Police Agency's website if you're in a different region. Wait, no, the NTS handles this. Let me confirm the exact process.\n\nAnother thing is that some people might use the \"e-Gov\" portal or other government services. But the main method is via the NTS site. Also, there are mobile apps like \"My Number App\" which can be used for this purpose.\n\nI should outline the steps clearly: accessing the website, logging in with My Number, selecting the certificate type (original or",
+          "inference_time": 2.378042221069336,
+          "response_length": 1147
+        }
+      ],
+      "metrics": {
+        "avg_response_time": 2.674179474512736,
+        "total_time": 8.022538423538208,
+        "tokens_per_second": 72.29631936673238,
+        "avg_response_length": 1184.6666666666667
+      },
+      "error": null,
+      "timestamp": "2025-10-29T23:13:34.005436"
+    },
+    {
+      "model": "Gemma3-12B",
+      "ollama_name": "gemma3:12b",
+      "size": "12.2B",
+      "category": "efficient",
+      "status": "success",
+      "load_time": 8.228564977645874,
+      "responses": [
+        {
+          "prompt": "서울시 120 다산콜센터는 무엇인가요?",
+          "category": "정보",
+          "response": "서울시 120 다산콜센터는 서울시민을 위한 **종합 민원 상담 및 정보 제공 서비스**입니다. \n\n**주요 기능:**\n\n*   **민원 상담:** 서울시 관련 민원(교통, 환경, 복지, 세금 등)에 대한 상담 및 처리\n*   **정보 제공:** 서울시 관련 정책, 행사, 시설 이용 안내 등 다양한 정보 제공\n*   **긴급 상황 신고 지원:** 화재, 범죄 등 긴급 상황 발생 시 관련 기관 연결 지원\n*   **전문 상담 연계:** 정신 건강, 법률, 보건 등 전문 상담 기관 안내 및 연계\n\n**운영 시간:** 24시간 연중무휴\n\n**연락처:** 120 (유료)\n\n**홈페이지:** [https://www.120.go.kr/](https://www.120.go.kr/)\n\n**참고:** 120 다산콜센터는 서울시 뿐만 아니라 전국 어디서든 이용 가능하며, 서울시 관련 문의 외 다른 지역의 문의도 처리합니다.",
+          "inference_time": 3.4179530143737793,
+          "response_length": 455
+        },
+        {
+          "prompt": "코로나19 백신 접종 예약은 어떻게 하나요?",
+          "category": "절차",
+          "response": "코로나19 백신 접종 예약 방법은 다음과 같습니다.\n\n**1. 예방접종 사전예약 시스템 이용:**\n\n*   **인터넷:** 코로나19 예방접종 사전예약 시스템 ([https://ncvr.kdca.go.kr/](https://ncvr.kdca.go.kr/)) 에 접속하여 예약합니다.\n    *   본인 인증 후 접종 가능 여부 확인 및 접종 기관, 날짜, 시간을 선택하여 예약합니다.\n    *   예약 시에는 주민등록번호, 휴대폰 번호 등 개인 정보가 필요합니다.\n*   **모바일 앱:** '코로나19 예방접종' 앱을 다운로드하여 예약합니다.\n    *   앱을 설치하고 본인 인증 후 예약 절차를 진행합니다.\n\n**2. 전화 예약:**\n\n*   **1339 콜센터:** 24시간 운영되며, 전화 상담 및 예약이 가능합니다.\n*   **지역 보건소:** 거주 지역 보건소에 전화하여 예약합니다.\n\n**3. 방문 예약:**\n\n*   **보건소 또는 지정 의료기관:** 일부 보건소 또는 지정 의료",
+          "inference_time": 3.6076900959014893,
+          "response_length": 502
+        },
+        {
+          "prompt": "주민등록등본을 온라인으로 발급받는 방법을 알려주세요.",
+          "category": "민원",
+          "response": "주민등록등본을 온라인으로 발급받는 방법은 다음과 같습니다.\n\n**1. 정부24 웹사이트 또는 앱 이용:**\n\n*   **웹사이트:** [https://www.gov.kr/](https://www.gov.kr/) 에 접속하여 \"주민등록등본\"을 검색합니다.\n*   **앱:** 스마트폰에 '정부24' 앱을 설치하고 실행합니다. (앱 스토어에서 '정부24' 검색)\n\n**2. 본인 인증:**\n\n*   **공인인증서:** 가장 일반적인 방법입니다. 공인인증서를 PC 또는 모바일 기기에 설치하고 로그인합니다.\n*   **간편인증:** 카카오톡, 네이버, 토스 등 간편 인증 서비스를 이용하여 본인 인증을 할 수 있습니다.\n*   **휴대폰 인증:** 본인 명의의 휴대폰을 이용하여 인증할 수 있습니다.\n\n**3. 발급 정보 입력:**\n\n*   발급받을 주민등록등본의 종류를 선택합니다. (주소 변동 이력 포함 여부 등)\n*   필요한 경우, 발급 대상을 선택합니다. (본인",
+          "inference_time": 3.6227338314056396,
+          "response_length": 484
+        }
+      ],
+      "metrics": {
+        "avg_response_time": 3.5494589805603027,
+        "total_time": 10.648376941680908,
+        "tokens_per_second": 27.234197435747593,
+        "avg_response_length": 480.3333333333333
+      },
+      "error": null,
+      "timestamp": "2025-10-29T23:13:49.088815"
+    },
+    {
+      "model": "GPT-OSS-20B",
+      "ollama_name": "gpt-oss:20b",
+      "size": "20B",
+      "category": "large",
+      "status": "success",
+      "load_time": 11.069540023803711,
+      "responses": [
+        {
+          "prompt": "서울시 120 다산콜센터는 무엇인가요?",
+          "category": "정보",
+          "response": "",
+          "inference_time": 2.382230043411255,
+          "response_length": 0
+        },
+        {
+          "prompt": "코로나19 백신 접종 예약은 어떻게 하나요?",
+          "category": "절차",
+          "response": "",
+          "inference_time": 2.2978880405426025,
+          "response_length": 0
+        },
+        {
+          "prompt": "주민등록등본을 온라인으로 발급받는 방법을 알려주세요.",
+          "category": "민원",
+          "response": "",
+          "inference_time": 2.323807954788208,
+          "response_length": 0
+        }
+      ],
+      "metrics": {
+        "avg_response_time": 2.334642012914022,
+        "total_time": 7.003926038742065,
+        "tokens_per_second": 0.0,
+        "avg_response_length": 0.0
+      },
+      "error": null,
+      "timestamp": "2025-10-29T23:14:10.269565"
+    }
+  ]
+}

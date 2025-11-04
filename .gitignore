@@ -200,6 +200,13 @@ logs/
 # Vectorstore
 data/vectorstore/
 
+# Vector Store & Embedding Cache
+*.faiss
+*.pkl
+chroma_db/
+vector_cache/
+embeddings_cache/
+
 # API Cache
 data/dasan_api_cache/
 
@@ -209,3 +216,6 @@ tmp/
 *.tmp
 data/dasan_call/raw/aihubshell
 Neo4j*.txt
+
+
+vectorstore/
