@@ -1,4 +1,9 @@
-# Core RAG Modules
+# Core RAG Modules [LEGACY]
+
+> ⚠️ **LEGACY CODE**: 이 디렉토리의 코드는 레거시 버전입니다.
+> 새로운 RAG 파이프라인은 `src/rag_pipeline/` 디렉토리를 참조하세요.
+>
+> 이 코드는 RAGAS 평가 및 이전 실험을 위해 보존되었습니다.
 
 RAG 파이프라인의 핵심 재사용 모듈들입니다.
 
