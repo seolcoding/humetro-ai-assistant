@@ -9,12 +9,14 @@
 RAG 파이프라인을 위한 종합적인 로깅 시스템을 제공합니다.
 
 **주요 기능:**
+
 - 다중 로그 파일 (pipeline, API calls, errors, metrics)
 - 구조화된 JSON 로깅
 - API 호출 비용 추적
 - 실험별 로그 디렉토리
 
 **사용 예시:**
+
 ```python
 from src.common.logger import get_logger
 
@@ -51,12 +53,14 @@ logger.print_summary()
 .env 파일에서 환경변수를 로드하고 검증하는 유틸리티를 제공합니다.
 
 **주요 기능:**
+
 - .env 파일 로딩
 - 필수 변수 검증
 - 타입 변환 (int, bool, Path)
 - RAG 파이프라인 전용 환경변수 로더
 
 **사용 예시:**
+
 ```python
 from src.common.env_loader import EnvLoader, load_rag_env
 
@@ -78,6 +82,7 @@ values = EnvLoader.validate_env_vars(["VAR1", "VAR2", "VAR3"])
 프로젝트 루트 및 주요 디렉토리 경로를 관리합니다 (기존 모듈).
 
 **사용 예시:**
+
 ```python
 from src.common.project_paths import get_project_root
 

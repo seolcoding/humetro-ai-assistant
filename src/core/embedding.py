@@ -27,7 +27,7 @@ class CachedEmbeddingGenerator:
         model: str = "text-embedding-3-small",
         cache_dir: Optional[Path] = None,
         logger: Optional[RAGLogger] = None,
-        batch_size: int = 100
+        batch_size: int = 100,
     ):
         """
         Initialize embedding generator with cache.
@@ -81,7 +81,7 @@ class CachedEmbeddingGenerator:
                 self.model,
                 new_embeddings,
                 tokens_list=[self._estimate_tokens(text) for text in uncached_texts],
-                costs_list=[self._estimate_cost(text) for text in uncached_texts]
+                costs_list=[self._estimate_cost(text) for text in uncached_texts],
             )
 
             # Merge cached and new embeddings
@@ -102,7 +102,7 @@ class CachedEmbeddingGenerator:
                 operation="embedding",
                 tokens=total_tokens,
                 cost=total_cost,
-                cached=False
+                cached=False,
             )
 
         return cached_embeddings
@@ -134,7 +134,7 @@ class CachedEmbeddingGenerator:
             self.model,
             embedding,
             tokens=self._estimate_tokens(text),
-            cost=self._estimate_cost(text)
+            cost=self._estimate_cost(text),
         )
 
         # Log API call
@@ -145,7 +145,7 @@ class CachedEmbeddingGenerator:
                 operation="embedding",
                 tokens=self._estimate_tokens(text),
                 cost=self._estimate_cost(text),
-                cached=False
+                cached=False,
             )
 
         return embedding
@@ -164,7 +164,7 @@ class CachedEmbeddingGenerator:
 
         # Process in batches
         for i in range(0, len(texts), self.batch_size):
-            batch = texts[i:i + self.batch_size]
+            batch = texts[i : i + self.batch_size]
             batch_embeddings = self.embeddings.embed_documents(batch)
             embeddings.extend(batch_embeddings)
             self.api_calls += len(batch)
@@ -216,28 +216,28 @@ class CachedEmbeddingGenerator:
             "cache_hits": self.cache_hits,
             "cache_hit_rate": cache_hit_rate,
             "total_cached_items": cache_stats["total_items"],
-            "total_saved_cost": cache_stats["total_saved_cost"]
+            "total_saved_cost": cache_stats["total_saved_cost"],
         }
 
     def print_stats(self):
         """Print embedding statistics."""
         stats = self.get_stats()
 
-        print(f"\n{'='*60}")
-        print(f"EMBEDDING STATISTICS")
-        print(f"{'='*60}")
+        print(f"\n{'=' * 60}")
+        print("EMBEDDING STATISTICS")
+        print(f"{'=' * 60}")
         print(f"API calls: {stats['api_calls']:,}")
         print(f"Cache hits: {stats['cache_hits']:,}")
         print(f"Cache hit rate: {stats['cache_hit_rate']:.1%}")
         print(f"Total cached items: {stats['total_cached_items']:,}")
         print(f"Total saved cost: ${stats['total_saved_cost']:.4f}")
-        print(f"{'='*60}\n")
+        print(f"{'=' * 60}\n")
 
 
 def create_embedding_generator(
     model: str = "text-embedding-3-small",
     cache_dir: Optional[Path] = None,
-    logger: Optional[RAGLogger] = None
+    logger: Optional[RAGLogger] = None,
 ) -> CachedEmbeddingGenerator:
     """
     Create embedding generator with cache.
@@ -250,8 +250,4 @@ def create_embedding_generator(
     Returns:
         CachedEmbeddingGenerator instance
     """
-    return CachedEmbeddingGenerator(
-        model=model,
-        cache_dir=cache_dir,
-        logger=logger
-    )
+    return CachedEmbeddingGenerator(model=model, cache_dir=cache_dir, logger=logger)

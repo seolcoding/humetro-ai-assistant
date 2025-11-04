@@ -21,7 +21,7 @@ class TextChunker:
         self,
         chunk_size: int = 1024,
         chunk_overlap: int = 256,
-        separators: List[str] = None
+        separators: List[str] = None,
     ):
         """
         Initialize text chunker.
@@ -42,7 +42,7 @@ class TextChunker:
             chunk_size=chunk_size,
             chunk_overlap=chunk_overlap,
             length_function=len,
-            separators=separators
+            separators=separators,
         )
 
     def chunk_documents(self, documents: List[Document]) -> List[Document]:
@@ -92,7 +92,7 @@ class TextChunker:
                 "total_chunks": 0,
                 "avg_length": 0,
                 "min_length": 0,
-                "max_length": 0
+                "max_length": 0,
             }
 
         chunk_lengths = [len(chunk.page_content) for chunk in chunks]
@@ -101,14 +101,11 @@ class TextChunker:
             "total_chunks": len(chunks),
             "avg_length": sum(chunk_lengths) / len(chunk_lengths),
             "min_length": min(chunk_lengths),
-            "max_length": max(chunk_lengths)
+            "max_length": max(chunk_lengths),
         }
 
 
-def create_chunker(
-    chunk_size: int = 1024,
-    chunk_overlap: int = 256
-) -> TextChunker:
+def create_chunker(chunk_size: int = 1024, chunk_overlap: int = 256) -> TextChunker:
     """
     Create a text chunker with default settings.
 

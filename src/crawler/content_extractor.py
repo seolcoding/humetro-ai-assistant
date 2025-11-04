@@ -1,18 +1,40 @@
 """
-Seoul Traffic News Content Extractor with Attachment Handling
+Configuration-Driven Content Extractor with crawl4ai
 
-This module orchestrates the extraction of content from Seoul traffic news pages,
-including detection and processing of attached documents (PDF, HWP, XLSX, etc.)
-that may be opened in popup windows.
+Unified content extraction orchestrator that:
+- Uses YAML-based site configuration for flexibility
+- Supports deep crawling with BFSDeepCrawlStrategy
+- Handles attachments (PDF, HWP, XLSX, etc.) via popup detection
+- Provides caching to skip already-crawled pages
+- Enables multi-site support through domain-specific configs
+
+Usage:
+    # Initialize from domain config
+    extractor = ContentExtractor.from_domain(
+        domain="news.seoul.go.kr",
+        output_dir=Path("./data/crawled"),
+        download_dir=Path("./data/downloads")
+    )
+
+    # Run deep crawl
+    results = await extractor.extract_with_deep_crawl(
+        start_url="https://news.seoul.go.kr/traffic/archives/category/all",
+        max_pages=200
+    )
 """
 
 import asyncio
+import json
 from pathlib import Path
 from typing import List, Dict, Optional
 from datetime import datetime
+from urllib.parse import urlparse
 import logging
+import aiofiles
 
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
+from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
+from crawl4ai.deep_crawling.filters import FilterChain, URLPatternFilter
 from playwright.async_api import Browser, BrowserContext, Page
 
 from src.config.schemas import (
@@ -23,34 +45,48 @@ from src.config.schemas import (
     AttachedDocument,
     AttachmentType
 )
-from src.crawler.popup_handler import PopupWindowHandler
-from src.crawler.document_parser import DocumentParser
-from src.crawler.tree_analyzer import TreeStructureAnalyzer
-from src.crawler.link_analyzer import LinkContextAnalyzer
+from src.config.site_config import SiteConfig, load_site_config
+from src.crawler.extractors import ConfigBasedExtractor
+from src.crawler.extractors.base import ExtractionResult
 from src.utils.entity_preview import SimpleEntityExtractor
 
 logger = logging.getLogger(__name__)
 
 
-class SeoulTrafficContentExtractor:
+class ContentExtractor:
     """
-    Main content extraction orchestrator with attachment handling.
+    Configuration-driven content extraction orchestrator.
 
     Features:
+    - YAML-based site configuration (easy to add new sites)
+    - Deep crawling with automatic URL discovery (BFS strategy)
     - Rich metadata extraction with tree structure preservation
     - Popup window detection for attached documents
     - Multi-format document parsing (PDF, HWP, XLSX, DOCX)
     - Link context analysis for Knowledge Graph preparation
+    - Caching support to skip already-crawled pages
     - Simple entity preview for each page
     """
 
     def __init__(
         self,
+        site_config: SiteConfig,
         output_dir: Path,
         download_dir: Path,
         headless: bool = True,
         verbose: bool = True
     ):
+        """
+        Initialize content extractor with site configuration.
+
+        Args:
+            site_config: Site-specific configuration (loaded from YAML)
+            output_dir: Output directory for extracted content
+            download_dir: Directory for downloaded attachments
+            headless: Run browser in headless mode
+            verbose: Enable verbose logging
+        """
+        self.site_config = site_config
         self.output_dir = output_dir
         self.download_dir = download_dir
         self.headless = headless
@@ -70,39 +106,148 @@ class SeoulTrafficContentExtractor:
         ]:
             directory.mkdir(parents=True, exist_ok=True)
 
-        # Initialize analyzers
-        self.tree_analyzer = TreeStructureAnalyzer()
-        self.link_analyzer = LinkContextAnalyzer()
+        # Initialize extractors
+        self.extractor = ConfigBasedExtractor(site_config)
         self.entity_extractor = SimpleEntityExtractor()
 
-        # Initialize handlers (will be created per session)
-        self.popup_handler: Optional[PopupWindowHandler] = None
-        self.document_parser: Optional[DocumentParser] = None
+        logger.info(
+            f"ContentExtractor initialized for {site_config.site_name} "
+            f"with output_dir={output_dir}"
+        )
 
-        logger.info(f"ContentExtractor initialized with output_dir={output_dir}")
-
-    async def extract_with_metadata(
-        self,
-        urls: List[Dict],
-        url_tree: Dict[str, Dict],
-        batch_size: int = 5,
-        delay_between_batches: float = 2.0
-    ) -> List[PageMetadata]:
+    @classmethod
+    def from_domain(
+        cls,
+        domain: str,
+        output_dir: Path,
+        download_dir: Path,
+        **kwargs
+    ) -> "ContentExtractor":
         """
-        Extract content from URLs with rich metadata including attachments.
+        Create extractor by loading configuration for a domain.
 
         Args:
-            urls: List of URL dictionaries from URL discovery
-            url_tree: Tree structure metadata from TreeStructureAnalyzer
+            domain: Domain name (e.g., 'news.seoul.go.kr')
+            output_dir: Output directory for extracted content
+            download_dir: Directory for downloaded attachments
+            **kwargs: Additional arguments for __init__
+
+        Returns:
+            ContentExtractor instance
+
+        Example:
+            extractor = ContentExtractor.from_domain(
+                domain="news.seoul.go.kr",
+                output_dir=Path("./data/crawled"),
+                download_dir=Path("./data/downloads")
+            )
+        """
+        site_config = load_site_config(domain)
+        return cls(
+            site_config=site_config,
+            output_dir=output_dir,
+            download_dir=download_dir,
+            **kwargs
+        )
+
+    def _get_filename_from_url(self, url: str) -> str:
+        """Generate filename from URL."""
+        parsed = urlparse(url)
+        return parsed.path.strip('/').replace('/', '_') or 'index'
+
+    def _is_page_cached(self, url: str) -> bool:
+        """
+        Check if a page has already been crawled.
+
+        Args:
+            url: Page URL to check
+
+        Returns:
+            True if metadata file exists, False otherwise
+        """
+        filename = self._get_filename_from_url(url)
+        metadata_path = self.metadata_dir / f"{filename}.json"
+        return metadata_path.exists()
+
+    def _load_cached_metadata(self, url: str) -> Optional[PageMetadata]:
+        """
+        Load cached metadata for a URL.
+
+        Args:
+            url: Page URL to load
+
+        Returns:
+            PageMetadata if cached, None otherwise
+        """
+        filename = self._get_filename_from_url(url)
+        metadata_path = self.metadata_dir / f"{filename}.json"
+
+        if not metadata_path.exists():
+            return None
+
+        try:
+            with open(metadata_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return PageMetadata(**data)
+        except Exception as e:
+            logger.warning(f"Failed to load cached metadata for {url}: {e}")
+            return None
+
+    async def extract_with_deep_crawl(
+        self,
+        start_url: str,
+        max_pages: int = 200,
+        batch_size: int = 10,
+        delay_between_batches: float = 2.0,
+        skip_existing: bool = True
+    ) -> List[PageMetadata]:
+        """
+        Extract content using deep crawling from a start URL.
+
+        Uses BFSDeepCrawlStrategy to automatically discover article URLs,
+        then extracts content from discovered pages.
+
+        Args:
+            start_url: Starting URL (category/list page)
+            max_pages: Maximum number of pages to crawl
             batch_size: Number of URLs to process in parallel
             delay_between_batches: Delay in seconds between batches
+            skip_existing: If True, skip URLs that have already been crawled (default: True)
 
         Returns:
             List of PageMetadata objects with complete information
-        """
-        all_metadata: List[PageMetadata] = []
 
-        # Browser configuration for attachment handling
+        Example:
+            results = await extractor.extract_with_deep_crawl(
+                start_url="https://news.seoul.go.kr/traffic/archives/category/all",
+                max_pages=200,
+                skip_existing=True
+            )
+        """
+        # URL pattern filter based on site config
+        url_patterns = self.site_config.url_patterns.get('article_patterns', [])
+        if not url_patterns:
+            # Fallback: use domain-based filter
+            url_patterns = [f"*{self.site_config.domain}/*"]
+
+        url_filter = URLPatternFilter(patterns=url_patterns)
+
+        # Deep crawl strategy
+        max_depth = self.site_config.crawl_rules.get('max_depth', 4)
+        deep_crawl_strategy = BFSDeepCrawlStrategy(
+            max_depth=max_depth,
+            include_external=False,
+            max_pages=max_pages,
+            filter_chain=FilterChain([url_filter])
+        )
+
+        # Build URL tree from start
+        url_tree = {start_url: {"parent_url": None, "depth": 0}}
+
+        logger.info(f"🔍 Starting deep crawl from: {start_url}")
+        logger.info(f"   Max pages: {max_pages}, Batch size: {batch_size}")
+
+        # Configure crawler with deep crawl strategy
         browser_config = BrowserConfig(
             headless=self.headless,
             verbose=self.verbose,
@@ -110,53 +255,145 @@ class SeoulTrafficContentExtractor:
             downloads_path=str(self.download_dir)
         )
 
-        # Crawler configuration
+        # Build excluded elements from config
+        excluded_elements = self._build_excluded_selectors()
+
         crawler_config = CrawlerRunConfig(
             word_count_threshold=10,
             excluded_tags=['nav', 'footer', 'aside'],
+            excluded_selector=', '.join(excluded_elements) if excluded_elements else None,
             exclude_external_links=True,
             process_iframes=True,
             remove_overlay_elements=True,
-            screenshot=False  # Can enable for visual archival
+            screenshot=False,
+            deep_crawl_strategy=deep_crawl_strategy,
+            cache_mode="enabled"
+        )
+
+        # Run deep crawl
+        async with AsyncWebCrawler(config=browser_config) as crawler:
+            logger.info("🕷️  Running deep crawl...")
+            result = await crawler.arun(url=start_url, config=crawler_config)
+
+            # Extract discovered URLs from deep crawl results
+            crawl_results = result if isinstance(result, list) else [result]
+
+            discovered_urls = []
+            for crawl_result in crawl_results:
+                if crawl_result.success:
+                    discovered_urls.append(crawl_result.url)
+                    url_tree[crawl_result.url] = {
+                        "parent_url": start_url,
+                        "depth": 1
+                    }
+
+            logger.info(f"✓ Discovered {len(discovered_urls)} article URLs")
+
+        # Convert to URL dict format
+        url_dicts = [{"url": url, "depth": 1} for url in discovered_urls]
+
+        # Extract content from discovered URLs
+        return await self.extract_with_metadata(
+            urls=url_dicts,
+            url_tree=url_tree,
+            batch_size=batch_size,
+            delay_between_batches=delay_between_batches,
+            skip_existing=skip_existing
+        )
+
+    async def extract_with_metadata(
+        self,
+        urls: List[Dict],
+        url_tree: Dict[str, Dict],
+        batch_size: int = 5,
+        delay_between_batches: float = 2.0,
+        skip_existing: bool = True
+    ) -> List[PageMetadata]:
+        """
+        Extract content from URLs with rich metadata.
+
+        Args:
+            urls: List of URL dictionaries (each with 'url' and 'depth' keys)
+            url_tree: Tree structure metadata
+            batch_size: Number of URLs to process in parallel
+            delay_between_batches: Delay in seconds between batches
+            skip_existing: If True, skip URLs that have already been crawled
+
+        Returns:
+            List of PageMetadata objects
+        """
+        all_metadata: List[PageMetadata] = []
+
+        # Browser configuration
+        browser_config = BrowserConfig(
+            headless=self.headless,
+            verbose=self.verbose,
+            extra_args=["--disable-blink-features=AutomationControlled"],
+            downloads_path=str(self.download_dir)
+        )
+
+        # Build excluded elements from config
+        excluded_elements = self._build_excluded_selectors()
+
+        crawler_config = CrawlerRunConfig(
+            word_count_threshold=10,
+            excluded_tags=['nav', 'footer', 'aside'],
+            excluded_selector=', '.join(excluded_elements) if excluded_elements else None,
+            exclude_external_links=True,
+            process_iframes=True,
+            remove_overlay_elements=True,
+            screenshot=False,
+            cache_mode="enabled"
         )
 
         async with AsyncWebCrawler(config=browser_config) as crawler:
-            # Initialize handlers with crawler's browser context
-            self.popup_handler = PopupWindowHandler(
-                download_dir=self.attachments_dir,
-                timeout=10000
-            )
-            self.document_parser = DocumentParser(
-                attachments_dir=self.attachments_dir,
-                entity_extractor=self.entity_extractor
-            )
-
             # Process URLs in batches
             for i in range(0, len(urls), batch_size):
                 batch = urls[i:i + batch_size]
                 logger.info(f"Processing batch {i//batch_size + 1}: {len(batch)} URLs")
 
-                # Extract batch in parallel
-                batch_results = await asyncio.gather(
-                    *[
-                        self._extract_single_page(
-                            crawler,
-                            url_info,
-                            url_tree,
-                            crawler_config
-                        )
-                        for url_info in batch
-                    ],
-                    return_exceptions=True
-                )
+                # Filter batch: check cache if skip_existing is enabled
+                urls_to_crawl = []
+                cached_count = 0
+                for url_info in batch:
+                    url = url_info['url']
 
-                # Collect successful results
-                for result in batch_results:
-                    if isinstance(result, PageMetadata):
-                        all_metadata.append(result)
-                        logger.info(f"✓ Extracted: {result.url}")
-                    elif isinstance(result, Exception):
-                        logger.error(f"✗ Extraction failed: {result}")
+                    if skip_existing and self._is_page_cached(url):
+                        # Load from cache
+                        cached_metadata = self._load_cached_metadata(url)
+                        if cached_metadata:
+                            all_metadata.append(cached_metadata)
+                            cached_count += 1
+                            logger.info(f"⚡ Cached: {url}")
+                            continue
+
+                    urls_to_crawl.append(url_info)
+
+                if cached_count > 0:
+                    logger.info(f"Loaded {cached_count} pages from cache")
+
+                # Extract batch in parallel
+                if urls_to_crawl:
+                    batch_results = await asyncio.gather(
+                        *[
+                            self._extract_single_page(
+                                crawler,
+                                url_info,
+                                url_tree,
+                                crawler_config
+                            )
+                            for url_info in urls_to_crawl
+                        ],
+                        return_exceptions=True
+                    )
+
+                    # Collect successful results
+                    for result in batch_results:
+                        if isinstance(result, PageMetadata):
+                            all_metadata.append(result)
+                            logger.info(f"✓ Extracted: {result.url}")
+                        elif isinstance(result, Exception):
+                            logger.error(f"✗ Extraction failed: {result}")
 
                 # Delay between batches
                 if i + batch_size < len(urls):
@@ -173,15 +410,16 @@ class SeoulTrafficContentExtractor:
         config: CrawlerRunConfig
     ) -> PageMetadata:
         """
-        Extract content and metadata from a single page.
+        Extract content and metadata from a single page using ConfigBasedExtractor.
 
-        This method orchestrates:
-        1. Page crawling with Crawl4AI
-        2. Popup listener setup
-        3. Attachment detection and processing
-        4. Document parsing
-        5. Metadata enrichment
-        6. File saving
+        Args:
+            crawler: AsyncWebCrawler instance
+            url_info: URL information dict
+            url_tree: URL tree structure
+            config: Crawler configuration
+
+        Returns:
+            PageMetadata object
         """
         url = url_info['url']
         logger.debug(f"Extracting: {url}")
@@ -194,67 +432,23 @@ class SeoulTrafficContentExtractor:
                 raise ValueError(f"Crawl failed: {result.error_message}")
 
             html = result.html
-            markdown = result.markdown
+            markdown = result.markdown_v2.raw_markdown  # Use markdown_v2 for better quality
             links = result.links.get('internal', [])
 
-            # Step 2: Access browser context and page for popup handling
-            browser: Browser = crawler.crawler_strategy.browser
-            context: BrowserContext = await browser.new_context(
-                accept_downloads=True
-            )
-            page: Page = await context.new_page()
+            # Step 2: Extract structured content using ConfigBasedExtractor
+            extraction_result = self.extractor.extract(html, url)
 
-            # Setup popup listener
-            await self.popup_handler.setup_popup_listener(context, page)
-
-            # Navigate to page
-            await page.goto(url, wait_until="domcontentloaded")
-            await page.wait_for_timeout(1000)  # Allow dynamic content to load
-
-            # Step 3: Detect attachment links
-            attachment_links = await self.popup_handler.detect_attachment_links(
-                page=page,
-                html=html
-            )
-
-            logger.debug(f"Found {len(attachment_links)} potential attachments")
-
-            # Step 4: Process each attachment
-            attached_documents: List[AttachedDocument] = []
-
-            for link_info in attachment_links:
-                try:
-                    attachment = await self.popup_handler.process_attachment_link(
-                        page=page,
-                        link_info=link_info
-                    )
-
-                    if attachment:
-                        # Parse document content
-                        attachment = await self.document_parser.parse_document(attachment)
-                        attached_documents.append(attachment)
-                        logger.debug(
-                            f"  ✓ Attachment processed: {attachment.original_filename} "
-                            f"({attachment.attachment_type.value})"
-                        )
-                except Exception as e:
-                    logger.warning(f"  ✗ Attachment processing failed: {e}")
-                    continue
-
-            # Clean up browser context
-            await context.close()
-
-            # Step 5: Build metadata
+            # Step 3: Build metadata
             metadata = await self._build_metadata(
                 url=url,
                 html=html,
                 markdown=markdown,
+                extraction_result=extraction_result,
                 links=links,
-                url_tree=url_tree,
-                attached_documents=attached_documents
+                url_tree=url_tree
             )
 
-            # Step 6: Save files
+            # Step 4: Save files
             await self._save_page_files(
                 metadata=metadata,
                 html=html,
@@ -272,29 +466,37 @@ class SeoulTrafficContentExtractor:
         url: str,
         html: str,
         markdown: str,
+        extraction_result: ExtractionResult,
         links: List[str],
-        url_tree: Dict[str, Dict],
-        attached_documents: List[AttachedDocument]
+        url_tree: Dict[str, Dict]
     ) -> PageMetadata:
         """
         Build comprehensive PageMetadata object.
+
+        Args:
+            url: Page URL
+            html: Raw HTML content
+            markdown: Markdown content
+            extraction_result: Structured extraction result from ConfigBasedExtractor
+            links: List of internal links
+            url_tree: URL tree structure
+
+        Returns:
+            PageMetadata object
         """
-        from bs4 import BeautifulSoup
-        soup = BeautifulSoup(html, 'html.parser')
+        # Use extracted data from ConfigBasedExtractor
+        title = extraction_result.title or ""
+        page_type = extraction_result.page_type
 
-        # Basic info
-        title = soup.title.string if soup.title else ""
-
-        # Tree structure analysis
-        page_type = self.tree_analyzer.classify_page_type(url, html, title)
-        breadcrumb = self.tree_analyzer.build_breadcrumb(url, url_tree)
-        siblings = self.tree_analyzer.find_siblings(url, url_tree)
-
+        # Tree structure info
         parent_url = url_tree.get(url, {}).get('parent_url')
         depth = url_tree.get(url, {}).get('depth', 0)
 
-        # Link context analysis
-        link_contexts = self.link_analyzer.extract_link_contexts(html, url)
+        # Breadcrumb (simplified - can be enhanced with config-based extraction)
+        breadcrumb = extraction_result.breadcrumb or []
+
+        # Link contexts
+        link_contexts = extraction_result.link_contexts or []
 
         # Outgoing links
         outgoing_links = [link for link in links if link.startswith('http')]
@@ -304,7 +506,8 @@ class SeoulTrafficContentExtractor:
         entities_preview = self.entity_extractor.extract_preview(main_text)
         named_entities = self.entity_extractor.extract_named_entities(main_text)
 
-        # Attachment summary
+        # Attachment info from extraction result
+        attached_documents = extraction_result.attachments or []
         has_attachments = len(attached_documents) > 0
         attachment_types = list(set(doc.attachment_type for doc in attached_documents))
         total_attachment_size = sum(doc.file_size for doc in attached_documents)
@@ -323,7 +526,7 @@ class SeoulTrafficContentExtractor:
             parent_url=parent_url,
             depth=depth,
             breadcrumb=breadcrumb,
-            siblings=siblings,
+            siblings=[],  # Can be populated in post-processing
             outgoing_links=outgoing_links,
             incoming_links=[],  # Will be populated in post-processing
             link_contexts=link_contexts,
@@ -345,11 +548,13 @@ class SeoulTrafficContentExtractor:
     ) -> None:
         """
         Save HTML, Markdown, and JSON metadata to disk.
+
+        Args:
+            metadata: Page metadata
+            html: Raw HTML content
+            markdown: Markdown content
         """
-        # Generate filename from URL
-        from urllib.parse import urlparse
-        parsed = urlparse(metadata.url)
-        filename = parsed.path.strip('/').replace('/', '_') or 'index'
+        filename = self._get_filename_from_url(metadata.url)
 
         # Save HTML
         html_path = self.raw_html_dir / f"{filename}.html"
@@ -368,35 +573,22 @@ class SeoulTrafficContentExtractor:
 
         logger.debug(f"Saved files for: {filename}")
 
-    def build_incoming_links_map(
-        self,
-        all_metadata: List[PageMetadata]
-    ) -> Dict[str, List[str]]:
+    def _build_excluded_selectors(self) -> List[str]:
         """
-        Post-processing: Build incoming links map and update metadata.
+        Build list of excluded CSS selectors from site config.
 
-        This should be called after all pages are extracted to populate
-        the incoming_links field in each PageMetadata.
+        Returns:
+            List of CSS selectors to exclude
         """
-        incoming_map = self.link_analyzer.build_incoming_links_map(
-            {meta.url: meta for meta in all_metadata}
-        )
+        # Common navigation/menu elements to exclude
+        default_excluded = [
+            '#head', '#gnb_part', '#gnb_sec', '#search', '.top-area', '.gnb',
+            '#skipNavi', '#AllBox', '.gnbsingle', '#lnb', '.lnb_tit',
+            '.lnb_1depth', '.lnb_2depth', '#sub_h3', '.loc', '.invisible'
+        ]
 
-        # Update metadata with incoming links
-        for metadata in all_metadata:
-            metadata.incoming_links = incoming_map.get(metadata.url, [])
-
-            # Re-save updated metadata
-            from urllib.parse import urlparse
-            parsed = urlparse(metadata.url)
-            filename = parsed.path.strip('/').replace('/', '_') or 'index'
-            json_path = self.metadata_dir / f"{filename}.json"
-            json_path.write_text(
-                metadata.model_dump_json(indent=2),
-                encoding='utf-8'
-            )
-
-        return incoming_map
+        # Can be extended with config-specific exclusions in the future
+        return default_excluded
 
     def generate_extraction_report(
         self,
@@ -404,11 +596,20 @@ class SeoulTrafficContentExtractor:
     ) -> str:
         """
         Generate a summary report of the extraction process.
+
+        Args:
+            all_metadata: List of all extracted page metadata
+
+        Returns:
+            Markdown-formatted report string
         """
         from collections import Counter
 
         # Statistics
         total_pages = len(all_metadata)
+        if total_pages == 0:
+            return "# Extraction Report\n\nNo pages extracted."
+
         page_type_counts = Counter(meta.page_type for meta in all_metadata)
         total_attachments = sum(meta.attachment_count for meta in all_metadata)
         attachment_type_counts = Counter()
@@ -422,8 +623,10 @@ class SeoulTrafficContentExtractor:
 
         # Generate report
         report = f"""
-# Seoul Traffic News Extraction Report
+# Content Extraction Report
 
+Site: {self.site_config.site_name}
+Domain: {self.site_config.domain}
 Generated: {datetime.utcnow().isoformat()}
 
 ## Overview
@@ -437,9 +640,10 @@ Generated: {datetime.utcnow().isoformat()}
         for page_type, count in page_type_counts.most_common():
             report += f"- {page_type.value}: {count} ({count/total_pages*100:.1f}%)\n"
 
-        report += "\n## Attachment Types Distribution\n"
-        for att_type, count in attachment_type_counts.most_common():
-            report += f"- {att_type.value}: {count}\n"
+        if attachment_type_counts:
+            report += "\n## Attachment Types Distribution\n"
+            for att_type, count in attachment_type_counts.most_common():
+                report += f"- {att_type.value}: {count}\n"
 
         report += "\n## Sample Pages with Attachments\n"
         pages_with_atts = [m for m in all_metadata if m.has_attachments][:10]
@@ -455,40 +659,29 @@ Generated: {datetime.utcnow().isoformat()}
 
 # Example usage
 async def main():
-    """Example usage of ContentExtractor"""
-    from src.crawler.url_discovery import SeoulTrafficURLDiscovery
+    """Example usage of ContentExtractor with YAML config"""
 
-    # Step 1: Discover URLs
-    discovery = SeoulTrafficURLDiscovery(
-        base_url="https://news.seoul.go.kr/traffic",
-        output_dir=Path("./output")
-    )
-
-    urls = await discovery.discover_all()
-    url_tree = discovery.url_tree
-
-    # Step 2: Extract content with attachments
-    extractor = SeoulTrafficContentExtractor(
-        output_dir=Path("./output"),
-        download_dir=Path("./downloads"),
+    # Initialize from domain config (loads news.seoul.go.kr.yaml)
+    extractor = ContentExtractor.from_domain(
+        domain="news.seoul.go.kr",
+        output_dir=Path("./data/crawled"),
+        download_dir=Path("./data/downloads"),
         headless=True,
         verbose=True
     )
 
-    all_metadata = await extractor.extract_with_metadata(
-        urls=urls[:100],  # Limit for testing
-        url_tree=url_tree,
-        batch_size=5,
-        delay_between_batches=2.0
+    # Run deep crawl
+    all_metadata = await extractor.extract_with_deep_crawl(
+        start_url="https://news.seoul.go.kr/traffic/archives/category/all",
+        max_pages=100,
+        batch_size=10,
+        skip_existing=True
     )
 
-    # Step 3: Post-processing
-    incoming_links = extractor.build_incoming_links_map(all_metadata)
-
-    # Step 4: Generate report
+    # Generate report
     report = extractor.generate_extraction_report(all_metadata)
 
-    report_path = Path("./output/extraction_report.md")
+    report_path = Path("./data/extraction_report.md")
     report_path.write_text(report, encoding='utf-8')
 
     print(f"✓ Extraction complete: {len(all_metadata)} pages")
