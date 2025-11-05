@@ -444,9 +444,31 @@ class GenerationBenchmark:
     def _get_judge_llm(self):
         """Get LLM for RAGAS judge"""
         from langchain_openai import ChatOpenAI
+        import os
+
+        # Claude models (local OpenAI-compatible endpoint)
+        claude_models = [
+            "claude-sonnet-4-5-20250929",
+            "claude-haiku-4-5-20251001",
+            "claude-opus-4-1-20250805"
+        ]
+
+        # Check if using local Claude Code endpoint
+        if self.judge_model in claude_models:
+            # Use local OpenAI-compatible Claude Code endpoint
+            api_base = os.getenv("CLAUDE_CODE_API_BASE", "http://localhost:8000/v1")
+            api_key = os.getenv("CLAUDE_CODE_API_KEY", "dummy")
+
+            return ChatOpenAI(
+                model=self.judge_model,
+                openai_api_base=api_base,
+                openai_api_key=api_key,
+                temperature=1.0,  # Claude default temperature
+                max_tokens=8192
+            )
 
         # GPT-5는 thinking 모델로 temperature와 max_tokens 파라미터를 지원하지 않음
-        if self.judge_model == "gpt-5":
+        elif self.judge_model == "gpt-5":
             return ChatOpenAI(
                 model=self.judge_model
                 # temperature, max_tokens 파라미터 모두 제외
