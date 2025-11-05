@@ -57,7 +57,8 @@ class GenerationBenchmark:
         models: List[Dict[str, str]],
         use_fixed_context: bool = True,
         k_documents: int = 4,
-        judge_model: str = "gpt-5"  # GPT-5를 기본 judge model로 사용
+        judge_model: str = "gpt-5",  # GPT-5를 기본 judge model로 사용
+        custom_retriever: Optional[Any] = None  # For KG RAG or other custom retrievers
     ):
         """
         Args:
@@ -66,6 +67,7 @@ class GenerationBenchmark:
             use_fixed_context: Use same retrieved context for all models
             k_documents: Number of documents to retrieve per question
             judge_model: Model to use as RAGAS judge (GPT-4o recommended)
+            custom_retriever: Optional custom retriever (e.g., KG RAG). If None, uses default FAISS.
         """
         self.models = models
         self.use_fixed_context = use_fixed_context
@@ -74,8 +76,11 @@ class GenerationBenchmark:
 
         # Initialize vector store and retrieval
         self.vector_store = None
-        self.retriever = None
-        self._initialize_retrieval()
+        self.retriever = custom_retriever  # Use custom if provided
+
+        # Only initialize FAISS if no custom retriever provided
+        if self.retriever is None:
+            self._initialize_retrieval()
 
         # Configure LiteLLM
         litellm.drop_params = True  # Drop unsupported parameters

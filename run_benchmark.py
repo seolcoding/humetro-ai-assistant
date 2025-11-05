@@ -341,6 +341,9 @@ def run_benchmark_from_config(config_path: Path):
                     neo4j_user = os.getenv(kg_conf["neo4j_user"].replace("env:", ""))
                     neo4j_password = os.getenv(kg_conf["neo4j_password"].replace("env:", ""))
 
+                    logger.info(f"📚 Connecting to Neo4j KG...")
+                    logger.info(f"   URI: {neo4j_uri}")
+
                     # Create KG retriever
                     kg_retriever = create_kg_retriever(
                         k=k,
@@ -355,17 +358,23 @@ def run_benchmark_from_config(config_path: Path):
                     # Test retrieval
                     test_query = questions[0].get("user_input", "서울 지하철")
                     test_docs = kg_retriever.invoke(test_query)
-                    logger.info(f"✅ Test retrieval: {len(test_docs)} docs retrieved")
+                    logger.info(f"✅ Test retrieval: {len(test_docs)} docs from KG")
 
                     # Create benchmark with KG retriever
-                    # Note: GenerationBenchmark uses FAISS by default, need to modify it
-                    # For now, log success and skip actual benchmark
-                    logger.warning("⚠️ KG RAG benchmark integration pending - GenerationBenchmark needs refactoring")
-                    logger.info("   KG retriever is working, but GenerationBenchmark is hardcoded to FAISS")
-                    all_results["kg_rag"] = {
-                        "status": "retriever_ready",
-                        "message": "KG retriever working, benchmark integration pending"
-                    }
+                    benchmark = GenerationBenchmark(
+                        models=benchmark_models,
+                        use_fixed_context=True,
+                        k_documents=k,
+                        judge_model=judge_model,
+                        custom_retriever=kg_retriever  # Pass KG retriever
+                    )
+
+                    method_output = output_dir / "kg_rag"
+                    method_output.mkdir(parents=True, exist_ok=True)
+
+                    results = benchmark.run_benchmark(benchmark_questions, method_output)
+                    all_results["kg_rag"] = results
+                    logger.info(f"✅ KG RAG complete: {method_output}")
 
                 except Exception as e:
                     logger.error(f"❌ KG RAG failed: {e}")
