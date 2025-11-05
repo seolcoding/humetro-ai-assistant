@@ -336,30 +336,31 @@ class UnifiedBenchmarkV2:
         logger.info("="*70)
 
         # Organize questions by classification type
+        # GenerationBenchmark expects keys: "single_hop" and "multi_hop"
         classified_questions = {
-            "simple": [],
-            "multi_reasoning": []
+            "single_hop": [],
+            "multi_hop": []
         }
 
         for item in classified_list:
-            classification = item.get("classification", "simple")
+            classification = item.get("classification", "single_hop")
             # Map classification to expected keys
             if classification in ["single_hop", "simple"]:
-                classified_questions["simple"].append({
+                classified_questions["single_hop"].append({
                     "question": item["question"],
                     "ground_truth": item.get("ground_truth", ""),
                     "question_type": "simple"
                 })
             else:  # multi_hop or multi_reasoning
-                classified_questions["multi_reasoning"].append({
+                classified_questions["multi_hop"].append({
                     "question": item["question"],
                     "ground_truth": item.get("ground_truth", ""),
                     "question_type": "multi_reasoning"
                 })
 
         logger.info(f"📊 최종 질문 수: {len(classified_list)}개")
-        logger.info(f"  - Simple: {len(classified_questions['simple'])}개")
-        logger.info(f"  - Multi-reasoning: {len(classified_questions['multi_reasoning'])}개")
+        logger.info(f"  - Single-hop: {len(classified_questions['single_hop'])}개")
+        logger.info(f"  - Multi-hop: {len(classified_questions['multi_hop'])}개")
 
         benchmark_results = {}
 
