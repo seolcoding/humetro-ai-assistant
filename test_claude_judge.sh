@@ -6,8 +6,8 @@ set -e
 echo "🔍 Testing Claude Code server connection..."
 
 # Check server availability
-if ! curl -s http://localhost:25929/v1/models > /dev/null 2>&1; then
-    echo "❌ Claude Code server not responding on port 25929"
+if ! curl -s http://localhost:25292/v1/models > /dev/null 2>&1; then
+    echo "❌ Claude Code server not responding on port 25292"
     echo "   Please start the server first"
     exit 1
 fi
@@ -15,7 +15,7 @@ fi
 echo "✅ Server is running"
 
 # Set environment variables
-export CLAUDE_CODE_API_BASE="http://localhost:25929/v1"
+export CLAUDE_CODE_API_BASE="http://localhost:25292/v1"
 export CLAUDE_CODE_API_KEY="dummy"
 
 echo ""

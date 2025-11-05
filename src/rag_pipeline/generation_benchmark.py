@@ -456,7 +456,7 @@ class GenerationBenchmark:
         # Check if using local Claude Code endpoint
         if self.judge_model in claude_models:
             # Use local OpenAI-compatible Claude Code endpoint
-            api_base = os.getenv("CLAUDE_CODE_API_BASE", "http://localhost:8000/v1")
+            api_base = os.getenv("CLAUDE_CODE_API_BASE", "http://localhost:25292/v1")
             api_key = os.getenv("CLAUDE_CODE_API_KEY", "dummy")
 
             return ChatOpenAI(

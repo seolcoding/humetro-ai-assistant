@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-05T16:08:28.945521",
+    "total_questions": 41,
+    "single_hop_count": 16,
+    "multi_hop_count": 25,
+    "models": [
+      "GPT-4o-mini"
+    ],
+    "k_documents": 4,
+    "use_fixed_context": true,
+    "judge_model": "claude-sonnet-4-5-20250929"
+  },
+  "single_hop": {},
+  "multi_hop": {},
+  "comparison": {
+    "by_complexity": {},
+    "by_model": {},
+    "best_performers": {}
+  }
+}

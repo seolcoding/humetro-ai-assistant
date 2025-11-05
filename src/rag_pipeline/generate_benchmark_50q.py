@@ -53,7 +53,7 @@ def main():
         "llm_model": "gpt-4o-mini",
         "llm_temperature": 0.3,
         "embedding_model": "text-embedding-3-small",
-        "document_source": "data/crawled/seoul_traffic/markdown_deduplicated",
+        "document_source": "data/crawled/seoul_traffic/markdown_filtered",
         "num_documents": args.num_docs,
         "testset_size": 50,
         "language": "korean",
@@ -61,7 +61,7 @@ def main():
         "use_korean_personas": True,  # 한국어 전용 Persona 사용
         "is_latest": True,  # 최신 버전으로 마킹
         "is_benchmark": True,  # 벤치마크용으로 마킹
-        "description": f"한국어 전용 Persona 기반 벤치마크 테스트셋 ({args.num_docs}개 문서)",
+        "description": f"한국어 전용 Persona 기반 벤치마크 테스트셋 ({args.num_docs}개 문서, 2021-2025 필터링)",
     }
 
     print("\n[설정]")

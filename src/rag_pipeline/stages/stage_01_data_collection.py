@@ -60,7 +60,7 @@ class DataCollectionStage:
             logger: Optional logger instance
         """
         self.transportation_cache_dir = Path(transportation_cache_dir)
-        self.markdown_dir = self.transportation_cache_dir / "markdown_deduplicated"
+        self.markdown_dir = self.transportation_cache_dir / "markdown_filtered"
         self.logger = logger
 
         # Compile regex patterns for efficiency

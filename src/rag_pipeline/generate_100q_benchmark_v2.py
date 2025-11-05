@@ -54,7 +54,7 @@ def generate_and_classify_questions(
         llm_model="gpt-4o-mini",
         llm_temperature=0.3,
         embedding_model="text-embedding-3-small",
-        document_source="data/crawled/seoul_traffic/markdown_deduplicated",
+        document_source="data/crawled/seoul_traffic/markdown_filtered",
         num_documents=num_documents,
         testset_size=testset_size,
         language="korean",

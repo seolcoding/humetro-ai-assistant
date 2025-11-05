@@ -1,10 +1,10 @@
 {
   "experiment_id": 17,
-  "timestamp": "2025-11-05T15:11:51.463641",
+  "timestamp": "2025-11-05T16:08:28.806099",
   "config": {
-    "resume_id": null,
+    "resume_id": 17,
     "questions": 50,
-    "force_generate": true,
+    "force_generate": false,
     "generation_model": "gpt-4o-mini",
     "num_documents": 100,
     "document_source": "data/crawled/seoul_traffic/markdown_deduplicated",
@@ -14,8 +14,8 @@
     "classification_method": "hybrid",
     "no_retrieval": false,
     "k_documents": 4,
-    "judge_model": "gpt-5",
-    "skip_benchmark": true,
+    "judge_model": "claude-sonnet-4-5-20250929",
+    "skip_benchmark": false,
     "output_dir": "data/evaluation/unified_benchmark",
     "verbose": false
   },
@@ -850,5 +850,28 @@
       "synthesizer_name": "multi_hop_specific_query_synthesizer",
       "question_type": "multi_hop"
     }
-  ]
+  ],
+  "benchmark": {
+    "gpt-4o-mini": {
+      "metadata": {
+        "timestamp": "2025-11-05T16:08:28.945521",
+        "total_questions": 41,
+        "single_hop_count": 16,
+        "multi_hop_count": 25,
+        "models": [
+          "GPT-4o-mini"
+        ],
+        "k_documents": 4,
+        "use_fixed_context": true,
+        "judge_model": "claude-sonnet-4-5-20250929"
+      },
+      "single_hop": {},
+      "multi_hop": {},
+      "comparison": {
+        "by_complexity": {},
+        "by_model": {},
+        "best_performers": {}
+      }
+    }
+  }
 }

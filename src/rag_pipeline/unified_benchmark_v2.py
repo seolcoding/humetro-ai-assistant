@@ -521,8 +521,8 @@ def main():
 
     parser.add_argument(
         "--document-source",
-        default="data/crawled/seoul_traffic/markdown_deduplicated",
-        help="문서 소스 디렉토리"
+        default="data/crawled/seoul_traffic/markdown_filtered",
+        help="문서 소스 디렉토리 (2021-2025 필터링됨)"
     )
 
     # 모델 설정
