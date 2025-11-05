@@ -3,13 +3,17 @@ Stage 3: Embedding
 
 Generates embeddings for chunked documents and creates FAISS vector index.
 Uses OpenAI embeddings with FAISS for efficient similarity search.
+Uses Cosine Similarity for semantic similarity matching.
 """
 
 from typing import List, Optional
 from pathlib import Path
+import numpy as np
+import faiss
 from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
+from langchain_community.docstore.in_memory import InMemoryDocstore
 
 from src.common.logger import RAGLogger
 
@@ -66,13 +70,13 @@ class EmbeddingStage:
 
     def create_vector_store(self, chunks: List[Document]) -> FAISS:
         """
-        Create FAISS vector store from document chunks.
+        Create FAISS vector store from document chunks using Cosine Similarity.
 
         Args:
             chunks: List of chunked documents from Stage 2
 
         Returns:
-            FAISS vector store instance
+            FAISS vector store instance with Cosine Similarity
 
         Raises:
             ValueError: If chunks list is empty
@@ -82,14 +86,40 @@ class EmbeddingStage:
 
         if self.logger:
             self.logger.info(
-                f"Creating FAISS vector store with {len(chunks)} chunks..."
+                f"Creating FAISS vector store with {len(chunks)} chunks using Cosine Similarity..."
             )
 
-        # Create FAISS vector store
-        # This will automatically generate embeddings for all chunks
-        vector_store = FAISS.from_documents(
-            documents=chunks,
-            embedding=self.embeddings
+        # Generate embeddings for all chunks
+        texts = [doc.page_content for doc in chunks]
+        embeddings_list = self.embeddings.embed_documents(texts)
+
+        # Convert to numpy array and normalize for cosine similarity
+        embeddings_array = np.array(embeddings_list, dtype='float32')
+
+        # Normalize vectors for cosine similarity (L2 normalization)
+        faiss.normalize_L2(embeddings_array)
+
+        # Create FAISS index using Inner Product (which equals cosine similarity for normalized vectors)
+        dimension = embeddings_array.shape[1]
+        index = faiss.IndexFlatIP(dimension)  # IP = Inner Product = Cosine Similarity for normalized vectors
+        index.add(embeddings_array)
+
+        # Create docstore and index_to_docstore_id mapping
+        docstore = InMemoryDocstore({})
+        index_to_docstore_id = {}
+
+        for i, doc in enumerate(chunks):
+            doc_id = str(i)
+            docstore.add({doc_id: doc})
+            index_to_docstore_id[i] = doc_id
+
+        # Create FAISS vector store with the custom index
+        vector_store = FAISS(
+            embedding_function=self.embeddings,
+            index=index,
+            docstore=docstore,
+            index_to_docstore_id=index_to_docstore_id,
+            normalize_L2=True  # Important: tells FAISS to normalize query vectors too
         )
 
         # Update statistics
@@ -99,7 +129,7 @@ class EmbeddingStage:
         if self.logger:
             stats = self.get_embedding_stats(chunks)
             self.logger.info(
-                f"Vector store created: {len(chunks)} chunks embedded, "
+                f"Vector store created with Cosine Similarity: {len(chunks)} chunks embedded, "
                 f"estimated cost: ${stats['estimated_cost_usd']:.4f}"
             )
 

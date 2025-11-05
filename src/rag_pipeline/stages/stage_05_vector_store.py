@@ -56,6 +56,8 @@ class VectorStoreStage:
         """
         Load FAISS vector store from disk.
 
+        Note: The loaded vector store should use Cosine Similarity (normalized vectors + IP).
+
         Args:
             store_path: Path to saved vector store directory
 
@@ -77,15 +79,21 @@ class VectorStoreStage:
         if self.logger:
             self.logger.info(f"Loading vector store from: {store_path}")
 
+        # Load with normalize_L2=True to ensure query vectors are normalized for cosine similarity
         self.vector_store = FAISS.load_local(
             str(store_path),
             embeddings=self.embeddings,
-            allow_dangerous_deserialization=True
+            allow_dangerous_deserialization=True,
+            normalize_L2=True  # Ensure cosine similarity by normalizing query vectors
         )
 
         if self.logger:
+            # Check if the index is using Inner Product (cosine similarity for normalized vectors)
+            index_type = self.vector_store.index.__class__.__name__
+            similarity_metric = "Cosine Similarity" if "IP" in index_type else "L2 Distance"
             self.logger.info(
-                f"Vector store loaded: {self.vector_store.index.ntotal:,} vectors"
+                f"Vector store loaded: {self.vector_store.index.ntotal:,} vectors, "
+                f"Metric: {similarity_metric}"
             )
 
         return self.vector_store
