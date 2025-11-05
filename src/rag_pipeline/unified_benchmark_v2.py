@@ -14,8 +14,10 @@ import logging
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+from dataclasses import asdict
 import hashlib
 import pickle
+import pandas as pd
 
 # Add project root to path
 project_root = Path(__file__).parent.parent.parent
@@ -25,7 +27,7 @@ sys.path.insert(0, str(project_root))
 sys.path.insert(0, str(project_root / "tests" / "rag_pipeline"))
 
 from generation_benchmark import GenerationBenchmark
-from testset_generator import TestsetGenerator
+from testset_generator import CachedTestsetGenerator as TestsetGenerator
 from question_classifier import QuestionComplexityClassifier
 
 # Configure logging
@@ -219,23 +221,29 @@ class UnifiedBenchmarkV2:
         logger.info("📝 질문 생성")
         logger.info("="*70)
 
-        # TestsetGenerator 사용
-        generator = TestsetGenerator(
-            num_questions=self.args.questions,
-            use_cache=not self.args.force_generate,
-            model_name=self.args.generation_model,
+        # TestsetGenerator 사용 (CachedTestsetGenerator)
+        generator = TestsetGenerator()
+
+        # Generate or load testset
+        config, testset_df = generator.generate_or_load(
+            llm_model=self.args.generation_model,
+            llm_temperature=0.3,
+            embedding_model="text-embedding-3-small",
+            document_source=self.args.document_source,
             num_documents=self.args.num_documents,
-            document_source=self.args.document_source
+            testset_size=self.args.questions,
+            force_regenerate=self.args.force_generate  # use_cache가 아니라 force_regenerate
         )
 
-        questions = generator.generate()
+        # Convert DataFrame to dict format
+        questions = testset_df.to_dict('records')
 
         # 체크포인트 저장
         self.exp_manager.save_checkpoint(self.exp_id, step, questions)
 
         return questions
 
-    def classify_questions(self, questions: dict) -> dict:
+    def classify_questions(self, questions: List[dict]) -> List[dict]:
         """질문 분류 또는 체크포인트에서 로드"""
         step = "questions_classified"
 
@@ -247,15 +255,25 @@ class UnifiedBenchmarkV2:
         logger.info("🏷️ 질문 분류")
         logger.info("="*70)
 
-        classifier = QuestionComplexityClassifier(model="gpt-4o-mini")
-        classified = classifier.classify_batch(questions)
+        # Convert list of dicts to DataFrame for classifier
+        questions_df = pd.DataFrame(questions)
+
+        classifier = QuestionComplexityClassifier(method="hybrid")
+        classified = classifier.classify_batch(questions_df, question_column="user_input")
+
+        # Convert classification results back to dict format
+        classified_dicts = [asdict(c) for c in classified]
 
         # 체크포인트 저장
-        self.exp_manager.save_checkpoint(self.exp_id, step, classified)
+        self.exp_manager.save_checkpoint(self.exp_id, step, classified_dicts)
 
-        return classified
+        return classified_dicts
 
-    def run_benchmark_for_model(self, model_key: str, questions: List[dict]) -> dict:
+    def run_benchmark_for_model(
+        self,
+        model_key: str,
+        classified_questions: Dict[str, List[dict]]
+    ) -> dict:
         """개별 모델 벤치마크 실행"""
         step = f"benchmark_{model_key}"
 
@@ -276,8 +294,15 @@ class UnifiedBenchmarkV2:
                 judge_model=self.args.judge_model
             )
 
+            # Output directory for this model
+            model_output_dir = Path(self.args.output_dir) / f"exp_{self.exp_id}_{model_key}"
+            model_output_dir.mkdir(parents=True, exist_ok=True)
+
             # 벤치마크 실행
-            results = benchmark.run_benchmark(questions)
+            results = benchmark.run_benchmark(
+                classified_questions=classified_questions,
+                output_dir=model_output_dir
+            )
 
             # 체크포인트 저장
             self.exp_manager.save_checkpoint(self.exp_id, step, results)
@@ -290,17 +315,43 @@ class UnifiedBenchmarkV2:
             # 실패해도 계속 진행
             return {"error": str(e)}
 
-    def run_benchmark(self, questions: List[dict]) -> dict:
+    def run_benchmark(self, classified_list: List[dict]) -> dict:
         """전체 벤치마크 실행"""
         logger.info("="*70)
         logger.info("🚀 벤치마크 실행")
         logger.info("="*70)
 
+        # Organize questions by classification type
+        classified_questions = {
+            "simple": [],
+            "multi_reasoning": []
+        }
+
+        for item in classified_list:
+            classification = item.get("classification", "simple")
+            # Map classification to expected keys
+            if classification in ["single_hop", "simple"]:
+                classified_questions["simple"].append({
+                    "question": item["question"],
+                    "ground_truth": item.get("ground_truth", ""),
+                    "question_type": "simple"
+                })
+            else:  # multi_hop or multi_reasoning
+                classified_questions["multi_reasoning"].append({
+                    "question": item["question"],
+                    "ground_truth": item.get("ground_truth", ""),
+                    "question_type": "multi_reasoning"
+                })
+
+        logger.info(f"📊 최종 질문 수: {len(classified_list)}개")
+        logger.info(f"  - Simple: {len(classified_questions['simple'])}개")
+        logger.info(f"  - Multi-reasoning: {len(classified_questions['multi_reasoning'])}개")
+
         benchmark_results = {}
 
         # 모델별로 실행 (체크포인트 지원)
         for model_key in self.parse_models():
-            result = self.run_benchmark_for_model(model_key, questions)
+            result = self.run_benchmark_for_model(model_key, classified_questions)
             benchmark_results[model_key] = result
 
         return benchmark_results
