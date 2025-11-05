@@ -14,10 +14,8 @@ import logging
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional
-from dataclasses import asdict
 import hashlib
 import pickle
-import pandas as pd
 
 # Add project root to path
 project_root = Path(__file__).parent.parent.parent
@@ -28,7 +26,6 @@ sys.path.insert(0, str(project_root / "tests" / "rag_pipeline"))
 
 from generation_benchmark import GenerationBenchmark
 from testset_generator import CachedTestsetGenerator as TestsetGenerator
-from question_classifier import QuestionComplexityClassifier
 
 # Configure logging
 logging.basicConfig(
@@ -244,7 +241,12 @@ class UnifiedBenchmarkV2:
         return questions
 
     def classify_questions(self, questions: List[dict]) -> List[dict]:
-        """질문 분류 또는 체크포인트에서 로드"""
+        """
+        질문 분류 - RAGAS synthesizer_name 사용
+
+        RAGAS가 생성 시점에 이미 single-hop/multi-hop을 구분했으므로
+        별도의 분류기 없이 synthesizer_name을 사용합니다.
+        """
         step = "questions_classified"
 
         if self.is_step_completed(step):
@@ -252,36 +254,45 @@ class UnifiedBenchmarkV2:
             return self.exp_manager.load_checkpoint(self.exp_id, step)
 
         logger.info("="*70)
-        logger.info("🏷️ 질문 분류")
+        logger.info("🏷️ 질문 분류 (RAGAS synthesizer 기반)")
         logger.info("="*70)
 
-        # Convert list of dicts to DataFrame for classifier
-        questions_df = pd.DataFrame(questions)
+        # RAGAS synthesizer_name을 기반으로 분류
+        classified_results = []
+        single_count = 0
+        multi_count = 0
 
-        classifier = QuestionComplexityClassifier(method="hybrid")
-        classified = classifier.classify_batch(questions_df, question_column="user_input")
+        for original_q in questions:
+            synthesizer = original_q.get("synthesizer_name", "")
 
-        # Merge classification results with original question data
-        merged_results = []
-        for i, (original_q, classification) in enumerate(zip(questions, classified)):
+            # RAGAS synthesizer_name으로 분류
+            if "single_hop" in synthesizer:
+                classification = "single_hop"
+                single_count += 1
+            else:  # multi_hop_specific 또는 multi_hop_abstract
+                classification = "multi_hop"
+                multi_count += 1
+
             merged_item = {
                 # Original question data
                 "question": original_q.get("user_input", ""),
                 "ground_truth": original_q.get("reference", ""),
                 "reference_contexts": original_q.get("reference_contexts", []),
-                # Classification results
-                "classification": classification.classification,
-                "confidence": classification.confidence,
-                "reasoning_steps": classification.reasoning_steps,
-                "features": classification.features,
-                "classifier_reasoning": classification.classifier_reasoning
+                # Classification from RAGAS
+                "classification": classification,
+                "synthesizer_name": synthesizer,
+                "question_type": classification  # For compatibility
             }
-            merged_results.append(merged_item)
+            classified_results.append(merged_item)
+
+        logger.info(f"📊 분류 완료:")
+        logger.info(f"  - Single-hop: {single_count}개")
+        logger.info(f"  - Multi-hop: {multi_count}개")
 
         # 체크포인트 저장
-        self.exp_manager.save_checkpoint(self.exp_id, step, merged_results)
+        self.exp_manager.save_checkpoint(self.exp_id, step, classified_results)
 
-        return merged_results
+        return classified_results
 
     def run_benchmark_for_model(
         self,
@@ -422,12 +433,27 @@ class UnifiedBenchmarkV2:
             classified = self.classify_questions(questions)
             self.results["classified"] = classified
 
-            # 3. 질문 밸런싱 (선택 사항 - 전체 질문 사용)
-            # classified is a list of dicts with classification info
-            # We'll use all questions for now
-            all_questions = classified
+            # 3. 질문 밸런싱 - 각 타입별로 균등하게 선택
+            single_hop_questions = [q for q in classified if q["classification"] == "single_hop"]
+            multi_hop_questions = [q for q in classified if q["classification"] == "multi_hop"]
+
+            # 요청된 질문 수의 절반씩 선택
+            questions_per_type = self.args.questions // 2
+
+            # 각 타입에서 선택 (부족하면 있는 만큼만)
+            selected_single = single_hop_questions[:questions_per_type]
+            selected_multi = multi_hop_questions[:questions_per_type]
+
+            all_questions = selected_single + selected_multi
 
             logger.info(f"📊 최종 질문 수: {len(all_questions)}개")
+            logger.info(f"  - Single-hop: {len(selected_single)}개 (요청: {questions_per_type})")
+            logger.info(f"  - Multi-hop: {len(selected_multi)}개 (요청: {questions_per_type})")
+
+            if len(selected_single) < questions_per_type:
+                logger.warning(f"⚠️ Single-hop 질문 부족: {len(selected_single)}/{questions_per_type}")
+            if len(selected_multi) < questions_per_type:
+                logger.warning(f"⚠️ Multi-hop 질문 부족: {len(selected_multi)}/{questions_per_type}")
 
             # 4. 벤치마크 실행 (스킵 옵션 확인)
             if not self.args.skip_benchmark:
