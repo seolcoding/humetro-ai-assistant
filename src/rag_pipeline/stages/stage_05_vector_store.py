@@ -30,7 +30,7 @@ class VectorStoreStage:
 
     def __init__(
         self,
-        model: str = "text-embedding-3-small",
+        model: str = "text-embedding-3-large",
         logger: Optional[RAGLogger] = None
     ):
         """
@@ -38,6 +38,7 @@ class VectorStoreStage:
 
         Args:
             model: OpenAI embedding model (must match embedding stage)
+                  Default: text-embedding-3-large (3072D) for KG compatibility
             logger: Optional logger instance
         """
         self.model = model
@@ -263,7 +264,7 @@ class VectorStoreStage:
 
 
 def create_vector_store_stage(
-    model: str = "text-embedding-3-small",
+    model: str = "text-embedding-3-large",
     logger: Optional[RAGLogger] = None
 ) -> VectorStoreStage:
     """

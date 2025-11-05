@@ -1,0 +1,41 @@
+{
+  "experiment": {
+    "id": null,
+    "name": "healthcheck",
+    "description": "Healthcheck: 2 questions (single+multi hop), 5 models (OpenAI+Ollama), Naive RAG",
+    "tags": [
+      "healthcheck",
+      "all-modules",
+      "naive-rag"
+    ],
+    "output_dir": "data/evaluation/healthcheck"
+  },
+  "questions": {
+    "source": "cached",
+    "cache_key": "ab9011d2e08ae32f",
+    "comment": "2 questions: 1 single-hop + 1 multi-hop for complete testing"
+  },
+  "models": {
+    "evaluation_targets": "all",
+    "comment": "All available models: GPT-4o-mini + 4 Ollama Korean models"
+  },
+  "retrieval": {
+    "k": 2,
+    "naive_vector_store": "data/vector_store/seoul_traffic",
+    "kg_config": null,
+    "comment": "Naive RAG only for now. KG will be added after KG build completes."
+  },
+  "evaluation": {
+    "judge_model": "gpt-4o-mini",
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy"
+    ],
+    "comment": "Minimal metrics for fast healthcheck"
+  },
+  "execution": {
+    "checkpoint_interval": 1,
+    "verbose": true,
+    "dry_run": false
+  }
+}

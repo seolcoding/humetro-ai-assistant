@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-05T21:43:00.210502",
+    "total_questions": 1,
+    "single_hop_count": 1,
+    "multi_hop_count": 0,
+    "models": [
+      "GPT-4o-mini"
+    ],
+    "k_documents": 2,
+    "use_fixed_context": true,
+    "judge_model": "gpt-4o-mini"
+  },
+  "single_hop": {
+    "GPT-4o-mini": {
+      "raw_data": [
+        {
+          "user_input": "2024년 12월 14일 주말에 예정된 집회로 인해 서울 대중교통, 특히 버스 노선에 어떤 변경사항이 있을까요?",
+          "response": "현재로서는 2024년 12월 14일 주말에 예정된 집회로 인한 서울 대중교통, 특히 버스 노선의 변경사항에 대한 구체적인 정보는 확인할 수 없습니다. 집회나 대규모 행사로 인한 대중교통 변경사항은 보통 행사 날짜가 가까워질수록 서울시나 대중교통 운영 기관에서 공식 발표를 하게 됩니다. 따라서, 해당 날짜가 가까워지면 서울시 대중교통 공지사항이나 관련 뉴스 등을 확인하시는 것이 좋습니다.",
+          "retrieved_contexts": [],
+          "reference": ""
+        }
+      ],
+      "metrics": {
+        "faithfulness": [
+          1.0
+        ],
+        "answer_relevancy": [
+          0.0
+        ],
+        "answer_correctness": [
+          0.18121629245854995
+        ]
+      },
+      "summary": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.18121629245854995,
+        "num_questions": 1
+      }
+    }
+  },
+  "multi_hop": {
+    "GPT-4o-mini": {
+      "error": "list index out of range",
+      "raw_data": [],
+      "summary": {
+        "num_questions": 0,
+        "evaluation_failed": true
+      }
+    }
+  },
+  "comparison": {
+    "by_complexity": {
+      "single_hop": {
+        "scores": {
+          "GPT-4o-mini": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.0,
+            "answer_correctness": 0.18121629245854995,
+            "num_questions": 1
+          }
+        },
+        "best_faithfulness": "GPT-4o-mini",
+        "best_relevancy": "GPT-4o-mini",
+        "best_correctness": "GPT-4o-mini"
+      },
+      "multi_hop": {
+        "scores": {
+          "GPT-4o-mini": {
+            "num_questions": 0,
+            "evaluation_failed": true
+          }
+        },
+        "best_faithfulness": "GPT-4o-mini",
+        "best_relevancy": "GPT-4o-mini",
+        "best_correctness": "GPT-4o-mini"
+      }
+    },
+    "by_model": {
+      "GPT-4o-mini": {
+        "single_hop": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.0,
+          "answer_correctness": 0.18121629245854995,
+          "num_questions": 1
+        },
+        "multi_hop": {
+          "num_questions": 0,
+          "evaluation_failed": true
+        },
+        "performance_gap": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.0,
+          "answer_correctness": 0.18121629245854995
+        }
+      }
+    },
+    "best_performers": {}
+  }
+}

@@ -34,7 +34,7 @@ class EmbeddingStage:
 
     def __init__(
         self,
-        model: str = "text-embedding-3-small",
+        model: str = "text-embedding-3-large",
         batch_size: int = 100,
         logger: Optional[RAGLogger] = None
     ):
@@ -42,12 +42,16 @@ class EmbeddingStage:
         Initialize Embedding Stage.
 
         Args:
-            model: OpenAI embedding model (default: text-embedding-3-small)
+            model: OpenAI embedding model (default: text-embedding-3-large for KG compatibility)
             batch_size: Batch size for API calls (default: 100)
             logger: Optional logger instance
 
         Raises:
             ValueError: If batch_size is not positive
+
+        Note:
+            Uses text-embedding-3-large (3072D) to match Neo4j KG embeddings
+            for fair comparison between Naive RAG and KG RAG.
         """
         if batch_size <= 0:
             raise ValueError("batch_size must be positive")
@@ -210,8 +214,14 @@ class EmbeddingStage:
         # Estimate tokens: ~4 chars per token for Korean/English mix
         estimated_tokens = total_chars // 4
 
-        # text-embedding-3-small: $0.02 per 1M tokens
-        estimated_cost = (estimated_tokens / 1_000_000) * 0.02
+        # Cost per model
+        cost_per_million = {
+            "text-embedding-3-small": 0.02,
+            "text-embedding-3-large": 0.13,
+            "text-embedding-ada-002": 0.10
+        }
+        cost_rate = cost_per_million.get(self.model, 0.13)  # Default to large
+        estimated_cost = (estimated_tokens / 1_000_000) * cost_rate
 
         return {
             "total_chunks": len(chunks),
@@ -236,7 +246,7 @@ class EmbeddingStage:
 
 
 def create_embedding_stage(
-    model: str = "text-embedding-3-small",
+    model: str = "text-embedding-3-large",
     batch_size: int = 100,
     logger: Optional[RAGLogger] = None
 ) -> EmbeddingStage:

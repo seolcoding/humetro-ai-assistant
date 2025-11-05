@@ -1,0 +1,24 @@
+{
+  "experiment": {
+    "id": null,
+    "name": "healthcheck",
+    "description": "Healthcheck: 2 questions (single+multi hop), 5 models (OpenAI+Ollama), Naive RAG",
+    "tags": [
+      "healthcheck",
+      "all-modules",
+      "naive-rag"
+    ],
+    "output_dir": "data/evaluation/healthcheck"
+  },
+  "questions_count": 2,
+  "models_count": 5,
+  "retrieval_methods": [
+    "naive"
+  ],
+  "results": {
+    "naive": {
+      "status": "failed",
+      "error": "[Errno 32] Broken pipe"
+    }
+  }
+}

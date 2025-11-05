@@ -36,7 +36,7 @@ from datasets import Dataset
 import litellm
 
 # Local imports
-from stages.stage_05_vector_store import VectorStoreStage
+from src.rag_pipeline.stages.stage_05_vector_store import VectorStoreStage
 
 logger = logging.getLogger(__name__)
 
@@ -109,9 +109,9 @@ class GenerationBenchmark:
         try:
             logger.info("📚 벡터 스토어 로드 중...")
 
-            # Step 1: Create VectorStoreStage
+            # Step 1: Create VectorStoreStage (use text-embedding-3-large for KG compatibility)
             vector_store_stage = VectorStoreStage(
-                model="text-embedding-3-small"
+                model="text-embedding-3-large"
             )
 
             # Step 2: Load FAISS vector store using public API

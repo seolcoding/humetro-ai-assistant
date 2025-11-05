@@ -3,6 +3,17 @@
   "benchmark": "200dc25ed4a94dd5",
   "versions": [
     {
+      "cache_key": "ab9011d2e08ae32f",
+      "created_at": "2025-11-05T21:45:32.204034",
+      "num_questions": 2,
+      "language": "korean",
+      "llm_model": "gpt-4o-mini",
+      "num_documents": 5,
+      "description": "Healthcheck minimal testset (1 single-hop + 1 multi-hop)",
+      "is_latest": false,
+      "is_benchmark": false
+    },
+    {
       "cache_key": "359312cb043d5a69",
       "created_at": "2025-11-05T15:19:20.308632",
       "num_questions": 65,
