@@ -1,0 +1,813 @@
+{
+  "chunk_id": 251,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B16574",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "망원동에서 을지로가는 제일 빠른 경로 좀 물어볼게요~",
+          "intent": "교통 정보 문의",
+          "terms": "망원동/지역, 을지로/지역",
+          "knowledge_base": "을지로,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 대중교통 이용하시는거 맞나요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "출발지가 망원동 어느쪽 이실까요?",
+          "intent": "교통 정보 문의",
+          "terms": "망원동/지역",
+          "knowledge_base": "망원동,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "망원시장쪽입니다~",
+          "terms": "망원시장/지역",
+          "knowledge_base": "뒷문,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "망원역에서 6호선 탑승 후 합정역에서 2호선으로 갈아타시면 되시겠습니다~",
+          "terms": "망원역/지하철역,합정역/지하철역",
+          "knowledge_base": "6호선,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "2호선 갈아타서 어디서 내려야 되나요?",
+          "intent": "교통 정보 문의",
+          "terms": "2호선/지하철역",
+          "knowledge_base": "어디서,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "을지로 3가역에서 하차하시면 되겠습니다~",
+          "terms": "을지로3가/지하철역",
+          "knowledge_base": "하차,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "망원시장에서 망원역까지는 가까운거 맞나요?",
+          "intent": "교통 정보 문의",
+          "terms": "망원시장/장소, 망원역/지하철역",
+          "knowledge_base": "망원역,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "도보 약7분 되겠습니다.",
+          "terms": "7분/시간",
+          "knowledge_base": "7분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "더 가까운 지하철 역은 없는간기여?",
+          "intent": "교통 정보 문의",
+          "terms": "지하철역/장소",
+          "knowledge_base": "지하철역,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 가장 가까운 지하철역 되겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "버스로 안내 도와드릴까요?",
+          "intent": "교통 정보 문의",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "음, 네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "270번 버스 탑승하시면 됩니다.",
+          "terms": "망원시장/장소",
+          "knowledge_base": "270번,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "이거는 어디서 내려야 해요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "종로 3가에서 내리시면 됩니다. ",
+          "terms": "종로3가/장소",
+          "knowledge_base": "종로3가,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "총 얼마나 걸려요?",
+          "intent": "교통 정보 문의",
+          "terms": "얼마나/소요시간",
+          "knowledge_base": "얼마나,소요시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "약 55분 소요됩니다. ",
+          "terms": "55분/시간",
+          "knowledge_base": "55분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "아, 네, 감사드립니다~"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16575",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "이촌동 대림아파트에서 kbs가려고 하는데 질문좀 드릴게요~",
+          "intent": "교통 정보 문의",
+          "terms": "이촌동/지역, 대림아파트/장소, KBS/방송국",
+          "knowledge_base": "대림아파트,방송국"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 도착지가 여의도 kbs 본관맞나요?",
+          "intent": "교통 정보 문의",
+          "terms": "여의도/장소, KBS본관/장소",
+          "knowledge_base": "KBS본관,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "맞습니다 본관입니다~",
+          "terms": "본관/장소",
+          "knowledge_base": "본관,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "지하철 타고 갈 수 있어요?",
+          "intent": "교통 정보 문의",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "버스를 이용하면 되겠습니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "몇번타는지좀 알려주세요~",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "네, 최소시간으로 안내해드려요?",
+          "intent": "교통 정보 문의",
+          "terms": "최소시간",
+          "knowledge_base": "최소시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "대림아파트 정류장에서 2016번 탑승 후 원효로3가에서 162번으로 환승하시면 되겠습니다~",
+          "terms": "정류장/장소",
+          "knowledge_base": "2016번,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그럼 kbs 바로 앞에서 내리는거 맞나요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네, 도보로 1분만 가시면 되겠습니다~",
+          "terms": "1분/시간",
+          "knowledge_base": "1분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "그럼 얼마나 걸릴까요?",
+          "intent": "교통 정보 문의",
+          "terms": "얼마나/기간",
+          "knowledge_base": "얼마나,기간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "37분정도 소요됩니다. ",
+          "terms": "37분/시간",
+          "knowledge_base": "37분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "어디서 갈아탄다고 하신거죠?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "원효로 3가에요~",
+          "terms": "원효로3가/지역",
+          "knowledge_base": "원효로3가,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "여기서 버스가 바로 안오면 좀 더 걸릴 수도 있는거맞나요?",
+          "intent": "교통 정보 문의",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 맞습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "혹시 거기서 탈 수 있는 다른 버스들도 있을까요?",
+          "intent": "교통 정보 문의",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 200번과 3OOO번이 있습니다. ",
+          "terms": "200번, 300번/버스/교통수단",
+          "knowledge_base": "300번,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다~"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16576",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "울산에서 전주한옥마을 가는 교통편좀 알 수 있을까요?",
+          "intent": "노선문의",
+          "terms": "울산/울산광역시, 전주한옥마을/전주시",
+          "knowledge_base": "전주한옥마을,전주시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "울산에서 전주로 가는 직행기차는 없고 환승편은 있겠습니다~",
+          "terms": "기차/기차, 환승/환승",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디서 환승하면 되난요?",
+          "intent": "노선문의",
+          "terms": "환승/환승",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "오송에서 환승하시면 됩니다.",
+          "terms": "오송/오송역, 환승/환승",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "오송이 어디일까요?",
+          "intent": "노선문의",
+          "terms": "오송/오송역",
+          "knowledge_base": "오송,오송역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "청주시 오송읍에 있는 기차역되겠습니다~",
+          "terms": "청주/청주시",
+          "knowledge_base": "청주,청주시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그럼 충북까지 올라갔다가 다시 내려가야되는거 맞나요?",
+          "intent": "노선문의",
+          "terms": "충북/충청북도",
+          "knowledge_base": "충북,충청북도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네. 전주에서 울산으로 가는 기차편은 오송역이 환승역 되시겠습니다.",
+          "terms": "전주/전주시, 울산/울산광역시, 오송역/기차역",
+          "knowledge_base": "울산,기차역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "시간은요?",
+          "intent": "노선문의",
+          "terms": "시간/시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "총 소요시간 2시간 20분 걸리십니다.",
+          "terms": "소요시간/시간",
+          "knowledge_base": "소요시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "빠르네요. KTX에요?",
+          "intent": "노선문의",
+          "terms": "KTX/기차",
+          "knowledge_base": "KTX,기차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "SRT와 KTX가 있습니다.",
+          "terms": "SRT/기차, KTX/기차",
+          "knowledge_base": "KTX,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "무궁화호처럼 일반편은 없는건가요?",
+          "intent": "노선문의",
+          "terms": "무궁화호/기차",
+          "knowledge_base": "무궁화호,기차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네. SRT와 KTX만 있습니다.",
+          "terms": "SRT/기차, KTX/기차",
+          "knowledge_base": "KTX,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "첫차로 가고싶은데 시간좀 알려주세요~",
+          "intent": "노선문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "울산에서 06:23 에 출발, 오송에서 08:04 환승하여 08:54에 도착하시겠습니다.",
+          "terms": "울산/울산광역시, 오송/오송역, 환승/환승",
+          "knowledge_base": "오송,환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "전주역에 내리면 전주한옥마을까지는 버스로 몇분 걸리는지 알 수 있을까요?",
+          "intent": "노선문의",
+          "terms": "전주역/기차역, 전주한옥마을/전주시",
+          "knowledge_base": "전주한옥마을,전주시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "15분걸립니다 버스로",
+          "terms": "버스/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "정류장은 가까울까요?",
+          "intent": "노선문의",
+          "terms": "정류장/버스정류장",
+          "knowledge_base": "정류장,버스정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "도보 이용 5분 걸리시겠습니다,.",
+          "terms": "도보/도보",
+          "knowledge_base": "도보"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16577",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스에 지갑을 두고 내린 것 같은데 어떻게해야 되나요?",
+          "intent": "분실",
+          "terms": "버스/버스, 지갑/물품",
+          "knowledge_base": "지갑,물품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "언제 분실하셧나요?",
+          "intent": "분실",
+          "terms": "분실/분실",
+          "knowledge_base": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "두시간정도 된것 같은데요~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "신고하셧나요?",
+          "intent": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "지금 알아가지구요~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "다산콜센터 120 또는 버스 차고지로 문의하면 됩니다.",
+          "terms": "다산콜센터/다산콜센터",
+          "knowledge_base": "다산콜센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "신고 되나요'?",
+          "intent": "분실"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "승하차 시간, 버스번호, 이용정류장 등을 알려주세요.",
+          "intent": "분실",
+          "terms": "버스번호/버스정보, 이용정류장/버스정류장",
+          "knowledge_base": "이용정류장,버스정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "구로디지털 단지에서 내렸습니다~",
+          "terms": "버스번호/버스정보, 구로디지털단지/버스정류장",
+          "knowledge_base": "구로디지털단지,버스정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "승하차시간도 기억 안나셔요?",
+          "intent": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "정확하지는 않은데 오후 2시경에 타서 2시 40분쯤 내린 것 같은데요~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "확인중입니다. 잠시만 기다려 주세요~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "확인 결과 해당 노선에서 지갑은 발견되지 않았습니다 선생님"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "그럼 혹시 발견되면 연락주셔요?",
+          "intent": "분실"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "네. 성함과 연락처 알려주세요.",
+          "intent": "분실",
+          "terms": "성함/개인정보, 연락처/개인정보",
+          "knowledge_base": "연락처,개인정보"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "000-000-000,유상희 입니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "지갑 모습에 대해서 자세하게 설명해주시겠어요.",
+          "intent": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "갈색이고,장지갑입니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "확인되는 대로 연락 드리겠습니다 고객님"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 감사드립니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16578",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스에 물건을 두고 내렸는데 찾을 수 있나요?",
+          "intent": "분실",
+          "terms": "버스/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네. 어떤 물건이신지 상세히 설명부탁드려요~",
+          "intent": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "작은 미니 우산이고 파란색이에요. 손잡이부분은 나무로 되어있습니다.",
+          "terms": "우산/물품",
+          "knowledge_base": "우산,물품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "버스 분실물 우산 관련해서 습득물 제보가 없는것으로 확인 되었습니다.",
+          "terms": "분실물/분실, 습득물/분실",
+          "knowledge_base": "습득물,분실"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "버스번호, 차량번호, 승하차시간 등 기억나는데로 자세히 부탁드립니다.",
+          "intent": "분실",
+          "terms": "버스번호/버스정보",
+          "knowledge_base": "버스번호,버스정보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "420번이고 내린지는 10분정도 지난거 같아요~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어느 정류장에서 하차하셨나요?",
+          "intent": "분실",
+          "terms": "정류장/버스정류장",
+          "knowledge_base": "정류장,버스정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "동대입구역에서 내렸습니다~",
+          "terms": "동국대입구/버스정류장",
+          "knowledge_base": "동국대입구,버스정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "혹시 차량번호 아실까요?",
+          "intent": "분실",
+          "terms": "차량번호/버스정보",
+          "knowledge_base": "차량번호,버스정보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "2816번 입니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "앉으신 자리 부탁드려요~",
+          "intent": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "세번째 창가자리입니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "분실물 신고 접수완료입니다.",
+          "terms": "분실물/분실",
+          "knowledge_base": "분실물,분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "언제쯤 알 수 있을까요?",
+          "intent": "분실"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "해당 버스노선 사무실로 분실물 신고 접수하였으므로 자세한 사항은 사무실로 직접 문의해주시길 부탁드립니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "전화번호 알 수 있나요?",
+          "intent": "분실",
+          "terms": "전화번호/전화번호",
+          "knowledge_base": "전화번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "도선여객 02-1234-1234로 문의해주시길 부탁드립니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "더 궁금하신 사항은요?",
+          "intent": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "감사드립니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네. 소중한 물건 꼭 찾으시길 바랍니다."
+        }
+      ]
+    }
+  ]
+}

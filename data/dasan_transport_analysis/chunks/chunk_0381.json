@@ -1,0 +1,858 @@
+{
+  "chunk_id": 381,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B24707",
+      "category": "대중교통 안내",
+      "turns": 11,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스에 노약자석 있잖아요. ",
+          "intent": "시내버스 노약자석",
+          "terms": "버스/대중교통, 노약자석/노약자",
+          "knowledge_base": "노약자석,노약자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 말씀하세요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "노약자석이 비어있으면 앉아도 돼요? ",
+          "intent": "시내버스 노약자석",
+          "terms": "노약자석/노약자",
+          "knowledge_base": "노약자석,노약자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "비어있으면 앉으시면 됩니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "퇴근하고 너무 힘들어서 앉으려는데 눈치가 보여요. ",
+          "intent": "시내버스 노약자석",
+          "knowledge_base": "눈치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "앉으셨다가 노약자분이 오시면 양보해 주시면 됩니다. ",
+          "terms": "노약자/노약자석",
+          "knowledge_base": "양보,노약자석"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "양보 안하면 벌금 물어요? ",
+          "intent": "시내버스 노약자석",
+          "terms": "벌금/돈",
+          "knowledge_base": "벌금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "노약자석은 배려석으로 강제성은 없습니다. ",
+          "terms": "노약자석/노약자",
+          "knowledge_base": "배려석,노약자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "똑같은 요금 내고 타는데 불공평하지 않아요? ",
+          "intent": "시내버스 노약자석",
+          "terms": "요금/비용",
+          "knowledge_base": "불공평,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "불편을 드려 죄송합니다. 현재 운영중인 노약자석과 임산부석은 강제성을 지니지 않으며, 몸이 불편하신 경우 착석하셔도 됩니다. ",
+          "terms": "현재/지금, 노약자석/노약자, 임산부석/임산부",
+          "knowledge_base": "죄송,임산부"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네, 알겠어요. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24708",
+      "category": "대중교통 안내",
+      "turns": 34,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "시내버스에도 조조할인이 있어요? ",
+          "intent": "시내버스 조조할인",
+          "terms": "시내버스/대중교통, 조조할인/할인",
+          "knowledge_base": "조조할인,할인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 조조할인이 있습니다. ",
+          "terms": "조조할인/할인",
+          "knowledge_base": "조조할인,할인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "할인 시간대는 어떻게 돼요? ",
+          "intent": "시내버스 조조할인",
+          "terms": "할인/결제",
+          "knowledge_base": "시간대,결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "첫차부터 오전 6시 30분까지 시내버스 이용시 할인 받으실 수 있습니다. ",
+          "terms": "시내버스/대중교통, 이용/사용",
+          "knowledge_base": "오전,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "얼마나 할인 받는데요? ",
+          "intent": "시내버스 조조할인",
+          "terms": "얼마/가격",
+          "knowledge_base": "할인,가격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "기본운임의 20% 할인이 적용됩니다. ",
+          "terms": "기본운임/기본료",
+          "knowledge_base": "20%,기본료"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "간선버스 성인 조조할인 요금은 얼마예요? ",
+          "intent": "시내버스 조조할인",
+          "terms": "간선버스/시내버스/대중교통, 성인/일반, 조조할인/할인, 요금/비용",
+          "knowledge_base": "성인,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "성인은 960원 입니다. ",
+          "terms": "성인/일반",
+          "knowledge_base": "960원,일반"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "청소년은 얼만데요? ",
+          "intent": "시내버스 조조할인",
+          "terms": "청소년/학생",
+          "knowledge_base": "청소년,학생"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "청소년은 580원입니다. ",
+          "terms": "청소년/학생",
+          "knowledge_base": "580원,학생"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "어린이도 할인돼요? ",
+          "intent": "시내버스 조조할인",
+          "terms": "어린이/아동",
+          "knowledge_base": "할인,아동"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 어린이는 360원입니다. ",
+          "terms": "어린이/아동",
+          "knowledge_base": "360원,아동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "현금으로 결제가 가능한가요? ",
+          "intent": "시내버스 조조할인",
+          "terms": "현금 결제/결제",
+          "knowledge_base": "가능,결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "조조할인은 카드 결제만 해당됩니다. ",
+          "terms": "조조할인, 카드 결제/결제",
+          "knowledge_base": "카드결제,결제"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "현금도 되면 좋은데 아쉽네요. ",
+          "terms": "현금/돈",
+          "knowledge_base": "현금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "순환버스도 조조할인이 있어요? ",
+          "intent": "순환버스 조조할인",
+          "terms": "순환버스/시내버스/대중교통, 조조할인/할인",
+          "knowledge_base": "조조할인,할인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "순환버스는 조조할인이 적용되지 않습니다. ",
+          "terms": "순환버스/시내버스/대중교통, 조조할인/할인",
+          "knowledge_base": "조조할인,할인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "광역버스는 조조할인 돼죠? ",
+          "intent": "광역버스 조조할인",
+          "terms": "광역버스/대중교통, 조조할인/할인",
+          "knowledge_base": "조조할인,할인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 조조할인이 적용됩니다. ",
+          "terms": "조조할인/할인",
+          "knowledge_base": "적용,할인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "성인 요금은 얼마예요? ",
+          "intent": "광역버스 조조할인",
+          "terms": "성인/일반, 요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "성인은 1,840원 입니다. ",
+          "terms": "성인/일반",
+          "knowledge_base": "1,일반"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "22",
+          "qa_type": "Q",
+          "content": "청소년 요금은요? ",
+          "intent": "광역버스 조조할인",
+          "terms": "요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "23",
+          "qa_type": "A",
+          "content": "청소년은 1,090원 입니다. ",
+          "terms": "청소년/학생",
+          "knowledge_base": "1,학생"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "24",
+          "qa_type": "Q",
+          "content": "어린이 요금도 알려주세요. ",
+          "intent": "광역버스 조조할인",
+          "terms": "어린이/아동, 요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "25",
+          "qa_type": "A",
+          "content": "어린이는 960원 입니다. ",
+          "terms": "어린이/아동",
+          "knowledge_base": "960원,아동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "26",
+          "qa_type": "Q",
+          "content": "마을 버스도 조조할인 되나요? ",
+          "intent": "마을버스 조조할인",
+          "terms": "마을버스/시내버스/대중교통, 조조할인/할인",
+          "knowledge_base": "조조할인,할인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "27",
+          "qa_type": "A",
+          "content": "네, 가능하십니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "28",
+          "qa_type": "Q",
+          "content": "조조할인 성인 요금이 얼마인가요? ",
+          "intent": "마을버스 조조할인",
+          "terms": "조조할인/할인, 성인/일반, 요금/비용",
+          "knowledge_base": "성인,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "29",
+          "qa_type": "A",
+          "content": "성인 요금은 720원 입니다. ",
+          "terms": "성인/일반, 요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "30",
+          "qa_type": "Q",
+          "content": "청소년 요금은 얼마예요? ",
+          "intent": "마을버스 조조할인",
+          "terms": "요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "31",
+          "qa_type": "A",
+          "content": "청소년은 380원입니다. ",
+          "terms": "청소년/학생",
+          "knowledge_base": "380원,학생"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "32",
+          "qa_type": "Q",
+          "content": "어린이는 할인 요금은요? ",
+          "intent": "마을버스 조조할인",
+          "terms": "어린이/아동, 요금/비용",
+          "knowledge_base": "할인,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "33",
+          "qa_type": "A",
+          "content": "어린이는 240원 입니다. ",
+          "terms": "어린이/아동",
+          "knowledge_base": "240원,아동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "34",
+          "qa_type": "A",
+          "content": "자세히 알려주셔서 감사합니다. ",
+          "terms": "감사/인사",
+          "knowledge_base": "감사,인사"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24709",
+      "category": "대중교통 안내",
+      "turns": 15,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지하철 안에서 음료수 먹어도 돼나요? ",
+          "intent": "지하철 반입음식",
+          "terms": "지하철/대중교통, 음료수/음료",
+          "knowledge_base": "음료수,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "원칙적으로 지하철 내에서는 음식물 섭취가 금지돼 있습니다. ",
+          "terms": "지하철/대중교통, 음식물/음식",
+          "knowledge_base": "지하철,음식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "오늘 보니까 우유랑 빵이랑 먹는 사람들 있던데요? ",
+          "intent": "지하철 반입음식",
+          "terms": "우유, 빵/음식물",
+          "knowledge_base": "빵,음식물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "지하철을 이용하는 시민들을 위해 음식물 섭취는 자제해 주셔야 합니다. ",
+          "terms": "지하철/대중교통, 이용/사용, 음식물/음식",
+          "knowledge_base": "이용,음식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "냄새 안나면 먹어도 된다고 하던데요? ",
+          "intent": "지하철 반입음식",
+          "terms": "냄새/음식물",
+          "knowledge_base": "냄새,음식물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "원래는 모든 음식물 섭취가 금지이며, 기준은 냄새가 나는지 안 나는지가 아닙니다. ",
+          "terms": "음식물/음식",
+          "knowledge_base": "모든,음식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "껌은 씹어도 돼요? ",
+          "intent": "지하철 반입음식",
+          "terms": "껌/음식",
+          "knowledge_base": "껌,음식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "껌도 원칙상 금지입니다. ",
+          "terms": "원칙/규칙",
+          "knowledge_base": "원칙,규칙"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지하철 밥요쿠르트족들 신고하면 처벌돼요? ",
+          "intent": "지하철 반입음식",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "밥요쿠르트족,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아직 구체적인 처벌 규정은 없습니다. ",
+          "terms": "처벌/벌",
+          "knowledge_base": "구체적,벌"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 신고해도 아무 소용 없네요? ",
+          "intent": "지하철 반입음식",
+          "terms": "신고/민원",
+          "knowledge_base": "아무,민원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "신고가 들어오는 경우 안내방송으로 주의를 주거나 해당 부서로 연결해 신속히 처리할 수 있도록 하고 있습니다. ",
+          "terms": "안내방송/방송, 해당 부서/담당부서",
+          "knowledge_base": "경우,담당부서"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "예방을 위한 다른 조치는 없나요? ",
+          "intent": "지하철 반입음식",
+          "terms": "예방/방지",
+          "knowledge_base": "다른,방지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "열차 내 LCD 모니터나 역 구내 광고판을 통해 지하철 에티켓이 지켜질 수 있도록 노력하고 있습니다. ",
+          "terms": "지하철 에티켓/에티켓",
+          "knowledge_base": "LCD모니터,에티켓"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 알겠어요. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24710",
+      "category": "대중교통 안내",
+      "turns": 26,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "저상 버스가 뭐예요? ",
+          "intent": "저상버스",
+          "terms": "저상버스/시내버스/대중교통",
+          "knowledge_base": "저상버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "저상버스는 교통약자와 일반시민이 시내버스를 편리하게 이용할 수 있도록 차체 바닥이 낮아 승하차가 편리한 버스입니다.",
+          "terms": "저상버스/시내버스/대중교통, 시내버스/대중교통, 이용/사용, 버스/대중교통",
+          "knowledge_base": "교통약자,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "일반 시내버스와 다른 점은 뭐예요? ",
+          "intent": "저상버스",
+          "terms": "시내버스/대중교통",
+          "knowledge_base": "시내버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "서울시 저상버스내에는 휠체어 고정장치가 설치되어 있습니다.",
+          "terms": "서울시/서울특별시, 저상버스/시내버스/대중교통",
+          "knowledge_base": "저상버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "그럼 휠체어를 타고 버스에 탈 수 있는 거네요? ",
+          "intent": "저상버스",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "휠체어 고정장치는 몇 개예요? ",
+          "intent": "저상버스",
+          "terms": "휠체어/운행수단",
+          "knowledge_base": "고정장치,운행수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "2개의 휠체어 고정장치가 설치되어 있습니다. ",
+          "terms": "휠체어/운행수단",
+          "knowledge_base": "휠체어,운행수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "서울 시내버스 중 저상버스는 몇 대 정도 돼요? ",
+          "intent": "저상버스",
+          "terms": "서울/서울특별시, 시내버스/대중교통, 저상버스/시내버스/대중교통",
+          "knowledge_base": "시내버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "현재 휠체어 탑승 장애인이 이용할 수 있는 버스는 전체 351개 노선 중 저상버스 260개 노선입니다. ",
+          "terms": "현재/지금, 버스/대중교통, 노선/버스노선, 저상버스/시내버스/대중교통",
+          "knowledge_base": "휠체어,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "저상버스 운행시간을 알 수 있을까요? ",
+          "intent": "저상버스",
+          "terms": "저상버스/시내버스/대중교통",
+          "knowledge_base": "운행시간,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "정확한 승차시간과 배차간격을 예측하기 위해 예약시스템을 운영하고 있습니다. ",
+          "terms": "승차시간/시간",
+          "knowledge_base": "승차시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "운행시간을 쉽게 알 수 있으면 좋을텐데 아쉽네요. ",
+          "terms": "운행시간/시간",
+          "knowledge_base": "운행시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "예약하는 방법 좀 알려주세요. ",
+          "intent": "저상버스",
+          "terms": "예약/예매",
+          "knowledge_base": "방법,예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "휠체어 탑승 장애인이 상담원을 통해 운수회사에 전화로 본인의 위치를 상담원에게 설명하면 예약이 진행됩니다. ",
+          "terms": "전화/연락",
+          "knowledge_base": "탑승,연락"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 버스 기사는 예약 확인을 어떻게 해요? ",
+          "intent": "저상버스",
+          "terms": "버스/대중교통",
+          "knowledge_base": "예약확인,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "예약 후 상담원이 실시간 버스정보를 확인, 버스기사 단말기에 메시지를 전송합니다. ",
+          "terms": "메시지/문자메시지",
+          "knowledge_base": "상담원,문자메시지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "장애인이 휠체어 탑승하는 건 누가 도와줘요? ",
+          "intent": "저상버스",
+          "terms": "장애인/비장애인",
+          "knowledge_base": "휠체어,비장애인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "버스 기사가 탑승을 제공하게 됩니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "탑승,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "저상버스는 주로 장애인이 이용하는 버스인가요? ",
+          "intent": "저상버스",
+          "terms": "저상버스/시내버스/대중교통",
+          "knowledge_base": "장애인,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "비장애인들도 이용하실 수 있습니다. ",
+          "terms": "비장애인/장애인, 이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "22",
+          "qa_type": "Q",
+          "content": "바닥이 낮아서 땅에 닿을까봐 느리게 운행한다는데 사실이에요? ",
+          "intent": "저상버스",
+          "terms": "운행/운영",
+          "knowledge_base": "땅,운영"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "23",
+          "qa_type": "A",
+          "content": "실제 저상버스는 일반버스와 지상 높이는 동일하며 승객들의 승하차 속도가 빨라 일반버스에 비해 느리게 운행해도 배차간격 안정화에 큰 문제가 없다고 한다. ",
+          "terms": "저상버스/시내버스/대중교통, 일반버스/버스/대중교통, ",
+          "knowledge_base": "저상버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "24",
+          "qa_type": "Q",
+          "content": "장애인이 승차할 경우 시간이 걸려서 불만인 사람들도 있던데요? ",
+          "intent": "저상버스",
+          "terms": "승차/승하차",
+          "knowledge_base": "승차,승하차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "25",
+          "qa_type": "A",
+          "content": "불편한 점도 있지만 일반인과 교통약자가 서로 예의를 갖추며 다함께 올바른 저상버스 이용문화를 만들어 나가기 위해 노력해야 합니다.",
+          "terms": "일반인/보통사람, 저상버스/시내버스/대중교통, 이용/사용",
+          "knowledge_base": "일반인,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "26",
+          "qa_type": "A",
+          "content": "네, 서로 노력해야 하는 게 맞는 거 같아요. ",
+          "terms": "노력/마음",
+          "knowledge_base": "노력,마음"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24711",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지하철에서 청소년 카드 사용하는데 불편한 점이 있어요. ",
+          "intent": "지하철 카드",
+          "terms": "지하철/대중교통, 청소년 카드/카드, 사용/이용",
+          "knowledge_base": "청소년카드,이용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 어떤 점이 불편하셨나요? ",
+          "intent": "지하철 카드",
+          "terms": "어떤/무엇, 불편/불만",
+          "knowledge_base": "불편,불만"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "카드 찍을 때마다 나는 소리 좀 안나게 할 수 없어요? ",
+          "intent": "지하철 카드",
+          "terms": "카드/결제",
+          "knowledge_base": "소리,결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "어떤 소리를 말씀하시는 건가요? ",
+          "intent": "지하철 카드",
+          "terms": "어떤/무엇",
+          "knowledge_base": "소리,무엇"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "카드 찍으면 \"청소년입니다.\" 하는 소리요. ",
+          "terms": "카드/결제",
+          "knowledge_base": "청소년,결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "죄송합니다. 현재 소리를 없앨 수 있는 방법이 없습니다. ",
+          "terms": "현재/지금",
+          "knowledge_base": "현재,지금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "도대체 왜 \"청소년입니다.\" 소리가 나는 건데요? ",
+          "intent": "지하철 카드",
+          "terms": "청소년/학생",
+          "knowledge_base": "청소년,학생"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "어른들이 청소년 카드 쓰는걸 방지하기 위해서 나는 소리입니다. ",
+          "terms": "어른/성인, 청소년 카드/카드",
+          "knowledge_base": "청소년카드,카드"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "이유가 있었네요. ",
+          "terms": "이유/근거",
+          "knowledge_base": "이유,근거"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그럼 소리라도 조금 줄여 주면 안돼요? ",
+          "intent": "지하철 카드",
+          "terms": "소리/음",
+          "knowledge_base": "조금,음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "현재 소리를 낮추는 방법이 존재하지 않습니다. 도움이 되지 못해 죄송합니다. ",
+          "terms": "현재/지금",
+          "knowledge_base": "소리,지금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "방법 좀 찾아줬으면 좋겠어요. ",
+          "terms": "방법/방식",
+          "knowledge_base": "방법,방식"
+        }
+      ]
+    }
+  ]
+}

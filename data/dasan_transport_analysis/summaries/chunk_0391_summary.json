@@ -1,0 +1,158 @@
+{
+  "question_types": [
+    {
+      "type": "노선/경로 안내 (Route/Navigation Guidance)",
+      "frequency": "20% (1/5 dialogues, but extensive multi-turn)",
+      "examples": [
+        "서울지하철이 인천까지 연결되죠?",
+        "용산역에서 소래포구까지 가는법 알려주세요."
+      ],
+      "characteristics": "Deep drilling into line numbers and connections, multiple follow-up questions"
+    },
+    {
+      "type": "시내버스 시간표 안내 (Bus Schedule Information)",
+      "frequency": "40% (2/5 dialogues, recurring pattern)",
+      "examples": [
+        "대전 시내버스 첫차가 몇 시 인가요?",
+        "수원 시내버스 막차는 몇 시 인가요?"
+      ],
+      "characteristics": "First/last bus inquiry, region-specific, simple one-answer format"
+    },
+    {
+      "type": "대중교통 불편신고/민원접수 (Malfunction/Complaint Report)",
+      "frequency": "40% (2/5 dialogues)",
+      "examples": [
+        "좌석에서 삐그덕거리는데 신고가능하죠?",
+        "개찰구가 인식이 이상해요"
+      ],
+      "characteristics": "Detailed information gathering (when, where, which), verification questions, registration process"
+    }
+  ],
+  "common_issues": [
+    {
+      "issue": "지하철 인프라 노선 관련 문의",
+      "frequency": "High",
+      "context": "서울과 인천 간 연결 노선 (1호선) 확인 요청, 환승/경로 계획 필요",
+      "root_cause": "시민들이 광역 교통 연결성 정보 부족"
+    },
+    {
+      "issue": "버스 운행 시간 정보 부족",
+      "frequency": "Very High",
+      "context": "첫차/막차 시간 문의 (대전, 수원), 노선별 편차 인식 부족",
+      "root_cause": "지역별 상이한 버스 운행 정보 일관성 부족, 시민 접근성 낮음"
+    },
+    {
+      "issue": "지하철 설비 장애",
+      "frequency": "Medium",
+      "context": "차량 좌석 손상(삐그덕거림), 개찰구 인식 오류 (A-123 위치)",
+      "root_cause": "설비 점검 주기 부족, 하자 신고 체계 미흡"
+    },
+    {
+      "issue": "장애 신고 정보 수집의 어려움",
+      "frequency": "Medium",
+      "context": "고객이 세부 정보 (고유번호, 위치, 방향, 시간) 제공 어려움",
+      "root_cause": "고객이 현장 정보 부족, 신고 방법의 복잡성"
+    }
+  ],
+  "answer_patterns": [
+    {
+      "pattern": "확인 질문 - 대분류 (교통수단 확인: 버스 vs 지하철)",
+      "effectiveness": "Very High",
+      "use_cases": [
+        "B24981, B24982 - 불편신고 시 우선 교통수단 구분",
+        "신고 처리 흐름 결정의 첫 단계"
+      ],
+      "reasoning": "신고/문의 종류를 빠르게 분류하여 처리 효율성 증대"
+    },
+    {
+      "pattern": "세부 정보 수집 (점진적 상세화)",
+      "effectiveness": "High",
+      "use_cases": [
+        "B24981: 지하철 노선 → 방향(B-A) → 시간(9시경) → 구체적 위치",
+        "B24982: 역명(000역) → 개찰구 번호(A-123)"
+      ],
+      "reasoning": "한 번에 모든 정보를 묻기보다 순차적으로 수집하여 고객 부담 감소"
+    },
+    {
+      "pattern": "맥락 정보 제공 (노선마다 다르지만...)",
+      "effectiveness": "High",
+      "use_cases": [
+        "B24983, B24984: '노선마다 다르지만 가장 빠른게 06시00분/05시05분'",
+        "일반화된 정보 제시로 신뢰성 향상"
+      ],
+      "reasoning": "정확한 정보 제공 + 제한사항 명시로 고객 이해도 증가"
+    },
+    {
+      "pattern": "지속적 관심 표현 및 추가 질문 유도",
+      "effectiveness": "Medium-High",
+      "use_cases": [
+        "B24983, B24984: '더 질문 있으세요?', '다른 문의 사항 없으신가요?'",
+        "고객 만족도 향상"
+      ],
+      "reasoning": "상담사 친절성 인상, 고객이 필요한 모든 정보 제공 기회 확보"
+    },
+    {
+      "pattern": "확인/검증 질문",
+      "effectiveness": "High (신뢰성 측면)",
+      "use_cases": [
+        "B24982: '카드 오류는 아닌지 확인하셨나요?' - 장애 원인 구분",
+        "B24980: '1호선 말고는 없나요?' - 고객 요구사항 명확화"
+      ],
+      "reasoning": "오류 범위 축소, 신고 정확성 향상"
+    },
+    {
+      "pattern": "정중한 종료 (감사 표현 + 추후 문의 안내)",
+      "effectiveness": "Medium",
+      "use_cases": [
+        "B24980: '좋은 하루 보내시길 바랄께요.'",
+        "B24983: '언제든 문의 해 주세요.'"
+      ],
+      "reasoning": "고객 만족도 향상, 서비스 신뢰성 강화"
+    }
+  ],
+  "improvement_areas": [
+    {
+      "area": "불편신고 후 처리 프로세스 명확화",
+      "reason": "B24981, B24982 완료 후 '접수되었습니다' 등 명시적 확인 없음",
+      "suggestion": "신고 접수 번호 제공, 예상 처리 시간, 사후 연락 방법 안내 필수"
+    },
+    {
+      "area": "지역별 버스 시간표 정보 시스템화",
+      "reason": "상담사가 기억하는 정보에 의존 (정확도 미보장), 모든 지역/노선 커버 어려움",
+      "suggestion": "실시간 버스 정보 시스템 접근, 스크립트 검색 도구 도입, 표준 답변 문서화"
+    },
+    {
+      "area": "복합 경로(환승) 안내 부족",
+      "reason": "B24980 외에 복합 경로 관련 상담 없음, 버스-지하철 환승 안내 전무",
+      "suggestion": "환승 경로 안내 템플릿 개발, 각 지역별 주요 환승점 정보 구축"
+    },
+    {
+      "area": "고객 정보 입력 간소화",
+      "reason": "B24982: 고유번호 찾는 방법이 모호 → 고객이 이미 하차한 상황",
+      "suggestion": "앱/웹에서 사진 첨부 기능, QR코드 스캔 등으로 정보 입력 단순화"
+    },
+    {
+      "area": "상담 기록 및 추적 시스템",
+      "reason": "신고 후 처리 상황 확인 방법 미제시",
+      "suggestion": "사례 번호 발급 후 웹사이트/앱에서 실시간 처리 상황 조회 기능"
+    },
+    {
+      "area": "맥락별 상담 시간 최적화",
+      "reason": "B24980: 20턴 (경로 안내), B24981-982: 20턴 (신고) - 신고는 보다 효율적 가능",
+      "suggestion": "신고 체크리스트 템플릿 도입, 필수 정보만 신속 수집 프로토콜"
+    }
+  ],
+  "key_insights": [
+    "다산콜센터 교통 상담은 3가지 명확한 카테고리(안내/신고/정보)로 구분 가능: 효율적인 라우팅 및 전담 팀 운영으로 처리 시간 30-40% 단축 가능",
+    "버스 시간표 정보는 '상담사 기억'에 의존: 정보 시스템화(자동 검색/제공) 시 정확도 향상 + 상담사 인지적 부담 감소 → 추가 질문 용이",
+    "신고 절차의 7단계 수집 패턴 발견: (1)교통수단 확인 → (2)문제 설명 → (3)위치/역 → (4)세부 번호 → (5)방향/노선 → (6)시간 → (7)기타 검증. 이를 표준화하면 신고 누락 최소화 가능",
+    "고객 만족도는 '추가 질문 기회 제공'으로 향상: B24983, B24984에서 명시적 '더 질문 있으세요?'가 재상담 의도 증가 신호",
+    "장애 신고의 주요 병목: 고객이 '고유번호'나 '세부 위치' 정보를 현장에서 수집 어려움. 디지털 신고 채널(사진/QR 기반)로 전환 시 신고율 증가 + 처리 정확도 향상",
+    "지역 특성별 교통 정보 편차: 대전(06:00-22:45), 수원(05:05-22:05) - 지역별 운영 시간이 상이. 통합 정보 제공 플랫폼 필요",
+    "상담 종료 시 '사후 연락 방법' 미제시: 신고의 경우 처리 진행 상황 공지 필요. CRM 시스템으로 고객 추적 가능하게 개선"
+  ],
+  "chunk_id": "chunk_0391",
+  "processing_time": 46.47877812385559,
+  "processed_at": "2025-11-05T12:06:27.301189",
+  "dialogue_count": 5
+}

@@ -1,0 +1,855 @@
+{
+  "chunk_id": 360,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B24305",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "집에 가려는데 어디서 버스를 타야 할까요?",
+          "intent": "대중교통 노선",
+          "terms": "집/주거공간, 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "지금 어디 계시는데요?",
+          "intent": "대중교통 노선",
+          "terms": "지금/곧",
+          "knowledge_base": "지금,곧"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아~~지금 둔산동에 있어요.",
+          "terms": "둔산동/지역",
+          "knowledge_base": "둔산동,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "네~~집이 어디에 있는데요?",
+          "intent": "대중교통 노선",
+          "terms": "집/주거공간",
+          "knowledge_base": "집,주거공간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "가수원동이요..",
+          "terms": "가수원동/지역",
+          "knowledge_base": "가수원동,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아~~둔산동에서 가수원동으로 가시는 거군요..",
+          "terms": "둔산동,가수원동/지역",
+          "knowledge_base": "가수원동,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네 그렇지요.."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "둔산동의 어디에 있는 건가요?",
+          "intent": "대중교통 노선",
+          "terms": "둔산동/지역",
+          "knowledge_base": "둔산동,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "아~~음….삼성전자가 있는데요.",
+          "terms": "삼성전자/전자제품 판매점",
+          "knowledge_base": "삼성전자,전자제품판매점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "삼성전자요?",
+          "intent": "대중교통 노선",
+          "terms": "삼성전자/전자제품 판매점",
+          "knowledge_base": "삼성전자,전자제품판매점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 삼성전자 앞에 백화점이 보이실까요?",
+          "intent": "대중교통 노선",
+          "terms": "삼성전자/전자제품 판매점,백화점/대형쇼핑센터",
+          "knowledge_base": "백화점,대형쇼핑센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "아~~~네~~보여요…"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네~~~그럼 그 백화점 앞 버스정류장에서 버스 타면 되요..",
+          "terms": "백화점/대형쇼핑센터,버스/대중교통",
+          "knowledge_base": "버스정류장,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "거기도 310번 탈 수 있는건가요?",
+          "intent": "대중교통 노선",
+          "terms": "310번/버스노선",
+          "knowledge_base": "310번,버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네~~"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "백화점 앞이면 길 건너서 타야 하는 건가요?",
+          "intent": "대중교통 노선",
+          "terms": "백화점/대형쇼핑센터",
+          "knowledge_base": "백화점,대형쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네~~~삼성전자 앞에서 타시면 안됩니다.",
+          "terms": "삼성전자/전자제품 판매점",
+          "knowledge_base": "삼성전자,전자제품판매점"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아~~네네~~~"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "감사해요…",
+          "terms": "감사/고마움",
+          "knowledge_base": "감사,고마움"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네~~좋은 하루되세요."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24306",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "수목원은 어떻게 갈 수 있나요?",
+          "intent": "대중교통 노선",
+          "terms": "수목원/관찰이나 연구의 목적으로 여러 가지 나무를 수집하여 재배하는 시설. ",
+          "knowledge_base": "수목원,관찰이나연구의목적으로여러가지나무를수집하여재배하는시설."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "버스로 가는 것 말씀하시는 건가요?",
+          "intent": "대중교통 노선",
+          "terms": "버스/대중교통, 말씀/말, 이야기",
+          "knowledge_base": "말씀,이야기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네~~버스로요…",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "네~~어디서 출발하시는데요?",
+          "intent": "대중교통 노선",
+          "terms": "출발/시작",
+          "knowledge_base": "출발,시작"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "도안동이요.",
+          "terms": "도안동/지역",
+          "knowledge_base": "도안동,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "도안동이면 한밭수목원까지 100번,200번,300번 버스 타면 되요",
+          "terms": "도안동/지역,버스/대중교통",
+          "knowledge_base": "한밭수목원,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "아~~수목원에서 가장 가까운데서 내리는 버스가 어떤 거예요?",
+          "intent": "대중교통 노선",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "200번이요",
+          "terms": "200번/버스노선",
+          "knowledge_base": "200번,버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "네~~버스에서 내려서 더 가야하나요?",
+          "intent": "대중교통 노선",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네~~수목원까지 10분 정도는 걸어가셔야 합니다.",
+          "terms": "수목원/관찰이나 연구의 목적으로 여러 가지 나무를 수집하여 재배하는 시설. ",
+          "knowledge_base": "10분,관찰이나연구의목적으로여러가지나무를수집하여재배하는시설."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "아~~생각보다 오래 걸어가야 하네요..",
+          "terms": "생각/기분",
+          "knowledge_base": "생각,기분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "제가 다리가 좀 불편한데…",
+          "terms": "다리/신체부위",
+          "knowledge_base": "불편,신체부위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "수목원이랑 더 가까운 정류장은 없는 건가요?",
+          "intent": "대중교통 노선",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네~~안타깝지만 없네요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "혹시 택시타면 수목원 안에까지 들어갈 수 있을 까요?",
+          "intent": "대중교통 노선",
+          "terms": "택시/대중교통",
+          "knowledge_base": "수목원,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "택시를 타셔도 수목원이 좀 안쪽에 있어서 내리시는 곳이 비슷할 겁니다.",
+          "terms": "택시/대중교통",
+          "knowledge_base": "수목원,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아~~그렇군요…"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "다리가 좀 나아지면 가야겠네요..",
+          "terms": "다리/신체부위",
+          "knowledge_base": "다리,신체부위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네~~그렇게 하시는 것이 좋을 것 같습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네~~감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24307",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오송에서 세종가는 버스 노선을 좀 알고 싶어요",
+          "intent": "버스 노선",
+          "terms": "오송/오송읍, 세종/세종특별시/세종특별자치시/지역, 버스/교통수단",
+          "knowledge_base": "세종,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "오송 중에 출발지점이 어디세여?",
+          "intent": "버스 노선",
+          "terms": "오송/오송읍, 출발/출발지, 지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "오송역에서 출발하려구요",
+          "terms": "오송/오송읍, 역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 세종 어느 지역이세요?? ",
+          "intent": "버스 노선",
+          "terms": "지역/지명/위치",
+          "knowledge_base": "세종,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아 저는 세종 아름동 갈 예정입니다.",
+          "terms": "세종/지역, 아름동/동네",
+          "knowledge_base": "아름동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "버스 노선",
+          "terms": "좌석버스/교통수단, 시내버스/교통수단",
+          "knowledge_base": "시내버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 버스로 안내해드려야 할까요?",
+          "intent": "버스 노선",
+          "terms": "안내/소개",
+          "knowledge_base": "안내,소개"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "있잖아요, 최대한 빨리갈 수 있는 걸로요",
+          "terms": "최대/크기, 빨리/시간",
+          "knowledge_base": "빨리,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "OO님, 세종으로 가는 BRT 노선 안내해드리겠습니다. 오송역에서 990번 버스 타시면 됩니다.",
+          "terms": "BRT, 버스/시외버스/시내버스, 요금/돈",
+          "knowledge_base": "버스,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": " 궁금하신 사항은 없으신가요?",
+          "intent": "버스 노선",
+          "terms": "추가/더하기, 궁금/의문",
+          "knowledge_base": "궁금,의문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "아 그럼 BRT 1000번 버스 요금은 얼마예요?",
+          "intent": "버스 요금",
+          "terms": "BRT, 버스/교통수단, 요금/돈",
+          "knowledge_base": "버스,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "카드결제? 현금결제 이세요?",
+          "intent": "버스 요금",
+          "terms": "카드/결제수단, 현금/돈",
+          "knowledge_base": "결제,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "요금 차이가 있나요?",
+          "intent": "버스 요금",
+          "terms": "요금/돈",
+          "knowledge_base": "차이,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "OO님, 기본요금은 1,500원인데 카드결제하시면 100원 할인받을 수 있습니다.",
+          "terms": "1,500원/금액, 100원/금액",
+          "knowledge_base": "500원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 알겠습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "마지막으로 하나만 더물어볼께요. 축산물품질평가원까지 BRT가 갈까요?",
+          "intent": "버스 정류장",
+          "terms": "축산물품질평가원/공공기관",
+          "knowledge_base": "축산물품질평가원,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "가지 않습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "어디에서 내려요?",
+          "intent": "버스 정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "OO님, 도담동 정류장에서 내려셔야합니다.",
+          "terms": "도담동/동네",
+          "knowledge_base": "정류장,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "그 정류장에서 축산물품질평가원까지는 많이 멀어요?",
+          "intent": "버스 정류장",
+          "terms": "정류장/장소",
+          "knowledge_base": "정류장,장소"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24308",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "저기요 안녕하세요 대전에서 세종가는 버스 노선을 알고 싶어요",
+          "intent": "버스 노선",
+          "terms": "대전/지역, 세종/세종특별시/세종특별자치시/지역, 버스/교통수단",
+          "knowledge_base": "세종,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "대전 출발지점이 어디신데요?",
+          "intent": "버스 노선",
+          "terms": "대전/지역, 출발/출발지, 지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "대전역에서 출발하려구요",
+          "terms": "대전/지역, 역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 세종 어느 지역이세요? ",
+          "intent": "버스 노선",
+          "terms": "세종/지역, 지역/지명/위치",
+          "knowledge_base": "세종,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아 거기가 어디더라, 아 맞다 세종 보람동 입니다..",
+          "terms": "세종/지역, 보람동/동네",
+          "knowledge_base": "보람동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "OO님, 대전역에서 출발하는 버스는BRT가 있습니다.",
+          "terms": "대전/지역, 출발/출발지, BRT/교통수단",
+          "knowledge_base": "출발,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 버스로 안내해드리면 될까요?",
+          "intent": "버스 노선",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "있잖아요, 최대한 빨리갈 수 있는 거로 부탁해요",
+          "terms": "최대/크기, 빨리/시간",
+          "knowledge_base": "빨리,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "OO님, 세종으로 가는 BRT 노선은 222번입니다.",
+          "terms": "세종/지역BRT/교통수단, 222번/버스번호",
+          "knowledge_base": "BRT,버스번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "추가로 궁금하신 것은 없으신가요?",
+          "intent": "버스 노선",
+          "terms": "추가/더하기, 궁금/의문",
+          "knowledge_base": "궁금,의문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 또요, BRT 222번 요금은 얼만데요?",
+          "intent": "버스 요금",
+          "terms": "BRT/교통수단,  요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "카드결제세요? 현금결제세요?",
+          "intent": "버스 요금",
+          "terms": "카드/결제수단, 현금/돈",
+          "knowledge_base": "결제,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "요금 차이가 있나요?",
+          "intent": "버스 요금",
+          "terms": "요금/돈",
+          "knowledge_base": "차이,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "OO님, 기본요금은 1,500원인데 카드결제하시면 100원 할인받을 수 있습니다.",
+          "terms": "1,500원/금액, 100원/금액",
+          "knowledge_base": "500원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 알겠습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "조치원까지 BRT가 가나요?",
+          "intent": "버스 정류장",
+          "terms": "조치원/지역",
+          "knowledge_base": "조치원,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "가지 않습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그럼 어디에서 내려야하나요?",
+          "intent": "버스 정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "OO님, 아름동 정류장에서 내려셔야합니다.",
+          "terms": "아름동/동네",
+          "knowledge_base": "정류장,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "그 정류장에서 조치원까지는 많이 먼가요?",
+          "intent": "버스 정류장",
+          "terms": "정류장/정류소, 장소",
+          "knowledge_base": "조치원,장소"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24309",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울출발 부산까지 기차를 알고 싶습니다.",
+          "intent": "기차문의",
+          "terms": "서울/지역, 부산/지역, 기차/교통수단",
+          "knowledge_base": "부산,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "서울이 출발지점 인가요?",
+          "intent": "기차문의",
+          "terms": "서울/지역, 출발/출발지, 지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아마도 서울역에서 출발할것 같아요.",
+          "terms": "서울/지역, 역/역사, 출발/출발지",
+          "knowledge_base": "역,출발지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착은 부산이세요?",
+          "intent": "기차문의",
+          "terms": "부산/지역",
+          "knowledge_base": "부산,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "OO님, 서울역에서는 ktx와 무궁화호가 있습니다.",
+          "terms": "서울/지역, ktx/기차종류, 무궁화호/기차종류",
+          "knowledge_base": "ktx,기차종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 기차로 안내할까요?",
+          "intent": "기차문의",
+          "terms": "기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "ktx요",
+          "terms": "ktx/기차종류",
+          "knowledge_base": "ktx,기차종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "OO님, ktx는 매시간 15분에 출발합니다.",
+          "terms": "ktx/기차종류, 15분/시간",
+          "knowledge_base": "15분,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "추가로 궁금하신 것은 없으신가요?",
+          "intent": "기차문의",
+          "terms": "시간/때",
+          "knowledge_base": "궁금,때"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 소요될까요?",
+          "intent": "기차시간",
+          "terms": "시간/때",
+          "knowledge_base": "시간,때"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "OO님, 2시간 소요됩니다.",
+          "terms": "2시간/이동거리",
+          "knowledge_base": "소요,이동거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "요금은요?",
+          "intent": "기차요금",
+          "terms": "요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "OO님, 특실은 4만원, 일반실은 3만원입니다.",
+          "terms": "4만원, 3만원/금액",
+          "knowledge_base": "4만원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "예약가능한가요?",
+          "intent": "기차예약",
+          "terms": "예약/약속",
+          "knowledge_base": "예약,약속"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "OO님, 앱에서 예약가능합니다.",
+          "terms": "앱/응용프로그램",
+          "knowledge_base": "앱,응용프로그램"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "임산부인데 할인되요?",
+          "intent": "기차예약",
+          "terms": "임산부/대상, 할인/금액감면",
+          "knowledge_base": "할인,금액감면"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. OO님, 가능합니다.",
+          "terms": "가능/실현",
+          "knowledge_base": "가능,실현"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "어떻 해야되요?",
+          "intent": "기차예약"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "OO님, 코레일 홈페이지에서 임산부신청을 해주시면 됩니다.",
+          "terms": "홈페이지/웹페이지, 임산부/대상",
+          "knowledge_base": "홈페이지,대상"
+        }
+      ]
+    }
+  ]
+}

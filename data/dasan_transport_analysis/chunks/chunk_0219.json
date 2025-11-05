@@ -1,0 +1,848 @@
+{
+  "chunk_id": 219,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B15967",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울에서 강릉역가는 ktx문의합니다",
+          "intent": "ktx문의",
+          "terms": "고속열차",
+          "knowledge_base": "ktx,고속열차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 어떤 문의이신가요?",
+          "intent": "ktx문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "서울역에서만 ktx 탈수 있는건지요?",
+          "intent": "ktx문의",
+          "terms": "기차역",
+          "knowledge_base": "서울역,기차역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "강릉역까지 운행하는 ktx는 서울역에서 출발하여 청량리역 그리고 망우역을 경유합니다",
+          "terms": "들르다",
+          "knowledge_base": "경유,들르다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "청량리역에서도 탈수 있다고요?",
+          "intent": "ktx문의",
+          "terms": "지하철역명",
+          "knowledge_base": "청량리역,지하철역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 맞습니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "청량리역에선 하루 몇번 운행을 합니까?",
+          "intent": "ktx문의",
+          "terms": "지하철역명",
+          "knowledge_base": "청량리역,지하철역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "평일기준 14번 운행합니다",
+          "terms": "평일/주중/운행/운전",
+          "knowledge_base": "운행,운전"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "평일 9시경에는 열차시간이 어떻게 되는지요?",
+          "intent": "ktx문의",
+          "terms": "평일/주중/열차/기차/대중교통",
+          "knowledge_base": "열차,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "9시22분 열차가 있습니다",
+          "terms": "열차/기차",
+          "knowledge_base": "열차,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그 다음시간은 언젠가요?",
+          "intent": "ktx문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "10시22분입니다",
+          "terms": "10시22분/시각",
+          "knowledge_base": "10시22분,시각"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "한시간 반정도 걸린다고 들었는데 맞습니까?",
+          "intent": "ktx문의",
+          "terms": "한시간 반/시간",
+          "knowledge_base": "한시간반,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "소요시간은 1시간 26분입니다",
+          "terms": "소요시간/걸리는시간",
+          "knowledge_base": "소요시간,걸리는시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "요금은 얼마지요?",
+          "intent": "ktx문의",
+          "terms": "요금/금액 ",
+          "knowledge_base": "요금,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "성인요금 26000원입니다",
+          "terms": "성인요금/어른요금",
+          "knowledge_base": "성인요금,어른요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "경로요금 할인은 따로 없습니까?",
+          "intent": "ktx문의",
+          "terms": "요금종류",
+          "knowledge_base": "경로요금,요금종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 할인은 없습니다",
+          "terms": "할인/세일",
+          "knowledge_base": "할인,세일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 수고하십쇼"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15968",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지하철에 책을 두고내려서 찾으려고 하는데요",
+          "intent": "대중교통유실물",
+          "terms": "대중교통수단, 도서",
+          "knowledge_base": "책,도서"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "언제 분실하셨나요?",
+          "intent": "대중교통유실물",
+          "terms": "잃어버리다",
+          "knowledge_base": "분실,잃어버리다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "삼일전에요",
+          "terms": "삼일전/날짜",
+          "knowledge_base": "삼일전,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "분실하신 역을 기억하시나요?",
+          "intent": "대중교통유실물",
+          "terms": "기억/정보",
+          "knowledge_base": "기억,정보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아니요, 집에 와서 알았어요, 책 두고 내린걸",
+          "terms": "장소",
+          "knowledge_base": "집,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "그날 이용하신 지하철 구간이 어떻게 되시나요?",
+          "intent": "대중교통유실물",
+          "terms": "사이",
+          "knowledge_base": "구간,사이"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "시청에서 타서 수내역에서 내렸어요",
+          "terms": "시청/수내역/지하철역명",
+          "knowledge_base": "수내역,지하철역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "몇호선 시청역에서 탑승하셨나요?",
+          "intent": "대중교통유실물",
+          "terms": "시청역/지하철역/탑승/승차",
+          "knowledge_base": "탑승,승차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "1호선이요",
+          "terms": "1호선/지하철노선",
+          "knowledge_base": "1호선,지하철노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그럼 목적지까지 가시는동안 환승을 하셨나요?",
+          "intent": "대중교통유실물",
+          "terms": "하차지",
+          "knowledge_base": "목적지,하차지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네, 환승했어요",
+          "terms": "환승/갈아타기",
+          "knowledge_base": "환승,갈아타기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "환승하신 정류장과 호선이 어떻게 되시죠?",
+          "intent": "대중교통유실물",
+          "terms": "환승/갈아타기/정류장/역명",
+          "knowledge_base": "정류장,역명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "2호선 을지로입구역이랑 분당선 왕십리역에서 갈아탔는데요",
+          "terms": "2호선/지하철노선, 을지로입구역, 왕십리역/지하철역",
+          "knowledge_base": "을지로입구역,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "승차하신 구간중 어디서 분실하셨는지 모르신다고 하셨죠?",
+          "intent": "대중교통유실물",
+          "terms": "승차/탑승/분실/유실",
+          "knowledge_base": "분실,유실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네 환승할때 두고 내렸을텐데 그게 을지로입구인지 왕십리인지, 아님 수내역 내릴땐지 모르겠어요",
+          "terms": "갈아타기",
+          "knowledge_base": "환승,갈아타기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "1,2호선 유실물종합센터 전화번호는 02-6110-1122번입니다",
+          "terms": "분실물",
+          "knowledge_base": "유실물종합센터,분실물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "그리고 분당선 유실물종합센터는 031-896-9791입니다",
+          "terms": "유실물종합센터/분실물센테",
+          "knowledge_base": "유실물종합센터,분실물센테"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "전화하셔서 찾으시는 분실물과 이용하신 날짜를 말씀하시면 도움 받으실수 있습니다",
+          "terms": "분실물/유실물",
+          "knowledge_base": "분실물,유실물"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15969",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요 지하철에서 뭘잃어버렸는데 찾을수 있을까요?",
+          "intent": "대중교통유실물",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "분실하신 날짜가 언제이신가요?",
+          "intent": "대중교통유실물",
+          "terms": "분실/유실",
+          "knowledge_base": "분실,유실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "좀 오래됐는데 한달은 더 넘은것 같아요",
+          "terms": "기간",
+          "knowledge_base": "한달,기간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "분실물품을 여쭤봐도 될까요?",
+          "intent": "대중교통유실물",
+          "terms": "분실물품/유실물품",
+          "knowledge_base": "분실물품,유실물품"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "작은 크로스백인데 잃어버린지가 너무 오래돼서 찾을수 있을지 걱정이네요",
+          "terms": "가방",
+          "knowledge_base": "크로스백,가방"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "분실하신날을 정확히 기억하시진 못하시고요?",
+          "intent": "대중교통유실물",
+          "terms": "분실/유실/기억/메모리",
+          "knowledge_base": "기억,메모리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네, 그냥 한달은 넘었고 두달은 안됐을거에요, 제가 지하철 탈 일이 있었던게 그때쯤이였어서요",
+          "terms": "한달/1개월/지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "선생님께서 이용하신 지하철 구간은 어떻게 되실까요?",
+          "intent": "대중교통유실물",
+          "terms": "지하철/대중교통/구간/구역",
+          "knowledge_base": "구간,구역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "판교에서 강남역이요",
+          "terms": "지하철역명",
+          "knowledge_base": "강남역,지하철역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "신분당선만 이용하신건가요",
+          "intent": "대중교통유실물",
+          "terms": "지하설노선",
+          "knowledge_base": "신분당선,지하설노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "지하철 유실물센터는 7일간 보관이 되고 이후에는 경찰서로 인계가 됩니다",
+          "terms": "인수",
+          "knowledge_base": "인계,인수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "제 가방은 있어도 경찰서에 있겠네요?",
+          "terms": "가방/백/경찰서/관공서",
+          "knowledge_base": "경찰서,관공서"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 맞습니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "어디 경찰서로 전화해야돼죠?",
+          "intent": "대중교통유실물",
+          "terms": "경찰서/관공서",
+          "knowledge_base": "경찰서,관공서"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "전화로도 알아보실수 있고 홈페이지에서 습득물 검색도 가능한데 어떤것으로 알려드릴까요?",
+          "intent": "대중교통유실물",
+          "terms": "인터넷사이트",
+          "knowledge_base": "홈페이지,인터넷사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "둘다 알려주세요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "전화번호는 182번입니다",
+          "terms": "182번/전화번호",
+          "knowledge_base": "182번,전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "홈페이지는 www.lost112.go.kr입니다",
+          "terms": "홈페이지/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15970",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "할머니가 버스에 짐을두고 내리셨는데 찾을수 있나요?",
+          "intent": "대중교통유실물",
+          "terms": "노인, ",
+          "knowledge_base": "짐,노인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "버스 번호를 기억하시나요?",
+          "intent": "대중교통유실물",
+          "terms": "버스번호/번호",
+          "knowledge_base": "버스번호,번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네, 근데 시외버스 타고 동서울터미널 오셔서 버스로 갈아타셨는데 시외버스에 두고내리신건지 갈아타셔서 잃어버리신건지 모르시겠대요",
+          "terms": "버스종류, 버스터미널",
+          "knowledge_base": "동서울터미널,버스터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "분실일자가 어떻게 되시죠?",
+          "intent": "대중교통유실물",
+          "terms": "분실일자/분실날짜",
+          "knowledge_base": "분실일자,분실날짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "어제 저녁에요",
+          "terms": "어제/하루전/저녁/오후",
+          "knowledge_base": "저녁,오후"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "시외버스 이용구간은 어디서 어디까지신가요?",
+          "intent": "대중교통유실물",
+          "terms": "시외버스/대중교통",
+          "knowledge_base": "시외버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "원주에서 동서울터미널이요",
+          "terms": "지역",
+          "knowledge_base": "원주,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "동서울터미널 유실물센터에 전화는 해보셨나요?",
+          "intent": "대중교통유실물",
+          "terms": "동서울터미널/터미널/유실물센터/분실물센터",
+          "knowledge_base": "유실물센터,분실물센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "아니요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그럼 먼저 동서울터미널 유실물센터 전화번호를 알려드릴까요?",
+          "intent": "대중교통유실물",
+          "terms": "동서울터미널/터미널/유실물센터/분실물센터",
+          "knowledge_base": "유실물센터,분실물센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 알려주세요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1688-5979 입니다",
+          "terms": "1688-5979/전화번호",
+          "knowledge_base": "1688-5979,전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네 적었어요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "시내버스 이용구간은 어떻게 되시죠?",
+          "intent": "대중교통유실물",
+          "terms": "시내버스/대중교통",
+          "knowledge_base": "시내버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "동서울터미널에서 어린이대공원후문까지요",
+          "terms": "장소",
+          "knowledge_base": "어린이대공원후문,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "이용하신 버스 번호는요?",
+          "intent": "대중교통유실물",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "4번 버스요",
+          "terms": "4번 버스/버스",
+          "knowledge_base": "4번버스,버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "광진04번 마을버스 맞으신가요?",
+          "intent": "대중교통유실물",
+          "terms": "버스종류",
+          "knowledge_base": "마을버스,버스종류"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "광진04번 마을버스는 구의교통이며 02-453-0388입니다. 동서울터미널과 구의교통으로 전화하셔서 분실물 문의 하시면 도움받으실수 있습니다",
+          "terms": "마을버스/대중교통/동서울터미넣/터미널/분실물/유실물/문의/질의",
+          "knowledge_base": "동서울터미널,질의"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15971",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지하철 불편신고 하려고 하는데 어떻게 해야돼죠?",
+          "intent": "대중교통불편신고",
+          "terms": "불편신고/불편접수",
+          "knowledge_base": "불편신고,불편접수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "이용하신 지하철에서 불편하신일을 겪으셨나요?",
+          "intent": "대중교통불편신고",
+          "terms": "지하철/대중교통/불편/어려움",
+          "knowledge_base": "블편,어려움"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "불편을 겪으신 지하철이 몇호선이신가요?",
+          "intent": "대중교통불편신고",
+          "terms": "지하철호선",
+          "knowledge_base": "몇호선,지하철호선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "경의중앙선이요",
+          "terms": "지하철노선",
+          "knowledge_base": "경의중앙선,지하철노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "경의중앙선 불편신고센터 번호를 알려드리면 될까요?",
+          "intent": "대중교통불편신고",
+          "terms": "경의중앙선/지하철노선/불편신고센터",
+          "knowledge_base": "불편신고센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그럼 제가 거기로 직접 전화 해야하는거에요?",
+          "intent": "대중교통불편신고",
+          "terms": "전화/연락",
+          "knowledge_base": "전화,연락"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 맞습니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "여기에다가 얘기하면 안되는거에요?",
+          "intent": "대중교통불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "저희에게 말씀해주셔도 되지만 해당 호선으로 직접 연락하시면 보다 신속하고 정확한 피드백을 받으실수 있습니다",
+          "terms": "사후관리",
+          "knowledge_base": "피드백,사후관리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "그럼 알려주세요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "경의중앙선 불편신고센터 번호는 1544-7769 입니다",
+          "terms": "경의중앙선/지하철노선/불편신고센터",
+          "knowledge_base": "불편신고센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "이쪽으로 전화하면 된다는거죠?",
+          "intent": "대중교통불편신고",
+          "terms": "전화/연락",
+          "knowledge_base": "전화,연락"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "통화도 되시고 문자로도 신고 접수 가능합니다",
+          "terms": "통화/문자/연락/신고/접수/신청",
+          "knowledge_base": "문자,신청"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "문자로 어떻게요?",
+          "intent": "대중교통불편신고",
+          "terms": "문자/SNS ",
+          "knowledge_base": "문자,SNS"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "열차고유번호와 불편하신 내용을 40자 이내로 적어 보내시면 됩니다",
+          "terms": "차량번호",
+          "knowledge_base": "열차고유번호,차량번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "열차 고유번호를 어떻게 알아요?",
+          "intent": "대중교통불편신고",
+          "terms": "차량번호",
+          "knowledge_base": "열차고유번호,차량번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "열차출입문 상단 또는 통로상단을 보면 4-6자리 열차고유번호가 있습니다",
+          "terms": "열차출입문/출구/통로상단/통로위쪽",
+          "knowledge_base": "통로상단,통로위쪽"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "제가 지금 지하철 타고있는게 아니라 확인을 못하는데요?",
+          "intent": "대중교통불편신고",
+          "terms": "지하철/대중교통/확인/검토",
+          "knowledge_base": "확인,검토"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "그러시면 열차의 진행방향과 하차하신역 이름을 적으시면 됩니다",
+          "terms": "운행방향",
+          "knowledge_base": "진행방향,운행방향"
+        }
+      ]
+    }
+  ]
+}

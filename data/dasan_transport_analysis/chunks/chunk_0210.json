@@ -1,0 +1,877 @@
+{
+  "chunk_id": 210,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B11331",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "광명출발해서 강남까지가는 방법 좀 알려주세요.",
+          "intent": "노선",
+          "terms": "광명/지역명",
+          "knowledge_base": "광명,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "고객님 출발지가 광명 어디신가요?",
+          "intent": "노선",
+          "terms": "출발지/출발, 광명/지역",
+          "knowledge_base": "광명,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "철산4동요.",
+          "terms": "철산4동/동네",
+          "knowledge_base": "철산4동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "고객님 도착지는 강남 어디신가요?",
+          "intent": "노선",
+          "terms": "도착지/도착, 강남/지역",
+          "knowledge_base": "강남,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "강남역요.",
+          "terms": "강남/지역, 역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "고객님 전철로 안내 해 드리면 될까요?",
+          "intent": "노선",
+          "terms": "전철/교통수단",
+          "knowledge_base": "전철,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "직통 버스가 있으면 안내부탁해요.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "직통 버스는 없습니다. 고객님 ",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "없어요? 그럼 환승해서 버스로만 이동이 되나요?",
+          "intent": "노선",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "고객님 버스만 이용하는 방법은 검색이 되지 않습니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 그럴수 밖에 없네요, 전철 이용해서 이동하는 방법 알려주세요.",
+          "intent": "전철 노선",
+          "terms": "전철/교통수단",
+          "knowledge_base": "전철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "고객님 철산역에서 7호선 탑승 후 대림역에서 2호선으로 환승하시면 됩니다.",
+          "terms": "철산/지역, 역/역사, 7호선/전철/교통수단, 탑승/승차, 대림/지역, 2호선/전철/교통수단",
+          "knowledge_base": "역,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 2호선이 강남역까지 가요?",
+          "intent": "전철 노선",
+          "terms": "2호선/전철/교통수단, 강남/지역, 역/역사",
+          "knowledge_base": "강남,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 고객님 맞습니다.",
+          "terms": "고객/손님",
+          "knowledge_base": "고객님,손님"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요??",
+          "intent": "전철 시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "고객님 50분 소용 됩니다.",
+          "terms": "50분/시간",
+          "knowledge_base": "50분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그럼 더 빠른 방법은요?",
+          "intent": "전철 시간",
+          "terms": "방법/수단",
+          "knowledge_base": "방법,수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 고객님 안내 드린 경로가 최소 시간 입니다.",
+          "terms": "안내/설명",
+          "knowledge_base": "안내,설명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 알겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15870",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오송에서 세종가는 버스 노선을 알고 싶습니다.",
+          "intent": "버스 노선",
+          "terms": "오송/오송읍, 세종/세종특별시/세종특별자치시/지역, 버스/교통수단",
+          "knowledge_base": "세종,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "오송 중에 출발지점이 어디신가요?",
+          "intent": "버스 노선",
+          "terms": "오송/오송읍, 출발/출발지, 지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "오송역에서 출발합니다.",
+          "terms": "오송/오송읍, 역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 세종 어느 지역이신가요? ",
+          "intent": "버스 노선",
+          "terms": "지역/지명/위치",
+          "knowledge_base": "세종,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "세종 아름동 갈 예정입니다.",
+          "terms": "세종/지역, 아름동/동네",
+          "knowledge_base": "아름동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 잠시만 기다려주세요. 오송역에서 출발하는 버스는 좌석버스와 시내버스가 있습니다. ",
+          "terms": "좌석버스/교통수단, 시내버스/교통수단",
+          "knowledge_base": "시내버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 버스로 안내해드릴까요?",
+          "intent": "버스 노선",
+          "terms": "안내/알림",
+          "knowledge_base": "안내,알림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "최대한 빨리갈 수 있는 거로 알려주세요.",
+          "terms": "최대/크기, 빨리/시간",
+          "knowledge_base": "빨리,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "세종으로 가는 BRT 노선 안내해드리겠습니다. 오송역에서 990번 버스 타시면 됩니다.",
+          "terms": "BRT, 버스/시외버스/시내버스, 요금/돈",
+          "knowledge_base": "버스,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "혹시 추가로 궁금하신 사항은 없으신가요?",
+          "intent": "버스 노선",
+          "terms": "궁금/질의",
+          "knowledge_base": "궁금,질의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "BRT 1OOO번 버스 요금은 얼마인가요?",
+          "intent": "버스 요금",
+          "terms": "BRT, 버스/교통수단, 요금/돈",
+          "knowledge_base": "버스,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "카드결제이신가요? 현금결제이신가요?",
+          "intent": "버스 요금",
+          "terms": "카드/결제수단, 현금/돈",
+          "knowledge_base": "결제,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "카드결제와 현금결제할 때 요금 차이가 있나요?",
+          "intent": "버스 요금",
+          "terms": "요금/돈",
+          "knowledge_base": "차이,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "기본요금은 1,500원인데 카드결제하시면 100원 할인받을 수 있습니다.",
+          "terms": "1,500원/금액, 100원/금액",
+          "knowledge_base": "500원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 알겠습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "마지막으로 하나만 더요. 축산물품질평가원까지 BRT가 가나요?",
+          "intent": "버스 정류장",
+          "terms": "축산물품질평가원/공공기관",
+          "knowledge_base": "축산물품질평가원,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아니요. 가지 않습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그럼 어디에서 내려야하나요?",
+          "intent": "버스 정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "도담동 정류장에서 내려셔야합니다.",
+          "terms": "도담동/동네",
+          "knowledge_base": "정류장,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "그 정류장에서 축산물품질평가원까지는 많이 먼가요?",
+          "intent": "버스 정류장",
+          "terms": "정류장/시설, 축산물품질평가원/기관",
+          "knowledge_base": "축산물품질평가원,기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "도보로 20분 정도 예상됩니다.",
+          "terms": "도보/이동 방법, 20분/시간",
+          "knowledge_base": "20분,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15872",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "신림동에서 김포공항은 어떻게 가나요?",
+          "intent": "버스 노선",
+          "terms": "신림동/김포공항",
+          "knowledge_base": "김포공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "신림동중에 출발지점이 어디신가요?",
+          "intent": "버스 노선",
+          "terms": "신림동/출발지/출발지점",
+          "knowledge_base": "출발지,출발지점"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "관악롯데백화점  앞입니다",
+          "terms": "관악롯데백화점",
+          "knowledge_base": "관악롯데백화점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "김포공항 안내 대중교통문의신가요?",
+          "intent": "버스 노선",
+          "terms": "김포공항",
+          "knowledge_base": "김포공항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 대중교통 안내부탁드립니다",
+          "terms": "대중교통",
+          "knowledge_base": "대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "버스와 지하철 어느쪽으로 안내도와드릴까요?",
+          "intent": "버스노선",
+          "terms": "버스/지하철/안내",
+          "knowledge_base": "지하철,안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "버스로 부탁드립니다",
+          "terms": "버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "김포공항 버스 대중교통 안내도와드리겠습니다",
+          "terms": "김포공항/버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "김포공항은 국제선,국내선 어느쪽을 이용하시나요?",
+          "intent": "버스노선",
+          "terms": "김포공항/국제선.국내선",
+          "knowledge_base": "국제선.국내선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "국내선입니다",
+          "terms": "국내선",
+          "knowledge_base": "국내선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "김포공항으로 가는 버스는 공항버스와 일반버스가있습니다 ",
+          "terms": "김포공항/버스/공항버스/일반버스",
+          "knowledge_base": "버스,일반버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "어떤 버스로 안내해드릴까요?",
+          "intent": "버스노선",
+          "terms": "버스/안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "공항버스랑 일반버스 금액차이가 얼마인가요?",
+          "terms": "공항버스/일반버스/금액차이",
+          "knowledge_base": "일반버스,금액차이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "공항버스는 4,000원, 일반버스는 최소환승 1,500원입니다",
+          "terms": "공항버스/일반버스/최소환승",
+          "knowledge_base": "일반버스,최소환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "공항버스랑 일반버스 소요시간 차이가 많이날까요?",
+          "terms": "공항버스/일반버스",
+          "knowledge_base": "일반버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "승하차정거장 수가 적은 공항버스가 20분정도 빠릅니다 교통상황에 따라 다소 차이가 날순있습니다",
+          "terms": "승하차장/공항버스",
+          "knowledge_base": "공항버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "공항버스로 안내해드릴까요?",
+          "intent": "버스노선",
+          "terms": "공항버스",
+          "knowledge_base": "공항버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아니오 일반버스 안내부탁드립니다",
+          "terms": "일반버스/안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "일반버스 안내도와드리겠습니다 ",
+          "terms": "일반버스/안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "00번 입니다.",
+          "terms": "일반버스/안내",
+          "knowledge_base": "안내"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15873",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "신림동에서 김포공항은 버스로 어떻게 가나요?",
+          "intent": "버스노선",
+          "terms": "출발지/신림역",
+          "knowledge_base": "신림역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "신림5번출구 버스정류소에서 651번 간선버스가 11분마다 운행중에 있습니다 ",
+          "terms": "신립역5번출구/버스정류소/간선버스/할인/운행",
+          "knowledge_base": "버스정류소,운행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "버스요금 카드신가요? 현금이신가요?",
+          "intent": "버스요금",
+          "terms": "버스요금/카드/현금",
+          "knowledge_base": "카드,현금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "요금차이가 있나요?",
+          "terms": "요금차이",
+          "knowledge_base": "요금차이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "현금은 1,500원, 카드결재시 100원 할인되어 1,400원에 이용가능하십니다",
+          "terms": "현금/카드/할인",
+          "knowledge_base": "카드,할인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "혹시 추가로 궁금하신 사항은 없으신가요?",
+          "intent": "교통정보",
+          "terms": "추가/사항",
+          "knowledge_base": "사항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "소요시간은 얼마나 될까요?",
+          "terms": "소요시간",
+          "knowledge_base": "소요시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "31개 정류장 이동으로 약 한시간 소요됩니다",
+          "terms": "정류장/이동/소요",
+          "knowledge_base": "이동,소요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "더 궁금하신 사항은 없으신가요?",
+          "intent": "교통정보",
+          "terms": "궁금/사항",
+          "knowledge_base": "사항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "버스내려서 국내선까진 거리가 먼가요?",
+          "terms": "국내서/거리",
+          "knowledge_base": "거리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "버스정류소에서 2분거리에 바로 국내선청사가 있습니다",
+          "terms": "버스정류소/국내선청사",
+          "knowledge_base": "국내선청사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "신림에서 김포공항 지하철이용 궁금합니다",
+          "intent": "교통정보",
+          "terms": "신림/김포공항",
+          "knowledge_base": "김포공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "환승한번 이용하셔서 이동시간은 약 50분정도 소요되십니다",
+          "terms": "완슨/환승구간/소요시간",
+          "knowledge_base": "환승구간,소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "지하철로도 안내부탁드려요",
+          "terms": "지하철/안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "신림2호선에서 5호선 영등포구청역에서 환승하시면 김포공항역으로 바로 이동가능하십니다 ",
+          "terms": "신림/김포공항/영등초구청/환승",
+          "knowledge_base": "김포공항,환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "김포공항역 2번출구로 도보413M이동하시면 국내선공항입니다",
+          "terms": "김포공항/국내공항",
+          "knowledge_base": "국내공항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "치하철 요금은 얼마인가요?",
+          "intent": "교통정보",
+          "terms": "지하철요금",
+          "knowledge_base": "지하철요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "1,450원 적용되십니다",
+          "terms": "지하철요금",
+          "knowledge_base": "지하철요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "입국심사나 수화물 붙이는 시간은 어느정도 걸리나요?",
+          "intent": "교통정보",
+          "terms": "탑승/입국심사시간",
+          "knowledge_base": "입국심사시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "탑승시간전 어느정도 여유있게 가는게 좋을까요",
+          "intent": "교통정보",
+          "terms": "탑승시간",
+          "knowledge_base": "탑승시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15874",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "삼성서비스센터를 안내해주세요.",
+          "intent": "버스 노선",
+          "terms": "삼성서비스센터",
+          "knowledge_base": "삼성서비스센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "거주하고 계신곳이 어디십니까?",
+          "intent": "버스 노선",
+          "terms": "출발지/신림역",
+          "knowledge_base": "신림역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "마곡동입니다.",
+          "terms": "마곡동/출발지/출발지점",
+          "knowledge_base": "출발지,출발지점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "삼성전자서비스 마곡센터가 있습니다.",
+          "terms": "삼성서비스센터/안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "서비스센터를 찾아가는 길을 안내해드릴까요?",
+          "intent": "버스노선",
+          "terms": "삼성서비스센터/안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 부탁드립니다.",
+          "terms": "안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "대중교통과 자차중 어느쪽으로 안내도와드릴까요?",
+          "intent": "버스노선",
+          "terms": "대중교통/자차/안내",
+          "knowledge_base": "자차,안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "대중교통으로 부탁드립니다",
+          "terms": "대중교통",
+          "knowledge_base": "대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "버스과 지하철중 어느쪽으로 안내도와드릴까요?",
+          "intent": "버스노선",
+          "terms": "버스/지하철/안내",
+          "knowledge_base": "지하철,안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "버스로 부탁드립니다",
+          "terms": "버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "출발지에서 가까운 지하철역이 있으신가요?",
+          "intent": "버스노선",
+          "terms": "출발지",
+          "knowledge_base": "출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 있습니다.",
+          "terms": "가능",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "가까운 지하철역 이름이 어떻게 되나요?",
+          "intent": "버스노선",
+          "terms": "출발지/마곡역",
+          "knowledge_base": "마곡역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "마곡역입니다.",
+          "terms": "가능",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "출발지에서 마곡역이 도보로 이용가능하실까요?",
+          "intent": "버스노선",
+          "terms": "출발지/신림역",
+          "knowledge_base": "신림역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 가능합니다",
+          "terms": "가능",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "마곡역1번출구 버스정류소에서 388번 이용하여 공항초등학교.공항중학교 하차 후 도보 200m안쪽에 위치하고 있습니다.",
+          "terms": "마곡역1번출구/버스정류소/일반버스",
+          "knowledge_base": "버스정류소,일반버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "요금은 얼마인가요?",
+          "terms": "요금",
+          "knowledge_base": "요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "현금은 1,450원, 카드결재시 100원 할인되어 1,350원에 이용가능하십니다",
+          "terms": "현금/카드/할인",
+          "knowledge_base": "카드,할인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다"
+        }
+      ]
+    }
+  ]
+}

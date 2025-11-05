@@ -82,28 +82,28 @@ MODEL_CONFIGS = {
         "provider": "openai"
     },
 
-    # Ollama models
+    # Ollama models (config/models.yaml 기준)
     "ollama/exaone3.5:7.8b": {
         "name": "EXAONE-3.5-7.8B",
         "model": "ollama/exaone3.5:7.8b",
         "api_base": "http://100.95.220.92:11434",
         "provider": "ollama"
     },
-    "ollama/eeve-korean-10.8b:latest": {
-        "name": "EEVE-Korean-10.8B",
-        "model": "ollama/eeve-korean-10.8b:latest",
+    "ollama/qwen3:8b": {
+        "name": "Qwen3-8B",
+        "model": "ollama/qwen3:8b",
         "api_base": "http://100.95.220.92:11434",
         "provider": "ollama"
     },
-    "ollama/llama-3.2-3b-instruct:latest": {
-        "name": "Llama-3.2-3B",
-        "model": "ollama/llama-3.2-3b-instruct:latest",
+    "ollama/gemma3:12b": {
+        "name": "Gemma3-12B",
+        "model": "ollama/gemma3:12b",
         "api_base": "http://100.95.220.92:11434",
         "provider": "ollama"
     },
-    "ollama/gemma2-9b-it:latest": {
-        "name": "Gemma2-9B",
-        "model": "ollama/gemma2-9b-it:latest",
+    "ollama/gpt-oss:20b": {
+        "name": "GPT-OSS-20B",
+        "model": "ollama/gpt-oss:20b",
         "api_base": "http://100.95.220.92:11434",
         "provider": "ollama"
     }
@@ -114,8 +114,9 @@ MODEL_GROUPS = {
     "all": list(MODEL_CONFIGS.keys()),
     "openai": ["gpt-4o", "gpt-4o-mini"],
     "ollama": [k for k in MODEL_CONFIGS.keys() if k.startswith("ollama/")],
-    "korean": ["ollama/exaone3.5:7.8b", "ollama/eeve-korean-10.8b:latest"],
-    "fast": ["gpt-4o-mini", "ollama/llama-3.2-3b-instruct:latest"]
+    "thesis": ["gpt-4o-mini", "ollama/exaone3.5:7.8b", "ollama/qwen3:8b", "ollama/gemma3:12b", "ollama/gpt-oss:20b"],
+    "korean": ["ollama/exaone3.5:7.8b"],
+    "fast": ["gpt-4o-mini", "ollama/qwen3:8b"]
 }
 
 

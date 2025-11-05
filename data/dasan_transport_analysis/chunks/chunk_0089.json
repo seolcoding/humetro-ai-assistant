@@ -1,0 +1,693 @@
+{
+  "chunk_id": 89,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2915",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "상담사",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "terms": "이름/고객센터/콜센터",
+          "knowledge_base": "OOO,콜센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "길을 여쭤보고 싶은데 가능한가요?",
+          "intent": "버스노선",
+          "knowledge_base": "길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디에서 어디까지 가시나요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "시청에서 SK서린빌딩을 가려고 합니다.",
+          "terms": "서울/지역/건물",
+          "knowledge_base": "SK서린빌딩,건물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떤 교통수단을 원하시나요?",
+          "intent": "버스노선",
+          "knowledge_base": "교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "최대한 빨리갈수 있는 길로 안내해주세요.",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "도보로는 30분정도 소요되시고 버스를 타시면 3정거장이 걸리시네요 버스로 알려드리겠습니다",
+          "terms": "버스노선/시내버스",
+          "knowledge_base": "버스,시내버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "네 몇번타야 하죠?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "453번 버스를 타시면 도착하실 수 있습니다.",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "요금은 얼마인가요?",
+          "intent": "버스노선",
+          "knowledge_base": "요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "혹시 결제를 카드로 하실건가요? 현금으로 결제하시나요?",
+          "intent": "버스노선",
+          "terms": "요금",
+          "knowledge_base": "현금,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "카드결제와 현금결제할 때 요금 차이가 있나요?",
+          "intent": "버스노선",
+          "terms": "버스요금/요금",
+          "knowledge_base": "현금결체,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "버스 요금은 1,200원입니다.",
+          "knowledge_base": "버스요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "카드로 결제하면요?",
+          "intent": "버스노선",
+          "knowledge_base": "카드결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "카드로 요금을 결제시1,300원 입니다.",
+          "terms": "버스요금/요금",
+          "knowledge_base": "요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "소요시간은 얼마나 걸리나요?",
+          "intent": "버스노선",
+          "knowledge_base": "소요시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "평균 10분 정도 걸리지만 도로상황에따라 시간이 더 걸리수도 있습니다.",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "버스정류장에서 도착지까지는 얼마나 걸리나요?",
+          "intent": "버스노선",
+          "terms": "버스노선/시내버스",
+          "knowledge_base": "도착,시내버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "도보로 5분 정도 예상됩니다.",
+          "knowledge_base": "도보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2916",
+      "category": "대중교통 안내",
+      "turns": 23,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "역삼역에서 홍대가는 버스노선을 알고싶습니다.",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "역삼역에서 출발하시는건가요?",
+          "intent": "버스 노선",
+          "knowledge_base": "역삼역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네",
+          "terms": "지역/지명/위치",
+          "knowledge_base": "홍대,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "정확한 도착지가 어디실까요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "홍대역 스미비부타동을 가려고 하는데요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 잠시만 기다려주세요.  버스는 좌석버스와 시내버스가 있습니다. ",
+          "terms": "좌석버스/교통수단/ 시내버스/교통수단",
+          "knowledge_base": "좌석버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 버스로 안내해드릴까요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "시내버스로 안내부탁드립니다.",
+          "terms": "버스/시외버스/시내버스/ 요금/돈",
+          "knowledge_base": "버스,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "홍대로가는버스123,456번 버스가 있습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "더 궁금하신 내용은 없으세요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "버스에서 내려서 얼마정도 걸어가야 하나요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 버스에서 하차하시고 홍대역방향으로 10분정도 걸으셔야 합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "아 그럼 지하철도 어떻게 가는지 알려주세요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "네 역삼역에서 출발하신다고 하셨죠?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "2호선역삼역에서 타시구요 사당역에서 4호선으로 갈아타셔서 삼각지역에서 6호선을 갈아타셔서 상수역에서 내리시면 됩니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "어머 너무 많이 갈아타네요 힘들것 같은데요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 2번정도 갈아타셔야 하네요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": " 그냥 버스로 가야 겠어요 혹시버스 요금은 얼마인가요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "카드결제이신가요? 현금결제이신가요?",
+          "intent": "버스 노선",
+          "terms": "버스/교통수단/ 요금/돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "Q",
+          "content": "카드결제와 현금결제할 때 요금 차이가 있나요?",
+          "intent": "버스 노선",
+          "terms": "카드/결제수단/ 현금/돈",
+          "knowledge_base": "결제,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "22",
+          "qa_type": "A",
+          "content": "기본요금은 1,800원인데 카드결제하시면 100원 할인받을 수 있습니다.",
+          "terms": "요금/돈",
+          "knowledge_base": "100원할인,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "23",
+          "qa_type": "A",
+          "content": "네, 알겠습니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2917",
+      "category": "대중교통 안내",
+      "turns": 5,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "24",
+          "qa_type": "Q",
+          "content": "마스크착용하지 않으면 못타는거죠?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "25",
+          "qa_type": "A",
+          "content": "네 마스크 미착용시 버스기사가 거부가능합니다.",
+          "terms": "마스크/착용여부/버스기사/거부",
+          "knowledge_base": "버스기사,거부"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "26",
+          "qa_type": "Q",
+          "content": "마스크를 꼭 써야 겠네요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "27",
+          "qa_type": "A",
+          "content": "넵 맞습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "28",
+          "qa_type": "A",
+          "content": "네,감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2918",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "상담사",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "terms": "다산콜센터/버스노선/상담전화",
+          "knowledge_base": "다산콜센터,상담전화"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": " 안녕하세요. 다름이 아니라 수원역에서 팔달문시장가는 버스가 있는지 궁금해서요.",
+          "intent": "버스노선",
+          "terms": "경기도/시장/재래시장/버스노선/빠른길",
+          "knowledge_base": "팔달문시장,빠른길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 팔달문시장 가는 버스 말씀이시죠? 지금 검색해보겠습니다. 잠시만요",
+          "terms": "팔달문시장/버스노선/교통수단/시내버스",
+          "knowledge_base": "버스,시내버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "기다려주셔서 감사합니다. 지금 메모 가능하십니까?",
+          "intent": "버스노선",
+          "knowledge_base": "메모"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아 잠깐만요 메모지를 가져올께요. 말씀하세요",
+          "knowledge_base": "메모지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "팔달문시장까지가는 버스는 130번 버스를 타셔서 7정거장을 지나 팔달문정류장역에 하차 하시면 됩니다.",
+          "terms": "팔달문시장/재래시장/버스노선/시내버스/130번버스노선",
+          "knowledge_base": "130번,130번버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "팔달문시장까지 그 버스밖에 없나요?",
+          "intent": "버스노선",
+          "terms": "버스/시내버스/재래시장/교통수단",
+          "knowledge_base": "팔달문시장,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "다른 버스노선도 안내드리겠습니다.",
+          "terms": "팔달문시장역/버스노선/버스안내/시내버스",
+          "knowledge_base": "안내,시내버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "다른 버스노선도 모두 안내주시면 감사하겠습니다. 빨리 도착하는 버스로 타려고요.",
+          "terms": "버스시간/배차간격/버스노선/시내버스/버스번호",
+          "knowledge_base": "안내,버스번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "수원역에서 팔달문시장까지 가는 버스는 130번과 45번 231번이 있는데요. 45번버스는 팔달문시장까지 15정류장을 지나 하차하셔야하구요. 231번은 130번 버스와 노선이 같아 7정류장을 지나 하차 하시면 됩니다.",
+          "terms": "버스번호/수원역버스/팔달문시장/버스노선/버스시간/배차간격",
+          "knowledge_base": "팔달문시장,배차간격"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "지금 몇번버스가 빨리오는지 알수 있나요?",
+          "intent": "버스노선",
+          "terms": "버스번호/배차간격",
+          "knowledge_base": "버스,배차간격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "잠시만 기다려주시겠습니까? 고객님 검색해 보겠습니다.",
+          "knowledge_base": "검색"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 기다리겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "기다려주셔서 감사합니다. 현재 가장빨리 도착하는 버스는 45번으로 앞으로 5분 후에 도착 예정입니다.",
+          "terms": "버스번호/배차간격/버스노선/버스시간",
+          "knowledge_base": "버스,버스시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 바로 도착하겠네요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 고객님 조금만 기다리지면 금방 도착할 듯 합니다.",
+          "knowledge_base": "고객님"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "예. 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "고객님 혹시라도 5분 후에 도착하는 버스를 놓치시면 그후에 3분후에 32번 버스가 도착하니 알고 계시면 도움이 될것 같습니다.",
+          "terms": "버스번호/배차시간/버스노선/버스정류장",
+          "knowledge_base": "버스,버스정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "정말로 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "네 감사합니다. 오늘도 좋은하루되세요"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2919",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "제 가게 앞에 차 번호도 안 붙여있는 승합차가 며칠 째 계속 세워져 있어요",
+          "intent": "불법주정차",
+          "terms": "단속/차량번호/차/가게",
+          "knowledge_base": "차번호,가게"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 정말 불편하셨겠어요. 제가 도와드릴께요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 손님이 차를 대야 하는데 못대고 있어요 빨리 처리좀 해주세요",
+          "knowledge_base": "처리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "처리해드리기 위해 몇가지 여쭤봐야하는게 있는데 괜찮으시겠어요?",
+          "intent": "불법주정차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 말씀하세요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "혹시 차가 언제 부터 주차되어 있어나요?",
+          "intent": "불법주정차",
+          "terms": "차/불법/단속/차량번호",
+          "knowledge_base": "주차,차량번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "한 5일쯤 된것 같은데요 8월25일부터인거로 기억해요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "처음에 어떻게 발견하셨나요?",
+          "intent": "불법주정차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": " 8월25일쯤 아침에 가계문을 열려고 보니까 세워져 있더라구요",
+          "terms": "가계/차/주차/불법/차량번호",
+          "knowledge_base": "가게,차량번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "감사합니다. 혹시 번호판이 없는지 다시한번 확인해주실수 있을까요?",
+          "intent": "불법주정차",
+          "terms": "불법주정차/번호판/단속/주차/불법",
+          "knowledge_base": "번호판,불법"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 번호판 없어요. 봉고인데 연식이 오래된거 같아요",
+          "terms": "불법주정차/번호판/단속/주차/불법",
+          "knowledge_base": "봉고,불법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네~ 일단 제가 오산시청 교통과로 전달해서  처리하도록 하겠습니다.",
+          "terms": "불법주정차/오산시청/교통과/단속/주차",
+          "knowledge_base": "교통과,주차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "아. 언제쯤 차가 빠지는지 알수 있나요?",
+          "intent": "불법주정차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "오산시청 교통과에 전달해서 오늘이나 내일중으로 바로 견인할수 있도록 전달하겠습니다.",
+          "terms": "불법주정차/단속/불법/견인",
+          "knowledge_base": "견인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "그리고 주청차단속좀 자주해주세요. 너무 차를 아무렇게나 막 대서 불편해요",
+          "terms": "주정차단속/불법주정차/견인/주차/교통과",
+          "knowledge_base": "주정차단속,교통과"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "제가 교통과 담당부서에 단속 철저히 할수있도록 말씀드리겠습니다.",
+          "terms": "오산시청/교통과/담당부서/주정차단속/견인/주차",
+          "knowledge_base": "담당부서,주차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 부탁 좀 드릴께요. 장사하는데 앞을 막고 있으니 손님들이 불편해 하세요",
+          "terms": "사업/불편",
+          "knowledge_base": "손님,불편"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 정말 불편하시겠어요. 바로 처리될수있도록 하겠습니다.",
+          "terms": "불편신고/처리/확인",
+          "knowledge_base": "처리,확인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 고객님 감사합니다."
+        }
+      ]
+    }
+  ]
+}

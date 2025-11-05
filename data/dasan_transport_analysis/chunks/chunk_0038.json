@@ -1,0 +1,473 @@
+{
+  "chunk_id": 38,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2218",
+      "category": "대중교통 안내",
+      "turns": 4,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오전 11시 전주에서 서울온 버스에 검은색 가방을 놓고 왔는데 어디서 찾을수 있나요?",
+          "intent": "분실물",
+          "terms": "오전/시간/ 11시/시간/ 전주/지명/ 서울/지명/ 버스/교통수단/ 가방/소지품",
+          "knowledge_base": "11시,소지품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "혹시 검정색 체크무늬 가방인가요?",
+          "intent": "분실물",
+          "terms": "가방/소지품",
+          "knowledge_base": "가방,소지품"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "터미널 분실물센터에 맡겨져 있다고 합니다.",
+          "terms": "터미널/공공기관/ 분실물센터/공공기관",
+          "knowledge_base": "분실물센터,공공기관"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2219",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "약수동에서 옥수동가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "약수동/동네/ 옥수동/동네/ 버스/교통수단",
+          "knowledge_base": "옥수동,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "약수동 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "약수동/동네",
+          "knowledge_base": "약수동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "약수시장이야.",
+          "terms": "약수시장/시장",
+          "knowledge_base": "약수시장,시장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "옥수동 어디로 가?",
+          "intent": "버스노선",
+          "terms": "옥수동/동네",
+          "knowledge_base": "옥수동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "옥수역이야.",
+          "terms": "옥수역/역사",
+          "knowledge_base": "옥수역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "약수시장에서 옥수역로 가는 버스는 305버스를 타면 돼.",
+          "terms": "약수시장/시장/ 옥수역/역사/ 버스/교통수단",
+          "knowledge_base": "옥수역,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "20분정도야.",
+          "terms": "20분/시간",
+          "knowledge_base": "20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "막차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 12시 10분이야.",
+          "terms": "오전/시간/ 12시/시간/ 10분/시간",
+          "knowledge_base": "12시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,200원이야.",
+          "terms": "1/200원/금액",
+          "knowledge_base": "200원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2220",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "신사동에서 서초구가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "신사동/동네/ 서초구/지명/ 버스/교통수단",
+          "knowledge_base": "서초구,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "신사동 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "신사동/동네",
+          "knowledge_base": "신사동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "신사동가로수길이야.",
+          "terms": "신사동가로수길/공공시설",
+          "knowledge_base": "신사동가로수길,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "서초구 어디로 가?",
+          "intent": "버스노선",
+          "terms": "서초구/지명",
+          "knowledge_base": "서초구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "연남고등학교야.",
+          "terms": "연남고등학교/공공기관",
+          "knowledge_base": "연남고등학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "신사동가로수길에서 연남고등학교로 가는 버스는 120버스를 타면 돼.",
+          "terms": "신사동가로수길/공공시설/ 연남고등학교/공공기관/ 버스/교통수단",
+          "knowledge_base": "연남고등학교,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "50분정도야.",
+          "terms": "50분/시간",
+          "knowledge_base": "50분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "막차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후 11시 30분이야.",
+          "terms": "오후/시간/ 11시/시간/ 30분/시간",
+          "knowledge_base": "11시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,800원이야.",
+          "terms": "1/800원/금액",
+          "knowledge_base": "800원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2221",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "사당동에서 서초구가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "사당동/동네/ 서초구/지명/ 버스/교통수단",
+          "knowledge_base": "서초구,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "사당동 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "사당동/동네",
+          "knowledge_base": "사당동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "사당역이야.",
+          "terms": "사당역/역사",
+          "knowledge_base": "사당역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "서초구 어디로 가?",
+          "intent": "버스노선",
+          "terms": "서초구/지명",
+          "knowledge_base": "서초구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "양재시민의숲이야.",
+          "terms": "양재시민의숲/공공시설",
+          "knowledge_base": "양재시민의숲,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "사당역에서 양재시민의숲으로 가는 버스는 730버스를 타면 돼.",
+          "terms": "사당역/역사/ 양재시민의숲/공공시설/ 버스/교통수단",
+          "knowledge_base": "양재시민의숲,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 20분정도 걸려.",
+          "terms": "1시간/시간/ 20분/시간",
+          "knowledge_base": "20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "막차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후 11시야.",
+          "terms": "오후/시간/ 11시/시간",
+          "knowledge_base": "11시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,750원이야.",
+          "terms": "1/750원/금액",
+          "knowledge_base": "750원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2222",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "이수에서 흑석동가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "이수/지명/ 흑석동/동네/ 버스/교통수단",
+          "knowledge_base": "흑석동,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "이수 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "이수/지명",
+          "knowledge_base": "이수,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "이수역에서 출발이야.",
+          "terms": "이수역/역사",
+          "knowledge_base": "이수역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "흑석동 어디로 가?",
+          "intent": "버스노선",
+          "terms": "흑석동/동네",
+          "knowledge_base": "흑석동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "흑석동주민센터야.",
+          "terms": "흑석동/동네/ 주민센터/공공기관",
+          "knowledge_base": "주민센터,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "이수역에서 흑석동주민센터로 가는 버스는 370버스를 타면 돼.",
+          "terms": "이수역/역사/ 흑석동/동네/ 주민센터/공공기관/ 버스/교통수단",
+          "knowledge_base": "흑석동,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "30분정도야.",
+          "terms": "30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 50분이야.",
+          "terms": "오전/시간/ 5시/시간/ 50분/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,600원이야.",
+          "terms": "1.600원/금액",
+          "knowledge_base": "600원,금액"
+        }
+      ]
+    }
+  ]
+}

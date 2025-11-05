@@ -1,0 +1,824 @@
+{
+  "chunk_id": 72,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2796",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스에 휴대폰을 놓고 내린거 같아요. ",
+          "intent": "분실물문의",
+          "terms": "버스/대중교통/ 휴대폰/통신수단",
+          "knowledge_base": "휴대폰,통신수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 버스 탑승하셨나요?",
+          "intent": "분실물문의",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "20번 버스요. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "행선지가 어디였나요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "종점이 그 세종청사쪽 가는거요. ",
+          "terms": "세종청사/공공기관",
+          "knowledge_base": "세종청사,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "현재 20번 버스가 3대 운행중이여서 몇 분쯤 어느 정류장에서 내리셨는지 알 수 있을까요?",
+          "intent": "분실물문의",
+          "terms": "버스/대중교통/ 정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "아까 3시 30분에 내렸고 조치원시장앞이에요. ",
+          "terms": "3시 30분/시간/ 조치원시장/쇼핑센터",
+          "knowledge_base": "조치원시장,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네. 버스 확인되셨습니다. 기사님 연결해서 분실물 확인하겠습니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "찾으면 제가 찾으러 가야하나요? 지금 연락을 받을 수가 없어가지고.. ",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "다른 연락받으실 번호 없으신가요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "흠.. 일단 저희 엄마꺼라도 말씀드릴게요. OOOO-OOOO입니다. ",
+          "terms": "엄마/가족",
+          "knowledge_base": "엄마,가족"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "혹시 제가 오늘중으로 분실물 나오면 찾으러 가도 될까요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네. 만약 연락받기 어려우시면 오후 6시 이전에 교통과 방문하셔서 분실물 습득하시기 바랍니다. ",
+          "terms": "6시/시간/ 교통과/부서",
+          "knowledge_base": "교통과,부서"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "교통과 위치가 어디죠?",
+          "intent": "분실물문의",
+          "terms": "교통과/부서",
+          "knowledge_base": "교통과,부서"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "세종시청 2층에 위치해 있습니다. ",
+          "terms": "세종시청/공공기관",
+          "knowledge_base": "세종시청,공공기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 감사합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "아 혹시 교통과 연락처 알려주실 수 있나요? 가기전에 전화로 확인해보고 가려고요. ",
+          "intent": "분실물문의",
+          "terms": "교통과/부서/ 전화/통신수단",
+          "knowledge_base": "전화,통신수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "OOOO-OOOO입니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. 좋은하루 되세요. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2797",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "노은동에서 코스트코 가는 방법좀 알려주세요. ",
+          "intent": "노선안내",
+          "terms": "노은동/동네/ 코스트코/쇼핑센터",
+          "knowledge_base": "코스트코,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 교통편으로 안내도와드릴까요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "버스로 갈 수 있나요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 버스 이용가능하십니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "직행버스가 있나요?",
+          "intent": "노선안내",
+          "terms": "직행버스/교통수단",
+          "knowledge_base": "직행버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아뇨. 직행은 운행하지 않으며 환승하셔야 합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "버스 번호좀 알려주실래요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네. 103번 타시고 반석역에서 701번으로 환승하시면 됩니다. ",
+          "terms": "반석역/역",
+          "knowledge_base": "반석역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "얼마나 걸리나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "1시간에서 1시간 반 소요됩니다. ",
+          "terms": "1시간/시간/ 1시간 반/시간",
+          "knowledge_base": "1시간반,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "오래걸리네요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "혹시 지하철은 없나요?",
+          "intent": "노선안내",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "지하철도 바로 가는것은 없고, 1호선 탑승하신 후 990번 버스로 환승하셔야 합니다. ",
+          "terms": "지하철/교통수단/ 1호선/노선/ 버스/대중교통",
+          "knowledge_base": "1호선,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "하.. 코스트코 가는거 험난하네요. ",
+          "terms": "코스트코/쇼핑센터",
+          "knowledge_base": "코스트코,쇼핑센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "그냥 택시로 이용하면 몇 분거리에요?",
+          "intent": "노선안내",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "택시 이용하시면 13km 이동하시며 15분 소요됩니다. ",
+          "terms": "택시/교통수단/ 13km/거리/ 15분/시간",
+          "knowledge_base": "13km,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "엥? 엄청 금방가는데 버스랑 지하철은 왜이렇게 오래걸리는거죠?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통/ 지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "노선 및 정류장 정착으로 인해 택시보다 많은 시간이 소요됩니다. ",
+          "terms": "정류장/역/ 택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "택시비는 얼마정도 나올까요?",
+          "intent": "노선안내",
+          "terms": "택시비/비용",
+          "knowledge_base": "택시비,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "통행비 없이 13,000원 정도 부과됩니다. ",
+          "terms": "통행비/비용/ 13/000원/금액",
+          "knowledge_base": "13,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2798",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "노은동에서 코스트코까지 한번에 가는 버스 있나요?",
+          "intent": "노선안내",
+          "terms": "노은동/동네/ 코스트코/쇼핑센터",
+          "knowledge_base": "코스트코,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "아니요 직행으로 운행하는 버스는 없습니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "그럼 환승해야하나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "버스 이용시 103번 타고 701번으로 환승하셔야 합니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "그럼 버스 말고 달리 방법이 있나요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "지하철로 이용가능합니다. ",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "지하철도 운행하나요?",
+          "intent": "노선안내",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지하철은 직행으로 갈 수 있어요?",
+          "intent": "노선안내",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 직행으로 가실 수 있습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "지하철 타면 어디서 내리나요?",
+          "intent": "노선안내",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "오룡역에서 내리시면 됩니다. ",
+          "terms": "오룡역/역",
+          "knowledge_base": "오룡역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "오룡역에서 코스트코까지 금방 가나요?",
+          "intent": "노선안내",
+          "terms": "오룡역/역/ 코스트코/쇼핑센터",
+          "knowledge_base": "코스트코,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 도보로 5분 이내에 위치합니다. ",
+          "terms": "5분/시간",
+          "knowledge_base": "5분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "오룡역 몇 번 출구로 나가야하나요?",
+          "intent": "노선안내",
+          "terms": "오룡역/역",
+          "knowledge_base": "오룡역,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "2번 출구로 나오셔서 오른쪽으로 이동하시면 됩니다. ",
+          "terms": "오른쪽/방향",
+          "knowledge_base": "오른쪽,방향"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "다른 문의사항 있으신가요?",
+          "intent": "노선안내",
+          "terms": "문의사항/질문",
+          "knowledge_base": "문의사항,질문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아뇨 없어요. 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. 좋은 하루 보내십시오. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2799",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "롯데백화점 가는 방법 좀 알려주세요. ",
+          "intent": "노선안내",
+          "terms": "롯데백화점/쇼핑센터",
+          "knowledge_base": "롯데백화점,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 롯데백화점 가시나요?",
+          "intent": "노선안내",
+          "terms": "롯데백화점/쇼핑센터",
+          "knowledge_base": "롯데백화점,쇼핑센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "롯데백화점 대전점이요. ",
+          "terms": "롯데백화점/쇼핑센터/ 대전/지역",
+          "knowledge_base": "대전,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "출발하시는 지역이 어디신가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "관저동이요. ",
+          "terms": "관저동/동네",
+          "knowledge_base": "관저동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "버스로 안내도와드릴까요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네 버스로 알려주세요.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "관저동에서 211번 버스 탑승하시면 롯데백화점까지 이용하실 수 있습니다. ",
+          "terms": "관저동/동네/ 버스/대중교통/ 롯데백화점/쇼핑센터",
+          "knowledge_base": "버스,쇼핑센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "몇 분이나 걸리나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "20분정도 소요됩니다. ",
+          "terms": "20분/시간",
+          "knowledge_base": "20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "버스에서 정류장 안내해주나요? 제가 초행길이라 잘 몰라서요. ",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네. 버스에서 안내방송 해드립니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "내리는 정류장이랑 그 앞 정류장 이름좀 알려주세요. ",
+          "intent": "노선안내",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "용문역5번출구에서 하차하시면 되시고 그 앞 정류장은 대전산업정보고입니다. ",
+          "terms": "용문역/역/ 정류장/역/ 대전산업정보고/교육기관",
+          "knowledge_base": "정류장,교육기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "용문역5번출구에서 백화점까지 얼마나 걸리나요?",
+          "intent": "노선안내",
+          "terms": "용문역/역/ 백화점/시설",
+          "knowledge_base": "백화점,시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "261m로 도보 4분정도 소요됩니다. ",
+          "terms": "261m/거리/ 4분/시간",
+          "knowledge_base": "4분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "감사합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "돌아올때도 반대편에서 211번 똑같이 타면 되죠?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네. 반대편 정류장에서 승차하시면 됩니다. ",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2800",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스 노선좀 문의하려고 합니다. ",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무엇을 도와드릴까요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "목원대 가는 버스 노선 좀 알려주실 수 있나요?",
+          "intent": "노선안내",
+          "terms": "목원대/교육기관/ 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "목원대학교 말씀하시나요?",
+          "intent": "노선안내",
+          "terms": "목원대학교/교육기관",
+          "knowledge_base": "목원대학교,교육기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 맞습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "출발하시는 곳은 어디신가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "충남대학교 앞이요. ",
+          "terms": "충남대학교/교육기관",
+          "knowledge_base": "충남대학교,교육기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "충남대학교 어떤 캠퍼스에서 출발하시나요?",
+          "intent": "노선안내",
+          "terms": "충남대학교/교육기관",
+          "knowledge_base": "충남대학교,교육기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "보운캠퍼스요. ",
+          "terms": "보운캠퍼스/교육시설",
+          "knowledge_base": "보운캠퍼스,교육시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "충남대학교에서 목원대학교 가시는 직행 버스 노선은 없으시고 환승하셔야 합니다. ",
+          "terms": "충남대학교/교육기관/ 목원대학교/교육기관/ 버스/대중교통",
+          "knowledge_base": "목원대학교,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "아.. 환승하는거라도 좀 알려주세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "101번 탑승하셔서 유성온천역에서 114번으로 환승하셔야 합니다. ",
+          "terms": "유성온천역/역",
+          "knowledge_base": "유성온천역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "환승은 바로 할 수 있나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 동일한 정류장에서 환승하시면 됩니다. ",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아뇨, 버스가 바로 와서 바로 환승할 수 있냐고요",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 대부분 큰 대기 없이 환승하실 수 있습니다. ",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그럼 총 걸리는 시간이 얼마나 되나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "1시간에서 1시간 30분 정도 소요되십니다. ",
+          "terms": "1시간/시간/ 1시간 30분/시간",
+          "knowledge_base": "1시간30분,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "네 다른 문의는 없으신가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 없습니다. 수고하세요. "
+        }
+      ]
+    }
+  ]
+}

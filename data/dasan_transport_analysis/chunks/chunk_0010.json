@@ -1,0 +1,541 @@
+{
+  "chunk_id": 10,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2078",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "종로구에서 불광동가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "종로구/지명/ 불광동/지명/ 버스/교통수단",
+          "knowledge_base": "불광동,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "종로구 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "종로구/지명",
+          "knowledge_base": "종로구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "경기상업고등학교 입니다.",
+          "terms": "경기상업고등학교/공공기관",
+          "knowledge_base": "경기상업고등학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "불광동 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "불광동/지명",
+          "knowledge_base": "불광동,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "향림근린공원 입니다.",
+          "terms": "향림근린공원/공공시설",
+          "knowledge_base": "향림근린공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "경기상업고등학교에서 향림근린공원으로 가는 버스는 800버스를 타시면 됩니다.",
+          "terms": "경기상업고등학교/공공기관/ 향림근린공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "향림근린공원,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 10분정도 걸립니다.",
+          "terms": "1시간/시간/ 10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시 10분입니다.",
+          "terms": "오전/시간/ 6시/시간/ 10분/시간",
+          "knowledge_base": "6시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,550원 입니다.",
+          "terms": "1/550원/금액",
+          "knowledge_base": "550원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2079",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "종로구에서 서대문구가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "종로구/지명/ 서대문구/지명",
+          "knowledge_base": "서대문구,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "종로구 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "종로구/지명",
+          "knowledge_base": "종로구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "탑골공원 입니다.",
+          "terms": "탑골공원/공공시설",
+          "knowledge_base": "탑골공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "서대문구 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "서대문구/지명",
+          "knowledge_base": "서대문구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "서대문독립공원 입니다.",
+          "terms": "서대문독립공원/문화재",
+          "knowledge_base": "서대문독립공원,문화재"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "탑골공원에서 서대문독립공원으로 가는 버스는 530버스를 타시면 됩니다.",
+          "terms": "탑골공원/공공시설/ 서대문독립공원/문화재. 버스/교통수단",
+          "knowledge_base": "서대문독립공원,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "40분정도 걸립니다.",
+          "terms": "40분/시간",
+          "knowledge_base": "40분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 30분입니다.",
+          "terms": "오전/시간/ 5시/시간/ 30분/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,850원 입니다.",
+          "terms": "1/850원/금액",
+          "knowledge_base": "850원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2080",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "삼청동에서 종로구가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "삼청동/동네/ 종로구/지명",
+          "knowledge_base": "삼청동.종로구,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "삼청동 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "삼청동/동네",
+          "knowledge_base": "삼청동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "삼청공원 입니다.",
+          "terms": "삼청공원/공공시설",
+          "knowledge_base": "삼청공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "종로구 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "종로구/지명",
+          "knowledge_base": "종로구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "북촌한옥마을 입니다.",
+          "terms": "북촌한옥마을/지명",
+          "knowledge_base": "북촌한옥마을,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "삼청공원에서 북촌한옥마을로 가는 버스는 470버스를 타시면 됩니다.",
+          "terms": "삼청공원/공공시설/ 북촌한옥마을/지명/ 버스/교통수단",
+          "knowledge_base": "북촌한옥마을,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "20분정도 걸립니다.",
+          "terms": "20분/시간",
+          "knowledge_base": "20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시 25분입니다.",
+          "terms": "오전/시간/ 6시/시간/ 25분/시간",
+          "knowledge_base": "6시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,150원 입니다.",
+          "terms": "1/150원/금액",
+          "knowledge_base": "150원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2081",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "청담에서 송파구가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "청담/동네/ 송파구/지명/ 버스/교통수단",
+          "knowledge_base": "송파구,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "청담 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "청담/동네",
+          "knowledge_base": "청담,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "청담동 주민센터 입니다.",
+          "terms": "청담동/동네/ 주민센터/공공기관",
+          "knowledge_base": "주민센터,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "송파구 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "송파구/지명",
+          "knowledge_base": "송파구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "석촌호수 입니다.",
+          "terms": "석촌호수/공공시설",
+          "knowledge_base": "석촌호수,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "청담동 주민센터에서 석촌호수으로 가는 버스는 670버스를 타시면 됩니다.",
+          "terms": "청담동/동네/ 주민센터/공공기관/ 석촌호수/공공시설",
+          "knowledge_base": "주민센터,공공시설"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 10분정도 걸립니다.",
+          "terms": "1시간/시간/ 10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시 10분입니다.",
+          "terms": "오전/시간/ 6시/시간/ 10분/시간",
+          "knowledge_base": "6시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,550원 입니다.",
+          "terms": "1/550원/금액",
+          "knowledge_base": "550원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2082",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안양에서 과천가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "안양/지명/ 과천/지명",
+          "knowledge_base": "과천,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "안양 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "안양/지명",
+          "knowledge_base": "안양,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "안양동안경찰서 입니다.",
+          "terms": "안양/지명/ 동안경찰서/공공기관",
+          "knowledge_base": "동안경찰서,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "과천 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "과천/지명",
+          "knowledge_base": "과천,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "서울대공원 입니다.",
+          "terms": "서울대공원/공공시설",
+          "knowledge_base": "서울대공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "안양동안경찰서에서 서울대공원으로 가는 버스는 2250버스를 타시면 됩니다.",
+          "terms": "안양/지명/ 동안경찰서/공공기관/ 서울대공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "동안경찰서,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 30분정도 걸립니다.",
+          "terms": "1시간/시간/ 30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 7시 10분입니다.",
+          "terms": "오전/시간/ 7시/시간/ 10분/시간",
+          "knowledge_base": "7시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,300원 입니다.",
+          "terms": "1/300원/금액",
+          "knowledge_base": "300원,금액"
+        }
+      ]
+    }
+  ]
+}

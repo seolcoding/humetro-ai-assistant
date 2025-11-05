@@ -1,0 +1,847 @@
+{
+  "chunk_id": 224,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B16008",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "경부선의 교통현황을 알고 싶습니다. ",
+          "intent": "버스 노선",
+          "terms": "경부선/철도",
+          "knowledge_base": "경부선,철도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 상행선인강? 하생선인가요?",
+          "intent": "버스 노선",
+          "terms": "상행선, 하행선/철도",
+          "knowledge_base": "하행선,철도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "서울에서 부산 방향이 궁금합니다. ",
+          "terms": "서울, 부산/지역",
+          "knowledge_base": "부산,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "서울에서 부산 방향 오후 2시 현재 5시간 소요 예상으로 평소비 1시간 이상 정체 중입니다. ",
+          "terms": "오후2시, 5시간/시간",
+          "knowledge_base": "5시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "왜 그렇죠? 이유가 있나요?",
+          "intent": "버스 노선",
+          "knowledge_base": "이유"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "서해안 고속도로가 안개가 낀 구간이 많은 중에, 서해대교 근처에서 7중 충돌 사고가 있었습니다. ",
+          "terms": "서해안고속도로, 서해대교/도로시설",
+          "knowledge_base": "서해대교,도로시설"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "그렇군요 "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 이때문에 평소대비 경부선 이용차량이 증가한 것으로 생각됩니다. ",
+          "terms": "경부선/철도",
+          "knowledge_base": "이용차량,철도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그렇군요. 빠르게 갈 수 있는 방법은 없을까요?",
+          "intent": "버스 노선",
+          "terms": "방법/수단",
+          "knowledge_base": "방법,수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "현재 위치가 어디신가요?",
+          "intent": "버스 노선",
+          "terms": "위치/장소",
+          "knowledge_base": "위치,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "지금 대전을 앞두고 있습니다. ",
+          "terms": "대전/지역",
+          "knowledge_base": "대전,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "대전에서 KTX를 타고 부산으로 이동하시는 노선은 어떠실까요?",
+          "intent": "버스 요금",
+          "terms": "대전/지역, KTX/기차",
+          "knowledge_base": "KTX,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "차는 어떻게 하구요?",
+          "intent": "버스 요금",
+          "terms": " 어떻게/방법",
+          "knowledge_base": "어떻게,방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "차량은 대전역 주차장에 주차하시면 24시간 기준 16천원에 이용 가능합니다. ",
+          "terms": "대전역/역명, 주차장/장소, 24시간/사간",
+          "knowledge_base": "주차장,사간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아 3일 이후에 올라올건데 비용이 너무 부담 됩니다. ",
+          "terms": "3일이후/기간",
+          "knowledge_base": "3일이후,기간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "자가운전을 원하시는거죠?",
+          "terms": "자가운전/교통수단",
+          "knowledge_base": "자가운전,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 맞습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "그럼 정읍IC 방면으로 나오셔서 서해안 고속도로를 이용하시는 것이 교통흐름이 좋습니다. ",
+          "terms": "정읍IC/도로",
+          "knowledge_base": "정읍IC,도로"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "그렇군요 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 상담 마치겠습니다.",
+          "knowledge_base": "상담"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16010",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지하철 이용 관련 문의 드립니다. ",
+          "intent": "대중교통",
+          "terms": "지하철/대중교툥",
+          "knowledge_base": "지하철,대중교툥"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "시간대별로 적정 인원을 통제하는 방안은 없을까요?",
+          "intent": "대중교통",
+          "terms": "시간대별/시간",
+          "knowledge_base": "시간대별,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "시간대별 인원 통제는 고려치 않고 있습니다. ",
+          "terms": "인원통제/인원제한",
+          "knowledge_base": "인원통제,인원제한"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "출퇴근 시간에 사람이 얼마나 많이 타는지 알고 있는가요?",
+          "intent": "대중교통",
+          "terms": "출퇴근/통근",
+          "knowledge_base": "출퇴근,통근"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "자율출퇴근이나 재택근무 권장으로 평상시 대비 출퇴근 인력은 감소세 입니다. ",
+          "terms": "자율퇴근/자율근무",
+          "knowledge_base": "자율퇴근,자율근무"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아니요 직접 타보면 전혀 다릅니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "대중교통 이용에 불편하신 점이 있으신가요?",
+          "terms": "대중교통/교통수단",
+          "knowledge_base": "대중교통,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "불안하잖아요. 출퇴근 시간을 피할수도 없는데 사람이 여전히 많으니 ",
+          "intent": "대중교통",
+          "terms": "출퇴근/통근",
+          "knowledge_base": "출퇴근,통근"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "현재는 대중교통 이용시 마스크 착용 필수에 위반시 10만원 과태료로 관리 중입니다. ",
+          "terms": "대중교통/교통수단",
+          "knowledge_base": "마스크,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "그래도 너무 사람이 많으니 마스크를 써도 숨쉬는게 다 느껴질 정도입니다. ",
+          "terms": "마스크/방역수단",
+          "knowledge_base": "마스크,방역수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 불편을 드려 죄송합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "불안한데 이용객 제한은 고려치 않으시는건가요?",
+          "intent": "대중교통",
+          "terms": "이용객/사람",
+          "knowledge_base": "이용객,사람"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네 현재는 전차량 매일 2회 소독과 올바른 마스크 착용으로 방역 관리 중인게 최선입니다. ",
+          "terms": "2회/횟수, 소독/방역",
+          "knowledge_base": "2회,방역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "지하철에서 감염되는 사례는 없습니까?",
+          "intent": "대중교통",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네 현재까지는 대중교통에서 감염 및 확산이 되는 사례는 없습니다. ",
+          "terms": "감염/전염",
+          "knowledge_base": "감염,전염"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "그렇군요 알겠습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "버스도 감염은 없는거지요?",
+          "intent": "대중교통",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 없습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "다행이네요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "상담 여기서 마무리 하겠습니다.",
+          "knowledge_base": "상담"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16011",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "수원역에서 KTX가 있나요?",
+          "intent": "버스 노선",
+          "terms": "수원역/역명, KTX/기차",
+          "knowledge_base": "KTX,기차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 있기는 하지만 하루에 편수가 많지는 않습니다. ",
+          "terms": " 편수/횟수",
+          "knowledge_base": "편수,횟수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아 그런가요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 부산향으로 하루에 7편 운영 중 입니다. ",
+          "terms": "부산항/항명",
+          "knowledge_base": "부산항,항명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "그렇군요 "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "호남쪽으로 가는 건 없나요?",
+          "intent": "버스 노선",
+          "terms": "호남/지역",
+          "knowledge_base": "호남,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네 불편하시더라도 광명이나 수서에서 이용하시면 SRT나 KTX가 좀더 많이 있습니다.",
+          "terms": "SRT, KTX/교통수단",
+          "knowledge_base": "KTX,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "알겠습니다. 광명에서 가는 것 중에 KTX-서천은 뭔가요?",
+          "intent": "버스 노선",
+          "terms": "광명/지역",
+          "knowledge_base": "광명,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 경유하는 역과 경로가 상이합니다. ",
+          "terms": "역/장소, 경로/노선",
+          "knowledge_base": "경로,노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "좀 더 많은가 보네요?",
+          "intent": "택시금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 정류역의 수는 크게 차이가 없지만 내륙 이용 경로입니다.",
+          "terms": "정류역/역",
+          "knowledge_base": "정류역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "그래서 1시간 가량 더 걸리는군요 ",
+          "terms": "1시간/시간",
+          "knowledge_base": "1시간,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "맞습니다. 상행선의 경우에는 일반 KTX대비 25분 정도 차이입니다. ",
+          "terms": "KTX/교통수단",
+          "knowledge_base": "KTX,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "그건 왜 그런가요?",
+          "intent": "버스 금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "정류역의 차이가 있습니다. ",
+          "terms": "정류역/역",
+          "knowledge_base": "정류역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아 알겠습니다 ."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "가격은 같은가요?",
+          "intent": "버스 노선",
+          "terms": "가격/돈",
+          "knowledge_base": "가격,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 가격은 같고, 일반 KTX 보다는 9700원 저렴합니다.",
+          "terms": "부산항/항명",
+          "knowledge_base": "9700원,항명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "그렇군요 식당칸도 있나요?",
+          "intent": "버스 노선",
+          "terms": "식당칸/부대시설",
+          "knowledge_base": "식당칸,부대시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 하지만 현재는 코로나로 이용 불가합니다. ",
+          "terms": "코로나/질병",
+          "knowledge_base": "코로나,질병"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "알겠습니다.",
+          "terms": "식당칸/부대시설"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16013",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울에서 정읍 가는 KTX가 있네요 ",
+          "intent": "기차노선",
+          "terms": "정읍/지역, KTX/교통수단",
+          "knowledge_base": "KTX,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 있습니다. 호남선 KTX를 타시면 됩니다. ",
+          "terms": "호남선/열차노선",
+          "knowledge_base": "호남선,열차노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아 그런가요? KTX 아무거나 타면 되는 건지요?",
+          "intent": "기차노선",
+          "terms": "KTX/교통수단",
+          "knowledge_base": "KTX,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "KTX-산천 열차는 정읍을 가지 않으니 이 점은 주의하셔야 합니다. ",
+          "terms": "정읍/지역, 열차/기차",
+          "knowledge_base": "열차,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "아 그럼 KTX 노선으로 보이는 것 과는 차이가 있는것이군요. ",
+          "intent": "기차노선",
+          "terms": "KTX/교통수단",
+          "knowledge_base": "KTX,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "이게 근데 가격 차이는 거의 없네요?",
+          "intent": "기차노선",
+          "terms": "가격/금액",
+          "knowledge_base": "가격,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 소요시간은 좀 더 걸리지만, 열차 경로의 다영성을 위해 준비된 노선이라 그렇습니다.",
+          "terms": "소요시간/기간, 열차경로/노선",
+          "knowledge_base": "열차경로,노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "알겠습니다. 혹시 이 열차가 익산도 서나요?",
+          "intent": "기차노선",
+          "terms": "익산/지역",
+          "knowledge_base": "익산,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "전북익산 말씀이시지요?",
+          "intent": "기차노선",
+          "terms": "전북익산/지역",
+          "knowledge_base": "전북익산,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 맞습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 익산역에 정차 합니다. 단, KTX-산천은 노선이 다르니 참조하시기 바랍니다.",
+          "terms": "익산역/역명, 정차/정지",
+          "knowledge_base": "정차,정지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "그렇군요 알겠습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "혹시 KTX도 입석이 있나요?",
+          "intent": "기차노선",
+          "terms": "KTX/교통수단, 입석/좌석",
+          "knowledge_base": "입석,좌석"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "입석의 경우는 만원시에 코로나 상황과 특수계절기 등을 고려해서 제한적으로 운영합니다. ",
+          "terms": "코로나/질병, 입석/좌석",
+          "knowledge_base": "입석,좌석"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 지금 현재는 가능한가요?",
+          "intent": "기차노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "10월 말까지는 가능합니다.",
+          "terms": "10월말/월",
+          "knowledge_base": "10월말,월"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "오, 그럼 입석의 가격은 얼마나 되나요?",
+          "intent": "기차노선",
+          "terms": "입석/좌석, 가격/금액",
+          "knowledge_base": "가격,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "구간마다 차이가 있지만 보통은 좌석의 50% 수준입니다. ",
+          "terms": "구간/경로, 50%/금액",
+          "knowledge_base": "50%,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "오케이 감사합니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16194",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "홍대에서 김포공항까지 어떻게 가야하나요?",
+          "intent": "지하철노선",
+          "terms": "홍대/지역명, 김포공항/공항",
+          "knowledge_base": "김포공항,공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 교통수단을 이용하시기 원하시나요?",
+          "intent": "지하철노선",
+          "terms": "교통수단/탈거리",
+          "knowledge_base": "교통수단,탈거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "지하철입니다.",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "2호선 홍대입구 역에서 공항철도를 타시면 되십니다.",
+          "terms": "홍대입구역/역, 공항철도/교통수단",
+          "knowledge_base": "공항철도,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "도착까지 몇 개의 역을 지나가나요?",
+          "intent": "지하철노선",
+          "terms": "도착/목적지, 공항철도/교통수단",
+          "knowledge_base": "역,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "3개입니다.",
+          "terms": "3개/수량",
+          "knowledge_base": "3개,수량"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "중간에 환승하나요?",
+          "intent": "지하철노선",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "아니요. 환승하는 일 없이 바로 갑니다.",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "공항철도가 아니라 일반 지하철을 타면 몇 개의 역을 지나가나요?",
+          "intent": "지하철노선",
+          "terms": "공항철도/교통수단, 지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "13개입니다.",
+          "terms": "13개/수량",
+          "knowledge_base": "13개,수량"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그 경우에도 환승은 없나요?",
+          "intent": "지하철노선",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "아니요. 이때는 한 번 환승을 합니다.",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "어디서 환승하나요?",
+          "intent": "지하철노선",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "당산역에서 9호선으로 환승하시면 되십니다.",
+          "terms": "당산역/역, 9호선/지하철, 환승/갈아탐",
+          "knowledge_base": "9호선,갈아탐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "내리는 역 이름은 김포공항인가요?",
+          "intent": "지하철노선",
+          "terms": "김포공항/공항",
+          "knowledge_base": "김포공항,공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 김포공항 역에서 내리시면 되십니다. ",
+          "terms": "김포공항역/역",
+          "knowledge_base": "김포공항역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "다른 방법도 있나요?",
+          "intent": "지하철노선",
+          "terms": "방법/수단",
+          "knowledge_base": "방법,수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "더 있지만, 공항철도를 이용하시는게 가장 빨리 도착합니다.",
+          "terms": "공항철도/교통수단, 도착/목적지",
+          "knowledge_base": "도착,목적지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "그렇군요. 알려주셔서 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. 상담원 000였습니다.",
+          "terms": "상담원/상담해주는 자",
+          "knowledge_base": "상담원,상담해주는자"
+        }
+      ]
+    }
+  ]
+}

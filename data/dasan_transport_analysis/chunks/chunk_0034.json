@@ -1,0 +1,524 @@
+{
+  "chunk_id": 34,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2198",
+      "category": "대중교통 안내",
+      "turns": 10,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "부천에서 용인가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "부천/지명/ 용인/지명/ 버스/교통수단",
+          "knowledge_base": "용인,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "부천 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "부천/지명",
+          "knowledge_base": "부천,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "부천종합운동장이야.",
+          "terms": "부천/지명/ 종합운동장/공공시설",
+          "knowledge_base": "종합운동장,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "용인 어디로 가?",
+          "intent": "버스노선",
+          "terms": "용인/지명",
+          "knowledge_base": "용인,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "명지대학교야.",
+          "terms": "명지대학교/공공기관",
+          "knowledge_base": "명지대학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "부천종합운동장에서 명지대학교로 가는 버스는 4500버스 타면 돼.",
+          "terms": "부천/지명/ 종합운동장/공공시설/ 명지대학교/공공기관/ 버스/교통수단",
+          "knowledge_base": "종합운동장,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "2시간10분정도걸려.",
+          "terms": "2시간/시간/ 10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시반이야.",
+          "terms": "오전/시간/ 5시반/시간",
+          "knowledge_base": "5시반,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2199",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안산에서 화성가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "안산/지명/ 화성/지명/ 버스/교통수단",
+          "knowledge_base": "화성,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "안산 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "안산/지명/ 출발/출발지",
+          "knowledge_base": "안산.출발,출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "안산 호수공원이야.",
+          "terms": "안산/지명/ 호수공원/공공시설",
+          "knowledge_base": "호수공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "화성 어디로 가?",
+          "intent": "버스노선",
+          "terms": "화성/지명",
+          "knowledge_base": "화성,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "화성시청이야.",
+          "terms": "화성/지명/ 시청/공공기관",
+          "knowledge_base": "시청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "안산호수공원에서 화성시청으로 가는 버스는 156버스 타면 돼.",
+          "terms": "안산/지명/ 호수공원/공공시설/ 화성/지명/ 시청/공공기관/ 버스/교통수단",
+          "knowledge_base": "호수공원,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간15분정도 걸려.",
+          "terms": "1시간/시간/ 15분/시간",
+          "knowledge_base": "15분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "막차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후 11시반이야.",
+          "terms": "오후/시간/ 11시반/시간",
+          "knowledge_base": "11시반,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2100원이야.",
+          "terms": "2100원/금액",
+          "knowledge_base": "2100원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2200",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "하남에서 구리가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "하남/지명/ 구리/지명/ 버스/교통수단",
+          "knowledge_base": "구리,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "하남 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "하남/지명",
+          "knowledge_base": "하남,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "하남중학교야.",
+          "terms": "하남중학교/공공기관",
+          "knowledge_base": "하남중학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "구리 어디로 가?",
+          "intent": "버스노선",
+          "terms": "구리/지명",
+          "knowledge_base": "구리,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "장자호수공원이야.",
+          "terms": "장자호수공원/공공시설",
+          "knowledge_base": "장자호수공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "하남중학교에서 장자호수공원으로 가는 버스는 680버스 타면 돼.",
+          "terms": "하남중학교/공공기관/ 장자호수공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "장자호수공원,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 40분정도 걸려.",
+          "terms": "1시간/시간/ 40분/시간",
+          "knowledge_base": "40분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 20분이야.",
+          "terms": "오전/시간/ 5시/시간/ 20분/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2200원이야.",
+          "terms": "2200원/금액",
+          "knowledge_base": "2200원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2201",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "평내동에서 경기도 광주가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "평내동/동네/ 경기도/지명/ 광주/.지명/ 버스/교통수단",
+          "knowledge_base": "경기도,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "평내동 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "평내동/동네",
+          "knowledge_base": "평내동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "평내파출소야.",
+          "terms": "평내파출소/공공기관",
+          "knowledge_base": "평내파출소,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "광주 어디로 가?",
+          "intent": "버스노선",
+          "terms": "광주/지명",
+          "knowledge_base": "광주,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "광주시 공설운동장이야.",
+          "terms": "광주/지명/ 공설운동장/공공시설",
+          "knowledge_base": "공설운동장,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "평내파출소에서 광주시 공설운동장으로 가는 버스는 2300버스 타면 돼.",
+          "terms": "평내파출소/공공기관/ 광주/지명/ 공설운동장/공공시설/ 버스/교통수단",
+          "knowledge_base": "광주,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간25분정도 걸려.",
+          "terms": "1시간/시간/ 25분/시간",
+          "knowledge_base": "25분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "막차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후 9시반이야.",
+          "terms": "오후/시간/ 9시반/시간",
+          "knowledge_base": "9시반,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2400원이야.",
+          "terms": "2400원/금액",
+          "knowledge_base": "2400원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2202",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "이천에서 용인가는 버스를 알려줘.",
+          "intent": "버스노선",
+          "terms": "이천/지명/ 용인/지명/ 버스/교통수단",
+          "knowledge_base": "용인,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "이천 어디에서 출발해?",
+          "intent": "버스노선",
+          "terms": "이천/지명",
+          "knowledge_base": "이천,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "이천 터미널이야.",
+          "terms": "이천/지명/ 터미널/공공기관",
+          "knowledge_base": "터미널,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "용인 어디로 가?",
+          "intent": "버스노선",
+          "terms": "용인/지명",
+          "knowledge_base": "용인,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "캐리비안베이로 가.",
+          "terms": "캐리비안베이/공공시설",
+          "knowledge_base": "캐리비안베이,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "이천 터미널에서 캐리비안베이로 가는 버스는 2600버스를 타면 돼.",
+          "terms": "이천/지명/ 터미널/공공기관/ 캐리비안베이/공공시설/ 버스/교통수단",
+          "knowledge_base": "터미널,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간45분정도 걸려.",
+          "terms": "1시간/시간/ 55분/시간",
+          "knowledge_base": "55분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "돌아가는 막차는 언제야?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후 11시 10분이야.",
+          "terms": "오후/시간/ 11시/시간/ 10분/시간",
+          "knowledge_base": "11시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마야?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2600원이야.",
+          "terms": "2600원/금액",
+          "knowledge_base": "2600원,금액"
+        }
+      ]
+    }
+  ]
+}

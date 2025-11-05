@@ -1,0 +1,766 @@
+{
+  "chunk_id": 280,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B22511",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요. 서초소방서에서 광화문디타워 가려고 하는데 질문이 있어서요~",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "광화문디타워"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 도와드릴까요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "가장 빨리 갈 수 있는 최단시간 걸리는 노선좀 알려주세요~",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "빨리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 일단 서초소방서에서 142번 버스 탑승 후 고속터미널에서 하차하시면 되겠습니다.",
+          "knowledge_base": "142번"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "거기서 환승해야되는거 맞나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 고속터미널에서 143번 버스 탑승하셔서 종로우리은행에서  하차하시면 되겠습니다~",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "죄송한데, 환승 안하는 구간없는건 없을까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "knowledge_base": "9분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네, 괜찮아요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "방배동삼호아파트에서 405번 버스 탑승 후 조계사역에서 하차 하시면 되시겠습니다~",
+          "knowledge_base": "삼호아파트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "조계사역에서 내리면 되요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "조계사역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "내려서도 걸어야 하는거네요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "하차후 7분 소요됩니다~",
+          "knowledge_base": "도보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "총 걸리는 시간이 어떻게 될까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "얼마나"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "50분 정도 걸리십니다~",
+          "knowledge_base": "50분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "환승하는것도 비슷한가요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "처음 안내해드린 경로는 약 40분정도 소요되시겠습니다~",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아, 네. 수고하세요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네,감사합니다~"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22512",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울역에서 부천가는 버스를 알 수 있을까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "부천"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "부천 어디로 가는건데요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "어디로"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "신중동역이요. ",
+          "knowledge_base": "신중동역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "몇번인지 알 수 있을까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "몇번"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "1300번, 1302번 되겠습니다.",
+          "knowledge_base": "1302번"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "광역버스인가요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "광역버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "요금은요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "얼마"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "일반 성인 요금으로 알려드려요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "성인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2500원 되겠습니다~",
+          "knowledge_base": "2500원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "막차는요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 전 날 막차 통과 시간으로 안내 도와드리겠습니다~",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "1300번은 01시 1301번은 00시 되시겠습니다~",
+          "knowledge_base": "01시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "버스는 이 두가지 방법말곤 없나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "두가지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "1300번타면 얼마나 걸리는지 알 수 있을까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "얼마나"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "약 한시간 소요됩니다~",
+          "knowledge_base": "소요"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22513",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울역에서 서울대학교까 어떻게 가는지 여쭤봐도 될까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "서울대학교"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "서울대학교 관악캠퍼스 맞을실까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "관악캠퍼스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네, 맞아요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "서울역 버스환승센터에서 750번 버스 탑승하시면됩니다~",
+          "knowledge_base": "버스환승센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "몇 정거장 걸리실까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "몇정거장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "20개 정류장 이동하시면 되시겠습니다~",
+          "knowledge_base": "정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "내리는 역은 어떻게 될까요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "서울대학교 정류장에서 하차하시면 되시겠습니다~",
+          "knowledge_base": "정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "내려서 걸어야 하는건가요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 도보로 12분정도 걸리시겠습니다~",
+          "knowledge_base": "12분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "총 걸리는 시간은 얼마나 걸릴까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "얼마"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "약 1시간 걸립니다.",
+          "knowledge_base": "소요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "대체 버스가 있나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "501번이 있겠습니다.",
+          "knowledge_base": "501번"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "이게 최단시간 경로 맞나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "경로"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "배차시간은 어떻게 되나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "어떻게"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "약15분 걸리시겠습니다~",
+          "knowledge_base": "15분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 알려주셔서 감사해요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22514",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "김포공항에서 서울역을 가려하는데요~",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "서울역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 경로 안내 도와드릴까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네, 부탁드립니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "지하철로 안내해드릴까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "공항철도에서 탑승 후 서울역에서 하차하시면 되시겠습니다~",
+          "knowledge_base": "탑승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "서울역까지 몇개역을 거처야 합니까?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "서울역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "5개역 이동하시겠습니다~",
+          "knowledge_base": "5개역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "김포국제공항에서 지하철 역까지는 연결되어 있을까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 지하철로 이동하시면 됩니다~",
+          "knowledge_base": "이동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "얼마나 걸릴까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "얼마나"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "도보로 10분걸리시겠습니다",
+          "knowledge_base": "10분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "서울역도 지하철이랑 연결되어 있을까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "공항철도 어느방면으로 타면 될까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "어느방면"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "마곡나루역 방면으로 가시면 됩니다",
+          "knowledge_base": "방면"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "요금은 얼마인가요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "1500원 되시겠습니다.",
+          "knowledge_base": "1500원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "일회용 카드로도 사용가능한 부분인지 알고싶은데요~?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "지하철역 발급가능하시겠습니다",
+          "terms": "발급/발행",
+          "knowledge_base": "발급,발행"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22515",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "혜화역에서 남대문 가는법좀 알고 싶은데요~",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "남대문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "지하철로 안내해 드려도 될까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "혜화역에서 4호선 탑승하시면 되시겠습니다",
+          "knowledge_base": "4호선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "동대문역 방면 맞는지 알 수 있을까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "동대문역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "하차역은요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "하차역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "회현역 되시겠습니다~",
+          "knowledge_base": "회현역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "내려서 얼마나 걸어야 하나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "얼마나"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "약3분 되시겠습니다~",
+          "knowledge_base": "3분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "버스도 있나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 명륜 3가 정류장에서 104번 버스 탑승하시면 되시겠습니다~",
+          "knowledge_base": "104번버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "걸어서 혜화역에서 얼마나 걸리나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "혜화역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "5분 됩니다",
+          "knowledge_base": "5분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "버스타면요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "얼마나"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "20분 입니다",
+          "knowledge_base": "20분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "지하철은요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "15분 입니다.",
+          "knowledge_base": "15분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아, 지하철 타야하겠네요~",
+          "knowledge_base": "지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 지하철이 좀 더 빠르겠습니다",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        }
+      ]
+    }
+  ]
+}

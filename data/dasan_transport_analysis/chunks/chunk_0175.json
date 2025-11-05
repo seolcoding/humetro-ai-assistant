@@ -1,0 +1,804 @@
+{
+  "chunk_id": 175,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3779",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "강아지 데리고 제주도 가려고 하는데요?",
+          "intent": "동물동반문의",
+          "terms": "강아지/동물/ 제주도/지역",
+          "knowledge_base": "제주도,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 궁금하신 점이 있으세요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "애완견 데리고 타도 되죠?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 가능하십니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "저는 제가 안고 기내에 탑승하고 싶어요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "그러시군요. 강아지 무게 제한이 있습니다.",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "몇KG까지 가능하죠?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "케이지 포함 7KG입니다.",
+          "terms": "케이지/운반수단/ 7KG/무게",
+          "knowledge_base": "7KG,무게"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "저희 강아지가 작아서 가능할것 같아요.",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그럼 강아지도 좌석을 예매해야해요?",
+          "intent": "동물동반문의",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "꼭 표를 구매 하지 않더라도, 동행자가 있으시면 케이지에 같이 들고 타셔도 됩니다.",
+          "terms": "표/티켓/ 케이지/운반수단",
+          "knowledge_base": "케이지,운반수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "강아지 마리 수 제한도 있나요?",
+          "intent": "동물동반문의",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지.,동물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네, 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "저 2마리 다 데려가고 싶은데 되나요?",
+          "intent": "동물동반문의",
+          "terms": "2마리/마리수",
+          "knowledge_base": "2마리,마리수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "한 비행기에 최대 2인까지  1인당  1건씩 동반이 가능하도록 규정되어 있습니다.",
+          "terms": "2인/인원수",
+          "knowledge_base": "2인,인원수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 다른사람들이 이미 2마리를 다 예약하면 저는 아예 신청을 못하네요?",
+          "intent": "동물동반문의",
+          "terms": "2마리/마리수",
+          "knowledge_base": "2마리,마리수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "빨리 신청해야겠네요. 지금 해도 되죠?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "네, 어느 항공사를 탑승하시죠?",
+          "intent": "동물동반문의",
+          "terms": "항공사/항공사",
+          "knowledge_base": "항공사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "제주항공요.",
+          "terms": "제주항공/항공사",
+          "knowledge_base": "제주항공,항공사"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3780",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "제주항공도 가능한거 맞죠?",
+          "intent": "동물동반문의",
+          "terms": "제주항공/항공사",
+          "knowledge_base": "제주항공,항공사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 제주항공 규정에 따라 반려동물 동행 가능합니다.",
+          "terms": "제주항공/항공사/ 반려동물/동물",
+          "knowledge_base": "반려동물,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "강아지 데리고 타는데도 비용 지불 하나요?",
+          "intent": "동물동반문의",
+          "terms": "강아지/동물/ 비용/금액/돈",
+          "knowledge_base": "강아지.비용,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 1마리당 3만원의 비용이 부과됩니다.",
+          "terms": "3만원/금액/비용/돈",
+          "knowledge_base": "비용,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "KG이 좀 넘어가면 과태료 있나요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "1KG당 5000원씩 추가요금이 발생되고 KG의 차이가 크면 기내 반입은 안되십니다.",
+          "terms": "5/000원/금액/비용/돈",
+          "knowledge_base": "000원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "제가 주의 해야 할 사항이 뭐가 있을까요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "강아지는 꼭 케이지에 넣어서 탑승하셔야 합니다.",
+          "terms": "강아지/동물/ 케이지/운반수단",
+          "knowledge_base": "케이지,운반수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "강아지들 검사도 한다던데요?",
+          "intent": "동물동반문의",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네,강아지도 별도로 탑승전에 검사가 진행됩니다.",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 출발 몇시간 전에 공항에 도착하는게 나을까요?",
+          "intent": "동물동반문의",
+          "terms": "공항/시설",
+          "knowledge_base": "공항,시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "출발 2시간 전에는 도착하셔서 반려견 검사부터 받으시길 추천해 드립니다.",
+          "terms": "2시간/시간",
+          "knowledge_base": "2시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네, 너무늦지않게 가야겠어요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "혹시 좌석을 비상구 쪽으로 예매해도 되나요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 예매된 좌석이 아니라면 가능하십니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "그게 다른사람들한테 피해가 덜 갈꺼 같네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "자세한 사항은 제주항공에 문의하시면 정확한 답변을 드릴겁니다.",
+          "terms": "제주항공/항공사",
+          "knowledge_base": "제주항공,항공사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 자세한 설명 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 반려견과 즐거운 여행 되세요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사힙니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3781",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "김포공항 가려고 하는데 버스편좀 알수 있을까요?",
+          "intent": "버스노선",
+          "terms": "김포공항/공항",
+          "knowledge_base": "김포공항,공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네,계신 지역이 어디시죠?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "여기 시흥센트럴돔그랑트리캐슬요.",
+          "terms": "시흥센트럴돔그랑트리캐슬/쇼핑센터",
+          "knowledge_base": "시흥센트럴돔그랑트리캐슬,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 현제, 시흥에서 12번 버스가 김포공항까지 운행하고 있습니다.",
+          "terms": "시흥/지역/ 버스/교통수단/ 김포공항/공항",
+          "knowledge_base": "버스,공항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "좌석버스 인가요?",
+          "intent": "버스노선",
+          "terms": "좌석버스/교통수단",
+          "knowledge_base": "좌석버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "일반 시내버스입니다.",
+          "terms": "시내버스/교통수단",
+          "knowledge_base": "시내버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "아, 그럼 거치는 역이 많겠군요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "다른 좌석버스는 없나요?",
+          "intent": "버스노선",
+          "terms": "좌석버스/교통수단",
+          "knowledge_base": "좌석버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 현재 운행되는 버스는 12번 1대 입니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "시간이 얼마나 걸리죠?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1시간 20분정도 소요되나 교통상황에 따라 더 걸릴수도 있습니다.",
+          "terms": "1시간20분/ 시간",
+          "knowledge_base": "1시간20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "첫차는 몇시 출발이에요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "시흥쪽 삼미시장에서 말씀하시는거죠?",
+          "intent": "버스노선",
+          "terms": "시흥/지역/ 삼미시장",
+          "knowledge_base": "삼미시장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네.맞아요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "첫차는 새벽 4시30분 입니다.",
+          "terms": "4시 30분/시간",
+          "knowledge_base": "4시30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "아 그거 타고 가면 좀 덜밀리겠죠.",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 새벽시간이라 교통체증을 없을것 같습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "김포공항 어디에서 내리나요?",
+          "intent": "버스노선",
+          "terms": "김포공항/공항",
+          "knowledge_base": "김포공항,공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "김포공항국내선 9번홈에 하차하시면 됩니다.",
+          "terms": "김포공항/공항",
+          "knowledge_base": "김포공항,공항"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3782",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오늘 분신물 신고 들어 돈거 없나요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "분실하신 물건이 있으신가요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "버스에서 지갑을 흘린것 같아요.",
+          "terms": "버스./교통수단/ 지갑/소지품",
+          "knowledge_base": "버스.지갑,소지품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "버스 노선이 어떻게 되죠?",
+          "intent": "분실물문의",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "종로에서 개봉쪽 가는 노선요.",
+          "terms": "종로/개봉/지역",
+          "knowledge_base": "개봉,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "번호 기억나시나요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "헷갈리는데 600번 버스 탔던거 같아요.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "시간은 기억하시나요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "정신이 없어서 대충 시간대 말씀드리면 되나요?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 대략적인 시간을 말씀해주시면 됩니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "약간 한산했던게 2시에서 2시 반정도 된거 같아요, 제가 집에 도착한게 3시 반이 안됐으니까.",
+          "terms": "2시반/3시반/시간",
+          "knowledge_base": "3시반,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "현재는 분실문 습득이 없습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 지갑 못찾나요?",
+          "intent": "분실물문의",
+          "terms": "지갑/소지품",
+          "knowledge_base": "지갑,소지품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "버스 기사님께서 바로 습득하시면 찾을수 있는데, 지금 회차중이라 장담할 수가 없네요.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "꼭 찾아야 하는데 어떻하죠?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "일단 회사에 연락은 해놓겠습니다.",
+          "terms": "회사/산업체",
+          "knowledge_base": "회사,산업체"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "연락처 남겨 주시면 , 기사님과 연락 닿는대로 연락 드리겠습니다.",
+          "intent": "분실물문의",
+          "terms": "연락처/개인정보",
+          "knowledge_base": "연락처,개인정보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 제 번호가 OOO-OOOO-OOOO입니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "못찾아도 꼭 연락 부탁드릴께요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 확인하는대로 바로연락드리겠습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3783",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "카카오T 사용좀 하려고 하는데요?",
+          "intent": "카카오택시",
+          "terms": "카카오T/ 교통서비스",
+          "knowledge_base": "카카오T,교통서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 먼저 카카오T어플을 다운받으셔야 합니다.",
+          "terms": "카카오T/ 교통서비스",
+          "knowledge_base": "카카오T,교통서비스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "어플은 다운 받았어요.",
+          "terms": "어플/어플리케이션",
+          "knowledge_base": "어플,어플리케이션"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "그럼 카드 등록 하셨나요?",
+          "intent": "카카오택시",
+          "terms": "카드/현금/결제수단",
+          "knowledge_base": "결제,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "네, 등록도 했어요, 한번 등록하면 이걸로 계속 결제하는거 아닌가요?",
+          "intent": "카카오택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 맞습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "이 어플사용을 어떻게 하는지 몰라서요?",
+          "intent": "카카오택시",
+          "terms": "어플/어플리케이션",
+          "knowledge_base": "어플,어플리케이션"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "아, 택시를 어떻게 부르는지 잘 모르겠다는 말씀이신건가요?",
+          "intent": "카카오택시",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네, 이거 택시를 어떻게 불러요?",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "먼저 앱에 출발지와 도착지를 설정하시고 택시 타입을 선택하시면 됩니다.",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "택시 선택할때 스마트 호출이랑 일반호출이 있어요?",
+          "intent": "카카오택시",
+          "terms": "택시/교통수단/ 스마트호출/일반호출/호출서비스",
+          "knowledge_base": "스마트호출.일반호출,호출서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "스마트 호출은 일반호출보다 빠른시간내에 차량으 배차시켜주는 서비스 입니다.",
+          "terms": "스마트 호출/호츨서비스",
+          "knowledge_base": "스마트호출,호츨서비스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 차이는 뭐에요?",
+          "intent": "카카오택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "금액적이 부분에서 다소 차이가 있습니다.",
+          "terms": "금액/비용/돈",
+          "knowledge_base": "금액,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "스마트 호출이 더 비싸다는 건가요?",
+          "intent": "카카오택시",
+          "terms": "스마트 호출/호출 서비스",
+          "knowledge_base": "스마트호출,호출서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 일반호출보다 1000원이 더 부과됩니다.",
+          "terms": "일반호출/호출서비스/ 1000원/비용.금액/돈",
+          "knowledge_base": "1000원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "결재는 미리 등록된 카드로 결제 할수 있나요?",
+          "intent": "카카오택시",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 따라 계산없이 등록된 카드로 결제하시면 됩니다.",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "내릴때 자동 계산이 되는 거네요.",
+          "intent": "카카오택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        }
+      ]
+    }
+  ]
+}

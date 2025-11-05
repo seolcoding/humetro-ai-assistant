@@ -1,0 +1,842 @@
+{
+  "chunk_id": 265,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B22345",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "사육신공원에서 보라매 공원 가는 방법 좀 알려주세요.",
+          "intent": "노선",
+          "terms": "가는방법/길안내, 사육신공원/공원, 보라매공원/공원",
+          "knowledge_base": "보라매공원,공원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "버스로 이동하시나요, 지하철로 이동하시나요? ",
+          "intent": "노선",
+          "terms": "버스/교통수단, 지하철/교통수단",
+          "knowledge_base": "이동,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "버스요.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "5536, 150,?5531?승차 보라매 공원 하차입니다. ",
+          "terms": "승차/탑승, 5536/버스, 150/버스, 5531/버스, 보라매공원.공원",
+          "knowledge_base": "150,보라매공원.공원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "저 중 돌아가는 버스 있나요? ",
+          "intent": "노선",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "노선은 모두 같습니다. ",
+          "knowledge_base": "노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "뭐가 배차간격이 젤 짧아요? ",
+          "intent": "노선",
+          "knowledge_base": "배차간격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "5531입니다. ",
+          "terms": "5531/버스",
+          "knowledge_base": "5531.0,버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지금 타러 가면 5531이 몇분에 도착이에요? ",
+          "intent": "노선",
+          "terms": "5531/버스, 몇분/시간",
+          "knowledge_base": "몇분,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "1정류장 전, 그 다음은 7정류장 전입니다.",
+          "knowledge_base": "정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "7정류장 전이면 몇 분 걸릴까요? ",
+          "intent": "노선",
+          "terms": "몇분/시간",
+          "knowledge_base": "몇분,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "11분 예상됩니다.",
+          "terms": "11분/시간",
+          "knowledge_base": "예상,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "정확해요?",
+          "intent": "노선",
+          "knowledge_base": "정확"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "교통상황에 따라 달라질 수 있습니다. ",
+          "knowledge_base": "교통상황"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "사육신 공원에서 노들역이 더 가깝지 않아요? ",
+          "intent": "노선",
+          "terms": "사육신공원/공원, 노들역/역",
+          "knowledge_base": "노들역,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "비슷합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "네 몇 분이나 걸려요?",
+          "intent": "노선",
+          "terms": "몇분/시간",
+          "knowledge_base": "몇분,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "사육신 공원에서 보라매 공원 말씀인가요? ",
+          "intent": "노선",
+          "terms": "사육신공원/공원, 보라매공원/공원",
+          "knowledge_base": "보라매공원,공원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "25분입니다.",
+          "terms": "25분/시간",
+          "knowledge_base": "25분,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22346",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "불법주정차 단속 좀 해주세요. ",
+          "intent": "불법주차단속",
+          "terms": "불법주정차/민원사항",
+          "knowledge_base": "단속,민원사항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "위반 장소가 어디인가요? ",
+          "intent": "불법주차단속",
+          "terms": "위반/불법, 어디/장소",
+          "knowledge_base": "장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "00로, 00입니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "성함과 연락처 알려주실 수 있나요? ",
+          "intent": "불법주차단속",
+          "terms": "성함/이름, 연락처/전화번호",
+          "knowledge_base": "연락처,전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "익명으로 해주세요.",
+          "knowledge_base": "익명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "현재도 불법 주정차 차량이 있습니까? ",
+          "intent": "불법주차단속",
+          "terms": "불법주정차/민원사항",
+          "knowledge_base": "불법주정차,민원사항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네 2차선 도로에 주차를 해놔서 사고 위험있습니다. ",
+          "terms": "2차선/도로",
+          "knowledge_base": "도로"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 담당부서로 내용 전달하겠습니다. ",
+          "terms": "담당부서/정부기관",
+          "knowledge_base": "내용,정부기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "과태료 처분 되는 거죠? ",
+          "intent": "불법주차단속",
+          "terms": "과태료/벌금, 처분/처벌",
+          "knowledge_base": "처분,처벌"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "현장 출동 후 알 수 있습니다. ",
+          "knowledge_base": "출동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "제가 차번호 나오게 사진 다 찍어났어요.",
+          "terms": "차번호/단속자료, 사진/단속자료",
+          "knowledge_base": "사진,단속자료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 OOO 문자로 전송 부탁드립니다. ",
+          "knowledge_base": "부탁"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "과태료 처분 좀 꼭 해주세요.",
+          "terms": "과태료/벌금, 처분/처벌",
+          "knowledge_base": "처분,처벌"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 전달하겠습니다.",
+          "knowledge_base": "전달"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "아니면 아예 CCTV 설치 좀 해주시면 안돼요?",
+          "intent": "불법주차단속",
+          "terms": "CCTV/단속카메라",
+          "knowledge_base": "설치,단속카메라"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "담당부서에 그 내용도 전달해드리겠습니다.",
+          "knowledge_base": "내용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 여기 길 맨날 이렇게 불법 주차돼 있어요.",
+          "terms": "불법/위법",
+          "knowledge_base": "불법,위법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "불편을 끼쳐드려 죄송합니다.",
+          "knowledge_base": "죄송"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 부탁 좀 드릴게요. ",
+          "knowledge_base": "부탁"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "더 궁금한 점 없으시면 상담 종료하겠습니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22347",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "광명에서 행신 KTX 좀 알아보려고요.",
+          "intent": "기차문의",
+          "terms": "KTX/교통수단, 광명/지역, 행신/지역",
+          "knowledge_base": "행신,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 점이 궁금하신 가요? ",
+          "intent": "기차문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "힘내라청춘 할인 받으려고요.",
+          "terms": "힘내라청춘/할인제도",
+          "knowledge_base": "할인,할인제도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "모든 열차가 다 할인되나요? ",
+          "intent": "기차문의",
+          "terms": "열차/교통수단",
+          "knowledge_base": "할인,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아닙니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "할인율은 다 같아요? ",
+          "intent": "기차문의",
+          "knowledge_base": "할인율"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "아닙니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그럼 19일에 할인율 제일 높은거 몇 시 있어요? ",
+          "intent": "기차문의",
+          "terms": "19일/날짜, 몇시/시간",
+          "knowledge_base": "할인율,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "광명 19시 50분 있습니다.",
+          "terms": "광명/지역, 19시50분/시간",
+          "knowledge_base": "19시50분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "제가 몇명까지 예매할 수 있어요? ",
+          "intent": "기차문의",
+          "knowledge_base": "예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "할인은 본인만 가능합니다.",
+          "knowledge_base": "본인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "하루에 몇 번 탈 수 있어요? ",
+          "intent": "기차문의",
+          "terms": "하루/날짜",
+          "knowledge_base": "몇번,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "1일 2회입니다. ",
+          "terms": "1일/날짜, 2회/횟수",
+          "knowledge_base": "2회,횟수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "다른 제한은 없죠?",
+          "intent": "기차문의",
+          "knowledge_base": "제한"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "1개월에 8회입니다.",
+          "terms": "1개월/기간, 8회/횟수",
+          "knowledge_base": "8회,횟수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "19시 50분꺼 예약 좀 해주세요.",
+          "terms": "19시50분/시간",
+          "knowledge_base": "예약,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "앱에서 가능합니다. ",
+          "terms": "앱/어플리케이션",
+          "knowledge_base": "가능,어플리케이션"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "무슨 앱이요? ",
+          "intent": "기차문의",
+          "terms": "앱/어플리케이션",
+          "knowledge_base": "앱,어플리케이션"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "렛츠코레일 앱입니다. ",
+          "knowledge_base": "렛츠코레일앱"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22381",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울에서 수원가는 버스 노선을 알고 싶습니다.",
+          "intent": "버스 노선",
+          "terms": "서울/서울시/서울특별시,수원/수원시,버스/교통수단",
+          "knowledge_base": "수원,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "서울 중에 출발지점이 어디신가요?",
+          "intent": "버스 노선",
+          "terms": "서울/서울시/서울특별시,출발/출발지,지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "강남역에서 출발합니다.",
+          "terms": "강남/강남구,역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 수원 어느 지역이신가요? ",
+          "intent": "버스 노선",
+          "terms": "도착/도착지,수원/수원시,지역/지명/위치",
+          "knowledge_base": "수원,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "수원화성에 갈 예정입니다.",
+          "terms": "수원화성/산성/성곽",
+          "knowledge_base": "예정,성곽"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 잠시만 기다려주세요. 강남역에서 출발하여 가는 방법 중 환승없음과 환승1회의 방법이 있습니다.",
+          "knowledge_base": "환승1회"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 방법으로 안내해드릴까요?",
+          "intent": "버스 노선",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "한번에 갈 수 있는 방법으로 알려주세요.",
+          "terms": "한번에/시간",
+          "knowledge_base": "한번에,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "수원화성으로 가는 직행버스 노선 안내해드리겠습니다. 강남역나라빌딩앞 정류장에서 3000번 버스를 타시면 됩니다.",
+          "terms": "직행버스/교통수단,강남역나라빌딩앞/위치,정류소/위치",
+          "knowledge_base": "버스,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "어디에서 하차하면 되나요?",
+          "intent": "버스 노선",
+          "knowledge_base": "하차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "수원전통문화관.장안동에서 하차하시면 됩니다.",
+          "terms": "수원전통문화관.장안동/위치",
+          "knowledge_base": "하차,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "혹시 추가로 궁금하신 사항은 없으신가요?",
+          "intent": "버스 노선",
+          "knowledge_base": "궁금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "직행 3000번 버스 요금은 얼마인가요?",
+          "intent": "버스 요금",
+          "terms": "직행버스/교통수단, 요금/돈",
+          "knowledge_base": "버스,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "2,800원입니다.",
+          "terms": "2,800원/금액",
+          "knowledge_base": "800원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "마지막으로 하나만 더요. 수원화성까지 지하철이 가나요?",
+          "intent": "지하철 노선",
+          "terms": "수원화성/산성/성곽,지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아니요. 가지 않습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그럼 가장 가까운 지하철역이 어디인가요?",
+          "intent": "지하철 노선",
+          "terms": "지하철역/지하철역사",
+          "knowledge_base": "지하철역,지하철역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "신분당선 광교중앙역입니다.",
+          "terms": "신분당선/노선, 광교중앙역/위치",
+          "knowledge_base": "광교중앙역,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "그 지하철역에서 수원화성까지는 많이 먼가요?",
+          "intent": "지하철 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "버스로 30분 정도 예상됩니다.",
+          "terms": "도보/교통수단,30분/시간",
+          "knowledge_base": "30분,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22382",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울에서 일산가는 버스 노선을 알고 싶습니다.",
+          "intent": "버스 노선",
+          "terms": "서울/서울시/서울특별시,일산/고양시,버스/교통수단",
+          "knowledge_base": "일산,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "서울 중에 출발지점이 어디신가요?",
+          "intent": "버스 노선",
+          "terms": "서울/서울시/서울특별시,출발/출발지,지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "오목교역에서 출발합니다.",
+          "terms": "오목교/양천구,역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 일산 어느 지역이신가요? ",
+          "intent": "버스 노선",
+          "terms": "도착/도착지,일산/고양시,지역/지명/위치",
+          "knowledge_base": "일산,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "킨텍스에 갈 예정입니다.",
+          "terms": "킨텍스/전시관",
+          "knowledge_base": "예정,전시관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 잠시만 기다려주세요. 오목교역에서 출발하여 가는 방법 중 합정역 정류장에서 환승하는 방법과 홀트아동복지회 정류장에서 환승하는 방법이 있습니다.",
+          "terms": "합정/마포구,홀트아동복지회/아동복지시설,환승/길안내",
+          "knowledge_base": "역,길안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 방법으로 안내해드릴까요?",
+          "intent": "버스 노선",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "가장 빠르게 갈 수 있는 방법으로 알려주세요.",
+          "terms": "빠르게/시간",
+          "knowledge_base": "빠르게,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "합정역 정류장에서 환승하는 방법으로 안내해드리겠습니다. 목운초등학교.목운중학교 정류장에서 603번 버스를 타시고, 합정역 정류장에서 M7731번으로 환승하시면 됩니다.",
+          "terms": "합정/마포구,학교/장소,환승/길안내",
+          "knowledge_base": "역,길안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "어디에서 하차하면 되나요?",
+          "intent": "버스 노선",
+          "knowledge_base": "하차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "현대모터스튜디오고양 정류소에서 하차하시면 됩니다.",
+          "terms": "현대모터스튜디오고양/전시관",
+          "knowledge_base": "하차,전시관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "혹시 추가로 궁금하신 사항은 없으신가요?",
+          "intent": "버스 노선",
+          "knowledge_base": "궁금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "버스 요금은 얼마인가요?",
+          "intent": "버스 요금",
+          "terms": "버스/교통수단,요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "2,800원입니다.",
+          "terms": "2,800원/금액",
+          "knowledge_base": "800원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "마지막으로 하나만 더요. 킨텍스에서 가장 가까운 지하철역이 어디인가요?",
+          "intent": "지하철 노선",
+          "terms": "킨텍스/전시관,지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "3호선 대화역입니다.",
+          "terms": "3호선/노선,대화역/위치",
+          "knowledge_base": "대화역,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "오목교역에서 지하철을 타면 어디에서 환승해야 하나요?",
+          "intent": "지하철 노선",
+          "terms": "오목교역/위치,지하철/교통수단,환승/길안내",
+          "knowledge_base": "지하철,길안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "3호선 종로3가역에서 환승하시면 됩니다.",
+          "terms": "3호선/노선,종로3가역/위치,환승/길안내",
+          "knowledge_base": "종로3가역,길안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "지하철 요금은 얼마인가요?",
+          "intent": "지하철 요금",
+          "terms": "지하철/교통수단,요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "1650원입니다.",
+          "terms": "1650원/금액",
+          "knowledge_base": "1650원,금액"
+        }
+      ]
+    }
+  ]
+}

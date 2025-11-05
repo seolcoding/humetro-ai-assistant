@@ -1,0 +1,852 @@
+{
+  "chunk_id": 143,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3340",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "강남에서 고속버스터미널 가려면 어떻게 해야하나요?",
+          "intent": "시내버스노선",
+          "terms": "강남/지역/ 고속버스터미널/터미널",
+          "knowledge_base": "고속버스터미널,터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 강남 어디신가요?",
+          "intent": "시내버스노선",
+          "terms": "출발지/장소/ 강남/지역/ 어디/장소",
+          "knowledge_base": "강남,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "신논현이요.",
+          "terms": "신논현/지역",
+          "knowledge_base": "신논현,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지가 강남고속버스터미널 맞으세요?",
+          "intent": "시내버스노선",
+          "terms": "도착지/장소/ 강남고속버스터미널/터미널",
+          "knowledge_base": "강남고속버스터미널,터미널"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네, 맞습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "잠시만 기다려주세요. 시내버스 또는 지하철 어떤 서비스로 안내해드릴까요?",
+          "intent": "시내버스노선",
+          "terms": "시내버스/대중교통/ 지하철/대중교통/ 서비스/공급/ 안내/설명",
+          "knowledge_base": "지하철,설명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "가장 빠른길로 부탁합니다.",
+          "terms": "부탁/요청",
+          "knowledge_base": "부탁,요청"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "9호선 급행 이용하시면 됩니다. ",
+          "terms": "9호선/노선/ 급행/급행열차/ 이용/사용",
+          "knowledge_base": "급행,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "추가로 궁금하신 사항 있으신가요?",
+          "intent": "시내버스노선",
+          "terms": "궁금/질문/ 사항/내용",
+          "knowledge_base": "사항,내용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "버스는 없나요?",
+          "intent": "시내버스노선",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "643번 버스 타시면 됩니다.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "버스요금은 얼마나 해요?",
+          "intent": "시내버스노선",
+          "terms": "버스요금/요금",
+          "knowledge_base": "버스요금,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "기본요금은 1200원 이고, 현금결제시 100원 할인됩니다. ",
+          "terms": "기본요금/요금/ 1200원/금액/ 현금결제/결제수단/ 100원/금액/ 할인/금액감면",
+          "knowledge_base": "1200원,금액감면"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "그럼 지하철이 더 싼가요?",
+          "intent": "시내버스노선",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "지하철 기본요금은 1250원으로 버스가 좀 더 저렴합니다. ",
+          "terms": "지하철/대중교통/ 기본요금/요금/ 1250원/금액/ 버스/교통수단",
+          "knowledge_base": "기본요금,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "643번 버스 잠실까지도 가나요?",
+          "intent": "시내버스노선",
+          "terms": "버스/교통수단/ 잠실/지역",
+          "knowledge_base": "잠실,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아니오, 가지 않습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "잠실도 가는 버스 아니였어요?",
+          "intent": "시내버스노선",
+          "terms": "버스/교통수단/ 잠실/지역",
+          "knowledge_base": "잠실,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "340버스 탑승하시면 잠실에 도착합니다. ",
+          "terms": "버스/교통수단/ 탑승/승차/ 잠실/지역/ 도착/이동",
+          "knowledge_base": "탑승,이동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "그렇군요, 알겠습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3341",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대전에서 계룡산에 가는 버스노선 알고 싶어요. ",
+          "intent": "시내버스노선",
+          "terms": "대전/대전시/ 계룡산/산/ 버스노선/노선",
+          "knowledge_base": "계룡산,노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "한번에 가는 버스가 있을까요?",
+          "intent": "시내버스노선",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아니오. 환승하셔야 해요. ",
+          "terms": "환승/행동",
+          "knowledge_base": "환승,행동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "그럼 지하철도 있어요?",
+          "intent": "시내버스노선",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네, 있습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "어떻게 가면 될까요?",
+          "intent": "시내버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "시청역에서 지하철을 탄 후 OOO아파트에서 107번으로 환승하시면 됩니다.",
+          "terms": "시청역/역/ 지하철/대중교통/ 아파트/주거형태/ 환승/행동",
+          "knowledge_base": "지하철,행동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "다른 동선은 없는 거죠?",
+          "intent": "시내버스노선",
+          "terms": "동선/길",
+          "knowledge_base": "동선,길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "현충원역에서 하차 후 48번 버스로 환승 후 동학사에서 내리시는 방법도 있습니다. ",
+          "terms": "현충원역/역/ 하차/승하차/ 버스/대중교통/ 환승/행동/ 동학사/절/ 방법/방식",
+          "knowledge_base": "하차,방식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "목적지에 더 빨리 도착하는 방법은 뭔가요?",
+          "intent": "시내버스노선",
+          "terms": "목적지/장소/ 도착/이동/ 방법/방식",
+          "knowledge_base": "도착,방식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "107번으로 환승하시는 방법이 좀 더 빠릅니다. ",
+          "terms": "환승/행동/ 방법/방식",
+          "knowledge_base": "방법,방식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리나요?",
+          "intent": "시내버스노선",
+          "terms": "시간/때/ 얼마나/시간",
+          "knowledge_base": "얼마나,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "1시간 소요됩니다. ",
+          "terms": "1시간/시간/ 소요/요구",
+          "knowledge_base": "소요,요구"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "버스 환승하면 추가요금이 발생하나요?",
+          "intent": "시내버스노선",
+          "terms": "버스/대중교통/ 환승/행동/ 추가요금/요금/ 발생/형성",
+          "knowledge_base": "환승,형성"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아니오, 무료환승 가능합니다. ",
+          "terms": "무료환승/환승/ 가능/승인",
+          "knowledge_base": "가능,승인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "더 궁금하신 점은 없으신가요?",
+          "intent": "시내버스노선",
+          "terms": "궁금/질문",
+          "knowledge_base": "궁금,질문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "버스요금 알려주세요. ",
+          "intent": "시내버스노선",
+          "terms": "버스요금/요금",
+          "knowledge_base": "버스요금,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "카드 결제시 기본요금 1250원입니다. ",
+          "terms": "카드/결제수단/ 기본요금/요금/ 1250원/금액",
+          "knowledge_base": "기본요금,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "현금으로 하면 얼만데요?",
+          "intent": "시내버스노선",
+          "terms": "현금/결제수단/ 얼마/금액",
+          "knowledge_base": "얼마,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "100원 할인 받으실 수 있으므로 1150원 입니다. ",
+          "terms": "100원/금액/ 할인/금액감면/ 1150원/금액",
+          "knowledge_base": "할인,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3342",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "코스트코 새로 생긴 곳이 어디죠?",
+          "intent": "시내버스노선",
+          "terms": "코스트코/대형마트/ 어디/장소",
+          "knowledge_base": "어디,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어느 지역 말씀이세요?",
+          "intent": "시내버스노선",
+          "terms": "지역/장소/ 말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아, 거기거기 세종시요.",
+          "terms": "세종시/세종특별자치시",
+          "knowledge_base": "세종시,세종특별자치시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "코스트코 세종점 말씀이세요?",
+          "intent": "시내버스노선",
+          "terms": "코스트코/대형마트/ 세종점/지점/ 말씀/말",
+          "knowledge_base": "세종점,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네, 맞아요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "거기 가려는데 어떻게 가나요?",
+          "intent": "시내버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어디에서 출발하세요?",
+          "intent": "시내버스노선",
+          "terms": "어디/장소/ 출발/이동",
+          "knowledge_base": "출발,이동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "시외버스터미널인데요. ",
+          "terms": "시외버스터미널/터미널",
+          "knowledge_base": "시외버스터미널,터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "세종시외버스터미널 맞으신가요?",
+          "intent": "시내버스노선",
+          "terms": "세종시외버스터미널/터미널",
+          "knowledge_base": "세종시외버스터미널,터미널"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "맞아요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "대중교통은 없고, 도보로 8분 거리에 있습니다. ",
+          "terms": "대중교통/교통수단/ 도보/보행/ 8분/시간/ 거리/단위",
+          "knowledge_base": "도보,단위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "걸어가기가 불편한데 바로가는 버스가 없어요?",
+          "intent": "시내버스노선",
+          "terms": "불편/불만/ 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네, 없습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "그럼 택시로는 얼마나 걸리나요?",
+          "intent": "시내버스노선",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "4분 소요됩니다. ",
+          "terms": "4분/시간/ 소요/요구",
+          "knowledge_base": "소요,요구"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "무척 가깝긴 하네. 택시비는 얼마나 나오나요?",
+          "intent": "시내버스노선",
+          "terms": "택시비/돈",
+          "knowledge_base": "택시비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "2800원 입니다. ",
+          "terms": "2800원/금액",
+          "knowledge_base": "2800원,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "더 문의하실 내용 있으세요?",
+          "intent": "시내버스노선",
+          "terms": "문의/질문/ 내용/사항",
+          "knowledge_base": "내용,사항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "걸어가려는데, 거리가 얼마나 되나요?",
+          "intent": "시내버스노선",
+          "terms": "거리/단위",
+          "knowledge_base": "거리,단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "큰길로 가시면 500m 정도 입니다. ",
+          "terms": "500m/거리",
+          "knowledge_base": "500m,거리"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3343",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스노선 좀 여쭤봐도 될까요?",
+          "intent": "시내버스노선",
+          "terms": "버스노선/노선",
+          "knowledge_base": "버스노선,노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 말씀하세요.",
+          "terms": "말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "신촌역에서 등촌역에 가려면 어떻게 해야할까요?",
+          "intent": "시내버스노선",
+          "terms": "신촌역/역/ 등촌역/역/ 어떻게/방법",
+          "knowledge_base": "등촌역,방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "지하철로 안내해드릴까요",
+          "intent": "시내버스노선",
+          "terms": "지하철/대중교통/ 안내/설명",
+          "knowledge_base": "안내,설명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "환승없이 가는 방법을 알고 싶어요.",
+          "terms": "환승/행동/ 방법/방식",
+          "knowledge_base": "방법,방식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 바로 조회해봐드릴게요.",
+          "terms": "조회/확인",
+          "knowledge_base": "조회,확인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "신촌역 주변 OOO정류장에서 OOO번 버스 타시면 됩니다.",
+          "terms": "신촌역/역/ 주변/근처/ 정류장/정거장/ 버스/대중교통",
+          "knowledge_base": "주변,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "내리는 정류장은요?",
+          "intent": "시내버스노선",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "등촌역 O번 출구 근처인 OO정류장입니다.",
+          "terms": "등촌역/역/ 출구/출입구/ 근처/주변/ 정류장/정거장",
+          "knowledge_base": "출구,정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "몇 개 정류장 경유하나요?",
+          "intent": "시내버스노선",
+          "terms": "정류장/정거장/ 경유/이동",
+          "knowledge_base": "경유,이동"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "9개 정류장입니다.",
+          "terms": "9개/수/ 정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "소요시간은요?",
+          "intent": "시내버스노선",
+          "terms": "소요시간/시간",
+          "knowledge_base": "소요시간,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "지금 출발하실건가요?",
+          "terms": "출발/이동",
+          "knowledge_base": "출발,이동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "현재 교통상황으로는 20분 정도 소요됩니다.",
+          "terms": "교통상황/상황/ 20분/시간/ 소요/요구",
+          "knowledge_base": "20분,요구"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "OOO정류장에서 내려야 한다고 하셨죠?",
+          "intent": "시내버스노선",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 맞습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "안내 감사합니다.",
+          "terms": "안내/설명/ 감사/인사",
+          "knowledge_base": "감사,인사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 감사합니다.",
+          "terms": "감사/인사",
+          "knowledge_base": "감사,인사"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3344",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스 시간표 좀 여쭤볼게요.",
+          "intent": "시내버스노선",
+          "terms": "버스/대중교통/ 시간표/표",
+          "knowledge_base": "시간표,표"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 도와드릴까요?",
+          "intent": "시내버스노선",
+          "terms": "무엇/대상",
+          "knowledge_base": "무엇,대상"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "지금 제가 OO정류장인데요.",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "OO번 버스가 10분 도착예정일 때부터 기다렸거든요?",
+          "intent": "시내버스노선",
+          "terms": "버스/대중교통/ 10분/시간/ 도착예정/예정",
+          "knowledge_base": "10분,예정"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "그런데 버스가 잠시 후 도착이라더니 안와요.",
+          "terms": "버스/대중교통/ 도착/이동",
+          "knowledge_base": "도착,이동"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "교통상황에 따라 조금 지연될 수 있습니다.",
+          "terms": "교통상황/상황/ 지연/지체",
+          "knowledge_base": "지연,지체"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "아니예요, 지금 도착예정시간에서 10분이나 지나도록 안오더니, 다시 1시간 후 도착이 되었어요.",
+          "terms": "도착예정시간/시간/ 10분/시간/ 1시간/시간/ 도착예정/예정",
+          "knowledge_base": "10분,예정"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아, 그러셨군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "분명히 지나가지 않았어요.",
+          "intent": "시내버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "시간대별로 운행 중인 버스수를 조절하면서 회차구간에서 버스가 멈춘 것 같네요.",
+          "terms": "시간대/때/ 운행/운영/ 버스수/수/ 조절/조정/ 회차구간/구간/ 버스/대중교통",
+          "knowledge_base": "운행,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "네?",
+          "intent": "시내버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "버스 고장이나 교통상황에 따라 불가피하게 운행을 못하는 경우도 있구요.",
+          "terms": "버스/대중교통/ 고장/장애/ 교통상황/상황/ 운행/운영",
+          "knowledge_base": "고장,운영"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아.. 여러가지 이유가 있군요.",
+          "terms": "이유/까닭",
+          "knowledge_base": "이유,까닭"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "자세한 사항은 운수회사에 연락해보시면 알 수 있습니다.",
+          "terms": "사항/내용/ 운수회사/회사/ 연락/전화",
+          "knowledge_base": "운수회사,전화"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "전화번호를 알려주실 수 있나요?",
+          "intent": "시내버스노선",
+          "terms": "전화번호/번호",
+          "knowledge_base": "전화번호,번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "OO번 버스 운수회사 연락처는 OO-OOOO-OOOO입니다.",
+          "terms": "버스/대중교통/ 운수회사/회사/ 연락처/전화번호",
+          "knowledge_base": "버스운수회사연락처,전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 이쪽으로 전화해보겠습니다.",
+          "terms": "전화/연락",
+          "knowledge_base": "전화,연락"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 감사합니다.",
+          "terms": "감사/인사",
+          "knowledge_base": "감사,인사"
+        }
+      ]
+    }
+  ]
+}

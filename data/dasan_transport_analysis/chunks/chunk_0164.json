@@ -1,0 +1,861 @@
+{
+  "chunk_id": 164,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3561",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "동서울 터미널에서 포시즌 호텔까지 어떻게 이동하나요?",
+          "intent": "지하철노선",
+          "terms": "동서울/서울/ 강화도/석모도/지역명",
+          "knowledge_base": "터미널,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 동서울  버스터미널 이십니까?",
+          "intent": "지하철노선",
+          "terms": "터미널/고속버스 정류장",
+          "knowledge_base": "터미널,고속버스정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 광화문에 있는 포시즌 호텔이신가요?",
+          "intent": "지하철노선",
+          "terms": "광화문/광화문광장",
+          "knowledge_base": "광화문,광화문광장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 맞아요 광화문에 있는 포시즌요",
+          "terms": "포시즌/숙박업소",
+          "knowledge_base": "포시즌,숙박업소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "2호선 강변역에서 왕십리 방향 2호선을 탑승하십시요.",
+          "terms": "강변역/지하철역",
+          "knowledge_base": "왕십리,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네",
+          "terms": " "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "왕십리역에서 5호선 광화문행 열차로 환승하여 주시구요",
+          "terms": "5호선/지하철",
+          "knowledge_base": "열차,지하철"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "5호선으로 환승해야 하나요?",
+          "intent": "지하철노선",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 그렇습니다.",
+          "terms": " "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": " 광화문역에서 하차하셔서 2번 출구로 나오시면 포시즌로 이동 하실 수있습니다.",
+          "terms": "광화문역/5호선",
+          "knowledge_base": "출구,5호선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "2번출구 나오면 바로 호텔이 보이나요?",
+          "intent": "지하철노선",
+          "terms": "호텔/숙박업체",
+          "knowledge_base": "호텔,숙박업체"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "2번출구 나오셔서 도보로 약 100m이동하시면 됩니다.",
+          "terms": "도보/걸어서",
+          "knowledge_base": "도보,걸어서"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸릴까요?",
+          "intent": "지하철시간",
+          "terms": "시간/시각",
+          "knowledge_base": "얼마,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "약 50분  소요됩니다.",
+          "terms": "소요/소비",
+          "knowledge_base": "소요,소비"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "2번출구 나와서는 방향이 헷갈리지 않나요?",
+          "intent": "지하철요금",
+          "terms": "방향/쪽",
+          "knowledge_base": "방향,쪽"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "2번출구 나오셔서 진행방향 그대로 이동하시면 발견하실 수 있습니다.",
+          "terms": "2번출구/2번출입구",
+          "knowledge_base": "진행,2번출입구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "더 궁금한 점이 있으십니까?",
+          "intent": "지하철요금",
+          "terms": "궁금/의문",
+          "knowledge_base": "궁금,의문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아니요 없어요 고맙습니다.",
+          "terms": "궁금/의문",
+          "knowledge_base": "궁금,의문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 안전한 여행길 되시길 바랍니다.",
+          "terms": "여행길/유람길",
+          "knowledge_base": "여행길,유람길"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3562",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "구미에서 서울 롯데월드를 가려고 하는데요.",
+          "intent": "가차역 문의",
+          "terms": "구미/구미시",
+          "knowledge_base": "서울,구미시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무엇을 도와드릴까요?",
+          "intent": "가차역 문의",
+          "terms": "무엇/어떤것",
+          "knowledge_base": "무엇,어떤것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "기차를 이용해 이동하고 싶은데요",
+          "intent": "가차역 문의",
+          "terms": "기차/열차",
+          "knowledge_base": "이용,열차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 말씀하세요",
+          "terms": "말씀/이야기",
+          "knowledge_base": "말씀,이야기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "서울역 수서역 어디가 더 좋을까요?",
+          "intent": "가차역 문의",
+          "terms": "서울역/수서역/기차역",
+          "knowledge_base": "수서역,기차역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "출발지가 어디신가요?",
+          "intent": "가차역 문의",
+          "terms": "출발지/출발지역",
+          "knowledge_base": "출발지,출발지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "구미시 금오동 입니다.",
+          "terms": "구미시/지역",
+          "knowledge_base": "금오동,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "잠실 롯데월드를 가시려면 수서역 이용이 더욱 편리하십니다.",
+          "terms": "롯데월드/놀이동산",
+          "knowledge_base": "롯데월드,놀이동산"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "서울역 보단 수서역이 롯데월드랑 가깝나요?",
+          "intent": "가차역 문의",
+          "terms": "서울역/서울",
+          "knowledge_base": "롯데월드,서울"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "수서역에 내려서는 어떻게 이동하면 될까요?",
+          "intent": "가차역 문의",
+          "terms": "수서역/서울",
+          "knowledge_base": "이동,서울"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "버스와 지하철 모두 이용가능 하십니다.",
+          "terms": "버스/대중교통/이동수단",
+          "knowledge_base": "지하철,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "빨리가는 방법으로 알려주세요",
+          "terms": "방법/법",
+          "knowledge_base": "방법,법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "수서역 정류장에서 810번 버스를 이용하시면 됩니다.",
+          "terms": "수서역/서울",
+          "knowledge_base": "버스,서울"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "몇분정도 걸려요?",
+          "intent": "가차역 문의",
+          "terms": " ",
+          "knowledge_base": "몇분"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "약 20분 소요 예상됩니다.",
+          "terms": "20분/소요시간",
+          "knowledge_base": "소요,소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "롯데월드 바로 앞에 내리나요?",
+          "intent": "가차역 문의",
+          "terms": "롯데월드/놀이동산",
+          "knowledge_base": "롯데월드,놀이동산"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 그렇습니다.",
+          "terms": " "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "버스 안내방송은 나오겠죠?",
+          "intent": "가차역 문의",
+          "terms": "버스/대중교통/이동수단",
+          "knowledge_base": "안내방송,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 그렇습니다.",
+          "terms": " "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3563",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "구미에서 서울 롯데월드 놀러가려 하는데요.",
+          "intent": "기차시간 문의",
+          "terms": "구미/지역명",
+          "knowledge_base": "롯데월드,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무엇을 도와드릴까요?",
+          "intent": "기차시간 문의",
+          "terms": "무엇/어떤것",
+          "knowledge_base": "무엇,어떤것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "롯데월드 가려면 수서역과 서울역 어디가 이용이 편할까요?",
+          "intent": "기차시간 문의",
+          "terms": "롯데월드/놀이동산",
+          "knowledge_base": "서울역,놀이동산"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "수서역이 편리합니다.",
+          "terms": "수서역/서울",
+          "knowledge_base": "수서역,서울"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "구미김천역에서 수서역행 첫차는 몇시에 있나요?",
+          "intent": "기차시간 문의",
+          "terms": "수서행/서울행",
+          "knowledge_base": "수서행,서울행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아침 6시 30분에 있습니다.",
+          "knowledge_base": "아침"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "수서역까지 얼마나 걸리나요?",
+          "intent": "기차시간 문의",
+          "terms": "수서역/서울",
+          "knowledge_base": "수서역,서울"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 30분 소요됩니다.",
+          "terms": "버스-노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "수서역에서 롯데월드까진 택시로 얼마나 걸리죠?",
+          "intent": "기차시간 문의",
+          "terms": "택시/대중교통/이동수단",
+          "knowledge_base": "택시,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "대략 20분 정도 예상됩니다.",
+          "terms": "대략/약",
+          "knowledge_base": "40분,약"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "수서역에서 구미김천행 마지막 열차는 몇시에 있어요?",
+          "intent": "기차시간 문의",
+          "terms": "수서역/서울",
+          "knowledge_base": "마지막,서울"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "밤 10시 10분에 마지막 열차가 있습니다.",
+          "terms": "밤/야간",
+          "knowledge_base": "밤,야간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 밤 9시 시간대에 롯데월드에서 수서역까지 택시타면 길이 안 막힐까요?",
+          "intent": "기차시간 문의",
+          "terms": "택시/대중교통/이동수단",
+          "knowledge_base": "택시,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "워낙 교통이 혼잡한 지역이라 장담 할 수는 없습니다.",
+          "terms": "교통/길",
+          "knowledge_base": "혼잡,길"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "그럼 지하철로 이동 가능할까요?",
+          "intent": "기차시간 문의",
+          "terms": "지하철/대중교통/이동수단",
+          "knowledge_base": "이동,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "롯데월드에서 수서역까지 말씀이십니까?",
+          "intent": "기차시간 문의",
+          "terms": "수서역/서울",
+          "knowledge_base": "수서역,서울"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "8호선 잠실역에서 승차후  가락시장역에서 3호선 환승하여 수서역에서 하차하시면 됩니다.",
+          "terms": "잠실역/지하철역",
+          "knowledge_base": "가락시장역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "얼마나 걸릴까요?",
+          "intent": "기차시간 문의",
+          "terms": "얼마/시간",
+          "knowledge_base": "얼마,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "25분이면 충분히 도착 하십니다.",
+          "knowledge_base": "도착"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3564",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "수고많으십니다. 버스노선이 궁금해서요",
+          "intent": "버스 노선",
+          "terms": "버스노선/버스번호",
+          "knowledge_base": "버스노선,버스번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 말씀하세요.",
+          "terms": "말씀/이야기",
+          "knowledge_base": "말씀,이야기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "여의도 불꽃 축제를 가려하는데요.",
+          "intent": "버스 노선",
+          "terms": "여의도/지역명",
+          "knowledge_base": "여의도,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "출발하시는 곳이 어디십니까?",
+          "intent": "버스 노선",
+          "knowledge_base": "출발"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "대구입니다.",
+          "terms": "대구/지역명",
+          "knowledge_base": "대구,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "대구에서 여의도공원까지 안내해드리면 될까요?",
+          "intent": "버스 노선",
+          "terms": "여의도공원/한강공원",
+          "knowledge_base": "여의도공원,한강공원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "아니요 대구에서부터 안내는 안해주셔도 되구요",
+          "terms": "안내/설명",
+          "knowledge_base": "안내,설명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "어디에서 부터 안내해드리면 될까요?",
+          "intent": "버스 노선",
+          "terms": "안내/설명",
+          "knowledge_base": "안내,설명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "서울역에서 여의도공원까지 가는 버스가 있는지 궁금해서요",
+          "terms": "서울역/지역명",
+          "knowledge_base": "여의도공원,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "불꽃축제 당일 여의도 공원 인근은 버스가 운행하지 않습니다.",
+          "terms": "당일/그날",
+          "knowledge_base": "당일,그날"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 어떻게 가나요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "여의도역 인근까지 가셔서 도보로 이동하셔야 합니다.",
+          "terms": "여의도역/지하철역",
+          "knowledge_base": "인근,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 서울역에서 여의도역 가는 버스 안내 부탁드려요",
+          "intent": "버스 노선",
+          "terms": "서울역/서울",
+          "knowledge_base": "여의도역,서울"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "서울역 정문 정류장에서 620번,  527번 버스 이용이 가능하십니다.",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "시간이 얼마정도 걸릴까요?",
+          "intent": "버스 노선",
+          "terms": "시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "약 35분 예상됩니다.",
+          "terms": "예상/예정",
+          "knowledge_base": "예상,예정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "여의도역에서 공원까지는 도보로 충분히 이동이 가능한 거리인가요?",
+          "intent": "버스 노선",
+          "terms": "공원/여의도공원",
+          "knowledge_base": "도보,여의도공원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "도보로 약 980m이동하셔야 합니다.",
+          "terms": "도보/걸어서",
+          "knowledge_base": "도보,걸어서"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "걸을 수 있는 거리네요. 안내 고마워요",
+          "terms": "안내/설명",
+          "knowledge_base": "안내,설명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다.",
+          "terms": "감사/고마움",
+          "knowledge_base": "감사,고마움"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3634",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대림동에서 고대앞까지 대중교통 알 수 있을 까요?",
+          "intent": "대중교통 노선",
+          "terms": "고대/고려대학교/ 대중교통/교통수단",
+          "knowledge_base": "고대,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 대림 몇동에서 출발하시나요?",
+          "intent": "대중교통 노선",
+          "terms": "출발/탑승지",
+          "knowledge_base": "동,탑승지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "대림 1동이에요.",
+          "terms": "동/지역",
+          "knowledge_base": "동.,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 고대 서울캠퍼스 말씀이시죠?",
+          "intent": "대중교통 노선",
+          "terms": "고대서울캠퍼스/고려대학교 지점",
+          "knowledge_base": "고대서울캠퍼스,고려대학교지점"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 맞아요,"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "1,2,5호선 선택가능하신데요, 몇 호선이 편하신가요?",
+          "intent": "대중교통 노선",
+          "terms": "호선/지하철 번호",
+          "knowledge_base": "선택,지하철번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "상관없는데 많이 안 걷는게 좋아요,",
+          "knowledge_base": "상관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "네 그러시면 도보시간이 17분인 2호선과 6호선 연계편으로 안내드릴까요?",
+          "intent": "대중교통 노선",
+          "terms": "도보/걸음/ 연계/환승",
+          "knowledge_base": "시간,환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 그렇게 해주세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "대림1동 주민센터에서 마을버스 영등포 01번을 탑승하시고 구로디지털단지역정류장에서 하차하시기 바랍니다.",
+          "terms": "주민센터/정부기관/ 마을버스/교통수단",
+          "knowledge_base": "마을버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "몇정거장이나 가야되나요?",
+          "intent": "대중교통 노선",
+          "terms": "정거장/거리",
+          "knowledge_base": "정거장,거리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "6개 정류장 이동입니다.",
+          "knowledge_base": "이동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "2호선 구로 디지털단지역으로 이동하셔서 대림역방면으로 탑승하시고 6개역 이동합니다.",
+          "terms": "탑승/승차",
+          "knowledge_base": "탑승,승차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "빠른 환승도 좀 알려주세요.",
+          "intent": "대중교통 노선",
+          "terms": "빠른 환승/환승지",
+          "knowledge_base": "빠른환승,환승지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 구로 디지털단지역 9-2, 9-3입니다.",
+          "terms": "구로 디지털단지역/지하철역",
+          "knowledge_base": "구로디지털단지역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "합정역에서 하차하셔서 상수역방면으로 탑승하시고 17개역을 이동하여 안암역에 하차하시기 바랍니다.",
+          "terms": "합정역/ 상수역/지하철역사/ 방면/방향",
+          "knowledge_base": "하차,방향"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "몇번출구로 나가야하나요?",
+          "intent": "대중교통 노선",
+          "terms": "출구/출입구",
+          "knowledge_base": "출구,출입구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "2번출구로 나와서 565M 도보이동하시면 됩니다.",
+          "terms": "출구/출입구",
+          "knowledge_base": "도보,출입구"
+        }
+      ]
+    }
+  ]
+}

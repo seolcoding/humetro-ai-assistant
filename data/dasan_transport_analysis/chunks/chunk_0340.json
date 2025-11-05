@@ -1,0 +1,883 @@
+{
+  "chunk_id": 340,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B23960",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "자전거를 품은 택시 서비스가 궁금합니다.",
+          "intent": "자전거택시",
+          "terms": "자전거/개인이동수단, 택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "친환경 전기택시 10대에 자전거 거치대를 장착해 시범 운영하고 있습니다.",
+          "terms": "친환경/자연환경, 전기택시/친한경택시, 거치대/지지대, 장착/고정",
+          "knowledge_base": "전기택시,고정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "이 서비스를 시작한 이유는 무엇인가요?",
+          "intent": "자전거택시",
+          "terms": "시작/출발",
+          "knowledge_base": "시작,출발"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "자전거 휴대 승차가 주말, 지하철에만 국한되고, 자전거 고장 시에 이동 서비스가 전무하여 시작하게 되었습니다.",
+          "terms": "승차/탑승, 주말/토일요일, 지하철/대중교통",
+          "knowledge_base": "휴대,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떻게 운영하게 되나요?",
+          "intent": "자전거택시",
+          "terms": "운영/운행",
+          "knowledge_base": "운영,운행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "전문적인 안전교육을 받은 택시 기사가 직접 자전거 거치대를 장착해 서비스를 합니다.",
+          "terms": "안전교육/교육, 기사/운전기사",
+          "knowledge_base": "택시,운전기사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "이용방법은 어떻게 되나요?",
+          "intent": "자전거택시",
+          "terms": "이용방법/사용방법",
+          "knowledge_base": "이용방법,사용방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "구글스토어 또는 앱스토어에서 마카롱택시 앱을 설치해야 합니다.",
+          "terms": "구글스토어/앱스토어, 마카롱택시/택시앱",
+          "knowledge_base": "앱스토어,택시앱"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "설치 이후에는요?",
+          "intent": "자전거택시",
+          "terms": "설치/인스톨",
+          "knowledge_base": "설치,인스톨"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "예약하기, 이용목적지입력, 예약일정선택, 자전거를 품은 택시를 선택하면 됩니다.",
+          "terms": "목적지/행선지",
+          "knowledge_base": "목적지,행선지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "예약은 언제까지 가능한가요?",
+          "intent": "자전거택시",
+          "terms": "예약/약속",
+          "knowledge_base": "예약,약속"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "이용 시작 2시간 전까지 가능합니다.",
+          "terms": "이용/사용, 2시간/기간",
+          "knowledge_base": "2시간,기간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "비용은 얼마인가요?",
+          "intent": "자전거택시",
+          "terms": "비용/운임",
+          "knowledge_base": "비용,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "자전거 1대당 3000원의 추가 운송료가 부과 됩니다.",
+          "terms": "3000원/돈, 운송료/운임",
+          "knowledge_base": "1대,운임"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "몇대까지 부착 가능한가요?",
+          "intent": "자전거택시",
+          "terms": "부착/고정",
+          "knowledge_base": "부착,고정"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "최대 3대까지 부착 가능합니다.",
+          "terms": "부착/고정",
+          "knowledge_base": "부착,고정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "이후에 얼마나 늘어나게 되나요?",
+          "intent": "자전거택시",
+          "terms": "이후/이래",
+          "knowledge_base": "이후,이래"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "향후 이용 수요에 따라 탄력적으로 운영대수를 확대해 나갈 예정입니다.",
+          "terms": "이용/사용. 수요/요청, 확대/확장",
+          "knowledge_base": "수요,확장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "또 다른 자전거 관련 정책이 있나요?",
+          "intent": "자전거택시",
+          "terms": "정책/방책",
+          "knowledge_base": "정책,방책"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "서울시는 다각적으로 편리한 자전거 이용 환경을 조성할 계획입니다.",
+          "terms": "서울시/지자체, 환경조성/분위기조성",
+          "knowledge_base": "자전거,분위기조성"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23961",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "면허 반납하면 교통카드를 받을 수 있다고 들었습니다. ",
+          "intent": "어르신교통카드",
+          "terms": "면허/자동차운전면허, 교통카드/교통비지불카드",
+          "knowledge_base": "교통카드,교통비지불카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "고령 운전자 면허 자진반납을 말씀하시는 건가요?",
+          "intent": "어르신교통카드",
+          "terms": "고령/70세이상, 면허/운전면허",
+          "knowledge_base": "운전자,운전면허"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네, 맞습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "70세 이상의 어르신께서 운전면허를 반납하시면 10만원이 충전된 교통카드를 바로 받으실 수 있습니다.",
+          "terms": "70세/고령, 어르신/노인분, 운전면허/면허, 교통카드/교통비지불카드",
+          "knowledge_base": "어르신,교통비지불카드"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어르신들께 왜 면허를 돌려받게 되었나요?",
+          "intent": "어르신교통카드",
+          "terms": "면허/자동차운전면허",
+          "knowledge_base": "면허,자동차운전면허"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "인구 고령화로 어르신 운전자에 의한 교통사고가 증가함에 따라 교통사고 사망자 줄이기 운동의 하나로 시행되고 있습니다.",
+          "terms": "고령화/60세, 운전자/드라이버, 사망자/사고자",
+          "knowledge_base": "고령화,사고자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어르신의 기준은 어떻게 되나요?",
+          "intent": "어르신교통카드",
+          "terms": "어르신/노인분",
+          "knowledge_base": "기준,노인분"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "65세 이상입니다. ",
+          "terms": "65세/노인",
+          "knowledge_base": "65세,노인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그러면 65세 이상 어르신이 면허를 반납하면 되나요?",
+          "intent": "어르신교통카드",
+          "terms": "면허/자동차운전면허",
+          "knowledge_base": "어르신,자동차운전면허"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아닙니다, 만 70세이상으로 운전면허 자진반납 혜택을 받은 적이 없는 어르신이 대상입니다",
+          "terms": "자진반납/반납",
+          "knowledge_base": "운전면허,반납"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "만 70세면 몇 년 생이신가요?",
+          "intent": "어르신교통카드",
+          "terms": "70세/고령",
+          "knowledge_base": "70세,고령"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1950년 12월 31일 이전 출생자 이십니다.",
+          "terms": "1950년12월31일/70세",
+          "knowledge_base": "출생자,70세"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "70세이시면 어차피 지하철은 무료아닌가요?",
+          "intent": "어르신교통카드",
+          "terms": "지하철/대중교통, 무료/무임",
+          "knowledge_base": "지하철,무임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 맞습니다. 그래서, 지하철을 승차하실 때는 어르신 무료 교통카드를 사용하셔야 합니다.",
+          "terms": "무료/무임, ",
+          "knowledge_base": "승차,무임"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "면허반납 어르신 교통카드는 어디에 쓸 수 있나요?",
+          "intent": "어르신교통카드",
+          "terms": "교통카드/교통비지불카드",
+          "knowledge_base": "어르신,교통비지불카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "전국 어디서나 교통카드를 지원하는 교통수단과 T머니 가맹점에서 사용할 수 있습니다.",
+          "terms": "T머니/교통카드, 교통수단/대중교통",
+          "knowledge_base": "지원,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "어디에 반납하면 되나요?",
+          "intent": "어르신교통카드",
+          "terms": "반납/반납",
+          "knowledge_base": "반납"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "동주민센터에서 반납하시면 됩니다.",
+          "terms": "동주민센터/공공기관",
+          "knowledge_base": "반납,공공기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "면허를 반납하면 바로 카드를 받을 수 있나요?",
+          "intent": "어르신교통카드",
+          "terms": "면허/자동차운전면허",
+          "knowledge_base": "반납,자동차운전면허"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 교통카드를 바로 지급해 드립니다.",
+          "terms": "지급/발급",
+          "knowledge_base": "지급,발급"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23962",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "건대부고에서 고려대 가는 방법 부탁드립니다.",
+          "intent": "길찾기",
+          "terms": "건대부고/부속고등학교, 고려대/고려대학교",
+          "knowledge_base": "고려대,고려대학교"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "서울 광진구 건국대학교 사범대학 부속고등학교에서 서울 성북구 안암로에 있는 고려대학교까지 가는 방법 말씀이십니까?",
+          "intent": "길찾기",
+          "terms": "서울/지자체, 광진구/서울지역구, 건국대학교/교육기관, 사범대학/단과대, 부속고등학교/고등학교, 안암로/길, 고려대학교/교육기관",
+          "knowledge_base": "광진구,교육기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네, 맞습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "광진구청에서 303번을 승차하셔서 동대문구청에서 2222번으로 환승후 고려대학교앞에서 하차하시면 됩니다.",
+          "terms": "광진구청/공공기관, 303번/버스노선, 승차/탑승, 동대문구청/공공기관. 222번/버스노선",
+          "knowledge_base": "303번,버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리나요?",
+          "intent": "길찾기",
+          "terms": "시간/경과시간",
+          "knowledge_base": "시간,경과시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "53분 예상됩니다.",
+          "terms": "53분/경과시간",
+          "knowledge_base": "예상,경과시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "비용은 얼마인가요?",
+          "intent": "길찾기",
+          "terms": "비용/운임",
+          "knowledge_base": "비용,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1200원입니다. ",
+          "terms": "1200원/돈",
+          "knowledge_base": "1200원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "환승없이 가는건 없을까요?",
+          "intent": "길찾기",
+          "terms": "환승/갈아타기",
+          "knowledge_base": "환승,갈아타기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "광진구청에서 3216번을 승차하셔서 고려대역,고대앞삼거리 하차하시면 됩니다.",
+          "terms": "3216번/버스노선, 고대앞삼거리/정류장, 하차/도착",
+          "knowledge_base": "3216번,도착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "이렇게 가면  시간은 얼마나 걸리나요?",
+          "intent": "길찾기",
+          "terms": "시간/경과시간",
+          "knowledge_base": "시간,경과시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "약 1시간 예상됩니다.",
+          "terms": "1시간/경과시간",
+          "knowledge_base": "예상,경과시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "비용은요?",
+          "intent": "길찾기",
+          "terms": "비용/운임",
+          "knowledge_base": "비용,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "1300원 입니다.",
+          "terms": "1300원/돈",
+          "knowledge_base": "1300원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "제일 빨리 가는 방법은요?",
+          "intent": "길찾기",
+          "terms": "방법/수단",
+          "knowledge_base": "방법,수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "구의역에서 지하철 2호선에 승차, 성수역에서 신설동행으로 환승하시고 신설동역에서 하차후에 101번 버스를 타고 고려대학교 앞에서 하차하시면 됩니다.",
+          "terms": "구의역/지하철역, 지하철/대중교통, 2호선/지하철노선, 성수역/지하철역, 신설동역/지하철역, 101번/버스노선",
+          "knowledge_base": "지하철,버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그렇게 가면 시간이 얼마나 걸리나요?",
+          "intent": "길찾기",
+          "terms": "시간/경과시간",
+          "knowledge_base": "시간,경과시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "약 48분 예상됩니다.",
+          "terms": "48분/경과시간",
+          "knowledge_base": "48분,경과시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "비용은요?",
+          "intent": "길찾기",
+          "terms": "비용/운임",
+          "knowledge_base": "비용,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "1250원 입니다.",
+          "terms": "1250원/돈",
+          "knowledge_base": "1250원,돈"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23963",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시안에 반드시 부착되어야 하는 것들이 있나요?",
+          "intent": "택시부착물",
+          "terms": "택시/대중교통, 부착/설치",
+          "knowledge_base": "부착,설치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 택시운전자격증과 지정부착물이 게시되어 있어야 합니다.",
+          "terms": "택시운전자격증/택시자격증",
+          "knowledge_base": "지정부착물,택시자격증"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "택시 운전자격증은 왜 붙여놓아야 하나요?",
+          "intent": "택시부착물",
+          "terms": "운전자격증/택시운전자격증",
+          "knowledge_base": "운전자격증,택시운전자격증"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "안전운송의 확보와 서비스 향상을 위해서 게시하도록 하고 있습니다.",
+          "terms": "안전운송/안전운행,  확보/보장, 향상/개선",
+          "knowledge_base": "확보,개선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "택시 운전가격증을 붙여놓지 않으면 어떻게 되나요?",
+          "intent": "택시부착물",
+          "terms": "운전자격증/택시운전자격증",
+          "knowledge_base": "운전자격증,택시운전자격증"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "첫 위반시에는 과태료 10만원, 3차는 20만원을 물게 됩니다.",
+          "terms": "과태료/벌금, 10만원/돈, 20만원/돈",
+          "knowledge_base": "과태료,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "회사 택시면 회사도 처벌받나요?",
+          "intent": "택시부착물",
+          "terms": "회사/운송사업자",
+          "knowledge_base": "택시,운송사업자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 운송사업자도 운행정지 5일 또는 과징금 10만원을 물게 됩니다.",
+          "terms": "운행정지/영업정지, 과징금/벌금",
+          "knowledge_base": "운행정지,벌금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "어디에 붙여야 하나요?",
+          "intent": "택시부착물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "에어백이 설치된 경우는 조수석 전방 유리창 우측 상단 모서리에 부착해야 합니다.",
+          "terms": "에어백/안전장치, 전방/앞",
+          "knowledge_base": "설치,앞"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "에어백이 설치되지 않은 경우에는 어디에 설치 하나요?",
+          "intent": "택시부착물",
+          "terms": "에어백/안전장치, 설치/부착",
+          "knowledge_base": "설치,부착"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "조수석 앞 선반위에 게시하도록 되어 있습니다.",
+          "terms": "조수석/운전사옆자, 게시/부착",
+          "knowledge_base": "선반,부착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "게시가 되긴 했는데, 못알아 볼 정도로 훼손된 경우에는 어떻게 되나요?",
+          "intent": "택시부착물",
+          "terms": "훼손/망실",
+          "knowledge_base": "훼손,망실"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "자격증명 등의 사진이나 글씨가 뒷좌석에서 식별이 되지 않을 정도로 퇴색, 마멸 또는 훼손된 상태는 미부착에 준하는 것으로 간주 됩니다.",
+          "terms": "자격증명/택시운전자격증,  훼손/망실, 미부착/미부착",
+          "knowledge_base": "사진,미부착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "지정부착물은 어떤 것들이 있나요?",
+          "intent": "택시부착물",
+          "terms": "지정부착물/알림역할",
+          "knowledge_base": "지정부착물,알림역할"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "민원안내스티커와 택시요금표가 있습니다.",
+          "terms": "민원안내스티커/알림",
+          "knowledge_base": "택시요금표,알림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "지정부착물은 어디에 붙이게 되어 있나요?",
+          "intent": "택시부착물",
+          "terms": "지정부착물/알림역할",
+          "knowledge_base": "지정부착물,알림역할"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "민원안내스티커는 택시운전자격 증명과 함께 게시하여야 하며, 택시요금표는 오른쪽 뒷문 외부에 붙이도록 되어 있습니다.",
+          "terms": "민원안내스티커/민원알림",
+          "knowledge_base": "택시운전자격,민원알림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "지정부착물도 부착하지 않을 경우에는 처벌받나요?",
+          "intent": "택시부착물",
+          "terms": "부착/게시",
+          "knowledge_base": "부착,게시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 과태료 10만원이 부과됩니다.",
+          "terms": "과태료/벌금, 10만원/돈",
+          "knowledge_base": "10만원,돈"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23964",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "알파돔타워에서 셰에라자드 가는 방법 알려주세요.",
+          "intent": "길찾기",
+          "terms": "알파돔타워/건물, 세에라자드/청음샵",
+          "knowledge_base": "세에라자드,청음샵"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "판교 알파돔타워에서 강남구 도산대로 셰에라자드 가는 방법 말씀이신가요?",
+          "intent": "길찾기",
+          "terms": "판교/지역, 강남구/서울지역구, 도산대로/강남지역, ",
+          "knowledge_base": "알파돔타워,강남지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네, 맞습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "최적 경로는 판교역에서 경강선 탑승 후 이매역에서 수원분당선으로 환승하여 압구정로데오역 하차하시면 됩니다.",
+          "terms": "경로/노선, 판교역/지하철역, 경강선/지하철노선, 탑승/승차, 이매역/지하철역, 수원분당선/지하철노선, 압구정로데오역/지하철역, 하차/도착",
+          "knowledge_base": "판교역,도착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "빠른 환승을 위한 승차 위치는 어떻게 되나요?",
+          "intent": "길찾기",
+          "terms": "승차/탑승",
+          "knowledge_base": "승차,탑승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "3번째칸 2번문에 계시면 됩니다.",
+          "terms": "2번문/출입문",
+          "knowledge_base": "2번문,출입문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "압구정로데오역에서 내려서 몇번 출구로 나가면 되나요?",
+          "intent": "길찾기",
+          "terms": "출구/출입구",
+          "knowledge_base": "출구,출입구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "4번출구에서 도보로 240m 이동하시면 됩니다.",
+          "terms": "4번출구/출입구, 도보/걷기, 240m,거리",
+          "knowledge_base": "도보,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸릴까요?",
+          "intent": "길찾기",
+          "terms": "시간/경과시간",
+          "knowledge_base": "시간,경과시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "51분 예상됩니다.",
+          "terms": "51분/시간",
+          "knowledge_base": "51분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "비용은요?",
+          "intent": "길찾기",
+          "terms": "비용/운임",
+          "knowledge_base": "비용,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1450원 입니다.",
+          "terms": "1450원/돈",
+          "knowledge_base": "1450원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "환승없이 가는 방법은 없을까요?",
+          "intent": "길찾기",
+          "terms": "환승/갈아타기",
+          "knowledge_base": "환승,갈아타기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "판교역, 낙생육교, 현대백화점에서 9507번을 승차하시고 일지아트홀, 압구정동노인복지센터에서 하차하시면 됩니다.",
+          "terms": "판교역/지하철역, 낙생육교/다리, 현대백화점/백화점, 9507번/버스, 승차/탑승, 일지아트홀/건물, 하차/도착",
+          "knowledge_base": "낙생육교,도착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "그 버스를 타면 시간은 얼마나 걸리나요?",
+          "intent": "길찾기",
+          "terms": "버스/대중교통",
+          "knowledge_base": "시간,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "약 1시간 2분 예상됩니다.",
+          "terms": "1시간2분/시간",
+          "knowledge_base": "1시간2분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "도보로 몇분이나 이동해야 하나요?",
+          "intent": "길찾기",
+          "terms": "도보/걷기",
+          "knowledge_base": "이동,걷기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "도보로 9분, 약 620m 정도 이동하셔야 합니다.",
+          "terms": "9분/시간, 620m/거리",
+          "knowledge_base": "9분,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "비용은 얼마인가요?",
+          "intent": "길찾기",
+          "terms": "비용/운임",
+          "knowledge_base": "비용,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "2800원입니다. ",
+          "terms": "2800원/돈",
+          "knowledge_base": "2800원,돈"
+        }
+      ]
+    }
+  ]
+}

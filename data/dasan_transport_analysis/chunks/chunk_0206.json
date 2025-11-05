@@ -1,0 +1,847 @@
+{
+  "chunk_id": 206,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B10965",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "근처 문연 약국이 있을까요?",
+          "intent": "편의시설 안내",
+          "terms": "약국/장소",
+          "knowledge_base": "약국,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "지역이 어디십니까?",
+          "intent": "편의시설 안내",
+          "terms": "지역/장소",
+          "knowledge_base": "지역,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "잠실 우성아파트 1동입니다.",
+          "terms": "잠실/지역, 우성아파트/장소",
+          "knowledge_base": "우성아파트,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "일요일이라 다 휴무 입니다. ",
+          "terms": "일요일/요일",
+          "knowledge_base": "휴무,요일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "멀어도 좋아요. 문연 약국이 있나요?",
+          "intent": "편의시설 안내",
+          "terms": "약국/장소",
+          "knowledge_base": "약국,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "서울역 근처에 있습니다. ",
+          "terms": "서울역/역",
+          "knowledge_base": "서울역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "몇번출구로 가야 빠르죠?",
+          "intent": "편의시설 안내",
+          "terms": "출구/나가는문",
+          "knowledge_base": "출구,나가는문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "10번 출구입니다.",
+          "terms": "10번/전호, 출구/나가는문",
+          "knowledge_base": "출구,나가는문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "걸어서 가면요?",
+          "intent": "편의시설 안내",
+          "terms": "걸어서/도보",
+          "knowledge_base": "걸어서,도보"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "30분입니다.",
+          "terms": "30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "버스는요?",
+          "intent": "편의시설 안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "555번 타시면 됩니다.",
+          "terms": "555번/버스번호",
+          "knowledge_base": "버스,버스번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요?",
+          "intent": "편의시설 안내",
+          "terms": "시간/소요시간",
+          "knowledge_base": "얼마나,소요시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "15분 소요됩니다.",
+          "terms": "15분/시간",
+          "knowledge_base": "소요,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "배차간격은 얼마나 있는거죠?",
+          "intent": "편의시설 안내",
+          "terms": "배차간격/시간",
+          "knowledge_base": "얼마나,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "10분이요.",
+          "terms": "10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "약국이름은요?",
+          "intent": "편의시설 안내",
+          "terms": "약국/장소",
+          "knowledge_base": "이름,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "서울약국입니다.",
+          "terms": "서울/지역",
+          "knowledge_base": "약국,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "전화번호 알 수 있을까요?",
+          "intent": "편의시설 안내",
+          "terms": "연락처/전화번호",
+          "knowledge_base": "전화번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "02-000-0000 입니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10966",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스 요금 알고 싶어요.",
+          "intent": "버스 요금",
+          "terms": "버스/대중교통, 요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 도와드릴까요?",
+          "intent": "버스 요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "버스요금이 가장 최근에 언제 올랐죠?",
+          "intent": "버스 요금",
+          "terms": "버스요금/돈",
+          "knowledge_base": "최근,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "2018년도입니다.",
+          "terms": "2018년도/년도",
+          "knowledge_base": "2018년도,년도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "또 오를까요?",
+          "intent": "버스 요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아직 예정에 없습니다. ",
+          "terms": "예정/시기",
+          "knowledge_base": "예정,시기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "계속 같았으면 좋겠어요.",
+          "knowledge_base": "계속"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "그전에는 언제 올랐는데요?",
+          "intent": "버스 요금",
+          "terms": "언제/시기",
+          "knowledge_base": "언제,시기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "2015년도 입니다.",
+          "terms": "2015년도/년도",
+          "knowledge_base": "2015년도,년도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "자주 오르는게 아닌가봐요?",
+          "intent": "버스 요금",
+          "terms": "자주/빈도",
+          "knowledge_base": "자주,빈도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "무임승차를 하면 벌금이 있는건가요?",
+          "intent": "버스 요금",
+          "terms": "벌금/처벌/돈",
+          "knowledge_base": "벌금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네. 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "얼마나 내요?",
+          "intent": "버스 요금",
+          "terms": "비용/금액",
+          "knowledge_base": "얼마,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "5만원 입니다.",
+          "terms": "5만원/금액",
+          "knowledge_base": "5만원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "벌금을 더 내야되는거 아닌가요?",
+          "intent": "버스 요금",
+          "terms": "벌금/처벌/돈",
+          "knowledge_base": "벌금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아직 예정에 없습니다. ",
+          "terms": "예정/시기",
+          "knowledge_base": "예정,시기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "강력히 처벌해야죠. 그런사람들은",
+          "terms": "처벌/벌, 사람/인간",
+          "knowledge_base": "사람,인간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "더 궁금한 점 있으신가요?",
+          "intent": "버스 요금",
+          "terms": "궁금/질문",
+          "knowledge_base": "궁금,질문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "없습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10967",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스탈때 커피들고 타면안되요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "버스/대중교통, 커피/음료",
+          "knowledge_base": "커피,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "테이크아웃컵 이십니까?",
+          "intent": "버스 탑승 수칙",
+          "terms": "테이크아웃/포장",
+          "knowledge_base": "컵,포장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네. 맞아요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "일회용에 담긴 음료는 불가합니다.",
+          "terms": "일회용/일회용품",
+          "knowledge_base": "음료,일회용품"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "생수병은요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "생수병/음료",
+          "knowledge_base": "생수병,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "뚜껑이 있는것은 괜찮습니다.",
+          "knowledge_base": "뚜껑"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "텀플러는 괜찮나아ㅛ?",
+          "intent": "버스 탑승 수칙",
+          "terms": "텀블러/식기",
+          "knowledge_base": "텀블러,식기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "음식은요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "음식물/음식",
+          "knowledge_base": "음식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "일회용품에 담긴 음식은 안됩니다.",
+          "terms": "음식물/음식",
+          "knowledge_base": "음식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "치킨은요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "치킨/음식",
+          "knowledge_base": "치킨,음식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "종이상자에 밀봉되있는 치킨은 괜찮습니다.",
+          "terms": "치킨/음식",
+          "knowledge_base": "치킨,음식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "시장물품은요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "시장/장소",
+          "knowledge_base": "시장,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "소량의 식자재는 허용이 됩니다.",
+          "terms": "식재료/음식",
+          "knowledge_base": "식재료,음식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "조금 난해하네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "왜그러시죠?",
+          "intent": "버스 탑승 수칙",
+          "terms": "왜/이유",
+          "knowledge_base": "왜,이유"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "왜 이런게 생겼죠?",
+          "intent": "버스 탑승 수칙",
+          "terms": "왜/이유",
+          "knowledge_base": "왜,이유"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "시민의 안전을 위해 생긴 제도입니다.",
+          "terms": "제도/원칙",
+          "knowledge_base": "안전,원칙"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "피해가 가서 그런가요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "피해",
+          "knowledge_base": "피해"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10968",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "음식을 들고 버스 타면 안되요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "컵떡볶이는요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "컵떡볶이/음식",
+          "knowledge_base": "컵떡볶이,음식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "불가합니다.",
+          "terms": "불가/안됨",
+          "knowledge_base": "불가,안됨"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "언제부터 이런 제도가 생겼죠?",
+          "intent": "버스 탑승 수칙",
+          "terms": "제도/원칙",
+          "knowledge_base": "제도,원칙"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "2015년부터 입니다. ",
+          "terms": "2015년/년도",
+          "knowledge_base": "2015년,년도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "테이크아웃커피는요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "테이크아웃/포장, 커피/음료",
+          "knowledge_base": "커피,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "안됩니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "차에서 멀 먹어도 안되요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "차/교통수단",
+          "knowledge_base": "차,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "캔 음료수는 가능한가요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "음료수/음료",
+          "knowledge_base": "음료수,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "따지 않았을 경우에 반입 가능하십니다.",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 마시고 있을경우 버리고 타야 하나요?",
+          "intent": "버스 탑승 수칙"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "왜요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "왜/이유",
+          "knowledge_base": "왜,이유"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "쏟아질 수 있기 때문입니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네. 알겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "더 궁금하신 사항 있을까요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "궁금/질문",
+          "knowledge_base": "궁금,질문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "생각나면 또 전화할께요.",
+          "terms": "생각/기억, 전화/연락",
+          "knowledge_base": "전화,연락"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10969",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스기사가 승차 거부했어요.",
+          "intent": "버스 탑승 수칙",
+          "terms": "버스/대중교통",
+          "knowledge_base": "기사,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 도와드릴까요?",
+          "intent": "버스 탑승 수칙"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "이것도 신고가능한거 아닌가요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "신고/처벌",
+          "knowledge_base": "신고,처벌"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "상황을 자세하게 설명해주실 수 있나요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "상황/경우",
+          "knowledge_base": "상황,경우"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어제 테이크아웃하고 버스타려는데 버스기사가 타지 말래요. 이게 말이되요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "버스/교통기관",
+          "knowledge_base": "버스,교통기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "일회용 컵에 담긴 음료나 음식물은 반입 금지되겠습니다.",
+          "terms": "음식물/음식",
+          "knowledge_base": "컵,음식"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "테이크아웃 컵 아닌데요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "테이크아웃/포장",
+          "knowledge_base": "컵,포장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "어떤 종류의 용기시죠?",
+          "intent": "버스 탑승 수칙",
+          "terms": "음료수/음료, 용기/그릇",
+          "knowledge_base": "종류,그릇"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "텀블러요.",
+          "terms": "텀블러/식기",
+          "knowledge_base": "텀블러,식기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "어떻게 생격는지 여쭤봐도 될까요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "어떻게/방법",
+          "knowledge_base": "어떻게,방법"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "잠십만요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "뚜껑이 있나요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "뚜껑",
+          "knowledge_base": "뚜껑"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "뚜껑은 없어요.",
+          "terms": "뚜껑",
+          "knowledge_base": "뚜껑"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "뚜껑이 닫히지 않은 경우에는 반입금지 되시겠습니다.",
+          "terms": "반입금지/출입금지",
+          "knowledge_base": "반입금지,출입금지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "빨대가 있어요. 괜찮지 않나요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "빨대",
+          "knowledge_base": "빨대"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "뚜껑이 꼭 닫아 있어야 합니다. ",
+          "terms": "뚜껑",
+          "knowledge_base": "뚜껑"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "신고못해요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "신고/처벌",
+          "knowledge_base": "신고,처벌"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "음료를 가지고 타면 얼마인데요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "얼마/금액",
+          "knowledge_base": "얼마,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "현재 처벌금액이 없습니다. ",
+          "terms": "금액/돈",
+          "knowledge_base": "처벌,돈"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "raw_response": "I'll analyze this Dasan call center public transportation consultation data and provide a structured summary in the requested JSON format.\n\n```json\n{\n  \"question_types\": [\n    {\n      \"type\": \"버스 노선 안내\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"이수에서 흑석동 가는 버스를 알려주이소\",\n        \"관악구에서 신대방 가는 버스를 알려주이소\",\n        \"구로구에서 영등포 가는 버스를 알려주이소\"\n      ]\n    },\n    {\n      \"type\": \"소요 시간 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"시간은 얼마나 걸리는교?\",\n        \"시간은 얼마나 걸리는교?\"\n      ]\n    },\n    {\n      \"type\": \"첫차 시간 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"첫차는 언제인교?\",\n        \"첫차는 언제인교?\"\n      ]\n    },\n    {\n      \"type\": \"요금 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"차비는 얼마인교?\",\n        \"차비는 얼마에요?\"\n      ]\n    }\n  ],\n  \"common_issues\": [\n    {\n      \"issue\": \"출발지-목적지 간 최적 버스 노선 찾기\",\n      \"frequency\": \"매우 높음\",\n      \"context\": \"시민들이 두 지점 간 이동 시 어떤 버스를 타야 하는지 모르는 경우가 대부분\"",
+  "parse_error": true,
+  "error_detail": "Extra data: line 115 column 1 (char 2874)",
+  "chunk_id": "chunk_0028",
+  "processing_time": 58.020116090774536,
+  "processed_at": "2025-11-05T11:24:19.719044",
+  "dialogue_count": 5
+}

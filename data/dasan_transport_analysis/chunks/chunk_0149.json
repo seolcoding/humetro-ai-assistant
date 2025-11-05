@@ -1,0 +1,785 @@
+{
+  "chunk_id": 149,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3370",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "700번 버스 언제가 막차 알 수 있어요?",
+          "intent": "막차 정보",
+          "terms": "700번/버스번호/ ",
+          "knowledge_base": "버스,버스번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어느역에서 막차시간 알려드릴까요?",
+          "intent": "막차 정보",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "신촌역이요. ",
+          "terms": "신촌역/역",
+          "knowledge_base": "신촌역,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "방향은 어느쪽인가요?",
+          "intent": "막차 정보",
+          "knowledge_base": "어느쪽"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "현대백화점 방향이요. ",
+          "terms": "현대백화점/장소",
+          "knowledge_base": "현대백화점,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 일단 전일 기준 막차 통과 시간만 안내 가능함을 미리 알려드립니다. ",
+          "knowledge_base": "기준"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "아, 알겠습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "700번 버스 신촌역정류장 전일 막차 22시 50분 통과하였습니다. ",
+          "terms": "700번/버스번호/ 22시50분/시간",
+          "knowledge_base": "버스,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "다른 궁금하신 점 있으신가요?",
+          "intent": "막차 정보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "네, 500번 버스 막차 시간도 알려주실 수 있으세요?",
+          "intent": "막차 정보",
+          "terms": "500번/버스번호",
+          "knowledge_base": "버스,버스번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "네, 방향은 같은쪽인가요?",
+          "intent": "막차 정보",
+          "knowledge_base": "방향"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 맞아요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "500번 버스 신촌역정류장 전일 막차 23시 통과했습니다. ",
+          "terms": "500번/버스번호/ 23시/시간",
+          "knowledge_base": "버스,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "감사합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "전일 통과 시간만 알려주신다 하셨는데 매일 거의 비슷한거죠?",
+          "intent": "막차 정보",
+          "knowledge_base": "통과"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 예외상황이 없을때엔 거의 비슷합니다. ",
+          "knowledge_base": "예외사항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "예외상황이요?",
+          "intent": "막차 정보"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 사고나 고장이 발생 할 때 입니다. ",
+          "knowledge_base": "고장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아, 네, 알겠습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3424",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "제주도에 가려는데 차를 가져갈 수 있는 방법 좀 알려주세요. ",
+          "intent": "자차동반문의",
+          "terms": "제주도/지역/ 차/교통수단",
+          "knowledge_base": "차,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "배편 이용하시면 자차 가져가실 수 있습니다. ",
+          "terms": "배편/교통수단/ 자차/교통수단",
+          "knowledge_base": "자차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "출발지가 어디어디 있나요?",
+          "intent": "자차동반문의",
+          "terms": "출발지/장소",
+          "knowledge_base": "출발지,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "목포, 완도, 여수, 녹동, 부산에서 탑승 가능합니다. ",
+          "terms": "목포/지역/ 완도/지역/ 여수/지역",
+          "knowledge_base": "완도,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "완도에서 출발하는거 안내좀 부탁드릴게요.",
+          "intent": "자차동반문의",
+          "terms": "완도/지역",
+          "knowledge_base": "완도,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "완도여객터미널에서 탑승권을 구매하시면 됩니다. ",
+          "terms": "완도여객터미널/시설",
+          "knowledge_base": "완도여객터미널,시설"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "배 타고 가면 제주 도착하는데 얼마나 걸리나요?",
+          "intent": "자차동반문의",
+          "terms": "배/교통수단/ 제주/지역",
+          "knowledge_base": "제주,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "노선에 따라 1시간 20분부터 4시간 소요까지 다양합니다. ",
+          "terms": "1시간/시간/ 4시간/시간",
+          "knowledge_base": "4시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "이용요금은 어떻게 되죠?",
+          "intent": "자차동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "인원이 어떻게 되나요?",
+          "intent": "자차동반문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "대인 2에 소인1명이요. ",
+          "terms": "대인/인원/ 소인/인원",
+          "knowledge_base": "소인,인원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "대인 26,000원, 소인 13,000원 입니다. ",
+          "terms": "대인/인원/ 소인/인원",
+          "knowledge_base": "소인,인원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "차 탑승 비용은 얼마죠?",
+          "intent": "자차동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "차량이 어떻게 되시나요?",
+          "intent": "자차동반문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "카니발입니다. ",
+          "terms": "카니발/차량기종",
+          "knowledge_base": "카니발,차량기종"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "카니발은 차량 선적 가격만 14~16만원정도 합니다. ",
+          "terms": "카니발/차량기종/ 14만원/금액",
+          "knowledge_base": "14만원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "그렇군요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "네 더 궁금한 사항 있으신가요?",
+          "intent": "자차동반문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "주의사항 있나요?",
+          "intent": "자차동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "배 운항시간 두시간 전에는 항구에 도착하셔야 합니다. ",
+          "terms": "배/교통수단/ 두시간/시간/ 항구/장소",
+          "knowledge_base": "두시간,장소"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3425",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "배타고 제주도 가려고 하는데요, 어디서 타는게 좋을까요? ",
+          "intent": "운행문의",
+          "terms": "배/교통수단/ 제주도/지역",
+          "knowledge_base": "제주도,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발하시는 지역이 어디신가요?",
+          "intent": "운행문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "전라도 광주요. ",
+          "terms": "전라도/지역/ 광주/지역",
+          "knowledge_base": "광주,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "전라 지역에서 가장 접근성이 좋은 곳은 목포입니다.",
+          "terms": "전라/지역/ 목포/지역",
+          "knowledge_base": "목포,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "목포에서 출발하는 시간대는 언제 언제가 있나요?",
+          "intent": "운행문의",
+          "terms": "목포/지역",
+          "knowledge_base": "목포,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "목포에서 제주로 가는 배편은 매일 새벽 1시와 오전 9시에 있습니다. ",
+          "terms": "목포/지역/ 제주/지역/ 1시/시간",
+          "knowledge_base": "제주,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그렇게 일찍 밖에 없나요?",
+          "intent": "운행문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "그럼 다른 항구로 추천 부탁드려요. ",
+          "terms": "항구/장소",
+          "knowledge_base": "항구,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후대에 출발하시려면 완도에서 출발하시는게 있습니다. ",
+          "terms": "완도/지역",
+          "knowledge_base": "완도,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "몇시 몇시에 있나요?",
+          "intent": "운행문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "매일 새벽 2시반, 오전 9시, 오후 3시 출발편이 있습니다. ",
+          "terms": "2시반/시간/ 9시/시간/ 3시/시간",
+          "knowledge_base": "9시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "오후 3시 괜찮네요. ",
+          "terms": "3시/시간",
+          "knowledge_base": "3시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "소요시간은 어떻게 되죠?",
+          "intent": "운행문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "완도에서 출발하는 오후 3시 배편은 2시간 40분 소요됩니다. ",
+          "terms": "완도/지역/ 3시/시간/ 2시간/시간",
+          "knowledge_base": "3시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 5시 50분쯤 도착하겠네요?",
+          "intent": "운행문의",
+          "terms": "5시/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 그렇습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "다른 질문 있으신가요?",
+          "intent": "운행문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아뇨 없습니다. 알려주셔서 감사해요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. 즐거운 여행 되세요. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3426",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "제주도에 갈때 반려동물 데려갈 수 있나요?",
+          "intent": "동물동반문의",
+          "terms": "제주도/지역",
+          "knowledge_base": "제주도,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 동물인가요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "강아지요. ",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 가능합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "기내에 같이 탑승할 수 있을까요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "무게에 따라 탑승여부가 달라집니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "몇 키로까지 기내탑승 가능한가요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "케이지 포함 7kg미만의 반려동물은 기내탑승이 가능합니다. ",
+          "terms": "케이지/운반수단/ 7kg/무게",
+          "knowledge_base": "7kg,무게"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "아.. 저희 애는 좀 커서요.. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그럼 위탁수하물로 보내야하나요?",
+          "intent": "동물동반문의",
+          "terms": "위탁수하물/수하물",
+          "knowledge_base": "위탁수하물,수하물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "절차가 어떻게 되나요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "먼저 수하물 검사실에서 강아지 검사를 받으셔야 합니다. ",
+          "terms": "수하물/짐/ 강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "무슨검사요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "강아지를 통해 밀반입을 하는 사례가 종종발생하기때문에 검사를 합니다. ",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아 그렇군요.. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "비용은 어떻게 되죠?",
+          "intent": "동물동반문의",
+          "terms": "비용/금액",
+          "knowledge_base": "비용,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아시아나 항공 기준 편도 3만원입니다. ",
+          "terms": "아시아나/항공사/ 3만원/금액",
+          "knowledge_base": "3만원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "주의사항이 있을까요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "강아지가 멀미를 할 수도 있으니 공복상태를 유지해주는것이 좋습니다. ",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3427",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "애견 동반 제주도행 비행기 탈수 있을까요?",
+          "intent": "동물동반문의",
+          "terms": "애견/동물/ 제주도/지역/ 비행기/교통수단",
+          "knowledge_base": "제주도,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "이용하시는 항공사가 어떻게 되시나요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "제주항공이요. ",
+          "terms": "제주항공/항공사",
+          "knowledge_base": "제주항공,항공사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 제주항공 규정에 따르면 반려동물 동행 가능합니다. ",
+          "terms": "제주항공/항공사",
+          "knowledge_base": "제주항공,항공사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "기내탑승하고싶은데 기준이 있나요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "가방무게를 포함하여 5kg을 초과하지 않으면 됩니다. ",
+          "terms": "5kg/무게",
+          "knowledge_base": "5kg,무게"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "강아지 좌석을 따로 예매해야하나요?",
+          "intent": "동물동반문의",
+          "terms": "강아지/동물",
+          "knowledge_base": "강아지,동물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "꼭 따로 구매 안하시고 동행하시는 분 자리에 같이 들고 있으셔도 무방합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "그렇군요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "마리 수 제한도 있나요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 있습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "규정이 어떻게 되나요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "한 비행기에 최대 2인까지 1인당 1견씩 애견동반이 가능합니다. ",
+          "terms": "비행기/교통수단/ 2인/인원수",
+          "knowledge_base": "2인,인원수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "아 제 일행이 아니여도 다른 사람 두명이 애견동반을 하면 전 신청을 못하는건가요?",
+          "intent": "동물동반문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "그럼 미리 예약을 해야겠네요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 그렇게 하시기를 권유드립니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "금액은 어떻게 되나요?",
+          "intent": "동물동반문의",
+          "terms": "금액/비용",
+          "knowledge_base": "금액,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "1kg당 2000원씩 추가됩니다. ",
+          "terms": "1kg/무게/ 2000원/금액",
+          "knowledge_base": "2000원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 알겠습니다. "
+        }
+      ]
+    }
+  ]
+}

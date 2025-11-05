@@ -1,0 +1,856 @@
+{
+  "chunk_id": 226,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B16211",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울대병원 가는 법 좀 알 수 있을까요?",
+          "intent": "노선 안내",
+          "terms": "서울대병원/의료기관/장소",
+          "knowledge_base": "서울대병원,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네. 가능하십니다. ",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "출발지가 어디인가요?",
+          "intent": "노선 안내",
+          "terms": "출발지/장소, 어디/장소",
+          "knowledge_base": "어디,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "종로3가요. ",
+          "terms": "종로3가/거리/장소",
+          "knowledge_base": "종로3가,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "버스와 지하철 이용이 있습니다. ",
+          "terms": "버스/대중교통/교통수단, 지하철/대중교통/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "어떤 걸로 안내해 드릴까요?",
+          "intent": "노선 안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤게 더 비용이 적게 드나요? ",
+          "intent": "노선 안내",
+          "terms": "비용/금액/돈",
+          "knowledge_base": "비용,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "버스입니다. ",
+          "terms": "버스/대중교통/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "버스로 안내 해드릴까요?",
+          "intent": "노선 안내",
+          "terms": "버스/대중교통/교통수단",
+          "knowledge_base": "안내,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "종로 3가 정류장에서 410번 버스타시면 됩니다. ",
+          "terms": "종로3가/거리/장소",
+          "knowledge_base": "정류장,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "요금은요?",
+          "intent": "노선 안내",
+          "terms": "요금/금액/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "결제 수단이 어떻게 되시나요?",
+          "intent": "노선 안내",
+          "knowledge_base": "결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "저 교통 카드요. ",
+          "terms": "교통카드/카드/결제수단",
+          "knowledge_base": "교통카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "교통카드 결제금액 1100원 입니다.",
+          "terms": "교통카드/카드/결제수단, 결제금액/돈, 1100원/돈",
+          "knowledge_base": "결제금액,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "네. 몇 정거장 걸리는 거에요?",
+          "intent": "노선 안내",
+          "terms": "버스",
+          "knowledge_base": "정거장,버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "5정거장 입니다. ",
+          "terms": "버스",
+          "knowledge_base": "5정거장,버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그럼 총 걸리는 시간이 어느정도에요?",
+          "intent": "노선 안내",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "총 경로 20분 내외 소요됩니다. ",
+          "terms": "20분/시간",
+          "knowledge_base": "경로,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네. 감사해요. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16218",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "부산에 놀러왔는데, 길 좀 알려주실 수 있나요. ",
+          "intent": "교통 문의",
+          "terms": "부산/부산광역시/지역, 길/경로",
+          "knowledge_base": "길,경로"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 가능합니다. ",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "출발지가 어디신가요?",
+          "intent": "교통 문의",
+          "terms": "출발지/장소",
+          "knowledge_base": "출발지,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "부산역이요. ",
+          "terms": "부산역/장소",
+          "knowledge_base": "부산역,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "도착지는 어디신가요?",
+          "intent": "교통 문의",
+          "terms": "도착지/장소",
+          "knowledge_base": "도착지,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "광안리에요. ",
+          "terms": "광안리/장소",
+          "knowledge_base": "광안리,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "버스랑 지하철 중에 어떤 걸로 안내해드릴까요?",
+          "intent": "교통 문의",
+          "terms": "버스/대중교통, 지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "지하철이요. ",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "부산역에서 1호선을 타고 서면에서 2호선으로 갈아타시면 됩니다. ",
+          "terms": "부산역/장소, 1호선/지하철노선, 서면/장소, 2호선/지하철노선",
+          "knowledge_base": "1호선,지하철노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "하차역이 어디에요?",
+          "intent": "교통 문의",
+          "terms": "하차역/지하철역",
+          "knowledge_base": "하차역,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "금련산 역입니다. ",
+          "terms": "금련산역/지하철역",
+          "knowledge_base": "금련산역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "얼마나 걸리죠?",
+          "intent": "교통 문의",
+          "terms": "얼마나/시간",
+          "knowledge_base": "얼마나,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "25분 소요됩니다. ",
+          "terms": "25분/시간",
+          "knowledge_base": "소요,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "죄송한데, 혹시 택시는 더 빠른가요?",
+          "intent": "교통 문의",
+          "terms": "택시/교통수단",
+          "knowledge_base": "더,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "지금 택시를 타시려고 하는건가요?",
+          "intent": "교통 문의",
+          "terms": "지금/현재, 택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "현재 퇴근시간이라 택시로 가실경우 더 시간이 걸립니다. ",
+          "terms": "현재/지금, 퇴근시간/러시아워/통근시간, 택시/교통수단",
+          "knowledge_base": "퇴근시간,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그럼 지하철이 더 빠른거애요?",
+          "intent": "교통 문의",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "더,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네. 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16219",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요, 부산시 길 안내를 받으려고 합니다. ",
+          "intent": "경로 문의",
+          "terms": "부산시/부산광역시/지역, 길/경로",
+          "knowledge_base": "길,경로"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 안녕하세요, 어디에서 어디로 이동하시나요?",
+          "intent": "경로 문의",
+          "terms": "어디/장소",
+          "knowledge_base": "이동,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "영도에서 해운대로 갑니다.",
+          "terms": "영도/지역, 해운대/지역",
+          "knowledge_base": "해운대,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "네, 선호하시는 교통편이 있으신가요?",
+          "intent": "경로 문의",
+          "terms": "교통편/교통수단",
+          "knowledge_base": "교통편,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "없습니다. 가장 빠르게 이동하려고 합니다.",
+          "terms": "빠르게/최저시간",
+          "knowledge_base": "이동,최저시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "지하철, 버스도 가능하지만, 돌아가야 해서, 급하신 경우 택시를 추천드립니다.",
+          "terms": "지하철/대중교통, 버스/대중교통, 택시/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "지하철은 어느정도 걸릴까요?",
+          "intent": "경로 문의",
+          "terms": "지하철/대중교통, 어느정도/시간",
+          "knowledge_base": "어느정도,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "도보 이동시간 포함 약 1시간 30분 이상 소요됩니다. ",
+          "terms": "이동시간/시간, 1시간30분/시간",
+          "knowledge_base": "이동시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "택시를 타면 어떤가요?",
+          "intent": "경로 문의",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "이동경로가 짧아, 30분 내외면 가능합니다.",
+          "terms": "이동경로/경로, 30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "교통 체증은 많지 않나요?",
+          "intent": "경로 문의",
+          "knowledge_base": "교통체증"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 시내를 통과하지 않는 경로라, 해운대 도착전까진 크게 체증이 없을것으로 보입니다. ",
+          "terms": "시내/중심지, 해운대/지역",
+          "knowledge_base": "경로,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "택시 요금은 얼마나 나올까요? ",
+          "intent": "경로 문의",
+          "terms": "택시/교통수단, 요금/금액/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "대략 12,000 원 정도 예상됩니다.",
+          "terms": "12,000원/비용/돈, 예상/예측",
+          "knowledge_base": "12,예측"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "너무 비싼데, 혹시 버스는요?",
+          "intent": "경로 문의",
+          "terms": "버스/대중교통, 지하철/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "소요 시간 말씀이십니까?",
+          "intent": "경로 문의",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "버스로는 약 55분 소요됩니다. ",
+          "terms": "버스/대중교통, 55분/시간",
+          "knowledge_base": "55분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "어떤 버스 타면 되는건데요?",
+          "intent": "경로 문의",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "500번 버스 타시면 됩니다. ",
+          "terms": "500번/버스번호, 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16221",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "전주에서 서울대병원을 가려고 하는데요. ",
+          "intent": "경로 문의",
+          "terms": "전주/전주시/지역, 서울대병원/의료시설",
+          "knowledge_base": "서울대병원,의료시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 가는 방법 안내해 드릴까요?",
+          "intent": "경로 문의",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네, 부탁드릴게요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "기차, 버스 중에 어떤게 편하실까요?",
+          "intent": "경로 문의",
+          "terms": "기차/대중교통, 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "저는 기차요. ",
+          "terms": "기차/대중교통]",
+          "knowledge_base": "기차,대중교통]"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "네, 기차는 KTX로 안내해드릴까요?",
+          "intent": "경로 문의",
+          "terms": "기차/대중교통, KTX/고속열차",
+          "knowledge_base": "KTX,고속열차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네, 아침이라 아무래도 빠른게 좋을 듯해요. ",
+          "terms": "아침/오전, 빠른/시간",
+          "knowledge_base": "빠른,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "네, 가시는 시간이 어떻게 되시나요?",
+          "intent": "경로 문의",
+          "knowledge_base": "어떻게"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "걸리는 시간이 얼마에요?",
+          "intent": "경로 문의",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "약 2시간 정도 소요됩니다. ",
+          "terms": "2시간/시간",
+          "knowledge_base": "소요,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "음, 그러면 8시에는 타야겠는데",
+          "terms": "8시/시간",
+          "knowledge_base": "8시,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "7시 반 서울역 행 기차가 있습니다. ",
+          "terms": "7시반/시간, 서울역/장소, 기차/대중교통",
+          "knowledge_base": "서울역,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "네, 그럼 내려서 서울대까지는 어떻게가요?",
+          "intent": "경로 문의",
+          "terms": "서울대/장소, 어떻게/방법",
+          "knowledge_base": "어떻게,방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "버스와 지하철 중에 어떤 거 선호하시나요?",
+          "intent": "경로 문의",
+          "terms": "버스/대중교통, 지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "그냥, 빠른거로요. ",
+          "terms": "빠른/시간",
+          "knowledge_base": "빠른,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "50번 버스 타시면 30분정도 걸립니다. ",
+          "terms": "50번/버스노선, 버스/대중교통, 30분시간",
+          "knowledge_base": "버스,30분시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "네, 몇 정거장 이에요?",
+          "intent": "경로 문의",
+          "knowledge_base": "정거장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "15정거장 입니다. ",
+          "knowledge_base": "15정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "서울대병원 바로 앞에서 내리나요?",
+          "intent": "경로 문의",
+          "terms": "서울대병원/의료시설, 앞/위치",
+          "knowledge_base": "바로,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 정문 앞에서 내리시면 됩니다. ",
+          "terms": "정문앞/장소/위치",
+          "knowledge_base": "정문앞,위치"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16225",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "현재 태풍이 북상중이라 배편 정보에 대해 문의하려 합니다. ",
+          "intent": "배편 정보",
+          "terms": "태풍/날씨, 배편/배/교통수단, ",
+          "knowledge_base": "북상,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무엇을 도와드릴까요?",
+          "intent": "배편 정보",
+          "knowledge_base": "무엇"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "태풍이 상륙할 무렵, 부산에서 제주 배편으로 이동예정입니다. 가능할까요 ?",
+          "intent": "배편 정보",
+          "terms": "태풍/날씨, 부산/부산시/지역, 제주/제주시/지역, 배편/배/교통수단",
+          "knowledge_base": "상륙,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "부산 출발 배편 날짜가 어떻게 되세요?",
+          "intent": "배편 정보",
+          "terms": "부산/부산시/지역, 배편/배/교통수단",
+          "knowledge_base": "출발,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "8월 15일 입니다. ",
+          "terms": "8월15일/날짜",
+          "knowledge_base": "8월15일,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 15일 아침 태풍 상륙이 예상되어, 14일부터 모든 항공, 해상 이동편이 취소될 것으로 보입니다. ",
+          "terms": "아침/오전, 태풍/날씨, 항공/비행기, 해상/배",
+          "knowledge_base": "아침,배"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "네, 16일부터는 이동 가능할까요 ?",
+          "intent": "배편 정보",
+          "terms": "16일/날짜, ",
+          "knowledge_base": "이동,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "아직 확실히 말씀드릴 수 없지만, 16일 오후경부터 재개 될 것으로 보입니다. ",
+          "terms": "16일/날짜, 오후/시간대",
+          "knowledge_base": "16일,시간대"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "태풍 이동경로에 따라, 변동이 있을까요?",
+          "intent": "배편 정보",
+          "terms": "태풍/날씨",
+          "knowledge_base": "이동경로,날씨"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 경로에 따라 변경 가능성 있습니다. ",
+          "knowledge_base": "변경"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "현재 예약한 배편은 취소나 변경 가능한가요? ",
+          "intent": "배편 정보",
+          "terms": "현재/지금, ",
+          "knowledge_base": "예약,지금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "날씨에 의한 취소는 환불 가능하며, 추가금액 없이 변경도 가능합니다. ",
+          "terms": "추가금액/금액/돈, ",
+          "knowledge_base": "취소,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "결제계좌 이외에 다른 계좌로도 환불 가능할까요? ",
+          "intent": "배편 정보",
+          "knowledge_base": "다른"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "결제하신 터미널에 문의하셔야합니다. ",
+          "terms": "터미널/여객터미널",
+          "knowledge_base": "터미널,여객터미널"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "일정확인은 어떻게 할 수 있을까요? ",
+          "intent": "배편 정보",
+          "terms": "어떻게/방법",
+          "knowledge_base": "어떻게,방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "여객터미널 홈페이지에 게시되어 있습니다. ",
+          "terms": "홈페이지/웹사이트/사이트",
+          "knowledge_base": "홈페이지,사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "주소가 어떻게 되나요?",
+          "intent": "배편 정보",
+          "terms": "주소/도메인",
+          "knowledge_base": "주소,도메인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "WWW.FERRYTERMINAL.CO.KR 입니다. ",
+          "terms": "홈페이지/웹사이트/사이트",
+          "knowledge_base": "WWW.FERRYTERMINAL.CO.KR,사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 수고하세요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 감사합니다. "
+        }
+      ]
+    }
+  ]
+}

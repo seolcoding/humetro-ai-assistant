@@ -1,0 +1,803 @@
+{
+  "chunk_id": 168,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3650",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지하철내에 어떤 아저씨를 신고하려구요.",
+          "intent": "대중교통불편신고",
+          "terms": "지하철/운송수단/ ",
+          "knowledge_base": "아저씨.신고,운송수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무엇을 도와드릴까요?",
+          "intent": "대중교통불편신고",
+          "knowledge_base": "무엇"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "마스크도 안쓰고 임산부석에 앉아서 시끄럽게 하고있어요.",
+          "terms": "마스크/ 비말차단마스크",
+          "knowledge_base": "임산부석,비말차단마스크"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "몇호선 어디이신가요?",
+          "intent": "대중교통불편신고",
+          "terms": "몇/무엇",
+          "knowledge_base": "호선,무엇"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "4호선, 사당역이에요.",
+          "terms": "호선/지하철번호",
+          "knowledge_base": "호선,지하철번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "네 열차 고유번호 보이시나요?",
+          "intent": "대중교통불편신고",
+          "terms": "고유번호/열차번호",
+          "knowledge_base": "고유번호,열차번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어디에 있나요?",
+          "intent": "대중교통불편신고",
+          "knowledge_base": "어디"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "출입문 상단에 있습니다.",
+          "terms": "상단/위",
+          "knowledge_base": "상단,위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 OOOOOO이에요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "어디행 열차인가요?",
+          "intent": "대중교통불편신고",
+          "terms": "행/방향",
+          "knowledge_base": "행,방향"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "남태령 방향이에요.",
+          "knowledge_base": "방향"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "현재 도착하는 역이 어딘가요?",
+          "intent": "대중교통불편신고",
+          "terms": "현재/지금",
+          "knowledge_base": "도착,지금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "지금 사당역지나쳐요.",
+          "terms": "사당역/역",
+          "knowledge_base": "사당역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "접수됐나요?",
+          "intent": "대중교통불편신고",
+          "terms": "접수/신청",
+          "knowledge_base": "접수,신청"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "접수해 드렸습니다.",
+          "knowledge_base": "접수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 어떻게 처리되요?",
+          "intent": "대중교통불편신고",
+          "knowledge_base": "처리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "다음역에서 지하철 경찰이 처리하실 예정입니다.",
+          "terms": "경찰/직업",
+          "knowledge_base": "지하철,직업"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "9호선도 불편신고 번호 있나요?",
+          "intent": "대중교통불편신고",
+          "terms": "번호/전화번호",
+          "knowledge_base": "불편신고,전화번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 OOOO-OOOO이며. 1-4호선, 9호선 접수됩니다.",
+          "knowledge_base": "접수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3651",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "부모님께서 지하철에 짐을 놓고 내리신것 같아요.",
+          "intent": "지하철분실물",
+          "terms": "부모님/가족",
+          "knowledge_base": "지하철,가족"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "몇호선 어디위치 시간은 언제인가요?",
+          "intent": "지하철분실물",
+          "terms": "위치/ 장소",
+          "knowledge_base": "위치,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "2호선, 방배역, 오늘 아침 10시요.",
+          "terms": "방배역/역사",
+          "knowledge_base": "오늘,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "방향은 강남역쪽인가요?",
+          "intent": "지하철분실물",
+          "terms": "방향/방면",
+          "knowledge_base": "강남역,방면"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 맞아요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "분실물은 어떻게 찾아요?",
+          "intent": "지하철분실물",
+          "terms": "분실물 /유실물센터",
+          "knowledge_base": "분실물,유실물센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "1,2호선은 시청역 유실물센터에서 찾아가시면 됩니다.",
+          "knowledge_base": "유실물센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "시청역 유실물센터 연락처가 뭔가요?",
+          "intent": "지하철분실물",
+          "terms": "분실물 /유실물센터/ 연락처/전화번호",
+          "knowledge_base": "유실물센터,전화번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "OO-OOOO-OOOO입니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 감사합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "어떤것을 놓고 내리셨나요?",
+          "intent": "지하철분실물",
+          "knowledge_base": "어떤"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "옷이에요.",
+          "knowledge_base": "옷"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "분실물은 언제까지 찾아가야 해요?",
+          "intent": "지하철분실물",
+          "knowledge_base": "언제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "일주일 내에 찾으시면 됩니다.",
+          "terms": "일주일/1주",
+          "knowledge_base": "일주일,1주"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "일주일 안에 안 찾으면요?",
+          "intent": "지하철분실물",
+          "terms": "일주일/1주",
+          "knowledge_base": "일주일,1주"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "유실물센터로 이관됩니다.",
+          "knowledge_base": "이관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "찾으러 갈 때 준비해야 할 게 있어요?",
+          "intent": "지하철분실물",
+          "knowledge_base": "준비"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "본인을 증명할 수 있는 서류를 지참하시면 됩니다.",
+          "knowledge_base": "증명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "이용시간대는요?",
+          "intent": "지하철분실물",
+          "knowledge_base": "이용시간대"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "평일 09:00~18:01 입니다.",
+          "knowledge_base": "평일"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3652",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스에 커피 가지고 타면 안돼요?",
+          "intent": "시내버스 음식물 반입",
+          "terms": "직장인/회사직원",
+          "knowledge_base": "음료수,회사직원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 음료수를 가지고 승차하시면 안됩니다.",
+          "terms": "커피/음료",
+          "knowledge_base": "승차,음료"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "포장하고 뚜껑이 덮여있으면 괜찮지 않아요?",
+          "intent": "시내버스 음식물 반입",
+          "knowledge_base": "뚜껑"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "일회용 포장컵에 담긴 커피등은  반입 금지입니다.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "커피,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "일반 음료는요?",
+          "intent": "시내버스 음식물 반입",
+          "terms": "음료수/음료",
+          "knowledge_base": "일반음료,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "일반음료도 동일합니다.",
+          "terms": "동일/같음",
+          "knowledge_base": "동일,같음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그럼 금지 품목 좀 자세히 안내해 주세요.",
+          "intent": "시내버스 음식물 반입",
+          "terms": "반입금지/금지",
+          "knowledge_base": "품목,금지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "일회용 포장컵에 담긴 음료, 치킨, 떡볶이, 뚜껑이 없거나 빨대가 꽃힌 캔, 플라스틱 병 등은 반입할 수 없습니다.",
+          "knowledge_base": "음료"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그럼 포장한 치킨과 피자는 들고 타도 돼요?",
+          "intent": "시내버스 음식물 반입",
+          "terms": "피자/음식",
+          "knowledge_base": "피자,음식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "종이상자에 담긴 치킨과 피자 등은 들고 탈 수 있습니다.",
+          "knowledge_base": "치킨"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "아니 안내도 없고 정말 불편하네요.",
+          "knowledge_base": "불편"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "지하철에도 동일한건가요?",
+          "intent": "시내버스 음식물 반입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "버스 안에서 음료수나 음식 먹으면 어떻게 되는대요?",
+          "intent": "시내버스 음식물 반입",
+          "knowledge_base": "음료수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "차 내에서 음식물을 먹는 승객은 운전자가 하차시킬 수 있습니다.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "음식물,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "조심해야겠네요. 알겠어요.",
+          "knowledge_base": "조심"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "시장에서 장본거도 다 걸리나요?",
+          "intent": "시내버스 음식물 반입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "비닐 포장이 되있는 소량은 가능합니다.",
+          "terms": "비닐포장/포장",
+          "knowledge_base": "소량,포장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "더 궁금하신 점 있으신가요?",
+          "intent": "시내버스 음식물 반입",
+          "knowledge_base": "궁금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "없어요."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3653",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대중교통에 임산부, 노약자석 문의하고싶은데요.",
+          "intent": "시내버스 노약자석",
+          "terms": "버스/대중교통/ 임산부석/노약자석/노약자",
+          "knowledge_base": "임산부,노약자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 말씀하세요.",
+          "knowledge_base": "말씀"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "임산부노약자석이 비어있으면 앉아도 돼요?",
+          "intent": "시내버스 노약자석",
+          "terms": "임산부/임신부/ 노약자석/노약자",
+          "knowledge_base": "임산부노약자석,노약자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "knowledge_base": "허리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "노약자/노약자석",
+          "knowledge_base": "양보,노약자석"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "양보 안하면 어떻게 되나요?",
+          "intent": "시내버스 노약자석",
+          "knowledge_base": "양보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "terms": "노약자석/노약자",
+          "knowledge_base": "배려석,노약자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "너무 불공평하지 않아요?",
+          "intent": "시내버스 노약자석",
+          "knowledge_base": "불공평"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "terms": "현재/지금/ 노약자석/노약자/ 임산부석/임산부",
+          "knowledge_base": "죄송,임산부"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "사진찍히면 벌금내는건 아니요?",
+          "intent": "시내버스 노약자석",
+          "terms": "벌금/범칙금",
+          "knowledge_base": "벌금,범칙금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "그렇지 않습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "다행이네요., 친구가 사진찍어 올린다해서요.",
+          "knowledge_base": "친구"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "더 궁금하신 점 있으신가요?",
+          "intent": "시내버스 노약자석"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "학생인데 간선버스 조조할인되나요?",
+          "intent": "시내버스 조조할인",
+          "terms": "간선버스/버스",
+          "knowledge_base": "조조,버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "얼마예요?",
+          "intent": "시내버스 조조할인",
+          "knowledge_base": "얼마"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "knowledge_base": "원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "knowledge_base": "수고"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3654",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "KTX를 탔는데 승차권을 분실했어요.",
+          "intent": "승차권 분실",
+          "terms": "KTX 승차권/고속열차 승차권",
+          "knowledge_base": "분실,고속열차승차권"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "언제 분실하셨나요?",
+          "intent": "승차권 분실",
+          "knowledge_base": "분실"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "그건 잘 모르겠어요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "승무원이 입석은 체크한댔는데 어쩌죠?",
+          "intent": "승차권 분실",
+          "terms": "승무원/직원",
+          "knowledge_base": "입석,직원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "출발지는 어디인가요?",
+          "intent": "승차권 분실",
+          "knowledge_base": "출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "울산이요",
+          "terms": "울산/지역",
+          "knowledge_base": "울산,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "도착지는요?",
+          "intent": "승차권 분실",
+          "knowledge_base": "도착지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "동대구에요.",
+          "terms": "동대구/대구광역시",
+          "knowledge_base": "동대구,대구광역시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "코레일 회원이신가요?",
+          "intent": "승차권 분실",
+          "knowledge_base": "코레일회원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "회원 가입했어요.",
+          "knowledge_base": "회원가입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 먼저 코레일 톡을 다운받으세요.",
+          "terms": "다운/다운로드",
+          "knowledge_base": "다운,다운로드"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "네 그다음엔요?",
+          "intent": "승차권 분실",
+          "knowledge_base": "다음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "로그인 한 후에 승차권확인 들어가셔요.",
+          "terms": "승차권/승하차이용권",
+          "knowledge_base": "승차권,승하차이용권"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 들어갔어요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "자신이 구매했던 승차권의 내역을 볼 수 있습니다.",
+          "terms": "내역/내용",
+          "knowledge_base": "구매,내용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아 그렇네요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "이 내역은 계속 남는 거죠?",
+          "intent": "승차권 분실",
+          "knowledge_base": "계속"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "승차권은 도착예정시간까지만 유효하며 이후는 자동삭제 됩니다.",
+          "terms": "유효/효용",
+          "knowledge_base": "도착,효용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "너무 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 좋은날 되세요.",
+          "terms": "현금 영수증/영수증",
+          "knowledge_base": "소지,영수증"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "chunk_id": 203,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B10950",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요?",
+          "intent": "대중교통불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네. 안녕하세요?"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어떤 용건으로 전화주셨나요?",
+          "intent": "대중교통불편신고",
+          "terms": "용건/이유, 전화/연락",
+          "knowledge_base": "전화,연락"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "제가 탄 KTX가 지연이 되서요.",
+          "terms": "KTX/대중교통",
+          "knowledge_base": "지연,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "이거 보상 받을 수 있다고 해서 전화드렸어요.",
+          "terms": "보상/돈, 전화/연락",
+          "knowledge_base": "전화,연락"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "얼마나 지연이 되셨나요?",
+          "intent": "대중교통불편신고",
+          "terms": "지연/연착",
+          "knowledge_base": "지연,연착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "한시간 반이요.",
+          "terms": "반/30분",
+          "knowledge_base": "반,30분"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "어휴, 많이 불편하셨겠어요.",
+          "terms": "불편/고생",
+          "knowledge_base": "불편,고생"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네, 기다리던 곳이 추워서 좀 고생했어요.",
+          "terms": "고생/불편",
+          "knowledge_base": "고생,불편"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "코레일 회원이신가요?",
+          "intent": "대중교통불편신고",
+          "terms": "코레일/공기업",
+          "knowledge_base": "회원,공기업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "결제는 어떻게 하셨나요?",
+          "intent": "대중교통불편신고",
+          "terms": "결제/계산",
+          "knowledge_base": "결제,계산"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "terms": "현금/돈",
+          "knowledge_base": "현금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "그러시다면 현금으로 받으실 수도 있고 할인증으로 받으실 수 있습니다.",
+          "terms": "현금/돈",
+          "knowledge_base": "할인증,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "현금으로 받을게요.",
+          "terms": "현금/돈",
+          "knowledge_base": "현금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "얼마나 돌려주나요?",
+          "intent": "대중교통불편신고",
+          "terms": "얼마/금액",
+          "knowledge_base": "얼마,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "결제한 금액의 50%를 돌려드립니다.",
+          "terms": "금액/돈",
+          "knowledge_base": "금액,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "어디서 돌려받죠?",
+          "intent": "대중교통불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "지연된 날로부터 1년 이내에 모든 역에서 가능하십니다.",
+          "terms": "이내/안, 역/장소",
+          "knowledge_base": "이내,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "알겠습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10951",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "기차를 탔는데 출발시간이 지연되서 예정시간보다 늦게 도착했는데 이거 보상해주나요?",
+          "intent": "대중교통불편신고",
+          "terms": "기차/열차",
+          "knowledge_base": "출발,열차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "안녕하세요? 도착시간이 늦어셔 매우 불편하셨겠어요.",
+          "terms": "도착",
+          "knowledge_base": "도착"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "지연보상금 수령하실 수 있으십니다.",
+          "terms": "지연보상금/돈",
+          "knowledge_base": "수령,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "얼마나 지연되셨나요?",
+          "intent": "대중교통불편신고",
+          "terms": "지연/연착",
+          "knowledge_base": "지연,연착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "2시간이요.",
+          "terms": "시간/시간단위",
+          "knowledge_base": "2시간,시간단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "코레일 회원이세요?",
+          "intent": "대중교통불편신고",
+          "terms": "코레일/공기업",
+          "knowledge_base": "코레일,공기업"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "결제는 카드로 하셨나요?",
+          "intent": "대중교통불편신고",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "그러시다면 결제금액의 50%반환, 100%할인증, 마일리지 적립 중에 선택하실수 있습니다.",
+          "terms": "결제금액/돈, 반환/환불, 마일리지/포인트",
+          "knowledge_base": "반환,포인트"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "어떻게 반환 받으시기를 원하시나요?",
+          "intent": "대중교통불편신고",
+          "terms": "반환/환불",
+          "knowledge_base": "반환,환불"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "뭐가 좋죠?",
+          "intent": "대중교통불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "기차를 자주 이용하신다면 100%할인증이 제일 좋다고 생각합니다.",
+          "terms": "기차/열차",
+          "knowledge_base": "이용,열차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "아, 그렇겠네요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "그럼 그걸로 해주세요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "안그래도 3일 뒤에 또 탈 일이 있거든요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 그러시다면 코레일 어플에서 열차 지연 할인증을 신청해주시면 받으실 수 있습니다.",
+          "terms": "코레일/공기업, 어플/앱, 열차/기차",
+          "knowledge_base": "어플,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "받으면 바로 쓸 수 있는거죠?",
+          "intent": "대중교통불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 예매하실 때 바로 적용 가능합니다.",
+          "terms": "예매/예약",
+          "knowledge_base": "예매,예약"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "알겠습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10952",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "외국인 관광택시가 있다고 들었는데요?",
+          "intent": "택시문의",
+          "terms": "관광택시/대중교통",
+          "knowledge_base": "관광택시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "지인이 한국에 올 일이 있어서요.",
+          "terms": "한국/국가",
+          "knowledge_base": "한국,국가"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "일본인인데, 일본어 쓰시는 기사님이 계실까요?",
+          "intent": "택시문의",
+          "terms": "일본어/언어, 기사/택시기사",
+          "knowledge_base": "일본어,택시기사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네, 일본어를 사용하시는 기사님이 계십니다.",
+          "terms": "일본어/언어, 기사/택시기사",
+          "knowledge_base": "기사,택시기사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "어떻게 이용이 가능한가요?",
+          "intent": "택시문의",
+          "terms": "이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "홈페이지에서 사용하기 하루 전에 미리 예약을 하시면 되십니다.",
+          "terms": "홈페이지/사이트",
+          "knowledge_base": "예약,사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "전화로는 안되나요?",
+          "intent": "택시문의",
+          "terms": "전화/연락",
+          "knowledge_base": "전화,연락"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "가능합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "평일 오전 9시에서 오후 6시, 토요일은 오전 9시에서 오후 1시까지 예약상담이 가능합니다.",
+          "terms": "토요일/주말",
+          "knowledge_base": "토요일,주말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "지인이 여려명 올 예정인데 택시에 탈 수 있을까요?",
+          "intent": "택시문의",
+          "terms": "여러명/다수, 택시/대중교통",
+          "knowledge_base": "여러명,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "몇 명이 탑승하실 건가요?",
+          "intent": "택시문의",
+          "terms": "탑승/승차",
+          "knowledge_base": "탑승,승차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "5명이요.",
+          "terms": "인원수",
+          "knowledge_base": "5명,인원수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "대형택시로 예약하시면 탑승이 가능하십니다.",
+          "terms": "대형택시/대중교통, 탑승/승차",
+          "knowledge_base": "예약,승차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "최대 7명까지 탑승 가능하며, 짐도 7개까지 싣고 갈 수 있습니다.",
+          "terms": "탑승/승차, 짐/수화물",
+          "knowledge_base": "짐,수화물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "공항에서 바로 픽업 되나요?",
+          "intent": "택시문의",
+          "terms": "공항",
+          "knowledge_base": "공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 인천공항이나 김포공항에서 바로 탑승하실 수 있습니다.",
+          "terms": "인천공항/시설, 김포공항/시설, 탑승/승차",
+          "knowledge_base": "김포공항,승차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "그 밖의 자세한 사항들은 인터네셔널 택시홈페이지에서 확인 해주시기 바랍니다.",
+          "terms": "택시홈페이지/택시사이트",
+          "knowledge_base": "택시홈페이지,택시사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "알겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사해요."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10953",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시 신고하고 싶은데요?",
+          "intent": "대중교통불편신고",
+          "terms": "택시/대중교통",
+          "knowledge_base": "신고,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 일 때문이시죠?",
+          "intent": "대중교통불편신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "택시에서 영수증을 발급해주지 않습니다.",
+          "terms": "택시/대중교통, 발급/발행",
+          "knowledge_base": "영수증,발행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "상황을 말씀해주시겠어요?",
+          "intent": "대중교통불편신고",
+          "knowledge_base": "상황"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "제가 반포 신세계 백화점 정문쪽 택시승강장에서 택시를 타서 신림사거리까지 갔거든요.",
+          "terms": "반포/장소, 신세계/브랜드, 백화점/시설, 택시/대중교통, 신림사거리/장소",
+          "knowledge_base": "신세계,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "회사 제출용으로 현금으로 결제한 영수증이 필요한 상황이었구요.",
+          "terms": "현금/돈",
+          "knowledge_base": "현금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "제가 그때 만원이랑 동전을 가지고 있었는데 목적지 도착하니까 미터기 요금이 만원에서 만백원이 된거에요.",
+          "terms": "만원/돈, 동전/돈, 목적지/도착지, 요금/금액, 만백원/돈",
+          "knowledge_base": "동전,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "그래서 일단 만원을 내고 백원짜리 동전을 찾고 있는데 기사님이 빈차를 눌러버리더라구요.",
+          "terms": "만원/돈, 백원/돈, 동전/돈",
+          "knowledge_base": "백원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "그래서 백원을 마저 드리고 영수증을 달라고 말씀드렸더니 영수증 발행이 안된다고 하시더라구요?",
+          "terms": "백원/돈, 발행/발급",
+          "knowledge_base": "영수증,발급"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "왜 발행이 안되냐고 물었더니 이미 빈 차로 돌려서 영수증 재발행이 안된다고 하는거에요.",
+          "terms": "발행/발급, 재발행/재발급",
+          "knowledge_base": "영수증,재발급"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "그래서 회사 제출용이라 제출용이라도 해줘야 하는거아니냐고 하니까 무조건 안된다고 만 하는거에요.",
+          "terms": "회사",
+          "knowledge_base": "회사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "그러더니 만뭔만 받으려고 빈 차로 돌린건데 본인이 말 안해놓고 왜 자기한테 따지냐면서 오히려 제 탓을 하더라구고요.",
+          "terms": "만원/돈",
+          "knowledge_base": "만원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "이동거리가 찍혀있지 않은 임의 영수증을 발급해준다는 말도 없어서 기사님이랑 계속 실랑이 하다가 결국 목적지에 내렸습니다.",
+          "terms": "실랑이/말다툼",
+          "knowledge_base": "임의,말다툼"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "그러셨군요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "택시번호는 기록해두셨나요?",
+          "intent": "대중교통불편신고",
+          "terms": "택시/대중교통, 기록/메모",
+          "knowledge_base": "번호,메모"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 증거제출용으로 사진 찍어두었습니다.",
+          "terms": "증거제출용/증거용",
+          "knowledge_base": "증거제출용,증거용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "번호가 어떻게 되나요?",
+          "intent": "대중교통불편신고",
+          "terms": "번호/넘버",
+          "knowledge_base": "번호,넘버"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "서울 OO 차 OOOO입니다.",
+          "terms": "서울/장소",
+          "knowledge_base": "서울,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "알겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "해당 내용으로 영수증 미발급 건으로 신고접수하도록 하겠습니다.",
+          "terms": "미발급/미발행",
+          "knowledge_base": "미발급,미발행"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10954",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "승차거부 택시 신고하려고 하는데요?",
+          "intent": "대중교통불편신고",
+          "terms": "택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 상황을 말씀해주시겠어요?",
+          "intent": "대중교통불편신고",
+          "terms": "상황/경우",
+          "knowledge_base": "상황,경우"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "제가 잠실 종합운동장 바로 앞에서 빈차등 켜고 정차중인 택시가 있어서 일행이랑 같이 탔어요.",
+          "terms": "잠실/장소, 종합운동장/장소, 정차/정지, 택시/대중교통",
+          "knowledge_base": "종합운동장,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "답십리가냐고 물어봤더니 기사님이 안간다고 하시더라구요.",
+          "terms": "답십리/장소",
+          "knowledge_base": "답십리,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "그래서 항상 여기서 탔는데 왜 안가냐고 물어봤어요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "그러니까 거기 안간다고 짜증내시는거에요.",
+          "terms": "짜증",
+          "knowledge_base": "짜증"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "그래서 아니 매번 잠실갔다가 친구 내려주고 답십리 갔는데 왜 안된다고 하시냐 출발해 달라고 말했거든요?",
+          "terms": "잠실/장소, 답십리/장소",
+          "knowledge_base": "답십리,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "그런데도 계속 신경질 내면서 안가는건 안간다고 하더라구요.",
+          "terms": "신경질/화",
+          "knowledge_base": "신경질,화"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "저도 친구도 화가나서 그럼 택시 내리고 기사님 신고하겠다고 하니까 마음대로 하라고 하시더라구요.",
+          "terms": "택시/대중교통",
+          "knowledge_base": "신고,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "그래서 친구랑 내렸는데 완전히 내리지도 않은 상황에서 그대로 출발해버리는거에요.",
+          "terms": "출발",
+          "knowledge_base": "출발"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "그래서 친구가 내리다가 넘어져서 무릎이랑 손바닥을 다쳤구요.",
+          "terms": "무릎/신체부위, 손바닥/신체부위",
+          "knowledge_base": "손바닥,신체부위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "많이 황당하셨겠어요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "아우 말도 마세요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "제가 거기서 안타봤으면 몰라도 매번 이용하는데 안된다고 하는데다가 내리지도 않았는데 출발해서 사람 다치게 하잖아요.",
+          "terms": "출발",
+          "knowledge_base": "출발"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "그 기사님 찾아서 꼭 벌해주세요.",
+          "terms": "벌/처벌",
+          "knowledge_base": "벌,처벌"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "잘못하다 깔렸으면 어쩔뻔 헀어요.",
+          "terms": "잘못/자칫",
+          "knowledge_base": "잘못,자칫"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 신고접수 해드리겠습니다.",
+          "terms": "접수/등록",
+          "knowledge_base": "접수,등록"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "택시번호 기억하시나요?",
+          "intent": "대중교통불편신고",
+          "terms": "택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "서울 OO 하 OOOO입니다.",
+          "terms": "서울/지역명",
+          "knowledge_base": "서울,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "확인하였습니다."
+        }
+      ]
+    }
+  ]
+}

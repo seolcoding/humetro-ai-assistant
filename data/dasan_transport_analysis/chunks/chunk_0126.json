@@ -1,0 +1,831 @@
+{
+  "chunk_id": 126,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3220",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대전에서 속초까지가는 직통버스가 있나요?",
+          "intent": "버스노선",
+          "terms": "대전/ 속초/지명/ 직통버스/교통수단",
+          "knowledge_base": "속초,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네. 운행중입니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "배차간격이 어떻게 되나요?",
+          "intent": "버스노선",
+          "terms": "배차간격",
+          "knowledge_base": "배차간격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "하루 2회 운행됩니다.",
+          "terms": "2회/횟수",
+          "knowledge_base": "2회,횟수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "직통버스를 못타게되면 어떻게 가야하나요?",
+          "intent": "버스노선",
+          "terms": "직통버스/교통수단",
+          "knowledge_base": "직통버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "동서울에서 속초행 버스를 타시면 됩니다.",
+          "knowledge_base": "속초행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "배차간격은 어떻게 되나요?",
+          "intent": "버스노선",
+          "knowledge_base": "배차간격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "30분 간격으로 있습니다.",
+          "terms": "30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "이용요금을 알수 있을까요?",
+          "intent": "버스노선",
+          "terms": "이용요금/돈",
+          "knowledge_base": "이용요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "성인기준 19,700원입니다.",
+          "terms": "19/700원/금액",
+          "knowledge_base": "700원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "속초까지 얼마나 걸릴까요?",
+          "intent": "버스노선",
+          "terms": "속초/지명",
+          "knowledge_base": "속초,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "약 2시간 10분소요됩니다.",
+          "terms": "2시간 10분/시간",
+          "knowledge_base": "2시간10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "애완견도 버스 탈수 있나요?",
+          "intent": "버스노선",
+          "terms": "애완견/개/동물/버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "대형견인가요?",
+          "intent": "버스노선",
+          "terms": "대형견/개/동물",
+          "knowledge_base": "대형견,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아니요. 소형견입니다.",
+          "terms": "소형견/개/동물",
+          "knowledge_base": "소형견,동물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "탑승 가능합니다.",
+          "knowledge_base": "탑승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "좌석을 따로 예매해야 할까요?",
+          "intent": "버스노선",
+          "terms": "좌석/자리",
+          "knowledge_base": "좌석,자리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "예매할 필요없고 케이지에 넣어서 버스 타실수 있습니다.",
+          "knowledge_base": "케이지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "더 궁금하신 사항이 있으신가요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3221",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울에서 해운대 를 가려고 하는데요",
+          "intent": "기차문의",
+          "terms": "서울/ 해운대/지명",
+          "knowledge_base": "해운대,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지점이 어디신가요?",
+          "intent": "기차문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "서울역요.",
+          "terms": "서울역/위치",
+          "knowledge_base": "서울역,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "해운대까지 가시는거죠?",
+          "intent": "기차문의",
+          "terms": "해운대/바다",
+          "knowledge_base": "해운대,바다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "해운대를 가시려면 부산역에서 버스 환승하셔야합니다.",
+          "terms": "해운대/ 부산역/위치",
+          "knowledge_base": "부산역,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 기차로 안내해드릴까요?",
+          "intent": "기차문의",
+          "terms": "기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "KTX로 알려주세요.",
+          "terms": "KTX/기차종류",
+          "knowledge_base": "KTX,기차종류"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "부산역까지 얼마나 걸리나요?",
+          "intent": "기차문의",
+          "terms": "부산역/위치",
+          "knowledge_base": "부산역,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "2시간 50분 소요됩니다.",
+          "terms": "2시간 50분/시간",
+          "knowledge_base": "2시간50분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "기차요금 얼마인가요?",
+          "intent": "기차문의",
+          "terms": "기차요금/요금",
+          "knowledge_base": "기차요금,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "이용대상이 어떻게 되나요?",
+          "intent": "기차문의",
+          "terms": "이용대상/사용자",
+          "knowledge_base": "이용대상,사용자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "초등생과 어른요.",
+          "terms": "초등생/ 어른/신분",
+          "knowledge_base": "어른,신분"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "어른은 59,800원 어린이는 29,900원 입니다.",
+          "terms": "59/800원/ 29/900원/금액",
+          "knowledge_base": "800원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "일반실 인거죠?",
+          "intent": "기차문의",
+          "terms": "일반실/좌석종류",
+          "knowledge_base": "일반실,좌석종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "일반실 요금입니다.",
+          "terms": "요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "4인 동반석은  할인혜택이 있나요?",
+          "intent": "기차문의",
+          "terms": "동반석/좌석종류",
+          "knowledge_base": "동반석,좌석종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "예매시점에 따라15-30%까지 할인됩니다.",
+          "terms": "15-30%/한일율. 할인/할인",
+          "knowledge_base": "할인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "4인가족일경우에도 할인혜택이 있는건가요?",
+          "intent": "기차문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "동반석승차권은 어른 4인용을 기준으로 판매 하기때문에 어린이요금을 적용받으실수 없습니다.",
+          "terms": "동반석승차권/ 승차권종류/  4인용/인원",
+          "knowledge_base": "4인용,인원"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3222",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "부산역에서 해운대까지 버스노선이 어떻게 되나요?",
+          "intent": "버스노선",
+          "terms": "부산역/ 해운대/위치/버스/교통수단",
+          "knowledge_base": "해운대,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "부산역에서 출발이신가요?",
+          "intent": "버스노선",
+          "terms": "부산역/위치",
+          "knowledge_base": "부산역,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "해운대해수욕장에 가시는건가요?",
+          "intent": "버스노선",
+          "terms": "해운대해수욕장/해수욕장",
+          "knowledge_base": "해운대해수욕장,해수욕장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네. 그 근처에 가려구요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "몇번버스 이용하면 되나요?",
+          "intent": "버스노선",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "1003번 이용하시면 됩니다.",
+          "terms": "1003번/버스번호",
+          "knowledge_base": "1003번,버스번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "버스요금은 교통카드로 결제 가능한가요?",
+          "intent": "버스노선",
+          "terms": "버스요금/요금/돈/ 교통카드/결제수단",
+          "knowledge_base": "교통카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네. 가능합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "버스요금은 어떻게 되나요?",
+          "intent": "버스노선",
+          "terms": "버스요금/돈",
+          "knowledge_base": "버스요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "1,600원입니다.",
+          "terms": "1/600원/금액/돈",
+          "knowledge_base": "600원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "배차간격을 알수 있을까요?",
+          "intent": "버스노선",
+          "terms": "배차간격/시간",
+          "knowledge_base": "배차간격,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "10분간격으로 있습니다.",
+          "terms": "10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "해운대에서 부산역에가는 버스 막차시간을 알수 있을까요?",
+          "intent": "버스노선",
+          "terms": "해운대/위치/ 부산역/위치/버스/교통수단",
+          "knowledge_base": "부산역,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "01:00시경입니다.",
+          "terms": "01:00시/시간",
+          "knowledge_base": "01:00시,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "더 궁금한점 있으신가요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "부산역에서 해운대까지 가는 2층버스가 있나요?",
+          "intent": "버스노선",
+          "terms": "부산역/ 해운대/위치/  2층버스/교통수단",
+          "knowledge_base": "해운대,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 시티투어코스로 운행하는 버스가 있습니다.",
+          "terms": "시티투어/관광/버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "예약을 해야하나요?",
+          "intent": "버스노선",
+          "terms": "예약/예약",
+          "knowledge_base": "예약"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "예약없이 선착순 이용만 가능하십니다.",
+          "terms": "선착순",
+          "knowledge_base": "선착순"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3223",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "천안에서 전주가는 대중교통을 알고 싶습니다.",
+          "intent": "기차문의",
+          "terms": "천안/ 전주/지명/ 대중교통/교통",
+          "knowledge_base": "전주,교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "천안 출발지점이 어디신가요?",
+          "intent": "기차문의",
+          "terms": "천안/지명/출발/시작",
+          "knowledge_base": "출발,시작"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "천안아산역 근처에서 출발합니다.",
+          "terms": "천안아산역/위치",
+          "knowledge_base": "천안아산역,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "전주 도착지점은 어디신가요?",
+          "intent": "기차문의",
+          "terms": "전주/지명/ 도착/도착",
+          "knowledge_base": "도착"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "어디든 상관 없습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 천안아산역에서 출발하는 시외버스와 KTX가 있습니다.",
+          "terms": "천안아산역/위치/ 시외버스/ KTX/교통수단/기차종류",
+          "knowledge_base": "시외버스,기차종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 수단으로 안내해드릴까요?",
+          "intent": "기차문의",
+          "knowledge_base": "수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "KTX로 알려주세요.",
+          "terms": "KTX/기차종류",
+          "knowledge_base": "KTX,기차종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "전주로 가는 KTX 노선 안내해드리겠습니다. 천안아산역에서 전주역까지 한시간 간격으로 운행되고 있습니다.",
+          "terms": "전주/지명/ KTX/기차종류/ 천안아산역/ 전주역/위치",
+          "knowledge_base": "KTX,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "기차표 구매를 미리 해야하나요?",
+          "intent": "기차문의",
+          "terms": "기차표/티켓",
+          "knowledge_base": "기차표,티켓"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "매진될 우려가 있어서 미리 예매하시는것을 추천드립니다.",
+          "terms": "예매/예매",
+          "knowledge_base": "예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "어플결제와 현금결제할 때 요금 차이가 있나요?",
+          "intent": "기차문의",
+          "terms": "현금결제/결제수단/ 요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "요금차이는 없으나 어플결제 시 적립 가능하시어 다음 예매시 할인혜택을 받으실 수 있습니다.",
+          "knowledge_base": "어플결제"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 알겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "혹시 예매한 기차를 놓치면 어떻게 하나요?",
+          "intent": "기차환불",
+          "terms": "예매/예매/ 기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "10분 이내에 환불하시면 약간의 수수료 제외 후 환불가능하십니다.",
+          "terms": "10분/시간/ 환불/환불/ 수수료/돈",
+          "knowledge_base": "환불,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "수수료가 얼마나 되나요?",
+          "intent": "기차환불",
+          "knowledge_base": "수수료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "10%부과 됩니다.",
+          "knowledge_base": "0.1"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "환불안하고 다음 기차를 타면 안되나요?",
+          "intent": "기차환불",
+          "terms": "환불/환불/ 기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "불가능합니다. 환불 후 다음 열차를 재예매하셔야 합니다.",
+          "terms": "재예매",
+          "knowledge_base": "재예매"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3224",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "상담사",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "감사합니다 무엇을 도와드릴까요?",
+          "intent": "과속신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "저희집 앞에 시끄러운차들이 과속하면서 지나가는데 신고할 수 없을까요?",
+          "intent": "과속신고",
+          "terms": "과속/과속/ 신고/신고",
+          "knowledge_base": "신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "차량번호 불러주실수 있나요?",
+          "intent": "과속신고",
+          "terms": "차량번호/숫자",
+          "knowledge_base": "차량번호,숫자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "아뇨 저 집 20층이라 여기서 번호는 안보이죠.",
+          "terms": "20층/층수/ 번호/숫자",
+          "knowledge_base": "번호,숫자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "그럼 신고는 불가능하십니다.",
+          "terms": "신고/신고",
+          "knowledge_base": "신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아니 한두번이 아닌데 너무 불편해서 못살겠어요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그럼 여기 과속카메라좀 달아주실 수 있나요?",
+          "intent": "카메라설치",
+          "terms": "과속카메라/카메라",
+          "knowledge_base": "과속카메라,카메라"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "절차에 따라 민원 접수해주시면 교통과에서 협의 후에 카메라 설치 진행 되실꺼에요.",
+          "terms": "민원/불편사항/ 교통과/교통/ 카메라/카메라",
+          "knowledge_base": "교통과,카메라"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "민원은 제가 지난달에도 넣었는데 아직도 해결안된거같아요.",
+          "terms": "민원/민원",
+          "knowledge_base": "민원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아무래도 예산확보와 기타 사항들을 고려하고 결정되는것이기에 신속하게 진행되지않는점 양해바랍니다.",
+          "knowledge_base": "예산"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "거기 과속카메라 달면 벌금으로 오히려 예산 충당가능할꺼같은데요.",
+          "terms": "과속카메라/카메라/ 벌금/돈",
+          "knowledge_base": "벌금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 불편을 드려 죄송합니다. 민원 접수 하시면 신속하게 처리 도와드리겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "그리고 여기 사고도 종종나서 카메라가 꼭 필요할 거같아요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "말씀하시는 곳 위치 말씀해주시겠습니까?",
+          "intent": "카메라설치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "도봉구 XX아파트 앞요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 확인되셨습니다. 그곳은 현재 협의 후 설치 진행중이라고 확인되어집니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "아 그럼 언제쯤 설치될까요?",
+          "intent": "카메라설치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "이달 말 쯤에 설치완료 예정이라고 합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네. 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다."
+        }
+      ]
+    }
+  ]
+}

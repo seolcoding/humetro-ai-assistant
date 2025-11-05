@@ -1,0 +1,9 @@
+{
+  "raw_response": "데이터 분석을 완료했습니다. 주요 결과물은 위의 구조화된 JSON 형식입니다. 이 분석이 서울 메트로 서비스 개선에 도움이 되기를 바랍니다.\n",
+  "parse_error": true,
+  "error_detail": "Expecting value: line 1 column 1 (char 0)",
+  "chunk_id": "chunk_0233",
+  "processing_time": 55.525479793548584,
+  "processed_at": "2025-11-05T11:53:14.084460",
+  "dialogue_count": 5
+}

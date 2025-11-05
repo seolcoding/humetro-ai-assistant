@@ -1,0 +1,782 @@
+{
+  "chunk_id": 90,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2920",
+      "category": "대중교통 안내",
+      "turns": 29,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요. 택시기사님이 요금이 너무 받으신것 같아서 신고하려구요",
+          "intent": "요금관련",
+          "terms": "서울시/택시요금/택시승차장/택시",
+          "knowledge_base": "택시요금,택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네. 당황스러우실텐데요. 실례지만 어디서 타시고 어디서 내리셨는지 말씀해주시겠습니까?",
+          "intent": "요금관련",
+          "knowledge_base": "말씀"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네. 강남역에서 타서 사당역에서 내렸습니다.",
+          "terms": "지명/택시정류장/택시요금/서울시/택시",
+          "knowledge_base": "사당역,택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "요금이 얼마나 나오셨는지 여쭤봐도 될까요?",
+          "intent": "요금관련"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네. 4만5천원 나왔습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 고객님 제가 생각해도 많이 부과된거 같습니다.",
+          "knowledge_base": "부과"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "타지역이동도 아니고 아무리 교통체증때문에 요금이 올라갔어도 이건 너무 심한것 같아요",
+          "terms": "추가요금/택시요금/바가지/서울시/신고",
+          "knowledge_base": "신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 맞습니다. 타지역일 경우에는 기본에 할증요금이 더 붙어 요즘이 부과되는데요. 고객님 같은 경우에는 미터로 계산하더라도 30,000원 정도 부과되야 적당하다고 생각됩니다.",
+          "terms": "요금할증/타지역/택시요금/미터기/바가지신고",
+          "knowledge_base": "할증요금,바가지신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "기사님이 제가 지방에서 올라왔다고 지리를 모르니 돌아가신것 같아요.",
+          "terms": "바지요금/서울/지방/타지역/요금할증",
+          "knowledge_base": "지방,요금할증"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "일단 고객님 시정처리될 수 있게 도와드리겠습니다. 많이 부과된 요금은 돌려받을수 있게 도와드리겠습니다.",
+          "terms": "시청처리/부과/요금/안내",
+          "knowledge_base": "부과,안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "이미 지불한 요금도 돌려 받을 수 있나요?",
+          "intent": "요금관련",
+          "terms": "택시요금환불/바가지요금/택시요금",
+          "knowledge_base": "요금,택시요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 정확한 정보를 알고 계시면 될것 같습니다.",
+          "knowledge_base": "정보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "제가 너무한것 같앙서 택시번호판을 핸드폰에 적어 놨어요, 이게 도움이 될까요?",
+          "intent": "요금관련",
+          "terms": "택시번호판/기사/택시기사/택시요금",
+          "knowledge_base": "택시번호,택시요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 그럼요 도움이 많이 될것 같습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "적어놓으셨던 택시번호 저에게 알려주시겠어요?",
+          "intent": "요금관련",
+          "terms": "택시/대중교통",
+          "knowledge_base": "택시번호,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 잠시만요 12라에 2580이 예요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "12라에 2580번이라고 하셨죠?",
+          "intent": "요금관련"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "제가 불편신고할때 같이 적어서 접수하겠습니다.",
+          "terms": "불편신고/접수/택시/대중교통",
+          "knowledge_base": "접수,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "그리고 선생님 혹시 요금은 카드로 계산하셨습니까?",
+          "intent": "요금관련",
+          "terms": "카드결재/택시요금",
+          "knowledge_base": "계산,택시요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 카드로 계산했습니다.",
+          "terms": "신용카드/체크카드/직불카드/교통카드/캐쉬카드",
+          "knowledge_base": "계산,캐쉬카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "카드로 계산하시면 요금을 지불했다는 증거가 되니 제가 확실하게 신고 할수 있겠네요",
+          "terms": "불편신고/접수/택시/대중교통",
+          "knowledge_base": "지불,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "22",
+          "qa_type": "Q",
+          "content": "선생님 전화번호 좀 알려주실래요?",
+          "intent": "요금관련",
+          "terms": "휴대폰/",
+          "knowledge_base": "전화번호,휴대폰"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "23",
+          "qa_type": "Q",
+          "content": "왜요?",
+          "intent": "요금관련"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "24",
+          "qa_type": "A",
+          "content": "아 ~~ 다른게 아니라 제가 불편신고 접수해드리면 환불을 위해 해당 택시기사님이 선생님께 전화를 하실꺼예요",
+          "terms": "불편신고/접수/택시/대중교통",
+          "knowledge_base": "접수,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "25",
+          "qa_type": "A",
+          "content": "아~~~네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "26",
+          "qa_type": "Q",
+          "content": "잠시 기다릴까요?",
+          "intent": "요금관련"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "27",
+          "qa_type": "A",
+          "content": "아니요 바로 알려드릴께요 OOOO-OOOO번이예요",
+          "terms": "핸드폰/휴대폰/이동전화"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "28",
+          "qa_type": "A",
+          "content": "네 선생님 바로 요금관련 기사님불편사항 신고접수 하였습니다. 고객님께 환불전화 따로 드릴겁니다.좋은 결과 있으시길 바랄께요 상담원 OOO이 었습니다.",
+          "terms": "택시요금/바가지요금/불편사항/신고접수/택시기사",
+          "knowledge_base": "기사,택시기사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "29",
+          "qa_type": "A",
+          "content": "감사합니다"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2921",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "저희집 근처에 버스정류장이 없는데 버스정류장까지 많이 걸어가야 하는데 저희집 근처에도 정류장을 만들어 줄수 없나요? 너무 불편한데",
+          "intent": "건의사항",
+          "terms": "버스정류장/버스/거리/버스승강장/대중교통 안내",
+          "knowledge_base": "버스,대중교통안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "혹시 위치가 어딘지 알수있을까요?",
+          "intent": "건의사항"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "성호초등학교 근처 인데요. 버스탈려면 오산동사무소까지 걸어서 가야해요",
+          "terms": "지명/버스정류장/대중교통 안내/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "거리가 얼마나 되시나요?",
+          "intent": "건의사항",
+          "knowledge_base": "얼마"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "초등학교에서 동사무소까지 거리로 따지면 글쎄요. 안재봐서 잘은 모르지만 걸어서 20분 정도 걸리는것 같은데요",
+          "knowledge_base": "동사무소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "그동안 많이 불편하셨겠어요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네 비오고 눈올때가 제일 힘들어요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "고객님 힘드시겠지만 지금 당장 도움이 되드리기는 어렵구요. 제가 시청 교통과쪽으로 말씀하신 내용을 건의를 드려놓을 수 있습니다.",
+          "terms": "버스운영과/민원/건의사항/정류장/버스",
+          "knowledge_base": "건의,버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "빨리 됐으면 좋겠는데 너무 불편해서요.",
+          "terms": "건의함/불편신고",
+          "knowledge_base": "불편,불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 빠른결정이 되도록 말씀드려 놓겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "고객님 제가 고객님 전화번호 받아도 될까요?",
+          "intent": "건의사항",
+          "knowledge_base": "전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "왜요?",
+          "intent": "건의사항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "건의한 내용에 대한 회신문자 넣어드리려구요",
+          "knowledge_base": "회신"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "아 네 알려드릴께요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네 말씀해주세요",
+          "knowledge_base": "말씀"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "OOOO-OOOO번입니다.",
+          "terms": "휴대폰/전화번호/이동전화"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "말씀하신 번호가 OOOO-OOOO번 맞습니까?",
+          "intent": "건의사항",
+          "knowledge_base": "말씀"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 맞아요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "빠른시일내에 처리하고 말씀하신 번호로 건의결과 문자드리겠습니다.",
+          "knowledge_base": "건의결과"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 수고하세요"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2922",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "저기 제가 버스에다가 우산을 두고 내렸어요.찾아주실수있나요?",
+          "intent": "분실물",
+          "terms": "버스/차량/분실물",
+          "knowledge_base": "우산,분실물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "고객님 많이 속상하실텐데요. 저희가 바로 찾아드리진 못하구요. 보통은 탑승하셨던 차량회사에서 보관을 하도록 되어있습니다.",
+          "terms": "차량/분실물/유실물/버스회사/버스",
+          "knowledge_base": "차량회사,버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아~~~ 그럼 어떻게 해야 하나요?",
+          "intent": "분실물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "혹시 몇번 차량을 이용하셨나요?",
+          "intent": "분실물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 300번 버스를 탔어요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "300번 버스는 아직 종점에 도착하지는 않았습니다.",
+          "terms": "종점/분실물/버스회사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "종점에 가면 기사님이 차안에 두고 내린 물건을 빼놓으시고나 보관하시지 않나요?",
+          "intent": "분실물",
+          "terms": "종점/차/버스/분실물/유실물/버스회사",
+          "knowledge_base": "기사,버스회사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "그부분은 저희도 확실하게 답변드리기는 어려운데요. 다른 승객이 주워가거나 그럴수도있고 그렇지 않으면 유실물을 버스회사에 맡겨두기는 합니다.",
+          "terms": "승객/종점/분실물/유실물/버스회사/종점/종착지",
+          "knowledge_base": "승객,종착지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "그래요?"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "버스회사 전화번호라도 알수있을까요?",
+          "intent": "분실물",
+          "terms": "버스회사/분실물/전화번호/연락처/유실물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "네 버스회사 전화번호 문자로 보내드릴까요?",
+          "intent": "분실물",
+          "terms": "이동전화/대중교통 안내/메세지전달/",
+          "knowledge_base": "전화번호,메세지전달"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 보내주세요. 직접 전화해보게요",
+          "knowledge_base": "전화"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "현재 전화주신 번호로 문자 받으시는거죠?",
+          "intent": "분실물",
+          "knowledge_base": "전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네 고객님 문자로 방금 보내드렸습니다.",
+          "knowledge_base": "문자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 확인했습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "전화하시면 탑승하셨던 버스번호와 분실물 얘기하시구요. 찾으시는 방법 얘기주시면 될것 같습니다.",
+          "terms": "탑승/버스회사/분실물/연락처/종점/승객",
+          "knowledge_base": "탑승,승객"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 전화해볼께요 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 좋은하루되세요.좋은결과있으시길 바랄께요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 수고하세요"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2923",
+      "category": "대중교통 안내",
+      "turns": 11,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스노선시간하고 배차시간을 좀 알고 싶어서 전화드렸는데요",
+          "intent": "배차간격",
+          "terms": "버스번호/버스번호/버스/대중교통 안내수단/교통수단",
+          "knowledge_base": "배차시간,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어느 버스에 대해서 알려드릴까요?",
+          "intent": "배차간격",
+          "knowledge_base": "버스번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아 2번 버스요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "2번 버스는 배차간격이 15분이구요. 첫차는 6시30분이고 막차는 11시까지 운행하고 있습니다.",
+          "terms": "배차간격/버스번호/버스번호/버스/대중교통 안내수단/교통수단",
+          "knowledge_base": "배차간격,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "제가 있는 곳에 언제 도착하는지도 알수있을까요?",
+          "intent": "배차간격",
+          "knowledge_base": "도착"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "정류장번호 말씀해주시겠습니까?",
+          "intent": "배차간격",
+          "terms": "버스노선/ 배차간격",
+          "knowledge_base": "말씀,배차간격"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네 잠시만요. 25-4567번이라 되어 있네요",
+          "terms": "정류장번호/대중교통 안내/시내버스",
+          "knowledge_base": "25-4567,시내버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "현재계신곳이 원일초등학교 앞 버스정류장 맞습니까?",
+          "intent": "배차간격",
+          "terms": "정류장/교통수단/버스/지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 맞아요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "원일초등학교앞 정류장에서 2번 버스는 앞으로 8분 뒤에 도착예정입니다.",
+          "terms": "초등학교/ 버스정류장/대중교통 안내/버스노선/시내버스",
+          "knowledge_base": "버스,시내버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2924",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "동탄예당마을에서 병점역까지 가는 버스노선 안내해주세요",
+          "intent": "버스노선",
+          "terms": "버스노선/지역/지명",
+          "knowledge_base": "조치원,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지점이 동탄예당마을 맞으신가요?",
+          "intent": "버스노선",
+          "terms": "지명",
+          "knowledge_base": "첫마을,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 맞습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "예당마을 어디쯤이세요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "예당마을 아이파크아파트 정문앞에 있는 정류장입니다.",
+          "terms": "정류장/교통수단/시내버스",
+          "knowledge_base": "정류장,시내버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "시내버스로 안내해 드릴까요?",
+          "intent": "버스노선",
+          "terms": "시내버스/교통수단",
+          "knowledge_base": "시내버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네~ 최대한 빨리 도착할수있는 버스로 안내해주세요",
+          "terms": "최대빨리/시간/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 예당마을 아이파크 정문앞정류장에서 병점역까지 가는 시내버스는 79번과 301번 버스가 있습니다.",
+          "terms": "버스/버스정류장/교통수단",
+          "knowledge_base": "병점역,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "더 궁금하신 내용 있으신가요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "네 요금은 어떻게 되나요?",
+          "intent": "버스요금",
+          "terms": "요금/시내버스",
+          "knowledge_base": "요금,시내버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "카드결제이신가요? 현금결제이신가요?",
+          "intent": "버스요금",
+          "terms": "카드결제/요금/시내버스",
+          "knowledge_base": "현금결제,시내버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "현금결제인데요",
+          "terms": "결제수단/현금",
+          "knowledge_base": "현금결제,현금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "카드결제와 현금결제할 때 요금 차이가 나나요?",
+          "intent": "버스요금",
+          "terms": "카드결제/버스요금/현금",
+          "knowledge_base": "현금결제,현금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 고객님 카드결제하시면 100원 할인받으실수있습니다.",
+          "terms": "할인/카드결제/버스요금",
+          "knowledge_base": "할인,버스요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아네~ 그럼 카드결재해야겠네요",
+          "terms": "카드결제/버스요금",
+          "knowledge_base": "카드결재,버스요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 그럼 카드결재시 요금 안내해드리겠습니다.",
+          "terms": "요금/시내버스",
+          "knowledge_base": "카드결제,시내버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 부탁드립니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "카드결재하시면 병점역까지 카드할인 100원 받으셔서 버스요금이 1800원 입니다.",
+          "terms": "카드결제/병점역/지하철/카드할인/버스요금",
+          "knowledge_base": "병점역,버스요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네~ 감사합니다."
+        }
+      ]
+    }
+  ]
+}
