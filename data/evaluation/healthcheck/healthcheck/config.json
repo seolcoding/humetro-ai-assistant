@@ -2,11 +2,12 @@
   "experiment": {
     "id": null,
     "name": "healthcheck",
-    "description": "Healthcheck: 2 questions (single+multi hop), 5 models (OpenAI+Ollama), Naive RAG",
+    "description": "Healthcheck: 2 questions (single+multi hop), 6 models (OpenAI+Ollama), Naive+KG RAG",
     "tags": [
       "healthcheck",
       "all-modules",
-      "naive-rag"
+      "naive-rag",
+      "kg-rag"
     ],
     "output_dir": "data/evaluation/healthcheck"
   },
@@ -22,8 +23,14 @@
   "retrieval": {
     "k": 2,
     "naive_vector_store": "data/vector_store/seoul_traffic",
-    "kg_config": null,
-    "comment": "Naive RAG only for now. KG will be added after KG build completes."
+    "kg_config": {
+      "neo4j_uri": "env:NEO4J_URI",
+      "neo4j_user": "env:NEO4J_USER",
+      "neo4j_password": "env:NEO4J_PASSWORD",
+      "index_name": "vector",
+      "embedding_model": "text-embedding-3-large"
+    },
+    "comment": "Test both Naive (FAISS) and KG (Neo4j) retrieval. 1,882 chunks with 3072D embeddings."
   },
   "evaluation": {
     "judge_model": "gpt-4o-mini",

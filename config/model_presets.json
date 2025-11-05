@@ -8,42 +8,42 @@
           "name": "GPT-4o-mini",
           "provider": "openai",
           "model": "gpt-4o-mini",
-          "config": {"temperature": 0.7, "max_tokens": 1024}
+          "config": {"temperature": 0.7, "max_tokens": 8192}
         },
         {
           "id": "exaone",
           "name": "EXAONE-3.5-7.8B",
           "provider": "ollama",
           "model": "ollama/exaone3.5:7.8b",
-          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7}
+          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7, "max_tokens": 8192}
         },
         {
           "id": "qwen3",
           "name": "Qwen3-8B",
           "provider": "ollama",
           "model": "ollama/qwen3:8b",
-          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7}
+          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7, "max_tokens": 8192}
         },
         {
           "id": "gemma3-12b",
           "name": "Gemma3-12B",
           "provider": "ollama",
           "model": "ollama/gemma3:12b",
-          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7}
+          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7, "max_tokens": 8192}
         },
         {
           "id": "gpt-oss-20b",
           "name": "GPT-OSS-20B",
           "provider": "ollama",
           "model": "ollama/gpt-oss:20b",
-          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7}
+          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7, "max_tokens": 8192}
         },
         {
           "id": "exaone4",
-          "name": "EXAONE-4.0",
+          "name": "EXAONE-4.0-32B",
           "provider": "ollama",
-          "model": "ollama/ingu627/exaone4.0",
-          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7}
+          "model": "ollama/ingu627/exaone4.0:32b",
+          "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7, "max_tokens": 8192}
         }
       ]
     },

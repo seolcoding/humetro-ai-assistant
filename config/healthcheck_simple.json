@@ -1,0 +1,49 @@
+{
+  "experiment": {
+    "id": null,
+    "name": "healthcheck_simple",
+    "description": "Simple healthcheck: 2 questions, 2 models (GPT-4o-mini + EXAONE-3.5), Naive RAG only",
+    "tags": ["healthcheck", "simple", "fast"],
+    "output_dir": "data/evaluation/healthcheck"
+  },
+  "questions": {
+    "source": "cached",
+    "cache_key": "ab9011d2e08ae32f",
+    "comment": "2 questions: 1 single-hop + 1 multi-hop"
+  },
+  "models": {
+    "evaluation_targets": [
+      {
+        "id": "gpt-4o-mini",
+        "name": "GPT-4o-mini",
+        "provider": "openai",
+        "model": "gpt-4o-mini",
+        "config": {"temperature": 0.7, "max_tokens": 8192}
+      },
+      {
+        "id": "exaone",
+        "name": "EXAONE-3.5-7.8B",
+        "provider": "ollama",
+        "model": "ollama/exaone3.5:7.8b",
+        "config": {"api_base": "http://100.95.220.92:11434", "temperature": 0.7, "max_tokens": 8192}
+      }
+    ],
+    "comment": "Only 2 most reliable models for quick validation"
+  },
+  "retrieval": {
+    "k": 2,
+    "naive_vector_store": "data/vector_store/seoul_traffic",
+    "kg_config": null,
+    "comment": "Naive RAG only for simple healthcheck. Skip KG to avoid connection issues."
+  },
+  "evaluation": {
+    "judge_model": "gpt-4o-mini",
+    "metrics": ["faithfulness", "answer_relevancy"],
+    "comment": "Fast judge with minimal metrics"
+  },
+  "execution": {
+    "checkpoint_interval": 1,
+    "verbose": true,
+    "dry_run": false
+  }
+}

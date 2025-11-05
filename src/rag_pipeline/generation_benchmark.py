@@ -309,7 +309,7 @@ class GenerationBenchmark:
 
         for q in tqdm(questions, desc=f"Generating with {model_config['name']}"):
             question_text = q.get("question", q.get("user_input", ""))
-            reference_answer = q.get("reference_answer", q.get("reference", ""))
+            reference_answer = q.get("ground_truth", q.get("reference_answer", q.get("reference", "")))
 
             # Get context
             if fixed_contexts and question_text in fixed_contexts:
@@ -423,6 +423,11 @@ class GenerationBenchmark:
 답변:"""
 
         try:
+            # Get max_tokens from model config, default to 2048
+            max_tokens = 2048
+            if "config" in model_config:
+                max_tokens = model_config["config"].get("max_tokens", 2048)
+
             response = litellm.completion(
                 model=model_config["model"],
                 messages=[
@@ -430,9 +435,9 @@ class GenerationBenchmark:
                     {"role": "user", "content": prompt}
                 ],
                 api_base=model_config.get("api_base"),
-                temperature=0.0,
-                max_tokens=500,
-                timeout=30
+                temperature=0.7,
+                max_tokens=max_tokens,
+                timeout=60
             )
 
             return response.choices[0].message.content
@@ -473,11 +478,18 @@ class GenerationBenchmark:
                 model=self.judge_model
                 # temperature, max_tokens 파라미터 모두 제외
             )
+        # GPT-4o-mini는 evaluation judge로 충분한 tokens 필요
+        elif self.judge_model == "gpt-4o-mini":
+            return ChatOpenAI(
+                model=self.judge_model,
+                temperature=0.0,
+                max_tokens=8192  # Sufficient for detailed evaluation
+            )
         else:
             return ChatOpenAI(
                 model=self.judge_model,
                 temperature=0.0,
-                max_tokens=1000
+                max_tokens=4096
             )
 
     def _safe_mean(self, values: List[float]) -> float:

@@ -13,6 +13,7 @@ Usage:
 """
 
 import sys
+import os
 import json
 import argparse
 import logging
@@ -273,7 +274,8 @@ def run_benchmark_from_config(config_path: Path):
         benchmark_models.append({
             "name": model.get("name", model["id"]),
             "model": model.get("model", model["id"]),
-            "api_base": model.get("config", {}).get("api_base")
+            "api_base": model.get("config", {}).get("api_base"),
+            "config": model.get("config", {})  # Pass full config including max_tokens
         })
 
     # Prepare questions in GenerationBenchmark format
@@ -329,12 +331,47 @@ def run_benchmark_from_config(config_path: Path):
             elif method == "kg":
                 # KG RAG with Neo4j
                 logger.info(f"Running KG RAG benchmark...")
-                logger.warning("⚠️ KG RAG not yet implemented - skipping")
-                # TODO: Implement KG retriever integration
-                # from src.kg_agent.kg_rag_retriever import create_kg_retriever
-                # kg_retriever = create_kg_retriever(...)
-                # benchmark = GenerationBenchmark(models=..., retriever=kg_retriever, ...)
-                all_results["kg_rag"] = {"status": "not_implemented"}
+
+                try:
+                    from src.kg_agent.kg_rag_retriever import create_kg_retriever
+
+                    # Get Neo4j credentials from config
+                    kg_conf = kg_config
+                    neo4j_uri = os.getenv(kg_conf["neo4j_uri"].replace("env:", ""))
+                    neo4j_user = os.getenv(kg_conf["neo4j_user"].replace("env:", ""))
+                    neo4j_password = os.getenv(kg_conf["neo4j_password"].replace("env:", ""))
+
+                    # Create KG retriever
+                    kg_retriever = create_kg_retriever(
+                        k=k,
+                        embedding_model=kg_conf.get("embedding_model", "text-embedding-3-large"),
+                        neo4j_uri=neo4j_uri,
+                        neo4j_user=neo4j_user,
+                        neo4j_password=neo4j_password
+                    )
+
+                    logger.info(f"✅ KG retriever initialized")
+
+                    # Test retrieval
+                    test_query = questions[0].get("user_input", "서울 지하철")
+                    test_docs = kg_retriever.invoke(test_query)
+                    logger.info(f"✅ Test retrieval: {len(test_docs)} docs retrieved")
+
+                    # Create benchmark with KG retriever
+                    # Note: GenerationBenchmark uses FAISS by default, need to modify it
+                    # For now, log success and skip actual benchmark
+                    logger.warning("⚠️ KG RAG benchmark integration pending - GenerationBenchmark needs refactoring")
+                    logger.info("   KG retriever is working, but GenerationBenchmark is hardcoded to FAISS")
+                    all_results["kg_rag"] = {
+                        "status": "retriever_ready",
+                        "message": "KG retriever working, benchmark integration pending"
+                    }
+
+                except Exception as e:
+                    logger.error(f"❌ KG RAG failed: {e}")
+                    import traceback
+                    logger.error(traceback.format_exc())
+                    all_results["kg_rag"] = {"status": "failed", "error": str(e)}
 
             elif method == "none":
                 # LLM only (no retrieval)
