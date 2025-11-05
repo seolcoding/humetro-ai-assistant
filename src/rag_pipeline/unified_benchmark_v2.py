@@ -348,13 +348,13 @@ class UnifiedBenchmarkV2:
             if classification in ["single_hop", "simple"]:
                 classified_questions["single_hop"].append({
                     "question": item["question"],
-                    "ground_truth": item.get("ground_truth", ""),
+                    "reference": item.get("ground_truth", ""),  # GenerationBenchmark expects "reference"
                     "question_type": "simple"
                 })
             else:  # multi_hop or multi_reasoning
                 classified_questions["multi_hop"].append({
                     "question": item["question"],
-                    "ground_truth": item.get("ground_truth", ""),
+                    "reference": item.get("ground_truth", ""),  # GenerationBenchmark expects "reference"
                     "question_type": "multi_reasoning"
                 })
 
