@@ -6,7 +6,6 @@
 - 체크포인트 자동 저장
 """
 
-import os
 import sys
 import json
 import argparse
@@ -14,18 +13,10 @@ import logging
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional
-import hashlib
 import pickle
 
-# Add project root to path
-project_root = Path(__file__).parent.parent.parent
-sys.path.insert(0, str(project_root))
-
-# Add tests path for testset_generator
-sys.path.insert(0, str(project_root / "tests" / "rag_pipeline"))
-
 from generation_benchmark import GenerationBenchmark
-from testset_generator import CachedTestsetGenerator as TestsetGenerator
+from question_generation import generate_questions
 
 # Configure logging
 logging.basicConfig(
@@ -218,18 +209,13 @@ class UnifiedBenchmarkV2:
         logger.info("📝 질문 생성")
         logger.info("="*70)
 
-        # TestsetGenerator 사용 (CachedTestsetGenerator)
-        generator = TestsetGenerator()
-
-        # Generate or load testset
-        config, testset_df = generator.generate_or_load(
-            llm_model=self.args.generation_model,
-            llm_temperature=0.3,
-            embedding_model="text-embedding-3-small",
-            document_source=self.args.document_source,
+        # Generate questions using centralized API
+        config, testset_df = generate_questions(
+            model=self.args.generation_model,
+            source=self.args.document_source,
             num_documents=self.args.num_documents,
-            testset_size=self.args.questions,
-            force_regenerate=self.args.force_generate  # use_cache가 아니라 force_regenerate
+            num_questions=self.args.questions,
+            force_regenerate=self.args.force_generate
         )
 
         # Convert DataFrame to dict format

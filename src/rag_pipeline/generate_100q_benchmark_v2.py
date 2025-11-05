@@ -9,7 +9,6 @@
 3. 불필요한 단계 제거
 """
 
-import sys
 import json
 import logging
 import argparse
@@ -19,7 +18,7 @@ from typing import List, Dict, Any, Tuple
 import pandas as pd
 
 # Project imports
-from testset_generator import CachedTestsetGenerator, TestsetConfig
+from question_generation import generate_questions
 from generation_benchmark import GenerationBenchmark
 
 # Configure logging
@@ -35,7 +34,7 @@ def generate_and_classify_questions(
     force_regenerate: bool = False,
     num_documents: int = 100,
     testset_size: int = 100
-) -> Tuple[TestsetConfig, Dict[str, List[dict]]]:
+) -> Tuple[Any, Dict[str, List[dict]]]:
     """
     Generate questions using RAGAS and classify using built-in tags
 
@@ -48,16 +47,10 @@ def generate_and_classify_questions(
     logger.info("질문 생성 및 분류")
     logger.info("="*70)
 
-    generator = CachedTestsetGenerator()
-
-    config, testset_df = generator.generate_or_load(
-        llm_model="gpt-4o-mini",
-        llm_temperature=0.3,
-        embedding_model="text-embedding-3-small",
-        document_source="data/crawled/seoul_traffic/markdown_filtered",
+    config, testset_df = generate_questions(
+        model="gpt-4o-mini",
         num_documents=num_documents,
-        testset_size=testset_size,
-        language="korean",
+        num_questions=testset_size,
         force_regenerate=force_regenerate,
         use_korean_personas=True,
         is_latest=False,

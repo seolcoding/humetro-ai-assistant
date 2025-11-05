@@ -16,19 +16,13 @@ Usage:
     python src/rag_pipeline/generate_benchmark_50q.py --force  # 캐시 무시하고 재생성
 """
 
-import sys
 import argparse
 from pathlib import Path
-
-# 프로젝트 루트 추가
-project_root = Path(__file__).parent.parent.parent
-sys.path.insert(0, str(project_root))
-
 from dotenv import load_dotenv
 
 load_dotenv()
 
-from testset_generator import CachedTestsetGenerator
+from question_generation import generate_50q_benchmark
 
 
 def main():
@@ -45,36 +39,21 @@ def main():
     print("  50-Question Benchmark TestSet Generation".center(70))
     print("=" * 70)
 
-    # Generator 초기화
-    generator = CachedTestsetGenerator()
-
-    # 설정
-    config = {
-        "llm_model": "gpt-4o-mini",
-        "llm_temperature": 0.3,
-        "embedding_model": "text-embedding-3-small",
-        "document_source": "data/crawled/seoul_traffic/markdown_filtered",
-        "num_documents": args.num_docs,
-        "testset_size": 50,
-        "language": "korean",
-        "force_regenerate": args.force,
-        "use_korean_personas": True,  # 한국어 전용 Persona 사용
-        "is_latest": True,  # 최신 버전으로 마킹
-        "is_benchmark": True,  # 벤치마크용으로 마킹
-        "description": f"한국어 전용 Persona 기반 벤치마크 테스트셋 ({args.num_docs}개 문서, 2021-2025 필터링)",
-    }
-
     print("\n[설정]")
-    print(f"  LLM: {config['llm_model']} (temperature={config['llm_temperature']})")
-    print(f"  Embedding: {config['embedding_model']}")
-    print(f"  문서 개수: {config['num_documents']}")
-    print(f"  목표 질문 수: {config['testset_size']}")
-    print(f"  한국어 Persona: {config['use_korean_personas']}")
-    print(f"  강제 재생성: {config['force_regenerate']}")
+    print(f"  LLM: gpt-4o-mini (temperature=0.3)")
+    print(f"  Embedding: text-embedding-3-small")
+    print(f"  문서 개수: {args.num_docs}")
+    print(f"  목표 질문 수: 50")
+    print(f"  한국어 Persona: True")
+    print(f"  강제 재생성: {args.force}")
 
     # 생성 또는 로드
     print("\n[실행]")
-    test_config, testset_df = generator.generate_or_load(**config)
+    test_config, testset_df = generate_50q_benchmark(
+        model="gpt-4o-mini",
+        num_documents=args.num_docs,
+        force=args.force
+    )
 
     # 결과 출력
     print("\n" + "=" * 70)
