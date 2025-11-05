@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-05T14:02:18.560340",
+    "total_questions": 3,
+    "single_hop_count": 0,
+    "multi_hop_count": 3,
+    "models": [
+      "GPT-4o-mini"
+    ],
+    "k_documents": 4,
+    "use_fixed_context": true,
+    "judge_model": "gpt-4o-mini"
+  },
+  "single_hop": {
+    "GPT-4o-mini": {
+      "error": "list index out of range",
+      "raw_data": [],
+      "summary": {
+        "num_questions": 0,
+        "evaluation_failed": true
+      }
+    }
+  },
+  "multi_hop": {
+    "GPT-4o-mini": {
+      "raw_data": [
+        {
+          "user_input": "영등포역으로 가는 버스는 언제 우회하나요?",
+          "response": "영등포역으로 가는 버스는 12월 14일 토요일 14시부터 우회 운행됩니다. 이 시간부터 연세로를 통과하던 시내버스 12개 노선과 마을버스 3개 노선이 모두 우회하므로, 사전에 경로를 확인하고 이동하는 것이 좋습니다.",
+          "retrieved_contexts": [
+            "##  **집회** 에 대한 태그클라우드\n### [12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내](https://news.seoul.go.kr/traffic/archives/513366?listPage=1 \"12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내\")\n등록일 : 2024-12-14[대중교통소식](https://news.seoul.go.kr/traffic/archives/category/public-news_c1/news_public-news-n1)/ [새소식](https://news.seoul.go.kr/traffic/archives/category/main-news)\n[12월 14일 여의도 집회관련 버스 우회 및 막차시간 연장 계획 안내](https://news.seoul.go.kr/traffic/archives/513366?listPage=1 \"12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내\")",
+            "주말에 버스를 이용해 신촌을 방문할 계획이 있는 시민이라면 **토요일 14시부터 연세로를 통과하던 시내버스 12개 노선과 마을버스 3개 노선이 모두 우회 운행** 하므로 사전에 경로를 확인한 다음 이동하는 것이 좋습니다.\n기존에 _신촌오거리→연대 앞(연세로)→수색 방면으로 향하던 노선은 신촌오거리→동교동삼거리→연희IC로 우회_ 하여 수색 방면으로 운행되고,\n반대로 _수색 방면→신촌오거리(연세로)→동교동삼거리 방향으로 운행되던 노선은 수색 방면에서 신촌기차역 앞 굴다리→신촌기차역 입구→신촌오거리→동교동삼거리 방향으로 우회_ 하게 됩니다.\n![1](https://news.seoul.go.kr/traffic/files/2014/01/1.jpg) <신촌오거리 → 수색 방면> |  ![2](https://news.seoul.go.kr/traffic/files/2014/01/2.jpg) <수색 → 동교동삼거리 방면>  \n---|---",
+            "### [12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내](https://news.seoul.go.kr/traffic/archives/513366?listPage=1 \"12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내\")\n등록일 : 2024-12-14[대중교통소식](https://news.seoul.go.kr/traffic/archives/category/public-news_c1/news_public-news-n1)/ [새소식](https://news.seoul.go.kr/traffic/archives/category/main-news)\n[12월 14일 여의도 집회관련 버스 우회 및 막차시간 연장 계획 안내](https://news.seoul.go.kr/traffic/archives/513366?listPage=1 \"12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내\")",
+            "### [12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내](https://news.seoul.go.kr/traffic/archives/513366?listPage=1 \"12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내\")\n등록일 : 2024-12-14[대중교통소식](https://news.seoul.go.kr/traffic/archives/category/public-news_c1/news_public-news-n1)/ [새소식](https://news.seoul.go.kr/traffic/archives/category/main-news)\n[12월 14일 여의도 집회관련 버스 우회 및 막차시간 연장 계획 안내](https://news.seoul.go.kr/traffic/archives/513366?listPage=1 \"12월 14일 집회 관련 버스 우회 및 막차시간 연장 안내\")"
+          ],
+          "reference": ""
+        },
+        {
+          "user_input": "연말연시 택시 승차난 문제를 해결하기 위해 서울시는 올빼미버스 운행 확대와 어떤 종합대책을 추진하고 있습니까?",
+          "response": "서울시는 연말연시 택시 승차난 문제를 해결하기 위해 택시 공급 확대와 올빼미버스 증차를 포함한 종합대책을 추진하고 있습니다. 또한, 작년부터 시행 중인 지하철 1시 연장 운행을 더해 연말 수요에 맞춘 교통 수송력 증대와 귀가 지원을 시행할 계획입니다.",
+          "retrieved_contexts": [
+            "2023-11-29 16:06:07\n[서울시가 연말연시를 앞두고 택시 심야 승차난을 선제적으로 대응하기 위한 종합대책을 추진한다. 택시 공급 확대, 올빼미버스 증차 등을 중점으로, 작년부터 시행 중인 지하철 1시 연장 운행까지 더해 연말 수요에 맞춘 교통 수송력 증대와 귀가 지원을 시행한다는 계획이다.](https://news.seoul.go.kr/traffic/archives/510591 \"연말연시 택시 심야 승차난 종합대책 추진\")\n  * [승차난](https://news.seoul.go.kr/traffic/archives/tag/%ec%8a%b9%ec%b0%a8%eb%82%9c)\n  * [택시 심야](https://news.seoul.go.kr/traffic/archives/tag/%ed%83%9d%ec%8b%9c-%ec%8b%ac%ec%95%bc)",
+            "등록일 : 2023-11-29[대중교통소식](https://news.seoul.go.kr/traffic/archives/category/public-news_c1/news_public-news-n1)/ [새소식](https://news.seoul.go.kr/traffic/archives/category/main-news)\n[서울시가 연말연시를 앞두고 택시 심야 승차난을 선제적으로 대응하기 위한 종합대책을 추진한다. 택시 공급 확대, 올빼미버스 증차 등을 중점으로, 작년부터 시행 중인 지하철 1시 연장 운행까지 더해 연말 수요에 맞춘 교통 수송력 증대와 귀가 지원을 시행한다는 계획이다.](https://news.seoul.go.kr/traffic/archives/510591?listPage=1 \"연말연시 택시 심야 승차난 종합대책 추진\")\n  * [승차난](https://news.seoul.go.kr/traffic/archives/tag/%ec%8a%b9%ec%b0%a8%eb%82%9c)",
+            "등록일 : 2023-11-29[대중교통소식](https://news.seoul.go.kr/traffic/archives/category/public-news_c1/news_public-news-n1)/ [새소식](https://news.seoul.go.kr/traffic/archives/category/main-news)\n[서울시가 연말연시를 앞두고 택시 심야 승차난을 선제적으로 대응하기 위한 종합대책을 추진한다. 택시 공급 확대, 올빼미버스 증차 등을 중점으로, 작년부터 시행 중인 지하철 1시 연장 운행까지 더해 연말 수요에 맞춘 교통 수송력 증대와 귀가 지원을 시행한다는 계획이다.](https://news.seoul.go.kr/traffic/archives/510591?listPage=1 \"연말연시 택시 심야 승차난 종합대책 추진\")\n  * [**승차난**](https://news.seoul.go.kr/traffic/archives/tag/%ec%8a%b9%ec%b0%a8%eb%82%9c)",
+            "[ ![연말택시02](https://news.seoul.go.kr/traffic/files/2023/11/65683dd07fcd33.96056186.jpg) ](https://news.seoul.go.kr/traffic/archives/510591 \"연말연시 택시 심야 승차난 종합대책 추진\")\n### [연말연시 택시 심야 승차난 종합대책 추진](https://news.seoul.go.kr/traffic/archives/510591 \"연말연시 택시 심야 승차난 종합대책 추진\")\n2023-11-29 16:06:07"
+          ],
+          "reference": ""
+        },
+        {
+          "user_input": "대중교통과 따릉이 및 한강버스를 포함한 월 부담한도는 어떻게 설정되며, 청년·다자녀 할인 혜택이 적용될 경우 각각의 금액은 얼마인가요?",
+          "response": "대중교통과 따릉이 및 한강버스를 포함한 월 부담한도는 다음과 같이 설정됩니다:\n\n1. **고객 월 부담한도**:\n   - 28일: 66,000원\n   - 29일: 68,000원\n   - 30일: 70,000원\n   - 31일: 72,000원\n\n2. **청년·2자녀 할인 적용 시 월 부담한도**:\n   - 28일: 59,460원\n   - 29일: 61,230원\n   - 30일: 63,000원\n   - 31일: 65,230원\n\n3. **3자녀·저소득층 할인 적용 시 월 부담한도**:\n   - 28일: 50,120원\n   - 29일: 51,560원\n   - 30일: 53,000원\n   - 31일: 54,440원\n\n따라서, 대중교통과 따릉이 및 한강버스를 포함한 월 부담한도는 고객의 할인 유형에 따라 다르게 설정됩니다.",
+          "retrieved_contexts": [
+            "**\n※ 단, 아래 대중교통+따릉이+한강버스 고객 월 부담한도 금액 이내 청구\n대중교통+따릉이 이용 고객 월 부담한도 - 대중교통, 대중교통+따릉이 구분에 따른 고객 월 부담한도 및 청년할인 월 부담한도 정보 구분 | 28일 | 29일 | 30일 | 31일  \n---|---|---|---|---  \n대중교통 | 고객 월 부담한도 | 58,000원 | 60,000원 | 62,000원 | 64,000원  \n청년·2자녀 할인  \n월 부담한도 | 51,460원 | 53,230원 | 55,000원 | 56,770원  \n3자녀·저소득층 할인  \n월 부담한도 | 42,120원 | 43,560원 | 45,000원 | 46,440원  \n대중교통+  \n따릉이 | 고객 월 부담한도 | 61,000원 | 63,000원 | 65,000원 | 67,000원  \n청년·2자녀 할인  \n월 부담한도 | 54,460원 | 56,230원 | 58,000원 | 59,770원  \n3자녀·저소득층 할인",
+            "최초 등록월의 부담한도 모의 계산해보기\n월 부담한도 모의 계산 등록일 | 일반 | 청년·청소년·다자녀(2인)부모 | 다자녀(3인)부모·저소득층  \n---|---|---|---  \n고객 월 부담한도 |  |  |   \n#### 대중교통+따릉이+한강버스 이용 고객 월 부담한도\n  * **(대중교통+따릉이+한강버스)**\n    * 따릉이: 대중교통 월 부담한도 이용 충족 시, 최대 3천원 청구 / 대중교통 월 부담한도 미충족 시, 최대 5천원 청구\n    * 따릉이 이용 횟수 및 대중교통 이용 실적에 따라 최소 1천원~5천원까지 청구(월 부담한도 이내 청구)\n    * 한강버스: 1회 이용 시 3천원 청구, 2회 이상 이용 시 5천원 청구  \n**※ 한강버스: 2025년 9월 29일부터 성능 안정화 시범운항 전환으로 현재 시민탑승 일시 중단 중  \n**\n※ 단, 아래 대중교통+따릉이+한강버스 고객 월 부담한도 금액 이내 청구",
+            "월 부담한도 | 54,460원 | 56,230원 | 58,000원 | 59,770원  \n3자녀·저소득층 할인  \n월 부담한도 | 45,120원 | 46,560원 | 48,000원 | 49,440원  \n대중교통+  \n따릉이+  \n한강버스 | 고객 월 부담한도 | 66,000원 | 68,000원 | 70,000원 | 72,000원  \n청년·2자녀 할인  \n월 부담한도 | 59,460원 | 61,230원 | 63,000원 | 65,230원  \n3자녀·저소득층 할인  \n월 부담한도 | 50,120원 | 51,560원 | 53,000원 | 54,440원  \n※ 예시1 : 30일 기준, 대중교통을 62천원 이상 사용하고, 따릉이를 10회 이용한 경우, 65천원 청구\n※ 예시2 : 30일 기준, 대중교통을 62천원 이상 사용하고, 따릉이를 2회 이용한 경우, 64천원 청구\n※ 예시3 : 30일 기준, 대중교통을 58천원 이용하고 따릉이를 10회 이용한 경우, 63천원 청구",
+            "**대중교통****+****따릉이** |  65,000원 |  58,000원 |  58,000원 |  48,000원 |  48,000원  \n**대중교통****+****한강버스** |  67,000원 |  60,000원 |  60,000원 |  50,000원 |  50,000원  \n**대중교통****+****따릉이****+****한강버스** |  70,000원 |  63,000원 |  63,000원 |  53,000원 |  53,000원  \n**<****맞춤형 할인적용 이용 요건****>**\n**구 분** |  **내 용**  \n---|---  \n**청소년** |  ’25년 기준 / 2007.1.1.~2012.12.31. 출생자  \n**다자녀** |  2명 이상 자녀 양육, 단 자녀 1명 이상은 18세 이하  \n**저소득** |  ‘국민기초생활보장법’에 따른 기초생활수급자 및 차상위계층"
+          ],
+          "reference": ""
+        }
+      ],
+      "metrics": {
+        "faithfulness": [
+          0.6666666666666666,
+          1.0,
+          NaN
+        ],
+        "answer_relevancy": [
+          0.8847687126724314,
+          0.8835086605649218,
+          0.8493207209083966
+        ],
+        "answer_correctness": [
+          0.17877504851843495,
+          0.18347276563199164,
+          0.17765410344964813
+        ]
+      },
+      "summary": {
+        "faithfulness": NaN,
+        "answer_relevancy": 0.8725326980485834,
+        "answer_correctness": 0.1799673058666916,
+        "num_questions": 3
+      }
+    }
+  },
+  "comparison": {
+    "by_complexity": {
+      "single_hop": {
+        "scores": {
+          "GPT-4o-mini": {
+            "num_questions": 0,
+            "evaluation_failed": true
+          }
+        },
+        "best_faithfulness": "GPT-4o-mini",
+        "best_relevancy": "GPT-4o-mini",
+        "best_correctness": "GPT-4o-mini"
+      },
+      "multi_hop": {
+        "scores": {
+          "GPT-4o-mini": {
+            "faithfulness": NaN,
+            "answer_relevancy": 0.8725326980485834,
+            "answer_correctness": 0.1799673058666916,
+            "num_questions": 3
+          }
+        },
+        "best_faithfulness": "GPT-4o-mini",
+        "best_relevancy": "GPT-4o-mini",
+        "best_correctness": "GPT-4o-mini"
+      }
+    },
+    "by_model": {
+      "GPT-4o-mini": {
+        "single_hop": {
+          "num_questions": 0,
+          "evaluation_failed": true
+        },
+        "multi_hop": {
+          "faithfulness": NaN,
+          "answer_relevancy": 0.8725326980485834,
+          "answer_correctness": 0.1799673058666916,
+          "num_questions": 3
+        },
+        "performance_gap": {
+          "faithfulness": NaN,
+          "answer_relevancy": -0.8725326980485834,
+          "answer_correctness": -0.1799673058666916
+        }
+      }
+    },
+    "best_performers": {}
+  }
+}
