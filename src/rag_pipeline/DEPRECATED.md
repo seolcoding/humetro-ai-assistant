@@ -1,6 +1,40 @@
 # Deprecated Code and Patterns
 
-## Deprecated as of 2025-11-05
+## Deprecated as of 2025-11-05 - Unified Benchmark System
+
+### Deprecated Test Scripts ⚠️
+All individual test scripts have been consolidated into `unified_benchmark.py`:
+
+**DEPRECATED FILES:**
+- ❌ `generate_100q_benchmark.py` → Use `unified_benchmark.py --questions 100`
+- ❌ `generate_100q_benchmark_v2.py` → Use `unified_benchmark.py`
+- ❌ `generate_benchmark_50q.py` → Use `unified_benchmark.py --questions 50`
+- ❌ `test_gpt4o_mini_only.py` → Use `unified_benchmark.py --models gpt-4o-mini`
+
+**Migration Guide:**
+```bash
+# Old way (DEPRECATED)
+python generate_100q_benchmark.py --models gpt-4o-mini ollama/exaone3.5:7.8b
+
+# New way (UNIFIED)
+python unified_benchmark.py --questions 100 --models gpt-4o-mini ollama/exaone3.5:7.8b
+
+# Old way (DEPRECATED)
+python test_gpt4o_mini_only.py
+
+# New way (UNIFIED)
+python unified_benchmark.py --models gpt-4o-mini --questions 5
+```
+
+**Key Features of Unified System:**
+- ✅ CLI interface for all parameters
+- ✅ Retrieval validation built-in
+- ✅ Model groups (all, openai, ollama, korean)
+- ✅ Cache management
+- ✅ GPT-5 as default judge model
+- ✅ Comprehensive error handling
+
+## Previous Deprecations (2025-11-05)
 
 ### 1. Direct RetrievalStage Instantiation for Retrieval
 **Status**: ❌ DEPRECATED
