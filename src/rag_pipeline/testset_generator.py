@@ -176,7 +176,91 @@ class CachedTestsetGenerator:
         logger.info(f"🔍 캐시 없음: 새로 생성 필요")
         return None
 
-    def _save_cache(self, config: TestsetConfig, testset_df: pd.DataFrame) -> Path:
+    def _update_metadata(self, config: TestsetConfig, testset_df: pd.DataFrame,
+                         is_latest: bool = True, is_benchmark: bool = False,
+                         description: str = ""):
+        """메타데이터 파일 업데이트
+
+        Args:
+            config: 테스트셋 설정
+            testset_df: 생성된 테스트셋
+            is_latest: 최신 버전 여부
+            is_benchmark: 벤치마크용 여부
+            description: 설명
+        """
+        metadata_file = self.cache_dir / "metadata.json"
+
+        # 기존 메타데이터 로드
+        if metadata_file.exists():
+            with open(metadata_file, 'r', encoding='utf-8') as f:
+                metadata = json.load(f)
+        else:
+            metadata = {
+                "latest": None,
+                "benchmark": None,
+                "versions": []
+            }
+
+        cache_key = config.get_cache_key()
+
+        # 기존 버전에서 latest/benchmark 플래그 제거
+        if is_latest:
+            for v in metadata["versions"]:
+                v["is_latest"] = False
+
+        if is_benchmark:
+            for v in metadata["versions"]:
+                v["is_benchmark"] = False
+
+        # 새 버전 정보
+        version_info = {
+            "cache_key": cache_key,
+            "created_at": config.created_at,
+            "num_questions": len(testset_df),
+            "language": config.language,
+            "llm_model": config.llm_model,
+            "num_documents": config.num_documents,
+            "description": description,
+            "is_latest": is_latest,
+            "is_benchmark": is_benchmark,
+        }
+
+        # 기존 버전 업데이트 또는 추가
+        existing_idx = None
+        for idx, v in enumerate(metadata["versions"]):
+            if v["cache_key"] == cache_key:
+                existing_idx = idx
+                break
+
+        if existing_idx is not None:
+            # 기존 버전 업데이트 (플래그만)
+            metadata["versions"][existing_idx].update({
+                "is_latest": is_latest,
+                "is_benchmark": is_benchmark,
+                "description": description if description else metadata["versions"][existing_idx].get("description", ""),
+            })
+        else:
+            # 새 버전 추가
+            metadata["versions"].append(version_info)
+
+        # 최신/벤치마크 포인터 업데이트
+        if is_latest:
+            metadata["latest"] = cache_key
+        if is_benchmark:
+            metadata["benchmark"] = cache_key
+
+        # 날짜순 정렬 (최신순)
+        metadata["versions"].sort(key=lambda x: x["created_at"], reverse=True)
+
+        # 저장
+        with open(metadata_file, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f, ensure_ascii=False, indent=2)
+
+        logger.info(f"📋 메타데이터 업데이트: {metadata_file}")
+
+    def _save_cache(self, config: TestsetConfig, testset_df: pd.DataFrame,
+                    is_latest: bool = True, is_benchmark: bool = False,
+                    description: str = "") -> Path:
         """캐시 저장
 
         Args:
@@ -215,6 +299,9 @@ class CachedTestsetGenerator:
 
         # 추가: 문서화 파일 생성
         self._generate_documentation(config, cache_file)
+
+        # 메타데이터 업데이트
+        self._update_metadata(config, testset_df, is_latest, is_benchmark, description)
 
         return cache_file
 
@@ -348,6 +435,9 @@ The cache key ensures identical configurations return cached results.
         language: str = "korean",
         force_regenerate: bool = False,
         use_korean_personas: bool = True,
+        is_latest: bool = True,
+        is_benchmark: bool = False,
+        description: str = "",
     ) -> tuple[TestsetConfig, pd.DataFrame]:
         """테스트셋 생성 또는 캐시 로드
 
@@ -439,8 +529,8 @@ The cache key ensures identical configurations return cached results.
 
         logger.info(f"✅ 생성 완료: {len(testset_df)}개 질문")
 
-        # 5. 캐시 저장
-        self._save_cache(config, testset_df)
+        # 5. 캐시 저장 (메타데이터 포함)
+        self._save_cache(config, testset_df, is_latest, is_benchmark, description)
 
         return config, testset_df
 

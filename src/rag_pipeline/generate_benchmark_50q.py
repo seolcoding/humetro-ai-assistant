@@ -59,6 +59,9 @@ def main():
         "language": "korean",
         "force_regenerate": args.force,
         "use_korean_personas": True,  # 한국어 전용 Persona 사용
+        "is_latest": True,  # 최신 버전으로 마킹
+        "is_benchmark": True,  # 벤치마크용으로 마킹
+        "description": f"한국어 전용 Persona 기반 벤치마크 테스트셋 ({args.num_docs}개 문서)",
     }
 
     print("\n[설정]")
