@@ -261,13 +261,27 @@ class UnifiedBenchmarkV2:
         classifier = QuestionComplexityClassifier(method="hybrid")
         classified = classifier.classify_batch(questions_df, question_column="user_input")
 
-        # Convert classification results back to dict format
-        classified_dicts = [asdict(c) for c in classified]
+        # Merge classification results with original question data
+        merged_results = []
+        for i, (original_q, classification) in enumerate(zip(questions, classified)):
+            merged_item = {
+                # Original question data
+                "question": original_q.get("user_input", ""),
+                "ground_truth": original_q.get("reference", ""),
+                "reference_contexts": original_q.get("reference_contexts", []),
+                # Classification results
+                "classification": classification.classification,
+                "confidence": classification.confidence,
+                "reasoning_steps": classification.reasoning_steps,
+                "features": classification.features,
+                "classifier_reasoning": classification.classifier_reasoning
+            }
+            merged_results.append(merged_item)
 
         # 체크포인트 저장
-        self.exp_manager.save_checkpoint(self.exp_id, step, classified_dicts)
+        self.exp_manager.save_checkpoint(self.exp_id, step, merged_results)
 
-        return classified_dicts
+        return merged_results
 
     def run_benchmark_for_model(
         self,
@@ -407,12 +421,10 @@ class UnifiedBenchmarkV2:
             classified = self.classify_questions(questions)
             self.results["classified"] = classified
 
-            # 3. 질문 밸런싱
-            all_questions = []
-            if "single_hop" in classified:
-                all_questions.extend(classified["single_hop"][:self.args.questions//2])
-            if "multi_hop" in classified:
-                all_questions.extend(classified["multi_hop"][:self.args.questions//2])
+            # 3. 질문 밸런싱 (선택 사항 - 전체 질문 사용)
+            # classified is a list of dicts with classification info
+            # We'll use all questions for now
+            all_questions = classified
 
             logger.info(f"📊 최종 질문 수: {len(all_questions)}개")
 
