@@ -68,11 +68,16 @@ class ConfigLoader:
         if self.config["questions"]["source"] not in ["cached", "generate"]:
             raise ValueError(f"Invalid questions.source: {self.config['questions']['source']}")
 
-        # Validate retrieval method if present
+        # Validate retrieval format (skip detailed validation for list format)
         if "retrieval" in self.config:
-            method = self.config["retrieval"].get("method", "naive")
-            if method not in ["none", "naive", "kg", "hybrid"]:
-                raise ValueError(f"Invalid retrieval.method: {method}")
+            retrieval = self.config["retrieval"]
+            if isinstance(retrieval, dict):
+                # Old format: validate method if present
+                method = retrieval.get("method", "naive")
+                if method not in ["none", "naive", "kg", "hybrid"]:
+                    raise ValueError(f"Invalid retrieval.method: {method}")
+            elif not isinstance(retrieval, list):
+                raise ValueError("retrieval must be either dict or list")
 
     def get(self, key: str, default=None) -> Any:
         """Get config value by dot notation key"""
