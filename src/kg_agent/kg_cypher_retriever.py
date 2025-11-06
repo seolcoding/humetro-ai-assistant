@@ -20,11 +20,16 @@ import logging
 from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
+from langchain_core.prompts import PromptTemplate
 from langchain_community.graphs import Neo4jGraph
-from langchain.chains import GraphCypherQAChain
 from langchain_openai import ChatOpenAI
-from langchain.prompts.prompt import PromptTemplate
 from pydantic import Field
+
+# Try both import paths for GraphCypherQAChain (langchain version compatibility)
+try:
+    from langchain.chains import GraphCypherQAChain
+except ImportError:
+    from langchain_community.chains.graph_qa.cypher import GraphCypherQAChain
 
 logger = logging.getLogger(__name__)
 
@@ -121,7 +126,8 @@ class KGCypherRetriever(BaseRetriever):
                 graph=KGCypherRetriever._graph,
                 verbose=True,
                 cypher_prompt=cypher_prompt,
-                return_intermediate_steps=True  # To get Cypher query
+                return_intermediate_steps=True,  # To get Cypher query
+                allow_dangerous_requests=True  # Required for LangChain security
             )
             logger.info(f"✅ Cypher Chain initialized with {self.llm_model}")
 
