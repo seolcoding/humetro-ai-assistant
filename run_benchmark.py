@@ -330,35 +330,50 @@ def run_benchmark_from_config(config_path: Path):
 
             elif method == "kg":
                 # KG RAG with Neo4j
-                logger.info(f"Running KG RAG benchmark...")
+                kg_conf = kg_config
+                kg_mode = kg_conf.get("mode", "simple")
+
+                logger.info(f"Running KG RAG benchmark (mode: {kg_mode})...")
 
                 try:
-                    from src.kg_agent.kg_rag_retriever import create_kg_retriever
-
-                    # Get Neo4j credentials from config
-                    kg_conf = kg_config
+                    # Get Neo4j credentials
                     neo4j_uri = os.getenv(kg_conf["neo4j_uri"].replace("env:", ""))
                     neo4j_user = os.getenv(kg_conf["neo4j_user"].replace("env:", ""))
                     neo4j_password = os.getenv(kg_conf["neo4j_password"].replace("env:", ""))
 
                     logger.info(f"📚 Connecting to Neo4j KG...")
                     logger.info(f"   URI: {neo4j_uri}")
+                    logger.info(f"   Mode: {kg_mode}")
 
-                    # Create KG retriever
-                    kg_retriever = create_kg_retriever(
-                        k=k,
-                        embedding_model=kg_conf.get("embedding_model", "text-embedding-3-large"),
-                        neo4j_uri=neo4j_uri,
-                        neo4j_user=neo4j_user,
-                        neo4j_password=neo4j_password
-                    )
+                    # Create retriever based on mode
+                    if kg_mode == "cypher_generation":
+                        from src.kg_agent.kg_cypher_retriever import create_kg_cypher_retriever
 
-                    logger.info(f"✅ KG retriever initialized")
+                        kg_retriever = create_kg_cypher_retriever(
+                            k=k,
+                            llm_model=kg_conf.get("llm_model", "gpt-4o-mini"),
+                            neo4j_uri=neo4j_uri,
+                            neo4j_user=neo4j_user,
+                            neo4j_password=neo4j_password
+                        )
+                        logger.info(f"✅ Cypher Generation KG retriever initialized")
+
+                    else:  # simple mode (default)
+                        from src.kg_agent.kg_rag_retriever import create_kg_retriever
+
+                        kg_retriever = create_kg_retriever(
+                            k=k,
+                            embedding_model=kg_conf.get("embedding_model", "text-embedding-3-large"),
+                            neo4j_uri=neo4j_uri,
+                            neo4j_user=neo4j_user,
+                            neo4j_password=neo4j_password
+                        )
+                        logger.info(f"✅ Simple KG retriever initialized")
 
                     # Test retrieval
                     test_query = questions[0].get("user_input", "서울 지하철")
                     test_docs = kg_retriever.invoke(test_query)
-                    logger.info(f"✅ Test retrieval: {len(test_docs)} docs from KG")
+                    logger.info(f"✅ Test retrieval: {len(test_docs)} docs from KG ({kg_mode} mode)")
 
                     # Create benchmark with KG retriever
                     benchmark = GenerationBenchmark(
