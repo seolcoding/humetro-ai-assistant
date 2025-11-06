@@ -34,36 +34,66 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 
-# Cypher generation prompt template (from L7 notebook)
+# Cypher generation prompt template (UPDATED: Fixed schema with backtick labels)
 CYPHER_GENERATION_TEMPLATE = """Task: Generate Cypher statement to query a graph database.
 
 Instructions:
-Use only the provided relationship types and properties in the schema.
-Do not use any other relationship types or properties that are not provided.
+1. Use ONLY the provided relationship types and properties in the schema below
+2. Do NOT use any other relationship types or properties that are not provided
+3. CRITICAL: Node labels with spaces MUST use backtick notation (e.g., `Bus Service`, `Traffic Incident`)
+4. Labels without spaces can use colon notation (e.g., :Route, :Line, :Station)
+5. Property access uses dot notation (e.g., node.name, node.date)
 
 Schema:
 {schema}
+
+IMPORTANT LABEL NAMES (use backticks for labels with spaces):
+- `Bus Service` (NOT BusService)
+- `Traffic Incident` (NOT TrafficIncident)
+- `Transportation Policy` (NOT TransportationPolicy)
+- `Traffic Report` (NOT TrafficReport)
+- `Public Transport Service` (NOT PublicTransportService)
+- `Traffic Data` (NOT TrafficData)
+- `Accessibility Features` (NOT AccessibilityFeatures)
+- `Traffic Application` (NOT TrafficApplication)
+- `Train Service` (NOT TrainService)
+- `Commute Route` (NOT CommuteRoute)
 
 Note: Do not include any explanations or apologies in your responses.
 Do not respond to any questions that might ask anything else than for you to construct a Cypher statement.
 Do not include any text except the generated Cypher statement.
 
-Examples for Seoul traffic data:
+Examples for Seoul traffic data (based on ACTUAL data patterns):
 
-# 서울 지하철 1호선 역 정보는?
+# 지하철 노선의 역 정보
 MATCH (line:Line {{name: "1호선"}})
 MATCH (station:Station)-[:IS_PART_OF]->(line)
-RETURN station.name, station
+RETURN station.name, station.description
 
-# 버스 우회 노선 정보는?
-MATCH (incident:TrafficIncident)-[:AFFECTS]->(route:Route)
-MATCH (route)-[:SERVES]->(service:BusService)
-RETURN incident, route, service
+# 버스 서비스와 노선 정보 (우회, 통제 등)
+MATCH (service:`Bus Service`)-[:SERVES]->(route:Route)
+WHERE service.name IS NOT NULL AND route.name IS NOT NULL
+RETURN service.name, route.name, route.description
 
-# 특정 날짜의 교통 정책은?
-MATCH (policy:TransportationPolicy)-[:PROVIDES]->(data:TrafficData)
-WHERE data.date CONTAINS $date
-RETURN policy, data
+# 교통 사건과 관련 노선
+MATCH (incident:`Traffic Incident`)-[:OCCURS_ON]->(route:Route)
+MATCH (service:`Bus Service`)-[:SERVES]->(route)
+WHERE route.name IS NOT NULL
+RETURN incident.description, incident.type, route.name, service.name
+
+# 교통 정책과 영향 받는 서비스
+MATCH (policy:`Transportation Policy`)-[:AFFECTS]->(service:`Public Transport Service`)
+WHERE policy.name IS NOT NULL
+RETURN policy.name, policy.description, service.name
+
+# 교통 보고서와 데이터
+MATCH (report:`Traffic Report`)-[:PROVIDES]->(data:`Traffic Data`)
+WHERE report.title IS NOT NULL
+RETURN report.title, data.description, data.type
+
+IMPORTANT DATA LIMITATION:
+Most Traffic Incident nodes with route connections do NOT have dates populated.
+If a date-specific query returns empty, try a broader search without date filters.
 
 The question is:
 {question}"""
