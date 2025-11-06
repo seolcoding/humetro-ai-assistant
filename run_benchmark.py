@@ -224,33 +224,34 @@ def run_benchmark_from_config(config_path: Path):
     print("\n" + "-"*70)
     print("Step 3: Setting up Retrieval")
     print("-"*70)
-    retrieval_config = config.get("retrieval", {})
-    k = retrieval_config.get("k", 4)
 
-    # Check what retrieval methods to test
-    naive_store = retrieval_config.get("naive_vector_store")
-    kg_config = retrieval_config.get("kg_config")
-
-    retrieval_methods = []
-
-    if naive_store:
-        print(f"✅ Naive RAG (FAISS)")
-        print(f"   Vector store: {naive_store}")
-        print(f"   k={k} documents")
-        retrieval_methods.append("naive")
+    # Support both list and dict format for backward compatibility
+    retrieval_raw = config.get("retrieval", {})
+    if isinstance(retrieval_raw, list):
+        # New format: list of retrieval configs
+        retrieval_configs = retrieval_raw
     else:
-        logger.warning("⚠️ No naive_vector_store configured - skipping Naive RAG")
+        # Old format: single retrieval dict (convert to list)
+        retrieval_configs = [retrieval_raw] if retrieval_raw else []
 
-    if kg_config:
-        print(f"✅ Knowledge Graph RAG (Neo4j)")
-        print(f"   k={k} documents")
-        retrieval_methods.append("kg")
-    else:
-        logger.info("ℹ️ No kg_config provided - skipping KG RAG")
-
-    if not retrieval_methods:
+    if not retrieval_configs:
         logger.warning("⚠️ No retrieval configured - using LLM knowledge only")
-        retrieval_methods.append("none")
+        retrieval_configs = [{"name": "llm_only", "k": 0}]
+
+    # Show all configured retrievals
+    print(f"✅ Configured {len(retrieval_configs)} retrieval method(s):")
+    for i, ret_cfg in enumerate(retrieval_configs, 1):
+        ret_name = ret_cfg.get("name", f"method_{i}")
+        k = ret_cfg.get("k", 4)
+
+        if ret_cfg.get("naive_vector_store"):
+            print(f"   {i}. {ret_name}: Naive RAG (FAISS, k={k})")
+            print(f"      Vector store: {ret_cfg['naive_vector_store']}")
+        elif ret_cfg.get("kg_config"):
+            kg_mode = ret_cfg["kg_config"].get("mode", "simple")
+            print(f"   {i}. {ret_name}: KG RAG (mode={kg_mode}, k={k})")
+        else:
+            print(f"   {i}. {ret_name}: LLM only (no retrieval)")
 
     # Setup evaluation
     print("\n" + "-"*70)
@@ -304,14 +305,21 @@ def run_benchmark_from_config(config_path: Path):
 
     all_results = {}
 
-    # Run for each retrieval method
-    for method in retrieval_methods:
+    # Run for each retrieval configuration
+    for ret_idx, ret_cfg in enumerate(retrieval_configs, 1):
+        ret_name = ret_cfg.get("name", f"method_{ret_idx}")
+        k = ret_cfg.get("k", 4)
+
         print(f"\n{'='*70}")
-        print(f"Benchmark: {method.upper()} RAG".center(70))
+        print(f"Benchmark {ret_idx}/{len(retrieval_configs)}: {ret_name}".center(70))
         print(f"{'='*70}")
 
         try:
-            if method == "naive":
+            # Check retrieval type
+            naive_store = ret_cfg.get("naive_vector_store")
+            kg_config = ret_cfg.get("kg_config")
+
+            if naive_store:
                 # Naive RAG with FAISS
                 logger.info(f"Running Naive RAG benchmark...")
                 benchmark = GenerationBenchmark(
@@ -321,17 +329,16 @@ def run_benchmark_from_config(config_path: Path):
                     judge_model=judge_model
                 )
 
-                method_output = output_dir / "naive_rag"
+                method_output = output_dir / ret_name
                 method_output.mkdir(parents=True, exist_ok=True)
 
                 results = benchmark.run_benchmark(benchmark_questions, method_output)
-                all_results["naive_rag"] = results
-                logger.info(f"✅ Naive RAG complete: {method_output}")
+                all_results[ret_name] = results
+                logger.info(f"✅ {ret_name} complete: {method_output}")
 
-            elif method == "kg":
+            elif kg_config:
                 # KG RAG with Neo4j
-                kg_conf = kg_config
-                kg_mode = kg_conf.get("mode", "simple")
+                kg_mode = kg_config.get("mode", "simple")
 
                 logger.info(f"Running KG RAG benchmark (mode: {kg_mode})...")
 
@@ -384,20 +391,20 @@ def run_benchmark_from_config(config_path: Path):
                         custom_retriever=kg_retriever  # Pass KG retriever
                     )
 
-                    method_output = output_dir / "kg_rag"
+                    method_output = output_dir / ret_name
                     method_output.mkdir(parents=True, exist_ok=True)
 
                     results = benchmark.run_benchmark(benchmark_questions, method_output)
-                    all_results["kg_rag"] = results
-                    logger.info(f"✅ KG RAG complete: {method_output}")
+                    all_results[ret_name] = results
+                    logger.info(f"✅ {ret_name} complete: {method_output}")
 
                 except Exception as e:
-                    logger.error(f"❌ KG RAG failed: {e}")
+                    logger.error(f"❌ {ret_name} failed: {e}")
                     import traceback
                     logger.error(traceback.format_exc())
-                    all_results["kg_rag"] = {"status": "failed", "error": str(e)}
+                    all_results[ret_name] = {"status": "failed", "error": str(e)}
 
-            elif method == "none":
+            else:
                 # LLM only (no retrieval)
                 logger.info(f"Running LLM-only baseline...")
                 benchmark = GenerationBenchmark(
@@ -407,17 +414,17 @@ def run_benchmark_from_config(config_path: Path):
                     judge_model=judge_model
                 )
 
-                method_output = output_dir / "llm_only"
+                method_output = output_dir / ret_name
                 method_output.mkdir(parents=True, exist_ok=True)
 
                 results = benchmark.run_benchmark(benchmark_questions, method_output)
-                all_results["llm_only"] = results
-                logger.info(f"✅ LLM-only complete: {method_output}")
+                all_results[ret_name] = results
+                logger.info(f"✅ {ret_name} complete: {method_output}")
 
         except Exception as e:
-            logger.error(f"❌ {method.upper()} RAG failed: {e}")
+            logger.error(f"❌ {ret_name} failed: {e}")
             logger.info(f"   Continuing with remaining methods...")
-            all_results[method] = {"status": "failed", "error": str(e)}
+            all_results[ret_name] = {"status": "failed", "error": str(e)}
 
     # Save config alongside results
     config_out = output_dir / "config.json"

@@ -1,0 +1,61 @@
+{
+  "experiment": {
+    "name": "healthcheck_3way",
+    "description": "Quick 3-way comparison healthcheck (2 questions, 2 models)",
+    "tags": ["healthcheck", "3way-comparison"],
+    "output_dir": "data/evaluation/healthcheck"
+  },
+  "questions": {
+    "source": "cached",
+    "cache_key": "ab9011d2e08ae32f",
+    "limit": 2
+  },
+  "models": {
+    "evaluation_targets": [
+      {"id": "gpt-4o-mini", "max_tokens": 8192},
+      {"id": "exaone", "model": "ollama/exaone3.5:7.8b", "max_tokens": 8192}
+    ]
+  },
+  "retrieval": [
+    {
+      "name": "naive_rag",
+      "k": 2,
+      "naive_vector_store": "data/vector_store/seoul_traffic",
+      "embedding_model": "text-embedding-3-large"
+    },
+    {
+      "name": "kg_simple",
+      "k": 2,
+      "kg_config": {
+        "mode": "simple",
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "neo4j_database": "env:NEO4J_DATABASE",
+        "embedding_model": "text-embedding-3-large"
+      }
+    },
+    {
+      "name": "kg_cypher",
+      "k": 2,
+      "kg_config": {
+        "mode": "cypher_generation",
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "neo4j_database": "env:NEO4J_DATABASE",
+        "embedding_model": "text-embedding-3-large",
+        "llm_model": "gpt-4o-mini"
+      }
+    }
+  ],
+  "evaluation": {
+    "judge_model": "gpt-4o-mini",
+    "judge_max_tokens": 8192,
+    "metrics": ["faithfulness", "answer_relevancy", "answer_correctness"]
+  },
+  "execution": {
+    "checkpoint_interval": 5,
+    "save_intermediate_results": true
+  }
+}
