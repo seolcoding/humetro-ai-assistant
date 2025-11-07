@@ -30,7 +30,8 @@ class ParallelBenchmarkRunner:
         judge_model: str,
         max_concurrent: int = 5,
         k_documents: int = 4,
-        retriever: Optional[Any] = None
+        retriever: Optional[Any] = None,
+        request_delay: float = 0.5
     ):
         """
         Args:
@@ -39,12 +40,14 @@ class ParallelBenchmarkRunner:
             max_concurrent: 최대 동시 평가 수
             k_documents: 검색 문서 수
             retriever: Custom retriever (optional)
+            request_delay: API 요청 간 딜레이 (초, default: 0.5)
         """
         self.models = models
         self.judge_model = judge_model
         self.max_concurrent = max_concurrent
         self.k_documents = k_documents
         self.retriever = retriever
+        self.request_delay = request_delay
 
         # Initialize components
         self.answer_generator = AnswerGenerator(
@@ -54,12 +57,13 @@ class ParallelBenchmarkRunner:
 
         self.eval_manager = ParallelEvaluationManager(
             judge_model=judge_model,
-            max_concurrent=max_concurrent
+            max_concurrent=max_concurrent,
+            request_delay=request_delay
         )
 
     def run_benchmark(
         self,
-        questions: List[Dict[str, Any]],
+        questions: Dict[str, List[Dict[str, Any]]],
         output_dir: Path,
         use_fixed_context: bool = True
     ) -> Dict[str, Any]:
@@ -67,7 +71,7 @@ class ParallelBenchmarkRunner:
         병렬 평가 벤치마크 실행
 
         Args:
-            questions: 질문 리스트
+            questions: 질문 딕셔너리 {"single_hop": [...], "multi_hop": [...]}
             output_dir: 결과 저장 디렉토리
             use_fixed_context: 고정 컨텍스트 사용 여부
 
@@ -80,14 +84,19 @@ class ParallelBenchmarkRunner:
         logger.info("병렬 평가 모드 (Parallel Evaluation)")
         logger.info("="*70)
 
+        # Flatten questions from dict to list
+        flat_questions = []
+        for hop_type in ["single_hop", "multi_hop"]:
+            flat_questions.extend(questions.get(hop_type, []))
+
         # Phase 1: 답변 생성
         logger.info("\n📝 Phase 1: 답변 생성 (순차)")
         logger.info(f"   모델: {len(self.models)}개")
-        logger.info(f"   질문: {len(questions)}개")
+        logger.info(f"   질문: {len(flat_questions)}개")
 
         all_datasets = self.answer_generator.generate_all_answers(
             models=self.models,
-            questions=questions,
+            questions=flat_questions,
             use_fixed_context=use_fixed_context
         )
 
@@ -100,9 +109,13 @@ class ParallelBenchmarkRunner:
         logger.info(f"   최대 동시 실행: {self.max_concurrent}개")
         logger.info(f"   Judge 모델: {self.judge_model}")
 
-        evaluation_results = self.eval_manager.evaluate_all_models(
-            model_datasets=all_datasets,
-            show_progress=True
+        # Run async evaluation in sync context
+        import asyncio
+        evaluation_results = asyncio.run(
+            self.eval_manager.evaluate_all_models(
+                model_datasets=all_datasets,
+                show_progress=True
+            )
         )
 
         # Save results
@@ -171,7 +184,8 @@ def create_parallel_benchmark(
     judge_model: str,
     k_documents: int = 4,
     max_concurrent: int = 5,
-    retriever: Optional[Any] = None
+    retriever: Optional[Any] = None,
+    request_delay: float = 0.5
 ) -> ParallelBenchmarkRunner:
     """
     병렬 벤치마크 생성 (팩토리 함수)
@@ -182,6 +196,7 @@ def create_parallel_benchmark(
         k_documents: 검색 문서 수
         max_concurrent: 최대 동시 실행
         retriever: Custom retriever
+        request_delay: API 요청 간 딜레이 (초, default: 0.5)
 
     Returns:
         ParallelBenchmarkRunner 인스턴스
@@ -191,5 +206,6 @@ def create_parallel_benchmark(
         judge_model=judge_model,
         max_concurrent=max_concurrent,
         k_documents=k_documents,
-        retriever=retriever
+        retriever=retriever,
+        request_delay=request_delay
     )

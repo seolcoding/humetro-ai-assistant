@@ -1,0 +1,109 @@
+{
+  "experiment": {
+    "id": null,
+    "name": "quick_parallel_3way_test",
+    "description": "Quick test: 6 questions, 3 models, 3 RAG methods with parallel evaluation",
+    "tags": [
+      "parallel",
+      "quick-test",
+      "3-way-comparison"
+    ],
+    "output_dir": "data/evaluation/quick_parallel_3way"
+  },
+  "questions": {
+    "source": "golden",
+    "limit": 6,
+    "random_sample": false,
+    "comment": "Use first 6 questions for quick validation"
+  },
+  "models": {
+    "evaluation_targets": [
+      {
+        "id": "gpt-4o-mini",
+        "name": "GPT-4o-mini",
+        "provider": "openai",
+        "model": "gpt-4o-mini",
+        "config": {
+          "temperature": 0.3,
+          "max_tokens": 500
+        }
+      },
+      {
+        "id": "exaone",
+        "name": "EXAONE-3.5-7.8B",
+        "provider": "ollama",
+        "model": "ollama/exaone3.5:7.8b",
+        "config": {
+          "api_base": "http://100.95.220.92:11434",
+          "temperature": 0.3,
+          "max_tokens": 500
+        }
+      },
+      {
+        "id": "gemma3-12b",
+        "name": "Gemma3-12B",
+        "provider": "ollama",
+        "model": "ollama/gemma3:12b",
+        "config": {
+          "api_base": "http://100.95.220.92:11434",
+          "temperature": 0.3,
+          "max_tokens": 500
+        }
+      }
+    ],
+    "comment": "3 core models: GPT-4o-mini (baseline) + 2 best Ollama models"
+  },
+  "retrieval": [
+    {
+      "name": "naive_rag",
+      "k": 4,
+      "naive_vector_store": "data/vector_store/seoul_traffic",
+      "comment": "Naive RAG with FAISS"
+    },
+    {
+      "name": "kg_simple",
+      "k": 4,
+      "kg_config": {
+        "mode": "simple",
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "embedding_model": "text-embedding-3-large"
+      },
+      "comment": "KG Simple: Vector + Fixed Cypher"
+    },
+    {
+      "name": "kg_cypher",
+      "k": 4,
+      "kg_config": {
+        "mode": "cypher",
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "embedding_model": "text-embedding-3-large"
+      },
+      "comment": "KG Cypher: Vector + LLM-generated Cypher (FIXED version)"
+    }
+  ],
+  "evaluation": {
+    "judge_model": "gpt-4o-mini",
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "answer_correctness"
+    ],
+    "comment": "Full metrics with GPT-4o-mini as judge"
+  },
+  "execution": {
+    "mode": "parallel",
+    "parallel": {
+      "enabled": true,
+      "max_concurrent": 3,
+      "comment": "Parallel evaluation: 3 models evaluated concurrently per RAG method"
+    },
+    "checkpoint_interval": 3,
+    "verbose": true,
+    "dry_run": false,
+    "comment": "Expected time: ~15-20 min (vs 45-60 min sequential)"
+  }
+}

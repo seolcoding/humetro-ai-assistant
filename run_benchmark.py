@@ -313,6 +313,7 @@ def run_benchmark_from_config(config_path: Path):
     parallel_config = exec_config.get("parallel", {})
     parallel_enabled = parallel_config.get("enabled", False)
     max_concurrent = parallel_config.get("max_concurrent", 5)
+    request_delay = parallel_config.get("request_delay", 0.5)
 
     # Override mode if parallel is explicitly enabled
     if parallel_enabled:
@@ -388,7 +389,8 @@ def run_benchmark_from_config(config_path: Path):
                         judge_model=judge_model,
                         k_documents=k,
                         max_concurrent=max_concurrent,
-                        retriever=None  # Will use default FAISS
+                        retriever=None,  # Will use default FAISS
+                        request_delay=request_delay
                     )
                 else:
                     benchmark = GenerationBenchmark(
@@ -463,7 +465,8 @@ def run_benchmark_from_config(config_path: Path):
                             judge_model=judge_model,
                             k_documents=k,
                             max_concurrent=max_concurrent,
-                            retriever=kg_retriever
+                            retriever=kg_retriever,
+                            request_delay=request_delay
                         )
                     else:
                         benchmark = GenerationBenchmark(
@@ -498,7 +501,8 @@ def run_benchmark_from_config(config_path: Path):
                         judge_model=judge_model,
                         k_documents=0,
                         max_concurrent=max_concurrent,
-                        retriever=None
+                        retriever=None,
+                        request_delay=request_delay
                     )
                 else:
                     benchmark = GenerationBenchmark(

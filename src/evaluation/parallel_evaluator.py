@@ -154,14 +154,16 @@ class ParallelEvaluationManager:
     여러 모델의 답변을 동시에 평가하고 결과를 통합
     """
 
-    def __init__(self, judge_model: str = "gpt-5", max_concurrent: int = 5):
+    def __init__(self, judge_model: str = "gpt-5", max_concurrent: int = 5, request_delay: float = 0.5):
         """
         Args:
             judge_model: 평가 모델
             max_concurrent: 최대 동시 평가 수 (default: 5)
+            request_delay: 요청 간 딜레이 (초, default: 0.5)
         """
         self.evaluator = AsyncEvaluator(judge_model=judge_model)
         self.max_concurrent = max_concurrent
+        self.request_delay = request_delay
         self.semaphore = asyncio.Semaphore(max_concurrent)
 
     async def _evaluate_with_semaphore(
@@ -172,6 +174,10 @@ class ParallelEvaluationManager:
     ) -> Dict[str, Any]:
         """세마포어를 사용한 평가 (동시 실행 제어)"""
         async with self.semaphore:
+            # Add delay before starting evaluation to avoid rate limits
+            if self.request_delay > 0:
+                await asyncio.sleep(self.request_delay)
+
             result = await self.evaluator.evaluate_single_model(
                 model_name=model_name,
                 dataset=dataset,
