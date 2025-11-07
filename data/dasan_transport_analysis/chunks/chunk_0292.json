@@ -1,0 +1,868 @@
+{
+  "chunk_id": 292,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B22776",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울에서 부산가는 기차를 알고 싶습니다.",
+          "intent": "기차문의",
+          "terms": "서울/지역, 부산/지역, 기차/교통수단",
+          "knowledge_base": "부산,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "서울이 출발지점 인가요?",
+          "intent": "기차문의",
+          "terms": "서울/지역, 출발/출발지, 지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "서울역에서 출발합니다.",
+          "terms": "서울/지역, 역/역사, 출발/출발지",
+          "knowledge_base": "역,출발지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 부산인가요? ",
+          "intent": "기차문의",
+          "terms": "부산/지역",
+          "knowledge_base": "부산,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "서울역에서는 ktx와 무궁화호가 있습니다.",
+          "terms": "서울/지역, ktx/기차종류, 무궁화호/기차종류",
+          "knowledge_base": "ktx,기차종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 기차로 안내해드릴까요?",
+          "intent": "기차문의",
+          "terms": "기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "ktx요",
+          "terms": "ktx/기차종류",
+          "knowledge_base": "ktx,기차종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "ktx는 매시간 15분에 출발합니다.",
+          "terms": "ktx/기차종류, 15분/시간",
+          "knowledge_base": "15분,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "혹시 추가로 궁금하신 사항은 없으신가요?",
+          "intent": "기차문의",
+          "knowledge_base": "궁금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리죠?",
+          "intent": "기차시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2시간 소요됩니다.",
+          "terms": "2시간/이동거리",
+          "knowledge_base": "소요,이동거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "요금은 어떻게 되죠?",
+          "intent": "기차요금",
+          "terms": "요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "특실은 4만원, 일반실은 3만원입니다.",
+          "terms": "4만원, 3만원/금액",
+          "knowledge_base": "4만원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "지금예약가능한가요?",
+          "intent": "기차예약"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "앱에서 예약가능합니다.",
+          "terms": "앱/응용프로그램",
+          "knowledge_base": "앱,응용프로그램"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "혹시 임산부인데 할인되나요?",
+          "intent": "기차예약",
+          "terms": "임산부/대상, 할인/금액감면",
+          "knowledge_base": "할인,금액감면"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 가능합니다.",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "어떻게 해야하나요?",
+          "intent": "기차예약"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "코레일 홈페이지에서 임산부신청을 해주시면 됩니다.",
+          "terms": "홈페이지/웹페이지, 임산부/대상",
+          "knowledge_base": "홈페이지,대상"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22777",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "괌명에서 대전가는 기차를 알고 싶습니다.",
+          "intent": "기차문의",
+          "terms": "광명/지역, 대전/지역, 기차/교통수단",
+          "knowledge_base": "대전,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "광명이 출발지점이 이신가요?",
+          "intent": "기차문의",
+          "terms": "광명/지역, 출발/출발지, 지점/위치",
+          "knowledge_base": "출발,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 대전인가요? ",
+          "intent": "기차문의",
+          "terms": "대전/지역",
+          "knowledge_base": "대전,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "광명역에서 ktx가 있습니다.",
+          "terms": "광명/지역, ktx/기차종류",
+          "knowledge_base": "ktx,기차종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "몇시기차로 안내해드릴까요?",
+          "intent": "기차시간",
+          "terms": "기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "오전 8시 기차가 있나요?",
+          "intent": "기차시간",
+          "terms": "오전/떄, 8시/시간",
+          "knowledge_base": "8시,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "오전 8시 15분 기차와 55분 기차가 있습니다.",
+          "terms": "오전/때, 8시 15분/시간, 기차/교통수단",
+          "knowledge_base": "8시15분,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "9시 15분즈음 기차는 없나요?",
+          "intent": "기차시간",
+          "knowledge_base": "궁금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "9시 30분 기차가 있습니다.",
+          "terms": "9시 30분/시간",
+          "knowledge_base": "기차,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리죠?",
+          "intent": "기차시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "1시간 소요됩니다.",
+          "terms": "1시간/시간",
+          "knowledge_base": "소요,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "출퇴근떄문에 정기권을 사고싶은데 가능한가요?",
+          "intent": "기차표구매",
+          "terms": "정기권/승차권",
+          "knowledge_base": "정기권,승차권"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "가능합니다.",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "어디서 구매할 수 있죠?",
+          "intent": "기차표구매",
+          "knowledge_base": "구매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "기차역, 앱, 홈페이지 모두 가능합니다.",
+          "terms": "기차역/역, 앱/응용프로그램, 홈페이지/웹페이지",
+          "knowledge_base": "앱,웹페이지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "몇일 단위로 살 수 있나요?",
+          "intent": "기차표구매",
+          "terms": "일/하루",
+          "knowledge_base": "단위,하루"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "15일, 한달 단위로 가능합니다.",
+          "terms": "15일/기간",
+          "knowledge_base": "한달,기간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "할인을 받을 수 있나요?",
+          "intent": "기차표구매",
+          "knowledge_base": "할인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "0.5% 할인적용됩니다.",
+          "terms": "0.5%/비율",
+          "knowledge_base": "할인,비율"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22778",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "김포에서 제주도가는 비행기를 알고 싶습니다.",
+          "intent": "비행기문의",
+          "terms": "김포/지역, 제주도/지역, 비행기/교통수단",
+          "knowledge_base": "제주도,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "평일, 주말 모두 운영하나요?",
+          "intent": "비행기문의",
+          "terms": "평일/날짜, 주말/날짜",
+          "knowledge_base": "주말,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "김포에서 제주도까지는 평일, 주말 매주 운영합니다.",
+          "terms": "김포/지역, 제주도/지역, 비행기/교통수단, 평일/날짜, 주말/날짜",
+          "knowledge_base": "제주도,날짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "토요일 오전비행기 시간을 알 수 있을까요?",
+          "intent": "비행기문의",
+          "terms": "토요일/요일, 비행기/교통수단",
+          "knowledge_base": "오전,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "6시부터 12시까지 정각에 출발합니다.",
+          "terms": "6시, 12시/시간",
+          "knowledge_base": "12시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "청주에서 제주도 가는 비행기도 알고 싶습니다.",
+          "intent": "비행기문의",
+          "terms": "청주/지역, 제주도/지역, 비행기/교통수단",
+          "knowledge_base": "제주도,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "청주에서도 주말안내해 드릴까요?",
+          "intent": "비행기문의",
+          "terms": "청주/지역, 주말/날짜",
+          "knowledge_base": "주말,날짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "청주에서는 6시부터 1시간 30분 간격으로 출발합니다.",
+          "terms": "청주/지역, 6시/시간, 1시간 30분/시간간격",
+          "knowledge_base": "6시,시간간격"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "청주에서 오전 7시 30분 예약 가능할까요?",
+          "intent": "비행기문의",
+          "terms": "청주/지역, 7시 30분/출발시간",
+          "knowledge_base": "오전,출발시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "앱이나 홈페이지를 이용해주셔야 합니다.",
+          "terms": "앱/응용프로그램, 홈페이지/웹페이지",
+          "knowledge_base": "홈페이지,웹페이지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "여권이 필요한가요?",
+          "intent": "비행기문의",
+          "knowledge_base": "여권"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "국내비행기는 여권이 필요하지 않습니다.",
+          "terms": "비행기/교통수단",
+          "knowledge_base": "비행기,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "비행기 가격은 어떻게 되나요?",
+          "intent": "비행기문의",
+          "terms": "비행기/교통수단",
+          "knowledge_base": "가격,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "편도 6만원입니다.",
+          "terms": "6만원/금액",
+          "knowledge_base": "6만원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "6개월 영아도 비행기 탑승 가능한가요?",
+          "intent": "비행기문의",
+          "terms": "6개월/개월수,비행기/교통수단",
+          "knowledge_base": "영아,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "부모동반으로 가능합니다.",
+          "terms": "부모/보호자",
+          "knowledge_base": "동반,보호자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "6개월 영아의 비행기 가격은 어떻게 되나요?",
+          "intent": "비행기문의",
+          "terms": "6개월/개월수, 비행기/교통수단, 가격/금액",
+          "knowledge_base": "영아,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "무료입니다.",
+          "knowledge_base": "무로"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "몇살부터 비행기 요금을 내나요?",
+          "intent": "비행기문의",
+          "terms": "비행기/교통수단",
+          "knowledge_base": "요금,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "24개월 이후입니다.",
+          "terms": "24개월/개월수",
+          "knowledge_base": "24개월,개월수"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22779",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "한국에서 프랑스가는 비행기를 알고 싶습니다.",
+          "intent": "비행기문의",
+          "terms": "한국/나라,프랑스/외국,  비행기/교통수단",
+          "knowledge_base": "프랑스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "몇월 몇일 비행기를 알고 싶으십니까?",
+          "intent": "비행기문의",
+          "terms": "비행기/교통수단",
+          "knowledge_base": "비행기,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "12월 31일이요",
+          "terms": "12월 31일/출발날짜",
+          "knowledge_base": "12월31일,출발날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "몇시 비행기를 원하십니까?",
+          "intent": "비행기문의",
+          "terms": "비행기/교통수단",
+          "knowledge_base": "비행기,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "오후 15시 비행기가 있나요?",
+          "intent": "비행기문의",
+          "terms": "15시/출발시간, 비행기/교통수단",
+          "knowledge_base": "15시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네. 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "좌석은 있나요?",
+          "intent": "비행기문의",
+          "knowledge_base": "좌석"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "15시 비행기 좌석은 없습니다.",
+          "terms": "15시/출발시간",
+          "knowledge_base": "좌석,출발시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "17시 좌석이 있는데 안내해 드릴까요?",
+          "intent": "비행기문의",
+          "terms": "17시/출발시간",
+          "knowledge_base": "좌석,출발시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "17시 20분 좌석 1자리 있습니다.",
+          "terms": "17시 20분/출반시간",
+          "knowledge_base": "0.7222222222222222,출반시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "1월 1일은 없나요?",
+          "intent": "비행기문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네. 잔여석이 없습니다.",
+          "terms": "잔여석/자리",
+          "knowledge_base": "잔여석,자리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "경유지가 있나요?",
+          "intent": "비행기문의",
+          "knowledge_base": "경유지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "경유지는 없습니다.",
+          "knowledge_base": "경유지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "프랑스 어느 공항에 도착하죠?",
+          "intent": "비행기문의",
+          "terms": "프랑스/외국, 공항/비행장",
+          "knowledge_base": "공항,비행장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "12월 31일 17시 비행기 말씀이십니까?",
+          "intent": "비행기문의",
+          "terms": "12월 31일/출발날짜, 17시/출발시간, 비행기/교통수단",
+          "knowledge_base": "17시,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "샤를드골 국제공항에 도착예정입니다.",
+          "terms": "샤를드골 국제공항/프랑스공항",
+          "knowledge_base": "샤를드골국제공항,프랑스공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "더 문의할 내용이 있습니까?",
+          "intent": "비행기문의",
+          "terms": "문의/상담",
+          "knowledge_base": "문의,상담"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "없습니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22780",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대전에서 논산가는 기차를 알고 싶습니다.",
+          "intent": "기차문의",
+          "terms": " 대전/지역, 논산/지역, 기차/교통수단",
+          "knowledge_base": "논산,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "대전역이 출발지점 이신가요?",
+          "intent": "기차문의",
+          "terms": "대전/지역, 역/역사, 출발/출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아니요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "서대전역이 풀발지점 이신가요?",
+          "intent": "기차문의",
+          "terms": "서대전/지역, 역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "서대전역에서는 무궁화호, 누리로 기차가 있습니다.",
+          "terms": "서대전/지역, 역/역사, 출발/출발지",
+          "knowledge_base": "역,출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "오전 11시에는 몇시 기차가 있나요?",
+          "intent": "기차문의",
+          "terms": "11시/출발시간, 기차/교통수단",
+          "knowledge_base": "11시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네. 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "몇시 기차인가요?",
+          "intent": "기차문의",
+          "terms": "기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "11시 40분 기차입니다.",
+          "terms": "11시 40분/출발시간, 기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그전에는 없나요?",
+          "intent": "기차문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "없습니다.",
+          "terms": "전/과거",
+          "knowledge_base": "전,과거"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "입석 가능한가요?",
+          "intent": "기차문의",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "입석은 기차좌석이 매진일 경우 가능합니다.",
+          "terms": "기차/교톹수단, 매진/품절",
+          "knowledge_base": "기차,품절"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "무궁화호에도 특실이 있나요",
+          "intent": "기차문의",
+          "terms": "무궁화호/기차종류, 기차/교톹수단",
+          "knowledge_base": "특실,교톹수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "무궁화호 기차에는 특실이 있습니다.",
+          "terms": "무궁화호/기차종류, 기차/교톹수단",
+          "knowledge_base": "특실,교톹수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "매점도 있나요?",
+          "intent": "기차문의",
+          "knowledge_base": "매점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 있습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "상시 사용가능한가요?",
+          "intent": "기차문의",
+          "terms": "상시/항상",
+          "knowledge_base": "사용,항상"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네. 가능합니다."
+        }
+      ]
+    }
+  ]
+}

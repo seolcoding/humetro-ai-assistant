@@ -1,0 +1,9 @@
+{
+  "raw_response": "다산콜센터 대중교통 상담 데이터를 분석하여 구조화된 요약을 제공하겠습니다.\n\n```json\n{\n  \"question_types\": [\n    {\n      \"type\": \"버스 노선 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화의 시작)\",\n      \"examples\": [\n        \"구로구에서 영등포가는 버스를 알고싶습니다\",\n        \"광명에서 안양가는 버스를 알고싶습니다\",\n        \"시흥에서 안산가는 버스를 알고싶습니다\"\n      ]\n    },\n    {\n      \"type\": \"소요 시간 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화에서 발생)\",\n      \"examples\": [\n        \"시간은 얼마나 걸립니까?\"\n      ]\n    },\n    {\n      \"type\": \"첫차 시간 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화에서 발생)\",\n      \"examples\": [\n        \"첫차는 언제입니까?\"\n      ]\n    },\n    {\n      \"type\": \"요금 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화에서 발생)\",\n      \"examples\": [\n        \"차비는 얼마입니까?\"\n      ]\n    }\n  ],\n  \"common_issues\": [\n    {\n      \"issue\": \"출발지-도착지 정보의 모호성\",\n      \"frequency\": \"높음\",\n      \"context\": \"고객이 구/시 단위로만 질문하면 상담사가 추가 질문으로 구체적인 지점을 확인해야 함 (예: '구로구 어디에서', '영등포 어디로')\"\n    },\n    {\n      \"issue\": \"고정된 질문 패턴\",\n      \"frequency\": \"매우 높음\",\n      \"context\": \"모든 고객이 동일한 순서로 질문 (노선→시간→첫차→요금), 능동적",
+  "parse_error": true,
+  "error_detail": "Invalid control character at: line 110 column 26 (char 3146)",
+  "chunk_id": "chunk_0008",
+  "processing_time": 74.05743908882141,
+  "processed_at": "2025-11-05T11:22:26.742917",
+  "dialogue_count": 5
+}

@@ -1,0 +1,808 @@
+{
+  "chunk_id": 92,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2930",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": " 아침에 버스가 너무 늦게와서 그러는데 이런것도 컴플레인 걸수 있나요?",
+          "intent": "배차간격",
+          "terms": "버스/대중교통 안내/배차간격/컴플레인/불편신고",
+          "knowledge_base": "컴플레인,불편신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "A",
+          "knowledge_base": "위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "지금 계시는 위치가 어디 십니까?",
+          "intent": "배차간격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "terms": "지명/ 위치/ 불편신고/동탄/신도시",
+          "knowledge_base": "반송동,신도시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "혹시 몇번버스 기다리시는 중이십니까?",
+          "intent": "배차간격",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "버스/대중교통 안내/불편신고",
+          "knowledge_base": "버스,불편신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "terms": "버스/배차간격/대기시간/불편신고/도착시간",
+          "knowledge_base": "배차간격,도착시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "knowledge_base": "30분동안"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "terms": "버스/대중교통 안내/배차간격/도착시간/불편신고/교통상황/도로상황",
+          "knowledge_base": "교통상황,도로상황"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "그러면 배차간격이라도 줄여야되는거 아니예요?",
+          "intent": "배차간격",
+          "terms": "배차간격/버스/대중교통 안내",
+          "knowledge_base": "배차간격,대중교통안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "terms": "배차간격/버스/대중교통 안내",
+          "knowledge_base": "고객,대중교통안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "terms": "버스/배차간격/대기시간/불편신고/도착시간",
+          "knowledge_base": "배차간격,도착시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "terms": "버스노선/대중교통 안내/증차",
+          "knowledge_base": "불편,증차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "아~ 그래요? 10월에 증차된다구요?",
+          "intent": "배차간격"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "terms": "불편신고/배차간격/버스노선/증차",
+          "knowledge_base": "배차간격,증차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "네 고객님. 감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2953",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "네~ 있어요. 여기 이편한세상아파트상가에 불법주정차 카메라좀 달아주세요",
+          "intent": "불법주정차",
+          "terms": "단속/아파트/아파트상가",
+          "knowledge_base": "불법주정자,아파트상가"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 그것도 교통과에 말씀드려야할 내용인데요. 같이 전달해드리도록 하겠습니다.",
+          "knowledge_base": "전달"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 꼭 말씀해 주세요 상가앞이라도 너무 막 차를대서 지나갈수가 없어요.",
+          "terms": "아파트상가/ 도로/",
+          "knowledge_base": "차,도로"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 알겠습니다. 빠른시일내에 처리할수 있도록 전달하겠습니다.",
+          "knowledge_base": "전달"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "알겠습니다.수고하세요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 감사합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "동탄에서 수원가는 버스 노선이 몇 개가 있을까요?",
+          "intent": "버스노선",
+          "terms": "화성/경기도/도로/",
+          "knowledge_base": "수원,도로"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "출발지점이 어디신요?",
+          "intent": "버스노선",
+          "knowledge_base": "출발"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "정확해야 하나요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "출발지점이 어디냐에 따라 다릅니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "수원역이요.",
+          "terms": "지하철/버스/터미널",
+          "knowledge_base": "수원역,터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "도착지는 서동탄어디에서 내리실건가요?",
+          "intent": "버스노선",
+          "terms": "화성/경기도 ",
+          "knowledge_base": "서동탄,경기도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "서동탄역이요",
+          "terms": "화성/ 지하철",
+          "knowledge_base": "1호선,지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "수원역에서 출발하는 150번버스가 있습니다.",
+          "terms": "시내버스/경기도",
+          "knowledge_base": "출발,경기도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "다른버스는 없는가요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 버스아니면 지하철이 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "지하철은 어디에서 내리나요?",
+          "knowledge_base": "지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "버스노선",
+          "terms": "지하철/지하철노선/서동탄행",
+          "knowledge_base": "수원역,서동탄행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "지하철이 더 힘들것 같네요",
+          "knowledge_base": "지하철"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "그럼 버스는 수원역 어디에서 타야 하나요?",
+          "intent": "버스노선",
+          "knowledge_base": "수원역"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2954",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "신풍에서 동작까지 가는 경로를 알려주시겠어요?",
+          "intent": "버스노선",
+          "terms": "신풍/7호선 신풍역/ 동작/4호선 동작역/ 경로/가는 길",
+          "knowledge_base": "동작,가는길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지는 신풍 어디신가요?",
+          "intent": "버스노선",
+          "terms": "출발지/출발위치/ 신풍/7호선 신풍역",
+          "knowledge_base": "신풍,7호선신풍역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "신풍역에서 출발합니다.",
+          "terms": "신풍역/ 7호선 신풍역/ 출발/출발지",
+          "knowledge_base": "출발,출발지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 동작 어디신가요?",
+          "intent": "버스노선",
+          "terms": "도착지/목적지/ 동작/4호선 동작역",
+          "knowledge_base": "동작,4호선동작역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "현충원입니다.",
+          "terms": "현충원/국립현충원",
+          "knowledge_base": "현충원,국립현충원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 잠시만 기다려주세요.  "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "버스와 지하철 중 어떤 것으로 안내드릴까요?",
+          "intent": "버스노선",
+          "terms": "버스/교통수단/ 지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "버스로 안내 부탁드립니다.",
+          "terms": "버스/교통수단/ 안내/알려주다",
+          "knowledge_base": "안내,알려주다"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "654번 버스를 타시고 노들역에서 640번으로 환승하신 후, 국립현충원 정류장에서 내리시면 되십니다.",
+          "terms": "노들역/9호선 노들역/ 환승/갈아타다/ 정류장/버스가 서는 곳/ 국립현충원/ 국립묘지",
+          "knowledge_base": "노들역,국립묘지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "지하철로 갈 경우 경로가 어떻게 되나요?",
+          "intent": "버스노선",
+          "terms": "지하철/교통수단/경로/가는 길",
+          "knowledge_base": "경로,가는길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "7호선 신풍역에서 승차하셔서 4호선 이수역에서 환승하신 후, 동작역에서 하차하시면 되십니다.",
+          "terms": "7호선/지하철 호선/ 신풍역/7호선 신풍역/ 이수역/4호선 이수역/ 환승/갈아타다/ 동작역 /4호선 동작역/ 하차/ 타고 있던 차에서 내리다",
+          "knowledge_base": "신풍역,타고있던차에서내리다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "환승하지 않는 경로는 없나요?",
+          "intent": "버스노선",
+          "terms": "환승/갈아타다/경로/가는 길",
+          "knowledge_base": "경로,가는길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "어떤 경로인가요?",
+          "intent": "버스노선",
+          "terms": "경로/가는 길",
+          "knowledge_base": "경로,가는길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "신풍역, 백악관웨딩문화원 앞 정류장에서 6411번 버스를 타시면 환승없이 국립현충원 정류장에서 하차 가능하십니다.",
+          "terms": "신풍역/ 7호선 신풍역/ 국립현충원/ 국립묘지/ 정류장/버스가 서는 곳/ 하차/ 타고 있던 차에서 내리다",
+          "knowledge_base": "백악관웨딩문화원앞,타고있던차에서내리다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "바로 현충원 앞에서 내리나요?",
+          "intent": "버스노선",
+          "terms": "현충원/국립현충원/ 하차/ 타고 있던 차에서 내리다",
+          "knowledge_base": "하차,타고있던차에서내리다"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "2분정도 도보로 걸으시면 바로 보이실겁니다.",
+          "terms": "도보/걸음",
+          "knowledge_base": "도보,걸음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "terms": "추가 질문 / 추가로 궁금한 점",
+          "knowledge_base": "추가질문,추가로궁금한점"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아니요. 더 없습니다. 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2955",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스를 타다가 불편한 점이 있었는데 여기에 말해도 되나요?",
+          "intent": "불편신고",
+          "terms": "버스/교통수단/ 불편/편하지 않은 것",
+          "knowledge_base": "불편,편하지않은것"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 물론입니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어떤 점이 불편하셨나요?",
+          "intent": "불편신고",
+          "terms": "불편/편하지 않은 것",
+          "knowledge_base": "불편,편하지않은것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "출근시간대에 이용승객이 너무 많아 버스를 못타는 경우가 많습니다.",
+          "terms": "출근시간/일하러 나가는 시간/ 이용승객/사용하는 사람",
+          "knowledge_base": "이용승객,사용하는사람"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "겨우 탑승해도 내리라고 하여 하차한 적이 한 두 번이 아닙니다.",
+          "terms": "탑승/배나 비행기/ 차 등에 오르다/ 하차/타고 있던 차에서 내리다",
+          "knowledge_base": "하차,타고있던차에서내리다"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "불편을 끼쳐드려 죄송합니다.",
+          "terms": "불편/편하지 않은 것",
+          "knowledge_base": "불편,편하지않은것"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 버스를 타시면서 그러한 불편을 느끼셨나요?",
+          "intent": "불편신고",
+          "terms": "버스/교통수단/ 불편/편하지 않은 것",
+          "knowledge_base": "불편,편하지않은것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "10-1번 버스입니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "버스 번호 확인하였습니다.",
+          "terms": "버스/교통수단/ 번호/식별을 위해 붙이는 숫자",
+          "knowledge_base": "번호,식별을위해붙이는숫자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "어떻게 개선되길 원하시나요?",
+          "intent": "불편신고",
+          "terms": "개선/잘못된 것이나 나쁜것을 고침",
+          "knowledge_base": "개선,잘못된것이나나쁜것을고침"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "출근시간대에는 배차시간을 줄여서 버스를 늘려주시면 좋겠습니다. ",
+          "terms": "출근시간/일하러 나가는 시간/ 배차시간/일정한 선로 또는 구간에 차를 나누어 출발시키는 시간",
+          "knowledge_base": "배차시간,일정한선로또는구간에차를나누어출발시키는시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "여러대가 움직이면 승객들이 분산되니 좀 더 수월하게 탈 수 있을 것 같습니다.",
+          "terms": "승객/탈것을 타는 사람/분산/흩어지게 하는 것/수월/하기 쉬움",
+          "knowledge_base": "분산,하기쉬움"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "확인하였습니다. 말씀하신 내용을 국민 신문고에 접수해드리겠습니다.",
+          "terms": "확인/그렇다는 것을 인정하는 것국민 신문고/민원을 작성/답변 받는 곳",
+          "knowledge_base": "국민신문고,답변받는곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "추가로 궁금하신 점이나 다른 불편하신 점이 있으신가요?",
+          "intent": "불편신고",
+          "terms": "추가/나중에 더 보탬불편/편하지 않은 것",
+          "knowledge_base": "불편,편하지않은것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "민원 접수 후 답변까지 얼마나 걸리나요?",
+          "intent": "민원답변기간",
+          "terms": "민원/주민이 행정 기관에 원하는 바를 요구하는 것접수/신청하는 것을 문서나 말로 받음답변/물음에 대하여 대답함",
+          "knowledge_base": "접수,물음에대하여대답함"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "일반민원, 진정민원, 고충민원, 일반질의는 접수일 포함하여 7일이내이며, 제도개선건의, 법령질의는 접수일 포함하여 14일 이내로 답변이 됩니다.",
+          "terms": "일반민원/일반적인 민원/ 진정민원/범죄나 위반에 대한 민원/고충민원/행정기관의 위법적행위/ 부당하거나 소극적인 처분 등의 민원/ 일반질의/일반적인 질의/ 제도개선건의/제도 개선에 대한 의견 제시/ 법령질의/법령에 대한 질의",
+          "knowledge_base": "진정민원,법령에대한질의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "주말도 포함이 되나요?",
+          "intent": "민원답변기간",
+          "terms": "주말/ 토요일/ 일요일/ 포함/함꼐 들어있음",
+          "knowledge_base": "포함,함꼐들어있음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "토요일과 공휴일은 제외됩니다.",
+          "terms": "토요일/일주일 중 6번째 날/ 공휴일/국가가 지정한 쉬는 날",
+          "knowledge_base": "공휴일,국가가지정한쉬는날"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "질문에 대한 답이 만족스럽지 않은 경우 추가질문이 가능한가요?",
+          "intent": "민원불만족",
+          "terms": "질문/궁금한 점/ 추가 질문/추가로 궁금한 점",
+          "knowledge_base": "만족,추가로궁금한점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "같은 민원에 1회에 한하여 추가 질문이 가능합니다.",
+          "terms": "민원/주민이 행정 기관에 원하는 바를 요구하는 것추가 질문/추가로 궁금한 점",
+          "knowledge_base": "추가질문,추가로궁금한점"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2956",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시를 타려고 하는데 승차거부를 당했습니다.",
+          "intent": "불편신고",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "승차거부를 당하셨다니 속이 많이 상하셨겠네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어떻게 해드리길 원하시나요?",
+          "intent": "불편신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "어떻게 할 수 있나요?",
+          "intent": "불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "승차거부를 한 택시에게 패널티를 부과할 수 있습니다.",
+          "terms": "택시/교통수단/ 패널티/처벌",
+          "knowledge_base": "패널티,처벌"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "어떤 패널티가 있나요?",
+          "intent": "패널티 질문",
+          "terms": "패널티/처벌",
+          "knowledge_base": "패널티,처벌"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "삼진아웃제를 실시하고 있으며, 일반택시인지 개인택시인지에 따라 패널티가 다릅니다.",
+          "terms": "삼진아웃제/세 번 어기면 패널티를 받는 제도",
+          "knowledge_base": "일반택시,세번어기면패널티를받는제도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "일반택시의 패널티는 어떻게 되나요?",
+          "intent": "패널티 질문",
+          "terms": "일반택시/택시회사에서 운영하는 택시",
+          "knowledge_base": "패널티,택시회사에서운영하는택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "일반택시의 패널티의 경우, 1차는 과태료 20만원과 60일 운행정지, 2차는 과태료 40만원과 30일 자격정지와 감차명령, 3차는 과태료 60만원과 면허취소입니다.",
+          "terms": "과태료/벌금으로 내는 돈",
+          "knowledge_base": "패널티,벌금으로내는돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "개인택시의 패널티는 어떻게 되나요?",
+          "intent": "패널티 질문",
+          "terms": "개인택시/개인적으로 운영하는 택시",
+          "knowledge_base": "패널티,개인적으로운영하는택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "개인택시의 패널티는 1차 과태료 20만원과 90일 운행정지, 2차로 과태료 40만원과 자격정지 180일, 3차 과태료 60만원과 면허취소입니다.",
+          "terms": "개인택시/개인적으로 운영하는 택시/ 패널티/처벌/ 과태료/벌금으로 내는 돈",
+          "knowledge_base": "패널티,벌금으로내는돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "그렇군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "승차거부 택시를 신고하고 싶은데요",
+          "intent": "신고",
+          "terms": "택시/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "신고자의 인적사항과 차량번호, 일시, 탑승장소, 대략적인 상황설명과 같은 증거자료가 필요합니다.",
+          "terms": "신고자/신고한 사람/ 인적사랑/사람에 대한 정보/차량번호/차의 고유번호",
+          "knowledge_base": "인적사항,차의고유번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "증거자료가 없을 경우 신고가 불가능한가요?",
+          "intent": "신고",
+          "terms": "증거자료/증거가 되는 자료",
+          "knowledge_base": "증거자료,증거가되는자료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "안타깝지만 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그 외에 증거자료로 쓸 수 있는 것은 무엇이 있나요?",
+          "intent": "신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "동영상으로 그 상황을 촬영하시거나, 녹음을 하시면 좋을 것 같습니다.",
+          "terms": "촬영/영상+음성으로 저장녹음/음성만 저장",
+          "knowledge_base": "녹음,음성만저장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "도움이 되었습니다. 다음에 그 방법을 사용해보겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 감사합니다. "
+        }
+      ]
+    }
+  ]
+}

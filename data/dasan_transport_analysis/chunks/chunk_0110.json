@@ -1,0 +1,835 @@
+{
+  "chunk_id": 110,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3077",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대전역에서 학하동을 갈려고요",
+          "intent": "버스 노선",
+          "terms": "대전광역시/유성구청/유성구",
+          "knowledge_base": "학하동,유성구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "대전역에서 출발하시나요?",
+          "intent": "버스 노선",
+          "terms": "출발지/대전광역시",
+          "knowledge_base": "대전역,대전광역시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "대전역에서 출발합니다. ",
+          "terms": "대전광역시/대전역/중구",
+          "knowledge_base": "대전역,중구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "학하동 어디를 가시나요?",
+          "intent": "버스 노선",
+          "terms": "유성구/유성구청/공공기관",
+          "knowledge_base": "학하동,공공기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "한밭 대학교를 갈려고합니다. ",
+          "terms": "대전광역시/한밭대학교/학하동",
+          "knowledge_base": "한밭대학교,학하동"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "잠시만 기다려주세요 간선버스201번과 지하철노선이 있습니다. ",
+          "terms": "좌석버스/교통수단/ 시내버스/교통수단",
+          "knowledge_base": "간선버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "다른 버스는 없나요?",
+          "intent": "버스 노선",
+          "knowledge_base": "다른버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 201번 한노선만 운행합니다 ",
+          "terms": "유성구 순환버스",
+          "knowledge_base": "운행,유성구순환버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지하철은 몇번을 타야하나요?",
+          "intent": "버스 노선",
+          "terms": "지하철/ 현충원역/대전지하철",
+          "knowledge_base": "지하펄,대전지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "1호선 운행합니다.",
+          "knowledge_base": "운행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "어느역에서 내려야 하나요?",
+          "intent": "버스 요금",
+          "terms": "대전지하철노선/현충원역/대전현충원",
+          "knowledge_base": "역,대전현충원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "현충원역에서 하차하시면 됩니다 ",
+          "terms": "대전지하철노선/현충원역/대전현충원",
+          "knowledge_base": "하차,대전현충원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "몇번역 출구인가요?",
+          "intent": "버스 요금",
+          "knowledge_base": "출구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "현충원역 1번 출구입니다.",
+          "terms": "현중원역/현충원/대전광역시/공공기관",
+          "knowledge_base": "하차,공공기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "한밭대는 바로있나요?",
+          "intent": "버스 요금",
+          "knowledge_base": "한밭대"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "102번 마을 버스를 타셔야 합니다. ",
+          "terms": "유성구/한밭대/대전교육청",
+          "knowledge_base": "마을버스,대전교육청"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "정류장은 어디인가요?",
+          "intent": "버스 정류장",
+          "knowledge_base": "정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "삼성화재연수원 정류장에서 내리시면 됩니다. ",
+          "terms": "유성구/삼성화재연수정/ 한밭대학교",
+          "knowledge_base": "정류장,한밭대학교"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "버스요금은 얼마인가요?",
+          "intent": "버스 정류장",
+          "terms": "서울특별자치시 교통카드/ 티머니/현금/카드결제",
+          "knowledge_base": "버스요금,카드결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "1500원입니다. ",
+          "knowledge_base": "원"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3078",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울역에서 디지털미디어시티역에 갈려고합니다. ",
+          "intent": "버스노선",
+          "terms": "서울특별자치시/공공기관",
+          "knowledge_base": "디지털미디어시티,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "현재 서울역 어디에 계신가요?",
+          "intent": "버스노선",
+          "terms": "서울역/4호선/2호선",
+          "knowledge_base": "서울역,2호선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "서울역 경부선쪽에 있습니다. ",
+          "terms": "서울역/역사/경부선노선/서울지하철",
+          "knowledge_base": "경부선,서울지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "버스와 지하철 2가지 방법이 있습니다. ",
+          "terms": "서울버스노선/지하철노선/",
+          "knowledge_base": "지하철,지하철노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "최대한빠르것으로 알려주세요 "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "서울역에서 공항철도를 이용하시면 됩니다. ",
+          "knowledge_base": "공항철도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어느방향을 타면되나요?",
+          "intent": "버스노선",
+          "knowledge_base": "방향"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "공덕역방면을 탑승하시면 됩니다. ",
+          "terms": "서울역/4호선/2호선/공덕역",
+          "knowledge_base": "공덕역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "디지털미디어시티역에서 하차하면되나요?",
+          "intent": "버스정류장",
+          "knowledge_base": "디지털미티어시티역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "디지털미디어시티 6호선 방면으로 나오시면됩니다. ",
+          "knowledge_base": "방명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "도보로 얼마나 걸리나요?",
+          "intent": "버스노선",
+          "knowledge_base": "도보"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "6분정도 걸립니다. ",
+          "knowledge_base": "분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "지금 10시 30분인데 빨리도착하는 지하철은 몇분인가요?",
+          "intent": "버스노선",
+          "terms": "시내버스/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "10시 40분 도착하는 지하철이 있습니다. ",
+          "terms": "시내버스/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "무료환승시간을 알수 있을까요?",
+          "intent": "버스노선",
+          "knowledge_base": "무료환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "21:00~07:00 1시간이내 무료 환승됩니다. ",
+          "terms": "서울특별시/교통카드/지하철노선",
+          "knowledge_base": "무료환승,지하철노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "무료환승은 몇회까지 가능한가요?",
+          "intent": "버스노선",
+          "terms": "서울특별시 교통카드/ 티머니/현금/카드결제",
+          "knowledge_base": "가능,카드결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "최대 4회까지 가능합니다. ",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "카드잔액이 얼마있어야 환승가능한가요?",
+          "intent": "버스노선",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "카드잔액 250원으로 10KM까지 이용가능합니다 ",
+          "terms": "서울특별시 교통카드/ 티머니/현금/카드결제",
+          "knowledge_base": "이용가능,카드결제"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3079",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울역에서 경북궁을 갈려고합니다. ",
+          "intent": "버스노선",
+          "knowledge_base": "서울역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 서울역이신가요?",
+          "intent": "버스노선",
+          "knowledge_base": "서울역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 서울역 4호선입니다. ",
+          "knowledge_base": "서울역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "지하철로 안내해드릴까요?",
+          "intent": "버스노선",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 빨리가는것으로 알려주세요 "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "회현역방향 탑승후 충무로역에서 하차후승차 안국영에서 하차하시면됩니다. ",
+          "terms": "회현역/경북궁/경북궁 주차장",
+          "knowledge_base": "회현역,경북궁주차장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "충무로역은 몇호선인가요?",
+          "intent": "버스노선",
+          "terms": "충무로역/서울3호선/동대입구역",
+          "knowledge_base": "충무로역,동대입구역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "3호선입니다",
+          "terms": "충무로/을지로3가/종로3가",
+          "knowledge_base": "3호선,종로3가"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "대화행으로 타면 되나요?",
+          "intent": "버스노선",
+          "terms": "충무로/을지로3가/종로3가",
+          "knowledge_base": "대화행,종로3가"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 맞습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "도보로 얼마나 걸리나요?",
+          "intent": "버스노선",
+          "knowledge_base": "도보"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "6분정도 걸립니다. ",
+          "knowledge_base": "정도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "혹시 택시를 타면 시간과 요금은 얼마나 걸릴까요?",
+          "intent": "버스요금",
+          "knowledge_base": "요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "기본요금 3800원입니다. ",
+          "terms": "서울특별자치시/서울 택시요금",
+          "knowledge_base": "기본요금,서울택시요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "모범 택시는 얼마인가요?",
+          "intent": "버스요금",
+          "knowledge_base": "모범택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "모범택시는 6,500원입니다",
+          "terms": "서울택시/모범택시/서울시",
+          "knowledge_base": "원,서울시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "몇키로까지가 기본요금 인가요?",
+          "intent": "버스요금",
+          "terms": "심야할증",
+          "knowledge_base": "기본요금,심야할증"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "2km까지 기본요금입니다. ",
+          "terms": "서울시/택시요금",
+          "knowledge_base": "기본요금,택시요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "혹시 할증요금 알수있을까요?",
+          "intent": "버스요금",
+          "terms": "서울특별자치시/서울 택시요금",
+          "knowledge_base": "할증요금,서울택시요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "심야할증요금 4600원입니다. ",
+          "terms": "서울택시할증요금",
+          "knowledge_base": "심야할증요금,서울택시할증요금"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3080",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오송역에서 식약처가는 방법은?",
+          "intent": "버스노선",
+          "terms": "보건의료행장타운/오송/청주시/흥덕구",
+          "knowledge_base": "식약처,흥덕구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "현재 위치가 어디신가요?",
+          "intent": "버스노선",
+          "knowledge_base": "위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "오송역BRT버스 대기하는곳입니다. ",
+          "terms": "중앙행정기관/식품안전처",
+          "knowledge_base": "오송역,식품안전처"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "일반버스와 BRT버스가 있습니다. ",
+          "terms": "세종광역시/오송역/식약처/상당구",
+          "knowledge_base": "일반버스,상당구"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "일반버스로 안내부탁드립니다. ",
+          "intent": "버스노선",
+          "terms": "청주시 버스노선/오송역",
+          "knowledge_base": "안내,오송역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "511번과 500번 버스가 있습니다. ",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "2가지 버스 모두 식약처 정문에 하차하나요?",
+          "intent": "버스노선",
+          "terms": "오송버스노선/세종광역시/",
+          "knowledge_base": "정문,세종광역시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 식약처 정문이 종점입니다. ",
+          "terms": "충북/청주시/오송생명로",
+          "knowledge_base": "정문,오송생명로"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "버스요금은 얼마인가요?",
+          "intent": "버스요금",
+          "terms": "보건의료행장타운/오송",
+          "knowledge_base": "버스요금,오송"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "1,000원입니다. ",
+          "knowledge_base": "원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "카드결제와 현금결제 동일한가요?",
+          "intent": "버스요금",
+          "terms": "교통수단/ 시내버스/교통수단",
+          "knowledge_base": "현금결제,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "현금결제는 1000원이고 카드결제는 100원 할인됩니다. ",
+          "terms": "교통수단/ 시내버스/교통수단",
+          "knowledge_base": "카드결제,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "혹시 무료셔틀버스는 없나요?",
+          "intent": "버스노선",
+          "knowledge_base": "무료셔틀"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "교육이나 공적인 업무가 있으실때는 이용가능합니다. ",
+          "terms": "보건의료행장타운/오송/청주시/흥덕구",
+          "knowledge_base": "업무,흥덕구"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "배차시간은 어떻게 되나요?",
+          "intent": "버스노선",
+          "terms": "교통수단/ 시내버스/교통수단",
+          "knowledge_base": "배차시간,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "평일에는 20분마다 있습니다. ",
+          "knowledge_base": "평일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "혹시 출근시간에는 배차시간이 어떻게 되나요?",
+          "intent": "버스노선",
+          "terms": "교통수단/ 시내버스/교통수단",
+          "knowledge_base": "배차시간,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "출근시간에는 10분마다 있습니다. ",
+          "knowledge_base": "출근시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "첫차는 몇시에 있나요?",
+          "intent": "버스노선",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "오전 8시 30분에 있습니다 .",
+          "knowledge_base": "오전"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3081",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대전역에서 동물원가는 방법 좀 알려주세요 ",
+          "intent": "버스노선",
+          "terms": "대전광역시/동물원/사정공원로",
+          "knowledge_base": "동물원,사정공원로"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "대전역 어디에 계신가요?",
+          "intent": "버스노선",
+          "terms": "대전역/중구/중구청",
+          "knowledge_base": "대전역,중구청"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "대한통운빌딩 앞에 있습니다. ",
+          "terms": "대전역/대한동운빌딩/인동",
+          "knowledge_base": "대한통운빌딩,인동"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "일반버스와 택시가 있습니다. ",
+          "terms": "시외버스/시내버스/ 요금/돈",
+          "knowledge_base": "택시,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "일반버스로 안내해 주세요 ",
+          "knowledge_base": "일반버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "813번 버스가 있습니다. ",
+          "terms": "대전시 간선버스/ 대전급행버스/대전광역시 버스노선",
+          "knowledge_base": "버스,대전광역시버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "동물원에서 내리나요?",
+          "intent": "버스노선",
+          "knowledge_base": "동물원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 동물원이 종점입니다. ",
+          "knowledge_base": "종점"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "요금은 얼마인가요?",
+          "intent": "버스요금",
+          "terms": "교통수단/ 시내버스/교통수단",
+          "knowledge_base": "요금,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "700원입니다. ",
+          "knowledge_base": "원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "동물원에서 유성파출소 가는 버스가 있나요?",
+          "intent": "버스노선",
+          "terms": "유성구청/유성구/유성온천역",
+          "knowledge_base": "유성파출소,유성온천역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "715번을 타신후 750번으로 갈아타시면 됩니다 "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리나요?",
+          "intent": "버스노선",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "약 1시간~1시간 20분정도 걸립니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "750번은 어디서 갈아타나요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "둥지아파트에서 내리신후 750번으로 갈아타시면 됩니다. ",
+          "terms": "둥지아파트/궁동/유성파출소/공공기관",
+          "knowledge_base": "둥지아파트,공공기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "환승은 가능한가요?",
+          "intent": "버스요금",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 2번까지 가능합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "무료환승은  몇시간까지 인가요?",
+          "intent": "버스요금",
+          "knowledge_base": "무료환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "60분내로 가능합니다 "
+        }
+      ]
+    }
+  ]
+}

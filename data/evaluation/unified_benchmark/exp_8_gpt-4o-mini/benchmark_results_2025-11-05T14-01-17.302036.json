@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-05T14:01:17.302036",
+    "total_questions": 6,
+    "single_hop_count": 0,
+    "multi_hop_count": 0,
+    "models": [
+      "GPT-4o-mini"
+    ],
+    "k_documents": 4,
+    "use_fixed_context": true,
+    "judge_model": "gpt-5"
+  },
+  "single_hop": {},
+  "multi_hop": {},
+  "comparison": {
+    "by_complexity": {},
+    "by_model": {},
+    "best_performers": {}
+  }
+}

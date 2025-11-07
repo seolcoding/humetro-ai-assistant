@@ -1,0 +1,819 @@
+{
+  "chunk_id": 278,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B22501",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "음식도 들고 타면 안된다고 하던데 왜그런가요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "일회용에 담긴 음식이나, 음료는 반입금지로 되어 있습니다.",
+          "knowledge_base": "컵"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아, 그럼 컵떡볶이 이런거는 안된다거 맞죠?",
+          "intent": "버스 탑승 수칙",
+          "terms": "컵떡볶이/음식",
+          "knowledge_base": "컵떡볶이,음식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 안됩니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "언제부터 실행되었는지 알 수 있나요?",
+          "intent": "버스 탑승 수칙",
+          "knowledge_base": "실행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "2018년부터 실행하고 있습니다.",
+          "terms": "2018년/년도",
+          "knowledge_base": "실행,년도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "제가 그럼 테이크아웃 커피들을 캐리어에 담아서 들고 타도 안되는건가요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "테이크아웃/포장, 커피/음료",
+          "knowledge_base": "커피,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "안됩니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "차 내에서 뭘 먹는것도 안되는거 맞죠?",
+          "intent": "버스 탑승 수칙",
+          "terms": "차/교통수단",
+          "knowledge_base": "차,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "불가능합니다.",
+          "knowledge_base": "불가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "캔 음료수도 안되는거에요?",
+          "intent": "버스 탑승 수칙",
+          "terms": "음료수/음료",
+          "knowledge_base": "음료수,음료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "따지 않았을 경우에 반입 가능하십니다.",
+          "knowledge_base": "가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "아 딴 제품은 들고 못타는거죠?",
+          "intent": "버스 탑승 수칙"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "왜 그런거죠?",
+          "intent": "버스 탑승 수칙",
+          "terms": "왜/이유",
+          "knowledge_base": "왜,이유"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "쏟아질 위험이 있어 그럽니다.",
+          "knowledge_base": "위험"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아, 그렇구나. 잘 배웠습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "더 궁금하신 사항 있을까요?",
+          "intent": "버스 탑승 수칙"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아니요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22502",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "미세먼지가 많을때는 요금이 무료 맞을까요?",
+          "intent": "미세먼지 저감조치",
+          "terms": "서울시/서울특별시/지역, ",
+          "knowledge_base": "미세먼지,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "서울시 대중교통 요금 면제 정책이 마련되어 있습니다.",
+          "terms": "서울시/서울특별시/지역, 요금/돈",
+          "knowledge_base": "대중교통,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "그날 하루종일 적용이 되는거에요?",
+          "intent": "미세먼지 저감조치",
+          "knowledge_base": "적용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "서울형 비상저감조치가 발령되는 날의 익일 출퇴근시간대에 면제 되시겠습니다,.",
+          "terms": "비상저감조치/서울시정책, 출퇴근시간대/시간",
+          "knowledge_base": "발령,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "출근시간이 언제인지 알 수 있을까요?",
+          "intent": "미세먼지 저감조치",
+          "terms": "출근시간/시간",
+          "knowledge_base": "언제,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "첫차부터 9시까지 입니다~",
+          "terms": "09시/시간",
+          "knowledge_base": "첫차,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "퇴근은 어제인지 알 수 있을까요?",
+          "intent": "미세먼지 저감조치",
+          "terms": "퇴근/퇴근시간대",
+          "knowledge_base": "퇴근,퇴근시간대"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "퇴근시간대는 18시부터  21시까지 입니다. ",
+          "terms": "18시/시간, 21시/시간",
+          "knowledge_base": "18시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "직장인만 가능한건 가요?",
+          "intent": "미세먼지 저감조치",
+          "terms": "직장인/사람",
+          "knowledge_base": "직장인,사람"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아니요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "지하철도 가능한건가요?",
+          "intent": "미세먼지 저감조치",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "가능,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "미세먼지가 나쁜날인지 좋은날인지는 제가 판단하나요?",
+          "intent": "미세먼지 저감조치",
+          "knowledge_base": "나쁜날"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "그렇지 않습니다~ 비상저감조치 발령시 적용됩니다.",
+          "terms": "비상저감조치/서울시정책",
+          "knowledge_base": "발령시,서울시정책"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "조치를 발령한지 어떻게 알수 있는데요?",
+          "intent": "미세먼지 저감조치",
+          "knowledge_base": "발령"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "당일초미세먼지가 평균 50㎍/㎥ 초과되면 발령되시겠습니다~",
+          "knowledge_base": "평균"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "제가 그럼 미세먼지 앱을 확인해야만 알 수 있는건가요?",
+          "intent": "미세먼지 저감조치",
+          "terms": "앱/어플/프로그램",
+          "knowledge_base": "앱,프로그램"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "재난문자로 알려드립니다~",
+          "terms": "재난문자/문자/알림",
+          "knowledge_base": "재난문자,알림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 알겠습니다~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22503",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "김포공항에서 이대 목동병원 대중교통 이용해서 갈 수 있는 최적의 추천길을 알려주세요",
+          "intent": "교통 정보 안내",
+          "terms": "김포공항/공항/장소, 이대/대학교/장소, 목동병원/병원/장소",
+          "knowledge_base": "이대,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤걸로 안내 도와드릴까요?",
+          "intent": "교통 정보 안내",
+          "knowledge_base": "안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "최단시간으로 알려주시겠어요?",
+          "terms": "최단시간/최소시간",
+          "knowledge_base": "최단시간,최소시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "5호선 탑승후 버스로 환승하시면 되겠습니다",
+          "terms": "5호선/지하철, 버스/대중교통",
+          "knowledge_base": "탑스후,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "버스는 몇번인가여?",
+          "intent": "교통 정보 안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "몇번,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "603번 버스로 환승하시면 되겠습니다~",
+          "terms": "603번/버스번호",
+          "knowledge_base": "버스,버스번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "이대병원앞에서 바로 내리는거에요?",
+          "intent": "교통 정보 안내",
+          "terms": "이대병원/병원/장소, 앞/위치",
+          "knowledge_base": "바로,위치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 약 70m 앞에서 내리시면 됩니다.",
+          "terms": "70M/거리",
+          "knowledge_base": "앞,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "내려서 어디로 걸어야하는데요?",
+          "intent": "교통 정보 안내",
+          "terms": "어느쪽/방향",
+          "knowledge_base": "어느쪽,방향"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "버스 진행방향으로 걸으시면 됩시겠습니다.",
+          "terms": "진행방향/방향",
+          "knowledge_base": "진행방향,방향"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리는데요?",
+          "intent": "교통 정보 안내",
+          "knowledge_base": "얼마나"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "40분 소요되시겠습니다~",
+          "terms": "40분/시간",
+          "knowledge_base": "소요,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "하차역은 이대병원이 맞나요?",
+          "intent": "교통 정보 안내",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "하차,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "목동역 입니다~",
+          "terms": "목동역/지하철역",
+          "knowledge_base": "목동역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "몇번 출구라고 하셧죠?",
+          "intent": "교통 정보 안내",
+          "terms": "몇번출구/출구",
+          "knowledge_base": "몇번출구,출구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "5번출구 되시겠습니다~",
+          "terms": "5번출구/출구",
+          "knowledge_base": "5번출구,출구"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "하차역은 어디인가요?",
+          "intent": "교통 정보 안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "하차역,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "이대병원역 앞입니다~",
+          "knowledge_base": "목동이대병원역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "환승안하고 한번에 가는법은 없나요?",
+          "intent": "교통 정보 안내",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "30분이상 걸으셔야 합니다~",
+          "terms": "30분/시간",
+          "knowledge_base": "30분,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22504",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요. 덕수궁하고 창경궁이 가까운지 궁금해서요~",
+          "intent": "교통 정보 문의",
+          "terms": "덕수궁/장소, 창경궁/장소",
+          "knowledge_base": "창경궁,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 교통 수단 이용하시는지 여쭤도 될까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "걸어서는 갈 수 없는 거리인가요?",
+          "intent": "교통 정보 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "약51분 소요되시겠습니다~",
+          "terms": "51분/시간",
+          "knowledge_base": "51분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "엄청 멀군요~"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "뭐 타고 가야하나요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "뭐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "버스,지하철 되겠습니다~",
+          "terms": "버스/대중교통, 지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "빨리 가는 것으로 알려주실 수  있으신가요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "빨리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "네, 걸리는 시간이 비슷한데 환승없는 경로로 알려드려도 될까요?",
+          "intent": "교통 정보 문의",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 좋습니다~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네, 172번 버스 타시면 되시겠습니다~",
+          "terms": "172번/버스번호",
+          "knowledge_base": "버스,버스번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "네, 덕수궁역 맞으실까요?",
+          "intent": "교통 정보 문의",
+          "terms": "덕수궁역/역",
+          "knowledge_base": "덕수궁역,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "시청광장 정류장에서 승차하시면 되시겠습니다~ ",
+          "terms": "시청광장/장소",
+          "knowledge_base": "정류장,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "덕수궁 근처인거죠?",
+          "intent": "교통 정보 문의",
+          "terms": "덕수궁/장소, 창경궁/장소",
+          "knowledge_base": "근처,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 도보로 3분 되시겠습니다~",
+          "terms": "3분/시간",
+          "knowledge_base": "3분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "네, 하차역은요?",
+          "intent": "교통 정보 문의",
+          "terms": "하차역/역",
+          "knowledge_base": "하차역,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "창경궁 되시겠습니다~",
+          "terms": "창경궁/장소",
+          "knowledge_base": "창경궁,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "버스타면 얼마나 걸리는지 알 수 있을까요?",
+          "intent": "교통 정보 문의",
+          "terms": "버스/대중교통",
+          "knowledge_base": "얼마나,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "20분 소요 되십니다~",
+          "terms": "20분/시간",
+          "knowledge_base": "소요,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네,감사합니다.~"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22505",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요. 지하철 기다리다가 시를 한편 읽게 되었어요~",
+          "intent": "지하철관련 문의",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 도와드릴까요? ",
+          "intent": "지하철관련 문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "그 시를 다시 보고 싶은데 어디였나 생각이 안나서 혹시 이런것도 알려주시나 궁금해서요~'",
+          "intent": "지하철관련 문의",
+          "knowledge_base": "다시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "혹시 인터넷에서 찾아 볼 수 있을까요?",
+          "intent": "지하철관련 문의",
+          "knowledge_base": "인터넷"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "서울문화포털 홈페이지에서 보실 수 있습니다~",
+          "terms": "홈페이지/사이트/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "문화포털 홈페이지에서 어디로 들어가야 하는지 알 수 있을까요?",
+          "intent": "지하철관련 문의",
+          "terms": "홈페이지/사이트/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "문화공간 하단에 지하철역 시 작품칸에서 보시면 됩니다. ",
+          "knowledge_base": "하단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "여기서 다른 작품도 볼 수가 있는거죠?",
+          "intent": "지하철관련 문의",
+          "terms": "작품/예술, 제작품",
+          "knowledge_base": "작품,제작품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "제가 봤던 시도 찾을 수 있는건가요?",
+          "intent": "지하철관련 문의",
+          "knowledge_base": "시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "한번 봐야할것 같습니다~"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "없어졌을 수도 있는건가요?",
+          "intent": "지하철관련 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "옜날 작품이면 그럴 수 있습니다~",
+          "terms": "작품/예술, 제작품",
+          "knowledge_base": "작품,제작품"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "속상하네요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "근데 이건 따로 공모를 하는건 맞나요?",
+          "intent": "지하철관련 문의",
+          "knowledge_base": "공모"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "매년 공모를 하는건가요?",
+          "intent": "지하철관련 문의",
+          "knowledge_base": "매년"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "매년 실시합니다,",
+          "knowledge_base": "실시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "저도 할 수 있는건가요?",
+          "intent": "지하철관련 문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "누구나 가능하십니다~",
+          "knowledge_base": "가능"
+        }
+      ]
+    }
+  ]
+}

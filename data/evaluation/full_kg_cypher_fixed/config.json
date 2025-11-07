@@ -1,0 +1,60 @@
+{
+  "experiment": {
+    "name": "full_kg_cypher_fixed",
+    "description": "Full benchmark: FIXED KG Cypher Generation with all models and questions",
+    "tags": [
+      "kg-cypher-fixed",
+      "full-test",
+      "all-models",
+      "golden-dataset-50"
+    ],
+    "output_dir": "data/evaluation"
+  },
+  "questions": {
+    "source": "golden",
+    "limit": 50,
+    "random_sample": false,
+    "description": "Full golden dataset: 50 questions (25 single-hop + 25 multi-hop)"
+  },
+  "models": {
+    "evaluation_targets": "all",
+    "description": "All 5 models: GPT-4o-mini, EXAONE-3.5-7.8B, Qwen3-8B, Gemma3-12B, GPT-OSS-20B"
+  },
+  "retrieval": [
+    {
+      "name": "kg_cypher_fixed",
+      "description": "FIXED KG Cypher: Vector similarity + Graph expansion (Hybrid approach)",
+      "k": 4,
+      "kg_config": {
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "mode": "cypher_generation",
+        "expansion_hops": 1,
+        "embedding_model": "text-embedding-3-large"
+      }
+    }
+  ],
+  "evaluation": {
+    "judge_model": "gpt-4o-mini",
+    "judge_max_tokens": 8192,
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "answer_correctness"
+    ],
+    "description": "RAGAS evaluation with GPT-4o-mini as judge"
+  },
+  "execution": {
+    "checkpoint_interval": 10,
+    "save_intermediate_results": true
+  },
+  "notes": [
+    "CRITICAL: This is the FIXED version with vector starting point",
+    "Previous Cypher Generation (without vector search) had -47% performance",
+    "This version implements Hybrid Vector-Graph approach: +108.5% improvement",
+    "Expected results: 0.820~0.850 average, Gemma3-12B 0.90+",
+    "Total evaluations: 1 method × 5 models × 50 questions = 250 evaluations",
+    "Estimated time: 2-3 hours"
+  ]
+}

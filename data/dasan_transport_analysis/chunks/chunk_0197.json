@@ -1,0 +1,867 @@
+{
+  "chunk_id": 197,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B10687",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울지리를 잘 몰라서 그러는데 알려주실수있어요?",
+          "intent": "기차문의",
+          "terms": "서울/서울시/서울특별시/지리/길",
+          "knowledge_base": "지리,길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네. 어디를 가시나요?",
+          "intent": "기차문의",
+          "terms": "위치/장소/목적지",
+          "knowledge_base": "어디,목적지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아이들데리고 롯데타워랑 롯데월드를 구경가려고해요",
+          "terms": "롯데타워/서울롯데타워/롯데월드/잠실롯데월드/구경/관광",
+          "knowledge_base": "롯데월드,관광"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "어디에서 출발하시나요?",
+          "intent": "기차문의",
+          "terms": "출발/시작",
+          "knowledge_base": "출발,시작"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "세종인데요 기차를 서울역보다는 수서가 가깝지요",
+          "terms": "세종/세종시/기차/열차/서울역/기차역/수서/수서역",
+          "knowledge_base": "기차,수서역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네. 수서역에서 잠실까지 얼마안걸립니다",
+          "terms": "수서행/고소철도역/수서역/기차/열차/SRT",
+          "knowledge_base": "기차,SRT"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "지금 오송역으로 가는중인데요 수서행기차가 언제있어요?",
+          "intent": "기차문의",
+          "terms": "오송역/오송기차역",
+          "knowledge_base": "오송역,오송기차역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "확인해볼께요",
+          "terms": "확인/검토",
+          "knowledge_base": "확인,검토"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "9시 35분출발하는 열차가있네요.",
+          "terms": "열차/기차/대중교통",
+          "knowledge_base": "열차,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "40분안에는 갈수있겠네요",
+          "terms": "소요시간",
+          "knowledge_base": "40분,소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "수서역에서는 어떻게 가요?",
+          "intent": "버스노선",
+          "terms": "수서역/SRT수서역/고속철도",
+          "knowledge_base": "수서역,고속철도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "버스로 가시면 30분정도 걸리고 택시는 18분정도 걸리는걸로 나옵니다.",
+          "terms": "버스/택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "버스번호도 알려주실수있어요?",
+          "intent": "버스노선",
+          "terms": "버스번호/버스넘버/대중교통",
+          "knowledge_base": "버스번호,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네.메모하셔야할거같네요. ",
+          "terms": "메모/기입",
+          "knowledge_base": "메모,기입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "1007-1번,2412,3413번이 좀 빠르게 갑니다",
+          "terms": "버스번호/버스넘버/대중교통",
+          "knowledge_base": "2412,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "서울이라 버스번호도 외우기힘들겠네요",
+          "terms": "서울/서울시/서울특별시/버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네.더 궁금하신건 없으신지..",
+          "terms": "질문/문제/궁금한점",
+          "knowledge_base": "궁금,궁금한점"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "오송역에서 요금은 얼마나 나오나요?",
+          "intent": "기차요금",
+          "terms": "오송역/오송기차역/요금/금액",
+          "knowledge_base": "요금,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "성인 15200원입니다",
+          "terms": "성인/어른",
+          "knowledge_base": "성인,어른"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "너무 감사드려요",
+          "terms": "매우",
+          "knowledge_base": "너무,매우"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10688",
+      "category": "대중교통 안내",
+      "turns": 22,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "통행불편신고좀하려구요",
+          "intent": "통행불편신고",
+          "terms": "신고/신청/보고/처리/보완/수정",
+          "knowledge_base": "통행불편신고,수정"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네.어떤사항이실까요?",
+          "intent": "통행불편신고",
+          "terms": "사항/문제/사건",
+          "knowledge_base": "사항,사건"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아니 길도 좁아죽겠는데 1차선에 과일파는트럭이 맨날있는데 해결안되요?",
+          "intent": "통행불편신고",
+          "terms": "과일/트럭/차/승합차/해결/처리/해결방안",
+          "knowledge_base": "트럭,해결방안"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "많이 불편하셨겠습니다. 접수도와드릴께요",
+          "terms": "불편/불만/어려움/접수/신청/신고",
+          "knowledge_base": "접수,신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어느지역이실까요?",
+          "intent": "통행불편신고",
+          "terms": "지역/사는곳",
+          "knowledge_base": "지역,사는곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "종촌동/세종시 종촌동/cgv/영화관",
+          "knowledge_base": "cgv,영화관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "이사람은 동네를 돌아가면서 장사를 하는거같어",
+          "terms": "동네/우리동네/장사/영업",
+          "knowledge_base": "장사,영업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "과일트럭인가요?",
+          "intent": "통행불편신고",
+          "terms": "과일/트럭/차/승합차 ",
+          "knowledge_base": "트럭,승합차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "맞어요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "cgv앞은 불법주정차단속 카메라가 설치되있는걸로 나오는데요?",
+          "intent": "통행불편신고",
+          "terms": "불법/편법/주정차/주차/정차/단속/감시/적발/카메라/cctv",
+          "knowledge_base": "주정차,cctv"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "있으면 뭐해요.번호판을 상자떼기로 가려놓고 있는걸..벌금이 얼마안되서 그냥 장사하나..",
+          "terms": "번호판/자동차번호판/벌금/범칙금/과태료/돈",
+          "knowledge_base": "벌금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "요즘 다 힘든거아는데 그래도 출퇴근시간이나 통행이 많을때는 좀 치우던가..",
+          "terms": "출퇴근/출근/퇴근/통행/보행",
+          "knowledge_base": "통행,보행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네. 맞습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "번호판가리고 영업하는건 불법이죠?",
+          "intent": "통행불편신고",
+          "terms": "번호판/자동차번호판/영업/운영/불법/편법",
+          "knowledge_base": "영업,편법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네.맞으세요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "이양반 하루이틀도아니고 왠만하면 그냥 넘어갈라했는데 그차때문에 유턴하는 차들도 힘들고 사고나면 자기가 책임질것도 아니면서",
+          "terms": "유턴/되돌아가기/책임/의무",
+          "knowledge_base": "책임,의무"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그 차번호는 모르시죠?가려져있어서",
+          "intent": "통행불편신고",
+          "terms": "번호판/차넘버/차번호/차/번호",
+          "knowledge_base": "번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "그쵸. 지금 오면서 그런거니 아직있을거요",
+          "terms": "현재",
+          "knowledge_base": "지금,현재"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "알겠습니다. 경찰서 교통과에 민원접수해드렸습니다. ",
+          "terms": "경찰서/세종경찰서/교통과/민원/신고/접수",
+          "knowledge_base": "교통과,접수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "선생님 연락처 알수있을까요? 민원사항결과 문자드리거든요",
+          "intent": "통행불편신고",
+          "terms": "연락처/전화번호/민원/신고/문자/연락",
+          "knowledge_base": "민원,연락"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "그래요? 010-000-0000이에요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "22",
+          "qa_type": "A",
+          "content": "접수완료되셨습니다. 감사합니다",
+          "terms": "접수/신고/신청/민원/완료/마침",
+          "knowledge_base": "완료,마침"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10689",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "수고하십니다. 기차 정기권구매를 여쭤보고싶은데요?",
+          "intent": "정기권구매",
+          "terms": "기차/열차/대중교통/정기권/정기이용권/구매/구입",
+          "knowledge_base": "정기권,구입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "정기권말씀이시지요?",
+          "intent": "정기권구매",
+          "terms": "정기권/정기이용권",
+          "knowledge_base": "정기권,정기이용권"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "가능하세요.",
+          "terms": "가능/허용",
+          "knowledge_base": "가능,허용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어디서 구매가능해요?",
+          "intent": "정기권구매",
+          "terms": "구매/구입",
+          "knowledge_base": "구매,구입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "코레일홈페이지나 역에서도 직접구매가능하십니다",
+          "terms": "코레일/코레일홈페이지/구매/구입",
+          "knowledge_base": "구매,구입"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "편도이용요금이 얼마지요?",
+          "intent": "정기권구매",
+          "terms": "편도/한쪽/이용/사용/요금/금액",
+          "knowledge_base": "이용,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "일반실기준 16200원이세요",
+          "terms": "일반실/일반/기본",
+          "knowledge_base": "일반실,기본"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "광명에서 오송까지 걸리는시간은요?",
+          "intent": "정기권구매",
+          "terms": "광명/광명역/오송/오송역/기차역",
+          "knowledge_base": "오송,기차역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "40분소요되시네요",
+          "terms": "소요시간",
+          "knowledge_base": "소요,소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "정기권구매하면 할인율이 적용되나요?",
+          "intent": "정기권구매",
+          "terms": "정기권/정기이용권/구매/구입/할인율/할인",
+          "knowledge_base": "구매,할인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네.할인율적용되십니다.",
+          "terms": "할인율/할인비율",
+          "knowledge_base": "할인율,할인비율"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "terms": "출퇴근/출근/퇴근",
+          "knowledge_base": "출퇴근,퇴근"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네.출퇴근때문에요",
+          "terms": "출퇴근/출근/퇴근",
+          "knowledge_base": "출퇴근,퇴근"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "일반정기권구매하시면 10일권은 45% 1개월용은 60%할인율적용되십니다.",
+          "terms": "정기권/정기이용권/구매/구입/할인율/할인",
+          "knowledge_base": "구매,할인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아.많이 절약될거같네요.",
+          "terms": "절약/근검/절감",
+          "knowledge_base": "절약,절감"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "출퇴근하시는분들이 많이 이용하십니다",
+          "terms": "출퇴근/출퇴근이용권/이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "주말도 적용되나요?",
+          "intent": "정기권구매",
+          "terms": "주말/토요일,일요일/공휴일/적용/응용",
+          "knowledge_base": "적용,응용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "일반정기권은 주말 적용은 안되십니다.",
+          "terms": "정기권/정기이용권/주말/토요일,일요일/적용/응용",
+          "knowledge_base": "주말,응용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "그렇군요. 감사해요"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10721",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "전주에서 익산 가는 방법 뭐가 있나요?",
+          "intent": "노선안내",
+          "terms": "전주/지역, 익산/지역",
+          "knowledge_base": "익산,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "버스나 기차, 택시로 이용 가능합니다. ",
+          "terms": "버스/대중교통, 기차/교통수단, 택시/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "버스는 시내버스 인가요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통, 시내버스/교통수단",
+          "knowledge_base": "시내버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "시외버스 탑승하셔야합니다. ",
+          "terms": "시외버스/교통수단",
+          "knowledge_base": "시외버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "비용은 얼마인가요?",
+          "intent": "노선안내",
+          "terms": "돈/금액/비용/요금",
+          "knowledge_base": "비용,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "2,700원입니다. ",
+          "terms": "2,700원/금액",
+          "knowledge_base": "700원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "좌석 예약 해야하나요?",
+          "intent": "노선안내",
+          "terms": "좌석/자리",
+          "knowledge_base": "좌석,자리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "아니요. 티켓발권하셔서 랜덤으로 좌석 착석하시면 됩니다. ",
+          "terms": "표/입장권/입장표/매표",
+          "knowledge_base": "발권,매표"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "아 그럼 아무 시간대 버스도 타도 되는건가요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 당일발급된 티켓이시면 탑승 가능합니다. ",
+          "terms": "표/입장권/입장표/매표",
+          "knowledge_base": "발권,매표"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "몇 분마다 있나요?",
+          "intent": "노선안내",
+          "terms": "시간/시간단위",
+          "knowledge_base": "분,시간단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "15분 마다 운영하고 있습니다.",
+          "terms": "15분/시간",
+          "knowledge_base": "15분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "어디서 타야하나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "전주 시외버스 터미널, 덕진터미널에서 탑승하실 수 있습니다. ",
+          "terms": "전주 시외버스 터미널/터미널, 덕진터미널/터미널",
+          "knowledge_base": "덕진터미널,터미널"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "둘중에 어느곳이 더 저렴한가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "비용은 둘다 동일합니다. ",
+          "terms": "동일",
+          "knowledge_base": "동일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아 그렇군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그 익산 시외버스 터미널 거기서 내려주는거죠?",
+          "intent": "노선안내",
+          "terms": "익산 시외버스 터미널/터미널",
+          "knowledge_base": "익산시외버스터미널,터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네. 시외버스 터미널 종점인 차량과 익산역 종점인 차량 두 가지가 있습니다. ",
+          "terms": "시외버스 터미널/터미널, 익산역/역",
+          "knowledge_base": "익산역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 알려주셔서 감사합니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10722",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "전주에서 익산 가는 방법 뭐가 있나요?",
+          "intent": "노선안내",
+          "terms": "전주/지역, 익산/지역",
+          "knowledge_base": "익산,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "버스나 기차, 택시로 이용 가능합니다. ",
+          "terms": "버스/대중교통, 기차/교통수단, 택시/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "기차는 뭐 무궁화인가요?",
+          "intent": "노선안내",
+          "terms": "기차/교통수단, 무궁화/교통수단",
+          "knowledge_base": "무궁화,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "무궁화, 새마을, KTX 운행하고 있습니다. ",
+          "terms": "무궁화/교통수단, 새마을/교통수단, KTX/교통수단",
+          "knowledge_base": "새마을,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "가격차이가 얼마나 나죠?",
+          "intent": "노선안내",
+          "terms": "돈/금액/비용/요금",
+          "knowledge_base": "가격,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "무궁화, 새마을호는 2,400원이며 KTX는 4,800원입니다. ",
+          "terms": "무궁화/교통수단, 새마을/교통수단, KTX/교통수단",
+          "knowledge_base": "새마을,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "KTX가 무궁화보다 두배 가격이네요. ",
+          "terms": "KTX/교통수단, 무궁화/교통수단",
+          "knowledge_base": "무궁화,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "더 빨리 도착하나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "아니요. 운행시간은 동일합니다. ",
+          "terms": "소요시간/운행시간/시간",
+          "knowledge_base": "운행시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아 그럼 무궁화 타는게 낫겠네요 비용상으로는",
+          "terms": "무궁화/교통수단",
+          "knowledge_base": "무궁화,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "대학로 가려고 하는데 익산역으로 가는게 빠른가요, 터미널에서 내리는게 빠른가요?",
+          "intent": "노선안내",
+          "terms": "익산역/역, 터미널/역",
+          "knowledge_base": "터미널,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "익산역이 터미널보다 대학로와 가까이 위치하고 있습니다. ",
+          "terms": "익산역/역, 터미널/역",
+          "knowledge_base": "터미널,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "걸어갈 수 있는 거리인가요?",
+          "intent": "노선안내",
+          "terms": "길/길이",
+          "knowledge_base": "거리,길이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "도보로는 40분 정도 소요됩니다. ",
+          "terms": "40분/시간",
+          "knowledge_base": "40분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "너무 머네요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "익산역앞에 대학로 가는 버스 탈 수 있죠?",
+          "intent": "노선안내",
+          "terms": "익산역/역, 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네. 익산역 앞에서 109,105번 탑승하시면 대학로에서 하차하실 수 있습니다. ",
+          "terms": "익산역/역",
+          "knowledge_base": "익산역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 알겠습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "다른 문의사항 더 있으신가요?",
+          "intent": "노선안내",
+          "terms": "질문/문의",
+          "knowledge_base": "문의사항,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "아뇨 없어요"
+        }
+      ]
+    }
+  ]
+}

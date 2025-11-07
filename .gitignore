@@ -128,6 +128,10 @@ ENV/
 env.bak/
 venv.bak/
 
+# MCP configuration (contains API keys)
+.mcp.json
+smith.key
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -165,3 +169,53 @@ documents/**
 
 # macOS system files
 .DS_Store
+
+# Archive and old files
+archive/
+old_*/
+*.bak
+
+# Model files
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+
+# Data files (keep structure, ignore content)
+data/raw/*/*
+data/processed/*/*
+data/knowledge_graphs/*/*
+data/crawled/*/*
+!data/**/.gitkeep
+
+# Results (keep structure, ignore content)
+results/*/
+!results/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Vectorstore
+data/vectorstore/
+
+# Vector Store & Embedding Cache
+*.faiss
+*.pkl
+chroma_db/
+vector_cache/
+embeddings_cache/
+
+# API Cache
+data/dasan_api_cache/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+data/dasan_call/raw/aihubshell
+Neo4j*.txt
+
+
+vectorstore/

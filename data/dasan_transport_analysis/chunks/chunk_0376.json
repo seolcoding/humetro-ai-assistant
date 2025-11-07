@@ -1,0 +1,867 @@
+{
+  "chunk_id": 376,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B24601",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "추석명절 버스예매하려는데요?",
+          "intent": "예매",
+          "terms": "추석/명절, 버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어디로 가시는데요",
+          "intent": "예매",
+          "terms": "어디/장소",
+          "knowledge_base": "어디로,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "부산이요",
+          "terms": "부산/지역",
+          "knowledge_base": "부산,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "언제 가실건데요",
+          "intent": "예매",
+          "terms": "언제/날짜",
+          "knowledge_base": "언제,날짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "9월 30일이요. ",
+          "terms": "9월 30일/날짜",
+          "knowledge_base": "9월30일,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "잠시만요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "30일은 모두매진되었습니다. ",
+          "terms": "30일/날짜, 매진/품절",
+          "knowledge_base": "매진,품절"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "그럼 10월 1일은요?",
+          "intent": "예매",
+          "terms": "10월 1일/날짜",
+          "knowledge_base": "10월1일,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "오후 7시 좌석 있네요",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아 너무 늦는데.. ",
+          "terms": "너무/매우",
+          "knowledge_base": "너무,매우"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 10월2일 첫차는 있나요?",
+          "intent": "예매",
+          "terms": "기차/교통수단",
+          "knowledge_base": "기차,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "역시 매진입니다",
+          "terms": "매진/품절",
+          "knowledge_base": "매진,품절"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "10월 1일로 도와드릴까요?",
+          "intent": "예매",
+          "terms": "10월 1일/날짜",
+          "knowledge_base": "10월1일,날짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "9월 30일 없나요?",
+          "intent": "예매",
+          "terms": "9월 30일/날짜",
+          "knowledge_base": "9월30일,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "30일은 매진입니다. ",
+          "terms": "30일/날짜",
+          "knowledge_base": "30일,날짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 다음날은요?",
+          "intent": "예매",
+          "terms": "다음날/날짜",
+          "knowledge_base": "다음날,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "10월 1일도 매진인데, 예약가능하십니다. ",
+          "terms": "10월 1일/날짜",
+          "knowledge_base": "10월1일,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "예약 걸어드릴까요?",
+          "intent": "예매",
+          "terms": "예약/예매",
+          "knowledge_base": "예약,예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "예약하면 확정은 언제되나요?",
+          "intent": "예매",
+          "terms": "예약/예매, 언제/날짜",
+          "knowledge_base": "언제,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "예매취소가 있을시 1순위로 확정 받으실 수 있습니다. ",
+          "terms": "순위",
+          "knowledge_base": "1순위,순위"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24602",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "추석명절 기차표 예매 하려는데요?",
+          "intent": "예약문의",
+          "terms": "추석/명절",
+          "knowledge_base": "추석,명절"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "예약할 수 있을까요?",
+          "intent": "예약문의",
+          "terms": "예약/예매",
+          "knowledge_base": "예약,예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "예약문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "목적지가 어딘가요?",
+          "intent": "예약문의",
+          "terms": "목적지/장소",
+          "knowledge_base": "목적지,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "대전이요. ",
+          "terms": "대전역",
+          "knowledge_base": "대전,대전역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "몇분이신가요?",
+          "intent": "예약문의",
+          "terms": "몇 명",
+          "knowledge_base": "몇분,몇명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "3사람입니다",
+          "terms": "승차",
+          "knowledge_base": "승차인원,승차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "날짜는 언제로 도와드릴까요? ",
+          "intent": "예약문의",
+          "terms": "언제/날짜",
+          "knowledge_base": "언제,날짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "9월 30일로 해주세요. ",
+          "terms": "9월 30일/날짜",
+          "knowledge_base": "9월30일,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "7시와 9시 예약가능하십니다. ",
+          "terms": "7시/시간",
+          "knowledge_base": "7시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "정상운행 되나요?",
+          "intent": "예약문의",
+          "terms": "정상운행/운행상태",
+          "knowledge_base": "정상운행,운행상태"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "약간 지연될수도 있습니다",
+          "terms": "지연/시간",
+          "knowledge_base": "지연,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "몇시로 예약해드릴까요?",
+          "intent": "예약문의",
+          "terms": "몇시/시간, 예약/예매",
+          "knowledge_base": "예약,예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "그럼 7시로 예약하겠습니다.  ",
+          "terms": "7시/시간",
+          "knowledge_base": "7시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "KTX 요금 얼마지요?",
+          "intent": "예약문의",
+          "terms": "비용/금액",
+          "knowledge_base": "비용,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "KTS OOO원입니다",
+          "terms": "요금",
+          "knowledge_base": "OOO원,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "입석은 얼마인가요?",
+          "intent": "예약문의",
+          "terms": "입석/자리, 얼마/가격",
+          "knowledge_base": "얼마,가격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "입석은 OOO원입니다",
+          "terms": "가격",
+          "knowledge_base": "OOO원,가격"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "그럼 KTX로 예약해 주시겠습니까?",
+          "intent": "예약문의",
+          "terms": "요금",
+          "knowledge_base": "KTX,요금"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24664",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "한강 수상택시 요즘 운행하나요?",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "수상택시-보트",
+          "knowledge_base": "수상택시,수상택시-보트"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 운행하고 있습니다.",
+          "terms": "운행/이용가능",
+          "knowledge_base": "운행,이용가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "퇴근시간에 이용하고 싶은데, 예약을 해야하나요?",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "이용-사용, 예약-약속",
+          "knowledge_base": "이용,예약-약속"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "사전예약제로 운행하고 있습니다.",
+          "terms": "사전예약제/예약/예매",
+          "knowledge_base": "운행,예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "당일 아침에 예약해도 이용가능할까요?",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "당일-그날, 예약-약속, 이용-사용",
+          "knowledge_base": "아침,이용-사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "예약순서대로 이용가능하기 때문에 희망시간에 이용못할 수도 있습니다.",
+          "terms": "이용-사용 ",
+          "knowledge_base": "이용,이용-사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "최대한 빨리 예약을 해야 원하는 시간에 이용이 가능하겠네요.",
+          "terms": "예약-약속, 이용-사용",
+          "knowledge_base": "시간,이용-사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "반포승강장에서 출발하는 퇴근시간표 좀 알려주시겠어요?",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "승강장/정류장",
+          "knowledge_base": "출발,정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "18시 35분, 19시 05분, 19시 25분, 19시 45분 입니다.",
+          "terms": "시간",
+          "knowledge_base": "18시35분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "잠실승강장까지 얼마나 걸릴까요?",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "정류장",
+          "knowledge_base": "잠실승강장,정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "30분정도 소요됩니다.",
+          "terms": "소요-필요",
+          "knowledge_base": "소요,소요-필요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "요금은 얼마죠?",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "요금-값",
+          "knowledge_base": "요금,요금-값"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "1인 5OOO원입니다.",
+          "terms": "요금-값",
+          "knowledge_base": "5OOO원,요금-값"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "한대에 몇 명정도 탑승할 수 있나요?",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "탑승-승차",
+          "knowledge_base": "탑승,탑승-승차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "쌍동선은 10명, 단동선은 7명입니다.",
+          "terms": "동선",
+          "knowledge_base": "단동선,동선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "승차시 신분증이 필요하다던데 맞나요.",
+          "intent": "한강 출퇴근 수상택시",
+          "terms": "승차-탑승, 신분증-주민등록증/여권,/운전면허증",
+          "knowledge_base": "신분증,운전면허증"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 신분증은 필참하여야 합니다.",
+          "terms": "신분증-주민등록증/여권/운전면허증",
+          "knowledge_base": "필참,운전면허증"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 자세한 답변 감사합니다.",
+          "terms": "답변-대답",
+          "knowledge_base": "답변,답변-대답"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "드린 답변이 궁금증 해소에 도움이 되셨길 바랍니다.",
+          "terms": "답변-대답, 해소-해결",
+          "knowledge_base": "궁금증,해소-해결"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24665",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "제가 억울한 일이 있어서, 신고가 가능한지 여쭤볼려구요.",
+          "intent": "택시요금 불만신고",
+          "terms": "억울-분",
+          "knowledge_base": "신고,억울-분"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무슨일이 있으셨나요?",
+          "intent": "택시요금 불만신고",
+          "terms": "어떤일",
+          "knowledge_base": "무슨,어떤일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "제가 약속이 있어서 밤새 술을 마시고 강남역에서 일산까지 택시를 타고 집에 왔거든요.",
+          "terms": "밤새-밤사이, 술-주류, 강남역-지하철역명, 일산-지역명, 택시-교통수단 ",
+          "knowledge_base": "밤새,택시-교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 그러셨군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "근데, 아침에 술깨서 카드내역을 보니까 택시비가 너무 많이 나온거예요.",
+          "terms": "아침-시점, 술-주류",
+          "knowledge_base": "술,술-주류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "얼마나 차이가 있으셨나요?",
+          "intent": "택시요금 불만신고",
+          "terms": "차이-차",
+          "knowledge_base": "차이,차이-차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "보통은 3만원 중후반이면 되는데, 68,500원을 결제했드라구요.",
+          "terms": "보통-통상",
+          "knowledge_base": "결제,보통-통상"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "당황하셨겠습니다.",
+          "terms": "당황/상태",
+          "knowledge_base": "당황,상태"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "황당해서, 택시회사 찾아서 기사님이랑 통화를 했는데, 제가 강남역이 아니라 수원 영통에서 탔대요.",
+          "terms": "택시회사-운수업체, 기사-직업",
+          "knowledge_base": "기사,기사-직업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "생각하는 승차지점과 기사님이 알려준 승차지점이 다른건가요?",
+          "intent": "택시요금 불만신고",
+          "terms": "생각-사고, 기사-직업",
+          "knowledge_base": "승차지점,기사-직업"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네.. 저는 수원에 간적이 없거든요.",
+          "terms": "수원-수원시/지역명",
+          "knowledge_base": "수원,지역명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "기사님은 톨비영수증을 보내준다는데, 솔직히 전에 탄 승객 미터기를 안끄고, 나를 바로 태웠지 않을까요?",
+          "terms": "기사-직업, 톨비-톨게이트비, 영수서, 미터기-택시미터",
+          "knowledge_base": "톨비,미터기-택시미터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "확인이 어려운 부분입니다.",
+          "terms": "확인/체크",
+          "knowledge_base": "부분,체크"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "내가 어디서 탔는지 알 수 있는 방법 없을까요?",
+          "intent": "택시요금 불만신고",
+          "terms": "방법-방도",
+          "knowledge_base": "방법,방법-방도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "콜택시 이용 외에는 별도승차지점을 알 수가 없습니다,",
+          "terms": "이용-사용, 별도-별개",
+          "knowledge_base": "이용,별도-별개"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 신고도 못해요?",
+          "intent": "택시요금 불만신고",
+          "terms": "신고/민원",
+          "knowledge_base": "신고,민원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "승하차 위치, 하차 장소 등을 정확히 모르면 신고 접수가 불가합니다.",
+          "terms": "위치-지점, 장소-곳, 불가-불가능",
+          "knowledge_base": "위치,불가-불가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "나는 진짜 수원에 간 적이 없는데, 어떻게 해요?",
+          "intent": "택시요금 불만신고",
+          "terms": "수원-수원시/지역명",
+          "knowledge_base": "수원,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "도움못드려 죄송합니다.",
+          "terms": "죄송/사과",
+          "knowledge_base": "죄송,사과"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "억울해요.",
+          "terms": "억울-분",
+          "knowledge_base": "억울,억울-분"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24666",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "따릉이 이용 관련해서 문의드려도 될까요?",
+          "intent": "따릉이 이용문의",
+          "terms": "이용-사용, 관련-연관, 문의-질의",
+          "knowledge_base": "이용,문의-질의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 어떤 점이 궁금하신가요?",
+          "intent": "따릉이 이용문의",
+          "terms": "어떤/무엇, 궁금/질문",
+          "knowledge_base": "궁금,질문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "초등학생도 따릉이 이용이 가능한가요?",
+          "intent": "따릉이 이용문의",
+          "terms": "이용-사용",
+          "knowledge_base": "따릉이,이용-사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "만 15세 이상 이용가능합니다.",
+          "terms": "이용-사용",
+          "knowledge_base": "가능,이용-사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "혹시 만 15세이상 청소년은 가입시 부모 동의가 필요할까요?",
+          "intent": "따릉이 이용문의",
+          "terms": "부모-보호자/양친, 동의-동조",
+          "knowledge_base": "가입,동의-동조"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 부모님 동의가 필요합니다.",
+          "terms": "부모님-보호자, 동의-동조",
+          "knowledge_base": "동의,동의-동조"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "결제 수단은 어떤게 있나요?",
+          "intent": "따릉이 이용문의",
+          "terms": "수단-방법",
+          "knowledge_base": "수단,수단-방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "제로페이, 신용카드, 체크카드, 페이코, 카카오페이, 휴대폰 결제 등이 가능합니다.",
+          "terms": "제로페이-결제수단, 신용카드-결제수단, 체크카드-결제수단, 페이코-결제수단, 카카오페이-결제수단",
+          "knowledge_base": "신용카드,카카오페이-결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "모바일티머니는 안되나요?",
+          "intent": "따릉이 이용문의",
+          "terms": "휴대용/교통카드/카드/결제",
+          "knowledge_base": "모바일티머니,결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "불가합니다.",
+          "terms": "불가-불가능",
+          "knowledge_base": "불가,불가-불가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "왜요?",
+          "intent": "따릉이 이용문의",
+          "terms": "왜/질문",
+          "knowledge_base": "왜,질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "취소관련문의가 많아 결제불가하게 되었습니다.",
+          "terms": "취소-철회, 관련-연관, 문의-질의, 불가-불가능",
+          "knowledge_base": "관련,불가-불가능"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "그렇군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "한가지만 더 여쭤볼께요.",
+          "intent": "따릉이 이용문의",
+          "terms": "하나-질문",
+          "knowledge_base": "한가지,하나-질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 말씀하세요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "제가 비번 4자리를 입력했는데 자꾸 안맞는다 하거든요.",
+          "intent": "따릉이 이용문의",
+          "terms": "비번-비밀번호",
+          "knowledge_base": "비번,비번-비밀번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "비밀번호 변경이 필요해 보입니다.",
+          "terms": "비밀번호-암호, 변경-수정",
+          "knowledge_base": "변경,변경-수정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "비번 변경은 어떻게 하는건가요?",
+          "intent": "따릉이 이용문의",
+          "terms": "비번-비밀번호",
+          "knowledge_base": "변경,비번-비밀번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "서울자전거 앱 및 서울자전거 따릉이 홈페이지에서 등록 및 변경이 가능합니다.",
+          "terms": "서울-서울시/수도, 자전거-이동수단, 앱-애플리케이션, 변경-수정",
+          "knowledge_base": "자전거,변경-수정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "자세히 알려주셔서 감사합니다.",
+          "terms": "감사/인사",
+          "knowledge_base": "감사,인사"
+        }
+      ]
+    }
+  ]
+}

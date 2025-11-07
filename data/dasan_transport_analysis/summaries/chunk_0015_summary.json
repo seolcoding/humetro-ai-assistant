@@ -1,0 +1,9 @@
+{
+  "raw_response": "다산콜센터 대중교통 상담 데이터를 분석하여 구조화된 요약을 제공하겠습니다.\n\n```json\n{\n  \"question_types\": [\n    {\n      \"type\": \"버스 노선 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"일산에서 김포가는 버스를 알고싶어요\",\n        \"인천에서 일산가는 버스를 알고싶어요\",\n        \"시흥에서 수원가는 버스를 알고싶어요\"\n      ]\n    },\n    {\n      \"type\": \"소요 시간 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"시간은 얼마나 걸려요?\",\n        \"15분정도 걸려요\"\n      ]\n    },\n    {\n      \"type\": \"운행 시간 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"첫차는 언제에요?\",\n        \"막차는 언제에요?\"\n      ]\n    },\n    {\n      \"type\": \"요금 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"차비는 얼마에요?\",\n        \"1,100원이에요\"\n      ]\n    }\n  ],\n  \"common_issues\": [\n    {\n      \"issue\": \"출발지-도착지 구체화 필요\",\n      \"frequency\": \"매우 높음\",\n      \"context\": \"시민들이 지역명만 언급하면 상담사가 구체적 위치(역, 공항, 시청 등)를 재질문해야 함\"\n    },\n    {\n      \"issue\": \"4가지 정보 패키지 요구\",\n      \"frequency\": \"표준 패턴\",\n      \"context\": \"노선, 소요시간, 운행시간(첫차/막차), 요금을 순차적으로 질문하는 패턴이 반복됨\"\n    ",
+  "parse_error": true,
+  "error_detail": "Extra data: line 122 column 1 (char 3219)",
+  "chunk_id": "chunk_0015",
+  "processing_time": 60.15462899208069,
+  "processed_at": "2025-11-05T11:23:17.717440",
+  "dialogue_count": 5
+}

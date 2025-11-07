@@ -1,0 +1,39 @@
+{
+  "experiment": {
+    "id": null,
+    "name": "full_benchmark_100q_thesis",
+    "description": "Generate 100 new questions and evaluate all thesis models with GPT-5 judge",
+    "tags": ["full", "generate", "100q", "thesis", "gpt5"],
+    "output_dir": "data/evaluation/experiments"
+  },
+  "questions": {
+    "source": "generate",
+    "generation": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "num_documents": 100,
+      "num_questions": 100,
+      "document_source": "data/crawled/seoul_traffic/markdown_filtered",
+      "embedding_model": "text-embedding-3-small",
+      "use_korean_personas": true,
+      "force_regenerate": false
+    }
+  },
+  "models": {
+    "evaluation_targets": "thesis"
+  },
+  "retrieval": {
+    "method": "naive",
+    "k": 4,
+    "vector_store_path": "data/vector_store/seoul_traffic"
+  },
+  "evaluation": {
+    "judge_model": "gpt-5",
+    "metrics": ["faithfulness", "answer_relevancy", "answer_correctness"]
+  },
+  "execution": {
+    "checkpoint_interval": 10,
+    "verbose": true,
+    "dry_run": false
+  }
+}

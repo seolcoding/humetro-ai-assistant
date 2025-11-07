@@ -1,0 +1,870 @@
+{
+  "chunk_id": 217,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B15905",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "ktx타고 여수도 갈 수 있나요?",
+          "intent": "기차교통문의",
+          "terms": "ktx/ 여수",
+          "knowledge_base": "여수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "예.여수EXPO역이 있습니다.",
+          "terms": "ktx/ 여수",
+          "knowledge_base": "여수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "언제 생긴거예요?",
+          "intent": "기차교통문의",
+          "terms": "ktx/ 여수",
+          "knowledge_base": "여수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "2011년 10월 5일에 전라선으로 개통 되었습니다.",
+          "terms": "2011년 10월 5일/ 전라선개통",
+          "knowledge_base": "전라선개통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "그랬군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "ktx로 여수 가는 방법좀 알려주세요.",
+          "terms": "ktx/ 여수가는법",
+          "knowledge_base": "여수가는법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "출발지가 어디신가요?",
+          "intent": "기차교통문의",
+          "terms": "출발지",
+          "knowledge_base": "출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "서울입니다.",
+          "terms": "서울",
+          "knowledge_base": "서울"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "예.서울역과 용산역에서 여수 EXPO역 가는 KTX기차를 이용 하실 수 있습니다.",
+          "terms": "서울역/용산역/여수 EXPO역/KTX기차",
+          "knowledge_base": "용산역,KTX기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "표는 어디서 사나요?",
+          "intent": "기차교통문의",
+          "terms": "표창구",
+          "knowledge_base": "표창구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "예.온라인과 오프라인 2가지 방법으로 나뉘어져 있습니다.",
+          "terms": "온라인/오프라인/구매방법",
+          "knowledge_base": "오프라인,구매방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "어떤방법으로 안내하여 드릴까요?",
+          "intent": "기차교통문의",
+          "terms": "온라인/오프라인/구매방법",
+          "knowledge_base": "오프라인,구매방법"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "오프라인으로 알려주세요.",
+          "terms": "오프라인/기차표구매",
+          "knowledge_base": "기차표구매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "서울역안 중앙매표소에서 현장결재를 통해 승차권 예매가 가능하십니다.",
+          "terms": "서울역안/ 중앙매표소/ 현장결재/기차표구매/오프라인구매",
+          "knowledge_base": "중앙매표소,오프라인구매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "소요시간이 얼마나 걸리나요?",
+          "intent": "기차교통문의",
+          "terms": "소요시간",
+          "knowledge_base": "소요시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "약3시간정도 소요됩니다.",
+          "terms": "3시간/소요시간/서울~여수소요시간",
+          "knowledge_base": "소요시간,서울~여수소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "가격은요?",
+          "intent": "기차교통문의",
+          "terms": "가격",
+          "knowledge_base": "가격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "일반실 성인기준으로 47,500원입니다.",
+          "terms": "47,500원/성인요금",
+          "knowledge_base": "500원,성인요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "어린이는 얼마인가요?",
+          "intent": "기차교통문의",
+          "terms": "어린이요금",
+          "knowledge_base": "어린이요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "일반실 어린이요금은 00원 입니다.",
+          "terms": "어린이요금",
+          "knowledge_base": "어린이요금"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15958",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "콜택시 문의하려고 합니다",
+          "intent": "택시문의",
+          "terms": "택시",
+          "knowledge_base": "콜택시,택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "콜택시에 대한 어떤 문의이신가요?",
+          "intent": "택시문의",
+          "terms": "콜택시/택시/대중교통",
+          "knowledge_base": "콜택시,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "장애가 있는데 콜택시 혜택같은게 있나요?",
+          "intent": "택시문의",
+          "terms": "비장애",
+          "knowledge_base": "장애,비장애"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "장애인 콜택시를 안내해드리면 될까요?",
+          "intent": "택시문의",
+          "terms": "장애인/비장애인/콜택시/콜밴/택시",
+          "knowledge_base": "콜택시,택시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "장애인 콜택시는 보행상 장애가 있는 장애정도가 심한 장애인을 대상으로한 택시입니다",
+          "terms": "걸을수있는정도, 장애등급",
+          "knowledge_base": "장애정도,장애등급"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "심한장애가 어느정도를 말하는거죠?",
+          "intent": "택시문의",
+          "terms": "장애/질병/장애인",
+          "knowledge_base": "장애,장애인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "기존1-3급 장애인입니다",
+          "terms": "장애인/장애자",
+          "knowledge_base": "장애인,장애자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "서울안에서만 운행되는건가요?",
+          "intent": "택시문의",
+          "terms": "서울/서울시/지역/운영/영업",
+          "knowledge_base": "운영,영업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "서울시 전역을 포함 서울 인접한 12개 시와 인천국제공항까지 운행합니다",
+          "terms": "근처",
+          "knowledge_base": "인접,근처"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "인접한 시가 어딘가요?",
+          "intent": "택시문의",
+          "terms": "인접/근처",
+          "knowledge_base": "인접,근처"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "부천, 김포, 양주, 고양, 의정부, 남양주, 구리, 하남, 과천, 안양, 광명, 성남입니다",
+          "terms": "부천, 김포, 양주, 고양, 의정부, 남양주, 구리, 하남, 과천, 안양, 광명, 성남/지역",
+          "knowledge_base": "김포,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "저희집이 신림동인데 부천시청까지 콜택시로 갈수 있단거죠?",
+          "intent": "택시문의",
+          "terms": "공공기관",
+          "knowledge_base": "부천시청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "맞습니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "제가 휠체어를 타는데 휠체어도 싣을수 있겠죠?",
+          "intent": "택시문의",
+          "terms": "장애인운송수단",
+          "knowledge_base": "휠체어,장애인운송수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 휠체어 이용 가능합니다",
+          "terms": "휠체어/장애인운송수단/이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "혹시 아침일찍도 콜을 부를수 있나요?",
+          "intent": "택시문의",
+          "terms": "아침/오전",
+          "knowledge_base": "아침,오전"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "몇시 정도이실까요?",
+          "intent": "택시문의",
+          "terms": "콜택시",
+          "knowledge_base": "콜,콜택시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아침8시정도요",
+          "terms": "8시/시각",
+          "knowledge_base": "8시,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "07시에 첫차가 운행시작이라 가능합니다",
+          "terms": "운행/운영/운전",
+          "knowledge_base": "운행,운전"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15959",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요, 장애인택시를 정기적으로 이용할수 있단 얘기를 들어서 여쭤보려고요",
+          "intent": "택시문의",
+          "terms": "택시종류",
+          "knowledge_base": "장애인택시,택시종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 정기접수를 하실수 있습니다",
+          "terms": "접수방법",
+          "knowledge_base": "정기접수,접수방법"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "저희아이가 장애가 있는데 일주일에 두번씩 병원엘 가야하거든요, 이용할수 있는거겠죠?",
+          "intent": "택시문의",
+          "terms": "장애/질병/병원/의료기관",
+          "knowledge_base": "병원,의료기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "맞습니다, 치료 재활 목적이면 신청 가능합니다",
+          "terms": "치료/치유/재활/채활치료/요양",
+          "knowledge_base": "재활,요양"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "올때 갈때 두번 다 이용할수 있나요?",
+          "intent": "택시문의",
+          "terms": "이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 1일 2회까지 신청 가능합니다",
+          "terms": "신청/접수",
+          "knowledge_base": "신청,접수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "저희가 3개월 이상을 일주일에 두번씩 병원에 갈것같은데 그렇게 길게도 이용이 될까요?",
+          "intent": "택시문의",
+          "terms": "기간",
+          "knowledge_base": "일주일,기간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "최소1개월부터 최창 6개월까지 신청 가능합니다",
+          "terms": "1개월, 6개월/월",
+          "knowledge_base": "6개월,월"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "이용요금은 한번에 전부다 내야하나요?",
+          "intent": "택시문의",
+          "terms": "요금",
+          "knowledge_base": "이용요금,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "이용요금은 하차시 지불하시면 됩니다",
+          "terms": "이용요금/요금/하차/내릴때/지불/결제",
+          "knowledge_base": "하차,결제"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "일반 택시요금이랑 똑같이요?",
+          "intent": "택시문의",
+          "terms": "택시요금/택시운임",
+          "knowledge_base": "택시요금,택시운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "5km까지 기본요금1500원, 5km초과10m까지 2900원, 10km초과사 km당 70원이 부과됩니다",
+          "terms": "요금종류",
+          "knowledge_base": "기본요금,요금종류"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "택시 부를땐 어디로 연락해야하나요?",
+          "intent": "택시문의",
+          "terms": "교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "1588-4388로 문자접수 가능합니다",
+          "terms": "문자/눈/접수/신청",
+          "knowledge_base": "접수,신청"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "어플같은건 없나요?",
+          "intent": "택시문의",
+          "terms": "모바일서비스",
+          "knowledge_base": "어플,모바일서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "장애인콜 모바일 어플이 있습니다",
+          "terms": "장애인콜/콜밴/장애인콜택시/모바일/핸드폰/어플/앱",
+          "knowledge_base": "모바일,앱"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "어플로도 택시 부를수 있는거고요?",
+          "intent": "택시문의",
+          "terms": "어플/앱/택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 하지만 신규이용시에는 1588-4388로 전화하셔서 정보등록을 먼저 하셔야합니다 ",
+          "terms": "첫이용",
+          "knowledge_base": "신규이용,첫이용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "그렇군요, 친절하게 설명해주셔서 감사합니다",
+          "intent": "택시문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15960",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "수고하십니다, 저희단체에서 장애인버스를 이용하려고 연락드렸습니다",
+          "intent": "버스문의",
+          "terms": "모임, 교통수단",
+          "knowledge_base": "장애인버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "이용하시는 분중에 서울시 장애인콜택시에 등록된 휠체어 이용 장애인이 계신가요?",
+          "intent": "버스문의",
+          "terms": "교통수단",
+          "knowledge_base": "장애인콜택시,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 두명이 있습니다"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "두분을 포함하여 버스를 이용하시고자 하는 분들이 총 몇분이신가요?",
+          "intent": "버스문의",
+          "terms": "버스/대중교통/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "전체인원은 18명입니다",
+          "terms": "인원/인원수/명수",
+          "knowledge_base": "인원,명수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 그러시면 이용하실수 있습니다",
+          "terms": "이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "저희가 서울 광진구에서 이천시까지 이동하려는데 혹시 서울시내 안에서만 운행됩니까?",
+          "intent": "버스문의",
+          "terms": "서울시, 경기도",
+          "knowledge_base": "이천시,경기도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "아닙니다, 서울시안에서는 이용 불가하시고 육상운행 가능한 전국 모든 지역 운행합니다",
+          "terms": "지상운행",
+          "knowledge_base": "육상운행,지상운행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그렇군요, 그러면 1박2일 일정도 되는겁니까?",
+          "intent": "버스문의",
+          "terms": "기간",
+          "knowledge_base": "1박2일,기간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 1회 최대 1박2일 이용하실수 있습니다",
+          "terms": "이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "이용요금은 얼마정도가 될까요?",
+          "intent": "버스문의",
+          "terms": "이용요금/사용요금/사용금액",
+          "knowledge_base": "이용요금,사용금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "거리요금과 실비요금, 1박2일 이용시에는 숙박비가 포함됩니다",
+          "terms": "숙소요금",
+          "knowledge_base": "숙박비,숙소요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "거리요금이 어떻게 됩니까?",
+          "intent": "버스문의",
+          "terms": "거리요금/거리금액",
+          "knowledge_base": "거리요금,거리금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "200km까지 200000원, 200km초과 매 50km마다 20000원입니다",
+          "terms": "200km/거리, 200000원/금액",
+          "knowledge_base": "200000원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "기사님 페이는 따로 안드려도 되는지요?",
+          "intent": "버스문의",
+          "terms": "지불하다",
+          "knowledge_base": "페이,지불하다"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 차량 및 기사는 무료 지원됩니다",
+          "terms": "차량/차/버스/기사/운전사/무료/공짜/지원/제공",
+          "knowledge_base": "기사,제공"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "만약에 예약했다가 취소하게되면 불이익이 있습니까?",
+          "intent": "버스문의",
+          "terms": "패널티",
+          "knowledge_base": "불이익,패널티"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "연간 1인 3회까지 이용가능하신데 이용일 5일 이내 취소시 이용횟수에서 차감됩니다",
+          "terms": "깎이다",
+          "knowledge_base": "차감,깎이다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "예약은 어디로 해야합니까?",
+          "intent": "버스문의",
+          "terms": "에약/예매",
+          "knowledge_base": "예약,예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "인터넷 서울공공서비스예약 사이트 접속 후 온라인 예약하실수 있습니다",
+          "terms": "인터넷/웹/웹사이트/온라인/모바일/예약/예매",
+          "knowledge_base": "사이트,예매"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B15961",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지하철 수인선 개통했나요?",
+          "intent": "지하철문의",
+          "terms": "지하철노선",
+          "knowledge_base": "수인선,지하철노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 9월12일 개통하여 현재 운행중입니다",
+          "terms": "개통/개통하다/운행/운전/가동",
+          "knowledge_base": "운행,가동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "그거 타면 송도에서 서울숲까지 갈수있는거 맞죠?",
+          "intent": "지하철문의",
+          "terms": "지역, 장소",
+          "knowledge_base": "서울숲,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 맞습니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "운행 시간대가 어떻게 돼요?",
+          "intent": "지하철문의",
+          "terms": "운행시간",
+          "knowledge_base": "운행시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "몇시대에 이용하실 계획이신가요?",
+          "intent": "지하철문의",
+          "terms": "몇시/시각",
+          "knowledge_base": "몇시,시각"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "한 11시에서 12시 사이에 탈것 같아요",
+          "terms": "11시, 12시/시각",
+          "knowledge_base": "12시,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "송도역에서 승차하시는거 맞으시고요?",
+          "intent": "지하철문의",
+          "terms": "승차/탑승",
+          "knowledge_base": "승차,탑승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "11시22분, 11시41분 두차례 왕십리행 열차가 운행됩니다",
+          "terms": "종착지",
+          "knowledge_base": "왕십리행,종착지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "왕십리행 타면 되는거에요?",
+          "intent": "지하철문의",
+          "terms": "왕십리행/종착지",
+          "knowledge_base": "왕십리행,종착지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 그렇습니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "11시에서 12시 사이엔 맨날 저시간인거죠?",
+          "intent": "지하철문의",
+          "terms": "11시, 12시/시각",
+          "knowledge_base": "12시,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "안내해드린 시간은 평일 운행시간입니다",
+          "terms": "평일/주중/운행시간",
+          "knowledge_base": "운행시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "그럼 일요일엔 달라요?",
+          "intent": "지하철문의",
+          "terms": "일요일/주말/공휴일",
+          "knowledge_base": "일요일,공휴일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 일요일 운행시간도 안내해드릴까요?",
+          "terms": "일요일/주말/공휴일",
+          "knowledge_base": "일요일,공휴일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "네 알려주세요",
+          "intent": "지하철문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "일요일 포함 휴일은 11시10분, 11시43분 운행됩니다",
+          "terms": "일요일/주말/휴일/공휴일/운행/운전",
+          "knowledge_base": "휴일,운전"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "그럼 서울숲에서 송도오는 막차는 몇시에요?",
+          "intent": "지하철문의",
+          "terms": "서울숲,송도/지역/막차/마지막차",
+          "knowledge_base": "송도,마지막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "21시41분입니다",
+          "terms": "21시41분/시각",
+          "knowledge_base": "21시41분,시각"
+        }
+      ]
+    }
+  ]
+}

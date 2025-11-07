@@ -1,0 +1,94 @@
+{
+  "validation_time": "2025-10-29T23:12:27.430860",
+  "server_url": "http://100.95.220.92:11434",
+  "test_prompts": 5,
+  "results": [
+    {
+      "model_name": "EXAONE-3.5-7.8B",
+      "ollama_name": "exaone3.5:7.8b",
+      "size": "7.8B",
+      "quantization": "Q4_K_M",
+      "is_installed": false,
+      "installation_error": null,
+      "load_time": 0.0,
+      "avg_response_time": 0.0,
+      "tokens_per_second": 0.0,
+      "memory_usage_gb": null,
+      "response_quality": {},
+      "keyword_coverage": 0.0,
+      "response_samples": [],
+      "validation_status": "failed",
+      "validation_errors": [
+        "모델이 설치되지 않음: exaone3.5:7.8b"
+      ],
+      "timestamp": "2025-10-29T23:12:18.886645"
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "ollama_name": "qwen3:8b",
+      "size": "8B",
+      "quantization": "Q4_K_M",
+      "is_installed": false,
+      "installation_error": null,
+      "load_time": 0.0,
+      "avg_response_time": 0.0,
+      "tokens_per_second": 0.0,
+      "memory_usage_gb": null,
+      "response_quality": {},
+      "keyword_coverage": 0.0,
+      "response_samples": [],
+      "validation_status": "failed",
+      "validation_errors": [
+        "모델이 설치되지 않음: qwen3:8b"
+      ],
+      "timestamp": "2025-10-29T23:12:21.020978"
+    },
+    {
+      "model_name": "Gemma3-12B",
+      "ollama_name": "gemma3:12b",
+      "size": "12.2B",
+      "quantization": "Q4_K_M",
+      "is_installed": false,
+      "installation_error": null,
+      "load_time": 0.0,
+      "avg_response_time": 0.0,
+      "tokens_per_second": 0.0,
+      "memory_usage_gb": null,
+      "response_quality": {},
+      "keyword_coverage": 0.0,
+      "response_samples": [],
+      "validation_status": "failed",
+      "validation_errors": [
+        "모델이 설치되지 않음: gemma3:12b"
+      ],
+      "timestamp": "2025-10-29T23:12:23.149857"
+    },
+    {
+      "model_name": "GPT-OSS-20B",
+      "ollama_name": "gpt-oss:20b",
+      "size": "20B",
+      "quantization": "Q4_K_M",
+      "is_installed": false,
+      "installation_error": null,
+      "load_time": 0.0,
+      "avg_response_time": 0.0,
+      "tokens_per_second": 0.0,
+      "memory_usage_gb": null,
+      "response_quality": {},
+      "keyword_coverage": 0.0,
+      "response_samples": [],
+      "validation_status": "failed",
+      "validation_errors": [
+        "모델이 설치되지 않음: gpt-oss:20b"
+      ],
+      "timestamp": "2025-10-29T23:12:25.289169"
+    }
+  ],
+  "summary": {
+    "total_models": 4,
+    "passed": 0,
+    "failed": 4,
+    "avg_load_time": 0.0,
+    "avg_response_time": 0.0
+  }
+}

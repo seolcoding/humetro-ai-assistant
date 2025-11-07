@@ -1,0 +1,457 @@
+{
+  "chunk_id": 13,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2093",
+      "category": "대중교통 안내",
+      "turns": 8,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "판교에서 청계천으로 가는 버스를 알고싶어요.",
+          "intent": "버스노선",
+          "terms": "판교/지명/ 청계천/지명/ 버스/교통수단",
+          "knowledge_base": "청계천,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "판교 어디서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "판교/지명/ 출발/출발지",
+          "knowledge_base": "출발,출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "판교도서관에요.",
+          "terms": "판교도서관/공공기관",
+          "knowledge_base": "판교도서관,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "판교도서관에서 청계천으로 가는 버스는 7780버스 에요.",
+          "terms": "판교도서관/공공기관/ 청계천/지명/ 버스/교통수단",
+          "knowledge_base": "청계천,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "버스요금은 얼마에요?",
+          "intent": "버스요금",
+          "terms": "버스요금/돈",
+          "knowledge_base": "버스요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "1600원요.",
+          "terms": "1600원/금액",
+          "knowledge_base": "1600원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "청계천까지 얼마나 걸려요?",
+          "intent": "버스시간",
+          "terms": "청계천/지명",
+          "knowledge_base": "청계천,지명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "50분요.",
+          "terms": "50분/시간",
+          "knowledge_base": "50분,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2094",
+      "category": "대중교통 안내",
+      "turns": 10,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "부평에서 잠실가는 버스를 알고싶어요.",
+          "intent": "버스노선",
+          "terms": "부평/지명/ 잠실/지명/ 버스/교통수단",
+          "knowledge_base": "잠실,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "부평 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "부평/지명/ 출발/출발지",
+          "knowledge_base": "출발,출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "부평시청요.",
+          "terms": "부평/지명/ 시청/공공기관",
+          "knowledge_base": "시청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "잠실 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "잠실/지명",
+          "knowledge_base": "잠실,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "잠실야구장 에요.",
+          "terms": "잠실/지명/ 야구장/공공시설",
+          "knowledge_base": "야구장,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "부평시청에서 잠실야구장으로 가는 버스는 7200버스를 타시면 되요.",
+          "terms": "부평/지명/ 시청/공공기관/ 잠실/지명/ 야구장/공공시설/ 버스/교통수단",
+          "knowledge_base": "시청,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요?",
+          "intent": "버스시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "2시간정도 걸려요.",
+          "terms": "2시간/시간",
+          "knowledge_base": "2시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "막차는 언제에요?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후 11시에요.",
+          "terms": "오후/시간/ 11시/시간",
+          "knowledge_base": "11시,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2095",
+      "category": "대중교통 안내",
+      "turns": 10,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "분당에서 수원가는 버스를 알고싶어요.",
+          "intent": "버스노선",
+          "terms": "분당/지명/ 수원/지명/ 버스/교통수단",
+          "knowledge_base": "수원,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "분당 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "분당/지명",
+          "knowledge_base": "분당,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "분당소방서요.",
+          "terms": "분당/지명/ 소방서/공공기관",
+          "knowledge_base": "소방서,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "수원 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "수원/지명",
+          "knowledge_base": "수원,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "경기도청이에요.",
+          "terms": "경기도청/공공기관",
+          "knowledge_base": "경기도청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "분당소방서에서 경기도청으로 가는 버스는 909버스를 타시면 되요.",
+          "terms": "분당/지명/ 소방서/공공기관/ 경기도청/공공기관/ 버스/교통수단",
+          "knowledge_base": "소방서,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 20분정도 걸려요.",
+          "terms": "1시간/시간/ 20분/시간",
+          "knowledge_base": "20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차 시간은 언제에요?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시에요.",
+          "terms": "오전/시간/ 6시/시간",
+          "knowledge_base": "6시,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2096",
+      "category": "대중교통 안내",
+      "turns": 10,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "부천에서 용인가는 버스를 알고싶어요.",
+          "intent": "버스노선",
+          "terms": "부천/지명/ 용인/지명/ 버스/교통수단",
+          "knowledge_base": "용인,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "부천 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "부천/지명",
+          "knowledge_base": "부천,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "부천종합운동장요.",
+          "terms": "부천/지명/ 종합운동장/공공시설",
+          "knowledge_base": "종합운동장,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "용인 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "용인/지명",
+          "knowledge_base": "용인,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "명지대학교 에요.",
+          "terms": "명지대학교/공공기관",
+          "knowledge_base": "명지대학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "부천종합운동장에서 명지대학교로 가는 버스는 4500버스를 타시면 되요.",
+          "terms": "부천/지명/ 종합운동장/공공시설/ 명지대학교/공공기관/ 버스/교통수단",
+          "knowledge_base": "종합운동장,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "2시간10분정도 걸려요.",
+          "terms": "2시간/시간/ 10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제에요?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시반이에요.",
+          "terms": "오전/시간/ 5시반/시간",
+          "knowledge_base": "5시반,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2097",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안산에서 화성가는 버스를 알고싶어요.",
+          "intent": "버스노선",
+          "terms": "안산/지명/ 화성/지명/ 버스/교통수단",
+          "knowledge_base": "화성,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "안산 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "안산/지명/ 출발/출발지",
+          "knowledge_base": "안산.출발,출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "안산 호수공원요.",
+          "terms": "안산/지명/ 호수공원/공공시설",
+          "knowledge_base": "호수공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "화성 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "화성/지명",
+          "knowledge_base": "화성,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "화성시청 에요.",
+          "terms": "화성/지명/ 시청/공공기관",
+          "knowledge_base": "시청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "안산호수공원에서 화성시청으로 가는 버스는 156버스를 타시면 되요.",
+          "terms": "안산/지명/ 호수공원/공공시설/ 화성/지명/ 시청/공공기관/ 버스/교통수단",
+          "knowledge_base": "호수공원,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간15분정도 걸려요.",
+          "terms": "1시간/시간/ 15분/시간",
+          "knowledge_base": "15분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "막차는 언제에요?",
+          "intent": "버스시간",
+          "knowledge_base": "막차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오후 11시반이에요.",
+          "terms": "오후/시간/ 11시반/시간",
+          "knowledge_base": "11시반,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마에요?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2100원이에요.",
+          "terms": "2100원/금액",
+          "knowledge_base": "2100원,금액"
+        }
+      ]
+    }
+  ]
+}

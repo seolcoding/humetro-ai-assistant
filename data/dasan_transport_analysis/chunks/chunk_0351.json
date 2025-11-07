@@ -1,0 +1,804 @@
+{
+  "chunk_id": 351,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B24210",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "제가 수원을 가려고 하는데 어떻게 가야하는지 좀 도와주시겠어요?",
+          "intent": "버스노선",
+          "terms": "수원/지역",
+          "knowledge_base": "수원,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네~~지금 어디신데요?",
+          "intent": "버스노선",
+          "terms": "지금/말하는 바로 이때",
+          "knowledge_base": "지금,말하는바로이때"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "오산에 있는 고현동에  있어요.",
+          "terms": "오산,고현동/지역",
+          "knowledge_base": "고현동,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "고현동 어디에서 출발하실 건가요?",
+          "intent": "버스노선",
+          "terms": "고현동/지역, 출발/시작",
+          "knowledge_base": "출발,시작"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아~~고현초등학교요.",
+          "terms": "고현초등학교/초등교육기관",
+          "knowledge_base": "고현초등학교,초등교육기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "네~~어디로 가는 것을 안내해 드리면 될까요?",
+          "intent": "버스노선",
+          "terms": "안내/알려주는 곳",
+          "knowledge_base": "안내,알려주는곳"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "nc수원터미널이요.",
+          "terms": "NC수원터미널/버스터미널",
+          "knowledge_base": "nc수원터미널,버스터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네~~잠시만 기다려 주시면 확인해 보겠습니다.",
+          "terms": "확인/틀림없이 알아봄",
+          "knowledge_base": "확인,틀림없이알아봄"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네네~~그러세요.."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "기다려 주셔서 감사합니다.",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "감사,고마워하는마음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "고현초에서 nc수원터미널까지  가는 노선 알려드릴게요.",
+          "terms": "고현초/초등교육기관",
+          "knowledge_base": "nc수원터미널,초등교육기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네~~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "고현초 앞에서 11번 버스를 타고 오산역으로 가셔서 300번으로 환승하세요.",
+          "terms": "고현초/초등교육기관",
+          "knowledge_base": "버스,초등교육기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "네~~그렇게 하면 수원터미널까지 얼마나 걸리나요?",
+          "intent": "버스노선",
+          "terms": "수원터미널/버스터미널",
+          "knowledge_base": "수원터미널,버스터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "50분 정도 걸리겠네요.",
+          "terms": "50분/소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아~~그렇군요…"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "버스 요금도 알려 주세요.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "요금,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "버스 요금은 2450원 입니다.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "요금,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네~~알려 주셔서 감사해요.",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "감사,고마워하는마음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네~~행복한 하루 보내세요.",
+          "terms": "하루/아침부터 저녁까지",
+          "knowledge_base": "하루,아침부터저녁까지"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24211",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오산 시청에서 강남역까지 지하철을 이용해서 갈 수 있나요?",
+          "intent": "지하철노선",
+          "terms": "오산시청/지방행정기관",
+          "knowledge_base": "강남역,지방행정기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "잠시만 기다려 주세요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네~~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "오래 기다리게 해서 죄송합니다.",
+          "terms": "죄송/미안함",
+          "knowledge_base": "죄송,미안함"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "오산시청에서 강남역으로는 지하철만으로 갈 수는 없네요.",
+          "terms": "오산시청/지방행정기관",
+          "knowledge_base": "강남역,지방행정기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "그럼 어떻게 가야 하는 건가요?",
+          "intent": "지하철노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "오산시청에서는 강남역까지 바로 가는 버스가 있습니다.",
+          "terms": "오산시청/지방행정기관",
+          "knowledge_base": "강남역,지방행정기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "아~그래요?",
+          "intent": "지하철노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "그럼 버스로 가는 거 알려 주세요..",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네~~알겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "오산시청에서 5300번 버스를 타고 신논현역에서 하차하시면 됩니다.",
+          "terms": "오산시청/지방행정기관",
+          "knowledge_base": "버스,지방행정기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "아~~그렇군요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "버스타고 가면 얼마나 걸려요?",
+          "intent": "지하철노선",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "교통 상황에 따라 틀리겠지만 50분 정도는 걸릴 것 같습니다.",
+          "terms": "교통/서로 오고 감",
+          "knowledge_base": "상황,서로오고감"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아~~네네~~~"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "번거롭게 환승 안 해도 되니깐 좋네요..",
+          "terms": "환승/갈아타기",
+          "knowledge_base": "환승,갈아타기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네~~그러네요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "요금도 알려주실 수 있나요?",
+          "intent": "지하철노선",
+          "terms": "요금/책정된 이용금액",
+          "knowledge_base": "요금,책정된이용금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네~그럼요.."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "요금은 2800원입니다.",
+          "terms": "요금/책정된 이용금액",
+          "knowledge_base": "요금,책정된이용금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "네~~감사합니다. 좋은 하루 보내세요.",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "하루,고마워하는마음"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24212",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울역에서 부산역까지 기차 이용해서 가려면 어떻게 하면 될까요?",
+          "intent": "기차노선",
+          "terms": "서울역,부산역/기차역",
+          "knowledge_base": "부산역,기차역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "기차를 이용해서 부산으로 가는 노선을 알려드리면 될까요?",
+          "intent": "기차노선",
+          "terms": "기차/대중교통",
+          "knowledge_base": "부산,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네네~~"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "가장 빠르게 갈 수 있는 것은 어떤 건가요?",
+          "intent": "기차노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "ktx를 이용하시는 게 가장 빠르실 것 같습니다.",
+          "terms": "KTX/기차",
+          "knowledge_base": "이용,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "그래요. Ktx가 가장 빠르군요.",
+          "terms": "KTX/기차",
+          "knowledge_base": "KTX,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "표를 예매하려면 어떻게 해야 하나요?",
+          "intent": "기차노선",
+          "terms": "표/티켓,예매/미리 정해놓음",
+          "knowledge_base": "예매,미리정해놓음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "직접 매표소를 이용해야 하나요?",
+          "intent": "기차노선",
+          "terms": "매표소/표 파는 곳",
+          "knowledge_base": "매표소,표파는곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "꼭 매표소를 이용하지 않아도 됩니다.",
+          "terms": "매표소/표 파는 곳",
+          "knowledge_base": "이용,표파는곳"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그럼 어떻게 예매를 할 수 있을까요?",
+          "intent": "기차노선",
+          "terms": "예매/미리 정해놓음",
+          "knowledge_base": "예매,미리정해놓음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "코레일 홈페이지를 통해서 미리 예매할 수 있습니다.",
+          "terms": "코레일/한국철도공사",
+          "knowledge_base": "홈페이지.예매,한국철도공사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "친정엄마도 함께 가려는데 경로우대는 몇 세 이상 적용이 되나요?",
+          "intent": "기차노선",
+          "terms": "경로우대/나이가 많은 사람을 대우함",
+          "knowledge_base": "경로우대,나이가많은사람을대우함"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "65세 이상으로 알고 있습니다.",
+          "terms": "65세/나이",
+          "knowledge_base": "65세,나이"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "아~~그렇군요~~"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "홈페이지로 예매할 때도 경로할인 받을 수 있을까요?",
+          "intent": "기차노선",
+          "terms": "예매/미리 정해놓음",
+          "knowledge_base": "예매,미리정해놓음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네~~가능합니다.",
+          "terms": "가능/할 수 있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아~~다행이네요…",
+          "terms": "다행/뜻밖의 일이 잘되어 운이좋음",
+          "knowledge_base": "다행,뜻밖의일이잘되어운이좋음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "또 궁금하신 점이 있나요?",
+          "intent": "기차노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아니요…없네요.."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24213",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "청주에서 비행기로 제주도에 갈 수있을까요?",
+          "intent": "비행기운행",
+          "terms": "청주/지역,비행기/항공기",
+          "knowledge_base": "비행기,항공기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네~~가실 수 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아~~그렇군요…"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "그럼 항공권 예매 어떻게 하는지 알려 주시겠어요?",
+          "intent": "비행기운행",
+          "terms": "항공권/비행기표, 예매/미리 정해놓음",
+          "knowledge_base": "예매,미리정해놓음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "네~~언제 출발하실 건가요?",
+          "intent": "비행기운행",
+          "terms": "언제/지시대명사, 출발/시작",
+          "knowledge_base": "출발,시작"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네~~금요일 오후에 가려고 하는데요.",
+          "terms": "금요일/일주일의 5번째 요일",
+          "knowledge_base": "오후,일주일의5번째요일"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네~~현재 평일,주말 모두 운행이 가능한 것으로 확인되고 있습니다.",
+          "terms": "평일/월요일부터 금요일",
+          "knowledge_base": "평일,월요일부터금요일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "아~~그래요?그럼 금요일 오후 3시 비행기로 예매해 주실 수 있나요?",
+          "intent": "비행기운행",
+          "terms": "금요일/일주일의 5번째 요일",
+          "knowledge_base": "오후,일주일의5번째요일"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "예매는 항공사 홈페이지에서 시간과 좌석 확인하시고 예매를 하시면 되요..",
+          "terms": "예매/미리 정해놓음",
+          "knowledge_base": "항공사,미리정해놓음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "아~~그래요?",
+          "intent": "비행기운행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "지금은 안되는 거에요??",
+          "intent": "비행기운행",
+          "terms": "지금/말하는 바로 이때",
+          "knowledge_base": "지금,말하는바로이때"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네~도움을 드릴 수 없어 죄송합니다.",
+          "terms": "도움/남을 돕는일",
+          "knowledge_base": "도움,남을돕는일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 혹시 여권도 있어야 하는지 알려주실 수 있나요?",
+          "intent": "비행기운행",
+          "terms": "여권/외국을 여행하는 사람의 신분이나 국적을 증명하는것",
+          "knowledge_base": "여권,외국을여행하는사람의신분이나국적을증명하는것"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "아~~제주도는 국내이기에 여권은 필요하지 않습니다.",
+          "terms": "제주도/지역",
+          "knowledge_base": "국내,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아~~그렇군요..국내를 비행기로 이동하는 것은 여권이 필요 없군요.",
+          "terms": "여권/외국을 여행하는 사람의 신분이나 국적을 증명하는것",
+          "knowledge_base": "비행기,외국을여행하는사람의신분이나국적을증명하는것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "비행기 가격은 얼마나 되나요?",
+          "intent": "비행기운행",
+          "terms": "비행기/항공기",
+          "knowledge_base": "가격,항공기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네~~비행기 가격은 이용하시는 항공사마다 차이가 있어서 예매하시면서 확인을 하셔야 합니다.",
+          "terms": "비행기/항공기",
+          "knowledge_base": "가격,항공기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아~~그렇군요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "6개월 아이도 갈이 타고 갈 수 있나요?",
+          "intent": "비행기운행",
+          "terms": "아이/나이가 어린 사람",
+          "knowledge_base": "아이,나이가어린사람"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네~~부모동반으로 이용가능 합니다.",
+          "terms": "부모/아버지와 어머니",
+          "knowledge_base": "동반,아버지와어머니"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "아~~알겠습니다. 감사해요..",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "감사,고마워하는마음"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24214",
+      "category": "대중교통 안내",
+      "turns": 17,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오산역에서 양재역까지 가는 5300번 버스 요금이 얼마인지 알려 주실래요?",
+          "intent": "버스노선",
+          "terms": "오산역,양재역/정류장",
+          "knowledge_base": "양재역,정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네~~오산역에서 양재역까지 5300번 버스요금은 2,800원 입니다.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "양재역,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "아~~2,800원이군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "5300번 버스 종점이 양재역인건가요?",
+          "intent": "버스노선",
+          "terms": "종점/터미널",
+          "knowledge_base": "종점,터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아니요, 강남역에서 정차한 후 다시 순환하는 버스입니다.",
+          "terms": "정차/잠시 멈춤",
+          "knowledge_base": "정차,잠시멈춤"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "아~~그럼 강남역에서 다시 오산역으로 오는 건가요?",
+          "intent": "버스노선",
+          "terms": "강남역/오산역/지하철역",
+          "knowledge_base": "오산역,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네~~그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "오산역이 종점인거예요?",
+          "intent": "버스노선",
+          "terms": "종점/터미널",
+          "knowledge_base": "종점,터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "오산역이 종점은 아니고 차고지는 오산 고현동에 있습니다.",
+          "terms": "차고지/차량을 세워두는 곳",
+          "knowledge_base": "종점,차량을세워두는곳"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아~그렇군요…"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "혹시 오산역에서 말고 차고지에서 탈 수도 있을까요?",
+          "intent": "버스노선",
+          "terms": "차고지/차량을 세워두는 곳",
+          "knowledge_base": "차고지,차량을세워두는곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네~~그러실 수 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "차고지에서 타면 요금은 더 비싸지나요?",
+          "intent": "버스노선",
+          "terms": "차고지/차량을 세워두는 곳",
+          "knowledge_base": "요금,차량을세워두는곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "아니요 "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아~~동일하군요..",
+          "terms": "동일/같음",
+          "knowledge_base": "동일,같음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네~~잘 알겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "상담 감사합니다.",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "감사,고마워하는마음"
+        }
+      ]
+    }
+  ]
+}

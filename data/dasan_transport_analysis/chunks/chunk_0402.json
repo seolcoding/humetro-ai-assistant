@@ -1,0 +1,845 @@
+{
+  "chunk_id": 402,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B25035",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요 여기가 상담 센터 맞나요?",
+          "intent": "시내버스 시간",
+          "terms": "안녕/인사, 여기/장소, 상담/문의, 센터/기관",
+          "knowledge_base": "여기,기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 맞아요. 무엇 때문에 연락 주셨나요?",
+          "intent": "시내버스 시간",
+          "terms": "연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "뭐 하나만 여쭤보려고 연락 드렸습니다.",
+          "terms": "하나/일/숫자, 연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 편하게 질문 해 주세요.",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "아산 시내버스 첫차가 몇 시 인가요?",
+          "intent": "시내버스 시간",
+          "terms": "아산/지역, 버스/대중교통, 차/자동차, 시/시간",
+          "knowledge_base": "시내,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "혹시 질문 해주시는 이유를 알 수 있을까요?",
+          "intent": "시내버스 시간",
+          "terms": "질문/문의, 이유/원인",
+          "knowledge_base": "이유,원인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "그냥 제가 잘 몰라서요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "그렇군요 잠시만 정보를 찾아봐도 괜찮을까요?",
+          "intent": "시내버스 시간",
+          "terms": "잠시/잠깐, 정보/내용",
+          "knowledge_base": "정보,내용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "알겠습니다. 확인하시고 말씀해 주세요.",
+          "terms": "확인/검토, 말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "노선마다 다르지만 아산 시내버스는 가장 빠른게 06시55분 입니다.",
+          "terms": "노선/차편, 아산/지역, 버스/대중교통, 시/시간, 분/시간",
+          "knowledge_base": "아산,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "친절한 답변 감사합니다.",
+          "terms": "친절/상냥, 답변/대답",
+          "knowledge_base": "답변,대답"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "어떻게 궁금증은 좀 풀리셨나요?",
+          "intent": "시내버스 시간",
+          "terms": "궁금/호기심",
+          "knowledge_base": "궁금,호기심"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네 명쾌한 답변이었습니다.",
+          "terms": "답변/응답",
+          "knowledge_base": "답변,응답"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "다행이네요. 다른 질문 있으신가요?",
+          "intent": "시내버스 시간",
+          "terms": "다행/안심, 질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "또 있습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 질문 해 주세요.",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그럼 아산 시내버스 막차는 몇 시 인가요?",
+          "intent": "시내버스 시간",
+          "terms": "아산/지역, 버스/대중교통, 차/자동차, 시/시간",
+          "knowledge_base": "시내,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "노선마다 다르지만 아산 시내버스는 가장 늦는게 22시20분 입니다.",
+          "terms": "노선/차편, 아산/지역, 버스/대중교통, 시/시간, 분/시간",
+          "knowledge_base": "아산,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아 그렇군요. 도움이 많이 됐습니다. 감사합니다.",
+          "terms": "도움/상담",
+          "knowledge_base": "도움,상담"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "저도 감사합니다. 다음에 또 문의 해 주세요.",
+          "terms": "다음/차례, 문의/질문",
+          "knowledge_base": "문의,질문"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B25036",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "실례합니다. 시간 괜찮으신가요?",
+          "intent": "지하철 여부",
+          "terms": "실례/폐",
+          "knowledge_base": "시간,폐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 어떤 것 때문에 연락 주셨나요?",
+          "intent": "지하철 여부",
+          "terms": "연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "뭐 하나만 여쭤보려구요.",
+          "terms": "하나/일/숫자",
+          "knowledge_base": "하나,숫자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "아 네 연락 주셔서 감사합니다.",
+          "terms": "연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아닙니다. 시간 내주셔서 감사하죠.",
+          "terms": "시간/통화시간",
+          "knowledge_base": "시간,통화시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "네 문의 사항이 뭐죠?",
+          "intent": "지하철 여부",
+          "terms": "문의/질문, 사항/내용",
+          "knowledge_base": "사항,내용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "혹시 청주에 지하철 있나요?",
+          "intent": "지하철 여부",
+          "terms": "청주/지역, 지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 잠시 알아보고 바로 말씀 드리겠습니다.",
+          "terms": "잠시/잠깐, 바로/즉시, 말씀/말",
+          "knowledge_base": "바로,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 천천히 하세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아니요 청주에 지하철 없습니다. 하지만 시내버스는 이용 가능합니다.",
+          "terms": "청주/지역, 지하철/대중교통, 버스/대중교통, 이용/사용",
+          "knowledge_base": "지하철,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "그렇군요 설명해주시니 확실히 이해가 잘 되네요. 감사합니다.",
+          "terms": "설명/말, 확실/정확",
+          "knowledge_base": "확실,정확"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "당연히 해야 할 일을 한 것 뿐인데 다행이네요.",
+          "terms": "일/업무, 다행/안심",
+          "knowledge_base": "다행,안심"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네 친절히 답변해주시니 저도 편하게 질문 할 수 있고 좋습니다.",
+          "terms": "친절/상냥, 답변/대답/응답, 질문/문의",
+          "knowledge_base": "답변,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "다른 질문 있으신가요?",
+          "intent": "지하철 여부",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "더 이상 없네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "그렇군요 언제든지 괜찮으니까 궁금한게 있으면 연락 주세요.",
+          "terms": "궁금/질문, 연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 그렇게 할게요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "궁금하신 점은 좀 해결이 되셨나요?",
+          "intent": "지하철 여부",
+          "terms": "궁금/호기심, 해결/완료",
+          "knowledge_base": "해결,완료"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 감사합니다. 궁금한거 생기면 또 연락 드리겠습니다.",
+          "terms": "궁금/호기심, 연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다. 좋은 하루 보내시길 바랍니다.",
+          "terms": "하루/시간",
+          "knowledge_base": "하루,시간"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B25037",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "물어볼게 있는데 질문해도 되나요?",
+          "intent": "시내버스 시간",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "가능합니다. 혹시 저희 기관은 어떻게 아시게 됐나요?",
+          "intent": "시내버스 시간",
+          "terms": "기관/센터",
+          "knowledge_base": "기관,센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "인터넷을 통해 알게 되었습니다.",
+          "terms": "인터넷/웹",
+          "knowledge_base": "인터넷,웹"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "아 정말요? 그렇군요. 어떤게 궁금하신가요?",
+          "intent": "시내버스 시간",
+          "terms": "정말/진짜, 궁금/호기심",
+          "knowledge_base": "궁금,호기심"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "옥천 시내버스 첫차가 몇 시 인가요?",
+          "intent": "시내버스 시간",
+          "terms": "옥천/지역, 버스/대중교통, 차/자동차, 시/시간",
+          "knowledge_base": "시내,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "노선마다 다르지만 옥천 시내버스는 가장 빠른게 06시50분 입니다.",
+          "terms": "노선/차편, 옥천/지역, 버스/대중교통, 시/시간, 분/시간",
+          "knowledge_base": "옥천,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "아 그렇군요. 정확한 정보인가요?",
+          "intent": "시내버스 시간",
+          "terms": "정확/확실, 정보/내용",
+          "knowledge_base": "정보,내용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 맞습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그렇군요. 하나 더 여쭤봐도 돼요?",
+          "intent": "시내버스 시간",
+          "terms": "하나/일/숫자",
+          "knowledge_base": "하나,숫자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "당연히 가능하죠. 어떤 건가요?",
+          "intent": "시내버스 시간",
+          "terms": "가능/가능성",
+          "knowledge_base": "가능,가능성"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 옥천 시내버스 막차는 몇 시 인가요?",
+          "intent": "시내버스 시간",
+          "terms": "옥천/지역, 버스/대중교통, 차/자동차, 시/시간",
+          "knowledge_base": "시내,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "좋은 질문이네요.",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "예 제가 너무 모르는거 같습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "노선마다 다르지만 옥천 시내버스는 가장 늦는게 22시40분 입니다.",
+          "terms": "노선/차편, 옥천/지역, 버스/대중교통, 시/시간, 분/시간",
+          "knowledge_base": "옥천,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아 그렇군요. 이제 알겠네요. 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "도움이 됐다니 다행이네요. 언제든 물어보세요.",
+          "terms": "다행/안심",
+          "knowledge_base": "다행,안심"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 그렇게 할게요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "또 궁금한 점 있으세요?",
+          "intent": "시내버스 시간",
+          "terms": "궁금/호기심",
+          "knowledge_base": "궁금,호기심"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "더 이상 없습니다. 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 궁금한거 있으면 다시 문의 해 주세요.",
+          "terms": "궁금/호기심, 문의/질문",
+          "knowledge_base": "문의,질문"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B25038",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "여기가 대중교통 관련 상담 해주는 곳 맞나요?",
+          "intent": "시내버스 시간",
+          "terms": "상담/문의",
+          "knowledge_base": "대중,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무슨 일 이시죠?",
+          "intent": "시내버스 시간",
+          "terms": "일/업무",
+          "knowledge_base": "일,업무"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "뭐 하나만 여쭤보려고 연락 드렸습니다.",
+          "terms": "하나/일/숫자, 연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "어떤거요?",
+          "intent": "시내버스 시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "서산 시내버스 첫차가 몇 시 인가요?",
+          "intent": "시내버스 시간",
+          "terms": "서산/지역, 버스/대중교통, 차/자동차, 시/시간",
+          "knowledge_base": "시내,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "무엇 때문에 질문 해주시는거죠?",
+          "intent": "시내버스 시간",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "이유는 따로 없습니다.",
+          "terms": "이유/원인",
+          "knowledge_base": "이유,원인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "알겠습니다. 잠시만 정보를 찾아봐도 될까요?",
+          "intent": "시내버스 시간",
+          "terms": "잠시/잠깐, 정보/내용",
+          "knowledge_base": "정보,내용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 천천히 하세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "노선마다 다르지만 서산 시내버스는 가장 빠른게 06시20분 입니다.",
+          "terms": "노선/차편, 서산/지역, 버스/대중교통, 시/시간, 분/시간",
+          "knowledge_base": "서산,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "아하 그렇군요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "어떻게 궁금증은 좀 풀리셨나요?",
+          "intent": "시내버스 시간",
+          "terms": "궁금/호기심",
+          "knowledge_base": "궁금,호기심"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "그럼요. 제가 원하던 답변이었습니다.",
+          "terms": "답변/응답",
+          "knowledge_base": "답변,응답"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "다행이네요. 다른 질문 있으신가요?",
+          "intent": "시내버스 시간",
+          "terms": "다행/안심, 질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "한 가지 더 있어요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 편하게 질문해주세요.",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그럼 서산 시내버스 막차는 몇 시 인가요?",
+          "intent": "시내버스 시간",
+          "terms": "서산/지역, 버스/대중교통, 차/자동차, 시/시간",
+          "knowledge_base": "시내,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "노선마다 다르지만 서산 시내버스는 가장 늦는게 23시05분 입니다.",
+          "terms": "노선/차편, 서산/지역, 버스/대중교통, 시/시간, 분/시간",
+          "knowledge_base": "서산,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "그렇군요. 잘 알겠습니다. 오늘 질문 들어주셔서 감사했습니다.",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "별 말씀을요. 궁금한거 있으면 언제든 문의 해 주세요.",
+          "terms": "말씀/말, 궁금/호기심, 문의/질문",
+          "knowledge_base": "궁금,질문"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B25039",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요 또 연락 드리게 되네요.",
+          "intent": "지하철 여부",
+          "terms": "안녕/인사, 연락/문의",
+          "knowledge_base": "연락,문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무엇을 도와드릴까요?",
+          "intent": "지하철 여부",
+          "terms": "무엇/어떤것",
+          "knowledge_base": "무엇,어떤것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "뭐 좀 여쭤보려구요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "아 네 이렇게 찾아주셔서 감사합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아닙니다. 시간 내주셔서 감사하죠.",
+          "terms": "시간/통화시간",
+          "knowledge_base": "시간,통화시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "네 문의 사항이 뭐죠?",
+          "intent": "지하철 여부",
+          "terms": "문의/질문, 사항/내용",
+          "knowledge_base": "사항,내용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "혹시 성남에 지하철 있나요?",
+          "intent": "지하철 여부",
+          "terms": "성남/지역, 지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 잠시만요.",
+          "terms": "잠시/잠깐",
+          "knowledge_base": "잠시,잠깐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "알겠습니다. 확인하시고 말씀해 주세요.",
+          "terms": "확인/검토, 말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 성남에 지하철 있습니다. 참고로 시내버스도 이용 가능합니다.",
+          "terms": "성남/지역, 지하철/대중교통, 버스/대중교통, 이용/사용",
+          "knowledge_base": "지하철,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "그렇군요 친절하게 설명 잘 해주시네요. 감사합니다.",
+          "terms": "친절/상냥, 설명/말",
+          "knowledge_base": "설명,말"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "도움이 될 수 있어 저 역시 기쁩니다.",
+          "terms": "도움/상담",
+          "knowledge_base": "도움,상담"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네 잊지 않겠습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "질문 더 있으신가요?",
+          "intent": "지하철 여부",
+          "terms": "질문/문의",
+          "knowledge_base": "질문,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "음 충분히 여쭤본거 같습니다.",
+          "terms": "충분/모두",
+          "knowledge_base": "충분,모두"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 또 모르는게 있으면 언제든 말씀해세요.",
+          "terms": "말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "알겠습니다. 언제든 문의 드리겠습니다.",
+          "terms": "문의/질문",
+          "knowledge_base": "문의,질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "네 알겠습니다. 상담은 도움이 좀 됐나요?",
+          "intent": "지하철 여부",
+          "terms": "상담/문의",
+          "knowledge_base": "도움,문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 많은 도움이 됐습니다. 감사합니다.",
+          "terms": "도움/상담",
+          "knowledge_base": "도움,상담"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다. 좋은 하루 보내시길 바랍니다.",
+          "terms": "하루/시간",
+          "knowledge_base": "하루,시간"
+        }
+      ]
+    }
+  ]
+}

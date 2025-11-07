@@ -1,0 +1,9 @@
+{
+  "raw_response": "다산콜센터 대중교통 상담 데이터를 분석하겠습니다.\n\n```json\n{\n  \"question_types\": [\n    {\n      \"type\": \"버스 노선 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"종로구에서 불광동 가는 버스\",\n        \"청담에서 송파구 가는 버스\",\n        \"안양에서 과천 가는 버스\"\n      ]\n    },\n    {\n      \"type\": \"소요 시간 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"시간은 얼마나 걸립니까?\",\n        \"이동 시간 문의\"\n      ]\n    },\n    {\n      \"type\": \"첫차 시간 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"첫차는 언제입니까?\",\n        \"첫 운행 시간 문의\"\n      ]\n    },\n    {\n      \"type\": \"요금 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"차비는 얼마입니까?\",\n        \"버스 요금 문의\"\n      ]\n    }\n  ],\n  \"common_issues\": [\n    {\n      \"issue\": \"출발지-도착지 정보 불명확\",\n      \"frequency\": \"높음\",\n      \"context\": \"고객이 구/동 단위로만 문의하여 상담사가 구체적 위치를 재확인하는 패턴이 반복됨 (예: '종로구' → '종로구 어디?')\"\n    },\n    {\n      \"issue\": \"표준화된 질문 패턴\",\n      \"frequency\": \"매우 높음\",\n      \"context\": \"모든 고객이 동일한 순서로 질문 (노선 → 시간 → 첫차 → 요금), 실제 다양성이 부족해 보임\"\n  ",
+  "parse_error": true,
+  "error_detail": "Extra data: line 114 column 1 (char 2954)",
+  "chunk_id": "chunk_0010",
+  "processing_time": 67.23709797859192,
+  "processed_at": "2025-11-05T11:22:19.926068",
+  "dialogue_count": 5
+}

@@ -1,0 +1,9 @@
+{
+  "raw_response": "위 분석은 5개 대화를 기반으로 다산콜센터 대중교통 상담의 주요 특징과 개선 방향을 제시합니다. 특히 **분실물 관련 상담이 매우 높은 비중**을 차지하므로, 향후 서비스 개선의 핵심은 분실물 신고 프로세스의 단순화와 자동화에 있다고 판단됩니다.\n",
+  "parse_error": true,
+  "error_detail": "Expecting value: line 1 column 1 (char 0)",
+  "chunk_id": "chunk_0306",
+  "processing_time": 60.342588901519775,
+  "processed_at": "2025-11-05T11:59:32.352724",
+  "dialogue_count": 5
+}

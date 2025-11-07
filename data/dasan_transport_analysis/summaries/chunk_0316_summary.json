@@ -1,0 +1,9 @@
+{
+  "raw_response": "위의 구조화된 분석 결과를 확인하시고 특정 영역에 대해 더 깊이 있는 분석이나 추가 인사이트가 필요하신 부분이 있으면 말씀해주세요.\n",
+  "parse_error": true,
+  "error_detail": "Expecting value: line 1 column 1 (char 0)",
+  "chunk_id": "chunk_0316",
+  "processing_time": 49.079609870910645,
+  "processed_at": "2025-11-05T12:00:11.044841",
+  "dialogue_count": 5
+}

@@ -1,0 +1,799 @@
+{
+  "chunk_id": 176,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3784",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "카카오T에 대해 문의 좀 하려구요.",
+          "intent": "카카오택시",
+          "terms": "카카오T/교통서비스",
+          "knowledge_base": "카카오T,교통서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤점이 궁금하신가요?",
+          "intent": "카카오택시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "자동결제에 대해 물을려구요.",
+          "terms": "자동결제/결제서비스",
+          "knowledge_base": "자동결제,결제서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "자동결제는 카카오T에서 카드 등록후 카드없이 간편하게 등록된 카드로 결제가 진행되는 서비스 입니다.",
+          "terms": "자동결제/결제서비스/ 카카오T/교통서비스/ 카드/결제수단",
+          "knowledge_base": "카카오T,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "그럼 카드를 미리 등록해 놓아야 하는거죠?",
+          "intent": "카카오택시",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "카드 등록은 어디다 해요?",
+          "intent": "카카오택시",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "카카오T앱에서 결제수단관리에 들어가시면 등록및 수정하실 수 있습니다.",
+          "terms": "카카오T/교통서비스",
+          "knowledge_base": "카카오T,교통서비스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "등록된 결제 카드를 변경할수 있나요?",
+          "intent": "카카오택시",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 탑승완료후에 가능합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 직접결제도 있던데 호출할떄 직접결제를 선택하면 운행후 제가 지불하면 되죠?",
+          "intent": "카카오택시",
+          "terms": "직접결제/결제서비스",
+          "knowledge_base": "직접결제,결제서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 그렇습니다"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "카드 말고 현금결제도 가능한가요?",
+          "intent": "카카오택시",
+          "terms": "현금결제/결제 수단",
+          "knowledge_base": "현금결제,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 현금, 카드 모두 결제 가능합니다.",
+          "terms": "현금/카드/결제수단",
+          "knowledge_base": "현금.카드,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "그럼 스마트호출은 카드 등록 상태에서만 가능한가요?",
+          "intent": "카카오택시",
+          "terms": "스마트호출/호출 서비스",
+          "knowledge_base": "스마트호출,호출서비스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 스마트 호출은 자동결제로 카드정보가 있으셔야 이용하실수 있습니다.",
+          "terms": "스마트호출/호출 서비스/ 자동결제/결제서비스",
+          "knowledge_base": "자동결제,결제서비스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "결제하고 영수증은 주시나요?",
+          "intent": "카카오택시",
+          "terms": "영수증/서류",
+          "knowledge_base": "영수증,서류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "모바일 영수증으로 이미지 저장하실수 있습니다.",
+          "terms": "모바일/서비스/ 영수증/서류",
+          "knowledge_base": "영수증,서류"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "만약 이중결제 되면 어떻게 해요?",
+          "intent": "카카오택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "이중결제가 발생된 경우 고객센터로 문의 주시면 환불해 드립니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3785",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "시외버스 예매 좀 물어볼께요",
+          "intent": "시외버스 예매",
+          "terms": "시외버스/교통수단",
+          "knowledge_base": "시외버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 도와 드릴까요?",
+          "intent": "시외버스 예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "승차권 예매는 언제까지 해야하죠?",
+          "intent": "시외버스 예매",
+          "terms": "승차권/티켓",
+          "knowledge_base": "승차권,티켓"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "시외버스 승차권의 예매기간이 정해져 있진 않지만, 버스 탑승시간 20~30분 전까지 가능합니다.",
+          "terms": "시외버스/교통수단/ 승차권/티켓/ 20~30분/시간",
+          "knowledge_base": "시외버스.승차권.20~30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "승차권 예약 후에 발권은 어떻게 해야하나요?",
+          "intent": "시외버스 예매",
+          "terms": "승차권/티켓",
+          "knowledge_base": "승차권,티켓"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "매표창구에 예약시 사용한 신용카드를 제시하시고 예약사항을 말씀하시면 발권해 드립니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "만약에 신용카드를 못챙겨 가면 발권 못하나요?",
+          "intent": "시외버스 예매",
+          "terms": "신용카드/결제수단",
+          "knowledge_base": "신용카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "만약의 경우를 대비해 생년월인, 휴대폰번호로 예매내역을 조회 후 발권해 드립니다.",
+          "terms": "생년월일/개인정보/ 휴대폰/통신수단",
+          "knowledge_base": "휴대폰,통신수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "그렇군요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "승차권을 발권했는데 취소할수도 있나요?",
+          "intent": "시외버스 예매",
+          "terms": "승차권/티켓",
+          "knowledge_base": "승차권,티켓"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "발권한 승차권을 취소할 경우에는 매표창구에 가셔서 취소하시면 됩니다.",
+          "terms": "승차권/티켓",
+          "knowledge_base": "승차권,티켓"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "홈페이지에서는 안되나요?",
+          "intent": "시외버스 예매",
+          "terms": "홈페이지/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네, 홈페이지에서는 취소가 불가합니다.",
+          "terms": "홈페이지/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "그럼 언제까지 취소가 가능한건가요?",
+          "intent": "시외버스 예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "예약한 차량의 출발시간 최소 4시간 이내 취소 가능하며, 취소시점에 따라 취소 수수료가 발생됩니다.",
+          "terms": "4시간/시간/ 수수료/요금",
+          "knowledge_base": "수수료,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "4시간 이후에는 취소, 환불이 아예 안되네요?",
+          "intent": "시외버스 예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "제가 못탈 경우 다른분한테 팔수도 잇나요?",
+          "intent": "시외버스 예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "동일한 금액으로 필요에 의해 거래할 경우 문제가 되지 않지마느 앞표거래일 경우 엄중히 처벌 받습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 알겠습니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3786",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "승차권 예매 좀 도와주세요",
+          "intent": "승차권예매",
+          "terms": "승차권/티켓",
+          "knowledge_base": "승차권,티켓"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 편도와 왕복중 어떤걸 도와드릴까요?",
+          "intent": "승차권예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "편도로 알아봐 주세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "출발지역은 어디시죠?",
+          "intent": "승차권예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "부산요.",
+          "terms": "부산/지역",
+          "knowledge_base": "부산,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "도착지는 어디시죠?",
+          "intent": "승차권예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "서울 강남 고속버스 터미널요",
+          "terms": "서울/지역/ 강남고속버스터미널/터미널./시설",
+          "knowledge_base": "강남고속버스터미널,시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "출발하시는 날짜를 말씀해 주시겠어요?",
+          "intent": "승차권예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 11월 18일요.",
+          "terms": "11월18일/날짜",
+          "knowledge_base": "11월18일,날짜"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "배차가 매 시간마다 있습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "어느 시간대로 예매해 드릴까요?",
+          "intent": "승차권예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "10시로 해주세요.",
+          "terms": "10시/시간",
+          "knowledge_base": "10시,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "승차인원은 몇 명이시죠?",
+          "intent": "승차권예매",
+          "terms": "승차인원/인원수",
+          "knowledge_base": "승차인원,인원수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "저 1명요.",
+          "terms": "1명/인원수",
+          "knowledge_base": "1명,인원수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "할인혜택 대상이신가요?",
+          "intent": "승차권예매"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "할인되는게 뭐가 있나요?",
+          "intent": "승차권예매"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "학생 할인이 있습니다.",
+          "terms": "학생/신분",
+          "knowledge_base": "학생,신분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아 저는 성인이에요.",
+          "terms": "성인/신분",
+          "knowledge_base": "성인,신분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "요금이 얼마에요?",
+          "intent": "승차권예매",
+          "terms": "요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 성인 1명 24,000원 입니다.",
+          "terms": "성인/신분/ 24/000원/금액/돈",
+          "knowledge_base": "24,돈"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3787",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "신규 버스 노선 문의 좀 드릴께요?",
+          "intent": "신규노선안내",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 어느 노선 버스가 궁금하신가요?",
+          "intent": "신규노선안내",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "제가 듣기로 신도림역 까지 가는 버스가 생긴다고 들었거든요?",
+          "intent": "신규노선안내",
+          "terms": "신도림역/지하철역/ 버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "몇번이 생긴거에요?",
+          "intent": "신규노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "새로 생긴 버스는 아니구요, 기존 5200번의 노선이  변경되었습니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그럼 서울 나가는 버스가 사당역쪽 가는거랑 신도림역 가는 버스로 구분되나요?",
+          "intent": "신규노선안내",
+          "terms": "서울/지역/ 사당역/신도림역/지하철 역/ 버스/교통수단",
+          "knowledge_base": "사당역,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 현재는 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "여의도까지 가던 510은 없어지나요?",
+          "intent": "신규노선안내",
+          "terms": "여의도/지역",
+          "knowledge_base": "여의도,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 수요가 맞지 않아 노선이 폐쇄 되었습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "이 버스 광역버스 아닌가요?",
+          "intent": "신규노선안내",
+          "terms": "광역버스/교통수단",
+          "knowledge_base": "광역버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 맞습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 가격이 어떻게 되죠?",
+          "intent": "신규노선안내",
+          "terms": "가격/요금/비용/돈",
+          "knowledge_base": "가격,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "요금은 2,800원입니다.",
+          "terms": "요금/금액/돈",
+          "knowledge_base": "800원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "예?? 기존 510은 일반 시내버스라 1400원에 여의도 까지 갔는데,5200번은 신도림까지 가면서 값이 두배네요.",
+          "terms": "여의도/신도림/지역/ 시내버스/교통수단",
+          "knowledge_base": "신도림,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 버스 회사도 적자라 어쩔수가 없는 상황입니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "배차 간격은 어떻게 되죠?",
+          "intent": "신규노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "기존 15~20분이긴 한데 배곧이 신설되면서 교통상황에 따라 더 길어 질수 있을겁니다.",
+          "terms": "15~20분/ 시간",
+          "knowledge_base": "15~20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아, 돈은 돈대로 내고 시간은 시간대로 버리네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "자세한 사항은 시흥교통 OOO-OOOO-OOOO에 문의하시면 자세한 답변을 얻을실수 있습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3788",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "승차 거부 당했는데 신고해도 되나요?",
+          "intent": "승차거부신고",
+          "terms": "신고/민원",
+          "knowledge_base": "신고,민원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "위치와 상황 설명 좀 해주시겠어요?",
+          "intent": "승차거부신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "제가 대우4차 앞에서 15번 버스를 탈려고 기다리는데 버스가 멈추지도 않고 그냥 갔어요.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "많이 당황하셨겠어요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "버스가 버스정류장에 멈추지 않고 그냥 통과했다는 말씀이시죠?",
+          "intent": "승차거부신고",
+          "terms": "버스/교통수단/ 정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "이 차 놓치면 지하철도 놓치고 그럼 또 20~30분을 기다려야 한다 말이에요.",
+          "terms": "차/지하철/교통수단/ 20~30분/시간",
+          "knowledge_base": "지하철,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 그러셨군요, 불편을 드려 죄송합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지금 계신곳이 대우푸르지오4차 아파트 정류장이란 말씀이시죠?",
+          "intent": "승차거부신고",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 제가 지금 너무 열아 받네요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "신고 접수가  되나요?",
+          "intent": "승차거부신고",
+          "terms": "신고/민원",
+          "knowledge_base": "신고,민원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 신고접수 가능하십니다.",
+          "terms": "신고/민원",
+          "knowledge_base": "신고,민원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "아니, 제가 버스가 오는걸 보고 손까지 흔들었어요.",
+          "terms": "버스/교통수단/ 손/신체/몸",
+          "knowledge_base": "손,몸"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "어떤 처벌을 받나요? 너무 괴씸한데,",
+          "intent": "승차거부신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 기사님들 대상으로 교육이 진행되며, 시정조치를 취하게 됩니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "사람을 무시하는거 같아서 너무 기분 나쁘네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아마 착오가 있으셨을 겁니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "처벌이나 좀 쎄게 내려줬음 좋겠네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 회사에 연락해서 조치를 취하도록 하겠습니다. 다시한번 불편을 드려 죄송합니다.",
+          "terms": "회사/사업장",
+          "knowledge_base": "회사,사업장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 꼭 조치 좀 취해주세요."
+        }
+      ]
+    }
+  ]
+}

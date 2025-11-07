@@ -1,0 +1,857 @@
+{
+  "chunk_id": 190,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B10620",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "전주에서 제주도가는 배편 문의합니다.",
+          "intent": "노선문의",
+          "terms": "전주/전주시, 제주도/제주도, 배편/배",
+          "knowledge_base": "제주도,배"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "전주에서 목포항, 여수항 등 이동하여 제주도가는 배를 이용하실 수 있습니다.",
+          "terms": "전주/전주시, 목포항, 여수항/항구, 제주도/제주도",
+          "knowledge_base": "목포항,제주도"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "전주에서 목포항가려면 뭐가 빨라요?",
+          "intent": "노선문의",
+          "terms": "전주/전주시, 목포항 /항구",
+          "knowledge_base": "목포항,항구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "대중교통 안내해드릴까요?",
+          "intent": "노선문의",
+          "terms": "대중교통/대중교통",
+          "knowledge_base": "대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네. 알려주세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "전주역-익산역-목포역으로 기차로 환승하시는게 제일 빠릅니다.",
+          "terms": "전주역, 익산역, 목포역/기차역, 기차/기차, 환승/환승",
+          "knowledge_base": "익산역,환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "목포항에서 출발하는 배는 몇신데요?",
+          "intent": "노선문의",
+          "terms": "목포항/목포항, 출발/출발, 배/배",
+          "knowledge_base": "출발,배"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "오전9시, 오후 1시입니다.",
+          "terms": "시간대/아침/저녁/낮",
+          "knowledge_base": "오후,낮"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "전주에서 목포까지 기차로 얼마나 걸려요?",
+          "intent": "노선문의",
+          "terms": "전주/전주시, 목포/목포시, 기차/기차",
+          "knowledge_base": "목포,기차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "약 1시간 40분정도 소요됩니다. 기차에 따라 소요시간이 더 걸릴 수 있습니다.",
+          "terms": "기차/기차",
+          "knowledge_base": "기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "목포역에서 목포항까지는 차로 몇분걸려요?",
+          "intent": "노선문의",
+          "terms": "목포역/기차역, 목포항/항구, 차/자동차",
+          "knowledge_base": "목포항,자동차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "차로 약 15분정도 걸립니다.",
+          "terms": "차/자동차",
+          "knowledge_base": "차,자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "금액은요?",
+          "intent": "노선문의",
+          "terms": "금액/요금",
+          "knowledge_base": "금액,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "3,300원입니다.",
+          "terms": "돈/금액",
+          "knowledge_base": "300원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "전주에서 익산가는 첫차가 몇시죠?",
+          "intent": "노선문의",
+          "terms": "전주/전주시, 익산/익산시",
+          "knowledge_base": "익산,익산시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "오전 6시27분입니다.",
+          "terms": "아침/시간대",
+          "knowledge_base": "오전,시간대"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "아 그럼 충분히 갈 수 있겠네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "더 궁금하신 사항 있으신가요?",
+          "intent": "노선문의",
+          "terms": "문제/질문",
+          "knowledge_base": "사항,질문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아니요. 없어요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네. 좋은 하루 되십시오.",
+          "terms": "하루",
+          "knowledge_base": "하루"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10621",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "혹시 군산에서 제주도가는 배편 있나요?",
+          "intent": "노선문의",
+          "terms": "군산/군산시, 제주도/제주도, 배편/배",
+          "knowledge_base": "제주도,배"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "아니요. 없습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "그럼 비행기는 있나요?",
+          "intent": "노선문의",
+          "terms": "비행기/비행기",
+          "knowledge_base": "비행기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네. 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "시간 좀 알려주세요.",
+          "intent": "노선문의",
+          "terms": "시간대/아침/저녁/낮",
+          "knowledge_base": "시간,낮"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "오전 10:35, 11:10, 오후 17:25, 18:00 입니다.",
+          "terms": "시간대/아침/저녁/낮",
+          "knowledge_base": "오후,낮"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "항공사는 어디에요?",
+          "intent": "노선문의",
+          "terms": "항공사/항공사",
+          "knowledge_base": "항공사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "진에어와 제주항공입니다.",
+          "terms": "진에어/항공사, 제주항공/항공사",
+          "knowledge_base": "제주항공,항공사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리죠?",
+          "intent": "노선문의",
+          "terms": "시간/시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "약 1시간 소요됩니다.",
+          "terms": "시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "평일, 주말 상관없이 하루에 4번 있나요?",
+          "intent": "노선문의",
+          "terms": "평일/주말/시간대",
+          "knowledge_base": "주말,시간대"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "제주도에서 군산오는 시간도 알려주세요.",
+          "intent": "노선문의",
+          "terms": "제주도/제주도, 군산/군산시",
+          "knowledge_base": "군산,군산시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "오전 09:05, 09:30, 오후 15:45, 16:20 입니다.",
+          "terms": "시간대/아침/저녁/낮",
+          "knowledge_base": "오후,낮"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "얼마에요?",
+          "intent": "노선문의",
+          "terms": "얼마/요금",
+          "knowledge_base": "얼마,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "성인기준 2~8만원 입니다.",
+          "terms": "성인/신분",
+          "knowledge_base": "성인,신분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "가격은 언제가 더 저렴한가요?",
+          "intent": "노선문의",
+          "terms": "가격/요금",
+          "knowledge_base": "가격,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "오전이 더 저렴합니다.",
+          "terms": "오전/시간대",
+          "knowledge_base": "오전,시간대"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "문의해주셔서 감사합니다.",
+          "terms": "질문",
+          "knowledge_base": "문의,질문"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10622",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대전 성심당 갈려고하는데 버스편 알려주세요.",
+          "intent": "노선문의",
+          "terms": "대전/대전광역시, 성심당/업체, 버스편/버스",
+          "knowledge_base": "성심당,버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 어디십니까?",
+          "intent": "노선문의",
+          "terms": "출발지/출발지",
+          "knowledge_base": "출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "전주에요.",
+          "terms": "전주/전주시",
+          "knowledge_base": "전주,전주시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "전주 어디서부터 안내를 해드릴까요?",
+          "intent": "노선문의",
+          "terms": "전주/전주시",
+          "knowledge_base": "전주,전주시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "시외버스터미널이요.",
+          "terms": "시외버스터미널/시외버스터미널",
+          "knowledge_base": "시외버스터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "대전 성심당은 본점과 분점이 있습니다. 어디로 안내해드릴까요?",
+          "intent": "노선문의",
+          "terms": "대전/대전광역시, 성심당/업체",
+          "knowledge_base": "성심당,업체"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "본점으로 해주세요.",
+          "terms": "본사/원조/직영점",
+          "knowledge_base": "본점,직영점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "전주시외버스터미널 탑승 후 유성시외버스정류소에서 하차하시고 지하철로 약 30분 이동하시면 됩니다.",
+          "terms": "전주시외버스터미널, 유선시외버스정류소 /시외버스터미널, 지하철/지하철",
+          "knowledge_base": "유선시외버스정류소,지하철"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지하철도 자세히 알려주세요.",
+          "intent": "노선문의",
+          "terms": "지하철/지하철",
+          "knowledge_base": "지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "구암역에서 승차 후 중앙로역에서 하차하시면 됩니다.",
+          "terms": "구암역, 중앙로역/지하철역",
+          "knowledge_base": "중앙로역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "내리면 바로 성심당이에요?",
+          "intent": "노선문의",
+          "terms": "성심당/업체",
+          "knowledge_base": "성심당,업체"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "하차후 성심당까지 도보로 6분정도 이동하시면 됩니다.",
+          "terms": "성심당/업체, 도보/도보",
+          "knowledge_base": "도보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "대전 지하철은 얼마에요?",
+          "intent": "노선문의",
+          "terms": "대전/대전광역시, 지하철/지하철, 얼마/금액",
+          "knowledge_base": "지하철,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "1,350원입니다.",
+          "terms": "가격/요금",
+          "knowledge_base": "350원,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "성심당에서 신세계백화점까지는 멀어요?",
+          "intent": "노선문의",
+          "terms": "성심당/업체, 신세계백화점/업체",
+          "knowledge_base": "신세계백화점,업체"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "자동차로 약 20분정도 소요됩니다.",
+          "terms": "자동차/자동차",
+          "knowledge_base": "자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "택시비는 얼마나와요?",
+          "intent": "노선문의",
+          "terms": "택시비/요금",
+          "knowledge_base": "택시비,요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "약 6200원입니다.",
+          "terms": "가격/요금",
+          "knowledge_base": "6200원,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "알겠어요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네. 좋은 하루 되십시오.",
+          "terms": "하루",
+          "knowledge_base": "하루"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10623",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "강릉 여행갈려고 하는데 문의해도 되나요?",
+          "intent": "노선문의",
+          "terms": "강릉/강릉시, 여행/여행",
+          "knowledge_base": "여행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네. 무엇을 도와드릴까요?",
+          "intent": "노선문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "제가 세인트존스호텔을 예약했는데 시외버스터미널에서 얼마나 걸리나요?",
+          "intent": "노선문의",
+          "terms": "세인트존스호텔/업체, 시외버스터미널/시외버스터미널",
+          "knowledge_base": "시외버스터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "강릉시외버스터미널 말씀하시는건가요?",
+          "intent": "노선문의",
+          "terms": "강릉시외버스터미널/시외버스터미널",
+          "knowledge_base": "강릉시외버스터미널,시외버스터미널"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "시외버스, 택시 어떤걸로 안내해드릴까요?",
+          "intent": "노선문의",
+          "terms": "시외버스  /버스, 터미널/버스터미널",
+          "knowledge_base": "터미널,버스터미널"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "택시요!",
+          "terms": "택시 /택시",
+          "knowledge_base": "택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "18분 소요되고 택시비 약 8100원 예상됩니다.",
+          "terms": "택시비/요금",
+          "knowledge_base": "택시비,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "제가 다음날은 주문진을 가야되서 시외버스 알려주세요.",
+          "intent": "노선문의",
+          "terms": "주문진/관광지, 시외버스/버스터미널",
+          "knowledge_base": "시외버스,버스터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "출발지는 어디십니까?",
+          "intent": "노선문의",
+          "terms": "출발지/출발지",
+          "knowledge_base": "출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "동화가든이요",
+          "terms": "동화가든/업체",
+          "knowledge_base": "동화가든,업체"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "허난설헌삼거리 정류장에서 202-2번 승차, 경포해변 정류장에서 333-1버스로 환승 후 주문진 수산시장에서 하차하시면 됩니다.",
+          "terms": "허날설헌삼거리정류장, 경포해변정류장, 주문진수산시장/버스정류장, 환승/환승",
+          "knowledge_base": "경포해변정류장,환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "동화가든에서 정류장까지 걸어갈 수 있는 거리에요?",
+          "intent": "노선문의",
+          "terms": "동화가든/업체, 정류장/버스정류장",
+          "knowledge_base": "정류장,버스정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네. 도보로 5분 이동하시면 됩니다.",
+          "terms": "도보/도보",
+          "knowledge_base": "도보"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "주문진에 내려서는 호텔까지 몇분 걸어가야되요?",
+          "intent": "노선문의",
+          "terms": "주문진/관광지, 호텔/업체",
+          "knowledge_base": "호텔,업체"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "7분 이동하시면 됩니다.",
+          "terms": "이동",
+          "knowledge_base": "이동"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "직행버스는 없는거죠?",
+          "intent": "노선문의",
+          "terms": "직행/직행",
+          "knowledge_base": "직행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 환승편만 있습니다.",
+          "terms": "환승/환승",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "알겠습니다. 감사합니다~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "좋은하루 되십시오.",
+          "terms": "하루",
+          "knowledge_base": "하루"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B10624",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "지금 정동진갈려고 하는데 어떻게 가야되요?",
+          "intent": "노선문의",
+          "terms": "정동진/관광지",
+          "knowledge_base": "정동진,관광지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 어디십니까?",
+          "intent": "노선문의",
+          "terms": "출발지/출발지",
+          "knowledge_base": "출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "여기 강릉 홈플러스요.",
+          "terms": "강릉 /강릉시, 홈플러스/업체",
+          "knowledge_base": "홈플러스,업체"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "운행수단은 어떻게 안내해드릴까요?",
+          "intent": "노선문의",
+          "terms": "운행수단/운행수단",
+          "knowledge_base": "운행수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "버스로 해주세요.",
+          "terms": "버스/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "남대천정류장에서 109번 버스 탑승 후 정동초등학교정류장에서 하차하시면 됩니다.",
+          "terms": "남대천정류장, 정동초등학교정류장/버스정류장",
+          "knowledge_base": "정동초등학교정류장,버스정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "얼마나 걸려요?",
+          "intent": "노선문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "40분 소요됩니다.",
+          "terms": "소요시간/예상시간",
+          "knowledge_base": "소요,예상시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "배차간격이 얼만데요?",
+          "intent": "노선문의",
+          "terms": "배차간격/배차간격",
+          "knowledge_base": "배차간격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "2시간입니다.",
+          "terms": "소요시간/예상시간",
+          "knowledge_base": "2시간,예상시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "배차시간 더 적은건 없어요?",
+          "intent": "노선문의",
+          "terms": "배차시간/배차간격",
+          "knowledge_base": "배차시간,배차간격"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "109번버스가 40분으로 제일 적습니다.",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "다른 버스도 알려주세요.",
+          "intent": "노선문의",
+          "terms": "버스/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "111,112,113번 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "이 버스도 같은 노선인가요?",
+          "intent": "노선문의",
+          "terms": "버스/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "109번 언제 도착이에요?",
+          "intent": "노선문의",
+          "terms": "도착/목적지",
+          "knowledge_base": "도착,목적지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "현재 운행중인 버스가 없습니다.",
+          "terms": "버스/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네.. 알겠어요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "문의해주셔서 감사합니다.",
+          "terms": "질문",
+          "knowledge_base": "문의,질문"
+        }
+      ]
+    }
+  ]
+}

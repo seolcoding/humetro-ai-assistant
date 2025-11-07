@@ -1,0 +1,824 @@
+{
+  "chunk_id": 233,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B16443",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "여기 버스 신고도 되나요?",
+          "intent": "불편신고",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 일이 있으셨나요?",
+          "intent": "불편신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아니, 지금 시국이 어느때인데 버스에 손소독제도 없어요? 이게 말이 되나 진짜?",
+          "intent": "불편신고",
+          "terms": "버스/교통수단, 손소독제/청결제",
+          "knowledge_base": "버스,청결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "코로나 때문에 불안하신 상황에 손소독제도 제대로 비치해두지 않은 버스를 탑승하셔서 불안하셨겠어요.",
+          "terms": "코로나/병명, 손소독제/청결제",
+          "knowledge_base": "손소독제,청결제"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아휴! 말도 말아요 글쎄. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "아니 소독제 통이 있으면 뭐해요? 다 쓴거 교체도 안하고 통만 그대로 놔두고 말이지",
+          "terms": "소독제/청결제",
+          "knowledge_base": "교체,청결제"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "이건 쓰라는거에요 말라는거에요?",
+          "intent": "불편신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "해당 부분 비품 점검 불량으로 신고접수 하실 수 있습니다. ",
+          "terms": "비품/물건, 점검/확인, 불량/고장",
+          "knowledge_base": "점검,고장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "신고접수 원하시나요?",
+          "intent": "불편신고",
+          "terms": "신고, 접수",
+          "knowledge_base": "접수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "당연하죠! 신고 해주세요.",
+          "terms": "신고, 접수",
+          "knowledge_base": "접수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "몇 번 버스를 타셨나요?",
+          "intent": "불편신고",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "300번 버스요! 신촌으로 가는거요.",
+          "terms": "버스/교통수단, 신촌/장소",
+          "knowledge_base": "신촌,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "소독제 통이 비어있는 것을 기사님께도 말씀드려보셨나요?",
+          "intent": "불편신고",
+          "terms": "소독제/청결제, 기사/직업",
+          "knowledge_base": "기사,직업"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "물론이죠! 그런데 그 와중에 자기는 잘 채워 넣었다고 계속 우기는거 있죠? "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "그럼 내가 거짓말을 했다는거야 뭐야 기가막혀서",
+          "terms": "거짓말",
+          "knowledge_base": "거짓말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "그래서 한 마디 했더니 오히려 저한테 막 욕을 하면서 몰아부치더라구요.",
+          "terms": "욕/ 나쁜말",
+          "knowledge_base": "욕,나쁜말"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "많이 당황하셨겠어요.",
+          "terms": "당황",
+          "knowledge_base": "당황"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "말씀하신 부분 포함해서 운송업체에 신고접수 하도록 하겠습니다.",
+          "terms": "운송업체/회사",
+          "knowledge_base": "신고,회사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 꼭 좀 그 기사분 혼내주세요.",
+          "terms": "기사/직업",
+          "knowledge_base": "기사,직업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. 지금까지 상담원 000이었습니다.",
+          "terms": "상담원/직업",
+          "knowledge_base": "상담원,직업"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16444",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "혹시.. 여기서 기차 예약도 가능한가요?",
+          "intent": "기차예약",
+          "terms": "기차/교통수단",
+          "knowledge_base": "예약,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "안녕하세요. 직접예약은 안되고 앱이나 홈페이지에서 가능하십니다.",
+          "terms": "앱/어플리케이션, 홈페이지/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "앱 이름은 뭔가요?",
+          "intent": "기차예약",
+          "terms": "앱/어플리케이션",
+          "knowledge_base": "앱,어플리케이션"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "코레일로 검색하시면 되십니다.",
+          "terms": "코레일/기차",
+          "knowledge_base": "코레일,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "홈페이지도 동일한가요?",
+          "intent": "기차예약",
+          "terms": "홈페이지/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 동일하게 코레일 홈페이지로 들어가시면 되십니다.",
+          "terms": "코레일/기차, 홈페이지/웹사이트",
+          "knowledge_base": "코레일,웹사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그럼 기차 시간을 알 수 있을까요?",
+          "intent": "기차시간",
+          "terms": "기차/교통수단",
+          "knowledge_base": "시간,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 시간 안내는 가능합니다. ",
+          "terms": "시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "어떤 것이 궁금하신가요?",
+          "intent": "기차시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "서울-강원도까지 가는 시간을 알고 싶습니다.",
+          "terms": "서울/장소, 강원도/장소",
+          "knowledge_base": "강원도,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "어떤 열차를 이용하실 계획이신가요?",
+          "intent": "기차시간",
+          "terms": "열차/교통수단",
+          "knowledge_base": "열차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "ktx입니다.",
+          "terms": "KTX/교통수단",
+          "knowledge_base": "KTX,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "서울-강원까지 1시간 20분입니다.",
+          "terms": "서울/장소, 강원/장소",
+          "knowledge_base": "강원,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "요금은 얼마나 드나요?",
+          "intent": "기치요금",
+          "terms": "요금/돈",
+          "knowledge_base": "요금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "동행자가 있으신가요?",
+          "intent": "기치요금",
+          "terms": "동행자/사람",
+          "knowledge_base": "동행자,사람"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아니요. 저 혼자입니다.",
+          "terms": "혼자/1인",
+          "knowledge_base": "혼자,1인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "성인이신가요?",
+          "intent": "기치요금",
+          "terms": "성인/어른",
+          "knowledge_base": "성인,어른"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "청소년입니다.",
+          "terms": "청소년/아이",
+          "knowledge_base": "청소년,아이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "서울-강원도 청소년 요금은 10,000원입니다.",
+          "terms": "서울/장소, 강원도/장소, 청소년/아이, 요금/돈",
+          "knowledge_base": "강원도,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16445",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대중교통이용시 마스크 착용이 필수인가요?",
+          "intent": "마스크착용여부",
+          "terms": "대중교통/탈 것, 마스크/의약품",
+          "knowledge_base": "마스크,의약품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네. 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "왜죠?",
+          "intent": "마스크착용여부"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "감염을 줄이기 위해서입니다.",
+          "terms": "감염/병",
+          "knowledge_base": "감염,병"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "아직도 쓰지 않은 사람들이 많은데 그 사람들은 어떻게 되나요?",
+          "intent": "마스크착용여부"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "10/1일 기준 대중교통이용시 마스크 미착용시 벌금 10만원이 부가됩니다.",
+          "terms": "대중교통/탈 것, 마스크/의약품, 벌금/돈",
+          "knowledge_base": "마스크,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "길을 걸어갈때도 마스크 착용 필수인가요?",
+          "intent": "마스크착용여부",
+          "terms": "마스크/의약품",
+          "knowledge_base": "마스크,의약품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "이것도 어기면 벌금인가요? 하루종일 마스크 쓰기엔 답답하다구요.",
+          "intent": "마스크착용여부",
+          "terms": "벌금/돈, 마스크/의약품",
+          "knowledge_base": "마스크,의약품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 동일하게 벌금을 뭅니다.",
+          "terms": "벌금/돈",
+          "knowledge_base": "벌금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "잠깐 벗는 것도 안되는건가요?",
+          "intent": "마스크착용여부"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "죄송합니다만, 철저한 방역을 위해서 어쩔 수 없습니다.",
+          "terms": "방역/소독",
+          "knowledge_base": "방역,소독"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "최대한 감염을 줄이기 위해서 하는 것이니 양해 바랍니다.",
+          "terms": "감염/병",
+          "knowledge_base": "양해,병"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "중간에 잠깐 마스크를 벗을 수 있을만한 휴게소같은 곳은 없나요?",
+          "intent": "마스크착용여부",
+          "terms": "마스크/의약품, 휴게소/건물",
+          "knowledge_base": "휴게소,건물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "현재까지로는 그런 곳은 없습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그럼 만들어달라고 건의할 수있나요?",
+          "intent": "마스크착용여부"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "민원접수 가능하십니다. ",
+          "terms": "민원접수",
+          "knowledge_base": "민원접수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "성명과 연락처 부탁드립니다.",
+          "terms": "성명/이름, 연락처/전화번호",
+          "knowledge_base": "연락처,전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "OOO입니다. OOO-OOOO-OOOO"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "확인하였습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16446",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "여기 신고도 가능한가요?",
+          "intent": "불편신고",
+          "terms": "신고",
+          "knowledge_base": "신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤점 때문이신가요?",
+          "intent": "불편신고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "지하철에서 난동부리는 사람이 있어서요",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "난동,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "이런 사람도 신고 가능한가요?",
+          "intent": "불편신고",
+          "terms": "신고",
+          "knowledge_base": "신고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네. 가능합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "현재 어느 역을 지나고 계신가요?",
+          "intent": "불편신고",
+          "terms": "역",
+          "knowledge_base": "역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "합정입니다.",
+          "terms": "합정/장소",
+          "knowledge_base": "합정,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "지하철 번호를 알려주실 수 있으신가요?",
+          "intent": "불편신고",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "번호,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지하철에도 번호가 있나요?",
+          "intent": "불편신고",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철번호,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "문 근처에 보시면 고유번호가 있습니다.",
+          "terms": "고유번호",
+          "knowledge_base": "고유번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "어…. 5194번입니다.",
+          "terms": "5194/숫자",
+          "knowledge_base": "5194,숫자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "확인하였습니다. ",
+          "terms": "확인",
+          "knowledge_base": "확인"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "해당 차량으로 사람을 보내도록 하겠습니다.",
+          "terms": "차량/탈 것, 사람/동물",
+          "knowledge_base": "사람,동물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아니요. 특별히 없고 빨리 사람을 보내주세요.",
+          "terms": "사람/동물",
+          "knowledge_base": "사람,동물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "말리는 사람들이 같이 싸워서 한명으로는 부족할 것 같습니다.",
+          "terms": "부족",
+          "knowledge_base": "부족"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "알겠습니다. 추가로 두 명 더 보내도록 하겠습니다.",
+          "terms": "두 명/인수",
+          "knowledge_base": "두명,인수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 가능한 빨리 와주세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 가해자들이 더 난동부리지 않도록 자극되는 행동은 삼가해주시길 바랍니다.",
+          "terms": "가해자/사람",
+          "knowledge_base": "난동,사람"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네. 알겠습니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B16447",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "선불교통카드를 잃어버렸는데 혹시 남은 돈 환불이 가능한가요?",
+          "intent": "환불",
+          "terms": "선불교통카드/카드, 환불/환급",
+          "knowledge_base": "환불,환급"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 가능합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디서 환불받을 수 있나요?",
+          "intent": "환불",
+          "terms": "환불/환급",
+          "knowledge_base": "정류장,환급"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "티머니 홈페이지에서 확인이 가능하십니다.",
+          "terms": "티머니/교통카드, 홈페이지/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "지금 홈페이지 접속중인데 잘 모르겠어서요",
+          "terms": "홈페이지/웹사이트",
+          "knowledge_base": "홈페이지,웹사이트"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "그러시다면 유선으로도 신청이 가능하신데 유선번호를 알려드릴까요?",
+          "intent": "환불",
+          "terms": "유선/전화",
+          "knowledge_base": "유선,전화"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네, 그렇게 해주세요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "분실신고 전화번호는 234-0976번입니다. ",
+          "terms": "분실신고, 전화번호",
+          "knowledge_base": "전화번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "환불까지 얼마나 걸리나요?",
+          "intent": "환불소요기간",
+          "terms": "환불/환급",
+          "knowledge_base": "환불,환급"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "본인인증이 되고 잔액이 확인되면 다음날 바로 입금이 될겁니다.",
+          "terms": "잔액/금액",
+          "knowledge_base": "잔액,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "혹시 카드 정지도 되나요?",
+          "intent": "환불",
+          "terms": "카드정지",
+          "knowledge_base": "카드정지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 교통카드도 카드정지가 됩니다.",
+          "terms": "교통카드/카드",
+          "knowledge_base": "정지,카드"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "어디서 할 수있나요?",
+          "intent": "환불"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "마찬가지로 티머니 홈페이지나 전화로 가능합니다.",
+          "terms": "티머니/교통카드, 홈페이지/웹사이트, 전화/통신수단",
+          "knowledge_base": "홈페이지,통신수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "어떤 교통카드던 상관없이 환불이 가능한가요?",
+          "intent": "환불",
+          "terms": "교통카드/카드, 환불/환급",
+          "knowledge_base": "환불,환급"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "티머니에서 발급하는 교통카드라면 가능합니다.",
+          "terms": "티머니/교통카드, 교통카드/카드",
+          "knowledge_base": "교통카드,카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아니요. 없습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "무사히 환불 받으시길 바랍니다.",
+          "terms": "환불/환급",
+          "knowledge_base": "환불,환급"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다."
+        }
+      ]
+    }
+  ]
+}

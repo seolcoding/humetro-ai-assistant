@@ -1,0 +1,816 @@
+{
+  "chunk_id": 73,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2801",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "세종역에서 조치원시장 가는 버스가 있을까요?",
+          "intent": "노선안내",
+          "terms": "세종역/역/ 조치원시장/쇼핑센터/ 버스/대중교통",
+          "knowledge_base": "조치원시장,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 조치원시장까지 가는 버스는 129번 탑승 하시면 됩니다. ",
+          "terms": "조치원시장/쇼핑센터/ 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "얼마나 걸리나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "30분 정도 소요됩니다. ",
+          "terms": "30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "몇 정거장이나 지나는 지 알수 있을까요?",
+          "intent": "노선안내",
+          "terms": "정거장/역",
+          "knowledge_base": "정거장,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "9개 정류장 지나서 조치원시장역에서 내리시면 됩니다. ",
+          "terms": "정류장/역/ 조치원시장역/역",
+          "knowledge_base": "조치원시장역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그 버스말고는 없나요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "다른 버스노선으로 알려드릴까요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 일단 탈 수 있는것들 번호 좀 다 알려주세요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "129번, 32번, 17번 탑승가능합니다. 다만 32번 버스는 종착지가 다르기때문에 129번, 17번에 비해 많은 시간이 소요됩니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "얼마나 차이 나는데요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "32번 버스는 조치원시장까지 가는데에 50분 소요됩니다. ",
+          "terms": "조치원시장/쇼핑센터/ 50분/시간",
+          "knowledge_base": "50분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "와. 엄청 돌아가나보네요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "그럼 가장 빨리 탈 수 있는 버스는 몇 번인가요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "현재 기준으로 가장 빠르게 탑승하실 수 있는 버스는 32번 입니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "32번은 너무 돌아가서 안타려고요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "그 다음 버스는요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "그 다음 버스는 129번 약 10분후에 세종역에서 탑승하실 수 있습니다. ",
+          "terms": "버스/대중교통/ 세종역/역",
+          "knowledge_base": "세종역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "넵 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. 안전한 운행되십시오. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2802",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "오송역에서 세종청사 가는 버스 안내 부탁드립니다. ",
+          "intent": "노선안내",
+          "terms": "오송역/역/ 세종청사/공공기관/ 버스/대중교통",
+          "knowledge_base": "세종청사,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "990번 버스 탑승하시면 오송역에서 세종청사까지 탑승 가능합니다. ",
+          "terms": "버스/대중교통/ 오송역/역/ 세종청사/공공기관",
+          "knowledge_base": "오송역,공공기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "버스 요금이 얼마인가요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "2000원 입니다. ",
+          "terms": "2000원/금액",
+          "knowledge_base": "2000원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "에? 버스요금이 그렇게 비싸요? 오송 버스기본료가 얼마인가요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통/ 오송/지역",
+          "knowledge_base": "오송,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "기본요금은 1200원이시고 세종시로 넘어가는 구간요금 적용되어 2000원 부과됩니다. ",
+          "terms": "1200원/금액/ 세종시/지역/ 2000원/금액",
+          "knowledge_base": "세종시,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "아아 오송에서 세종으로 넘어가서 추가요금이 있다는 말씀이시죠?",
+          "intent": "노선안내",
+          "terms": "오송/지역/ 세종/세종특별자치시/지역",
+          "knowledge_base": "세종,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 그렇습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그럼 내릴때 추가요금을 내야하는건가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "현금결제하시나요?",
+          "intent": "노선안내",
+          "terms": "현금결제/결제방법",
+          "knowledge_base": "현금결제,결제방법"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네 현금결제할때요. ",
+          "terms": "현금결제/결제방법",
+          "knowledge_base": "현금결제,결제방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "탑승하실때 기사님께 말씀드리고 한꺼번에 결제하시거나 내리실때 추가요금을 납부하시고 내리시면 됩니다. ",
+          "knowledge_base": "기사님"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "좀 번거롭네요. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "다른 결제 방법 있나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "교통카드나 핸드폰에 모바일페이 가능하시면 휴대폰으로도 결제 가능합니다. ",
+          "terms": "교통카드/결제방법/ 핸드폰/통신기기/ 휴대폰/통신수단",
+          "knowledge_base": "핸드폰,통신수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "삼성페이도 되나요?",
+          "intent": "노선안내",
+          "terms": "삼성페이/결제방법",
+          "knowledge_base": "삼성페이,결제방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 삼성페이도 가능합니다. ",
+          "terms": "삼성페이/결제방법",
+          "knowledge_base": "삼성페이,결제방법"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "다른 문의사항은 없으신가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 없습니다. 감사해요."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2803",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "세종청사역에서 보건복지부까지 거리가 얼마나 되나요?",
+          "intent": "노선안내",
+          "terms": "세종청사역/역/ 보건복지부/공공기관",
+          "knowledge_base": "보건복지부,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "약 500m 거리 떨어져 있습니다. ",
+          "terms": "500m/거리",
+          "knowledge_base": "500m,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "그럼 걸어서 갈 수 있죠?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네 도보로 약 2분정도 소요됩니다. ",
+          "terms": "2분/시간",
+          "knowledge_base": "2분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "그리고 혹시 세종청사에서 오송역 가는 방법 좀 알려주실래요?",
+          "intent": "노선안내",
+          "terms": "세종청사/공공기관/ 오송역/역",
+          "knowledge_base": "오송역,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "버스로 안내 도와드릴까요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네 버스든 뭐든 상관없어요. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 버스로 안내 도와드리겠습니다. 990번, 1001번 버스 탑승하시면 오송역까지 운행합니다. ",
+          "terms": "버스/대중교통/ 오송역/역",
+          "knowledge_base": "오송역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "요금은 얼마인가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "성인기준 2,000원 입니다. ",
+          "terms": "2/000원/금액",
+          "knowledge_base": "000원,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "몇 분이나 걸리나요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "약 20분정도 소요됩니다. ",
+          "terms": "20분/시간",
+          "knowledge_base": "20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "세종청사에서 버스정류장은 근처에 있나요?",
+          "intent": "노선안내",
+          "terms": "세종청사/공공기관/ 버스정류장/역",
+          "knowledge_base": "버스정류장,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네 도보로 2분정도에 위치해 있습니다. ",
+          "terms": "2분/시간",
+          "knowledge_base": "2분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "버스 배차시간은 어느정도인지 알 수 있을까요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "1001번은 15분, 990번은 10분 마다 운행하고 있어 많은 대기를 요하지 않습니다. ",
+          "terms": "15분/시간/ 10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "그렇군요. 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "네 다른 문의 사항은 없으신가요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네 없습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "감사합니다. 좋은하루보내세요. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2804",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스에 지갑을 놓고 내린거같은데 오늘 분실물 들어온거 없나요?",
+          "intent": "분실물문의",
+          "terms": "버스/대중교통/ 지갑/소지품",
+          "knowledge_base": "지갑,소지품"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "확인해드리겠습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "탑승하신 버스 번호가 어떻게 되시나요?",
+          "intent": "분실물문의",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "500번 버스에요. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "현재로써 신고된 분실물은 파악되는게 없습니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "방금 버스에서 내린거라, 누가 주워가기전에 기사님께 연락드려서 한번만 확인 부탁드리면 안될까요?",
+          "intent": "분실물문의",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그러시면 하차하신 시간과 정류장 말씀해주시겠어요?",
+          "intent": "분실물문의",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시 5분 정도에 내렸고요, 세종청사 정류장에서 내렸어요. ",
+          "terms": "1시5분/시간/ 세종청사/공공기관/ 정류장/역",
+          "knowledge_base": "세종청사,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "혹시 정류장 번호는 모르시나요?",
+          "intent": "분실물문의",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "정류장 번호가 뭐에요?",
+          "intent": "분실물문의",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "현재 하차하신 정류장앞에 계신가요?",
+          "intent": "분실물문의",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 맞아요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "그럼 정류장에 정류장 번호가 표시되어 있습니다. 확인 부탁드리겠습니다. ",
+          "terms": "정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "아 네 5-543번이라고 써있어요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "탑승하셨던 좌석 위치는 어떻게 되시나요?",
+          "intent": "분실물문의",
+          "terms": "정류장/역/탑승/좌석",
+          "knowledge_base": "좌석"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "내리는 문 뒤에 두자리 좌석 있잖아요 거기 앉았었어요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 버스 조회해서 기사님께 연락드리겠습니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "연락은 얼마나 기다려야하죠?",
+          "intent": "분실물문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "분실물이 확인되면 약 10분 이내로 전화드립니다. ",
+          "terms": "10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2805",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "세종터미널에서 아름동 가는 버스좀 알려주세요. ",
+          "intent": "노선안내",
+          "terms": "세종터미널/터미널/ 아름동/동네",
+          "knowledge_base": "아름동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "세종터미널역에서 출발하시나요?",
+          "intent": "노선안내",
+          "terms": "세종터미널역/역",
+          "knowledge_base": "세종터미널역,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 맞습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 아름동 어디신가요?",
+          "intent": "노선안내",
+          "terms": "아름동/동네",
+          "knowledge_base": "아름동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "아름동 해피라움상가 앞이요. ",
+          "terms": "아름동/동네/ 해피라움상가/건물",
+          "knowledge_base": "해피라움상가,건물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 세종터미널에서 해피라움상가 까지 운행하는 버스 번호는 110번과 42번 입니다. ",
+          "terms": "세종터미널/터미널/ 해피라움상가/건물/ 버스/대중교통",
+          "knowledge_base": "해피라움상가,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "두 버스 노선이 동일한가요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "110번 버스는 조치원시장을 경유해 갑니다. ",
+          "terms": "버스/대중교통/ 조치원시장/쇼핑센터",
+          "knowledge_base": "조치원시장,쇼핑센터"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그럼 더 오래걸리겠네요?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 110번 버스는 35분 소요되며 42번은 20분 소요됩니다. ",
+          "terms": "버스/대중교통/ 35분/시간/ 20분/시간",
+          "knowledge_base": "35분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "버스비는 동일하죠?",
+          "intent": "노선안내",
+          "terms": "버스비/비용",
+          "knowledge_base": "버스비,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네 동일합니다. "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "얼마죠?",
+          "intent": "노선안내"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "현금결제시 1,500원이며 카드결제시 100원 할인 받으실 수 있습니다. ",
+          "terms": "현금결제/결제방법/ 1/500원/금액/ 카드결제/결제수단",
+          "knowledge_base": "1,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "아 맞다. 생각해보니 조치원시장을 좀 들려야하는데, 버스 환승 가능하죠?",
+          "intent": "노선안내",
+          "terms": "조치원시장/쇼핑센터/ 버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "내 30분 이내로 탑승하시면 무료로 환승가능합니다. ",
+          "terms": "30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "동일한 버스 번호만 환승이 되나요?",
+          "intent": "노선안내",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아니요 전체 노선의 버스에서 환승 서비스를 제공하고 있습니다. ",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "그렇군요. 감사합니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 감사합니다."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "chunk_id": 29,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2173",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안산에서 논현가는 버스를 알려주이소.",
+          "intent": "버스노선",
+          "terms": "안산/지명/ 논현/지명/ 버스/교통수단",
+          "knowledge_base": "논현,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "안산 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "안산/지명",
+          "knowledge_base": "안산,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "안산시청 이요.",
+          "terms": "안산/지명/ 시청/공공기관",
+          "knowledge_base": "시청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "논현 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "논현/지명",
+          "knowledge_base": "논현,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "소래습지생태공원 이요.",
+          "terms": "소래습지생태공원/공공시설",
+          "knowledge_base": "소래습지생태공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "안산시청에서 소래습지생태공원으로 가는 버스는 980버스를 타면 되요.",
+          "terms": "안산/지명/ 시청/공공기관/ 소래습지생태공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "시청,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리는교?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 40분정도요.",
+          "terms": "1시간/시간/ 40분/시간",
+          "knowledge_base": "40분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제인교?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 10분요.",
+          "terms": "오전/시간/ 5시/시간/ 10분/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마인교?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2,200원이요.",
+          "terms": "2/200원/금액",
+          "knowledge_base": "200원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2174",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "연수구에서 논현가는 버스를 알려주이소.",
+          "intent": "버스노선",
+          "terms": "연수구/지명/ 논현/지명/ 버스/교통수단",
+          "knowledge_base": "논현,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "연수구 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "연수구/지명",
+          "knowledge_base": "연수구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "연수구청 이요.",
+          "terms": "연수구청/공공기관",
+          "knowledge_base": "연수구청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "논현 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "논현/지명",
+          "knowledge_base": "논현,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "소래습지생태공원 이요.",
+          "terms": "소래습지생태공원/공공시설",
+          "knowledge_base": "소래습지생태공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "연수구청에서 소래습지공원으로 가는 버스는 200버스를 타면 되요.",
+          "terms": "연수구청/공공기관/ 소래습지공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "소래습지공원,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리는교?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "2시간 10분정도요.",
+          "terms": "2시간/시간/ 10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제인교?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 30분요.",
+          "terms": "오전/시간/ 5시/시간/ 30분/시간",
+          "knowledge_base": "5시30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마인교?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,900원이요.",
+          "terms": "1/900원/금액",
+          "knowledge_base": "900원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2175",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "연수구에서 부평가는 버스를 알려주이소.",
+          "intent": "버스노선",
+          "terms": "연수/지명/부평/지명/버스/교통수단",
+          "knowledge_base": "부평,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "연수구 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "연수/지명",
+          "knowledge_base": "연수,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "연수구청 이요.",
+          "terms": "연수/지명/ 구청/공공기관",
+          "knowledge_base": "구청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "부평 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "부평/지명",
+          "knowledge_base": "부평,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "상동호수공원 이요.",
+          "terms": "상동호수공원/공공시설",
+          "knowledge_base": "상동호수공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "연수구청에서 상동호수공원으로 가는 버스는 800버스를 타면 되요.",
+          "terms": "연수/지명/ 구청/공공기관/ 상동호수공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "구청,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리는교?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 10분정도요.",
+          "terms": "1시간/시간/10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제인교?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시 10분이요.",
+          "terms": "오전/시간/6시/시간/ 10분/시간",
+          "knowledge_base": "6시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마인교?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,550원이요.",
+          "terms": "1/550원/금액",
+          "knowledge_base": "550원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2176",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "계양에서 부평가는 버스를 알려주이소.",
+          "intent": "버스노선",
+          "terms": "계양/지명/ 부평/지명/ 버스/교통수단",
+          "knowledge_base": "부평,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "계양 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "계양/지명",
+          "knowledge_base": "계양,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "계양구청이요.",
+          "terms": "계양/지명/ 구청/공공기관",
+          "knowledge_base": "구청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "부평 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "부평/지명",
+          "knowledge_base": "부평,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "상동호수공원이요.",
+          "terms": "상동호수공원/공공시설",
+          "knowledge_base": "상동호수공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "계양구청에서 상동호수공원으로 가는 버스는 300버스를 타면 되요.",
+          "terms": "계양/지명/ 구청/공공기관/ 상동호수공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "구청,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리는교?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 30분정도요.",
+          "terms": "1시간/시간/ 30분/시간",
+          "knowledge_base": "30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제인교?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시이요.",
+          "terms": "오전/시간/ 6시/시간",
+          "knowledge_base": "6시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마인교?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,200원이요.",
+          "terms": "1/200원/금액",
+          "knowledge_base": "200원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2177",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "계양에서 파주가는 버스를 알려주이소.",
+          "intent": "버스노선",
+          "terms": "계양/지명/ 파주/지명/ 버스/교통수단",
+          "knowledge_base": "파주,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "계양 어디에서 출발하세요?",
+          "intent": "버스노선",
+          "terms": "계양/지명",
+          "knowledge_base": "계양,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "계양구청이요.",
+          "terms": "계양/지명/ 구청/공공기관",
+          "knowledge_base": "구청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "파주 어디로 가세요?",
+          "intent": "버스노선",
+          "terms": "파주/지명",
+          "knowledge_base": "파주,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "금촌초등학교이요.",
+          "terms": "금촌초등학교/공공기관",
+          "knowledge_base": "금촌초등학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "계양구청에서 금촌초등학교으로 가는 버스는 250버스를 타면 되요.",
+          "terms": "계양/지명/ 구청/공공기관/ 금촌초등학교/공공기관/ 버스/교통수단",
+          "knowledge_base": "구청,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리는교?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 40분정도요.",
+          "terms": "1시간/시간/ 40분/시간",
+          "knowledge_base": "40분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제인교?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 50분이요.",
+          "terms": "오전/시간/ 5시/시간/ 50분/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마인교?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,350원이요.",
+          "terms": "1/350원/금액",
+          "knowledge_base": "350원,금액"
+        }
+      ]
+    }
+  ]
+}

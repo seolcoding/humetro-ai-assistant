@@ -1,0 +1,840 @@
+{
+  "chunk_id": 273,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B22441",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "여보세요.",
+          "intent": "노인무임승차문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 안내해 드릴까요?",
+          "intent": "노인무임승차문의",
+          "terms": "무엇/어떤",
+          "knowledge_base": "안내,어떤"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "노인들 버스비 공짜예요?",
+          "intent": "노인무임승차문의",
+          "terms": "버스비/버스요금/돈, 공짜/무료",
+          "knowledge_base": "버스비,무료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "연세가 어떻게 되세요?",
+          "intent": "노인무임승차문의",
+          "terms": "연세/나이",
+          "knowledge_base": "연세,나이"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "67센데요.",
+          "terms": "67세/나이",
+          "knowledge_base": "67.0,나이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "65세이상 노인분은 무료입니다.",
+          "terms": "65세/나이, 무료/공짜",
+          "knowledge_base": "노인,공짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "지하철도 공짜래요?",
+          "intent": "노인무임승차문의",
+          "terms": "지하철/대중교통/교통수단, 공짜/무료",
+          "knowledge_base": "공짜,무료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 지하철도 무료입니다.",
+          "terms": "지하철/대중교통/교통수단, 무료/공짜",
+          "knowledge_base": "무료,공짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "노인들만 공짜로 해주는거래요?",
+          "intent": "노인무임승차문의",
+          "terms": "공짜/무료",
+          "knowledge_base": "공짜,무료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아니요, 유아나 장애인분들도 무료입니다.",
+          "terms": "무료/공짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "애기들고 공짜라고요?",
+          "intent": "무임승차문의",
+          "terms": "애기/아가, 공짜/무료",
+          "knowledge_base": "공짜,무료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "6세미만의 아이들은 무료입니다.",
+          "terms": "아이/어린이, 무료/공짜",
+          "knowledge_base": "아이,공짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "애기들 여럿이 데리고 타도 다 공짜겠네요.",
+          "intent": "무임승차문의",
+          "terms": "공짜/무료",
+          "knowledge_base": "여럿,무료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "보호자 동반 3명까지 무료입니다.",
+          "terms": "3명/인원, 무료/공짜",
+          "knowledge_base": "동반,공짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "아, 여러명은 안되는거네요.",
+          "intent": "무임승차문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 보호자 한명에 3명까지 입니다.",
+          "terms": "3명/인원",
+          "knowledge_base": "보호자,인원"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "어디서 타든 노인들은 공짜라는 거지요?",
+          "intent": "무임승차문의",
+          "terms": "공짜/무료",
+          "knowledge_base": "공짜,무료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 이용하시는 장소 관계없이 무료입니다.",
+          "terms": "무료/공짜",
+          "knowledge_base": "장소,공짜"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "버스탈때 신분증 있어야 되지요?",
+          "intent": "무임승차문의",
+          "terms": "버스/대중교통/교통수단",
+          "knowledge_base": "신분증,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 신분증 제시하시고 타셔야 합니다.",
+          "knowledge_base": "제시"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22442",
+      "category": "대중교통 안내",
+      "turns": 22,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "여기 가장동 인데요.",
+          "intent": "버스정류장문의",
+          "terms": "가장동/동네",
+          "knowledge_base": "가장동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "버스 정류장이 어디 있는지도 알려줘요?",
+          "intent": "버스정류장문의",
+          "terms": "버스정류장/버스정류소, 어디/장소",
+          "knowledge_base": "정류장,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "가장동 버스 정류장위치가 궁금하신가요?",
+          "intent": "버스정류장문의",
+          "terms": "가장동/동네, 버스정류장/버스정류소",
+          "knowledge_base": "정류장,버스정류소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "예, 버스정류장이 안보여요.",
+          "terms": "버스정류장/버스정류소",
+          "knowledge_base": "버스정류장,버스정류소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "가장동에는 버스정류장이 여러곳 있는데 어디에 있는걸 안내드릴까요?",
+          "intent": "버스정류장문의",
+          "terms": "가장동/동네, 버스정류장/버스정류소, 곳/군데",
+          "knowledge_base": "안내,군데"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "여러군데 있는데 왜 안보이지.",
+          "terms": "여러군데/여러곳",
+          "knowledge_base": "여러군데,여러곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "가실려고 하는데가 어딘가요?",
+          "intent": "버스정류장문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "갈마동갈려구요.",
+          "terms": "갈마동/동네",
+          "knowledge_base": "갈마동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "갈마동 가시려면 가장동 롯데리아 앞에 있는 버스정류장 이용하시면 됩니다.",
+          "terms": "갈마동/동네, 가장동/동네, 롯데리아/프랜차이즈, 버스정류장/버스정류소",
+          "knowledge_base": "버스정류장,버스정류소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "롯데리아앞이요?",
+          "intent": "버스정류장문의",
+          "terms": "롯데리아/프랜차이즈",
+          "knowledge_base": "앞,프랜차이즈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "네, 롯데리아 보이시나요?",
+          "intent": "버스정류장문의",
+          "terms": "롯데리아/프랜차이즈",
+          "knowledge_base": "롯데리아,프랜차이즈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "어디 있는지 안보여요.",
+          "terms": "어디/장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "래미안아파트 정문에서 조금 내려오면 있습니다.",
+          "terms": "래미안아파트/아파트/주거공간",
+          "knowledge_base": "정문,주거공간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "아파트 정문 앞에 있다고요?",
+          "intent": "버스정류장문의",
+          "terms": "아파트/주거공간",
+          "knowledge_base": "앞,주거공간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "정문으로 가면 롯데리아 앞에 정류장이  있다는거죠?",
+          "intent": "버스정류장문의",
+          "terms": "롯데리아/프랜차이즈, 정류장/버스정류장/정류소",
+          "knowledge_base": "앞,정류소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 정문쪽으로 오시면 바로 있습니다.",
+          "knowledge_base": "정문"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "알겠습니다. 찾아볼께요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "몇번타고 가죠?",
+          "intent": "버스노선문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": "갈마동 가시는거 맞죠?",
+          "intent": "버스노선문의",
+          "terms": "갈마동/동네",
+          "knowledge_base": "갈마동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "네."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "22",
+          "qa_type": "A",
+          "content": "갈마동은 110번 타고 가시면 됩니다.",
+          "terms": "갈마동/동네, 110번/버스",
+          "knowledge_base": "갈마동,버스"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22443",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "충대에서 롯데백화점 가려고 하는데요.",
+          "intent": "버스노선문의",
+          "terms": "충대/충남대/대학교/교육기관, 롯데백화점/백화점",
+          "knowledge_base": "충대,백화점"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "버스 안돌아서 가는걸로 안내해 주세요.",
+          "intent": "버스노선문의",
+          "terms": "버스/대중교통/교통수단",
+          "knowledge_base": "안내,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "충남대에서 출발 하시나요?",
+          "intent": "버스노선문의",
+          "terms": "충남대/충남대학교/대학교/교육기관",
+          "knowledge_base": "출발,교육기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 충남대에서 탈려구요.",
+          "terms": "충남대/충남대학교/대학교/교육기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "충대에서 롯데백화점까지 가는 버스는 500번입니다.",
+          "terms": "충대/충남대/교육기관, 롯데백화점/백화점, 버스/대중교통/교통수단, 500번/버스",
+          "knowledge_base": "버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "안 도나요?",
+          "intent": "버스노선문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "많이 돌아서 가는 노선은 아닙니다.",
+          "knowledge_base": "노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "얼마나 걸리나요?",
+          "intent": "버스노선문의",
+          "terms": "얼마나/소요시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "30분정도 걸립니다.",
+          "terms": "30분/시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "너무 오래 걸리는데."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "지하철 이용은 어려우신가요?",
+          "intent": "버스노선문의",
+          "terms": "지하철/대중교통/교통수단",
+          "knowledge_base": "이용,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "지하철도 가나요?",
+          "intent": "지하철노선문의",
+          "terms": "지하철/대중교통/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네, 온천역에서 이용하시면 됩니다.",
+          "terms": "온천역/지하철역",
+          "knowledge_base": "이용,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "그래요? 어디에서 내리나요?",
+          "intent": "지하철노선문의",
+          "terms": "어디/장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "용문역에서 내리시면 됩니다.",
+          "terms": "용문역/지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "지하철은 얼마나 걸리나요?",
+          "intent": "지하철노선문의",
+          "terms": "지하철/대중교통/교통수단, 얼마나/소요시간",
+          "knowledge_base": "지하철,소요시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "지하철 이용하시면 10분정도 걸립니다.",
+          "terms": "지하철/대중교통/교통수단, 10분/시간",
+          "knowledge_base": "이용,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "용문역에서 롯데백화점이 가깝나요?",
+          "intent": "지하철노선문의",
+          "terms": "용문역/지하철역, 롯데백화점/백화점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "도보로 5분정도 이동하셔야 합니다.",
+          "terms": "5분/시간",
+          "knowledge_base": "이동,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "그러면 지하철이 낫겠네요.",
+          "terms": "지하철/대중교통/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22444",
+      "category": "대중교통 안내",
+      "turns": 18,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대전에 고속버스터미널 있나요?",
+          "intent": "고속버스터미널위치",
+          "terms": "대전/대전시/지역, 고속버스터미널/터미널",
+          "knowledge_base": "고속버스터미널,터미널"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "무슨동에 있나요?",
+          "intent": "고속버스터미널위치",
+          "terms": "무슨/어떤, 동/동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "용전동에 있습니다.",
+          "terms": "용전동/동네",
+          "knowledge_base": "용전동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "고속버스터미널에서 택시 잡기 쉽나요?",
+          "intent": "택시이용문의",
+          "terms": "고속버스터미널/터미널, 택시/대중교통/교통수단",
+          "knowledge_base": "택시,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "택시정류장이 있습니다.",
+          "terms": "택시정류장/정류장",
+          "knowledge_base": "택시정류장,정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "정류장에 대기하고 있는 택시 많이 있나요?",
+          "intent": "택시이용문의",
+          "terms": "정류장/정류소, 택시/대중교통/교통수단",
+          "knowledge_base": "대기,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "상황에 따라 다르기 때문에 정확하게 안내드리기는 어렵습니다.",
+          "terms": "정확하게/확실하게",
+          "knowledge_base": "안내,확실하게"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "대전은 택시기본료가 얼만가요?",
+          "intent": "택시기본요금",
+          "terms": "대전/대전시/지역, 택시기본료/택시기본요금/돈",
+          "knowledge_base": "택시기본료,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "택시기본요금은 3300원입니다.",
+          "terms": "택시기본요금/택시기본료/돈, 3300원/돈",
+          "knowledge_base": "택시기본요금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "고속버스터미널에서 카이스트까지 먼가요?",
+          "intent": "택시이용문의",
+          "terms": "고속버스터미널/터미널, 카이스트/교육기관",
+          "knowledge_base": "고속버스터미널,교육기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "택시로 이동하실 건가요?",
+          "intent": "택시이용문의",
+          "terms": "택시/대중교통/교통수단",
+          "knowledge_base": "이동,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "택시타고 이동하시면 30분정도 소요됩니다.",
+          "terms": "택시/대중교통/교통수단, 30분/시간",
+          "knowledge_base": "이동,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "거리가 꽤 되네요.",
+          "knowledge_base": "거리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 가까운 거리는 아닙니다.",
+          "knowledge_base": "거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "택시요금이 얼마나 나오는지 알수 있나요?",
+          "intent": "택시이용문의",
+          "terms": "택시요금/택시비/돈, 얼마나/금액",
+          "knowledge_base": "택시요금,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "정확한 택시요금은 안내드리기 어렵습니다.",
+          "terms": "정확한/확실한, 택시요금/택시비/돈",
+          "knowledge_base": "안내,돈"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B22445",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "집에 갈려고 하는데 버스를 어디에서 타야 되는지 모르겠어요.",
+          "intent": "버스정류장문의",
+          "terms": "집/주거공간, 버스/대중교통/교통수단, 어디/장소",
+          "knowledge_base": "버스,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "지금 계신 곳이 어디세요?",
+          "intent": "버스정류장문의",
+          "terms": "지금/현재, 곳/장소",
+          "knowledge_base": "곳,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "둔산동이요.",
+          "terms": "둔산동/동네",
+          "knowledge_base": "둔산동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "둔산동에서 어디로 가실꺼예요?",
+          "intent": "버스정류장문의",
+          "terms": "둔산동/동네, 어디/장소",
+          "knowledge_base": "둔산동,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "가수원동으로요.",
+          "terms": "가수원동/동네",
+          "knowledge_base": "가수원동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "둔산동에서 가수원동 가시는 거예요?",
+          "intent": "버스정류장문의",
+          "terms": "둔산동/동네, 가수원동/동네",
+          "knowledge_base": "둔산동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "예."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "둔산동 어디에 계세요?",
+          "intent": "버스정류장문의",
+          "terms": "둔산동/동네, 어디/장소",
+          "knowledge_base": "둔산동,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "여기요?",
+          "intent": "버스정류장문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "네, 둔산동 어디에 있는지 말씀해 주세요.",
+          "intent": "버스정류장문의",
+          "terms": "둔산동/동네, 어디/장소, 말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "여기 옆에 삼성전자라고 써있는데.",
+          "terms": "삼성전자/점포",
+          "knowledge_base": "옆,점포"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "삼성전자앞에 백화점 보이시나요?",
+          "intent": "버스정류장문의",
+          "terms": "삼성전자/점포",
+          "knowledge_base": "백화점,점포"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "예. 큰 건물 보이는데, 저게 백화점인갑네요.",
+          "knowledge_base": "백화점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "그럼 길 건너서 백화점 앞 버스정류장에서 버스 타시면 되요.",
+          "terms": "버스정류장/정류소, 버스/대중교통/교통수단",
+          "knowledge_base": "백화점,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "거기 310번 버스 서요?",
+          "intent": "버스정류장문의",
+          "terms": "310번/버스, 버스/대중교통/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네. 310번 버스 정차합니다.",
+          "terms": "310번/버스, 버스/대중교통/교통수단",
+          "knowledge_base": "정차,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "삼성전자앞에서 타지 말고 길 건너서 타라는 말이죠?",
+          "intent": "버스정류장문의",
+          "terms": "삼성전자/점포, 말/말씀",
+          "knowledge_base": "길,말씀"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 길 건너서 310번 타시면 되요.",
+          "terms": "310번/버스 ",
+          "knowledge_base": "길,버스"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "예. 고마워요."
+        }
+      ]
+    }
+  ]
+}

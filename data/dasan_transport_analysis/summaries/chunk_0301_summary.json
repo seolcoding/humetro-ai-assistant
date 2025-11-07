@@ -1,0 +1,9 @@
+{
+  "raw_response": "위의 구조화된 분석으로 다산콜센터 대중교통 상담 데이터의 핵심 패턴과 개선 방향을 제시했습니다. 필요시 특정 영역에 대한 추가 분석이나 개선안 수립을 지원할 수 있습니다.\n",
+  "parse_error": true,
+  "error_detail": "Expecting value: line 1 column 1 (char 0)",
+  "chunk_id": "chunk_0301",
+  "processing_time": 51.05851697921753,
+  "processed_at": "2025-11-05T11:58:41.785951",
+  "dialogue_count": 5
+}

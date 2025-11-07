@@ -1,0 +1,893 @@
+{
+  "chunk_id": 341,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B23965",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시도 카드 결제가 되나요?",
+          "intent": "택시카드결제",
+          "terms": "택시/대중교통, 카드/지불수단, 결제/지불",
+          "knowledge_base": "카드,지불"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 카드결제가 가능합니다.",
+          "terms": "카드결제/신용결제",
+          "knowledge_base": "카드결제,신용결제"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "교통카드는요?",
+          "intent": "택시카드결제",
+          "terms": "교통카드/교통비지불카드",
+          "knowledge_base": "교통카드,교통비지불카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "교통카드로도 결제됩니다.",
+          "terms": "결제/지불",
+          "knowledge_base": "결제,지불"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "교통카드로는 어떻게 결제하나요?",
+          "intent": "택시카드결제",
+          "terms": "교통카드/교통비지불카드",
+          "knowledge_base": "결제,교통비지불카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "주행상태에서 교통카드를 미리 갖다대어 주행 중 승인을 받으실 수 있습니다.",
+          "terms": "주행상태/이동중, 주행/이동, 승인/확인",
+          "knowledge_base": "교통카드,확인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "주행상태에서 결제해도 상관없나요?",
+          "intent": "택시카드결제",
+          "terms": "주행상태/이동중.결제/지불",
+          "knowledge_base": "결제,지불"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 오히려 목적지에서 따로 결제하실 필요가 없어서 편리합니다. ",
+          "terms": "목적지/행선지, 결제/지불",
+          "knowledge_base": "결제,지불"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "영수증도 받을 수 있나요?",
+          "intent": "택시카드결제",
+          "terms": "영수증/지불증명",
+          "knowledge_base": "영수증,지불증명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "목적지에서 기사가 미터기의 지불버튼을 누르고 확인을 누르면 영수증이 즉시 출력됩니다. ",
+          "terms": "목적지/행선지, 기사/운전기사",
+          "knowledge_base": "기사,운전기사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "티머니카드 처럼 선불카드도 사용가능한가요?",
+          "intent": "택시카드결제",
+          "terms": "티머니카드/선불카드",
+          "knowledge_base": "선불카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "지하철, 버스이용이 가능한 카드면 모두 가능합니다.",
+          "terms": "지하철/대중교통, 카드/교통카드",
+          "knowledge_base": "버스이용,교통카드"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "카드결제기기가 있는데도 카드 결제를 거부하면 어떻게 되나요?",
+          "intent": "택시카드결제",
+          "terms": "카드결제기기/카드단말기",
+          "knowledge_base": "카드,카드단말기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "개인택시는 30만원, 법인택시는 60만원 과징금 처분을 받게 됩니다. ",
+          "terms": "개인택시/개인운영택시, 30만원/돈, 법인택시/법인소유택시, 60만원/돈, 과징금/벌금",
+          "knowledge_base": "30만원,벌금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "카드결제기기가 없는 택시도 있나요?",
+          "intent": "택시카드결제",
+          "terms": "택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "거의 모든 택시가 장착하고 있고, 장착하지 않고 있는 차량은 대폐차 등에 의한 미운행 차량입니다.",
+          "terms": "대폐차/폐차대기",
+          "knowledge_base": "장착,폐차대기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "카드로 결제하면 또 다른 좋은 점이 있나요?",
+          "intent": "택시카드결제",
+          "terms": "카드/신용카드",
+          "knowledge_base": "결제,신용카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "카드로 결제하면 소득공제도 가능합니다.",
+          "terms": "결제/지불, 소득공제/연말정산",
+          "knowledge_base": "결제,연말정산"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "카드결제는 언제부터 가능했나요?",
+          "intent": "택시카드결제",
+          "terms": "카드결제/신용결제",
+          "knowledge_base": "가능,신용결제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "07년3월22일 부터 시작했습니다.",
+          "terms": "시작/출발",
+          "knowledge_base": "시작,출발"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23966",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시요금 체계에 대해서 문의 드려요. ",
+          "intent": "택시요금체계",
+          "terms": "택시요금/택시운임, 체계/시스템",
+          "knowledge_base": "체계,시스템"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "택시요금 말씀이십니까?",
+          "intent": "택시요금체계",
+          "terms": "택시요금/택시운임,",
+          "knowledge_base": "택시요금,택시운임"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "네, 중형택시 기본요금이 얼마인가요?",
+          "intent": "택시요금체계",
+          "terms": "중형택시/중형차택시, 기본요금/최소요금",
+          "knowledge_base": "기본요금,최소요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "주간에는 2km 까지 기본요금 3800원 입니다.",
+          "terms": "주간/낮, 2km/거리, 3800원/돈",
+          "knowledge_base": "2km,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "거리요금은 어떻게 되나요?",
+          "intent": "택시요금체계",
+          "terms": "거리요금/거리당요금",
+          "knowledge_base": "거리요금,거리당요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "100원에 132m 입니다.",
+          "terms": "100원/돈, 132m/거리",
+          "knowledge_base": "132m,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "그런데, 택시가 움직이지 않아도 시간지나면 요금이 올라가던데, 시간에 따른 요금도 있나요?",
+          "intent": "택시요금체계",
+          "terms": "택시/대중교통, 요금/운임",
+          "knowledge_base": "시간,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 100원에 31초 입니다. ",
+          "terms": "100원/돈, 31초/시간",
+          "knowledge_base": "31초,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "시간, 거리가 동시에 계산되는 건가요?",
+          "intent": "택시요금체계",
+          "terms": "시간/경과시간,  거리/이동거리",
+          "knowledge_base": "거리,이동거리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 시간과 거리 부분이 동시 병산됩니다.",
+          "terms": "시간/경과시간,  거리/이동거리, 동시병산/동시계산",
+          "knowledge_base": "거리,동시계산"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "심야 요금은 또 다르죠?",
+          "intent": "택시요금체계",
+          "terms": "심야/깊은밤, 요금/운임",
+          "knowledge_base": "요금,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "심야요금은 주간요금과 다릅니다.",
+          "terms": "심야요금/밤요임, 주간요금/낮요금",
+          "knowledge_base": "주간요금,낮요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "심야 기본요금은 어떻게 되나요?",
+          "intent": "택시요금체계",
+          "terms": "기본요금/최소요금",
+          "knowledge_base": "기본요금,최소요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "2km까지 기본요금 4600원입니다.",
+          "terms": "2km/거리, 4600원/돈",
+          "knowledge_base": "기본요금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "심야 거리요금은요?",
+          "intent": "택시요금체계",
+          "terms": "거리요금/거리당요금",
+          "knowledge_base": "거리요금,거리당요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "120원당 132m 입니다.",
+          "terms": "120원/돈, 132m/거리",
+          "knowledge_base": "132m,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "심야 시간요금은 어떻게 되나요?",
+          "intent": "택시요금체계",
+          "terms": "시간요금/시간당요금",
+          "knowledge_base": "시간요금,시간당요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "120원당 31초 입니다.",
+          "terms": "120원/돈, 31초/시간",
+          "knowledge_base": "31초,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "심야는 몇시부터 몇시 까지 인가요?",
+          "intent": "택시요금체계",
+          "terms": "심야/깊은밤",
+          "knowledge_base": "심야,깊은밤"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "00시부터 04시 까지 입니다. ",
+          "terms": "00시/자정",
+          "knowledge_base": "04시,자정"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23967",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시 요금 문의 드립니다.",
+          "intent": "택시요금체계",
+          "terms": "택시/대중교통, 요금/운임",
+          "knowledge_base": "요금,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 말씀하세요",
+          "terms": "말씀/말, 이야기",
+          "knowledge_base": "말씀,이야기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "모범택시 기본요금은 얼마인가요?",
+          "intent": "택시요금체계",
+          "terms": "모범택시/대형승용택시",
+          "knowledge_base": "기본요금,대형승용택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "3km 까지 6500원 입니다.",
+          "terms": "3km/거리, 6500원/돈",
+          "knowledge_base": "6500원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "거리요금은요?",
+          "intent": "택시요금체계",
+          "terms": "거리요금/거리당요금",
+          "knowledge_base": "거리요금,거리당요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "200원당 151m 입니다.",
+          "terms": "200원/돈, 151m/거리",
+          "knowledge_base": "151m,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "모범택시도 시간지나면 요금 올라가나요?",
+          "intent": "택시요금체계",
+          "terms": "시간/운행시간, 요금/운임",
+          "knowledge_base": "시간,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 200원당 36초 입니다. ",
+          "terms": "200원/돈, 36초/시간",
+          "knowledge_base": "36초,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "시간과 거리가 동시 계산되나요?",
+          "intent": "택시요금체계",
+          "terms": "시간/운행시간, 거리/이동거리",
+          "knowledge_base": "거리,이동거리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아닙니다. 시간, 거리 상호 병산제 입니다.",
+          "terms": "시간/운행시간, 거리/이동거리",
+          "knowledge_base": "거리,이동거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "어떻게 계산되나요?",
+          "intent": "택시요금체계",
+          "terms": "계산/요금계산",
+          "knowledge_base": "계산,요금계산"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "15.1Km 미만시 시간만, 이상시 거리만 계산됩니다.",
+          "terms": "15.1km/거리",
+          "knowledge_base": "시간,거리"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "모범은 할증이 없죠?",
+          "intent": "택시요금체계",
+          "terms": "모범/모범택시, 할증/추가운임",
+          "knowledge_base": "할증,추가운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 모범택시는 심야, 시계외 할증이 없습니다.",
+          "terms": "모범택시/택시, 심야/늦은밤, 시계외/시경계밖, 할증/추가운임",
+          "knowledge_base": "심야,추가운임"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "일반택시는 어떤가요?",
+          "intent": "택시요금체계",
+          "terms": "일반택시/택시",
+          "knowledge_base": "일반택시,택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "심야할증이 20%, 시계외 할증이 20% 입니다.",
+          "terms": "심야할증/늦은밤추가운임, 할증/추가운임",
+          "knowledge_base": "20%,추가운임"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "심야 시간대는 어떻게 되나요?",
+          "intent": "택시요금체계",
+          "terms": "심야/늦은밤, 시간대/시간범위",
+          "knowledge_base": "시간대,시간범위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "00시 부터 04시 까지 입니다.",
+          "terms": "00시/자정",
+          "knowledge_base": "04시,자정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "심야와 시계외가 중복될 수 있나요?",
+          "intent": "택시요금체계",
+          "terms": "중복/겹침",
+          "knowledge_base": "시계외,겹침"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 심야와 시계외 중복할증 40% 입니다.",
+          "terms": "중복할증/중복추가운임",
+          "knowledge_base": "시계외,중복추가운임"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23968",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "외국인 택시 관련 문의 드립니다.",
+          "intent": "외국인택시",
+          "terms": "외국인/다른나라사람, 택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "외국인 관광택시 말씀이신가요?",
+          "intent": "외국인택시",
+          "terms": "관광택시/관광목적택시",
+          "knowledge_base": "관광택시,관광목적택시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "네, 외국인 관광택시는 어떤 요금제 인가요?",
+          "intent": "외국인택시",
+          "terms": "요금제/운임제도",
+          "knowledge_base": "관광택시,운임제도"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "미터요금제, 구간요금제, 대절요금제가 있습니다.",
+          "terms": "미터요금제/요금제, 구간요금제/요금제, 대절요금제/요금제",
+          "knowledge_base": "구간요금제,요금제"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "미터요금제는 어떻게 계산되나요?",
+          "intent": "외국인택시",
+          "terms": "계산/산정",
+          "knowledge_base": "계산,산정"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "중형, 대형승용, 모범택시 요금제와 동일합니다. ",
+          "terms": "중형/중간크기, 대형승용/2000CC이상, 모범택시/고급택시",
+          "knowledge_base": "대형승용,고급택시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "외국인이 타도 동일한가요?",
+          "intent": "외국인택시",
+          "terms": "동일/같음",
+          "knowledge_base": "동일,같음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "외국인 할증 20% 적용 가능합니다. ",
+          "terms": "할증/추가요금",
+          "knowledge_base": "할증,추가요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "외국인 탑승, 심야에 시계외로 갈 경우에는요?",
+          "intent": "외국인택시",
+          "terms": "탑승/승차, 심야/새벽, 시계외/경계밖",
+          "knowledge_base": "탑승,경계밖"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "외국인할증 20%, 심야 할증 20%, 시계외 할증 20%이나, 최대 40%까지 할증 가능합니다.",
+          "terms": "할증/추가요금",
+          "knowledge_base": "할증,추가요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "구간요금제는 어떤가요?",
+          "intent": "외국인택시",
+          "terms": "구간요금제/구간운임",
+          "knowledge_base": "구간요금제,구간운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "구간과 택시 형태에 따라 다릅니다.",
+          "terms": "구간/지점간, 택시/대중교통",
+          "knowledge_base": "택시,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "예를 들어 인천국제공항에서 강남까지 모범을 타고 간다고 하면 얼마인가요?",
+          "intent": "외국인택시",
+          "terms": "인천국제공항/공항, 강남/서울지역, 모범/모범택시",
+          "knowledge_base": "강남,모범택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "인천국제공항에서 강남까지 모범택시를 타게되면 요금은 12만원 입니다. ",
+          "terms": "요금/운임, 12만원/돈",
+          "knowledge_base": "강남,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "중형택시는요?",
+          "intent": "외국인택시",
+          "terms": "중형택시/중형차택시",
+          "knowledge_base": "중형택시,중형차택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "8만5천원 입니다.",
+          "terms": "8만5천원/돈",
+          "knowledge_base": "8만5천원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "대절요금제는 어떻게 계산하나요?",
+          "intent": "외국인택시",
+          "terms": "대절요금제/렌탈요금제",
+          "knowledge_base": "계산,렌탈요금제"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "차종과 시간에 따라 다릅니다.",
+          "terms": "차종/차종류",
+          "knowledge_base": "시간,차종류"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "중형택시를 5시간 대절하면 얼마인가요?",
+          "intent": "외국인택시",
+          "terms": "5시간/기간, 대절/렌탈",
+          "knowledge_base": "5시간,렌탈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "중형택시를 5시간 대절하면 10만원입니다.",
+          "terms": "10만원/돈",
+          "knowledge_base": "5시간,돈"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23969",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시 요금에 대해서 문의 드려요",
+          "intent": "택시부가요금",
+          "terms": "택시/대중교통, 요금/운임",
+          "knowledge_base": "요금,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 말씀하세요",
+          "terms": "말씀/말, 이야기",
+          "knowledge_base": "말씀,이야기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "택시를 부르면 따로 돈을 내야하나요?",
+          "intent": "택시부가요금",
+          "terms": "택시/대중교통, 돈/비용",
+          "knowledge_base": "돈,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 호출 이용료라고 해서 호출료를 내야할 수도 있습니다.",
+          "terms": "호출/연락, 이용료/사용료",
+          "knowledge_base": "이용료,사용료"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "호출료는 얼마나 내야 하나요?",
+          "intent": "택시부가요금",
+          "terms": "호출료/이용료",
+          "knowledge_base": "호출료,이용료"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "주간에는 1000원, 심야에는 2000원을 호출료로 징수할 수 있습니다.",
+          "terms": "주간/낮, 1000원/돈, 심야/새벽, 2000원/돈",
+          "knowledge_base": "1000원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 택시는 3000원까지도 받던데, 불법아닌가요?",
+          "intent": "택시부가요금",
+          "terms": "3000원/돈, 불법/위반",
+          "knowledge_base": "3000원,위반"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "반반택시의 경우 반반호출을 이용할 경우 심야에는 3000원까지 징수 가능합니다.",
+          "terms": "반반택시/택시플랫폼, 반반호출/택시호출, 심야/새벽",
+          "knowledge_base": "반반호출,새벽"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "급한일이 있어서 유료도로로 가게 될 경우 결제는 어떻게 하나요?",
+          "intent": "택시부가요금",
+          "terms": "유료도로/통행료, 결제/지불",
+          "knowledge_base": "결제,지불"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "실비를 징수할 수 있습니다.",
+          "terms": "실비/실제비용, 징수/수납",
+          "knowledge_base": "징수,수납"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "택시 탈 때 할증 되는 경우를 알려주세요.",
+          "intent": "택시부가요금",
+          "terms": "할증/추가요금",
+          "knowledge_base": "할증,추가요금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "할증은 심야할승, 시계외할증이 있으며 각각 20%의 할증을 적용합니다.",
+          "terms": "심야할증/새벽추가운임, 시계외할증/경계밖운행",
+          "knowledge_base": "시계외할증,경계밖운행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "심야할증의 시간대는 언제인가요?",
+          "intent": "택시부가요금",
+          "terms": "심야할증/새벽추가운임",
+          "knowledge_base": "시간대,새벽추가운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "00시 부터 04시 까지 입니다.",
+          "terms": "00시/자정",
+          "knowledge_base": "04시,자정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "심야에 시계외로 가게 될 경우는 어떻게 되나요?",
+          "intent": "택시부가요금",
+          "terms": "심야/새벽, 시계외/경계밖",
+          "knowledge_base": "시계외,경계밖"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "중복할증이 적용되어 40% 할증 됩니다.",
+          "terms": "중복할증/중복추가운임",
+          "knowledge_base": "40%,중복추가운임"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "모범도 할증이 되나요?",
+          "intent": "택시부가요금",
+          "terms": "모범/모범택시, 할증/추가운임",
+          "knowledge_base": "할증,추가운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "대형승용 및 모범택시는 할증 적용대상이 아닙니다.",
+          "terms": "대형승용/2000CC이상, 모범택시/고급택시",
+          "knowledge_base": "모범택시,고급택시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "혹시 미터기 외의 요금을 받을 수도 있나요?",
+          "intent": "택시부가요금",
+          "terms": "미터기/운임표시, 요금/운임",
+          "knowledge_base": "요금,운임"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "모든 택시는 미터기에 의한 요금만을 징수하여야 하며 위반시 부당요금징수로 행정처분 대상이 됩니다.",
+          "terms": "징수/수납, 부당요금징수/불법요금수납, 행정처분/처벌",
+          "knowledge_base": "미터기,처벌"
+        }
+      ]
+    }
+  ]
+}

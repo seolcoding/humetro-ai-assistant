@@ -1,0 +1,819 @@
+{
+  "chunk_id": 187,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B4049",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "저기 상담원님 여기 길 문의도 되죠?",
+          "intent": "교통문의",
+          "terms": "문의/질문",
+          "knowledge_base": "문의,질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 선생님 "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디에서 어디까지 가시나요?",
+          "intent": "교통문의",
+          "terms": "어디/어느 장소",
+          "knowledge_base": "어디,어느장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "강서구청출발 경희궁까지요",
+          "terms": "강서구청/구청/ 경희궁/궁궐",
+          "knowledge_base": "경희궁,궁궐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떤 교통수단을 원하시나요?",
+          "intent": "교통문의",
+          "terms": "교통수단/이동수단",
+          "knowledge_base": "교통수단,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "지하철,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "최소 시간으로 알려드릴까요?",
+          "intent": "교통문의",
+          "terms": "시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "terms": "강서구청/구청/ 분/시간의 단위/ 도보/걷기",
+          "knowledge_base": "분,걷기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "혹시 몇 분 정도 걸리는데요?",
+          "intent": "교통문의",
+          "terms": "분/시간의 단위",
+          "knowledge_base": "분,시간의단위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "terms": "정도/분량",
+          "knowledge_base": "정도,분량"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "요금은 얼마정도 드나요?",
+          "intent": "교통문의",
+          "terms": "요금/비용",
+          "knowledge_base": "얼마,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "terms": "원/돈의 단위",
+          "knowledge_base": "원,돈의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "아까 6629번 버스 타라셨잖아요, 대체 버스 있나요?",
+          "intent": "교통문의",
+          "terms": "대체/대신",
+          "knowledge_base": "대체,대신"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그리고 아까 5호선 타라셨는데 빠른 하차는 몇-몇번인가요?",
+          "intent": "교통문의",
+          "terms": "하차/내림",
+          "knowledge_base": "하차,내림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "terms": "하차/내림",
+          "knowledge_base": "하차,내림"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "마지막으로 서대문역에서 하차했을 때 서대문역 몇 번 출구인가요?",
+          "intent": "교통문의",
+          "terms": "하차/내림",
+          "knowledge_base": "출구,내림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "terms": "출구/나가는 곳",
+          "knowledge_base": "출구,나가는곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "terms": "수고/일",
+          "knowledge_base": "수고,일"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B4050",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "저기 상담원님 여기서 길문의 해도 되죠?",
+          "intent": "교통문의",
+          "terms": "문의/질문",
+          "knowledge_base": "문의,질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 선생님 됩니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디에서 어디까지 가시나요?",
+          "intent": "교통문의",
+          "terms": "어디/어느 장소",
+          "knowledge_base": "어디,어느장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "강서구청 출발 덕수궁까지요",
+          "terms": "강서구청/구청/ 덕수궁/궁궐",
+          "knowledge_base": "덕수궁,궁궐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떤 교통수단을 원하시나요?",
+          "intent": "교통문의",
+          "terms": "교통수단/이동수단",
+          "knowledge_base": "교통수단,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "최소 시간으로 알려드릴까요?",
+          "intent": "교통문의",
+          "terms": "최소/가장적은/ 시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "terms": "강서구청/구청/ 분/시간의 단위/ 도보/걷기",
+          "knowledge_base": "도보,걷기"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "몇 분 정도 걸리나요?",
+          "intent": "교통문의",
+          "terms": "분/시간의 단위",
+          "knowledge_base": "정도,시간의단위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "terms": "분/시간의 단위",
+          "knowledge_base": "분,시간의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "요금은 얼마정도 드나요?",
+          "intent": "교통문의",
+          "terms": "요금/비용",
+          "knowledge_base": "얼마,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "terms": "원/돈의 단위",
+          "knowledge_base": "원,돈의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "2호선을 탄후 빠른하차 가능한 곳은 몇다시 몇 번인가요?",
+          "intent": "교통문의",
+          "terms": "하차/내림/ 가능/할 수 있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "terms": "번/버스번호",
+          "knowledge_base": "번,버스번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "시청역에서 내리는 문은 어느쪽인데요?",
+          "intent": "교통문의",
+          "terms": "어느쪽/어느방향",
+          "knowledge_base": "문,어느방향"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "terms": "왼쪽/방향",
+          "knowledge_base": "왼쪽,방향"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그럼 총 도보시간이 몇 분정도인가요?",
+          "intent": "교통문의",
+          "terms": "분/시간의 단위/ 도보/걷기",
+          "knowledge_base": "도보,걷기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "terms": "분/시간의 단위/  ",
+          "knowledge_base": "정도,시간의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "knowledge_base": "수고"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B4051",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요 수고하십니다. 길 좀 문의하고 싶은 데요",
+          "intent": "교통문의",
+          "terms": "문의/질문",
+          "knowledge_base": "문의,질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 선생님 "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디에서 어디까지 가시나요?",
+          "intent": "교통문의",
+          "terms": "어디/어느 장소",
+          "knowledge_base": "어디,어느장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "강서구청 출발 서울역도착입니다. ",
+          "terms": "서울역/정류장",
+          "knowledge_base": "서울역,정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떤 교통수단을 원하시나요?",
+          "intent": "교통문의",
+          "terms": "교통수단/이동수단",
+          "knowledge_base": "교통수단,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "최소 시간으로 알려드릴까요?",
+          "intent": "교통문의",
+          "terms": "시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "terms": "도보/걷기 / 환승/갈아타는곳/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "몇 분 정도 걸리나요?",
+          "intent": "교통문의",
+          "terms": "분/시간의 단위",
+          "knowledge_base": "분,시간의단위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "terms": "시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "요금은얼마정도 드나요?",
+          "intent": "교통문의",
+          "terms": "요금/비용",
+          "knowledge_base": "얼마,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "terms": "원/돈의 단위",
+          "knowledge_base": "원,돈의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "최소환승으로 하면 시간이 얼마정도 걸려요?",
+          "intent": "교통문의",
+          "terms": "최소/가장적은/ 환승/갈아타기",
+          "knowledge_base": "환승,갈아타기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "terms": "시간/시각",
+          "knowledge_base": "분,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "버스만 타는거죠?",
+          "intent": "교통문의",
+          "terms": "버스/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "요금은 얼마정도걸리는데요?",
+          "intent": "교통문의",
+          "terms": "요금/비용",
+          "knowledge_base": "얼마,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "terms": "원/돈의 단위",
+          "knowledge_base": "원,돈의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "terms": "수고/일",
+          "knowledge_base": "수고,일"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B4052",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "여기서 물어봐도 되나, 길문의입니다.",
+          "intent": "교통문의",
+          "terms": "문의/질문",
+          "knowledge_base": "문의,질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네. 선생님 그렇다면 제가 여러가지 질문들을 하겠습니다.",
+          "terms": "질문/질의",
+          "knowledge_base": "질문,질의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디에서 어디까지 가려고 하시나요?",
+          "intent": "교통문의",
+          "terms": "어디/어느 장소",
+          "knowledge_base": "어디,어느장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "강서구청 출발 대학로까지요",
+          "terms": "대학교/대학로/서울/ 강서구청/구청",
+          "knowledge_base": "대학로,구청"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떤 교통수단을 타고 가실건가요?",
+          "intent": "교통문의",
+          "terms": "교통수단/이동수단",
+          "knowledge_base": "교통수단,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "최소 시간으로 알려드릴까요?",
+          "intent": "교통문의",
+          "terms": "시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "몇 분 정도 걸리나요?",
+          "intent": "교통문의",
+          "knowledge_base": "분"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "terms": "정도/ 분량",
+          "knowledge_base": "정도,분량"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "도보는 총합 몇 분정도되나요?",
+          "intent": "교통문의",
+          "terms": "도보/걷기",
+          "knowledge_base": "총합,걷기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "terms": "정도/ 분량",
+          "knowledge_base": "정도,분량"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "요금은 얼마정도 드는데요?",
+          "intent": "교통문의",
+          "terms": "요금/비용",
+          "knowledge_base": "얼마,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "terms": "원/돈의 단위",
+          "knowledge_base": "원,돈의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "109번의 대체버스는 무엇인가요?",
+          "intent": "교통문의",
+          "terms": "대체/대신",
+          "knowledge_base": "버스,대신"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "더 궁금하신 것 있으신가요?",
+          "intent": "교통문의",
+          "terms": "궁금/궁금증",
+          "knowledge_base": "궁금,궁금증"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아뇨, 없어요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네. 선생님 그럼 좋은 하루보내세요~",
+          "terms": "하루/날",
+          "knowledge_base": "하루,날"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B4053",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": " 어디 놀러가려는데, 길 문의도 되죠?",
+          "intent": "교통문의",
+          "terms": "문의/질문",
+          "knowledge_base": "문의,질문"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네 선생님 말씀하세요",
+          "terms": "말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "어디에서 어디까지 가시나요?",
+          "intent": "교통문의",
+          "terms": "어디/어느 장소",
+          "knowledge_base": "어디,어느장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "강서구청출발해서 서울랜드까지 가요",
+          "terms": "강서구청/구청/ 경희궁/궁궐",
+          "knowledge_base": "경희궁,궁궐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떤 교통수단을 원하시나요?",
+          "intent": "교통문의",
+          "terms": "교통수단/이동수단",
+          "knowledge_base": "교통수단,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "terms": "버스/이동수단",
+          "knowledge_base": "지하철,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "최소 시간으로 알려드릴까요?",
+          "intent": "교통문의",
+          "terms": "시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "terms": "영등포구청/구청/ 분/시간의 단위",
+          "knowledge_base": "분,시간의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "혹시 몇 분 정도 걸리는데요?",
+          "intent": "교통문의",
+          "terms": "분/시간의 단위",
+          "knowledge_base": "분,시간의단위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "terms": "정도/ 분량",
+          "knowledge_base": "정도,분량"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "요금은 얼마정도 드나요?",
+          "intent": "교통문의",
+          "terms": "요금/비용",
+          "knowledge_base": "얼마,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "terms": "원/돈의 단위",
+          "knowledge_base": "원,돈의단위"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "아까 70-3번 버스 타라셨잖아요, 대체 버스 있나요?",
+          "intent": "교통문의",
+          "terms": "대체/대신",
+          "knowledge_base": "대체,대신"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "그리고 아까 2호선 타라셨는데 빠른 하차는 몇-몇번인가요?",
+          "intent": "교통문의",
+          "terms": "하차/내림",
+          "knowledge_base": "하차,내림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "terms": "하차/내림",
+          "knowledge_base": "하차,내림"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "대공원역에서 몇번출구인가요?",
+          "intent": "교통문의",
+          "terms": "하차/내림",
+          "knowledge_base": "출구,내림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "terms": "출구/나가는 곳",
+          "knowledge_base": "출구,나가는곳"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "terms": "수고/일",
+          "knowledge_base": "수고,일"
+        }
+      ]
+    }
+  ]
+}

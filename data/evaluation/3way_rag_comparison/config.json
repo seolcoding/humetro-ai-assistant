@@ -1,0 +1,80 @@
+{
+  "experiment": {
+    "name": "3way_rag_comparison",
+    "description": "Comprehensive comparison of Naive RAG vs KG RAG Simple vs KG RAG Cypher Generation",
+    "tags": [
+      "3way-comparison",
+      "naive-rag",
+      "kg-simple",
+      "kg-cypher-generation",
+      "all-models"
+    ],
+    "output_dir": "data/evaluation"
+  },
+  "questions": {
+    "source": "golden",
+    "limit": 50,
+    "random_sample": false,
+    "description": "Using 50 questions from golden dataset (balanced single-hop + multi-hop, all Korean)"
+  },
+  "models": {
+    "evaluation_targets": "all",
+    "description": "All 5 models: GPT-4o-mini, EXAONE3.5-7.8B, Qwen3-8B, Gemma3-12B, GPT-OSS-20B"
+  },
+  "retrieval": [
+    {
+      "name": "naive_rag",
+      "description": "Naive RAG with FAISS vectorstore (5,879 chunks, 3072D embeddings)",
+      "k": 4,
+      "naive_vector_store": "data/vector_store/seoul_traffic",
+      "embedding_model": "text-embedding-3-large"
+    },
+    {
+      "name": "kg_simple",
+      "description": "KG RAG Simple: Fixed Cypher with vector similarity (6,544 nodes, 9,554 relationships)",
+      "k": 4,
+      "kg_config": {
+        "mode": "simple",
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "neo4j_database": "env:NEO4J_DATABASE",
+        "embedding_model": "text-embedding-3-large"
+      }
+    },
+    {
+      "name": "kg_cypher_generation",
+      "description": "KG RAG Cypher Generation: LLM-generated Cypher for dynamic graph traversal",
+      "k": 4,
+      "kg_config": {
+        "mode": "cypher_generation",
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "neo4j_database": "env:NEO4J_DATABASE",
+        "embedding_model": "text-embedding-3-large",
+        "llm_model": "gpt-4o-mini"
+      }
+    }
+  ],
+  "evaluation": {
+    "judge_model": "gpt-4o-mini",
+    "judge_max_tokens": 8192,
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "answer_correctness"
+    ],
+    "description": "RAGAS evaluation with GPT-4o-mini as judge"
+  },
+  "execution": {
+    "checkpoint_interval": 10,
+    "save_intermediate_results": true
+  },
+  "notes": [
+    "Total evaluations: 3 modes × 6 models × 50 questions = 900 evaluations",
+    "Expected runtime: ~2-3 hours (depends on Ollama model speed)",
+    "Cost estimate: ~$5-10 for GPT-4o-mini judge + OpenAI embeddings",
+    "Known limitation: KG modes may have reduced recall for date-specific queries (see docs/kg_data_limitations.md)"
+  ]
+}

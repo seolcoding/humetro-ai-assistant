@@ -1,0 +1,872 @@
+{
+  "chunk_id": 163,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3556",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "대림역에서 송내가는 버스노선을 알고싶습니다.",
+          "intent": "버스 노선",
+          "terms": "대림역/지하철역",
+          "knowledge_base": "송내,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 2호선 대림역 맞으신가요?",
+          "intent": "버스 노선",
+          "terms": "출발지/출발지역",
+          "knowledge_base": "대림역,출발지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 부천 송내역을 말씀하시는 건가요?",
+          "intent": "버스 노선",
+          "terms": "부천/지역명",
+          "knowledge_base": "송내역,지역명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "대림역에서 송내역으로 가는 버스노선은 일반과 급행이 있습니다.",
+          "terms": "송내역/지하철역",
+          "knowledge_base": "송내역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "둘은 어떤 차이가 있어요?",
+          "intent": "버스 노선",
+          "terms": "차이/다름",
+          "knowledge_base": "차이,다름"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "일반은 정차하는 정류장이 많고 급행은 일부 정류장만 정차 합니다.",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그럼 급행이 더 빨리 가나요?",
+          "intent": "버스 노선",
+          "knowledge_base": "급행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "급행으로 알려주세요",
+          "intent": "버스 노선",
+          "terms": " ",
+          "knowledge_base": "급행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "대림역 3번 출구 앞 정류장에서 부천행 3600번 버스를 이용하시면 됩니다.",
+          "terms": "대림역/지하철역",
+          "knowledge_base": "정류장,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요?",
+          "intent": "버스 노선",
+          "terms": "시간/시각",
+          "knowledge_base": "시간,시각"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "약 20분 소요 예상됩니다.",
+          "terms": "소요/소비",
+          "knowledge_base": "소요,소비"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "요금은 얼마 인가요?",
+          "intent": "버스 노선",
+          "terms": "요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "카드도 결재로 알려주세요.",
+          "intent": "버스 노선",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "급행버스 요금은 2500원 입니다.",
+          "terms": "요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "차는 자주 있나요?",
+          "intent": "버스 노선",
+          "terms": "자주/많이",
+          "knowledge_base": "자주,많이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "20분 간격으로 있습니다.",
+          "terms": "간격/사이",
+          "knowledge_base": "간격,사이"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "고마워요 수고하세요",
+          "terms": "수고/노고",
+          "knowledge_base": "대전,노고"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3557",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "롯데월드 타워를 가고 싶은데요.",
+          "intent": "공항버스",
+          "terms": "롯데월드 타워/관광지",
+          "knowledge_base": "롯데월드타워,관광지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네 무엇을 도와드릴까요?",
+          "intent": "공항버스",
+          "terms": "무엇/어떤것",
+          "knowledge_base": "무엇,어떤것"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "대중교통을 이용해 가는 방법을 알고 싶어요.",
+          "intent": "공항버스",
+          "terms": "대중교통/버스/지하철",
+          "knowledge_base": "대중교통,지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "목적지가 잠실 롯데월드 타워 이십니까?",
+          "intent": "공항버스",
+          "terms": "잠실/지역명",
+          "knowledge_base": "잠실,지역명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 맞아요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "출발지는 어디신가요?",
+          "intent": "공항버스",
+          "terms": "출발지/출발지역",
+          "knowledge_base": "출발지,출발지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "강서구 마곡동 입니다.",
+          "terms": "마곡동/행정동명",
+          "knowledge_base": "마곡동,행정동명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "버스와 지하철 어떤 교통편으로 안내해 드릴까요?",
+          "intent": "공항버스",
+          "terms": "버스/대중교통/이동수단",
+          "knowledge_base": "지하철,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "지하철은 너무 답답해서요",
+          "terms": "지하철/대중교통/이동수단",
+          "knowledge_base": "답답,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "버스로 안내 부탁해요.",
+          "terms": "안내/설명",
+          "knowledge_base": "안내,설명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "강서구 마곡동에서 버스를 이용해 월드타워를 가시려면 1회 내지 2회 환승이 필요하십니다.",
+          "terms": "마곡동/행정동명",
+          "knowledge_base": "마곡동,행정동명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "그래요? 애 데리고 환승 힘든데…",
+          "intent": "공항버스",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "환승 안하고 가는 법은 없을까요?",
+          "intent": "공항버스",
+          "terms": "법/방법",
+          "knowledge_base": "법,방법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "비용에 문제가 없으시다면 공항버스를 이용하시는 것도 가능하십니다.",
+          "terms": "비용/금액",
+          "knowledge_base": "공항버스,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "공항버스로도 갈 수 있나요?",
+          "intent": "공항버스",
+          "terms": "공항버스/버스종류",
+          "knowledge_base": "공항버스,버스종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "안내해주세요",
+          "intent": "공항버스",
+          "terms": "안내/설명",
+          "knowledge_base": "안내,설명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "공항대로에서3700번 공항버스를 이용하시면 잠실 롯데월드타워 까지 한번에 가실 수 있습니다.",
+          "terms": "잠실/지역명",
+          "knowledge_base": "잠실,지역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "비용은 성인 1인 6000원 아동 4800원 입니다,",
+          "terms": "비용/금액",
+          "knowledge_base": "성인,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "고마워요 큰 도움 되었어요 수고하세요",
+          "terms": "도움/보탬",
+          "knowledge_base": "도움,보탬"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3558",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "고속버스 터미널에서 김포공항까지 어떻게 갈수 있나요?",
+          "intent": "교통수단 안내",
+          "terms": "고속버스/대중교통",
+          "knowledge_base": "김포공항,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 어느 고속버스 터미널이신가요?",
+          "intent": "교통수단 안내",
+          "terms": "출발지",
+          "knowledge_base": "출발지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "반포동요",
+          "terms": "반포동/행정동명",
+          "knowledge_base": "반포동,행정동명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지가 김포공항이 맞으신가요?",
+          "intent": "교통수단 안내",
+          "terms": "도착지/도착지역",
+          "knowledge_base": "김포공항,도착지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "이용할수 있는 대중교통이 뭐가 있어요?",
+          "intent": "교통수단 안내",
+          "terms": "대중교통/버스/지하철",
+          "knowledge_base": "대중교통,지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "버스, 지하철, 공항버스, 택시가 있습니다.",
+          "terms": "버스/지하철/택시/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "방법이 많네요?",
+          "intent": "교통수단 안내",
+          "terms": "방법/법",
+          "knowledge_base": "방법,법"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네 다양한 방법으로 이동 가능하십니다.",
+          "terms": "다양/많은",
+          "knowledge_base": "방법,많은"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "택시는 얼마나 걸리고 비용은 얼마쯤 나올까요?",
+          "intent": "교통수단 안내",
+          "terms": "택시/대중교통/이동수단",
+          "knowledge_base": "택시,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "약 35분 2만원 예상됩니다.",
+          "terms": "2만원/비용",
+          "knowledge_base": "2만원,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "지하철은요?",
+          "intent": "교통수단 안내",
+          "terms": "지하철/대중교통/이동수단",
+          "knowledge_base": "지하철,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "약 1시간 1550원 예상됩니다.",
+          "terms": "예상/예정",
+          "knowledge_base": "예상,예정"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "버스는요?",
+          "intent": "교통수단 안내",
+          "terms": "버스/대중교통/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "약 1시간 30분 1350원 예상됩니다.",
+          "terms": "1시간/소요시간",
+          "knowledge_base": "1시간,소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "공항버스는요?",
+          "intent": "교통수단 안내",
+          "terms": "공항버스/버스종류",
+          "knowledge_base": "공항버스,버스종류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "약 40분 7000원 예상됩니다.",
+          "terms": "7000원/요금",
+          "knowledge_base": "7000원,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "공항버스가 시간과 비용이 제일 좋네요 버스 번호가 몇번인가요?",
+          "intent": "교통수단 안내",
+          "terms": "번호/노선번호",
+          "knowledge_base": "시간비용,노선번호"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "정류장에서 3700번 공항버스를 이용하시면 됩니다.",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "자세한 안내 고마워요",
+          "terms": "안내/설명",
+          "knowledge_base": "안내,설명"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3559",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "합정역에서 목동가는 버스가 알고 싶어요",
+          "intent": "버스 노선",
+          "terms": "합정역/지하철역",
+          "knowledge_base": "목동,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 2호선 합정역 맞으신가요?",
+          "intent": "버스 노선",
+          "terms": "출발지/출발지역",
+          "knowledge_base": "출발지,출발지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 맞아요",
+          "terms": " "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 어디신가요?",
+          "intent": "버스 노선",
+          "terms": "도착지/도착지역",
+          "knowledge_base": "도착지,도착지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "목동역 3번출구쪽 이에요.",
+          "terms": "목동역/지하철역",
+          "knowledge_base": "목동역,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "버스는 좌석버스와 일반버스가 있습니다.",
+          "terms": "버스/대중교통/이동수단",
+          "knowledge_base": "좌석버스,이동수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어떤 버스로 안내해드릴까요?",
+          "intent": "버스노선",
+          "terms": "버스/대중교통/이동수단",
+          "knowledge_base": "버스,이동수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "일반버스로 알려주세요.",
+          "terms": "일반버스/버스",
+          "knowledge_base": "일반버스,버스"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "합정역에서 745번 6454번 이용 가능하십니다.",
+          "terms": "합정역/지하철역",
+          "knowledge_base": "이용,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "요금은 얼마에요?",
+          "intent": "버스노선",
+          "terms": "요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "결제수단이 카드이신가요?",
+          "intent": "버스노선",
+          "terms": "결제수단/카드/현금",
+          "knowledge_base": "카드,현금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "카드결제와 현금결제할 때 요금 차이가 있나요?",
+          "intent": "버스노선",
+          "terms": "현금/돈",
+          "knowledge_base": "현금,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "카드 결재시 100원 할인을 받으실수 있습니다.",
+          "terms": "카드/결제수단",
+          "knowledge_base": "할인,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "카드결재로 알려주세요",
+          "intent": "버스노선",
+          "terms": "카드/결재수단",
+          "knowledge_base": "카드,결재수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "요금은 1350원 입니다.",
+          "terms": "요금/금액",
+          "knowledge_base": "요금,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "시간은 얼마쯤 걸릴까요?",
+          "intent": "버스노선",
+          "terms": "얼마/시간",
+          "knowledge_base": "얼마,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "약 30분 내외 소요됩니다.",
+          "terms": "내외/안팍",
+          "knowledge_base": "내외,안팍"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "많이 돌아간는 노선 아닌거죠?",
+          "intent": "버스노선",
+          "terms": "노선/버스노선",
+          "knowledge_base": "셋,버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "최소 경로로 이동하는 노선입니다.",
+          "terms": "경로/길",
+          "knowledge_base": "이동,길"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "알겠어요. 고마워요"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3560",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "온천역에서 성심병원 가는 버스노선이 궁금합니다.",
+          "intent": "버스 노선",
+          "terms": "온천역/지하철역",
+          "knowledge_base": "성심병원,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지가 동래구 온천동 온천역 맞습니까?",
+          "intent": "버스 노선",
+          "terms": "동래구/부산",
+          "knowledge_base": "온천동,부산"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네 맞아요"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "도착지는 남포동 성심병원 맞습니까?",
+          "intent": "버스 노선",
+          "terms": "도착지/도착지역",
+          "knowledge_base": "남포동,도착지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네 남포동 성심병원이요",
+          "terms": "성심병원/의료기관",
+          "knowledge_base": "성심병원,의료기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "온천역에서 남포동 까지 가는 버스 노선은 3가지 정도 됩니다.",
+          "terms": "남포동/부산/지역명",
+          "knowledge_base": "버스,지역명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "최소 경로로 이동하는 노선으로 안내해 주세요",
+          "intent": "버스 노선",
+          "terms": "최소/최단",
+          "knowledge_base": "경로,최단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네 온천역 정류장에서 7200번 버스를 이용하시면 됩니다.",
+          "terms": "온천역/지하철역",
+          "knowledge_base": "정류장,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "환승없이 이용 가능한가요?",
+          "intent": "버스 노선",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "환승없이 이용 가능하십니다.",
+          "terms": "이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "하차는 어디에서 하나요?",
+          "intent": "버스 정류장",
+          "terms": "하차/내림",
+          "knowledge_base": "하차,내림"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "남포동 국제시장 정류장에서 하차하시면 됩니다.",
+          "terms": "정류장/정거장",
+          "knowledge_base": "정류장,정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸려요?",
+          "intent": "버스 요금",
+          "terms": "시간",
+          "knowledge_base": "얼마,시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "약 28분 소요 됩니다.",
+          "terms": "소요/소비",
+          "knowledge_base": "소요,소비"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "요금은 얼마에요?",
+          "intent": "버스 요금",
+          "terms": "요금/비용",
+          "knowledge_base": "요금,비용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "결재수단이 카드이신가요?",
+          "intent": "버스 요금",
+          "terms": "결제수단/카드/현금",
+          "knowledge_base": "결재수단,현금"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 카드네요",
+          "terms": "카드/결제수단",
+          "knowledge_base": "카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "이용요금은 1300원 입니다.",
+          "terms": "이용요금/비용",
+          "knowledge_base": "이용요금,비용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "고마워요 수고하세요",
+          "terms": "수고/노고",
+          "knowledge_base": "대전,노고"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네 편안한 하루 되십시요",
+          "terms": "하루/날",
+          "knowledge_base": "하루,날"
+        }
+      ]
+    }
+  ]
+}

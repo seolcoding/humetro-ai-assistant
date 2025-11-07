@@ -1,0 +1,831 @@
+{
+  "chunk_id": 322,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B23520",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "서울에 일이 있어서 가는데요",
+          "intent": "버스노선",
+          "terms": " 서울",
+          "knowledge_base": "서울"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "노선을 어덯게 잡아야할지 모르겠어요",
+          "intent": "버스노선",
+          "terms": "노선/선로/교통/자동차/비행기/오고감선",
+          "knowledge_base": "노선,오고감선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "목적지 알려주시면 도와드리겠습니다.",
+          "terms": "목적지/장소",
+          "knowledge_base": "목적지,장소"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "여의도 국회근처에 들여야하구요",
+          "terms": "국회/입법기관",
+          "knowledge_base": "국회,입법기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "강남대성학원도 방문해야합니다",
+          "terms": "학원,방문/대면",
+          "knowledge_base": "방문,대면"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "어디서 출발하시나요?",
+          "intent": "버스노선",
+          "terms": "출발/목적지/나아감",
+          "knowledge_base": "출발,나아감"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "서울역으로 도착합니다.",
+          "terms": "도착/목적지/다다름",
+          "knowledge_base": "도착,다다름"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "먼저 여의도 먼저 가는 노선이 편리할것 같습니다",
+          "terms": "노선/선로/교통/자동차/비행기/오고감선",
+          "knowledge_base": "노선,오고감선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그런가요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네. 대성학원에서 서울역으로 이동하시면 될것같습니다.",
+          "terms": "학원,이동/자리를바꿈",
+          "knowledge_base": "이동,자리를바꿈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "최단 경로 안내해주시겠어요?",
+          "intent": "버스노선",
+          "terms": "최단/빠른,경로/방법/순서",
+          "knowledge_base": "경로,순서"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "서울역 서부승강장으로 나오셔서 261번 승차하세요.",
+          "terms": "승차/차를탐,승강장/정거장",
+          "knowledge_base": "승강장,정거장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "바스는 한대인가요?",
+          "intent": "버스노선",
+          "terms": "버스/대형자동차",
+          "knowledge_base": "버스,대형자동차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "463번도 대체 가능합니다.",
+          "terms": "대체,가능/할수있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "어디서 내려요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "순복음교회에서 하차하신후 도보로 10정도 이동하세요",
+          "terms": "교회/종교시설.하차/차에서내림",
+          "knowledge_base": "교회.하차,차에서내림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "강남은 어떻게 가나요?",
+          "intent": "버스노선",
+          "terms": "강남/서울",
+          "knowledge_base": "강남,서울"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "순복음교회 건너편에서 461번버스로 이동하시면 됩니다",
+          "terms": "교회/종교시설.,버스/대형자동차",
+          "knowledge_base": "버스,대형자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "얼마나 걸릴까요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "한시간정도 소요됩니다.",
+          "terms": "소요/필요",
+          "knowledge_base": "소요,필요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "감사합니다.",
+          "terms": "감사",
+          "knowledge_base": "감사"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23521",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "친구들이랑 키자니아 가려고 하는데요",
+          "intent": "버스노선",
+          "terms": "친구/사람/관계,키자니아/편의시설",
+          "knowledge_base": "키자니아,편의시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "뭘 도와드릴까요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "지하철안내좀 해주세요",
+          "terms": "지하철/철도/전동차,안내/소개",
+          "knowledge_base": "안내,소개"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "어디에서 출발하는건가요?",
+          "intent": "버스노선",
+          "terms": "출발/목적지/나아감",
+          "knowledge_base": "출발,나아감"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "용인 죽전역에서 가려구요",
+          "terms": "용인,죽전역/지하철",
+          "knowledge_base": "죽전역,지하철"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "죽전역에서 선능역까지 쭉 이동하세요",
+          "terms": "죽전역,이동/자리를바꿈",
+          "knowledge_base": "이동,자리를바꿈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "몇정거장 간야하나요?",
+          "intent": "버스노선",
+          "terms": "정거장/버스/대형자동차/열차/전철/기차/장소",
+          "knowledge_base": "정거장,장소"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "18개역으로 40정도 걸려요"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네, 알겟습니다.",
+          "terms": "네,",
+          "knowledge_base": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "2호선으로 갈아타고 잠실역에 내리면 됩니다.",
+          "terms": "잠실역 /서울/지하철역",
+          "knowledge_base": "잠실역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "잠실역에서 어떻게 가야해요?",
+          "intent": "버스노선",
+          "terms": "잠실역 /서울/지하철역",
+          "knowledge_base": "잠실역,지하철역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "4번 출구를 찾아서 그쪽으로 나가세요",
+          "terms": "출구/통로/길",
+          "knowledge_base": "출구,길"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "나가면 롯데마트가 보입니다.",
+          "terms": "롯데마트/편의시설",
+          "knowledge_base": "롯데마트,편의시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "잘 듣고 계시나요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 듣고 있어요.",
+          "terms": " ",
+          "knowledge_base": "네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "롯데마트를 끼고 돌면 키자니아가 나옵니다.",
+          "terms": "롯데마트/편의시설,키자니아/편의시설",
+          "knowledge_base": "키자니아,편의시설"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "많이 걸어야 되나요?",
+          "intent": "버스노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "어른걸음으로 7분정도 걸리니까 조금 더 걸리겠네요",
+          "terms": "어른/성인",
+          "knowledge_base": "어른,성인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "잘 알겟습니다 "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23522",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스에 서류을 두고왔는데 찾을 수 잇나요?",
+          "intent": "교통정보문의",
+          "terms": "버스/대형자동차,서류",
+          "knowledge_base": "서류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "몇번버스 타셨나요?",
+          "intent": "교통정보문의",
+          "terms": "버스/대형자동차",
+          "knowledge_base": "버스,대형자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "분당에서 광역버스 탓어요",
+          "terms": "분당,광역버스/대형자동차",
+          "knowledge_base": "광역버스,대형자동차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "몇시 탑승했는지 확인가능한가요?",
+          "intent": "교통정보문의",
+          "terms": "탑승/올라탐,확인/판단",
+          "knowledge_base": "확인,판단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "대략적으로요",
+          "terms": "대략/대강",
+          "knowledge_base": "대략,대강"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "하차한지 오래 되었나요?",
+          "intent": "교통정보문의",
+          "terms": "하차/차에서내림",
+          "knowledge_base": "하차,차에서내림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "아뇨, 오분정도 된거 같아요.",
+          "terms": " "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "그럼 아직 이동중일거 같습니다.",
+          "terms": "이동/자리를바꿈",
+          "knowledge_base": "이동,자리를바꿈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "너무 급한데, 전화로는 못할까요?",
+          "intent": "교통정보문의",
+          "terms": "전화/통신수단/도구",
+          "knowledge_base": "전화,도구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "버스번호 인터넷에 입력하시면 업체 번호가 뜰겁니다.",
+          "terms": "버스/대형자동차,번호/숫자,인터넷/온라인,업체",
+          "knowledge_base": "번호,업체"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "거기로 전화하면 될까요?",
+          "intent": "교통정보문의",
+          "terms": "전화/통신수단/도구",
+          "knowledge_base": "전화,도구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "가장 빠른 방법일것같습니다.",
+          "terms": "방법/수단/도구/방식",
+          "knowledge_base": "방법,방식"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "어느 방향인지 도 꼭 말씀하시구요",
+          "terms": "방향/방위",
+          "knowledge_base": "방향,방위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "분실물 센터도 있을까요?",
+          "intent": "교통정보문의",
+          "terms": "분실물/읾어버린물건",
+          "knowledge_base": "분실물,읾어버린물건"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "서울시 분실물센터도 있습니다.",
+          "terms": "분실물/읾어버린물건",
+          "knowledge_base": "분실물,읾어버린물건"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "검색창에서 검색하신후 해당 사이트도 들어가보세요.",
+          "terms": "검색/인터넷/온라인, 사이트",
+          "knowledge_base": "사이트"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "일단 전화번호 해볼께요.",
+          "terms": "전화/통신수단/도구,번호/숫자",
+          "knowledge_base": "번호,숫자"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "꼭 찾기를 바라겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 감사합니다,"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23523",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "급해서 전화드렸어요",
+          "intent": "교통정보문의",
+          "terms": "전화/통신수단/도구",
+          "knowledge_base": "전화,도구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "무슨일이신가요?",
+          "intent": "교통정보문의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "지하철 타고 오다가 노트북을 놓고 내렸어요.",
+          "terms": "지하철/철도/전동차,노트북",
+          "knowledge_base": "노트북"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "몇호선인지 기억나시나요?",
+          "intent": "교통정보문의",
+          "terms": "기억/사고",
+          "knowledge_base": "기억,사고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "9호선타고 왔습니다.",
+          "terms": " "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "지하철에 놓고 내리신건가요?",
+          "intent": "교통정보문의",
+          "terms": "지하철/철도/전동차",
+          "knowledge_base": "지하철,전동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "증미역 화장실에 놓고 온건 같아요",
+          "terms": "화장실/편의시설",
+          "knowledge_base": "화장실,편의시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "지하철마다 분실문센터가 있습니다.",
+          "terms": "지하철/철도/전동차,분실물",
+          "knowledge_base": "분실물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "9호선 역 홈페이지 검색해보셧나요?",
+          "intent": "교통정보문의",
+          "terms": "홈페이지,검색/인터넷/온라인",
+          "knowledge_base": "검색,온라인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "아뇨, 그생각은 못해봤어요",
+          "terms": "생각/사고",
+          "knowledge_base": "생각,사고"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "없으면 어떻가죠?",
+          "intent": "교통정보문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "분실물센터로 들어오기전일수도 있습니다.",
+          "terms": "분실물/읾어버린물건",
+          "knowledge_base": "분실물,읾어버린물건"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "임시보관중인 역에선 확인 어렵습니다.",
+          "terms": "임시,보관",
+          "knowledge_base": "보관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "확인할 수 있는 역이 다른건가요?",
+          "intent": "교통정보문의",
+          "terms": "확인/판단",
+          "knowledge_base": "확인,판단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 9호선은 동작역에서 확인 가능합니다.",
+          "terms": "확인/판단,가능/할수있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "직접가봐도 될까요?",
+          "intent": "교통정보문의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 안전관리실로 방문하시면됩니다.",
+          "terms": "안전관리실,방문/대면",
+          "knowledge_base": "방문,대면"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네. 일단 확인 먼저 해보겠습니다.",
+          "terms": "확인/판단",
+          "knowledge_base": "확인,판단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "다산 콜센터였습니다.",
+          "terms": "다산콜센터",
+          "knowledge_base": "다산콜센터"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23524",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "버스를 탔는데 요금이 좀 이상해서요",
+          "intent": "교통정보문의",
+          "terms": "버스/대형자동차,요금/사용대가",
+          "knowledge_base": "요금,사용대가"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 버스를 이용하셨나요?",
+          "intent": "교통정보문의",
+          "terms": "버스/대형자동차",
+          "knowledge_base": "버스,대형자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "기억이 안나네요",
+          "terms": "기억",
+          "knowledge_base": "기억"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "금액이 얼마인지 확인 가능한가요?",
+          "intent": "교통정보문의",
+          "terms": "금액,확인/판단",
+          "knowledge_base": "확인,판단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "한번은 1100원이고 또 한번는 900원이요. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "일반버스와 마을버스같아 보입니다.",
+          "terms": "일반버스/대형자동차,마을버스/대형자동차",
+          "knowledge_base": "마을버스,대형자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "두 개가 가격이 다른거에요?",
+          "intent": "교통정보문의",
+          "terms": "가격/가치",
+          "knowledge_base": "가격,가치"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네, 그렇습니다. ",
+          "terms": " "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "마을버스가 더 싼건가요?",
+          "intent": "교통정보문의",
+          "terms": "마을버스/대형자동차",
+          "knowledge_base": "마을버스,대형자동차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 마을버스는 900원입니다. ",
+          "terms": "마을버스/대형자동차",
+          "knowledge_base": "마을버스,대형자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "광역버스는요?",
+          "intent": "교통정보문의",
+          "terms": "광역버스/대형자동차",
+          "knowledge_base": "광역버스,대형자동차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "성인 2500원입니다.",
+          "terms": "성인/어른/성인 ",
+          "knowledge_base": "성인"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "비싸네요.",
+          "terms": " "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "마을버스랑 일반버스도 환승 가능한가요?",
+          "intent": "교통정보문의",
+          "terms": "환승/갈아탐,가능/할수있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 가능합니다. ",
+          "terms": "가능/할수있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "환승할인도 되나요?",
+          "intent": "교통정보문의",
+          "terms": "환승/갈아탐,할인/값에서뺌",
+          "knowledge_base": "할인,값에서뺌"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네3번까지 환승할인됩니다.",
+          "terms": "환승/갈아탐,할인/값에서뺌",
+          "knowledge_base": "할인,값에서뺌"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "가끔 안되기도 하던데요?",
+          "intent": "교통정보문의",
+          "terms": " "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "같은 번호의 버스는 안됩니다.",
+          "terms": "버스/대형자동차",
+          "knowledge_base": "버스,대형자동차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "알려주셔서 감사합니다.",
+          "terms": " "
+        }
+      ]
+    }
+  ]
+}

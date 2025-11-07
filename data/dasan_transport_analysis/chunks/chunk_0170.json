@@ -1,0 +1,818 @@
+{
+  "chunk_id": 170,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B3754",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "문의 드릴께 있는데요?",
+          "intent": "교통비지원사업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 어떤 점이 궁금하실까요?",
+          "intent": "교통비지원사업",
+          "terms": "어떤/무엇",
+          "knowledge_base": "어떤,무엇"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "경기도에서 청소년 교통비 지원을 해준다는데 맞아요?",
+          "intent": "교통비지원사업",
+          "terms": "경기도/지역/ 청소년교통비 지원/정책",
+          "knowledge_base": "청소년교통비지원,정책"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 확인해 보겠습니다. 잠시만요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "네.",
+          "intent": "교통비지원사업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 경기도에서 2019년 버스요금 인상에 따른 교통이용비 부담 경감을 위해 청소년 교통비 지원 사업을 시행하고 있습니다.",
+          "terms": "경기도/지역/ 버스요금/금액/ 청소년 교통비 지원/ 정책",
+          "knowledge_base": "버스요금,정책"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "연령대가 정해져 있나요?",
+          "intent": "교통비지원사업",
+          "terms": "연령대/나이",
+          "knowledge_base": "연령대,나이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "주민등록상 주소지가 경기도인 만 13세부터 23세까지가 그 대상입니다.",
+          "terms": "주소지/거주지/ 경기도/지역/ 13세/23세/나이",
+          "knowledge_base": "경기도,나이"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "지급기준이 어떻게 되죠?",
+          "intent": "교통비지원사업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "2020년 1월1일 이후 교통카드 사용액 부터 적용됩니다.",
+          "terms": "교통카드/카드",
+          "knowledge_base": "교통카드,카드"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "지원금액은 어떻게 되요?",
+          "intent": "교통비지원사업",
+          "terms": "지원금액/돈",
+          "knowledge_base": "지원금액,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "반기별 최대6만원, 1년에 12만원 입니다.",
+          "terms": "6만원/12만원/금액/돈",
+          "knowledge_base": "12만원,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "본인명의의 교통카드여야 하나요?",
+          "intent": "교통비지원사업",
+          "terms": "교통카드/카드/결제수단",
+          "knowledge_base": "교통카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 본인명의의 카드여야 하고 지역화페로 환급됩니다.",
+          "terms": "지역화폐/금액",
+          "knowledge_base": "지역화폐,금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "그럼 만 13세는 어떻게 받아요?",
+          "intent": "교통비지원사업",
+          "terms": "13세/나이",
+          "knowledge_base": "13세,나이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "부모님께 지역화폐로 지급 됩니다.",
+          "terms": "부모님/가족",
+          "knowledge_base": "부모님,가족"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "지역화폐가 없거나 휴대폰이 없는 경우는요?",
+          "intent": "교통비지원사업",
+          "terms": "휴대폰/통신수단",
+          "knowledge_base": "휴대폰,통신수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "자녀의 휴대폰이 없을 경우 부모님의 명의의 지역화폐로 신청 가능합니다.",
+          "terms": "휴대폰/통신수단/ 부모님/가족",
+          "knowledge_base": "부모님,가족"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "지역화폐를 못만들면 어떻게 되요?",
+          "intent": "교통비지원사업",
+          "terms": "지역화폐/금액",
+          "knowledge_base": "지역화폐,금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "다행스럽게도, 이번에 처음 시행되는 제도라서 지역화폐를 가지고 있지 않은 청소년이 많다는것을 감안해 다음2분기 신청떄 합산, 소급적용됩니다.",
+          "terms": "지역화폐/금액",
+          "knowledge_base": "지역화폐,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3755",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "혹시 중복 지원은 되나요?",
+          "intent": "교통비지원사업",
+          "terms": "지원금액/돈",
+          "knowledge_base": "지원금액,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "각 지자체에서 시행하는 청년교통비 지원사업과는 중복 불가 입니다.",
+          "terms": "청년교통비 지원사업/정책",
+          "knowledge_base": "청년교통비지원사업,정책"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아 그래요?",
+          "intent": "교통비지원사업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 단, 광역알뜰교통카드 사업과는 중복지원 가능합니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "좋은 제도네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "혹시 기초생활수급자 이시면 수급중지 및 감액 가능성이 있으니 사회복지 담당자와 상의가 필요합니다.",
+          "knowledge_base": "기초생황수급자"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "다행히 해당사항이 없네요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "지원은 얼마나 될까요?",
+          "intent": "교통비지원사업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "경기도 청소년 교통비지원사업은 만 13~18세까지는 총 이용금액의 30%, 만 19~23세는 총 이용금액의 15%이내로 지급되며 최대 6만원 한도로 지원됩니다.",
+          "terms": "교통비지원사업/정책/ 13세/19세23세/나이/ 15%/30%/백분율",
+          "knowledge_base": "청소년교통비지원사업,백분율"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "교통비 지원 사업의 접수는 언제 까지인가요?",
+          "intent": "교통비지원사업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "7월31일 18시 까지 입니다.",
+          "terms": "7월31일/날짜/ 18시/시간",
+          "knowledge_base": "18시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "어디에 접수해요?",
+          "intent": "교통비지원사업"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "경기도 청소년 교통비 지원 포털사이트 에서 접수하고 있습니다.",
+          "terms": "경기도 청소년 교통비 지원/정책",
+          "knowledge_base": "포털사이트,정책"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 알겠습니다. "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "모바일로 하면 절차가 까다롭고 번거롭기 때문에 가급적 PC이용을 추천드립니다.",
+          "terms": "모바일/PC/통신수단",
+          "knowledge_base": "PC,통신수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "공인인증서가 필요한가요?",
+          "intent": "교통비지원사업",
+          "terms": "공인인증서/인증서",
+          "knowledge_base": "공인인증서,인증서"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 공인인증서로 진행됩니다.",
+          "terms": "공인인증서/인증서",
+          "knowledge_base": "공인인증서,인증서"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "교통비 지원금 신청 절차가 어떻게 되요?",
+          "intent": "교통비지원사업",
+          "terms": "교통시 지원 신청/청구",
+          "knowledge_base": "교통비지원신청,청구"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "회원가입및 교통카드 등록을 하시고 지역화폐등록을 한다음 지원금을 신청하시면 내역을알수 있습니다.",
+          "terms": "지원금액/돈",
+          "knowledge_base": "지원금,돈"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 자세한 내용 감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3756",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "문의 좀 드릴께요",
+          "intent": "분실물"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 어떤 점이 궁금하신가요?",
+          "intent": "분실물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "제가 버스에 휴대폰을 두고 내렸는데 찾을 수 있을까요?",
+          "intent": "분실물",
+          "terms": "버스/교통수단/ 휴대폰/통신수단",
+          "knowledge_base": "휴대폰,통신수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "네, 어떤 버스를 타고 가셨나요?",
+          "intent": "분실물",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "15번 버스 거든요.",
+          "terms": "버스/교통수단/",
+          "knowledge_base": "정류장,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "15번 버스가 현재 7대 중행중이에요, 혹시 어느 정류장에서 타셨는지 알려주시면 확인해 드릴께요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네, 저는 연합병원 앞에서 탔어요.",
+          "terms": "연합병원/의료시설",
+          "knowledge_base": "연합병원,의료시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "내리신 곳은 어딘가요?",
+          "intent": "분실물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "대우4차 아파트요,",
+          "terms": "아파트/주거형태",
+          "knowledge_base": "아파트,주거형태"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네, 버스회사에 연락해서 기사님께 전달하겠습니다.",
+          "terms": "버스회사/회사",
+          "knowledge_base": "버스회사,회사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "그럼 연락을 주시나요?",
+          "intent": "분실물",
+          "terms": "연락/알림",
+          "knowledge_base": "연락,알림"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "연락받으실수 있는 연락처를 말씀해 주시겠어요?",
+          "intent": "분실물",
+          "terms": "연락/알림",
+          "knowledge_base": "연락,알림"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네,OOO-OOOO-OOOO입니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네, 말씀해주신 번호를 버스회사에 전달하겠습니다. 연락오면 상담받아 보시면 될것 같습니다.",
+          "terms": "버스회사/회사",
+          "knowledge_base": "버스회사,회사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 감사합니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "다른 문의 사항 있으신가요?",
+          "intent": "분실물"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아니요, 제가 버스회사에 연락해 볼께요.",
+          "terms": "버스회사/회사",
+          "knowledge_base": "버스회사,회사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "혹시 버스회사 연락처 알려 드릴까요?",
+          "intent": "분실물",
+          "terms": "버스회사/회사",
+          "knowledge_base": "연락처,회사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3757",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "시흥에서 부천가는 버스 노선이 몇 개가 있을까요?",
+          "intent": "버스 노선",
+          "terms": "시흥/부천/경기도/지역/ 버스/교통수단",
+          "knowledge_base": "부천,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "출발지점이 어디신가요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "전 대야동요",
+          "terms": "대야동/동네",
+          "knowledge_base": "대야동,동네"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "부천 어느 지역으로 도착하실 건가요?",
+          "intent": "버스 노선",
+          "terms": "부천/경기도/지역",
+          "knowledge_base": "부천,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "스타필드 시티요.",
+          "terms": "스타필드시티/쇼핑센터",
+          "knowledge_base": "스타필드시티,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 현재 2개의 버스 노선이 있습니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "정확히 어느 버스정류장에서 탑승하시죠?",
+          "intent": "버스 노선",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "저는 우미린레이크 정류장에서 탈꺼애요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네, 12번 버스와 5004번 버스 둘다 정류장에서 탑승가능합니다.",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "그냥 일반 시내버스인거죠?",
+          "intent": "버스 노선",
+          "terms": "시내버스/교통수단",
+          "knowledge_base": "시내버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "12번은 일반버스이고 5004번은 광역버스입니다.",
+          "terms": "일반버스/광역버스/교통수단",
+          "knowledge_base": "광역버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "뭐가 틀린거죠?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "5004번은 좌석 버스이고 금액이 비쌉니다.",
+          "terms": "좌석버스/교통수단",
+          "knowledge_base": "좌석버스,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸리죠?",
+          "intent": "버스 노선",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "대야동에서 15~20분 내외도 도착합니다.",
+          "terms": "대야동/동네",
+          "knowledge_base": "대야동,동네"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아, 생각보다 가깝네요."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 교통상황에 따라 더 빨리 도착하실수도 있습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "교통카드 사용하면 더 싸나요?",
+          "intent": "버스 노선",
+          "terms": "교통카드/카드/결제수단",
+          "knowledge_base": "교통카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 교통카드 사용시 할인이 됩니다.",
+          "terms": "교통카드/카드/결제수단",
+          "knowledge_base": "교통카드,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "아, 그렇군요, 감사합니다."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B3758",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "문의 드릴께 있는데요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "네, 무엇을 도와드릴까요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "제가 길을 좀 여쭤 보고 싶어서요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "네, 그러시군요, 어디로 가시나요?",
+          "intent": "버스 노선",
+          "terms": "어디/위치",
+          "knowledge_base": "어디,위치"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "광화문요.",
+          "terms": "광화문/지역",
+          "knowledge_base": "광화문,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "출발지는 어디신가요?",
+          "intent": "버스 노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "구로구요.",
+          "terms": "구로구/지역",
+          "knowledge_base": "구로구,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "네, 구로구 무슨 동이시죠?",
+          "intent": "버스 노선",
+          "terms": "구로구/지역",
+          "knowledge_base": "구로구,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "신도림동요.",
+          "terms": "신도림동/동네/지역",
+          "knowledge_base": "신도림동,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "네, 그럼 지하철 역이 가까우실까요?",
+          "intent": "지하철 이용",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "지하철,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네, 디큐브 현대백화점이랑 연결되어 있어서 알아요.",
+          "terms": "디큐브 현대백화점/ 쇼핑센터",
+          "knowledge_base": "디큐브현대백화점,쇼핑센터"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "그럼 신도림역에서 지하철을 타고 신길에서 5호선 환승후 광화문역에서 내리시면 됩니다.",
+          "terms": "신도림역/지하철역",
+          "knowledge_base": "신도림역,지하철역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "그럼 환승을 두번하는건가요?",
+          "intent": "지하철 환승",
+          "terms": "환승/갈아탐",
+          "knowledge_base": "환승,갈아탐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "아뇨,1번입니다. 신길에서 내려 5호선을 타면 됩니다.",
+          "terms": "신길/지역/ 1호선/5호선/지하철노선",
+          "knowledge_base": "1호선,지하철노선"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "시간이 얼마나 걸리나요?",
+          "intent": "지하철 환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "약 26분 정도 소요 됩니다.",
+          "terms": "26분/시간",
+          "knowledge_base": "26분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "지하철 요금이 얼마죠?",
+          "intent": "지하철 요금",
+          "terms": "지하철/교통수단",
+          "knowledge_base": "요금,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "교통카드를 이용하시나요?",
+          "intent": "지하철 요금",
+          "terms": "교통카드/카드/결제수단",
+          "knowledge_base": "교통카드,결제수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "아직 교통카드 구입을 못했어요.",
+          "terms": "교통카드/카드/결제수단",
+          "knowledge_base": "교통카드,결제수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 그러시면,1회권은 1,450원이고, 교통카드를 구입해서 사용하실 경우 1,350원입니다.",
+          "terms": "1/240원/비용/금액/ 교통카드/카드/결제수단",
+          "knowledge_base": "450원,결제수단"
+        }
+      ]
+    }
+  ]
+}

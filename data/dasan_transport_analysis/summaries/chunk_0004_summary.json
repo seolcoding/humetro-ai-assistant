@@ -1,0 +1,9 @@
+{
+  "raw_response": "제공하신 다산콜센터 대중교통 상담 데이터를 분석하여 구조화된 요약을 제공하겠습니다.\n\n```json\n{\n  \"question_types\": [\n    {\n      \"type\": \"버스노선 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"평내동에서 경기도 광주가는 버스를 알고싶습니다\",\n        \"일산에서 김포가는 버스를 알고싶습니다\"\n      ]\n    },\n    {\n      \"type\": \"소요시간 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"시간은 얼마나 걸립니까?\"\n      ]\n    },\n    {\n      \"type\": \"운행시간 문의 (첫차/막차)\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"막차는 언제입니까?\",\n        \"첫차는 언제입니까?\"\n      ]\n    },\n    {\n      \"type\": \"요금 문의\",\n      \"frequency\": \"매우 높음 (100% - 모든 대화)\",\n      \"examples\": [\n        \"차비는 얼마입니까?\"\n      ]\n    }\n  ],\n  \"common_issues\": [\n    {\n      \"issue\": \"출발지-목적지 구체화 필요\",\n      \"frequency\": \"높음 (100% - 모든 대화에서 2회 질문)\",\n      \"context\": \"고객이 처음에는 구/시 단위로 문의하지만, 상담사가 구체적 위치(파출소, 터미널, 역 등)를 재확인하는 패턴\"\n    },\n    {\n      \"issue\": \"교통카드 vs 현금 요금 구분 부재\",\n      \"frequency\": \"중간\",\n      \"context\": \"요금 안내 시 교통카드/현금 구분이 명시되지 않음\"\n    },\n",
+  "parse_error": true,
+  "error_detail": "Extra data: line 118 column 1 (char 3350)",
+  "chunk_id": "chunk_0004",
+  "processing_time": 77.8975191116333,
+  "processed_at": "2025-11-05T11:22:30.575658",
+  "dialogue_count": 5
+}

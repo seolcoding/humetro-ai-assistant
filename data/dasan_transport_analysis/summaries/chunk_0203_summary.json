@@ -1,0 +1,9 @@
+{
+  "raw_response": "\n",
+  "parse_error": true,
+  "error_detail": "Expecting value: line 2 column 1 (char 1)",
+  "chunk_id": "chunk_0203",
+  "processing_time": 39.735832929611206,
+  "processed_at": "2025-11-05T11:50:22.619501",
+  "dialogue_count": 5
+}

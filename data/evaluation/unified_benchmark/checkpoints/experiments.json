@@ -1,0 +1,480 @@
+{
+  "next_id": 25,
+  "experiments": {
+    "1": {
+      "id": 1,
+      "created_at": "2025-11-05T13:33:03.282119",
+      "config": {
+        "questions": 3,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": []
+    },
+    "2": {
+      "id": 2,
+      "created_at": "2025-11-05T13:34:07.458909",
+      "config": {
+        "questions": 3,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": []
+    },
+    "3": {
+      "id": 3,
+      "created_at": "2025-11-05T13:35:40.346170",
+      "config": {
+        "questions": 3,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated"
+      ],
+      "last_checkpoint": "questions_generated",
+      "last_updated": "2025-11-05T13:37:00.446287"
+    },
+    "4": {
+      "id": 4,
+      "created_at": "2025-11-05T13:48:37.280055",
+      "config": {
+        "questions": 50,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified"
+      ],
+      "last_checkpoint": "questions_classified",
+      "last_updated": "2025-11-05T13:55:30.807276",
+      "results_file": "data/evaluation/unified_benchmark/experiment_4_results.json",
+      "completed_at": "2025-11-05T13:55:31.237915"
+    },
+    "5": {
+      "id": 5,
+      "created_at": "2025-11-05T13:57:08.199666",
+      "config": {
+        "questions": 5,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified"
+      ],
+      "last_checkpoint": "questions_classified",
+      "last_updated": "2025-11-05T13:58:43.543631",
+      "results_file": "data/evaluation/unified_benchmark/experiment_5_results.json",
+      "completed_at": "2025-11-05T13:58:43.544314"
+    },
+    "6": {
+      "id": 6,
+      "created_at": "2025-11-05T13:58:49.077074",
+      "config": {
+        "questions": 5,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T13:59:04.465479",
+      "results_file": "data/evaluation/unified_benchmark/experiment_6_results.json",
+      "completed_at": "2025-11-05T13:59:04.471464"
+    },
+    "7": {
+      "id": 7,
+      "created_at": "2025-11-05T14:00:07.596245",
+      "config": {
+        "questions": 5,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T14:00:25.475855",
+      "results_file": "data/evaluation/unified_benchmark/experiment_7_results.json",
+      "completed_at": "2025-11-05T14:00:25.480120"
+    },
+    "8": {
+      "id": 8,
+      "created_at": "2025-11-05T14:01:01.519799",
+      "config": {
+        "questions": 5,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T14:01:17.302474",
+      "results_file": "data/evaluation/unified_benchmark/experiment_8_results.json",
+      "completed_at": "2025-11-05T14:01:17.307216"
+    },
+    "9": {
+      "id": 9,
+      "created_at": "2025-11-05T14:02:12.537297",
+      "config": {
+        "questions": 3,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-4o-mini",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T14:03:16.154071",
+      "results_file": "data/evaluation/unified_benchmark/experiment_9_results.json",
+      "completed_at": "2025-11-05T14:03:16.154839"
+    },
+    "10": {
+      "id": 10,
+      "created_at": "2025-11-05T14:07:42.118600",
+      "config": {
+        "questions": 3,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-4o-mini",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T14:08:56.331974",
+      "results_file": "data/evaluation/unified_benchmark/experiment_10_results.json",
+      "completed_at": "2025-11-05T14:08:56.338336"
+    },
+    "11": {
+      "id": 11,
+      "created_at": "2025-11-05T14:21:57.885288",
+      "config": {
+        "questions": 50,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified"
+      ],
+      "last_checkpoint": "questions_classified",
+      "last_updated": "2025-11-05T14:22:50.475844"
+    },
+    "12": {
+      "id": 12,
+      "created_at": "2025-11-05T14:28:44.360715",
+      "config": {
+        "questions": 50,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated"
+      ],
+      "last_checkpoint": "questions_generated",
+      "last_updated": "2025-11-05T14:28:44.363235"
+    },
+    "13": {
+      "id": 13,
+      "created_at": "2025-11-05T14:34:23.869883",
+      "config": {
+        "questions": 50,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated"
+      ],
+      "last_checkpoint": "questions_generated",
+      "last_updated": "2025-11-05T14:34:23.873880"
+    },
+    "14": {
+      "id": 14,
+      "created_at": "2025-11-05T14:34:54.961570",
+      "config": {
+        "questions": 50,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated"
+      ],
+      "last_checkpoint": "questions_generated",
+      "last_updated": "2025-11-05T14:34:54.963976"
+    },
+    "15": {
+      "id": 15,
+      "created_at": "2025-11-05T14:35:12.092791",
+      "config": {
+        "questions": 50,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated"
+      ],
+      "last_checkpoint": "questions_generated",
+      "last_updated": "2025-11-05T14:35:12.095294"
+    },
+    "16": {
+      "id": 16,
+      "created_at": "2025-11-05T15:04:19.905734",
+      "config": {
+        "questions": 50,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified"
+      ],
+      "last_checkpoint": "questions_classified",
+      "last_updated": "2025-11-05T15:07:35.796165"
+    },
+    "17": {
+      "id": 17,
+      "created_at": "2025-11-05T15:11:51.463304",
+      "config": {
+        "questions": 50,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T16:09:54.469856",
+      "results_file": "data/evaluation/unified_benchmark/experiment_17_results.json",
+      "completed_at": "2025-11-05T16:09:54.473034"
+    },
+    "18": {
+      "id": 18,
+      "created_at": "2025-11-05T15:19:20.308179",
+      "config": {
+        "questions": 80,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "gpt-5",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified"
+      ],
+      "last_checkpoint": "questions_classified",
+      "last_updated": "2025-11-05T15:23:06.492438"
+    },
+    "19": {
+      "id": 19,
+      "created_at": "2025-11-05T16:02:57.159717",
+      "config": {
+        "questions": 3,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "claude-sonnet-4-5-20250929",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": []
+    },
+    "20": {
+      "id": 20,
+      "created_at": "2025-11-05T16:10:47.687083",
+      "config": {
+        "questions": 2,
+        "models": [
+          "ollama/gemma3-12b"
+        ],
+        "judge_model": "claude-sonnet-4-5-20250929",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": []
+    },
+    "21": {
+      "id": 21,
+      "created_at": "2025-11-05T16:12:44.093525",
+      "config": {
+        "questions": 2,
+        "models": [
+          "ollama/gemma3-12b"
+        ],
+        "judge_model": "claude-sonnet-4-5-20250929",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": []
+    },
+    "22": {
+      "id": 22,
+      "created_at": "2025-11-05T16:26:41.757666",
+      "config": {
+        "questions": 5,
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "judge_model": "claude-sonnet-4-5-20250929",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "completed",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T16:33:08.695591",
+      "results_file": "data/evaluation/unified_benchmark/experiment_22_results.json",
+      "completed_at": "2025-11-05T16:33:08.696576"
+    },
+    "23": {
+      "id": 23,
+      "created_at": "2025-11-05T16:42:05.225630",
+      "config": {
+        "questions": 50,
+        "models": [
+          "gpt-4o-mini",
+          "gpt-4o",
+          "ollama/gemma3-12b",
+          "ollama/exaone3.5:7.8b",
+          "ollama/llama3.1:8b"
+        ],
+        "judge_model": "claude-sonnet-4-5-20250929",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": []
+    },
+    "24": {
+      "id": 24,
+      "created_at": "2025-11-05T16:52:41.839438",
+      "config": {
+        "questions": 80,
+        "models": [
+          "thesis"
+        ],
+        "judge_model": "claude-sonnet-4-5-20250929",
+        "no_retrieval": false,
+        "k_documents": 4
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "questions_generated",
+        "questions_classified",
+        "benchmark_gpt-4o-mini"
+      ],
+      "last_checkpoint": "benchmark_gpt-4o-mini",
+      "last_updated": "2025-11-05T18:04:14.863618"
+    }
+  }
+}

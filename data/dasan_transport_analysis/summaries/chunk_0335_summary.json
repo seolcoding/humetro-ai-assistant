@@ -1,0 +1,9 @@
+{
+  "raw_response": "이 분석이 향후 상담 시스템 개선이나 상담사 교육 프로그램 개발에 도움이 되기를 바랍니다. 더 깊이 있는 분석이나 특정 영역에 대한 추가 조사가 필요하시면 말씀해주세요.\n",
+  "parse_error": true,
+  "error_detail": "Expecting value: line 1 column 1 (char 0)",
+  "chunk_id": "chunk_0335",
+  "processing_time": 44.9103889465332,
+  "processed_at": "2025-11-05T12:01:34.918370",
+  "dialogue_count": 5
+}

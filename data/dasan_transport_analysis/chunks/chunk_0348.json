@@ -1,0 +1,847 @@
+{
+  "chunk_id": 348,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B24195",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "포항에서 대전가는 기차가 있을까요?",
+          "intent": "기차노선",
+          "terms": "포항,대전/지역, 기차/대중교통",
+          "knowledge_base": "대전,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "포항역에서 가실 건가요?",
+          "intent": "기차노선",
+          "terms": "포항역/기차역",
+          "knowledge_base": "포항역,기차역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "네~그렇지요.."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "대전역 도착으로 알려 드리면 될까요?",
+          "intent": "기차노선",
+          "terms": "대전역/기차역",
+          "knowledge_base": "도착,기차역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네~~"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "포항에서 서대전역으로 가는KTX와 무궁화호가 있네요.",
+          "terms": "포항/지역, 서대전역/기차역, KTX,무궁화호/기차",
+          "knowledge_base": "서대전역,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "무궁화호 이용하려면 어떻게 하면 되요?",
+          "intent": "기차노선",
+          "terms": "무궁화호/기차",
+          "knowledge_base": "이용,기차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "무궁화호는 매 시간 15분, 30분, 45분에 있습니다.",
+          "terms": "무궁화호/기차",
+          "knowledge_base": "시간,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "무궁화호 타면 얼마나 걸리나요?",
+          "intent": "기차노선",
+          "terms": "무궁화호/기차",
+          "knowledge_base": "무궁화호,기차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "3시간정도 걸립니다.",
+          "terms": "3시간/소요시간",
+          "knowledge_base": "3시간,소요시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "예약을 할 수 있을까요?",
+          "intent": "기차노선",
+          "terms": "예약/미리 정해놓음",
+          "knowledge_base": "예약,미리정해놓음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네~~코레일 앱 다운받고 예약하시면 됩니다.",
+          "terms": "코레일/한국철도공사,예약/미리 정해놓음",
+          "knowledge_base": "앱,미리정해놓음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "국가유공자 할인을 받고 싶은데 어떻게 해야 하나요?",
+          "intent": "기차노선",
+          "terms": "국가유공자/나라에 공헌한 사람",
+          "knowledge_base": "할인,나라에공헌한사람"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "코레일 홈페이지에서 국가유공자 신청 해주시면 됩니다.",
+          "terms": "코레일/한국철도공사, 국가유공자/나라에 공헌한 사람",
+          "knowledge_base": "홈페이지,나라에공헌한사람"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아~~그렇군요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "요금은 얼마 나오나요?",
+          "intent": "기차노선",
+          "terms": "요금/책정된 이용금액",
+          "knowledge_base": "요금,책정된이용금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "무궁화호 일반실 기준 2만원입니다.",
+          "terms": "무궁화호/기차",
+          "knowledge_base": "일반실,기차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "아~~~네…"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "잘 알겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "도움 주셔서 감사합니다.",
+          "terms": "도움/보조",
+          "knowledge_base": "도움,보조"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24196",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "군산에서 대전 어떻게 갈 수 있나요?",
+          "intent": "버스노선",
+          "terms": "군산,대전/지역",
+          "knowledge_base": "대전,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어떤 것으로 이동하실 건가요?",
+          "intent": "버스노선",
+          "terms": "이동/움직임",
+          "knowledge_base": "이동,움직임"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "버스요",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "그럼 군산 터미널에서 출발하시는 건가요?",
+          "intent": "버스노선",
+          "terms": "군산터미널/버스터미널, 출발/시작",
+          "knowledge_base": "출발,시작"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "그렇지요…"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "내리실 곳은 대전 어디인가요?",
+          "intent": "버스노선",
+          "terms": "대전/지역",
+          "knowledge_base": "대전,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "유성 터미널에서 내리려고요.",
+          "terms": "유성터미널/버스터미널/종점",
+          "knowledge_base": "유성터미널,종점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "그럼 시외버스를 이용하시면 됩니다.",
+          "terms": "시외버스/대중교통",
+          "knowledge_base": "이용,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "그래요…첫 차로 가려면 몇 시에 타야하나요?",
+          "intent": "버스노선",
+          "terms": "첫차/처음 출발하는 차",
+          "knowledge_base": "첫차,처음출발하는차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "첫 차는 오전 5시 34분에 있습니다.",
+          "terms": "첫차/처음 출발하는 차",
+          "knowledge_base": "오전,처음출발하는차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "그렇군요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "그럼  막차는 몇 시에 있나요?",
+          "intent": "버스노선",
+          "terms": "막차/가장 마지막에 출발하는 차",
+          "knowledge_base": "막차,가장마지막에출발하는차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "막차는 밤 10시55분에 있습니다.",
+          "terms": "막차/가장 마지막에 출발하는 차",
+          "knowledge_base": "밤,가장마지막에출발하는차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "더 늦게 운행하는 버스는 없나요?",
+          "intent": "버스노선",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "네~~없네요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "아~~그래요…조금 더 늦게 갈 수 있으면 좋겠는데…."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네 아쉽지만 그 시간이 마직막 차량입니다.",
+          "terms": "마지막/끝",
+          "knowledge_base": "마지막,끝"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "네~~요금은 얼마 지불해야하나요?",
+          "intent": "버스노선",
+          "terms": "요금/책정된 이용금액",
+          "knowledge_base": "지불,책정된이용금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "5500원입니다.",
+          "terms": "5500원/요금",
+          "knowledge_base": "5500원,요금"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네~~알았습니다.."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24197",
+      "category": "대중교통 안내",
+      "turns": 21,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "충남대 병원까지 가는 방법을 좀 알려주실래요?",
+          "intent": "버스노선",
+          "terms": "충남대병원/의료시설",
+          "knowledge_base": "방법,의료시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어느 지역에 있는 충남대 병원을 알려드리면 될까요?",
+          "intent": "버스노선",
+          "terms": "충남대병원/의료시설",
+          "knowledge_base": "충남대병원,의료시설"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "대전충남대 병원으로 알려주세요..",
+          "terms": "대전충남대병원/의료시설",
+          "knowledge_base": "대전충남대병원,의료시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "지금 어디 계시는 여쭈어봐도 될까요?",
+          "intent": "버스노선",
+          "terms": "지금/말하는 바로 이때",
+          "knowledge_base": "지금,말하는바로이때"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네~~전 지금 세종 나성동 쪽에 있습니다.",
+          "terms": "지금/말하는 바로 이때, 세종,나성동/지역",
+          "knowledge_base": "세종,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "대중교통으로  가실 건가요?",
+          "intent": "버스노선",
+          "terms": "대중교통/여러 사람이 이용하는 버스, 지하철 따위의 교통",
+          "knowledge_base": "대중교통,지하철따위의교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네~~그렇습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "그럼 나성동에서 반석역까지 가는 BRT버스를 타면 되실 것 같습니다.",
+          "terms": "나성동/지역, 반석역/정류장, BRT버스/대중교통",
+          "knowledge_base": "반석역,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "아~~그 버스는 얼마나 자주 오나요?",
+          "intent": "버스노선",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "7~8분 간격으로 오는 것으로 알고 있습니다.",
+          "terms": "간격/사이",
+          "knowledge_base": "간격,사이"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "오~~자주 오네요…"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네~~BRT버스로 반석역까지 가셔서 거기서부터는 지하철을 이용하여 가시면 됩니다.",
+          "terms": "BRT버스,지하철/대중교통, 반석역/지하철역,지하철/대중교통",
+          "knowledge_base": "반석역,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "지하철은 어떤 걸로 타고 가야하는 건가요?",
+          "intent": "지하철노선",
+          "terms": "지하철/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "대전역방면으로 타서 서대전 네거리역에서 내리시면 됩니다.",
+          "terms": "대전역/기차역서대전네거리역/정류장",
+          "knowledge_base": "방면,정류장"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "네~~대전역방면 지하철은 몇 분에 한 번씩 오나요?",
+          "intent": "지하철노선",
+          "terms": "대전역/기차역,지하철/대중교통",
+          "knowledge_base": "방면,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "15분 간격으로 운행하고 있습니다.",
+          "terms": "15분/시간,간격/사이,운행/운전",
+          "knowledge_base": "간격,운전"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "반석역에서 서대전 네거리역까지는 얼마나 걸리나요?",
+          "intent": "지하철노선",
+          "terms": "반석역,서대전네거리역/정류장",
+          "knowledge_base": "서대전네거리역,정류장"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "대략 35분 정도 예상하시면 됩니다.",
+          "terms": "예상/미리 생각함",
+          "knowledge_base": "35분,미리생각함"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "그럼 서대전네거리역에서 내리면 충남대병원까지는 얼마나 더 가야하나요?",
+          "intent": "지하철노선",
+          "terms": "서대전네거리역/정류장, 충남대병원/의료시설",
+          "knowledge_base": "충남대병원,의료시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "10분정도 걸어가시면 됩니다.",
+          "terms": "10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "21",
+          "qa_type": "A",
+          "content": "아~감사합니다.",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "감사,고마워하는마음"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24198",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "상담사",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "terms": "다산콜센터/시정상담서비스전문기관",
+          "knowledge_base": "다산콜센터,시정상담서비스전문기관"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "민원을 접수하려고 하는데 어떻게 하면 되나요?",
+          "intent": "주차위반",
+          "terms": "민원/주민이 행정기관에 원하는 바를 요구하는 일",
+          "knowledge_base": "접수,주민이행정기관에원하는바를요구하는일"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "네~~어떤 민원을 접수하시려고 하는 건가요?",
+          "intent": "주차위반",
+          "terms": "민원/주민이 행정기관에 원하는 바를 요구하는 일",
+          "knowledge_base": "접수,주민이행정기관에원하는바를요구하는일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "교통민원이요..",
+          "terms": "교통민원/민원, ",
+          "knowledge_base": "교통민원,민원"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "어떤 점이 불편하셨는지 말씀해 주시겠어요?",
+          "intent": "주차위반",
+          "terms": "말씀/이야기",
+          "knowledge_base": "말씀,이야기"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네~~소화전 근처에 주차된 차량이 있어서요.",
+          "terms": "소화전/소방시설, 주차/자동차를 세워둠, 차량/모든차",
+          "knowledge_base": "근처,모든차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "이런 것도 신고가 가능한가요?",
+          "intent": "주차위반",
+          "terms": "신고/사실을 진술홤,가능/할 수 있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "네~~가능합니다.",
+          "terms": "가능/할 수 있음",
+          "knowledge_base": "가능,할수있음"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "바로 민원접수 도와드리겠습니다.",
+          "terms": "민원/주민이 행정기관에 원하는 바를 요구하는 일",
+          "knowledge_base": "접수,주민이행정기관에원하는바를요구하는일"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "신고하실 지역이 어디이신가요?",
+          "intent": "주차위반",
+          "terms": "신고/사실을 진술함",
+          "knowledge_base": "지역,사실을진술함"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "수원시요.",
+          "terms": "수원시/지역",
+          "knowledge_base": "수원시,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "네~~그럼 수원시 홈페이지에서 현장민원 접수하기를 이용하여 신고하시면 됩니다.",
+          "terms": "수원시/지역,신고/사실을 진술함",
+          "knowledge_base": "홈페이지,사실을진술함"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "아~~수원시 홈페이지에 제가 직접 신고하면 되는 건가요?",
+          "intent": "주차위반",
+          "terms": "수원시/지역, 신고/사실을 진술함",
+          "knowledge_base": "홈페이지,사실을진술함"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네~그렇습니다."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "사진이 있으면 사진도 같이 첨부해 주시면 됩니다.",
+          "terms": "첨부/첨가",
+          "knowledge_base": "첨부,첨가"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "네~~~민원접수 처리내역도 수원시 홈페이지에서 확인하면 되는 건가요?",
+          "intent": "주차위반",
+          "terms": "민원/주민이 행정기관에 원하는 바를 요구하는 일,수원시/지역",
+          "knowledge_base": "접수,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네~~그렇습니다. 수원시 홈페이지에서 민원접수결과를 통해 확인이 가능합니다.",
+          "terms": "수원시/지역,민원/주민이 행정기관에 원하는 바를 요구함,가능/할 수 있음",
+          "knowledge_base": "홈페이지,할수있음"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그렇군요..그럼 처리결과는 얼마나 걸릴까요?",
+          "intent": "주차위반",
+          "terms": "처리/해결",
+          "knowledge_base": "결과,해결"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "평일기준 2~3일 안으로 확인하실 수 있습니다.",
+          "terms": "기준/표준,확인/체크",
+          "knowledge_base": "기준,체크"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네~~감사합니다.",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "감사,고마워하는마음"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B24199",
+      "category": "대중교통 안내",
+      "turns": 19,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "혹시 인천공항에서 대중교통으로 광명까지 어떻게 갈 수 있을까요?",
+          "intent": "공항대중교통",
+          "terms": "인천공항/국제공항",
+          "knowledge_base": "대중교통,국제공항"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네~~버스,지하철,공항순환버스,택시를 이용하실 수 있습니다.",
+          "terms": "버스,지하철,공항순환버스,택시/대중교통",
+          "knowledge_base": "지하철,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "아~~택시로 이동하고 싶은데 어디서 타야하나요?",
+          "intent": "공항대중교통",
+          "terms": "택시/대중교통",
+          "knowledge_base": "이동,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네~~국제선 제1주차장으로 가시면 경기택시 승차장이 있습니다.",
+          "terms": "경기택시/대중교통",
+          "knowledge_base": "제1주차장,대중교통"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "광명으로 가는 건 경기택시를 타면 되는 건가요?",
+          "intent": "공항대중교통",
+          "terms": "광명/지역, 경기택시/대중교통",
+          "knowledge_base": "경기택시,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "인천공항에서 광명까지 택시요금은 얼마나 나오나요?",
+          "intent": "공항대중교통",
+          "terms": "인천공항/국제공항,광명/지역",
+          "knowledge_base": "광명,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "일반택시 기준 기본요금은 3.800원 입니다.",
+          "terms": "일반택시/대중교통",
+          "knowledge_base": "기준,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "그런데 광명시로 가는 것은 시외요금이 적용되서 20% 더 할증이 됩니다.",
+          "terms": "광명시/지역",
+          "knowledge_base": "시외요금,지역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "그럼 요금이 꽤 많이 나오겠네요..",
+          "terms": "요금/책정된 이용금액",
+          "knowledge_base": "요금,책정된이용금액"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "네~~아무래도 요금이 좀 많이 나올 수 있습니다.",
+          "terms": "요금/책정된 이용금액",
+          "knowledge_base": "요금,책정된이용금액"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "그럼 버스로 가려면 어떻게 해야해요?",
+          "intent": "공항대중교통",
+          "terms": "버스/대중교통",
+          "knowledge_base": "버스,대중교통"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "네~~인천공항 국제선 1층에 버스 탑승하는 곳이 있습니다.",
+          "terms": "인천공항/국제공항,버스/대중교통, 탑승/올라탐",
+          "knowledge_base": "국제선,올라탐"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "거기서 승차홈 확인하고 타시면 됩니다.",
+          "terms": "확인/체크",
+          "knowledge_base": "확인,체크"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "아~~네~~알겠습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "버스타면 광명까지 얼마나 걸릴까요?",
+          "intent": "공항대중교통",
+          "terms": "버스/대중교통, 광명/지역",
+          "knowledge_base": "광명,지역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "대략 2시간 정도 예상하시면 됩니다.",
+          "terms": "대략/약, 2시간/소요시간, 예상/예측",
+          "knowledge_base": "2시간,예측"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "그렇군요..오래 걸리네요.."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "어쨌든 알려 주셔서 감사합니다.",
+          "terms": "감사/고마워하는 마음",
+          "knowledge_base": "감사,고마워하는마음"
+        }
+      ]
+    }
+  ]
+}

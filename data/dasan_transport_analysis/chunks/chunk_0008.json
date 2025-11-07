@@ -1,0 +1,541 @@
+{
+  "chunk_id": 8,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B2068",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "구로구에서 영등포가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "구로구/지명/ 영등포/지명/ 버스/교통수단",
+          "knowledge_base": "영등포,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "구로구 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "구로구/지명",
+          "knowledge_base": "구로구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "대림역 입니다.",
+          "terms": "대림/지명/ 역/역사",
+          "knowledge_base": "역,역사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "영등포 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "영등포/지명",
+          "knowledge_base": "영등포,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "영등포공원 입니다.",
+          "terms": "영등포공원/공공시설",
+          "knowledge_base": "영등포공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "대림역에서 영등포공원으로 가는 버스는 790버스를 타시면 됩니다.",
+          "terms": "대림/지명/ 역/역사/ 영등포공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "역,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "35분정도 걸립니다.",
+          "terms": "35분/시간",
+          "knowledge_base": "35분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 10분입니다.",
+          "terms": "오전/시간/ 5시/시간/ 10분/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,450원 입니다.",
+          "terms": "1/450원/금액",
+          "knowledge_base": "450원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2069",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "광명에서 안양가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "광명/지명/ 안양/지명/ 버스/교통수단",
+          "knowledge_base": "안양,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "광명 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "광명/지명",
+          "knowledge_base": "광명,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "광명우체국 입니다.",
+          "terms": "광명/지명/ 우체국/공공기관",
+          "knowledge_base": "우체국,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "안양 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "안양/지명",
+          "knowledge_base": "안양,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "안양공업고등학교 입니다.",
+          "terms": "안양공업고등학교/공공기관",
+          "knowledge_base": "안양공업고등학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "광명우체국에서 안양공업고등학교으로 가는 버스는 100버스를 타시면 됩니다.",
+          "terms": "광명/지명/ 우체국/공공기관/ 안양공업고등학교/공공기관/ 버스/교통수단",
+          "knowledge_base": "우체국,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 20분정도 걸립니다.",
+          "terms": "1시간/시간/ 20분/시간",
+          "knowledge_base": "20분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시 입니다.",
+          "terms": "오전/시간/ 6시/시간",
+          "knowledge_base": "6시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,700원 입니다.",
+          "terms": "1/700원",
+          "knowledge_base": "700원"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2070",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "시흥에서 안산가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "시흥/지명/ 안산/지명/ 버스/교통수단",
+          "knowledge_base": "안산,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "시흥 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "시흥/지명",
+          "knowledge_base": "시흥,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "조남초등학교 입니다.",
+          "terms": "조남초등학교/공공기관",
+          "knowledge_base": "조남초등학교,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "안산 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "안산/지명",
+          "knowledge_base": "안산,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "안산시청 입니다.",
+          "terms": "안산/지명/ 시청/공공기관",
+          "knowledge_base": "시청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "조남초등학교에서 안산시청으로 가는 버스는 880버스를 타시면 됩니다.",
+          "terms": "조남초등학교/공공기관/ 안산/지명/ 시청/공공기관/ 버스/교통수단",
+          "knowledge_base": "안산,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 정도 걸립니다.",
+          "terms": "1시간/시간",
+          "knowledge_base": "1시간,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 6시 15분입니다.",
+          "terms": "오전/시간/ 6시/시간/ 15분/시간",
+          "knowledge_base": "6시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2,100원 입니다.",
+          "terms": "2/100원/금액",
+          "knowledge_base": "100원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2071",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안산에서 논현가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "안산/지명/ 논현/지명/ 버스/교통수단",
+          "knowledge_base": "논현,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "안산 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "안산/지명",
+          "knowledge_base": "안산,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "안산시청 입니다.",
+          "terms": "안산/지명/ 시청/공공기관",
+          "knowledge_base": "시청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "논현 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "논현/지명",
+          "knowledge_base": "논현,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "소래습지생태공원 입니다.",
+          "terms": "소래습지생태공원/공공시설",
+          "knowledge_base": "소래습지생태공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "안산시청에서 소래습지생태공원으로 가는 버스는 980버스를 타시면 됩니다.",
+          "terms": "안산/지명/ 시청/공공기관/ 소래습지생태공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "시청,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "1시간 40분정도 걸립니다.",
+          "terms": "1시간/시간/ 40분/시간",
+          "knowledge_base": "40분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 10분입니다.",
+          "terms": "오전/시간/ 5시/시간/ 10분/시간",
+          "knowledge_base": "5시,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "2,200원 입니다.",
+          "terms": "2/200원/금액",
+          "knowledge_base": "200원,금액"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B2072",
+      "category": "대중교통 안내",
+      "turns": 12,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "연수구에서 논현가는 버스를 알고싶습니다.",
+          "intent": "버스노선",
+          "terms": "연수구/지명/ 논현/지명/ 버스/교통수단",
+          "knowledge_base": "논현,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "연수구 어디에서 출발하십니까?",
+          "intent": "버스노선",
+          "terms": "연수구/지명",
+          "knowledge_base": "연수구,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "연수구청 입니다.",
+          "terms": "연수구청/공공기관",
+          "knowledge_base": "연수구청,공공기관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "논현 어디로 가십니까?",
+          "intent": "버스노선",
+          "terms": "논현/지명",
+          "knowledge_base": "논현,지명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "소래습지생태공원 입니다.",
+          "terms": "소래습지생태공원/공공시설",
+          "knowledge_base": "소래습지생태공원,공공시설"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "연수구청에서 소래습지공원으로 가는 버스는 200버스를 타시면 됩니다.",
+          "terms": "연수구청/공공기관/ 소래습지공원/공공시설/ 버스/교통수단",
+          "knowledge_base": "소래습지공원,교통수단"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "시간은 얼마나 걸립니까?",
+          "intent": "버스시간",
+          "knowledge_base": "시간"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "A",
+          "content": "2시간 10분정도 걸립니다.",
+          "terms": "2시간/시간/ 10분/시간",
+          "knowledge_base": "10분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "첫차는 언제입니까?",
+          "intent": "버스시간",
+          "knowledge_base": "첫차"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "오전 5시 30분입니다.",
+          "terms": "오전/시간/ 5시/시간/ 30분/시간",
+          "knowledge_base": "5시30분,시간"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "차비는 얼마입니까?",
+          "intent": "버스요금",
+          "terms": "차비/돈",
+          "knowledge_base": "차비,돈"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "1,900원 입니다.",
+          "terms": "1/900원/금액",
+          "knowledge_base": "900원,금액"
+        }
+      ]
+    }
+  ]
+}

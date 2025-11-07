@@ -1,0 +1,434 @@
+{
+  "experiment": {
+    "id": null,
+    "name": "healthcheck",
+    "description": "Healthcheck: 2 questions (single+multi hop), 6 models (OpenAI+Ollama), Naive+KG RAG",
+    "tags": [
+      "healthcheck",
+      "all-modules",
+      "naive-rag",
+      "kg-rag"
+    ],
+    "output_dir": "data/evaluation/healthcheck"
+  },
+  "questions_count": 2,
+  "models_count": 6,
+  "retrieval_methods": [
+    "naive",
+    "kg"
+  ],
+  "results": {
+    "naive_rag": {
+      "metadata": {
+        "timestamp": "2025-11-06T08:09:56.285313",
+        "total_questions": 2,
+        "single_hop_count": 1,
+        "multi_hop_count": 1,
+        "models": [
+          "GPT-4o-mini",
+          "EXAONE-3.5-7.8B",
+          "Qwen3-8B",
+          "Gemma3-12B",
+          "GPT-OSS-20B",
+          "EXAONE-4.0"
+        ],
+        "k_documents": 2,
+        "use_fixed_context": true,
+        "judge_model": "gpt-4o-mini"
+      },
+      "single_hop": {
+        "GPT-4o-mini": {
+          "raw_data": [
+            {
+              "user_input": "2024-12-14에 어떤 버스 우회가 있나요?",
+              "response": "2024년 12월 14일에는 다음과 같은 버스 우회가 있습니다:\n\n1. **5615번**\n   - 우회일시: 2024. 12. 14(토) ~ 15(일) 무대 해체 시까지\n   - 통제구간: 국회대로, 의사당대로, 여의공원로\n   - 우회 경로: 여의도환승센터 - 영등포역\n   - 무정차 정류소: 삼부아파트, 여의나루역 2번 출구, 여의도순복교회, 국회의사당, 국회의사당역, KBS\n\n2. **5618번**\n   - 우회일시: 2024. 12. 14(토) ~ 15(일) 무대 해체 시까지\n   - 통제구간: 국회대로, 의사당대로, 여의공원로\n   - 우회 방법은 구체적으로 명시되어 있지 않음.\n\n3. **6628번**\n   - 우회일시: 2024. 12. 14(토) ~ 15(일) 무대 해체 시까지\n   - 무정차운행: 여의도환승센터, 여의도공원\n\n4. **662번**\n   - 우회일시: 2024. 12. 14(토) ~ 15(일) 무대 해체 시까지\n   - 무정차운행: 여의도환승센터, 여의도공원\n\n이 외에도 추가적인 정보는 [버스 우회 안내문](https://news.seoul.go.kr/traffic/files/2024/12/675d25b5a4a942.47669928.pdf)에서 확인하실 수 있습니다.",
+              "retrieved_contexts": [
+                "##### 5615번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n5615번 | 한국경제인협회-여의도환승센  \n터-삼부아파트-여의나루역  \n순복음교회-국회의사당  \n국회의사당역-KBS | 여의도환승센터-영등포역 | 삼부아파트-여의나루역2번출구  \n여의도순복교회  \n국회의사당-국회의사당역-KBS  \n■ 우회노선도\n![03](https://news.seoul.go.kr/traffic/files/2024/12/03.jpg)\n##### 5618번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---",
+                "##### 6628번 우회안내\n■ 노선번호 : 6628번(기점 외발산동 ~ 종점 여의도 환승센터)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n##### 662번 우회안내\n■ 노선번호 : 662번(기점 외발산동 ~ 종점 여의도나루역)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n[버스우회안내문(상세)](https://news.seoul.go.kr/traffic/files/2024/12/675d25b5a4a942.47669928.pdf) 바로보기 바로듣기\n[노선별 막차시간 연장 계획](https://news.seoul.go.kr/traffic/files/2024/12/675d2b496119f4.86998342.xlsx) 바로보기 바로듣기"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              NaN
+            ],
+            "answer_relevancy": [
+              0.8700067766111731
+            ],
+            "answer_correctness": [
+              0.17565880298964412
+            ]
+          },
+          "summary": {
+            "faithfulness": NaN,
+            "answer_relevancy": 0.8700067766111731,
+            "answer_correctness": 0.17565880298964412,
+            "num_questions": 1
+          }
+        },
+        "EXAONE-3.5-7.8B": {
+          "raw_data": [
+            {
+              "user_input": "2024-12-14에 어떤 버스 우회가 있나요?",
+              "response": "2024년 12월 14일(토요일)에는 다음과 같은 버스 우회 안내가 적용됩니다:\n\n1. **5615번 버스**:\n   - **통제 구간**: 국회대로, 의사당대로, 여의공원로\n   - **우회 경로**: 기존 경로 대신 여의도환승센터-영등포역, 삼부아파트-여의나루역2번출구 경로로 운행됩니다.\n   - **기간**: 2024년 12월 14일(토)부터 무대 해체 시까지\n\n2. **5618번 버스**:\n   - **통제 구간**: 국회대로, 의사당대로, 여의공원로\n   - **상세 우회 경로 정보**: 제공된 컨텍스트에는 구체적인 우회 경로가 명시되어 있지 않으나, 위와 동일한 통제 구간에서 우회 운행이 이루어질 것으로 예상됩니다. 정확한 우회 경로는 해당 버스 회사나 서울시 교통 정보 사이트를 통해 확인하시는 것이 좋습니다.\n   - **기간**: 2024년 12월 14일(토)부터 무대 해체 시까지\n\n3. **6628번 버스**:\n   - **무정차 운행**: 여의도환승센터(19-008), 여의도공원(ID:19-152)을 무정차 통과합니다.\n   - **기간**: 2024년 12월 14일(토)부터 15일(일)까지\n\n4. **662번 버스**:\n   - **무정차 운행**: 여의도환승센터(19-008), 여의도공원(ID:19-152)을 무정차 통과합니다.\n   - **기간**: 2024년 12월 14일(토)부터 15일(일)까지\n\n이 기간 동안 해당 버스를 이용하시는 경우 우회 경로와 무정차 통과 정류소를 반드시 확인하시고 안전하게 이동하시기 바랍니다. 자세한 우회 경로와 시간표 연장 정보는 서울시 교통 정보 사이트를 참조하시는 것이 좋습니다.",
+              "retrieved_contexts": [
+                "##### 5615번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n5615번 | 한국경제인협회-여의도환승센  \n터-삼부아파트-여의나루역  \n순복음교회-국회의사당  \n국회의사당역-KBS | 여의도환승센터-영등포역 | 삼부아파트-여의나루역2번출구  \n여의도순복교회  \n국회의사당-국회의사당역-KBS  \n■ 우회노선도\n![03](https://news.seoul.go.kr/traffic/files/2024/12/03.jpg)\n##### 5618번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---",
+                "##### 6628번 우회안내\n■ 노선번호 : 6628번(기점 외발산동 ~ 종점 여의도 환승센터)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n##### 662번 우회안내\n■ 노선번호 : 662번(기점 외발산동 ~ 종점 여의도나루역)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n[버스우회안내문(상세)](https://news.seoul.go.kr/traffic/files/2024/12/675d25b5a4a942.47669928.pdf) 바로보기 바로듣기\n[노선별 막차시간 연장 계획](https://news.seoul.go.kr/traffic/files/2024/12/675d2b496119f4.86998342.xlsx) 바로보기 바로듣기"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              NaN
+            ],
+            "answer_relevancy": [
+              0.0
+            ],
+            "answer_correctness": [
+              NaN
+            ]
+          },
+          "summary": {
+            "faithfulness": NaN,
+            "answer_relevancy": 0.0,
+            "answer_correctness": NaN,
+            "num_questions": 1
+          }
+        },
+        "Qwen3-8B": {
+          "raw_data": [
+            {
+              "user_input": "2024-12-14에 어떤 버스 우회가 있나요?",
+              "response": "\n\n2024년 12월 14일(토)부터 15일(일)까지 무대 해체 시까지 다음과 같은 버스 우회가 진행됩니다:  \n\n1. **5615번**  \n   - **우회구간**: 국회대로, 의사당대로, 여의공원로  \n   - **우회 경로**: 여의도환승센터 → 영등포역 → 여의나루역2번출구, 순복음교회, 국회의사당역-KBS  \n   - **무정차 정류소**: 삼부아파트-여의나루역2번출구, 여의도순복음교회, 국회의사당-국회의사당역-KBS  \n\n2. **5618번**  \n   - **우회구간**: 국회대로, 의사당대로, 여의공원로  \n   - **우회 경로**: 기존 경로 변경 (구체적 경로 생략)  \n   - **무정차 정류소**: 해당 노선의 정류소 정보 확인 필요 (문서 참조)  \n\n3. **6628번**  \n   - **무정",
+              "retrieved_contexts": [
+                "##### 5615번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n5615번 | 한국경제인협회-여의도환승센  \n터-삼부아파트-여의나루역  \n순복음교회-국회의사당  \n국회의사당역-KBS | 여의도환승센터-영등포역 | 삼부아파트-여의나루역2번출구  \n여의도순복교회  \n국회의사당-국회의사당역-KBS  \n■ 우회노선도\n![03](https://news.seoul.go.kr/traffic/files/2024/12/03.jpg)\n##### 5618번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---",
+                "##### 6628번 우회안내\n■ 노선번호 : 6628번(기점 외발산동 ~ 종점 여의도 환승센터)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n##### 662번 우회안내\n■ 노선번호 : 662번(기점 외발산동 ~ 종점 여의도나루역)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n[버스우회안내문(상세)](https://news.seoul.go.kr/traffic/files/2024/12/675d25b5a4a942.47669928.pdf) 바로보기 바로듣기\n[노선별 막차시간 연장 계획](https://news.seoul.go.kr/traffic/files/2024/12/675d2b496119f4.86998342.xlsx) 바로보기 바로듣기"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              0.7777777777777778
+            ],
+            "answer_relevancy": [
+              0.0
+            ],
+            "answer_correctness": [
+              0.17714448332068378
+            ]
+          },
+          "summary": {
+            "faithfulness": 0.7777777777777778,
+            "answer_relevancy": 0.0,
+            "answer_correctness": 0.17714448332068378,
+            "num_questions": 1
+          }
+        },
+        "Gemma3-12B": {
+          "raw_data": [
+            {
+              "user_input": "2024-12-14에 어떤 버스 우회가 있나요?",
+              "response": "2024년 12월 14일에 5615번, 5618번, 6628번, 662번 버스 우회가 있습니다. 모두 무대 해체 시까지 진행됩니다. 자세한 내용은 제공된 컨텍스트를 참고해주세요.",
+              "retrieved_contexts": [
+                "##### 5615번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n5615번 | 한국경제인협회-여의도환승센  \n터-삼부아파트-여의나루역  \n순복음교회-국회의사당  \n국회의사당역-KBS | 여의도환승센터-영등포역 | 삼부아파트-여의나루역2번출구  \n여의도순복교회  \n국회의사당-국회의사당역-KBS  \n■ 우회노선도\n![03](https://news.seoul.go.kr/traffic/files/2024/12/03.jpg)\n##### 5618번 우회안내\n■ 우회일시 : 2024. 12. 14(토)~15(일) 무대 해체시까지  \n■ 통제구간 : 국회대로, 의사당대로, 여의공원로  \n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---",
+                "##### 6628번 우회안내\n■ 노선번호 : 6628번(기점 외발산동 ~ 종점 여의도 환승센터)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n##### 662번 우회안내\n■ 노선번호 : 662번(기점 외발산동 ~ 종점 여의도나루역)  \n■ 무정차운행 : ‘24.12.14(토) ~ ‘24.12.15(일)무대 해제 시 까지  \n■ 무정차통과 정류소 :여의도환승센터(19-008), 여의도공원(ID:19-152)\n[버스우회안내문(상세)](https://news.seoul.go.kr/traffic/files/2024/12/675d25b5a4a942.47669928.pdf) 바로보기 바로듣기\n[노선별 막차시간 연장 계획](https://news.seoul.go.kr/traffic/files/2024/12/675d2b496119f4.86998342.xlsx) 바로보기 바로듣기"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              0.8333333333333334
+            ],
+            "answer_relevancy": [
+              0.0
+            ],
+            "answer_correctness": [
+              0.17898243875605407
+            ]
+          },
+          "summary": {
+            "faithfulness": 0.8333333333333334,
+            "answer_relevancy": 0.0,
+            "answer_correctness": 0.17898243875605407,
+            "num_questions": 1
+          }
+        }
+      },
+      "multi_hop": {
+        "GPT-4o-mini": {
+          "raw_data": [
+            {
+              "user_input": "영등포역과 여의도역 사이의 우회 경로는 무엇이며, 예를 들어 어떤 버스가 어떻게 우회하고 어떤 정류소를 이용할 수 있습니까?",
+              "response": "영등포역과 여의도역 사이의 우회 경로는 6713번 버스가 이용합니다. 이 버스는 광흥창역, 서강동주민센터에서 출발하여 국회의사당을 지나 여의도역으로 향합니다. \n\n우회 경로는 다음과 같습니다:\n- 기존 운행경로: 광흥창역, 서강동주민센터 → 국회의사당 → 국회의사당역 → 여의도역 (양방향)\n- 우회 경로: 광흥창역, 서강동주민센터 → 여의나루역 → 여의도역 (양방향)\n\n이 우회 경로에서 이용할 수 있는 정류소는 다음과 같습니다:\n- 국회의사당역\n- 국민은행 (19132) 상행\n- 국회의사당 (19131) 상행\n- 국회의사당 (19280) 하행\n- 국회의사당역 (19133) 하행\n\n따라서, 영등포역에서 여의도역으로 가는 경우 6713번 버스를 이용하면 우회 경로를 통해 이동할 수 있습니다.",
+              "retrieved_contexts": [
+                "■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n261 | 여의도역  | 여의도순복음교회전 U턴 진행  \n윤중중학교앞 교차로-국제금융로8길로 우회전 | 여의도 순복음교회  \n여의도역 5번출구  \n여의도 환승센터  \n유진투자증권  \n■ 우회노선도\n![11](https://news.seoul.go.kr/traffic/files/2024/12/11.jpg)\n##### 260번 우회안내\n■ 임시우회 운행일시- 2024. 12. 14(토)~12. 15(일), 00:00 ~ 무대해제시(경찰통제시)  \n■ 임시우회 운행사항\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n260 | 여의대로→여의서로 | 마포대교→국제금융로  \n→한국거래소교차로→  \n여의도역→여의도환승센터→  \n마포대교 | 여의도환승센터(19008)→  \n여의도공원(19152)→  \n국회의사당역(19133)  \n(총3개 정류소",
+                "~  \n여의도역[19-155)  \n■ 우회노선도\n![14](https://news.seoul.go.kr/traffic/files/2024/12/14.jpg)\n##### 6713번 우회안내\n■ 우회일시 : 2024. 12. 14.(토) ~ 2024. 12. 15.(일)  \n■ 통제구간 : 국회 ↔ 여의지하차도(양방향)\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n6713 | 광흥창역,서강동주민센터 →   \n국회의사당 → 국회의사당역   \n⟶ 여의도역(양방향) | 광흥창역,서강동주민센터→   \n여의나루역 →여의도역(양방  \n향) | 국회의사당역, 국민은행(19132) 상행  \n국회의사당(19131) 상행   \n국회의사당(19280) 하행  \n국회의사당역(19133) 하행  \n■ 우회노선도\n![15](https://news.seoul.go.kr/traffic/files/2024/12/15.jpg)\n##### 6633번 우회안내"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              0.7142857142857143
+            ],
+            "answer_relevancy": [
+              0.859528332758169
+            ],
+            "answer_correctness": [
+              0.17803966864620108
+            ]
+          },
+          "summary": {
+            "faithfulness": 0.7142857142857143,
+            "answer_relevancy": 0.859528332758169,
+            "answer_correctness": 0.17803966864620108,
+            "num_questions": 1
+          }
+        },
+        "EXAONE-3.5-7.8B": {
+          "raw_data": [
+            {
+              "user_input": "영등포역과 여의도역 사이의 우회 경로는 무엇이며, 예를 들어 어떤 버스가 어떻게 우회하고 어떤 정류소를 이용할 수 있습니까?",
+              "response": "제공된 정보에는 영등포역과 여의도역 사이의 직접적인 우회 경로에 대한 상세 내용이 포함되어 있지 않습니다. 하지만 주어진 우회 경로 정보를 바탕으로 추정해 볼 수 있습니다:\n\n### 260번 버스 우회 경로 예시:\n- **기존 운행 경로**: 여의대로 → 여의서로\n- **우회 경로**: 마포대교 → 국제금융로 → 한국거래소 교차로 → 여의도역 → 여의도환승센터 → 여의도공원 → 국회의사당역\n\n이 경로를 참고하여 영등포역과 여의도역 사이의 우회 경로를 추정해보면 다음과 같습니다:\n\n1. **출발지**: 영등포역 근처 (예: 영등포시장이나 영등포역 인근)\n2. **우회 경로**:\n   - **방향**: 영등포역에서 서쪽으로 이동하여 마포대교를 건너는 경로를 취할 수 있습니다.\n   - **주요 경유지**:\n     - **마포대교**를 건너 국제금융로로 이동\n     - **여의도역** (예: 여의도환승센터 근처)\n     - **여의도공원** (예: 19152번 정류소)\n     - **국회의사당역** (예: 19133번 정류소)\n\n### 예시 경로:\n- **버스 노선**: 260번 버스를 이용할 수 있습니다.\n- **출발**: 영등포역 인근에서 260번 버스 탑승\n- **우회 경로**: 마포대교를 건너 국제금융로를 따라 이동 후, 여의도역, 여의도환승센터, 여의도공원을 경유하여 국회의사당역까지 이동\n\n### 주요 정류소:\n- **여의도환승센터 (19008)**\n- **여의도공원 (19152)**\n- **국회의사당역 (19133)**\n\n이 경로는 실제 교통 상황과 통제 구간에 따라 약간의 변동이 있을 수 있으니, 정확한 정보는 서울시 대중교통 안내 웹사이트나 앱을 통해 확인하시는 것이 좋습니다.",
+              "retrieved_contexts": [
+                "■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n261 | 여의도역  | 여의도순복음교회전 U턴 진행  \n윤중중학교앞 교차로-국제금융로8길로 우회전 | 여의도 순복음교회  \n여의도역 5번출구  \n여의도 환승센터  \n유진투자증권  \n■ 우회노선도\n![11](https://news.seoul.go.kr/traffic/files/2024/12/11.jpg)\n##### 260번 우회안내\n■ 임시우회 운행일시- 2024. 12. 14(토)~12. 15(일), 00:00 ~ 무대해제시(경찰통제시)  \n■ 임시우회 운행사항\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n260 | 여의대로→여의서로 | 마포대교→국제금융로  \n→한국거래소교차로→  \n여의도역→여의도환승센터→  \n마포대교 | 여의도환승센터(19008)→  \n여의도공원(19152)→  \n국회의사당역(19133)  \n(총3개 정류소",
+                "~  \n여의도역[19-155)  \n■ 우회노선도\n![14](https://news.seoul.go.kr/traffic/files/2024/12/14.jpg)\n##### 6713번 우회안내\n■ 우회일시 : 2024. 12. 14.(토) ~ 2024. 12. 15.(일)  \n■ 통제구간 : 국회 ↔ 여의지하차도(양방향)\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n6713 | 광흥창역,서강동주민센터 →   \n국회의사당 → 국회의사당역   \n⟶ 여의도역(양방향) | 광흥창역,서강동주민센터→   \n여의나루역 →여의도역(양방  \n향) | 국회의사당역, 국민은행(19132) 상행  \n국회의사당(19131) 상행   \n국회의사당(19280) 하행  \n국회의사당역(19133) 하행  \n■ 우회노선도\n![15](https://news.seoul.go.kr/traffic/files/2024/12/15.jpg)\n##### 6633번 우회안내"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              NaN
+            ],
+            "answer_relevancy": [
+              0.0
+            ],
+            "answer_correctness": [
+              0.17955076244511997
+            ]
+          },
+          "summary": {
+            "faithfulness": NaN,
+            "answer_relevancy": 0.0,
+            "answer_correctness": 0.17955076244511997,
+            "num_questions": 1
+          }
+        },
+        "Qwen3-8B": {
+          "raw_data": [
+            {
+              "user_input": "영등포역과 여의도역 사이의 우회 경로는 무엇이며, 예를 들어 어떤 버스가 어떻게 우회하고 어떤 정류소를 이용할 수 있습니까?",
+              "response": "<think>\nOkay, let's tackle this question. The user is asking about the detour routes between Yoido Station and Yeongdeungpo Station, specifically which buses are taking detours and which stops they can use. \n\nFirst, I need to look through the provided context. The context has sections for different bus routes (261, 260, 6713, 6633) with their detour details. The user mentioned Yoido and Yeongdeungpo, so I should focus on the routes that might be affected between these two stations.\n\nLooking at the 261 bus route: the original route was from Yeongdeungpo Station to Yoido Station, but now it's detouring via Yoido Sundoem Church, making a U-turn. The detour path is through Yoonjeong Middle School intersection to International Financial Road 8, and the stops that are skipped are Yoido Sundoem Church, Yoido Station 5th exit, Yoido Transfer Center, and Yujin Investment Securities. So this bus is detouring around the area, but the stops it's skipping are mentioned. However, the user is asking about the detour between Yoido and Yeongdeungpo, so maybe this route is relevant.\n\nNext, the 260 bus route: the original path was Yeongdeungpo-daero to Yeongseoro, but now it's going via Mapo Bridge to International Financial Road, passing through Korea Exchange intersection, Yoido Station, Yoido Transfer Center, and then back to Mapo Bridge. The detour stops are Yoido Transfer Center, Yoido Park, and National Assembly Building Station. This route seems to go through Yoido Station, so it's part of the detour between Yoido and Ye, but the user might be interested in this one.\n\nThen there's the 6713 bus route: the original path was from Gwanghongchang Station to Yoido Station via National Assembly Building, but now it's going through Yoonjeongnaru Station to Yoido Station. The detour stops include National Assembly Building Station, National Bank, and others. This route also passes through Yoido Station, so it's relevant.\n\nThe 6633 route isn't detailed in the context, so I can",
+              "retrieved_contexts": [
+                "■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n261 | 여의도역  | 여의도순복음교회전 U턴 진행  \n윤중중학교앞 교차로-국제금융로8길로 우회전 | 여의도 순복음교회  \n여의도역 5번출구  \n여의도 환승센터  \n유진투자증권  \n■ 우회노선도\n![11](https://news.seoul.go.kr/traffic/files/2024/12/11.jpg)\n##### 260번 우회안내\n■ 임시우회 운행일시- 2024. 12. 14(토)~12. 15(일), 00:00 ~ 무대해제시(경찰통제시)  \n■ 임시우회 운행사항\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n260 | 여의대로→여의서로 | 마포대교→국제금융로  \n→한국거래소교차로→  \n여의도역→여의도환승센터→  \n마포대교 | 여의도환승센터(19008)→  \n여의도공원(19152)→  \n국회의사당역(19133)  \n(총3개 정류소",
+                "~  \n여의도역[19-155)  \n■ 우회노선도\n![14](https://news.seoul.go.kr/traffic/files/2024/12/14.jpg)\n##### 6713번 우회안내\n■ 우회일시 : 2024. 12. 14.(토) ~ 2024. 12. 15.(일)  \n■ 통제구간 : 국회 ↔ 여의지하차도(양방향)\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n6713 | 광흥창역,서강동주민센터 →   \n국회의사당 → 국회의사당역   \n⟶ 여의도역(양방향) | 광흥창역,서강동주민센터→   \n여의나루역 →여의도역(양방  \n향) | 국회의사당역, 국민은행(19132) 상행  \n국회의사당(19131) 상행   \n국회의사당(19280) 하행  \n국회의사당역(19133) 하행  \n■ 우회노선도\n![15](https://news.seoul.go.kr/traffic/files/2024/12/15.jpg)\n##### 6633번 우회안내"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              NaN
+            ],
+            "answer_relevancy": [
+              0.0
+            ],
+            "answer_correctness": [
+              NaN
+            ]
+          },
+          "summary": {
+            "faithfulness": NaN,
+            "answer_relevancy": 0.0,
+            "answer_correctness": NaN,
+            "num_questions": 1
+          }
+        },
+        "Gemma3-12B": {
+          "raw_data": [
+            {
+              "user_input": "영등포역과 여의도역 사이의 우회 경로는 무엇이며, 예를 들어 어떤 버스가 어떻게 우회하고 어떤 정류소를 이용할 수 있습니까?",
+              "response": "제공된 정보에 따르면, 영등포역과 여의도역 사이의 버스 우회 경로는 다음과 같습니다.\n\n**260번 버스:**\n\n*   **기존 경로:** 여의대로 → 여의서로\n*   **우회 경로:** 마포대교 → 국제금융로 → 한국거래소교차로 → 여의도역 → 여의도환승센터 → 마포대교\n*   **무정차 정류소:** 여의도환승센터(19008), 여의도공원(19152), 국회의사당역(19133)\n\n**6713번 버스:**\n\n*   **기존 경로:** 광흥창역, 서강동주민센터 → 국회의사당 → 국회의사당역 ⟶ 여의도역 (양방향)\n*   **우회 경로:** 광흥창역, 서강동주민센터 → 여의나루역 → 여의도역 (양방향)\n*   **무정차 정류소:** 국회의사당역, 국민은행(19132) 상행, 국회의사당(19131) 상행, 국회의사당(19280) 하행, 국회의사당역(19133) 하행\n\n**우회 기간:** 2024년 12월 14일(토) ~ 2024년 12월 15일(일)",
+              "retrieved_contexts": [
+                "■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n261 | 여의도역  | 여의도순복음교회전 U턴 진행  \n윤중중학교앞 교차로-국제금융로8길로 우회전 | 여의도 순복음교회  \n여의도역 5번출구  \n여의도 환승센터  \n유진투자증권  \n■ 우회노선도\n![11](https://news.seoul.go.kr/traffic/files/2024/12/11.jpg)\n##### 260번 우회안내\n■ 임시우회 운행일시- 2024. 12. 14(토)~12. 15(일), 00:00 ~ 무대해제시(경찰통제시)  \n■ 임시우회 운행사항\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n260 | 여의대로→여의서로 | 마포대교→국제금융로  \n→한국거래소교차로→  \n여의도역→여의도환승센터→  \n마포대교 | 여의도환승센터(19008)→  \n여의도공원(19152)→  \n국회의사당역(19133)  \n(총3개 정류소",
+                "~  \n여의도역[19-155)  \n■ 우회노선도\n![14](https://news.seoul.go.kr/traffic/files/2024/12/14.jpg)\n##### 6713번 우회안내\n■ 우회일시 : 2024. 12. 14.(토) ~ 2024. 12. 15.(일)  \n■ 통제구간 : 국회 ↔ 여의지하차도(양방향)\n■ 우회방법\n노선 | 기존 운행경로 | 우회 경로 | 무정차 정류소  \n---|---|---|---  \n6713 | 광흥창역,서강동주민센터 →   \n국회의사당 → 국회의사당역   \n⟶ 여의도역(양방향) | 광흥창역,서강동주민센터→   \n여의나루역 →여의도역(양방  \n향) | 국회의사당역, 국민은행(19132) 상행  \n국회의사당(19131) 상행   \n국회의사당(19280) 하행  \n국회의사당역(19133) 하행  \n■ 우회노선도\n![15](https://news.seoul.go.kr/traffic/files/2024/12/15.jpg)\n##### 6633번 우회안내"
+              ],
+              "reference": ""
+            }
+          ],
+          "metrics": {
+            "faithfulness": [
+              0.9
+            ],
+            "answer_relevancy": [
+              0.8650080660464861
+            ],
+            "answer_correctness": [
+              0.1804384615754622
+            ]
+          },
+          "summary": {
+            "faithfulness": 0.9,
+            "answer_relevancy": 0.8650080660464861,
+            "answer_correctness": 0.1804384615754622,
+            "num_questions": 1
+          }
+        }
+      },
+      "comparison": {
+        "by_complexity": {
+          "single_hop": {
+            "scores": {
+              "GPT-4o-mini": {
+                "faithfulness": NaN,
+                "answer_relevancy": 0.8700067766111731,
+                "answer_correctness": 0.17565880298964412,
+                "num_questions": 1
+              },
+              "EXAONE-3.5-7.8B": {
+                "faithfulness": NaN,
+                "answer_relevancy": 0.0,
+                "answer_correctness": NaN,
+                "num_questions": 1
+              },
+              "Qwen3-8B": {
+                "faithfulness": 0.7777777777777778,
+                "answer_relevancy": 0.0,
+                "answer_correctness": 0.17714448332068378,
+                "num_questions": 1
+              },
+              "Gemma3-12B": {
+                "faithfulness": 0.8333333333333334,
+                "answer_relevancy": 0.0,
+                "answer_correctness": 0.17898243875605407,
+                "num_questions": 1
+              }
+            },
+            "best_faithfulness": "GPT-4o-mini",
+            "best_relevancy": "GPT-4o-mini",
+            "best_correctness": "Gemma3-12B"
+          },
+          "multi_hop": {
+            "scores": {
+              "GPT-4o-mini": {
+                "faithfulness": 0.7142857142857143,
+                "answer_relevancy": 0.859528332758169,
+                "answer_correctness": 0.17803966864620108,
+                "num_questions": 1
+              },
+              "EXAONE-3.5-7.8B": {
+                "faithfulness": NaN,
+                "answer_relevancy": 0.0,
+                "answer_correctness": 0.17955076244511997,
+                "num_questions": 1
+              },
+              "Qwen3-8B": {
+                "faithfulness": NaN,
+                "answer_relevancy": 0.0,
+                "answer_correctness": NaN,
+                "num_questions": 1
+              },
+              "Gemma3-12B": {
+                "faithfulness": 0.9,
+                "answer_relevancy": 0.8650080660464861,
+                "answer_correctness": 0.1804384615754622,
+                "num_questions": 1
+              }
+            },
+            "best_faithfulness": "Gemma3-12B",
+            "best_relevancy": "Gemma3-12B",
+            "best_correctness": "Gemma3-12B"
+          }
+        },
+        "by_model": {
+          "GPT-4o-mini": {
+            "single_hop": {
+              "faithfulness": NaN,
+              "answer_relevancy": 0.8700067766111731,
+              "answer_correctness": 0.17565880298964412,
+              "num_questions": 1
+            },
+            "multi_hop": {
+              "faithfulness": 0.7142857142857143,
+              "answer_relevancy": 0.859528332758169,
+              "answer_correctness": 0.17803966864620108,
+              "num_questions": 1
+            },
+            "performance_gap": {
+              "faithfulness": NaN,
+              "answer_relevancy": 0.010478443853004116,
+              "answer_correctness": -0.0023808656565569575
+            }
+          },
+          "EXAONE-3.5-7.8B": {
+            "single_hop": {
+              "faithfulness": NaN,
+              "answer_relevancy": 0.0,
+              "answer_correctness": NaN,
+              "num_questions": 1
+            },
+            "multi_hop": {
+              "faithfulness": NaN,
+              "answer_relevancy": 0.0,
+              "answer_correctness": 0.17955076244511997,
+              "num_questions": 1
+            },
+            "performance_gap": {
+              "faithfulness": NaN,
+              "answer_relevancy": 0.0,
+              "answer_correctness": NaN
+            }
+          },
+          "Qwen3-8B": {
+            "single_hop": {
+              "faithfulness": 0.7777777777777778,
+              "answer_relevancy": 0.0,
+              "answer_correctness": 0.17714448332068378,
+              "num_questions": 1
+            },
+            "multi_hop": {
+              "faithfulness": NaN,
+              "answer_relevancy": 0.0,
+              "answer_correctness": NaN,
+              "num_questions": 1
+            },
+            "performance_gap": {
+              "faithfulness": NaN,
+              "answer_relevancy": 0.0,
+              "answer_correctness": NaN
+            }
+          },
+          "Gemma3-12B": {
+            "single_hop": {
+              "faithfulness": 0.8333333333333334,
+              "answer_relevancy": 0.0,
+              "answer_correctness": 0.17898243875605407,
+              "num_questions": 1
+            },
+            "multi_hop": {
+              "faithfulness": 0.9,
+              "answer_relevancy": 0.8650080660464861,
+              "answer_correctness": 0.1804384615754622,
+              "num_questions": 1
+            },
+            "performance_gap": {
+              "faithfulness": -0.06666666666666665,
+              "answer_relevancy": -0.8650080660464861,
+              "answer_correctness": -0.001456022819408126
+            }
+          }
+        },
+        "best_performers": {}
+      }
+    },
+    "kg_rag": {
+      "status": "failed",
+      "error": "Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):\nFailed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)"
+    }
+  }
+}

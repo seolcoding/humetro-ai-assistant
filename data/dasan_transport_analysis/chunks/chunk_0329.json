@@ -1,0 +1,883 @@
+{
+  "chunk_id": 329,
+  "dialogue_count": 5,
+  "dialogues": [
+    {
+      "dialogue_id": "B23727",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "경로우대 교통카드에 대해 문의 드릴려구요.",
+          "intent": "경로우대교통카드",
+          "terms": "문의/질의",
+          "knowledge_base": "교통카드,질의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "경로우대교통카드",
+          "terms": "말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "대상 연령이 어떻게 되나요?",
+          "intent": "경로우대교통카드",
+          "terms": "연령/나이",
+          "knowledge_base": "연령,나이"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "65세 이상입니다.",
+          "terms": "이상/위",
+          "knowledge_base": "이상,위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "대상자는 카드를 발급받아서 사용해야하나요?",
+          "intent": "경로우대교통카드",
+          "terms": "발급/발행, 사용/이용",
+          "knowledge_base": "카드,이용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "네, 경로우대 교통카드를 발급받으셔야 합니다.",
+          "terms": "발급/발행",
+          "knowledge_base": "교통카드,발행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "어디에서 발급받을 수 있죠?",
+          "intent": "경로우대교통카드",
+          "terms": "발급/발행",
+          "knowledge_base": "발급,발행"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "경로우대교통카드",
+          "terms": "주민센터/주민자치센터/기관, 발급/발행",
+          "knowledge_base": "주민센터,발행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "근데, 카드가 한종류가 아닌가 보죠?",
+          "intent": "경로우대교통카드",
+          "terms": "종류/가지",
+          "knowledge_base": "종류,가지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "네. 신용카드로 발급이 가능하고, 단순무임카드로도 발급이 가능합니다.",
+          "terms": "발급/발행",
+          "knowledge_base": "발급,발행"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "신용카드는 어디서 신청하나요?",
+          "intent": "경로우대교통카드",
+          "terms": "신청/요청",
+          "knowledge_base": "신청,요청"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "신한은행에서 신청가능합니다.",
+          "terms": "신한은행/금융기관, 신청/요청",
+          "knowledge_base": "신청,요청"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "신분증 가지고 가야겠죠?",
+          "intent": "경로우대교통카드",
+          "terms": "신분증/주민등록증/여권/운전면허증",
+          "knowledge_base": "신분증,운전면허증"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네. 신분증 지참하셔야 합니다.",
+          "terms": "신분증/주민등록증/여권/운전면허증, 지참/소지",
+          "knowledge_base": "지참,소지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "신용카드로 발급받으면 장점이 있을까요?",
+          "intent": "경로우대교통카드",
+          "terms": "발급/발행, 장점/이점",
+          "knowledge_base": "발급,이점"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "별도의 충전없이 카드한장으로 버스까지 이용이 가능합니다.",
+          "terms": "별도/따로, 버스/교통수단, 이용/사용",
+          "knowledge_base": "충전,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "단순무임카드는 버스이용하려면 충전을 해야하나요?",
+          "intent": "경로우대교통카드",
+          "terms": "버스/교통수단, 이용/사용",
+          "knowledge_base": "버스,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "네, 그렇습니다.",
+          "terms": " "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "경로우대교통카드",
+          "terms": "불편/부자유",
+          "knowledge_base": "불편,부자유"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "각 카드의 특징을 고려하셔서 본인에게 맞는 선택하시면 될 것 같습니다.",
+          "terms": "특징/특성, 고려/참작, 본인/당사자",
+          "knowledge_base": "특징,당사자"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23728",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "4.19민주묘지가는 버스노선 알고싶은데요.",
+          "intent": "길찾기, 버스경로",
+          "terms": "419민주묘지/국립묘지, 버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": "어디서 출발하시나요?",
+          "intent": "길찾기, 버스경로",
+          "terms": " ",
+          "knowledge_base": "출발"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "A",
+          "content": "천호역이요.",
+          "terms": "천호역/지하철역명",
+          "knowledge_base": "천호역,지하철역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "Q",
+          "content": "4.19민주묘지까지 가시는건가요?",
+          "intent": "길찾기, 버스경로",
+          "terms": "419민주묘지/국립묘지 ",
+          "knowledge_base": "4.19민주묘지,국립묘지"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "네, 맞아요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "한번에가는 버스가 있을까요?",
+          "intent": "길찾기, 버스경로",
+          "terms": "한번/1회, 버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "아니오, 환승이 필요합니다.",
+          "terms": "필요/필수",
+          "knowledge_base": "필요,필수"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "천호역에서 몇번 버스를 타고 출발해야하나요?",
+          "intent": "길찾기, 버스경로",
+          "terms": "천호역/지하철역명, 버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "130번 이용하시면 됩니다.",
+          "terms": "130번/버스번호, 이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "길찾기, 버스경로",
+          "terms": " "
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "천호역 1번출구, 문구거리정류장에서 탑승하시면 됩니다.",
+          "terms": "천호역/지하철역명, 정류장/역, 탑승/승차",
+          "knowledge_base": "출구,승차"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "길찾기, 버스경로",
+          "knowledge_base": "환승"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "A",
+          "content": "수유역에서 하차하신후 환승하시면 됩니다.",
+          "terms": "수유역/지하철역명",
+          "knowledge_base": "하차,지하철역명"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "몇번버스로 환승하면 되나요?",
+          "intent": "길찾기, 버스경로",
+          "terms": "버스/교통수단",
+          "knowledge_base": "환승,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "A",
+          "content": "1119번이나 1165번으로 환승하시면 됩니다.",
+          "terms": "1119번/버스번호, 1165번/버스번호",
+          "knowledge_base": "1165번,버스번호"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "두 버스가 다 가는건가요?",
+          "intent": "길찾기, 버스경로",
+          "terms": "버스/교통수단",
+          "knowledge_base": "버스,교통수단"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "어느 정류장에서 하차하면 되죠?",
+          "intent": "길찾기, 버스경로",
+          "terms": "정류장/역",
+          "knowledge_base": "하차,역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "국립419민주묘지정류장에서 하차하시면 됩니다.",
+          "terms": "국립419민주묘지/국립묘지, 정류장/역",
+          "knowledge_base": "정류장,역"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 감사합니다. "
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23729",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "따릉이는 어떻게 이용하는건가요?",
+          "intent": " 따릉이 이용",
+          "terms": "따릉이/공공자전거, 이용/사용, 관련/연관, 문의/질의",
+          "knowledge_base": "이용,질의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": " 따릉이 이용",
+          "terms": "이용권/사용권, 구매/구입, 이용/사용",
+          "knowledge_base": "접속,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "사용연령에 제한이 있나요?",
+          "intent": " 따릉이 이용",
+          "terms": "사용/이용, 연령/나이, 제한/한정",
+          "knowledge_base": "연령,한정"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 15세이상 이용가능합니다.",
+          "terms": "이상/위, 이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": "홈페이지에 접속하려면 어플을 깔아야하나요?",
+          "intent": " 따릉이 이용",
+          "terms": "어플/어플리케이션",
+          "knowledge_base": "접속,어플리케이션"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "A",
+          "content": "구글플레이스토어에서 따릉이를 설치하신후 이용권을 구매하시면 됩니다.",
+          "terms": "따릉이/공공자전거, 이용권/사용권, 구매/구입",
+          "knowledge_base": "플레이스토어,구입"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": "회원가입을 해야만 이용이 가능한가요?",
+          "intent": " 따릉이 이용",
+          "terms": "이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": " 따릉이 이용",
+          "terms": "이용/사용, 이용권/사용권, 구입/구매, 선택/채택, 폭/범위",
+          "knowledge_base": "이용,범위"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "Q",
+          "content": "이용권도 종류가 여러가지인가요?",
+          "intent": " 따릉이 이용",
+          "terms": "이용권/사용권, 여러가지/가지가지",
+          "knowledge_base": "종류,가지가지"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "A",
+          "content": "일일권과 정기권이 있습니다.",
+          "terms": "일일권/하루권",
+          "knowledge_base": "정기권,하루권"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "정기권은 며칠단위로 구매하는거죠?",
+          "intent": " 따릉이 이용",
+          "terms": "구매/구입",
+          "knowledge_base": "며칠,구입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "12",
+          "qa_type": "A",
+          "content": "7일, 30일, 180일, 360일 단위로 구매하실 수 있습니다.",
+          "terms": "구매/구입",
+          "knowledge_base": "구매,구입"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "정기권이용이 더 저렴한가요?",
+          "intent": " 따릉이 이용",
+          "terms": "이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "14",
+          "qa_type": "A",
+          "content": "네, 일일권에 비해 저렴합니다.",
+          "terms": "일일권/하루권, 구매/구입",
+          "knowledge_base": "저렴,구입"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "그럼 비회원으로는 일일권밖에 구매가 안되는건가요?",
+          "intent": " 따릉이 이용",
+          "terms": "일일권/하루권, 구매/구입",
+          "knowledge_base": "일일권,구입"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "16",
+          "qa_type": "A",
+          "content": "네, 그렇습니다."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "일일권 1시간 이용금액은 얼마죠?",
+          "intent": " 따릉이 이용",
+          "terms": "일일권/하루권, 이용/사용",
+          "knowledge_base": "이용,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "18",
+          "qa_type": "A",
+          "content": "1000원입니다.",
+          "terms": " "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "더 싸게 이용할 수 있는방법은 없나요?",
+          "intent": " 따릉이 이용",
+          "terms": "이용/사용",
+          "knowledge_base": "방법,사용"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "제로페이를 사용하면 500원에 이용하실 수 있습니다.",
+          "terms": "제로페이/지역화폐, 사용/이용, 이용/사용",
+          "knowledge_base": "사용"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23730",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "택시 불편사항 신고할 수 있을까요?",
+          "intent": "택시 불편신고",
+          "terms": "택시/교통수단, 신고/접수",
+          "knowledge_base": "불편사항,접수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 신고가능합니다.",
+          "terms": "신고/접수",
+          "knowledge_base": "가능,접수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "이용하시면서 어떤점이 불편하셨나요?",
+          "intent": "택시 불편신고",
+          "terms": "이용/사용, 불편/부자유",
+          "knowledge_base": "불편,부자유"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "짧은거리를 카드결제한다고 뭐라하더라구요.",
+          "terms": " ",
+          "knowledge_base": "카드"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "5",
+          "qa_type": "A",
+          "content": "많이 불쾌하셨겠습니다.",
+          "terms": " ",
+          "knowledge_base": "불쾌"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "요즘은 단거리든 장거리든 카드결제를 많이 하지 않나요?",
+          "intent": "택시 불편신고",
+          "terms": "요즘/요즈음, 단거리/짧은거리, 장거리/긴거리",
+          "knowledge_base": "단거리,긴거리"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "7",
+          "qa_type": "A",
+          "content": "네, 카드결제가 보편화되었습니다.",
+          "terms": "보편화/일반화",
+          "knowledge_base": "결제,일반화"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "현금결제 안한게 잘못은 아닌거죠?",
+          "intent": "택시 불편신고",
+          "terms": "현금/돈, 잘못/실수",
+          "knowledge_base": "결제,실수"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네, 그럼요."
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "택시 불편신고",
+          "terms": "무안/망신, 잘못/실수, 느낌/기분",
+          "knowledge_base": "잘못,기분"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "11",
+          "qa_type": "Q",
+          "content": "개인택시였나요? 법인택시였나요?",
+          "intent": "택시 불편신고",
+          "terms": "개인택시/택시종류, 법인택시/회사택시",
+          "knowledge_base": "법인택시,회사택시"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "택시 불편신고",
+          "terms": "법인택시/회사택시",
+          "knowledge_base": "법인택시,회사택시"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": "택시회사명은 기억하시나요?",
+          "intent": "택시 불편신고",
+          "terms": "기억/생각",
+          "knowledge_base": "기억,생각"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "택시 불편신고",
+          "terms": "운수/수송",
+          "knowledge_base": "운수,수송"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": "승, 하차 위치 말씀해주시겠어요?",
+          "intent": "택시 불편신고",
+          "terms": "승차/탑승, 말씀/말",
+          "knowledge_base": "하자,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "택시 불편신고",
+          "terms": "역삼역/지하철역명, 승차/탑승, 강남역/지하철역명",
+          "knowledge_base": "승차,지하철역명"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "Q",
+          "content": "승, 하차 시간 말씀해주시겠습니까?",
+          "intent": "택시 불편신고",
+          "terms": "승차/탑승, 말씀/말",
+          "knowledge_base": "하차,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "택시 불편신고",
+          "terms": "어제/어저께, 정도/만큼",
+          "knowledge_base": "오후,만큼"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "Q",
+          "content": "기사님 이름 기억하시나요?",
+          "intent": "택시 불편신고",
+          "terms": "기사님/운전기사, 이름/성명, 기억/생각",
+          "knowledge_base": "이름,생각"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "택시 불편신고",
+          "terms": "기사님/운전기사",
+          "knowledge_base": "기사님,운전기사"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "B23731",
+      "category": "대중교통 안내",
+      "turns": 20,
+      "conversation": [
+        {
+          "speaker": "고객",
+          "turn_number": "1",
+          "qa_type": "Q",
+          "content": "안녕하세요.",
+          "intent": "버스요금 결제오류",
+          "terms": "안녕/인사",
+          "knowledge_base": "안녕,인사"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "2",
+          "qa_type": "A",
+          "content": "네, 안녕하세요.",
+          "terms": "안녕/인사",
+          "knowledge_base": "안녕,인사"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "3",
+          "qa_type": "Q",
+          "content": "버스요금 관련해서 문의 좀 드려도 될까요?",
+          "intent": "버스요금 결제오류",
+          "terms": "버스/교통수단, 요금/이용료, 관련/연관, 문의/질의",
+          "knowledge_base": "요금,질의"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "4",
+          "qa_type": "A",
+          "content": "네, 말씀하십시오.",
+          "terms": "말씀/말",
+          "knowledge_base": "말씀,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "5",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "버스요금 결제오류",
+          "terms": "버스/교통수단, 이용내역/사용내역",
+          "knowledge_base": "이용내역,사용내역"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "6",
+          "qa_type": "Q",
+          "content": "이중결제라는건, 한번이용에 두번결제가 되었단 말씀이십니까?",
+          "intent": "버스요금 결제오류",
+          "terms": "한번/일회, 이용/사용, 말씀/말",
+          "knowledge_base": "결제,말"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "7",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "버스요금 결제오류"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "8",
+          "qa_type": "Q",
+          "content": "하차시 카드를 찍으셨나요?",
+          "intent": "버스요금 결제오류",
+          "knowledge_base": "카드"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "9",
+          "qa_type": "A",
+          "content": "네, 찍고 내렸죠."
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "10",
+          "qa_type": "Q",
+          "content": "혹시 카드사에 문의해보셨나요?",
+          "intent": "버스요금 결제오류",
+          "terms": "카드사/카드회사, 문의/질의",
+          "knowledge_base": "문의,질의"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "11",
+          "qa_type": "A",
+          "content": "주말이라 못해봤어요.",
+          "terms": "주말/휴일 ",
+          "knowledge_base": "주말,휴일"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "12",
+          "qa_type": "Q",
+          "content": "버스 단말기의 문제일수도 있나요?",
+          "intent": "버스요금 결제오류",
+          "terms": "버스/교통수단, 문제/말썽",
+          "knowledge_base": "단말기,말썽"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "13",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "버스요금 결제오류",
+          "terms": " ",
+          "knowledge_base": "가능성"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "14",
+          "qa_type": "Q",
+          "content": "해당일에 다른 교통수단을 이용하시진 않았나요?",
+          "intent": "버스요금 결제오류",
+          "terms": "교통수단/이동수단, 이용/사용",
+          "knowledge_base": "교통수단,사용"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "15",
+          "qa_type": "Q",
+          "content": " ",
+          "intent": "버스요금 결제오류",
+          "terms": "지하철/전철",
+          "knowledge_base": "지하철,전철"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "16",
+          "qa_type": "Q",
+          "content": "지하철 탄거랑 관계가 있어요?",
+          "intent": "버스요금 결제오류",
+          "terms": "지하철/전철, 관계/연관",
+          "knowledge_base": "관계,연관"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "17",
+          "qa_type": "A",
+          "content": "그 부분은 확인을 해봐야 알 수 있을 것 같습니다.",
+          "terms": "확인/체크",
+          "knowledge_base": "확인,체크"
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "18",
+          "qa_type": "Q",
+          "content": "그럼 일단 제가 내일 카드사에 확인을 해보고 나서 다시 전화드려도 될까요?",
+          "intent": "버스요금 결제오류",
+          "terms": "일단/우선, 내일/다음날, 카드사/카드회사, 확인/체크, 다시/재차, 전화/연락",
+          "knowledge_base": "내일,연락"
+        },
+        {
+          "speaker": "상담사",
+          "turn_number": "19",
+          "qa_type": "A",
+          "content": "네, 그렇게 하셔도 됩니다.",
+          "terms": " "
+        },
+        {
+          "speaker": "고객",
+          "turn_number": "20",
+          "qa_type": "A",
+          "content": "네, 알겠습니다, 확인해본 후 다시 연락드리겠습니다.",
+          "terms": "확인/체크, 다시/재차, 연락/전화",
+          "knowledge_base": "다시,전화"
+        }
+      ]
+    }
+  ]
+}

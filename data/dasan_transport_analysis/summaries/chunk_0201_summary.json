@@ -1,0 +1,9 @@
+{
+  "raw_response": "분석이 완료되었습니다. JSON 형식의 구조화된 요약과 함께 핵심 인사이트를 제공했습니다. 추가 분석이나 특정 영역에 대한 더 깊은 분석이 필요하신가요?\n",
+  "parse_error": true,
+  "error_detail": "Expecting value: line 1 column 1 (char 0)",
+  "chunk_id": "chunk_0201",
+  "processing_time": 51.54615592956543,
+  "processed_at": "2025-11-05T11:50:22.342746",
+  "dialogue_count": 5
+}
