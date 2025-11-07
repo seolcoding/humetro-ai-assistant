@@ -33,6 +33,12 @@
     "comment": "Minimal metrics for fast healthcheck"
   },
   "execution": {
+    "mode": "sequential",
+    "parallel": {
+      "enabled": false,
+      "max_concurrent": 5,
+      "comment": "Set mode='parallel' and enabled=true to use parallel evaluation (2-3x faster)"
+    },
     "checkpoint_interval": 1,
     "verbose": true,
     "dry_run": false

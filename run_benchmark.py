@@ -30,6 +30,7 @@ load_dotenv()
 
 from src.rag_pipeline.question_generation import generate_questions, load_cached_questions
 from src.rag_pipeline.generation_benchmark import GenerationBenchmark
+from src.rag_pipeline.parallel_benchmark_runner import create_parallel_benchmark
 
 # Configure logging
 logging.basicConfig(
@@ -306,9 +307,24 @@ def run_benchmark_from_config(config_path: Path):
     print(f"✅ Judge model: {judge_model}")
     print(f"   Metrics: {', '.join(metrics)}")
 
+    # Check execution mode
+    exec_config = config.get("execution", {})
+    execution_mode = exec_config.get("mode", "sequential")
+    parallel_config = exec_config.get("parallel", {})
+    parallel_enabled = parallel_config.get("enabled", False)
+    max_concurrent = parallel_config.get("max_concurrent", 5)
+
+    # Override mode if parallel is explicitly enabled
+    if parallel_enabled:
+        execution_mode = "parallel"
+
     # Run benchmark for each retrieval method
     print("\n" + "="*70)
-    print("Running Benchmark".center(70))
+    if execution_mode == "parallel":
+        print("Running Benchmark (PARALLEL MODE)".center(70))
+        print(f"Max Concurrent: {max_concurrent}".center(70))
+    else:
+        print("Running Benchmark (SEQUENTIAL MODE)".center(70))
     print("="*70)
 
     # Convert models to GenerationBenchmark format
@@ -364,12 +380,23 @@ def run_benchmark_from_config(config_path: Path):
             if naive_store:
                 # Naive RAG with FAISS
                 logger.info(f"Running Naive RAG benchmark...")
-                benchmark = GenerationBenchmark(
-                    models=benchmark_models,
-                    use_fixed_context=True,
-                    k_documents=k,
-                    judge_model=judge_model
-                )
+
+                # Create benchmark based on execution mode
+                if execution_mode == "parallel":
+                    benchmark = create_parallel_benchmark(
+                        models=benchmark_models,
+                        judge_model=judge_model,
+                        k_documents=k,
+                        max_concurrent=max_concurrent,
+                        retriever=None  # Will use default FAISS
+                    )
+                else:
+                    benchmark = GenerationBenchmark(
+                        models=benchmark_models,
+                        use_fixed_context=True,
+                        k_documents=k,
+                        judge_model=judge_model
+                    )
 
                 method_output = output_dir / ret_name
                 method_output.mkdir(parents=True, exist_ok=True)
@@ -429,14 +456,23 @@ def run_benchmark_from_config(config_path: Path):
                     test_docs = kg_retriever.invoke(test_query)
                     logger.info(f"✅ Test retrieval: {len(test_docs)} docs from KG ({kg_mode} mode)")
 
-                    # Create benchmark with KG retriever
-                    benchmark = GenerationBenchmark(
-                        models=benchmark_models,
-                        use_fixed_context=True,
-                        k_documents=k,
-                        judge_model=judge_model,
-                        custom_retriever=kg_retriever  # Pass KG retriever
-                    )
+                    # Create benchmark with KG retriever (mode-aware)
+                    if execution_mode == "parallel":
+                        benchmark = create_parallel_benchmark(
+                            models=benchmark_models,
+                            judge_model=judge_model,
+                            k_documents=k,
+                            max_concurrent=max_concurrent,
+                            retriever=kg_retriever
+                        )
+                    else:
+                        benchmark = GenerationBenchmark(
+                            models=benchmark_models,
+                            use_fixed_context=True,
+                            k_documents=k,
+                            judge_model=judge_model,
+                            custom_retriever=kg_retriever  # Pass KG retriever
+                        )
 
                     method_output = output_dir / ret_name
                     method_output.mkdir(parents=True, exist_ok=True)
@@ -454,12 +490,23 @@ def run_benchmark_from_config(config_path: Path):
             else:
                 # LLM only (no retrieval)
                 logger.info(f"Running LLM-only baseline...")
-                benchmark = GenerationBenchmark(
-                    models=benchmark_models,
-                    use_fixed_context=False,
-                    k_documents=0,
-                    judge_model=judge_model
-                )
+
+                # Create benchmark based on execution mode
+                if execution_mode == "parallel":
+                    benchmark = create_parallel_benchmark(
+                        models=benchmark_models,
+                        judge_model=judge_model,
+                        k_documents=0,
+                        max_concurrent=max_concurrent,
+                        retriever=None
+                    )
+                else:
+                    benchmark = GenerationBenchmark(
+                        models=benchmark_models,
+                        use_fixed_context=False,
+                        k_documents=0,
+                        judge_model=judge_model
+                    )
 
                 method_output = output_dir / ret_name
                 method_output.mkdir(parents=True, exist_ok=True)
