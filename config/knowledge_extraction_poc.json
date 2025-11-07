@@ -1,0 +1,70 @@
+{
+  "experiment": {
+    "id": "knowledge_extraction_poc_v1",
+    "name": "Bottom-up Knowledge Extraction POC",
+    "description": "Extract structured knowledge from 200 Dasan dialogues (50 per category)",
+    "output_dir": "data/evaluation/knowledge_extraction_poc",
+    "tags": ["poc", "knowledge-extraction", "bottom-up"]
+  },
+
+  "data": {
+    "source_dir": "data/dasan_call/extracted/training/labeled",
+    "categories": [
+      {
+        "name": "대중교통_안내",
+        "file": "민원(콜센터) 질의응답_다산콜센터_대중교통 안내_Training.json",
+        "sample_size": 50
+      },
+      {
+        "name": "생활하수도_관련_문의",
+        "file": "민원(콜센터) 질의응답_다산콜센터_생활하수도 관련 문의_Training.json",
+        "sample_size": 50
+      },
+      {
+        "name": "일반행정_문의",
+        "file": "민원(콜센터) 질의응답_다산콜센터_일반행정 문의_Training.json",
+        "sample_size": 50
+      },
+      {
+        "name": "코로나19_관련_상담",
+        "file": "민원(콜센터) 질의응답_다산콜센터_코로나19 관련 상담_Training.json",
+        "sample_size": 50
+      }
+    ],
+    "sampled_output": "data/processed/knowledge_extraction/sampled_dialogues.json",
+    "final_output_dir": "data/processed/knowledge_docs"
+  },
+
+  "llm": {
+    "model_name": "claude-sonnet",
+    "model_id": "claude-sonnet-4-5-20250929",
+    "api_base": "http://localhost:25292/v1",
+    "api_key_env": "CLAUDE_CODE_API_KEY",
+    "rate_limit": {
+      "calls_per_minute": 1,
+      "request_delay": 65.0,
+      "comment": "1 call per minute = 60 seconds + 5s safety margin = 65s between batch starts"
+    },
+    "batch_size": 10,
+    "comment": "Process 10 dialogues per batch (200 dialogues = 20 batches = ~21.7 minutes)"
+  },
+
+  "processing": {
+    "min_doc_size": 500,
+    "max_doc_size": 2000,
+    "merge_small_docs": true,
+    "taxonomy_levels": [2, 3],
+    "split_on_intent_change": true,
+    "preserve_dialogue_context": true,
+    "comment": "Min 500 tokens for efficient chunking/embedding"
+  },
+
+  "validation": {
+    "enabled": true,
+    "check_metadata_completeness": true,
+    "check_doc_size": true,
+    "check_topic_consistency": true,
+    "generate_sample_report": true,
+    "sample_report_path": "data/evaluation/knowledge_extraction_poc/quality_report.md"
+  }
+}
