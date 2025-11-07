@@ -1,0 +1,56 @@
+{
+  "experiment": {
+    "id": null,
+    "name": "parallel_eval_demo",
+    "description": "Demo: Parallel evaluation with 10 questions, 5 models (2-3x faster)",
+    "tags": ["parallel", "demo", "speed-test"],
+    "output_dir": "data/evaluation/parallel_demo"
+  },
+  "questions": {
+    "source": "golden",
+    "limit": 10,
+    "random_sample": false,
+    "comment": "Use first 10 questions from golden dataset for quick test"
+  },
+  "models": {
+    "evaluation_targets": "thesis",
+    "comment": "5 models: GPT-4o-mini + 4 Ollama Korean models"
+  },
+  "retrieval": [
+    {
+      "name": "naive_rag",
+      "k": 4,
+      "naive_vector_store": "data/vector_store/seoul_traffic",
+      "comment": "Naive RAG with FAISS vector store"
+    },
+    {
+      "name": "kg_simple",
+      "k": 4,
+      "kg_config": {
+        "mode": "simple",
+        "neo4j_uri": "env:NEO4J_URI",
+        "neo4j_user": "env:NEO4J_USERNAME",
+        "neo4j_password": "env:NEO4J_PASSWORD",
+        "embedding_model": "text-embedding-3-large"
+      },
+      "comment": "KG RAG (Simple mode) - vector similarity + fixed Cypher"
+    }
+  ],
+  "evaluation": {
+    "judge_model": "gpt-5",
+    "metrics": ["faithfulness", "answer_relevancy", "answer_correctness"],
+    "comment": "Use GPT-5 as judge for high-quality evaluation"
+  },
+  "execution": {
+    "mode": "parallel",
+    "parallel": {
+      "enabled": true,
+      "max_concurrent": 5,
+      "comment": "Enable parallel evaluation: 5 models evaluated concurrently"
+    },
+    "checkpoint_interval": 5,
+    "verbose": true,
+    "dry_run": false,
+    "comment": "Parallel mode: 2-3x faster than sequential (10 min vs 25 min estimated)"
+  }
+}
