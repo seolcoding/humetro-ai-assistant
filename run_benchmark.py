@@ -65,8 +65,10 @@ class ConfigLoader:
             raise ValueError(f"Missing required sections: {missing}")
 
         # Validate questions source
-        if self.config["questions"]["source"] not in ["cached", "generate"]:
-            raise ValueError(f"Invalid questions.source: {self.config['questions']['source']}")
+        valid_sources = ["golden", "cached", "generate"]
+        questions_source = self.config.get("questions", {}).get("source", "golden")
+        if questions_source not in valid_sources:
+            raise ValueError(f"Invalid questions.source: {questions_source} (must be one of {valid_sources})")
 
         # Validate retrieval format (skip detailed validation for list format)
         if "retrieval" in self.config:
@@ -96,18 +98,39 @@ class ConfigLoader:
 class QuestionLoader:
     """Load or generate questions based on config"""
 
+    GOLDEN_DATASET_PATH = Path("data/evaluation/testsets/golden_testset_50.csv")
+
     @staticmethod
     def load(config: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
-        Load questions from cache or generate new ones
+        Load questions from golden dataset, cache, or generate new ones
 
         Returns:
             List of question dicts with fields: user_input, reference, reference_contexts, etc.
         """
-        questions_config = config["questions"]
-        source = questions_config["source"]
+        questions_config = config.get("questions", {})
+        source = questions_config.get("source", "golden")  # Default to golden dataset
 
-        if source == "cached":
+        if source == "golden":
+            logger.info("Loading golden dataset...")
+
+            if not QuestionLoader.GOLDEN_DATASET_PATH.exists():
+                raise FileNotFoundError(
+                    f"Golden dataset not found: {QuestionLoader.GOLDEN_DATASET_PATH}\n"
+                    "Please ensure the golden dataset is properly initialized."
+                )
+
+            import pandas as pd
+            df = pd.read_csv(QuestionLoader.GOLDEN_DATASET_PATH)
+
+            logger.info(f"✅ Loaded {len(df)} questions from golden dataset")
+
+            # Show question types
+            single_hop = df["synthesizer_name"].str.contains("single_hop", case=False).sum()
+            multi_hop = len(df) - single_hop
+            logger.info(f"   Single-hop: {single_hop}, Multi-hop: {multi_hop}")
+
+        elif source == "cached":
             logger.info("Loading cached questions...")
             cache_key = questions_config["cache_key"]
             df = load_cached_questions(cache_key)
@@ -132,7 +155,21 @@ class QuestionLoader:
             logger.info(f"✅ Generated {len(df)} new questions")
 
         else:
-            raise ValueError(f"Invalid questions.source: {source}")
+            raise ValueError(f"Invalid questions.source: {source} (must be 'golden', 'cached', or 'generate')")
+
+        # Apply limit with random sampling if specified
+        limit = questions_config.get("limit")
+        random_sample = questions_config.get("random_sample", False)
+
+        if limit and limit > 0 and limit < len(df):
+            if random_sample:
+                # Random sampling from golden dataset
+                df = df.sample(n=limit, random_state=questions_config.get("random_seed", 42))
+                logger.info(f"📊 Applied random sampling: using {len(df)} questions")
+            else:
+                # Sequential limit
+                df = df.head(limit)
+                logger.info(f"📊 Applied limit: using first {len(df)} questions")
 
         # Convert to list of dicts
         return df.to_dict('records')
@@ -349,9 +386,9 @@ def run_benchmark_from_config(config_path: Path):
 
                 try:
                     # Get Neo4j credentials
-                    neo4j_uri = os.getenv(kg_conf["neo4j_uri"].replace("env:", ""))
-                    neo4j_user = os.getenv(kg_conf["neo4j_user"].replace("env:", ""))
-                    neo4j_password = os.getenv(kg_conf["neo4j_password"].replace("env:", ""))
+                    neo4j_uri = os.getenv(kg_config["neo4j_uri"].replace("env:", ""))
+                    neo4j_user = os.getenv(kg_config["neo4j_user"].replace("env:", ""))
+                    neo4j_password = os.getenv(kg_config["neo4j_password"].replace("env:", ""))
 
                     logger.info(f"📚 Connecting to Neo4j KG...")
                     logger.info(f"   URI: {neo4j_uri}")
@@ -361,21 +398,26 @@ def run_benchmark_from_config(config_path: Path):
                     if kg_mode == "cypher_generation":
                         from src.kg_agent.kg_cypher_retriever import create_kg_cypher_retriever
 
+                        expansion_hops = kg_config.get("expansion_hops", 1)
+                        embedding_model = kg_config.get("embedding_model", "text-embedding-3-large")
+
                         kg_retriever = create_kg_cypher_retriever(
                             k=k,
-                            llm_model=kg_conf.get("llm_model", "gpt-4o-mini"),
+                            expansion_hops=expansion_hops,
+                            embedding_model=embedding_model,
                             neo4j_uri=neo4j_uri,
                             neo4j_user=neo4j_user,
                             neo4j_password=neo4j_password
                         )
-                        logger.info(f"✅ Cypher Generation KG retriever initialized")
+                        logger.info(f"✅ Cypher Generation KG retriever initialized (FIXED VERSION)")
+                        logger.info(f"   Expansion hops: {expansion_hops}, Embedding: {embedding_model}")
 
                     else:  # simple mode (default)
                         from src.kg_agent.kg_rag_retriever import create_kg_retriever
 
                         kg_retriever = create_kg_retriever(
                             k=k,
-                            embedding_model=kg_conf.get("embedding_model", "text-embedding-3-large"),
+                            embedding_model=kg_config.get("embedding_model", "text-embedding-3-large"),
                             neo4j_uri=neo4j_uri,
                             neo4j_user=neo4j_user,
                             neo4j_password=neo4j_password
@@ -436,6 +478,9 @@ def run_benchmark_from_config(config_path: Path):
     with open(config_out, 'w', encoding='utf-8') as f:
         json.dump(config, f, ensure_ascii=False, indent=2)
 
+    # Extract retrieval method names
+    retrieval_method_names = [ret_cfg.get("name", f"method_{i}") for i, ret_cfg in enumerate(retrieval_configs, 1)]
+
     # Save combined results summary
     summary_out = output_dir / "benchmark_summary.json"
     with open(summary_out, 'w', encoding='utf-8') as f:
@@ -443,7 +488,7 @@ def run_benchmark_from_config(config_path: Path):
             "experiment": exp_info,
             "questions_count": len(questions),
             "models_count": len(models),
-            "retrieval_methods": retrieval_methods,
+            "retrieval_methods": retrieval_method_names,
             "results": all_results
         }, f, ensure_ascii=False, indent=2)
 
@@ -454,9 +499,9 @@ def run_benchmark_from_config(config_path: Path):
     print(f"📄 Config: {config_out}")
     print(f"📊 Summary: {summary_out}")
 
-    for method in retrieval_methods:
+    for method in retrieval_method_names:
         if method in all_results and all_results[method].get("status") != "failed":
-            print(f"   ✓ {method.upper()} RAG: {output_dir}/{method}_rag/")
+            print(f"   ✓ {method.upper()}: {output_dir}/{method}/")
 
     return all_results
 

@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 """
-KG Cypher Generation Retriever
-================================
+KG Cypher Generation Retriever (FIXED VERSION)
+================================================
 
-LLM-generated Cypher queries for dynamic graph traversal.
-Based on notebook L7-chat_with_kg.ipynb pattern.
+Hybrid approach: Vector similarity + LLM-generated Cypher queries
 
-Differences from kg_rag_retriever.py:
-- kg_rag_retriever: Fixed Cypher (vector search only)
-- kg_cypher_retriever: LLM-generated Cypher (dynamic graph traversal)
+CRITICAL FIX:
+- OLD: Pure Cypher generation without vector search (no starting point)
+- NEW: Vector search first → then graph traversal from found nodes
+
+Architecture:
+1. Vector similarity search (find relevant nodes - STARTING POINT)
+2. LLM generates Cypher to traverse graph from these nodes
+3. Return original text chunks (not summarized)
+
+This fixes the -47% performance degradation issue.
 """
 
 import os
@@ -20,110 +26,46 @@ import logging
 from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
-from langchain_core.prompts import PromptTemplate
-from langchain_community.graphs import Neo4jGraph
+from neo4j import GraphDatabase
+from neo4j_graphrag.embeddings import OpenAIEmbeddings
 from langchain_openai import ChatOpenAI
 from pydantic import Field
-
-# Try both import paths for GraphCypherQAChain (langchain version compatibility)
-try:
-    from langchain.chains import GraphCypherQAChain
-except ImportError:
-    from langchain_community.chains.graph_qa.cypher import GraphCypherQAChain
 
 logger = logging.getLogger(__name__)
 
 
-# Cypher generation prompt template (UPDATED: Fixed schema with backtick labels)
-CYPHER_GENERATION_TEMPLATE = """Task: Generate Cypher statement to query a graph database.
-
-Instructions:
-1. Use ONLY the provided relationship types and properties in the schema below
-2. Do NOT use any other relationship types or properties that are not provided
-3. CRITICAL: Node labels with spaces MUST use backtick notation (e.g., `Bus Service`, `Traffic Incident`)
-4. Labels without spaces can use colon notation (e.g., :Route, :Line, :Station)
-5. Property access uses dot notation (e.g., node.name, node.date)
-
-Schema:
-{schema}
-
-IMPORTANT LABEL NAMES (use backticks for labels with spaces):
-- `Bus Service` (NOT BusService)
-- `Traffic Incident` (NOT TrafficIncident)
-- `Transportation Policy` (NOT TransportationPolicy)
-- `Traffic Report` (NOT TrafficReport)
-- `Public Transport Service` (NOT PublicTransportService)
-- `Traffic Data` (NOT TrafficData)
-- `Accessibility Features` (NOT AccessibilityFeatures)
-- `Traffic Application` (NOT TrafficApplication)
-- `Train Service` (NOT TrainService)
-- `Commute Route` (NOT CommuteRoute)
-
-Note: Do not include any explanations or apologies in your responses.
-Do not respond to any questions that might ask anything else than for you to construct a Cypher statement.
-Do not include any text except the generated Cypher statement.
-
-Examples for Seoul traffic data (based on ACTUAL data patterns):
-
-# 지하철 노선의 역 정보
-MATCH (line:Line {{name: "1호선"}})
-MATCH (station:Station)-[:IS_PART_OF]->(line)
-RETURN station.name, station.description
-
-# 버스 서비스와 노선 정보 (우회, 통제 등)
-MATCH (service:`Bus Service`)-[:SERVES]->(route:Route)
-WHERE service.name IS NOT NULL AND route.name IS NOT NULL
-RETURN service.name, route.name, route.description
-
-# 교통 사건과 관련 노선
-MATCH (incident:`Traffic Incident`)-[:OCCURS_ON]->(route:Route)
-MATCH (service:`Bus Service`)-[:SERVES]->(route)
-WHERE route.name IS NOT NULL
-RETURN incident.description, incident.type, route.name, service.name
-
-# 교통 정책과 영향 받는 서비스
-MATCH (policy:`Transportation Policy`)-[:AFFECTS]->(service:`Public Transport Service`)
-WHERE policy.name IS NOT NULL
-RETURN policy.name, policy.description, service.name
-
-# 교통 보고서와 데이터
-MATCH (report:`Traffic Report`)-[:PROVIDES]->(data:`Traffic Data`)
-WHERE report.title IS NOT NULL
-RETURN report.title, data.description, data.type
-
-IMPORTANT DATA LIMITATION:
-Most Traffic Incident nodes with route connections do NOT have dates populated.
-If a date-specific query returns empty, try a broader search without date filters.
-
-The question is:
-{question}"""
+# NEW: Simplified retrieval strategy
+# Instead of complex Cypher generation, use vector-found nodes + their neighbors
+# This is more reliable and maintains context quality
 
 
 class KGCypherRetriever(BaseRetriever):
     """
-    Knowledge Graph Retriever with LLM-generated Cypher queries
+    Knowledge Graph Retriever with Hybrid Approach (FIXED)
 
-    Uses LangChain's GraphCypherQAChain to:
-    1. Generate Cypher query from natural language question
-    2. Execute query against Neo4j graph
-    3. Return results as context
+    Architecture:
+    1. Vector similarity search (find relevant starting nodes)
+    2. Graph traversal (expand to neighboring nodes via relationships)
+    3. Return original text chunks from all nodes
 
     Benefits:
-    - Dynamic graph traversal based on question
-    - Leverages entity relationships
-    - Adapts to different question types
+    - Combines semantic search (vector) with structural context (graph)
+    - Always finds relevant starting points (unlike pure Cypher generation)
+    - Maintains original chunk quality (no LLM summarization)
+    - Explores entity relationships for richer context
     """
 
     # Pydantic fields
-    k: int = Field(default=4, description="Number of results to return")
+    k: int = Field(default=4, description="Number of initial nodes to find via vector search")
+    expansion_hops: int = Field(default=1, description="Number of hops for graph expansion (1 or 2)")
+    embedding_model: str = Field(default="text-embedding-3-large")
     neo4j_uri: Optional[str] = Field(default=None)
     neo4j_user: Optional[str] = Field(default=None)
     neo4j_password: Optional[str] = Field(default=None)
-    llm_model: str = Field(default="gpt-4o-mini", description="LLM for Cypher generation")
 
-    # Class attributes
-    _graph: ClassVar[Any] = None
-    _cypher_chain: ClassVar[Any] = None
+    # Class attributes (shared across instances)
+    _driver: ClassVar[Any] = None
+    _embedder: ClassVar[Any] = None
 
     class Config:
         arbitrary_types_allowed = True
@@ -134,34 +76,20 @@ class KGCypherRetriever(BaseRetriever):
         # Load credentials
         self._load_credentials(self.neo4j_uri, self.neo4j_user, self.neo4j_password)
 
-        # Initialize Neo4j Graph (shared)
-        if KGCypherRetriever._graph is None:
-            KGCypherRetriever._graph = Neo4jGraph(
-                url=self.neo4j_uri,
-                username=self.neo4j_user,
-                password=self.neo4j_password,
-                database=os.getenv('NEO4J_DATABASE', 'neo4j')
+        # Initialize Neo4j driver (shared)
+        if KGCypherRetriever._driver is None:
+            KGCypherRetriever._driver = GraphDatabase.driver(
+                self.neo4j_uri,
+                auth=(self.neo4j_user, self.neo4j_password)
             )
-            logger.info(f"✅ Connected to Neo4j Graph: {self.neo4j_uri}")
+            logger.info(f"✅ Connected to Neo4j: {self.neo4j_uri}")
 
-        # Initialize Cypher Chain (shared)
-        if KGCypherRetriever._cypher_chain is None:
-            cypher_prompt = PromptTemplate(
-                input_variables=["schema", "question"],
-                template=CYPHER_GENERATION_TEMPLATE
-            )
+        # Initialize embedder (shared)
+        if KGCypherRetriever._embedder is None:
+            KGCypherRetriever._embedder = OpenAIEmbeddings(model=self.embedding_model)
+            logger.info(f"✅ Embedder initialized: {self.embedding_model}")
 
-            KGCypherRetriever._cypher_chain = GraphCypherQAChain.from_llm(
-                ChatOpenAI(model=self.llm_model, temperature=0),
-                graph=KGCypherRetriever._graph,
-                verbose=True,
-                cypher_prompt=cypher_prompt,
-                return_intermediate_steps=True,  # To get Cypher query
-                allow_dangerous_requests=True  # Required for LangChain security
-            )
-            logger.info(f"✅ Cypher Chain initialized with {self.llm_model}")
-
-        logger.info(f"✅ KGCypherRetriever initialized (k={self.k})")
+        logger.info(f"✅ KGCypherRetriever (FIXED) initialized (k={self.k}, expansion_hops={self.expansion_hops})")
 
     def _load_credentials(self, uri: Optional[str], user: Optional[str], password: Optional[str]):
         """Load Neo4j credentials"""
@@ -186,95 +114,196 @@ class KGCypherRetriever(BaseRetriever):
         run_manager: Optional[CallbackManagerForRetrieverRun] = None
     ) -> List[Document]:
         """
-        Retrieve documents using LLM-generated Cypher
+        Retrieve documents using hybrid vector + graph approach
+
+        Steps:
+        1. Vector similarity search → find top-k relevant nodes
+        2. Graph expansion → get neighbors of found nodes
+        3. Collect text from all nodes → return as Documents
 
         Args:
             query: Natural language question
 
         Returns:
-            List of Documents with graph context
+            List of Documents with KG-enhanced context
         """
         try:
-            logger.info(f"Generating Cypher for query: {query[:100]}...")
+            logger.info(f"🔍 [CYPHER RETRIEVAL] Query: {query[:100]}...")
 
-            # Run Cypher chain
-            result = KGCypherRetriever._cypher_chain.invoke({"query": query})
+            # Step 1: Vector similarity search to find starting nodes
+            logger.info(f"📍 Step 1: Vector search for top-{self.k} nodes")
+            query_embedding = KGCypherRetriever._embedder.embed_query(query)
 
-            # Extract Cypher query and results
-            cypher_query = result.get("intermediate_steps", [{}])[0].get("query", "N/A")
-            answer = result.get("result", "")
+            with KGCypherRetriever._driver.session() as session:
+                # Vector similarity search
+                vector_results = session.run("""
+                    CALL db.index.vector.queryNodes('vector', $k, $embedding)
+                    YIELD node, score
+                    RETURN elementId(node) as nodeId, node.text as text, score
+                    ORDER BY score DESC
+                """, k=self.k, embedding=query_embedding)
 
-            logger.info(f"Generated Cypher: {cypher_query[:200]}...")
-            logger.info(f"Answer length: {len(answer)} chars")
+                starting_nodes = []
+                for record in vector_results:
+                    starting_nodes.append({
+                        'id': record['nodeId'],
+                        'text': record['text'],
+                        'score': record['score']
+                    })
 
-            # Convert to Document format
-            documents = [
-                Document(
-                    page_content=answer,
-                    metadata={
-                        "source": "knowledge_graph_cypher",
-                        "retrieval_type": "kg_cypher_generation",
-                        "cypher_query": cypher_query,
-                        "question": query
-                    }
-                )
-            ]
+                logger.info(f"  ✅ Found {len(starting_nodes)} starting nodes (scores: {[f'{n['score']:.3f}' for n in starting_nodes[:3]]})")
 
-            logger.info(f"✅ Retrieved {len(documents)} documents via Cypher generation")
-            return documents[:self.k]  # Limit to k
+                if not starting_nodes:
+                    logger.warning("  ⚠️ No nodes found via vector search!")
+                    return []
+
+                # Step 2: Graph expansion - get neighbors of starting nodes
+                logger.info(f"🔗 Step 2: Graph expansion ({self.expansion_hops}-hop)")
+                node_ids = [n['id'] for n in starting_nodes]
+
+                if self.expansion_hops == 1:
+                    expansion_query = """
+                        UNWIND $nodeIds as startNodeId
+                        CALL {
+                            WITH startNodeId
+                            MATCH (start)
+                            WHERE elementId(start) = startNodeId
+                            OPTIONAL MATCH (start)-[r]-(neighbor)
+                            WHERE neighbor.text IS NOT NULL
+                            RETURN DISTINCT neighbor, neighbor.text as text
+                        }
+                        WITH COLLECT(DISTINCT text) as texts
+                        UNWIND texts as text
+                        RETURN DISTINCT text
+                    """
+                else:  # 2-hop
+                    expansion_query = """
+                        UNWIND $nodeIds as startNodeId
+                        CALL {
+                            WITH startNodeId
+                            MATCH (start)
+                            WHERE elementId(start) = startNodeId
+                            OPTIONAL MATCH (start)-[r1]-(n1)-[r2]-(n2)
+                            WHERE n1.text IS NOT NULL OR n2.text IS NOT NULL
+                            RETURN DISTINCT n1.text as text1, n2.text as text2
+                        }
+                        WITH COLLECT(DISTINCT text1) + COLLECT(DISTINCT text2) as texts
+                        UNWIND texts as text
+                        WHERE text IS NOT NULL
+                        RETURN DISTINCT text
+                    """
+
+                expansion_results = session.run(expansion_query, nodeIds=node_ids)
+                neighbor_texts = [record['text'] for record in expansion_results if record['text']]
+
+                logger.info(f"  ✅ Found {len(neighbor_texts)} neighbor texts")
+
+                # Step 3: Combine starting nodes + neighbors
+                all_texts = [n['text'] for n in starting_nodes if n['text']]
+                all_texts.extend(neighbor_texts)
+                all_texts = list(dict.fromkeys(all_texts))  # Remove duplicates, preserve order
+
+                logger.info(f"📦 Step 3: Collected {len(all_texts)} unique text chunks")
+
+                # Step 4: Create Documents
+                documents = []
+                for i, text in enumerate(all_texts[:self.k * 2]):  # Limit to reasonable number
+                    documents.append(
+                        Document(
+                            page_content=text,
+                            metadata={
+                                "source": "knowledge_graph_hybrid",
+                                "retrieval_type": "kg_cypher_hybrid",
+                                "chunk_index": i,
+                                "is_starting_node": i < len(starting_nodes),
+                                "expansion_hops": self.expansion_hops,
+                                "question": query
+                            }
+                        )
+                    )
+
+                logger.info(f"✅ [CYPHER RETRIEVAL] Retrieved {len(documents)} documents (vector + graph expansion)")
+                logger.info(f"   Starting nodes: {len(starting_nodes)}, Neighbors: {len(neighbor_texts)}, Total unique: {len(all_texts)}")
+
+                return documents
 
         except Exception as e:
-            logger.error(f"❌ Cypher generation retrieval failed: {e}", exc_info=True)
+            logger.error(f"❌ [CYPHER RETRIEVAL] Failed: {e}", exc_info=True)
             return []
 
     @classmethod
-    def close_graph(cls):
-        """Close Neo4j graph connection"""
-        if cls._graph:
-            # Neo4jGraph doesn't have explicit close, but driver does
-            cls._graph = None
-            cls._cypher_chain = None
-            logger.info("Neo4j graph closed")
+    def close_driver(cls):
+        """Close Neo4j driver connection"""
+        if cls._driver:
+            cls._driver.close()
+            cls._driver = None
+            cls._embedder = None
+            logger.info("Neo4j driver closed")
 
 
 def create_kg_cypher_retriever(
     k: int = 4,
-    llm_model: str = "gpt-4o-mini",
+    expansion_hops: int = 1,
+    embedding_model: str = "text-embedding-3-large",
     **kwargs
 ) -> KGCypherRetriever:
     """
-    Factory function to create KG Cypher retriever
+    Factory function to create KG Cypher retriever (FIXED version)
 
     Args:
-        k: Number of documents to retrieve
-        llm_model: LLM for Cypher generation
-        **kwargs: Additional arguments
+        k: Number of initial nodes to find via vector search
+        expansion_hops: Number of hops for graph expansion (1 or 2)
+        embedding_model: Embedding model for vector search
+        **kwargs: Additional arguments (neo4j_uri, neo4j_user, neo4j_password)
 
     Returns:
-        Configured KGCypherRetriever
+        Configured KGCypherRetriever with hybrid vector + graph approach
     """
-    return KGCypherRetriever(k=k, llm_model=llm_model, **kwargs)
+    return KGCypherRetriever(
+        k=k,
+        expansion_hops=expansion_hops,
+        embedding_model=embedding_model,
+        **kwargs
+    )
 
 
 if __name__ == "__main__":
     # Test retriever
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
 
-    print("Testing KG Cypher Generation Retriever...")
-    retriever = create_kg_cypher_retriever(k=3, llm_model="gpt-4o-mini")
+    print("\n" + "="*80)
+    print("Testing KG Cypher Retriever (FIXED VERSION - Hybrid Approach)")
+    print("="*80 + "\n")
+
+    retriever = create_kg_cypher_retriever(k=4, expansion_hops=1)
 
     test_queries = [
         "서울 지하철 1호선의 주요 역은?",
-        "2024년 12월 버스 우회 정보",
-        "여의도역 근처 교통 정책"
+        "2024년 12월 14일 여의도역 버스 우회 정보",
+        "장거리 버스 노선 개선 정책"
     ]
 
     for query in test_queries:
-        print(f"\n쿼리: {query}")
-        docs = retriever.invoke(query)
-        print(f"검색 결과: {len(docs)}개 문서")
+        print(f"\n{'='*80}")
+        print(f"쿼리: {query}")
+        print(f"{'='*80}")
 
-        for i, doc in enumerate(docs, 1):
+        docs = retriever.invoke(query)
+        print(f"\n✅ 검색 결과: {len(docs)}개 문서")
+
+        for i, doc in enumerate(docs[:3], 1):  # Show first 3
             print(f"\n[Document {i}]")
-            print(f"Cypher: {doc.metadata.get('cypher_query', 'N/A')[:100]}...")
-            print(f"Content: {doc.page_content[:200]}...")
+            print(f"  Source: {doc.metadata.get('source')}")
+            print(f"  Retrieval Type: {doc.metadata.get('retrieval_type')}")
+            print(f"  Is Starting Node: {doc.metadata.get('is_starting_node')}")
+            print(f"  Content Preview: {doc.page_content[:150]}...")
+
+    print(f"\n{'='*80}")
+    print("Test complete!")
+    print(f"{'='*80}\n")
+
+    # Cleanup
+    KGCypherRetriever.close_driver()

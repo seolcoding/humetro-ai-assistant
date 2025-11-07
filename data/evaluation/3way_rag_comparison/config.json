@@ -2,7 +2,13 @@
   "experiment": {
     "name": "3way_rag_comparison",
     "description": "Comprehensive comparison of Naive RAG vs KG RAG Simple vs KG RAG Cypher Generation",
-    "tags": ["3way-comparison", "naive-rag", "kg-simple", "kg-cypher-generation", "all-models"],
+    "tags": [
+      "3way-comparison",
+      "naive-rag",
+      "kg-simple",
+      "kg-cypher-generation",
+      "all-models"
+    ],
     "output_dir": "data/evaluation"
   },
   "questions": {

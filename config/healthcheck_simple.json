@@ -7,9 +7,9 @@
     "output_dir": "data/evaluation/healthcheck"
   },
   "questions": {
-    "source": "cached",
-    "cache_key": "ab9011d2e08ae32f",
-    "comment": "2 questions: 1 single-hop + 1 multi-hop"
+    "source": "golden",
+    "limit": 2,
+    "comment": "2 questions from golden dataset: 1 single-hop + 1 multi-hop"
   },
   "models": {
     "evaluation_targets": [
