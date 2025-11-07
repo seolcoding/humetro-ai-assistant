@@ -133,14 +133,17 @@ class AsyncEvaluator:
             llm=judge_llm,
         )
 
+        # Convert result to pandas DataFrame for easier access
+        df = result.to_pandas()
+
         return {
             "model_name": model_name,
             "metrics": {
-                "faithfulness": result.get("faithfulness", 0.0),
-                "answer_relevancy": result.get("answer_relevancy", 0.0),
-                "answer_correctness": result.get("answer_correctness", 0.0),
+                "faithfulness": df["faithfulness"].mean() if "faithfulness" in df else 0.0,
+                "answer_relevancy": df["answer_relevancy"].mean() if "answer_relevancy" in df else 0.0,
+                "answer_correctness": df["answer_correctness"].mean() if "answer_correctness" in df else 0.0,
             },
-            "per_question_scores": result.to_pandas().to_dict('records')
+            "per_question_scores": df.to_dict('records')
         }
 
 
