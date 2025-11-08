@@ -219,3 +219,4 @@ Neo4j*.txt
 
 
 vectorstore/
+service_account.json
