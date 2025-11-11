@@ -42,7 +42,7 @@ class QualityValidator:
             "topic_distribution": defaultdict(int),
             "category_distribution": defaultdict(int),
             "size_distribution": [],
-            "sample_docs": []
+            "sample_docs": [],
         }
 
     def estimate_token_count(self, text: str) -> int:
@@ -59,11 +59,11 @@ class QualityValidator:
         Returns:
             Front matter dict
         """
-        if not content.startswith('---'):
+        if not content.startswith("---"):
             return {}
 
         try:
-            fm_end = content.find('---', 3)
+            fm_end = content.find("---", 3)
             if fm_end == -1:
                 return {}
 
@@ -83,7 +83,7 @@ class QualityValidator:
         Returns:
             Validation result
         """
-        with open(file_path, 'r', encoding='utf-8') as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
 
         # Parse front matter
@@ -93,8 +93,10 @@ class QualityValidator:
         token_count = self.estimate_token_count(content)
 
         # Check metadata
-        required_fields = ['category', 'primary_topic']
-        missing_fields = [field for field in required_fields if field not in front_matter]
+        required_fields = ["category", "primary_topic"]
+        missing_fields = [
+            field for field in required_fields if field not in front_matter
+        ]
 
         return {
             "path": str(file_path),
@@ -102,7 +104,7 @@ class QualityValidator:
             "front_matter": front_matter,
             "missing_fields": missing_fields,
             "is_small": token_count < self.min_doc_size,
-            "is_large": token_count > 2000
+            "is_large": token_count > 2000,
         }
 
     def validate_all(self, docs_dir: Path) -> Dict[str, Any]:
@@ -115,9 +117,9 @@ class QualityValidator:
         Returns:
             Validation statistics
         """
-        logger.info(f"\n{'='*60}")
+        logger.info(f"\n{'=' * 60}")
         logger.info("VALIDATING DOCUMENTS")
-        logger.info(f"{'='*60}")
+        logger.info(f"{'=' * 60}")
         logger.info(f"Directory: {docs_dir}")
 
         # Find all Markdown files
@@ -134,22 +136,28 @@ class QualityValidator:
 
             # Track small/large docs
             if result["is_small"]:
-                self.stats["small_docs"].append({
-                    "path": str(file_path.relative_to(docs_dir)),
-                    "size": result["size"]
-                })
+                self.stats["small_docs"].append(
+                    {
+                        "path": str(file_path.relative_to(docs_dir)),
+                        "size": result["size"],
+                    }
+                )
             if result["is_large"]:
-                self.stats["large_docs"].append({
-                    "path": str(file_path.relative_to(docs_dir)),
-                    "size": result["size"]
-                })
+                self.stats["large_docs"].append(
+                    {
+                        "path": str(file_path.relative_to(docs_dir)),
+                        "size": result["size"],
+                    }
+                )
 
             # Track missing metadata
             if result["missing_fields"]:
-                self.stats["missing_metadata"].append({
-                    "path": str(file_path.relative_to(docs_dir)),
-                    "missing": result["missing_fields"]
-                })
+                self.stats["missing_metadata"].append(
+                    {
+                        "path": str(file_path.relative_to(docs_dir)),
+                        "missing": result["missing_fields"],
+                    }
+                )
 
             # Track topic distribution
             fm = result["front_matter"]
@@ -160,12 +168,14 @@ class QualityValidator:
 
             # Sample docs (first 3)
             if len(self.stats["sample_docs"]) < 3:
-                self.stats["sample_docs"].append({
-                    "path": str(file_path.relative_to(docs_dir)),
-                    "size": result["size"],
-                    "primary_topic": fm.get("primary_topic", "N/A"),
-                    "category": fm.get("category", "N/A")
-                })
+                self.stats["sample_docs"].append(
+                    {
+                        "path": str(file_path.relative_to(docs_dir)),
+                        "size": result["size"],
+                        "primary_topic": fm.get("primary_topic", "N/A"),
+                        "category": fm.get("category", "N/A"),
+                    }
+                )
 
         # Calculate statistics
         self.stats["avg_size"] = sum(sizes) / len(sizes) if sizes else 0
@@ -173,13 +183,17 @@ class QualityValidator:
         self.stats["max_size"] = max(sizes) if sizes else 0
         self.stats["size_distribution"] = self._calculate_size_distribution(sizes)
 
-        logger.info(f"\n{'='*60}")
+        logger.info(f"\n{'=' * 60}")
         logger.info("VALIDATION COMPLETE")
-        logger.info(f"{'='*60}")
+        logger.info(f"{'=' * 60}")
         logger.info(f"Total documents: {self.stats['total_docs']}")
         logger.info(f"Average size: {self.stats['avg_size']:.0f} tokens")
-        logger.info(f"Size range: {self.stats['min_size']} - {self.stats['max_size']} tokens")
-        logger.info(f"Small docs (<{self.min_doc_size}): {len(self.stats['small_docs'])}")
+        logger.info(
+            f"Size range: {self.stats['min_size']} - {self.stats['max_size']} tokens"
+        )
+        logger.info(
+            f"Small docs (<{self.min_doc_size}): {len(self.stats['small_docs'])}"
+        )
         logger.info(f"Large docs (>2000): {len(self.stats['large_docs'])}")
         logger.info(f"Missing metadata: {len(self.stats['missing_metadata'])}")
 
@@ -193,18 +207,22 @@ class QualityValidator:
             (500, 1000),
             (1000, 1500),
             (1500, 2000),
-            (2000, float('inf'))
+            (2000, float("inf")),
         ]
 
         distribution = []
         for min_size, max_size in buckets:
             count = sum(1 for s in sizes if min_size <= s < max_size)
-            label = f"{min_size}-{max_size}" if max_size != float('inf') else f"{min_size}+"
-            distribution.append({
-                "range": label,
-                "count": count,
-                "percentage": (count / len(sizes) * 100) if sizes else 0
-            })
+            label = (
+                f"{min_size}-{max_size}" if max_size != float("inf") else f"{min_size}+"
+            )
+            distribution.append(
+                {
+                    "range": label,
+                    "count": count,
+                    "percentage": (count / len(sizes) * 100) if sizes else 0,
+                }
+            )
 
         return distribution
 
@@ -215,20 +233,20 @@ class QualityValidator:
         Args:
             output_path: Path to output Markdown file
         """
-        logger.info(f"\nGenerating quality report...")
+        logger.info("\nGenerating quality report...")
 
         report = f"""# Knowledge Extraction Quality Report
 
 **Generated**: {Path(__file__).parent}
-**Total Documents**: {self.stats['total_docs']}
+**Total Documents**: {self.stats["total_docs"]}
 
 ## Summary Statistics
 
-- **Average Document Size**: {self.stats['avg_size']:.0f} tokens
-- **Size Range**: {self.stats['min_size']} - {self.stats['max_size']} tokens
-- **Documents < {self.min_doc_size} tokens**: {len(self.stats['small_docs'])} ({len(self.stats['small_docs']) / self.stats['total_docs'] * 100:.1f}%)
-- **Documents > 2000 tokens**: {len(self.stats['large_docs'])} ({len(self.stats['large_docs']) / self.stats['total_docs'] * 100:.1f}%)
-- **Missing Metadata**: {len(self.stats['missing_metadata'])} documents
+- **Average Document Size**: {self.stats["avg_size"]:.0f} tokens
+- **Size Range**: {self.stats["min_size"]} - {self.stats["max_size"]} tokens
+- **Documents < {self.min_doc_size} tokens**: {len(self.stats["small_docs"])} ({len(self.stats["small_docs"]) / self.stats["total_docs"] * 100:.1f}%)
+- **Documents > 2000 tokens**: {len(self.stats["large_docs"])} ({len(self.stats["large_docs"]) / self.stats["total_docs"] * 100:.1f}%)
+- **Missing Metadata**: {len(self.stats["missing_metadata"])} documents
 
 ## Size Distribution
 
@@ -238,7 +256,7 @@ class QualityValidator:
         for bucket in self.stats["size_distribution"]:
             report += f"| {bucket['range']} | {bucket['count']} | {bucket['percentage']:.1f}% |\n"
 
-        report += f"""
+        report += """
 ## Category Distribution
 
 | Category | Count |
@@ -247,13 +265,15 @@ class QualityValidator:
         for category, count in sorted(self.stats["category_distribution"].items()):
             report += f"| {category} | {count} |\n"
 
-        report += f"""
+        report += """
 ## Topic Distribution (Top 10)
 
 | Primary Topic | Count |
 |---------------|-------|
 """
-        sorted_topics = sorted(self.stats["topic_distribution"].items(), key=lambda x: x[1], reverse=True)
+        sorted_topics = sorted(
+            self.stats["topic_distribution"].items(), key=lambda x: x[1], reverse=True
+        )
         for topic, count in sorted_topics[:10]:
             report += f"| {topic} | {count} |\n"
 
@@ -262,7 +282,7 @@ class QualityValidator:
             report += f"""
 ## Small Documents (<{self.min_doc_size} tokens)
 
-⚠️ **Warning**: {len(self.stats['small_docs'])} documents are below minimum size threshold.
+⚠️ **Warning**: {len(self.stats["small_docs"])} documents are below minimum size threshold.
 These may need to be merged with related topics.
 
 | Document | Size |
@@ -276,7 +296,7 @@ These may need to be merged with related topics.
             report += f"""
 ## Missing Metadata
 
-❌ **{len(self.stats['missing_metadata'])} documents** have incomplete metadata.
+❌ **{len(self.stats["missing_metadata"])} documents** have incomplete metadata.
 
 | Document | Missing Fields |
 |----------|----------------|
@@ -291,15 +311,15 @@ These may need to be merged with related topics.
 """
         for i, doc in enumerate(self.stats["sample_docs"], 1):
             report += f"""
-### {i}. {doc['path']}
-- **Size**: {doc['size']} tokens
-- **Category**: {doc['category']}
-- **Primary Topic**: {doc['primary_topic']}
+### {i}. {doc["path"]}
+- **Size**: {doc["size"]} tokens
+- **Category**: {doc["category"]}
+- **Primary Topic**: {doc["primary_topic"]}
 """
 
         # Save report
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             f.write(report)
 
         logger.info(f"✅ Report saved to: {output_path}")
@@ -311,19 +331,19 @@ def main():
         "--docs-dir",
         type=str,
         required=True,
-        help="Directory containing knowledge documents"
+        help="Directory containing knowledge documents",
     )
     parser.add_argument(
         "--report-path",
         type=str,
         required=True,
-        help="Path to output quality report (Markdown)"
+        help="Path to output quality report (Markdown)",
     )
     parser.add_argument(
         "--min-doc-size",
         type=int,
         default=500,
-        help="Minimum acceptable document size in tokens"
+        help="Minimum acceptable document size in tokens",
     )
     args = parser.parse_args()
 

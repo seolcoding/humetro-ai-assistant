@@ -1,9 +1,0 @@
-{
-  "raw_response": "```json\n{\n  \"question_types\": [\n    {\n      \"type\": \"노선/경로 문의\",\n      \"frequency\": \"매우 높음 (100%)\",\n      \"examples\": [\n        \"교통편 알 수 있을까요?\",\n        \"거기까지 버스 있을까요?\",\n        \"교통편 알려주세요\"\n      ]\n    },\n    {\n      \"type\": \"소요시간/예상시간 문의\",\n      \"frequency\": \"높음 (80%)\",\n      \"examples\": [\n        \"시간이 적게 걸리는게 어떤거에요?\",\n        \"버스는 얼마나 걸려요?\",\n        \"총 얼마나 걸리는거죠?\"\n      ]\n    },\n    {\n      \"type\": \"배차간격/운행시간 문의\",\n      \"frequency\": \"높음 (60%)\",\n      \"examples\": [\n        \"첫차 몇시에요?\",\n        \"막차 몇시에요?\",\n        \"몇분마다 있어요?\"\n      ]\n    },\n    {\n      \"type\": \"환승/하차 위치 문의\",\n      \"frequency\": \"중간 (60%)\",\n      \"examples\": [\n        \"어디서 내려야되죠?\",\n        \"역에서 도청까지 가까워요?\",\n        \"어디에서 환승하나요?\"\n      ]\n    },\n    {\n      \"type\": \"요금 문의\",\n      \"frequency\": \"낮음 (40%)\",\n      \"examples\": [\n        \"금액은 시내랑 같죠?\",\n        \"택시요금은 얼마나와요?\"\n      ]\n    }\n  ],\n  \"common_issues\": [\n    {\n      \"issue\": \"직행편 부족으로 인한 다중 환승 필요\",\n      \"frequency\": \"높음\",\n      \"context\": \"장자도(3회 환승), 제천리조트(2회 환승), 태안(2",
-  "parse_error": true,
-  "error_detail": "Extra data: line 159 column 1 (char 3834)",
-  "chunk_id": "chunk_0191",
-  "processing_time": 36.170804023742676,
-  "processed_at": "2025-11-05T11:49:23.709853",
-  "dialogue_count": 5
-}

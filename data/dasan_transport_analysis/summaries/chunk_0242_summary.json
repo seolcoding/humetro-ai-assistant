@@ -1,9 +1,0 @@
-{
-  "raw_response": "분석 완료되었습니다. 위의 JSON 형식 요약을 활용하여 다음을 제안합니다:\n\n**🔧 즉시 적용 가능한 개선안:**\n1. **상담사 교육**: 모든 경로 안내 시 \"노선번호 → 소요시간 → 방향\"의 3단계 순서 준수\n2. **음료/음식 규정**: 명확한 허용/금지 기준 포스터/안내자료 제작\n3. **FAQ 자동화**: 자주 묻는 요금, 배차, 운영시간 정보 전자 시스템화\n",
-  "parse_error": true,
-  "error_detail": "Expecting value: line 1 column 1 (char 0)",
-  "chunk_id": "chunk_0242",
-  "processing_time": 50.85910105705261,
-  "processed_at": "2025-11-05T11:53:58.599555",
-  "dialogue_count": 5
-}

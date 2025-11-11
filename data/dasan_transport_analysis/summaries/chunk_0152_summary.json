@@ -1,9 +1,0 @@
-{
-  "raw_response": "## Summary\n\nThe analysis reveals that **Dasan call center's public transportation counseling is primarily time-focused (35%), with significant room for improvement in real-time information accessibility and decision-support guidance**. \n\nThe most critical findings:\n\n1. **Information Gaps**: Discount information and real-time scheduling require manual app/website referral, reducing customer satisfaction\n2. **Decision Support Lacking**: Customers receive information but lack guidance for cost-convenience trade-offs\n3. **Transfer Friction**: Multi-segment journeys (transfers) create psychological resistance despite being faster\n4. **Segment Differentiation**: Travel scenarios require different counseling strategies than daily commute inquiries\n\n**Primary Recommendations**:\n- Integrate real-time discount/promotion data into counselor systems\n- Develop decision-support frameworks (cost-focused vs time-focused routing)\n- Create comparison templates for major routes (bus vs train vs transit)\n",
-  "parse_error": true,
-  "error_detail": "Expecting value: line 1 column 1 (char 0)",
-  "chunk_id": "chunk_0152",
-  "processing_time": 51.227698802948,
-  "processed_at": "2025-11-05T11:46:12.862955",
-  "dialogue_count": 5
-}

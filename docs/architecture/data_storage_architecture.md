@@ -29,7 +29,7 @@ data/
 │   ├── workmanual_test_sequences.json
 │   └── README.md               # 캐시 사용 가이드
 │
-├── dasan_call/                  # Dasan Call Center 데이터셋
+├── AI_HUB_DASAN_QA/                  # Dasan Call Center 데이터셋
 │   ├── raw/                    # 원본 ZIP/JSON 파일
 │   ├── extracted/              # 압축 해제된 파일
 │   ├── splitted/               # Train/Valid 분리

@@ -22,7 +22,7 @@ import os
 import time
 import sys
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional, Tuple, Set
 from datetime import datetime
 import hashlib
 
@@ -110,6 +110,41 @@ class ClaudeKnowledgeExtractorV2:
         logger.info("📂 No existing cache found, starting fresh")
         return {}
 
+    def _load_existing_output(self, output_dir: Path) -> Set[str]:
+        """
+        Load already processed dialogue IDs from existing output files.
+        This provides a secondary check in case cache is out of sync.
+        """
+        processed_ids = set()
+
+        # Check batch output files
+        for batch_file in output_dir.glob("batch_*.json"):
+            try:
+                with open(batch_file, 'r', encoding='utf-8') as f:
+                    batch_data = json.load(f)
+                    for doc in batch_data:
+                        if "dialogue_id" in doc:
+                            processed_ids.add(doc["dialogue_id"])
+            except Exception as e:
+                logger.warning(f"Failed to load {batch_file}: {e}")
+
+        # Check final extracted documents file
+        final_file = output_dir / "extracted_documents.json"
+        if final_file.exists():
+            try:
+                with open(final_file, 'r', encoding='utf-8') as f:
+                    docs = json.load(f)
+                    for doc in docs:
+                        if "dialogue_id" in doc:
+                            processed_ids.add(doc["dialogue_id"])
+            except Exception as e:
+                logger.warning(f"Failed to load final file: {e}")
+
+        if processed_ids:
+            logger.info(f"📁 Found {len(processed_ids)} dialogue IDs in output files")
+
+        return processed_ids
+
     def _save_cache(self):
         """Save extraction cache to disk."""
         if self.cache_dir:
@@ -152,8 +187,11 @@ class ClaudeKnowledgeExtractorV2:
         """
         Extract knowledge from a single dialogue (single attempt, no retry).
 
+        NOTE: Cache check is now done BEFORE batching in extract_all(),
+              so this function only processes uncached dialogues.
+
         Args:
-            dialogue: Single structured dialogue
+            dialogue: Single structured dialogue (NOT cached)
             dialogue_idx: Dialogue index (1-based)
             total_dialogues: Total number of dialogues
             retry_count: Current retry attempt (for logging only)
@@ -161,13 +199,6 @@ class ClaudeKnowledgeExtractorV2:
         Returns:
             Tuple of (documents list, success flag, failed dialogue or None)
         """
-        # Check cache first
-        if self._is_processed(dialogue):
-            dialogue_hash = self._get_dialogue_hash(dialogue)
-            cached_docs = self.cache[dialogue_hash]["documents"]
-            logger.debug(f"  💾 [{dialogue_idx}/{total_dialogues}] Using cached result for {dialogue['dialogue_id']}")
-            return cached_docs, True, None
-
         # Prepare single dialogue as list (for consistent format)
         dialogues_json = json.dumps([dialogue], ensure_ascii=False, indent=2)
 
@@ -188,11 +219,17 @@ class ClaudeKnowledgeExtractorV2:
                 tools=[]
             )
 
+            # Log response status and headers for debugging
+            if hasattr(response, '_response_ms'):
+                logger.debug(f"  ⏱️  Response time: {response._response_ms}ms")
+
             # Extract response
             if hasattr(response, 'choices') and len(response.choices) > 0:
                 response_text = response.choices[0].message.content
+                logger.debug(f"  📝 Response length: {len(response_text)} chars")
             else:
                 response_text = str(response)
+                logger.warning(f"  ⚠️  Unexpected response format: {response_text[:200]}")
 
             # Parse JSON response with improved error handling
             try:
@@ -208,11 +245,22 @@ class ClaudeKnowledgeExtractorV2:
 
             except (json.JSONDecodeError, ValueError) as e:
                 logger.error(f"  ❌ [{dialogue_idx}/{total_dialogues}] JSON parsing failed: {e}")
+                logger.debug(f"  📄 Raw response (first 500 chars): {response_text[:500] if response_text else 'Empty response'}")
                 # Return failed dialogue for retry in next batch
                 return [], False, dialogue
 
         except Exception as e:
-            logger.error(f"  ❌ [{dialogue_idx}/{total_dialogues}] API call failed: {e}")
+            error_type = type(e).__name__
+            logger.error(f"  ❌ [{dialogue_idx}/{total_dialogues}] API call failed ({error_type}): {e}")
+
+            # Check for specific error types
+            if "429" in str(e):
+                logger.warning("  🚨 Rate limit (429) detected!")
+            elif "401" in str(e) or "403" in str(e):
+                logger.warning("  🔐 Authentication/Authorization error!")
+            elif "500" in str(e) or "502" in str(e) or "503" in str(e):
+                logger.warning("  🔥 Server error detected!")
+
             # Return failed dialogue for retry in next batch
             return [], False, dialogue
 
@@ -302,13 +350,17 @@ class ClaudeKnowledgeExtractorV2:
         # Process all dialogues in batch concurrently
         logger.info(f"🚀 Starting {len(dialogues)} concurrent API calls...")
         tasks = []
+
+        # Calculate the actual dialogue indices (not batch-relative)
+        # Since we're processing filtered dialogues, use the actual remaining count
+        total_remaining = total_batches * self.batch_size  # Approximate total remaining
         start_idx = (batch_num - 1) * self.batch_size + 1
 
         for idx, dialogue in enumerate(dialogues, start=start_idx):
             task = self.extract_knowledge_single(
                 dialogue,
                 idx,
-                len(dialogues) * total_batches
+                total_remaining  # Use the actual remaining count, not original total
             )
             tasks.append(task)
 
@@ -381,22 +433,52 @@ class ClaudeKnowledgeExtractorV2:
         logger.info(f"🚀 KNOWLEDGE EXTRACTION START")
         logger.info(f"{'='*40}")
         logger.info(f"📊 Total dialogues: {len(flat_dialogues)}")
+
+        # Load existing output to double-check what's already processed
+        existing_output_ids = self._load_existing_output(output_dir)
+
+        # Combine cache and output file IDs
+        all_processed_ids = set()
+
+        # Add cache IDs
+        for dialogue_hash, cache_entry in self.cache.items():
+            all_processed_ids.add(cache_entry["dialogue_id"])
+
+        # Add output file IDs
+        all_processed_ids.update(existing_output_ids)
+
+        # Filter out already processed dialogues BEFORE batching
+        dialogues_to_process = []
+        skipped_count = 0
+
+        for dialogue in flat_dialogues:
+            dialogue_id = dialogue["dialogue_id"]
+            if dialogue_id in all_processed_ids:
+                skipped_count += 1
+            else:
+                dialogues_to_process.append(dialogue)
+
+        logger.info(f"✅ Already processed (cache + files): {skipped_count}")
+        logger.info(f"  📂 From cache: {len(self.cache)}")
+        logger.info(f"  📁 From output files: {len(existing_output_ids)}")
+        logger.info(f"📝 Remaining to process: {len(dialogues_to_process)}")
         logger.info(f"📦 Batch size: {self.batch_size}")
         logger.info(f"⏳ Request delay: {self.request_delay}s (from first call, +5s safety margin)")
         logger.info(f"🔄 Max retries: {self.max_retries}")
 
-        # Split into batches
+        # Split ONLY remaining dialogues into batches
         batches = []
-        for i in range(0, len(flat_dialogues), self.batch_size):
-            batch = flat_dialogues[i:i + self.batch_size]
+        for i in range(0, len(dialogues_to_process), self.batch_size):
+            batch = dialogues_to_process[i:i + self.batch_size]
             batches.append(batch)
 
         total_batches = len(batches)
-        logger.info(f"📦 Total batches: {total_batches}")
+        logger.info(f"📦 Batches to process: {total_batches}")
 
         # Corrected time estimation: batches run in parallel, delay is between batch STARTS
-        estimated_time = (total_batches - 1) * self.request_delay  # -1 because first batch has no delay
-        logger.info(f"⏱️  Estimated time: {estimated_time / 60:.1f} minutes (minimum)")
+        if total_batches > 0:
+            estimated_time = (total_batches - 1) * self.request_delay  # -1 because first batch has no delay
+            logger.info(f"⏱️  Estimated time: {estimated_time / 60:.1f} minutes (minimum)")
         logger.info(f"{'='*40}")
 
         # Process batches
@@ -526,7 +608,17 @@ def main():
         default=None,
         help="Cache directory for resume capability"
     )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Enable debug logging to see raw responses"
+    )
     args = parser.parse_args()
+
+    # Set debug logging if requested
+    if args.debug:
+        logger.remove()
+        logger.add(sys.stderr, level="DEBUG")
 
     # Load config
     with open(args.config, 'r', encoding='utf-8') as f:

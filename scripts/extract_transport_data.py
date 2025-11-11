@@ -157,7 +157,7 @@ def save_chunks(chunks: List[List[Dict[str, Any]]], output_dir: str):
 def main():
     """메인 실행 함수"""
     # 경로 설정
-    input_file = "data/dasan_call/extracted/training/labeled/민원(콜센터) 질의응답_다산콜센터_대중교통 안내_Training.json"
+    input_file = "data/AI_HUB_DASAN_QA/01_extracted/training/labeled/민원(콜센터) 질의응답_다산콜센터_대중교통 안내_Training.json"
     output_dir = "data/dasan_transport_analysis/chunks"
 
     try:

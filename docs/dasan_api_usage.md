@@ -213,4 +213,4 @@ uv add python-dotenv requests types-requests
 
 - Seoul Open Data Portal: <https://data.seoul.go.kr>
 - API Documentation: Check `docs/api_documentation/`
-- Dataset Analysis: See `notebooks/dasan_call_center_eda.ipynb`
+- Dataset Analysis: See `notebooks/AI_HUB_DASAN_QA_center_eda.ipynb`

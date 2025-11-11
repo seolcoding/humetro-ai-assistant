@@ -1,0 +1,10 @@
+{
+  "total_dialogues": 50,
+  "sample_size": 50,
+  "random_seed": 42,
+  "output_file": "data/batch_processing/dasan_batch_input_test_50.jsonl",
+  "model": "gemini-2.5-pro",
+  "temperature": 0.7,
+  "max_output_tokens": 2048,
+  "created_at": "2025-11-08T22:50:16.002117"
+}

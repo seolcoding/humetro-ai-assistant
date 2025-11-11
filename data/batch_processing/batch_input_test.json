@@ -1,0 +1,11 @@
+{
+  "total_questions": 50,
+  "output_file": "data/batch_processing/batch_input_test.jsonl",
+  "model": "gemini-2.5-pro",
+  "temperature": 0.7,
+  "max_output_tokens": 2048,
+  "use_rag": false,
+  "k_documents": 0,
+  "sample_size": 50,
+  "random_seed": 42
+}

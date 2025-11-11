@@ -1,0 +1,42 @@
+{
+  "experiment": {
+    "id": "knowledge_extraction_full",
+    "name": "Bottom-up Knowledge Extraction (Full Dataset)",
+    "description": "Extract structured knowledge from 8,185 Dasan dialogues (all categories)",
+    "output_dir": "data/evaluation/knowledge_extraction_full",
+    "tags": ["full", "knowledge-extraction", "bottom-up", "production"]
+  },
+
+  "llm": {
+    "model_name": "claude-sonnet",
+    "model_id": "claude-sonnet-4-5-20250929",
+    "api_base": "http://localhost:25292/v1",
+    "api_key_env": "CLAUDE_CODE_API_KEY",
+    "rate_limit": {
+      "calls_per_minute": 1,
+      "request_delay": 65.0,
+      "comment": "1 call per minute = 60 seconds + 5s safety margin = 65s between batch starts"
+    },
+    "batch_size": 10,
+    "comment": "Process 10 dialogues per batch (8185 dialogues = 819 batches = ~14.4 hours)"
+  },
+
+  "processing": {
+    "min_doc_size": 500,
+    "max_doc_size": 2000,
+    "merge_small_docs": true,
+    "taxonomy_levels": [2, 3],
+    "split_on_intent_change": true,
+    "preserve_dialogue_context": true,
+    "comment": "Min 500 tokens for efficient chunking/embedding"
+  },
+
+  "validation": {
+    "enabled": true,
+    "check_metadata_completeness": true,
+    "check_doc_size": true,
+    "check_topic_consistency": true,
+    "generate_sample_report": true,
+    "sample_report_path": "data/evaluation/knowledge_extraction_full/quality_report.md"
+  }
+}

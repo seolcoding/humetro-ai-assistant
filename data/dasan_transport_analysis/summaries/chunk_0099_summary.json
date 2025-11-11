@@ -1,9 +1,0 @@
-{
-  "raw_response": "다산콜센터 대중교통 상담 데이터를 분석하여 구조화된 요약을 제공하겠습니다.\n\n```json\n{\n  \"question_types\": [\n    {\n      \"type\": \"경로 및 노선 문의\",\n      \"frequency\": \"매우 높음\",\n      \"examples\": [\n        \"역삼역에서 홍대가는 버스노선\",\n        \"수원역에서 에버랜드까지 경로\",\n        \"광명에서 대전가는 기차\"\n      ]\n    },\n    {\n      \"type\": \"요금 문의\",\n      \"frequency\": \"높음\",\n      \"examples\": [\n        \"버스 요금은 얼마인가요?\",\n        \"수원역에서 에버랜드까지 요금\",\n        \"기차 요금은 어떻게 되죠?\"\n      ]\n    },\n    {\n      \"type\": \"시간표 및 운행 정보\",\n      \"frequency\": \"높음\",\n      \"examples\": [\n        \"막차 시간을 알수 있을까요?\",\n        \"몇시 기차로 안내해드릴까요?\",\n        \"전철은 자주 오나요?\"\n      ]\n    },\n    {\n      \"type\": \"카드 발급 및 우대 제도\",\n      \"frequency\": \"중간\",\n      \"examples\": [\n        \"경로우대 교통카드 발급\",\n        \"단순무임카드는 어디서 발급?\",\n        \"65세 이상 우대 대상\"\n      ]\n    },\n    {\n      \"type\": \"정기권 및 할인 제도\",\n      \"frequency\": \"중간\",\n      \"examples\": [\n        \"정기권을 사고싶은데 가능한가요?\",\n        \"할인될까요?\",\n        \"카드결제와 현금결제 차이\"\n      ]\n    },\n    {\n      \"type\": \"이용 규정 및 정책\",\n      \"frequency\": \"낮음\",\n      \"examples\": ",
-  "parse_error": true,
-  "error_detail": "Extra data: line 179 column 1 (char 4572)",
-  "chunk_id": "chunk_0099",
-  "processing_time": 70.83488512039185,
-  "processed_at": "2025-11-05T11:33:28.128419",
-  "dialogue_count": 5
-}

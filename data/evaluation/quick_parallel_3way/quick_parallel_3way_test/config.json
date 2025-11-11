@@ -99,7 +99,8 @@
     "parallel": {
       "enabled": true,
       "max_concurrent": 3,
-      "comment": "Parallel evaluation: 3 models evaluated concurrently per RAG method"
+      "request_delay": 0.5,
+      "comment": "Parallel evaluation: 3 models evaluated concurrently per RAG method. request_delay=0.5s to avoid rate limits"
     },
     "checkpoint_interval": 3,
     "verbose": true,

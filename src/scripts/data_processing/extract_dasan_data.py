@@ -10,8 +10,8 @@ import shutil
 
 # Paths
 BASE_DIR = Path("/Users/sdh/Dev/02_production_projects/humetro-ai-assistant")
-SOURCE_DIR = BASE_DIR / "data/dasan_call/raw/022.민원(콜센터) 질의-응답 데이터/01.데이터"
-EXTRACT_DIR = BASE_DIR / "data/dasan_call/extracted"
+SOURCE_DIR = BASE_DIR / "data/AI_HUB_DASAN_QA/00_raw/022.민원(콜센터) 질의-응답 데이터/01.데이터"
+EXTRACT_DIR = BASE_DIR / "data/AI_HUB_DASAN_QA/01_extracted"
 
 # Create extraction directories
 (EXTRACT_DIR / "training/labeled").mkdir(parents=True, exist_ok=True)
@@ -129,10 +129,10 @@ def cleanup_non_dasan_data():
 
     # Directories to check
     base_dirs = [
-        BASE_DIR / "data/dasan_call/raw/022.민원(콜센터) 질의-응답 데이터/01.데이터/1.Training",
-        BASE_DIR / "data/dasan_call/raw/022.민원(콜센터) 질의-응답 데이터/01.데이터/2.Validation",
-        BASE_DIR / "data/dasan_call/raw/1.Training",
-        BASE_DIR / "data/dasan_call/raw/2.Validation"
+        BASE_DIR / "data/AI_HUB_DASAN_QA/00_raw/022.민원(콜센터) 질의-응답 데이터/01.데이터/1.Training",
+        BASE_DIR / "data/AI_HUB_DASAN_QA/00_raw/022.민원(콜센터) 질의-응답 데이터/01.데이터/2.Validation",
+        BASE_DIR / "data/AI_HUB_DASAN_QA/00_raw/1.Training",
+        BASE_DIR / "data/AI_HUB_DASAN_QA/00_raw/2.Validation"
     ]
 
     removed_count = 0

@@ -23,7 +23,7 @@
 ## 📊 POC Scope
 
 ### 대상 데이터
-- **출처**: `data/dasan_call/extracted/training/labeled/`
+- **출처**: `data/AI_HUB_DASAN_QA/01_extracted/training/labeled/`
 - **총 규모**: 8,176개 대화 (162,394개 턴)
 - **POC 규모**: 각 카테고리에서 50개 대화씩 샘플링 (총 200개 대화)
   - 대중교통 안내: 50개 (총 2,030개 중)
@@ -50,7 +50,7 @@
 
 ### File Organization
 ```
-data/dasan_call/extracted/training/labeled/
+data/AI_HUB_DASAN_QA/01_extracted/training/labeled/
 ├── 민원(콜센터) 질의응답_다산콜센터_코로나19 관련 상담_Training.json (32,475 records)
 ├── 민원(콜센터) 질의응답_다산콜센터_대중교통 안내_Training.json (38,966 records)
 ├── 민원(콜센터) 질의응답_다산콜센터_생활하수도 관련 문의_Training.json (40,617 records)
@@ -412,7 +412,7 @@ creation_date: 2025-11-07
   },
 
   "data": {
-    "source_dir": "data/dasan_call/extracted/training/labeled",
+    "source_dir": "data/AI_HUB_DASAN_QA/01_extracted/training/labeled",
     "categories": [
       {
         "name": "대중교통_안내",
@@ -605,7 +605,7 @@ import yaml  # Front matter 파싱
 - **KG Pipeline**: `src/kg_agent/kg_construction.py` (Entity/Relationship 추출)
 
 ### 관련 문서
-- **데이터 분석**: `notebooks/dasan_call_center_eda.ipynb`
+- **데이터 분석**: `notebooks/AI_HUB_DASAN_QA_center_eda.ipynb`
 - **평가 결과**: `data/evaluation/3way_rag_comparison/`
 - **KG Cypher Fix**: `docs/CHECKPOINT_kg_cypher_fix.md`
 
