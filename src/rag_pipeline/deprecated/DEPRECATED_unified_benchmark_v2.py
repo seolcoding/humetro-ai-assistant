@@ -1,11 +1,38 @@
 #!/usr/bin/env python3
 """
+⚠️ DEPRECATED - DO NOT USE ⚠️
+================================
+
+이 파일은 더 이상 사용되지 않습니다.
+
+Deprecated Date: 2025-11-11
+Reason: 실제 Q&A 데이터 사용으로 질문 생성 불필요
+
+대체 사용:
+  python src/rag_pipeline/unified_benchmark_v4_real_qa.py
+
+자세한 내용: src/rag_pipeline/deprecated/README.md
+
+================================
+
 통합 RAG 벤치마크 시스템 v2 - 체크포인트 지원
 - 실험마다 고유 ID 부여
 - 중단 시 재시작 가능
 - 체크포인트 자동 저장
 """
 
+import sys
+import warnings
+
+warnings.warn(
+    "⚠️ DEPRECATED: This file is no longer maintained. "
+    "Use 'unified_benchmark_v4_real_qa.py' instead. "
+    "See deprecated/README.md for migration guide.",
+    DeprecationWarning,
+    stacklevel=2
+)
+
+import os
 import sys
 import json
 import argparse
@@ -26,6 +53,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Get Ollama base URL from environment variable
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://100.95.220.92:11434")
+
 # Model configurations (config/models.yaml 기준)
 MODEL_CONFIGS = {
     # OpenAI models
@@ -42,29 +72,29 @@ MODEL_CONFIGS = {
         "provider": "openai"
     },
 
-    # Ollama models (논문용)
+    # Ollama models (논문용) - using OLLAMA_BASE_URL from env
     "ollama/exaone3.5:7.8b": {
         "name": "EXAONE-3.5-7.8B",
         "model": "ollama/exaone3.5:7.8b",
-        "api_base": "http://100.95.220.92:11434",
+        "api_base": OLLAMA_BASE_URL,
         "provider": "ollama"
     },
     "ollama/qwen3:8b": {
         "name": "Qwen3-8B",
         "model": "ollama/qwen3:8b",
-        "api_base": "http://100.95.220.92:11434",
+        "api_base": OLLAMA_BASE_URL,
         "provider": "ollama"
     },
     "ollama/gemma3:12b": {
         "name": "Gemma3-12B",
         "model": "ollama/gemma3:12b",
-        "api_base": "http://100.95.220.92:11434",
+        "api_base": OLLAMA_BASE_URL,
         "provider": "ollama"
     },
     "ollama/gpt-oss:20b": {
         "name": "GPT-OSS-20B",
         "model": "ollama/gpt-oss:20b",
-        "api_base": "http://100.95.220.92:11434",
+        "api_base": OLLAMA_BASE_URL,
         "provider": "ollama"
     }
 }

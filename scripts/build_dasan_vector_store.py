@@ -177,7 +177,9 @@ def build_vector_store(
     embeddings = OpenAIEmbeddings(model=model)
 
     # Build vector store (with batching for large datasets)
-    batch_size = 1000
+    # OpenAI API limit: 300k tokens/request
+    # Safe batch size: ~200 chunks (avg 1000 tokens/chunk = 200k tokens/batch)
+    batch_size = 200
     vector_store = None
 
     for i in range(0, len(chunks), batch_size):

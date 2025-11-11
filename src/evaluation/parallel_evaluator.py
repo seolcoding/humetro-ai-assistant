@@ -19,6 +19,7 @@ Performance:
 
 import asyncio
 import logging
+import os
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from datetime import datetime
@@ -26,6 +27,7 @@ import pandas as pd
 from datasets import Dataset
 from tqdm import tqdm
 import nest_asyncio
+from dotenv import load_dotenv
 
 # RAGAS imports
 from ragas import evaluate
@@ -37,8 +39,19 @@ from ragas.metrics import (
 from ragas.llms import LangchainLLMWrapper
 from langchain_openai import ChatOpenAI
 
+# Vertex AI support
+try:
+    from langchain_google_vertexai import ChatVertexAI
+    VERTEX_AI_AVAILABLE = True
+except ImportError:
+    VERTEX_AI_AVAILABLE = False
+    logger.warning("langchain-google-vertexai not installed - Vertex AI models unavailable")
+
 # Apply nest_asyncio for Jupyter compatibility
 nest_asyncio.apply()
+
+# Load environment variables
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
@@ -55,13 +68,41 @@ class AsyncEvaluator:
         """
         Args:
             judge_model: 평가에 사용할 LLM (default: gpt-5)
+                        Supports: gpt-5, gpt-4o, vertex_ai/gemini-2.5-pro, etc.
         """
         self.judge_model = judge_model
+
+        # Setup Vertex AI environment if using vertex_ai models
+        if judge_model.startswith("vertex_ai/"):
+            self._setup_vertex_ai()
+
         self.metrics = [
             faithfulness,
             answer_relevancy,
             answer_correctness,
         ]
+
+    def _setup_vertex_ai(self):
+        """Setup Vertex AI environment variables for LiteLLM"""
+        # Map VERTEXAI_* to VERTEX_* for LiteLLM compatibility
+        if os.getenv("VERTEXAI_PROJECT"):
+            os.environ["VERTEX_PROJECT"] = os.getenv("VERTEXAI_PROJECT")
+            logger.info(f"  🔧 Vertex AI Project: {os.getenv('VERTEX_PROJECT')}")
+
+        # Default location to us-central1 (required for Gemini 2.5 models)
+        if not os.getenv("VERTEX_LOCATION"):
+            os.environ["VERTEX_LOCATION"] = "us-central1"
+            logger.info(f"  🌏 Vertex AI Location: {os.getenv('VERTEX_LOCATION')}")
+
+        # Service account credentials
+        service_account = os.getenv("VERTEXAI_PROJECT_SERVICE_ACCOUNT", "service_account.json")
+        if Path(service_account).exists():
+            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account
+            logger.info(f"  🔑 Service Account: {service_account}")
+        else:
+            logger.warning(f"  ⚠️ Service account not found: {service_account}")
+
+        logger.info(f"  ✅ Vertex AI configured for judge model: {self.judge_model}")
 
     async def evaluate_single_model(
         self,
@@ -123,8 +164,28 @@ class AsyncEvaluator:
         Note: RAGAS의 evaluate()는 내부적으로 async를 사용하지만
         호출 인터페이스는 동기이므로 thread pool에서 실행
         """
-        # Configure judge LLM
-        judge_llm = ChatOpenAI(model=self.judge_model)
+        # Configure judge LLM (support both OpenAI and Vertex AI)
+        if self.judge_model.startswith("vertex_ai/"):
+            if not VERTEX_AI_AVAILABLE:
+                raise ImportError(
+                    "langchain-google-vertexai required for Vertex AI models.\n"
+                    "Install: uv add langchain-google-vertexai"
+                )
+
+            # Extract model name (vertex_ai/gemini-2.5-pro → gemini-2.5-pro)
+            model_name_only = self.judge_model.replace("vertex_ai/", "")
+
+            judge_llm = ChatVertexAI(
+                model_name=model_name_only,
+                project=os.getenv("VERTEX_PROJECT"),
+                location=os.getenv("VERTEX_LOCATION", "asia-northeast3"),
+                temperature=1.0  # Gemini 2.5 Pro default
+            )
+            logger.info(f"  🤖 Judge: Vertex AI {model_name_only}")
+        else:
+            # OpenAI or other ChatOpenAI-compatible models
+            judge_llm = ChatOpenAI(model=self.judge_model)
+            logger.info(f"  🤖 Judge: {self.judge_model}")
 
         # Run evaluation
         result = evaluate(
@@ -336,16 +397,18 @@ def run_parallel_evaluation(
     model_datasets: Dict[str, Dict[str, List[str]]],
     judge_model: str = "gpt-5",
     max_concurrent: int = 5,
+    sequential: bool = False,
     output_dir: Optional[Path] = None,
     experiment_id: Optional[int] = None
 ) -> Dict[str, Any]:
     """
-    병렬 평가 실행 (메인 인터페이스)
+    병렬/순차 평가 실행 (메인 인터페이스)
 
     Args:
         model_datasets: 모델별 답변 데이터셋
         judge_model: 평가 모델
-        max_concurrent: 최대 동시 평가 수
+        max_concurrent: 최대 동시 평가 수 (sequential=False일 때만 사용)
+        sequential: True이면 순차 평가, False이면 병렬 평가
         output_dir: 결과 저장 디렉토리
         experiment_id: 실험 ID
 
@@ -362,9 +425,15 @@ def run_parallel_evaluation(
         ...     },
         ...     "EXAONE-3.5": {...}
         ... }
-        >>> results = run_parallel_evaluation(model_datasets)
+        >>> results = run_parallel_evaluation(model_datasets, sequential=True)
     """
     # Create manager
+    if sequential:
+        logger.info("🔄 순차 평가 모드 (API 안정성 우선)")
+        max_concurrent = 1  # Force sequential
+    else:
+        logger.info(f"⚡ 병렬 평가 모드 (동시 실행: {max_concurrent})")
+
     manager = ParallelEvaluationManager(
         judge_model=judge_model,
         max_concurrent=max_concurrent

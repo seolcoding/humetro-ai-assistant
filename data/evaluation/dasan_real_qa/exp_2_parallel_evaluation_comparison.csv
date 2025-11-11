@@ -1,0 +1,3 @@
+Model,Faithfulness,Answer Relevancy,Answer Correctness,Average
+EXAONE-3.5-7.8B,0.8564052359342215,0.9345328835617039,0.5931227769554055,0.7946869654837769
+GPT-4o-mini,,,,

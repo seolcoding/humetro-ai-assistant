@@ -1,5 +1,32 @@
 #!/usr/bin/env python3
 """
+⚠️ DEPRECATED - DO NOT USE ⚠️
+================================
+
+이 파일은 더 이상 사용되지 않습니다.
+
+Deprecated Date: 2025-11-11
+Reason: 실제 Q&A 데이터 사용으로 질문 생성 불필요
+
+대체 사용:
+  python src/rag_pipeline/unified_benchmark_v4_real_qa.py
+  from src.data_loader.dasan_qa_sampler import DasanQASampler
+
+자세한 내용: src/rag_pipeline/deprecated/README.md
+
+================================
+"""
+
+import warnings
+warnings.warn(
+    "⚠️ DEPRECATED: This file is no longer maintained. "
+    "Use 'unified_benchmark_v4_real_qa.py' or 'DasanQASampler' instead. "
+    "See deprecated/README.md for migration guide.",
+    DeprecationWarning,
+    stacklevel=2
+)
+
+"""
 50-Question Benchmark TestSet Generation
 =========================================
 

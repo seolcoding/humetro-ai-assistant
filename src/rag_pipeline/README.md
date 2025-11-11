@@ -1,111 +1,50 @@
 # RAG Pipeline
 
-## Overview
+통합 RAG 벤치마크 시스템 - 실제 Q&A 데이터 기반 평가
 
-Multi-stage RAG (Retrieval-Augmented Generation) pipeline for Seoul traffic information Q&A system.
+## 🚀 현재 버전: v4 Real QA
 
-## Architecture
+**메인 파일**: `unified_benchmark_v4_real_qa.py`
 
-```
-Stage 1: Data Collection → Stage 2: Preprocessing → Stage 3: Embedding
-→ Stage 4: Graph Construction → Stage 5: Vector Store → Stage 6: Retrieval
-```
+### 주요 특징
 
-## Components
+✅ **실제 콜센터 Q&A 사용** - 질문 생성 불필요  
+✅ **182,719 Q&A pairs** - AI Hub 다산콜센터 데이터  
+✅ **효율적 샘플링** - DasanQASampler로 즉시 샘플링  
+✅ **Vertex AI 평가** - Gemini 2.5 Pro/Flash  
+✅ **병렬/순차 평가** - 안정성 선택 가능  
+✅ **체크포인트 지원** - 중단 후 재시작 가능
 
-### Core Stages
-- **Stage 1**: Web crawling with crawl4ai
-- **Stage 2**: Markdown preprocessing and chunking
-- **Stage 3**: OpenAI text-embedding-3-small embeddings
-- **Stage 4**: Knowledge graph construction (in development)
-- **Stage 5**: FAISS vector store management
-- **Stage 6**: LangChain-based retrieval and QA
+## 📖 사용 방법
 
-### Evaluation
-- **Generation Benchmark**: Compare LLM generation quality with fixed contexts
-- **RAGAS Integration**: Automatic evaluation with faithfulness, relevancy, correctness metrics
-- **Testset Generation**: Automated question generation for benchmarking
-
-## Recent Updates (2025-11-05)
-
-### Fixed Critical Retriever Bug
-- **Issue**: Benchmark was running without actual retrieval (empty contexts)
-- **Root Cause**: Incorrect `RetrievalStage` instantiation with wrong parameters
-- **Solution**: Implemented proper LangChain retriever pattern
-- **Impact**: Benchmark results before this date may be invalid
-
-### Correct Usage Pattern
-
-```python
-# ✅ CORRECT: LangChain retriever pattern
-from stages.stage_05_vector_store import VectorStoreStage
-
-# 1. Initialize vector store
-vector_store = VectorStoreStage(model="text-embedding-3-small")
-
-# 2. Load FAISS index using public API
-vector_store.load_vector_store("data/vector_store/seoul_traffic")
-
-# 3. Create LangChain retriever
-retriever = vector_store.as_retriever(
-    search_type="similarity",
-    search_kwargs={"k": 4}
-)
-
-# 4. Use retriever.invoke() for document retrieval
-documents = retriever.invoke("서울시 대중교통 요금은?")
-```
-
-## Directory Structure
-
-```
-src/rag_pipeline/
-├── stages/                  # Pipeline stages 1-6
-│   ├── stage_01_crawl.py
-│   ├── stage_02_preprocess.py
-│   ├── stage_03_embedding.py
-│   ├── stage_04_graph.py
-│   ├── stage_05_vector_store.py
-│   └── stage_06_retrieval.py
-├── generation_benchmark.py  # Fixed benchmark module
-├── testset_generator.py     # RAGAS testset generation
-├── question_classifier.py   # Question complexity analysis
-├── DEPRECATED.md            # Deprecated patterns documentation
-└── README.md               # This file
-
-tests/rag_pipeline/         # All tests moved here
-├── test_retriever_initialization.py
-├── test_benchmark_retrieval.py
-└── test_ragas_*.py
-```
-
-## Testing
-
-Run tests to verify retriever functionality:
+### 기본 실행
 
 ```bash
-# Test retriever initialization
-uv run python tests/rag_pipeline/test_retriever_initialization.py
+# 50개 질문, 논문용 5개 모델 평가
+python src/rag_pipeline/unified_benchmark_v4_real_qa.py \
+  --num-questions 50 \
+  --models thesis \
+  --judge-model vertex_ai/gemini-2.5-pro
 
-# Test benchmark with retrieval
-uv run python tests/rag_pipeline/test_benchmark_retrieval.py
+# 빠른 테스트 (10개 질문, 1개 모델)
+python src/rag_pipeline/unified_benchmark_v4_real_qa.py \
+  --num-questions 10 \
+  --models gpt-4o-mini \
+  --judge-model vertex_ai/gemini-2.5-flash
 ```
 
-## Vector Store Info
+## ⚠️ Deprecated Components
 
-- **Location**: `data/vector_store/seoul_traffic/`
-- **Embeddings**: OpenAI text-embedding-3-small
-- **Vectors**: 13,176 document chunks
-- **Index Type**: FAISS Flat index
+질문 생성 시스템은 더 이상 사용하지 않습니다.
 
-## Dependencies
+**Deprecated 디렉토리**: `src/rag_pipeline/deprecated/`
 
-- LangChain for RAG orchestration
-- FAISS for vector search
-- RAGAS for evaluation metrics
-- LiteLLM for multi-model support
-- OpenAI API for embeddings and generation
+**이유**: 실제 콜센터 Q&A 데이터 사용으로 RAGAS 질문 생성 불필요
 
-## Known Issues
+**자세한 내용**: [deprecated/README.md](deprecated/README.md)
 
-See `DEPRECATED.md` for anti-patterns to avoid and historical bugs.
+---
+
+**Last Updated**: 2025-11-11  
+**Version**: v4 Real QA  
+**Status**: ✅ Production Ready

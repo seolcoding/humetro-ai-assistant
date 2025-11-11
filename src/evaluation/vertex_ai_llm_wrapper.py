@@ -1,15 +1,27 @@
 """
 Vertex AI LLM Wrapper for RAGAS Evaluation
 Integrates Google Cloud Vertex AI with LiteLLM and RAGAS framework
+
+Features:
+- Concurrency limiter to prevent grpc resource exhaustion
+- Custom is_finished_parser for Gemini models
+- Support for Gemini 2.5 Pro/Flash models
 """
 
 import os
+import asyncio
 from typing import Optional, Dict, Any, List
 import litellm
 from langchain_google_vertexai import ChatVertexAI, VertexAIEmbeddings
+from langchain_core.language_models.chat_models import BaseChatModel
+from langchain_core.messages import BaseMessage
+from langchain_core.runnables import RunnableConfig
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings import LangchainEmbeddingsWrapper
-from langchain_core.outputs import LLMResult
+from langchain_core.outputs import LLMResult, ChatResult
+
+# Import concurrency limiter
+from src.evaluation.concurrency_limiter import get_limiter
 
 
 class VertexAILLMConfig:
@@ -30,14 +42,27 @@ class VertexAILLMConfig:
         Args:
             model_name: Vertex AI model name (e.g., "gemini-2.5-flash", "gemini-1.5-pro")
             project_id: GCP project ID (defaults to VERTEXAI_PROJECT env var)
-            location: GCP location (defaults to VERTEXAI_LOCATION env var or "us-central1")
+            location: GCP location (defaults to "us-central1" for Gemini 2.5 availability)
+                - us-central1: Recommended for Gemini 2.5 Pro/Flash
+                - asia-northeast3: Seoul (older models only)
             embedding_model: Embedding model name (e.g., "text-embedding-004")
             temperature: Model temperature (0.0 for deterministic)
             max_tokens: Maximum tokens for generation
         """
         self.model_name = model_name
         self.project_id = project_id or os.getenv("VERTEXAI_PROJECT")
-        self.location = location or os.getenv("VERTEXAI_LOCATION", "us-central1")
+
+        # Force us-central1 for Gemini 2.5 models (not available in all regions)
+        if "gemini-2.5" in model_name.lower():
+            self.location = "us-central1"
+            if location != "us-central1":
+                import logging
+                logging.warning(
+                    f"⚠️ Gemini 2.5 models require us-central1 location. "
+                    f"Overriding {location} → us-central1"
+                )
+        else:
+            self.location = location or os.getenv("VERTEXAI_LOCATION", "us-central1")
         self.embedding_model = embedding_model
         self.temperature = temperature
         self.max_tokens = max_tokens
@@ -58,21 +83,53 @@ class VertexAILLMConfig:
             os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
 
 
+class ConcurrencyLimitedLLMWrapper(LangchainLLMWrapper):
+    """
+    LangchainLLMWrapper with concurrency limiting for async calls
+
+    Prevents grpc BlockingIOError by limiting concurrent API requests
+    """
+
+    def __init__(self, langchain_llm, max_concurrent: int = 3, **kwargs):
+        """
+        Args:
+            langchain_llm: Underlying LangChain LLM instance
+            max_concurrent: Maximum concurrent requests (default: 3)
+            **kwargs: Other arguments for LangchainLLMWrapper
+        """
+        super().__init__(langchain_llm, **kwargs)
+        self.limiter = get_limiter(max_concurrent)
+
+    async def agenerate(self, prompts, n: int = 1, temperature: Optional[float] = None, stop: Optional[List[str]] = None, callbacks=None):
+        """Async generate with concurrency limiting"""
+        async with self.limiter:
+            return await super().agenerate(prompts, n, temperature, stop, callbacks)
+
+    async def generate_text(self, prompt, n: int = 1, temperature: Optional[float] = None, stop: Optional[List[str]] = None, callbacks=None):
+        """Async generate text with concurrency limiting"""
+        async with self.limiter:
+            return await super().generate_text(prompt, n, temperature, stop, callbacks)
+
+
 def create_vertex_ai_evaluator_llm(
-    config: Optional[VertexAILLMConfig] = None
+    config: Optional[VertexAILLMConfig] = None,
+    max_concurrent_requests: int = 3,
 ) -> LangchainLLMWrapper:
     """
-    Create Vertex AI LLM wrapper for RAGAS evaluation
+    Create Vertex AI LLM wrapper for RAGAS evaluation with concurrency control
 
     Args:
         config: Vertex AI configuration (defaults to VertexAILLMConfig())
+        max_concurrent_requests: Maximum concurrent API calls (default: 3)
+            - Recommended: 3-5 for Vertex AI
+            - Higher values may cause grpc resource exhaustion
 
     Returns:
         LangchainLLMWrapper instance for RAGAS metrics
 
     Example:
         >>> from ragas.metrics import Faithfulness
-        >>> evaluator_llm = create_vertex_ai_evaluator_llm()
+        >>> evaluator_llm = create_vertex_ai_evaluator_llm(max_concurrent_requests=3)
         >>> faithfulness = Faithfulness(llm=evaluator_llm)
     """
     if config is None:
@@ -122,9 +179,10 @@ def create_vertex_ai_evaluator_llm(
 
         return all(is_finished_list)
 
-    # Wrap with custom parser for Gemini
-    return LangchainLLMWrapper(
+    # Wrap with concurrency-limited wrapper
+    return ConcurrencyLimitedLLMWrapper(
         chat_model,
+        max_concurrent=max_concurrent_requests,
         is_finished_parser=gemini_is_finished_parser
     )
 
