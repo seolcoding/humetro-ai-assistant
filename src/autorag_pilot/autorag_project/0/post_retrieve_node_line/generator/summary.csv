@@ -1,0 +1,2 @@
+filename,module_name,module_params,execution_time,average_output_token,meteor,rouge,is_best
+0.parquet,openai_llm,"{'llm': 'gpt-4o', 'batch': 4}",0.6205187737941742,35.25,0.25004544119814154,0.4270833333333333,True

@@ -1,0 +1,38 @@
+# AutoRAG Simple RAG Pipeline Configuration (v0.2.6 compatible)
+# 목적: BM25 vs Vector 검색 비교, 기본 생성 파이프라인 테스트
+
+node_lines:
+  - node_line_name: retrieve_node_line
+    nodes:
+      # Retrieval Node - BM25 vs VectorDB 비교
+      - node_type: retrieval
+        strategy:
+          metrics: [retrieval_f1, retrieval_recall, retrieval_precision]
+        top_k: 3
+        modules:
+          - module_type: bm25
+          - module_type: vectordb
+            embedding_model: openai
+
+  - node_line_name: post_retrieve_node_line
+    nodes:
+      # 프롬프트 생성
+      - node_type: prompt_maker
+        strategy:
+          metrics:
+            - metric_name: meteor
+            - metric_name: rouge
+        modules:
+          - module_type: fstring
+            prompt: "다음은 행정 문서에서 발췌한 내용입니다. 이 내용을 참고하여 질문에 정확하게 답변해주세요.\n\n[참고 문서]\n{retrieved_contents}\n\n[질문]\n{query}\n\n[답변]"
+
+      # 답변 생성
+      - node_type: generator
+        strategy:
+          metrics:
+            - metric_name: meteor
+            - metric_name: rouge
+        modules:
+          - module_type: openai_llm
+            llm: gpt-4o
+            batch: 4

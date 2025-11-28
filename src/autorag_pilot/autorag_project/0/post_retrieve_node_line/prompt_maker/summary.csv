@@ -1,0 +1,2 @@
+filename,module_name,module_params,execution_time,average_prompt_token,is_best
+0.parquet,fstring,{'prompt': '다음은 행정 문서에서 발췌한 내용입니다. 이 내용을 참고하여 질문에 정확하게 답변해주세요.\n\n[참고 문서]\n{retrieved_contents}\n\n[질문]\n{query}\n\n[답변]'},4.8726797103881836e-05,4672.25,True

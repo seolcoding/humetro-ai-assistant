@@ -1,0 +1,4 @@
+node_line_name,node_type,best_module_filename,best_module_name,best_module_params,best_execution_time
+retrieve_node_line,retrieval,1.parquet,vectordb,"{'top_k': 3, 'embedding_model': 'openai'}",0.3058761060237884
+post_retrieve_node_line,prompt_maker,0.parquet,fstring,{'prompt': '다음은 행정 문서에서 발췌한 내용입니다. 이 내용을 참고하여 질문에 정확하게 답변해주세요.\n\n[참고 문서]\n{retrieved_contents}\n\n[질문]\n{query}\n\n[답변]'},4.872679710388184e-05
+post_retrieve_node_line,generator,0.parquet,openai_llm,"{'llm': 'gpt-4o', 'batch': 4}",0.6205187737941742
