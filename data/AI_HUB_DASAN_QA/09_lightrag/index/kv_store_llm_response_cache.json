@@ -1,0 +1,122 @@
+{
+  "hybrid:keywords:a0297d2ffe47f3674d60d748ef9c3717": {
+    "return": "{\"high_level_keywords\": [\"\\uc5ec\\uc758\\ub3c4\\uc5ed\", \"\\uc6b0\\ud68c\", \"\\uc911\\uc694\\uc815\\ubcf4\"], \"low_level_keywords\": [\"\\uc11c\\uc6b8 \\uc9c0\\ud558\\ucca0\", \"\\uad50\\ud1b5 \\uc815\\ubcf4\", \"\\uc6b0\\ud68c \\ub178\\uc120\", \"\\uc5ec\\uc758\\ub3c4\\uc5ed \\uc8fc\\ubcc0\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "여의도역 우회에 대한 중요정보는?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1762849355,
+    "update_time": 1762849355,
+    "_id": "hybrid:keywords:a0297d2ffe47f3674d60d748ef9c3717"
+  },
+  "hybrid:keywords:f1903d5d2e55ab81e57a80339064fb4f": {
+    "return": "{\"high_level_keywords\": [\"\\uc7a5\\uac70\\ub9ac \\ubc84\\uc2a4 \\ub178\\uc120 \\uac1c\\uc120\", \"\\uc2b9\\uac1d \\uc548\\uc804\", \"\\ubc84\\uc2a4 \\uc6b4\\uc804\\uae30\\uc0ac \\uadfc\\ubb34 \\ud658\\uacbd\"], \"low_level_keywords\": [\"\\uc11c\\uc6b8\", \"\\ubc84\\uc2a4 \\ub178\\uc120\", \"\\uc548\\uc804\\uc131\", \"\\uadfc\\ubb34 \\uc870\\uac74\", \"\\uc6b4\\uc804\\uae30\\uc0ac\", \"\\uc2b9\\uac1d\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "서울의 장거리 버스 노선 개선이 승객 안전과 버스 운전기사의 근무 환경을 어떻게 향상시킬 것으로 예상되나요?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1762849359,
+    "update_time": 1762849359,
+    "_id": "hybrid:keywords:f1903d5d2e55ab81e57a80339064fb4f"
+  },
+  "hybrid:keywords:b0794a17090c6fd4e3acb1bbd7590da8": {
+    "return": "{\"high_level_keywords\": [\"\\ud6c4\\ubd88 \\uae30\\ud6c4\\ub3d9\\ud589\\uce74\\ub4dc\", \"\\ud61c\\ud0dd\", \"\\uc694\\uad6c\\uc0ac\\ud56d\", \"\\uc11c\\uc6b8 \\ub300\\uc911\\uad50\\ud1b5 \\ud1b5\\ud569\"], \"low_level_keywords\": [\"\\uc8fc\\uc694 \\ud560\\uc778 \\ud61c\\ud0dd\", \"\\uad50\\ud1b5 \\uce74\\ub4dc\", \"\\ud6c4\\ubd88 \\uacb0\\uc81c\", \"\\uc11c\\uc6b8\", \"\\ub300\\uc911\\uad50\\ud1b5\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "후불 기후동행카드 사용의 혜택과 요구사항은 무엇이며, 특히 주요 할인 혜택과 관련하여 서울 대중교통 이용과 어떻게 통합되나요?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1762849362,
+    "update_time": 1762849362,
+    "_id": "hybrid:keywords:b0794a17090c6fd4e3acb1bbd7590da8"
+  },
+  "hybrid:keywords:98c991cbb87bc6891efda5e6e1986efc": {
+    "return": "{\"high_level_keywords\": [\"\\ud6c4\\ubd88 \\uae30\\ud6c4\\ub3d9\\ud589\\uce74\\ub4dc\", \"\\uc2e0\\uccad \\uae30\\uac04\", \"\\ub300\\uc911\\uad50\\ud1b5 \\uc694\\uae08 \\ubd80\\uacfc \\ubc29\\uc2dd\"], \"low_level_keywords\": [\"\\uc8fc\\uc694 \\ub0b4\\uc6a9\", \"\\uc2e0\\uccad \\uae30\\uac04\", \"\\uc694\\uae08 \\ubd80\\uacfc\", \"\\ub300\\uc911\\uad50\\ud1b5\", \"\\ud6c4\\ubd88 \\uce74\\ub4dc\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "후불 기후동행카드의 주요 내용은 무엇이며, 신청 기간과 대중교통 이용에 따른 요금 부과 방식은 어떻게 되나요?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1762849366,
+    "update_time": 1762849366,
+    "_id": "hybrid:keywords:98c991cbb87bc6891efda5e6e1986efc"
+  },
+  "hybrid:keywords:d42a17c96472e4e4d655a4347869dbde": {
+    "return": "{\"high_level_keywords\": [\"\\uc11c\\uc6b8 \\uc7a5\\uac70\\ub9ac\\ubc84\\uc2a4 \\ub178\\uc120\", \"\\uc2b9\\uac1d \\uc548\\uc804\", \"\\uc6b4\\uc804\\uae30\\uc0ac \\uadfc\\ubb34 \\ud658\\uacbd\", \"\\uac1c\\uc120\"], \"low_level_keywords\": [\"\\uc548\\uc804 \\uaddc\\uc815\", \"\\ubc84\\uc2a4 \\uc6b4\\ud589 \\uc2dc\\uc2a4\\ud15c\", \"\\uc2dc\\uc124 \\uac1c\\uc120\", \"\\uad50\\uc721 \\ud504\\ub85c\\uadf8\\ub7a8\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "서울의 장거리버스노선이 승객 안전과 운전기사 근무 환경을 개선하기 위해 어떤 개선이 이루어지고 있나요?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1762849369,
+    "update_time": 1762849369,
+    "_id": "hybrid:keywords:d42a17c96472e4e4d655a4347869dbde"
+  },
+  "hybrid:keywords:253f828cc9679f9a7817936bd6b6ca30": {
+    "return": "{\"high_level_keywords\": [\"\\ub300\\uc911\\uad50\\ud1b5\", \"\\uc11c\\uc6b8\\uad50\", \"\\uc6b0\\ud68c\\uc815\\ubcf4\", \"\\ud1b5\\uc81c \\uad6c\\uac04\"], \"low_level_keywords\": [\"\\uc0c1\\uc138 \\uc124\\uba85\", \"\\uad50\\ud1b5 \\ud1b5\\uc81c\", \"\\ub300\\uccb4 \\ub178\\uc120\", \"\\uc2b9\\uac1d \\uc548\\uc804\", \"\\uad50\\ucc28\\ub85c\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "대중교통 이용 시 서울교와 관련된 우회정보 및 통제 구간에 대한 상세 설명은 무엇인가요?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1762849372,
+    "update_time": 1762849372,
+    "_id": "hybrid:keywords:253f828cc9679f9a7817936bd6b6ca30"
+  }
+}

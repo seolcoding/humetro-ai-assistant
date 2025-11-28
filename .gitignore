@@ -220,3 +220,5 @@ Neo4j*.txt
 
 vectorstore/
 service_account.json
+
+016.행정_문서_대상_기계독해_데이터/

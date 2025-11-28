@@ -1,0 +1,6615 @@
+{
+  "임대인<SEP>임차인": {
+    "chunk_ids": [
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "임대인<SEP>임차인"
+  },
+  "배수관<SEP>하자": {
+    "chunk_ids": [
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "배수관<SEP>하자"
+  },
+  "길고양이 중성화 사업<SEP>서울시": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "길고양이 중성화 사업<SEP>서울시"
+  },
+  "손해배상<SEP>임차인": {
+    "chunk_ids": [
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "손해배상<SEP>임차인"
+  },
+  "수선의무<SEP>임대인": {
+    "chunk_ids": [
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "수선의무<SEP>임대인"
+  },
+  "TNR<SEP>길고양이 중성화 사업": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "TNR<SEP>길고양이 중성화 사업"
+  },
+  "길고양이<SEP>진공 효과": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "길고양이<SEP>진공 효과"
+  },
+  "임대인<SEP>하자": {
+    "chunk_ids": [
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "임대인<SEP>하자"
+  },
+  "길고양이<SEP>중성화 수술": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "길고양이<SEP>중성화 수술"
+  },
+  "구청<SEP>길고양이 중성화 사업": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "구청<SEP>길고양이 중성화 사업"
+  },
+  "배수관<SEP>임차인": {
+    "chunk_ids": [
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "배수관<SEP>임차인"
+  },
+  "관할 등기소<SEP>법인 등기부등본": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847492,
+    "update_time": 1762847492,
+    "_id": "관할 등기소<SEP>법인 등기부등본"
+  },
+  "손해배상<SEP>임대인": {
+    "chunk_ids": [
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0"
+    ],
+    "count": 1,
+    "create_time": 1762847493,
+    "update_time": 1762847493,
+    "_id": "손해배상<SEP>임대인"
+  },
+  "법인 등기부등본<SEP>정부24": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b",
+      "chunk-4736e8e450518f32893cf6635349861c"
+    ],
+    "count": 2,
+    "create_time": 1762847493,
+    "update_time": 1762847493,
+    "_id": "법인 등기부등본<SEP>정부24"
+  },
+  "귀 표시 방법<SEP>길고양이": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847493,
+    "update_time": 1762847493,
+    "_id": "귀 표시 방법<SEP>길고양이"
+  },
+  "긴급재난생활지원금<SEP>대구광역시": {
+    "chunk_ids": [
+      "chunk-5f84e3c36be541c9320f33f8820b3e19"
+    ],
+    "count": 1,
+    "create_time": 1762847493,
+    "update_time": 1762847493,
+    "_id": "긴급재난생활지원금<SEP>대구광역시"
+  },
+  "길고양이<SEP>신고 절차": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b"
+    ],
+    "count": 1,
+    "create_time": 1762847493,
+    "update_time": 1762847493,
+    "_id": "길고양이<SEP>신고 절차"
+  },
+  "법인 등기부등본<SEP>인터넷등기소": {
+    "chunk_ids": [
+      "chunk-3a8b30f520ca5e33de27b8414573087b",
+      "chunk-4736e8e450518f32893cf6635349861c"
+    ],
+    "count": 2,
+    "create_time": 1762847493,
+    "update_time": 1762847493,
+    "_id": "법인 등기부등본<SEP>인터넷등기소"
+  },
+  "대구광역시<SEP>시청 공식 홈페이지": {
+    "chunk_ids": [
+      "chunk-5f84e3c36be541c9320f33f8820b3e19"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "대구광역시<SEP>시청 공식 홈페이지"
+  },
+  "긴급재난생활지원금<SEP>실직자": {
+    "chunk_ids": [
+      "chunk-5f84e3c36be541c9320f33f8820b3e19"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "긴급재난생활지원금<SEP>실직자"
+  },
+  "A차 재난지원금<SEP>자영업자": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "A차 재난지원금<SEP>자영업자"
+  },
+  "A차 재난지원금<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "A차 재난지원금<SEP>소상공인"
+  },
+  "긴급고용안정지원금<SEP>특수형태 근로종사자": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "긴급고용안정지원금<SEP>특수형태 근로종사자"
+  },
+  "긴급재난생활지원금<SEP>일용직 근로자": {
+    "chunk_ids": [
+      "chunk-5f84e3c36be541c9320f33f8820b3e19"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "긴급재난생활지원금<SEP>일용직 근로자"
+  },
+  "긴급고용안정지원금<SEP>미취업 청년": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "긴급고용안정지원금<SEP>미취업 청년"
+  },
+  "50만 원에서 100만 원<SEP>긴급재난생활지원금": {
+    "chunk_ids": [
+      "chunk-5f84e3c36be541c9320f33f8820b3e19"
+    ],
+    "count": 1,
+    "create_time": 1762847494,
+    "update_time": 1762847494,
+    "_id": "50만 원에서 100만 원<SEP>긴급재난생활지원금"
+  },
+  "긴급재난생활지원금<SEP>대구광역시청": {
+    "chunk_ids": [
+      "chunk-5f84e3c36be541c9320f33f8820b3e19"
+    ],
+    "count": 1,
+    "create_time": 1762847495,
+    "update_time": 1762847495,
+    "_id": "긴급재난생활지원금<SEP>대구광역시청"
+  },
+  "등기소<SEP>법인 등기부등본": {
+    "chunk_ids": [
+      "chunk-4736e8e450518f32893cf6635349861c"
+    ],
+    "count": 1,
+    "create_time": 1762847495,
+    "update_time": 1762847495,
+    "_id": "등기소<SEP>법인 등기부등본"
+  },
+  "A차 재난지원금<SEP>저소득층": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847495,
+    "update_time": 1762847495,
+    "_id": "A차 재난지원금<SEP>저소득층"
+  },
+  "공인인증서<SEP>법인 등기부등본": {
+    "chunk_ids": [
+      "chunk-4736e8e450518f32893cf6635349861c"
+    ],
+    "count": 1,
+    "create_time": 1762847495,
+    "update_time": 1762847495,
+    "_id": "공인인증서<SEP>법인 등기부등본"
+  },
+  "5인 미만 소상공인 사업주<SEP>광진형 소상공인 고용유지지원금": {
+    "chunk_ids": [
+      "chunk-317799b4564220b78af1c973d13748bd"
+    ],
+    "count": 1,
+    "create_time": 1762847495,
+    "update_time": 1762847495,
+    "_id": "5인 미만 소상공인 사업주<SEP>광진형 소상공인 고용유지지원금"
+  },
+  "A차 재난지원금<SEP>고용취약계층": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847495,
+    "update_time": 1762847495,
+    "_id": "A차 재난지원금<SEP>고용취약계층"
+  },
+  "광진구<SEP>서울특별시": {
+    "chunk_ids": [
+      "chunk-317799b4564220b78af1c973d13748bd"
+    ],
+    "count": 1,
+    "create_time": 1762847495,
+    "update_time": 1762847495,
+    "_id": "광진구<SEP>서울특별시"
+  },
+  "무인민원발급기<SEP>법인 등기부등본": {
+    "chunk_ids": [
+      "chunk-4736e8e450518f32893cf6635349861c"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "무인민원발급기<SEP>법인 등기부등본"
+  },
+  "광진형 소상공인 고용유지지원금<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-317799b4564220b78af1c973d13748bd"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "광진형 소상공인 고용유지지원금<SEP>코로나19"
+  },
+  "5인 미만 소상공인 사업주<SEP>부가가치세과세표준증명서": {
+    "chunk_ids": [
+      "chunk-317799b4564220b78af1c973d13748bd"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "5인 미만 소상공인 사업주<SEP>부가가치세과세표준증명서"
+  },
+  "손 소독제<SEP>손 위생": {
+    "chunk_ids": [
+      "chunk-317799b4564220b78af1c973d13748bd"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "손 소독제<SEP>손 위생"
+  },
+  "A차 재난지원금<SEP>서울시 복지포털": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "A차 재난지원금<SEP>서울시 복지포털"
+  },
+  "Leak Detection<SEP>Water Meter": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "Leak Detection<SEP>Water Meter"
+  },
+  "Bathroom<SEP>Leak Detection": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "Bathroom<SEP>Leak Detection"
+  },
+  "발급 수수료<SEP>법인 등기부등본": {
+    "chunk_ids": [
+      "chunk-4736e8e450518f32893cf6635349861c"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "발급 수수료<SEP>법인 등기부등본"
+  },
+  "A차 재난지원금<SEP>각 구청 홈페이지": {
+    "chunk_ids": [
+      "chunk-edb19e6c37e773b5f29773c61b5e0241"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "A차 재난지원금<SEP>각 구청 홈페이지"
+  },
+  "Leak Repair Company<SEP>Water Bill Discount Application": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "Leak Repair Company<SEP>Water Bill Discount Application"
+  },
+  "Municipal Water Authority<SEP>Water Meter Reading": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "Municipal Water Authority<SEP>Water Meter Reading"
+  },
+  "Kitchen<SEP>Leak Detection": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847496,
+    "update_time": 1762847496,
+    "_id": "Kitchen<SEP>Leak Detection"
+  },
+  "Leakage<SEP>Water Bill": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847497,
+    "update_time": 1762847497,
+    "_id": "Leakage<SEP>Water Bill"
+  },
+  "Goshiwon<SEP>Water Bill": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847497,
+    "update_time": 1762847497,
+    "_id": "Goshiwon<SEP>Water Bill"
+  },
+  "Leakage<SEP>Water Meter": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847497,
+    "update_time": 1762847497,
+    "_id": "Leakage<SEP>Water Meter"
+  },
+  "Boiler Room<SEP>Leak Detection": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847497,
+    "update_time": 1762847497,
+    "_id": "Boiler Room<SEP>Leak Detection"
+  },
+  "Leak Detection<SEP>Leak Repair Company": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847497,
+    "update_time": 1762847497,
+    "_id": "Leak Detection<SEP>Leak Repair Company"
+  },
+  "Detection Company<SEP>Leakage": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847497,
+    "update_time": 1762847497,
+    "_id": "Detection Company<SEP>Leakage"
+  },
+  "Dasan Call Center<SEP>Water Bill": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "Dasan Call Center<SEP>Water Bill"
+  },
+  "사회적 거리두기<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "사회적 거리두기<SEP>코로나19"
+  },
+  "Leakage<SEP>Sink": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "Leakage<SEP>Sink"
+  },
+  "Leak Detection<SEP>Water Meter Reading": {
+    "chunk_ids": [
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "Leak Detection<SEP>Water Meter Reading"
+  },
+  "여행<SEP>추석": {
+    "chunk_ids": [
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "여행<SEP>추석"
+  },
+  "사회적 거리두기<SEP>여행": {
+    "chunk_ids": [
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "사회적 거리두기<SEP>여행"
+  },
+  "Boiler Room<SEP>Leakage": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "Boiler Room<SEP>Leakage"
+  },
+  "A차 재난지원금<SEP>다산콜센터": {
+    "chunk_ids": [
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "A차 재난지원금<SEP>다산콜센터"
+  },
+  "기준중위소득<SEP>청년저축계좌": {
+    "chunk_ids": [
+      "chunk-0c32a8037dd59758257a2dfc062def44"
+    ],
+    "count": 1,
+    "create_time": 1762847498,
+    "update_time": 1762847498,
+    "_id": "기준중위소득<SEP>청년저축계좌"
+  },
+  "청년저축계좌<SEP>행정복지센터": {
+    "chunk_ids": [
+      "chunk-0c32a8037dd59758257a2dfc062def44"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "청년저축계좌<SEP>행정복지센터"
+  },
+  "Building Inspection<SEP>Leakage": {
+    "chunk_ids": [
+      "chunk-245bda255670ccd48c09a947ca704979"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "Building Inspection<SEP>Leakage"
+  },
+  "12월<SEP>A차 재난지원금": {
+    "chunk_ids": [
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "12월<SEP>A차 재난지원금"
+  },
+  "방역 지침<SEP>사회적 거리두기": {
+    "chunk_ids": [
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "방역 지침<SEP>사회적 거리두기"
+  },
+  "소득인정액<SEP>행정복지센터": {
+    "chunk_ids": [
+      "chunk-0c32a8037dd59758257a2dfc062def44"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "소득인정액<SEP>행정복지센터"
+  },
+  "1,080만원<SEP>청년저축계좌": {
+    "chunk_ids": [
+      "chunk-0c32a8037dd59758257a2dfc062def44"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "1,080만원<SEP>청년저축계좌"
+  },
+  "Emergency Loan<SEP>Low-Credit Individual": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "Emergency Loan<SEP>Low-Credit Individual"
+  },
+  "사회적 거리두기<SEP>이동 자제": {
+    "chunk_ids": [
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "사회적 거리두기<SEP>이동 자제"
+  },
+  "Small Business<SEP>Youth-Owned Business": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "Small Business<SEP>Youth-Owned Business"
+  },
+  "2020년<SEP>청년저축계좌": {
+    "chunk_ids": [
+      "chunk-0c32a8037dd59758257a2dfc062def44"
+    ],
+    "count": 1,
+    "create_time": 1762847499,
+    "update_time": 1762847499,
+    "_id": "2020년<SEP>청년저축계좌"
+  },
+  "Low-Credit Individual<SEP>NCB Personal Credit Assessment": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "Low-Credit Individual<SEP>NCB Personal Credit Assessment"
+  },
+  "Disabled-Owned Business<SEP>Small Business": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "Disabled-Owned Business<SEP>Small Business"
+  },
+  "District Office<SEP>Stray Cat Neutering Program": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "District Office<SEP>Stray Cat Neutering Program"
+  },
+  "소득인정액<SEP>청년저축계좌": {
+    "chunk_ids": [
+      "chunk-0c32a8037dd59758257a2dfc062def44"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "소득인정액<SEP>청년저축계좌"
+  },
+  "Low-Credit Individual<SEP>Seoul City 120 Dasan Call Center": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "Low-Credit Individual<SEP>Seoul City 120 Dasan Call Center"
+  },
+  "Stray Cat Neutering Program<SEP>TNR": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "Stray Cat Neutering Program<SEP>TNR"
+  },
+  "Emergency Loan<SEP>Small Business": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "Emergency Loan<SEP>Small Business"
+  },
+  "Seoul<SEP>Stray Cat Neutering Program": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847500,
+    "update_time": 1762847500,
+    "_id": "Seoul<SEP>Stray Cat Neutering Program"
+  },
+  "Small Business<SEP>Women-Owned Business": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847501,
+    "update_time": 1762847501,
+    "_id": "Small Business<SEP>Women-Owned Business"
+  },
+  "Emergency Loan<SEP>Seoul": {
+    "chunk_ids": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c"
+    ],
+    "count": 1,
+    "create_time": 1762847501,
+    "update_time": 1762847501,
+    "_id": "Emergency Loan<SEP>Seoul"
+  },
+  "구청<SEP>서산시": {
+    "chunk_ids": [
+      "chunk-a3784934e9c1843ee3a5dab7333fbeb0"
+    ],
+    "count": 1,
+    "create_time": 1762847554,
+    "update_time": 1762847554,
+    "_id": "구청<SEP>서산시"
+  },
+  "긴급복지 생계지원금<SEP>행정복지센터": {
+    "chunk_ids": [
+      "chunk-a3784934e9c1843ee3a5dab7333fbeb0"
+    ],
+    "count": 1,
+    "create_time": 1762847554,
+    "update_time": 1762847554,
+    "_id": "긴급복지 생계지원금<SEP>행정복지센터"
+  },
+  "Indoor Water Leakage<SEP>Water Supply Office": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847554,
+    "update_time": 1762847554,
+    "_id": "Indoor Water Leakage<SEP>Water Supply Office"
+  },
+  "긴급복지 생계지원금<SEP>긴급복지 지원제도": {
+    "chunk_ids": [
+      "chunk-a3784934e9c1843ee3a5dab7333fbeb0"
+    ],
+    "count": 1,
+    "create_time": 1762847554,
+    "update_time": 1762847554,
+    "_id": "긴급복지 생계지원금<SEP>긴급복지 지원제도"
+  },
+  "Aging Pipes<SEP>Indoor Water Leakage": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847554,
+    "update_time": 1762847554,
+    "_id": "Aging Pipes<SEP>Indoor Water Leakage"
+  },
+  "서산시<SEP>행정복지센터": {
+    "chunk_ids": [
+      "chunk-a3784934e9c1843ee3a5dab7333fbeb0"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "서산시<SEP>행정복지센터"
+  },
+  "Expert Diagnosis<SEP>Indoor Water Leakage": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "Expert Diagnosis<SEP>Indoor Water Leakage"
+  },
+  "Passenger<SEP>Pet Carrier": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "Passenger<SEP>Pet Carrier"
+  },
+  "구청<SEP>긴급복지 생계지원금": {
+    "chunk_ids": [
+      "chunk-a3784934e9c1843ee3a5dab7333fbeb0"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "구청<SEP>긴급복지 생계지원금"
+  },
+  "서산시<SEP>시청": {
+    "chunk_ids": [
+      "chunk-a3784934e9c1843ee3a5dab7333fbeb0"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "서산시<SEP>시청"
+  },
+  "Indoor Water Leakage<SEP>Specialized Repair Company": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "Indoor Water Leakage<SEP>Specialized Repair Company"
+  },
+  "서울시<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "서울시<SEP>소상공인"
+  },
+  "Dog<SEP>Passenger": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847555,
+    "update_time": 1762847555,
+    "_id": "Dog<SEP>Passenger"
+  },
+  "소상공인<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "소상공인<SEP>코로나19"
+  },
+  "중소기업육성기금<SEP>코로나19 피해기업 긴급자금 지원": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "중소기업육성기금<SEP>코로나19 피해기업 긴급자금 지원"
+  },
+  "Indoor Water Leakage<SEP>Lower Unit": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "Indoor Water Leakage<SEP>Lower Unit"
+  },
+  "Cat<SEP>Passenger": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "Cat<SEP>Passenger"
+  },
+  "신한은행<SEP>코로나19 피해기업 긴급자금 지원": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "신한은행<SEP>코로나19 피해기업 긴급자금 지원"
+  },
+  "Leak<SEP>Water Bill": {
+    "chunk_ids": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "Leak<SEP>Water Bill"
+  },
+  "Bird<SEP>Passenger": {
+    "chunk_ids": [
+      "chunk-294ae62e22a81ccd262ff4e26e729b73"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "Bird<SEP>Passenger"
+  },
+  "우리은행<SEP>코로나19 피해기업 긴급자금 지원": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "우리은행<SEP>코로나19 피해기업 긴급자금 지원"
+  },
+  "Leak Detection<SEP>Waterworks Office": {
+    "chunk_ids": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1"
+    ],
+    "count": 1,
+    "create_time": 1762847556,
+    "update_time": 1762847556,
+    "_id": "Leak Detection<SEP>Waterworks Office"
+  },
+  "Indoor Leak<SEP>Water Bill": {
+    "chunk_ids": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "Indoor Leak<SEP>Water Bill"
+  },
+  "Application for Bill Reduction<SEP>Leak Reduction": {
+    "chunk_ids": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "Application for Bill Reduction<SEP>Leak Reduction"
+  },
+  "Dasan Call Center<SEP>Waterworks Office": {
+    "chunk_ids": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "Dasan Call Center<SEP>Waterworks Office"
+  },
+  "서울신용보증재단<SEP>코로나19 피해기업 긴급자금 지원": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "서울신용보증재단<SEP>코로나19 피해기업 긴급자금 지원"
+  },
+  "Excessive Charges<SEP>Overcharged Water Bill": {
+    "chunk_ids": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "Excessive Charges<SEP>Overcharged Water Bill"
+  },
+  "2차 재난지원금<SEP>질병관리청": {
+    "chunk_ids": [
+      "chunk-f9d2bb0a7a9356cea2eea34580304805"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "2차 재난지원금<SEP>질병관리청"
+  },
+  "서울형 골목상권119 긴급자금 지원<SEP>코로나19 피해기업 긴급자금 지원": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "서울형 골목상권119 긴급자금 지원<SEP>코로나19 피해기업 긴급자금 지원"
+  },
+  "Water Bill<SEP>Water Usage": {
+    "chunk_ids": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "Water Bill<SEP>Water Usage"
+  },
+  "1339<SEP>질병관리청": {
+    "chunk_ids": [
+      "chunk-f9d2bb0a7a9356cea2eea34580304805"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "1339<SEP>질병관리청"
+  },
+  "관련기관_안내<SEP>복지로": {
+    "chunk_ids": [
+      "chunk-f9d2bb0a7a9356cea2eea34580304805"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "관련기관_안내<SEP>복지로"
+  },
+  "자가격리<SEP>휴업수당": {
+    "chunk_ids": [
+      "chunk-85b4a19992d0ed0259cc8a47883f3176"
+    ],
+    "count": 1,
+    "create_time": 1762847557,
+    "update_time": 1762847557,
+    "_id": "자가격리<SEP>휴업수당"
+  },
+  "서울형 이자비용 절감 대환대출 지원<SEP>코로나19 피해기업 긴급자금 지원": {
+    "chunk_ids": [
+      "chunk-04109b981ea9241e20e0cd41acf75c9a"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "서울형 이자비용 절감 대환대출 지원<SEP>코로나19 피해기업 긴급자금 지원"
+  },
+  "다산콜센터<SEP>질병관리청": {
+    "chunk_ids": [
+      "chunk-f9d2bb0a7a9356cea2eea34580304805"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "다산콜센터<SEP>질병관리청"
+  },
+  "생활지원비<SEP>휴업수당": {
+    "chunk_ids": [
+      "chunk-85b4a19992d0ed0259cc8a47883f3176",
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 2,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "생활지원비<SEP>휴업수당"
+  },
+  "보건당국<SEP>자가격리": {
+    "chunk_ids": [
+      "chunk-85b4a19992d0ed0259cc8a47883f3176"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "보건당국<SEP>자가격리"
+  },
+  "2차 재난지원금<SEP>다산콜센터": {
+    "chunk_ids": [
+      "chunk-f9d2bb0a7a9356cea2eea34580304805"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "2차 재난지원금<SEP>다산콜센터"
+  },
+  "Old Pipes<SEP>Water Leak": {
+    "chunk_ids": [
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "Old Pipes<SEP>Water Leak"
+  },
+  "2차 재난지원금<SEP>긴급고용안정지원금": {
+    "chunk_ids": [
+      "chunk-f9d2bb0a7a9356cea2eea34580304805"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "2차 재난지원금<SEP>긴급고용안정지원금"
+  },
+  "Inspection Procedures<SEP>Waterworks Bureau": {
+    "chunk_ids": [
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "Inspection Procedures<SEP>Waterworks Bureau"
+  },
+  "Bathroom Waterproofing Issues<SEP>Water Leak": {
+    "chunk_ids": [
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "count": 1,
+    "create_time": 1762847558,
+    "update_time": 1762847558,
+    "_id": "Bathroom Waterproofing Issues<SEP>Water Leak"
+  },
+  "유급휴가<SEP>휴업수당": {
+    "chunk_ids": [
+      "chunk-85b4a19992d0ed0259cc8a47883f3176"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "유급휴가<SEP>휴업수당"
+  },
+  "Applicant<SEP>청년구직활동지원금": {
+    "chunk_ids": [
+      "chunk-95731aa3d678e7c4783ecbdbe4192ec2"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "Applicant<SEP>청년구직활동지원금"
+  },
+  "Sink and Drain Problems<SEP>Water Leak": {
+    "chunk_ids": [
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "Sink and Drain Problems<SEP>Water Leak"
+  },
+  "Inspection Procedures<SEP>Water Meter": {
+    "chunk_ids": [
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "Inspection Procedures<SEP>Water Meter"
+  },
+  "지원금<SEP>청년구직활동지원금": {
+    "chunk_ids": [
+      "chunk-95731aa3d678e7c4783ecbdbe4192ec2"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "지원금<SEP>청년구직활동지원금"
+  },
+  "Applicant<SEP>온라인청년센터": {
+    "chunk_ids": [
+      "chunk-95731aa3d678e7c4783ecbdbe4192ec2"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "Applicant<SEP>온라인청년센터"
+  },
+  "Balcony and Window Problems<SEP>Water Leak": {
+    "chunk_ids": [
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "Balcony and Window Problems<SEP>Water Leak"
+  },
+  "기준 중위소득<SEP>보건복지부": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "기준 중위소득<SEP>보건복지부"
+  },
+  "목포항<SEP>전주": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "목포항<SEP>전주"
+  },
+  "대상자<SEP>청년구직활동지원금": {
+    "chunk_ids": [
+      "chunk-95731aa3d678e7c4783ecbdbe4192ec2"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "대상자<SEP>청년구직활동지원금"
+  },
+  "익산역<SEP>전주역": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "익산역<SEP>전주역"
+  },
+  "Applicant<SEP>취업성공금": {
+    "chunk_ids": [
+      "chunk-95731aa3d678e7c4783ecbdbe4192ec2"
+    ],
+    "count": 1,
+    "create_time": 1762847559,
+    "update_time": 1762847559,
+    "_id": "Applicant<SEP>취업성공금"
+  },
+  "Repair Companies<SEP>Water Leak": {
+    "chunk_ids": [
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "Repair Companies<SEP>Water Leak"
+  },
+  "기준 중위소득<SEP>소득 기준": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "기준 중위소득<SEP>소득 기준"
+  },
+  "전주<SEP>제주도": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "전주<SEP>제주도"
+  },
+  "목포항<SEP>여객선": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "목포항<SEP>여객선"
+  },
+  "대도시<SEP>재산 기준": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "대도시<SEP>재산 기준"
+  },
+  "목포역<SEP>익산역": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "목포역<SEP>익산역"
+  },
+  "반려동물<SEP>제주항공": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "반려동물<SEP>제주항공"
+  },
+  "목포역<SEP>목포항": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847560,
+    "update_time": 1762847560,
+    "_id": "목포역<SEP>목포항"
+  },
+  "재산 기준<SEP>중소도시": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "재산 기준<SEP>중소도시"
+  },
+  "제주도<SEP>제주항공": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "제주도<SEP>제주항공"
+  },
+  "강아지<SEP>반려동물": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "강아지<SEP>반려동물"
+  },
+  "생활지원비<SEP>정부": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "생활지원비<SEP>정부"
+  },
+  "강아지<SEP>케이지": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "강아지<SEP>케이지"
+  },
+  "보건당국<SEP>생활지원비": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "보건당국<SEP>생활지원비"
+  },
+  "Jeju Island<SEP>Mokpo Port": {
+    "chunk_ids": [
+      "chunk-fd1d5b5c355e30bbea5da430fc9ecd94"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "Jeju Island<SEP>Mokpo Port"
+  },
+  "강아지<SEP>제주항공": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "강아지<SEP>제주항공"
+  },
+  "Old Building<SEP>Water Pipe": {
+    "chunk_ids": [
+      "chunk-fd1d5b5c355e30bbea5da430fc9ecd94"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "Old Building<SEP>Water Pipe"
+  },
+  "농어촌<SEP>재산 기준": {
+    "chunk_ids": [
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df"
+    ],
+    "count": 1,
+    "create_time": 1762847561,
+    "update_time": 1762847561,
+    "_id": "농어촌<SEP>재산 기준"
+  },
+  "감염병예방법<SEP>생활지원비": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847562,
+    "update_time": 1762847562,
+    "_id": "감염병예방법<SEP>생활지원비"
+  },
+  "Exposed Piping<SEP>Water Pipe": {
+    "chunk_ids": [
+      "chunk-fd1d5b5c355e30bbea5da430fc9ecd94"
+    ],
+    "count": 1,
+    "create_time": 1762847562,
+    "update_time": 1762847562,
+    "_id": "Exposed Piping<SEP>Water Pipe"
+  },
+  "Cold Weather<SEP>Exposed Piping": {
+    "chunk_ids": [
+      "chunk-fd1d5b5c355e30bbea5da430fc9ecd94"
+    ],
+    "count": 1,
+    "create_time": 1762847562,
+    "update_time": 1762847562,
+    "_id": "Cold Weather<SEP>Exposed Piping"
+  },
+  "생활지원비<SEP>유급휴가": {
+    "chunk_ids": [
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8"
+    ],
+    "count": 1,
+    "create_time": 1762847562,
+    "update_time": 1762847562,
+    "_id": "생활지원비<SEP>유급휴가"
+  },
+  "Buried Piping<SEP>Exposed Piping": {
+    "chunk_ids": [
+      "chunk-fd1d5b5c355e30bbea5da430fc9ecd94"
+    ],
+    "count": 1,
+    "create_time": 1762847563,
+    "update_time": 1762847563,
+    "_id": "Buried Piping<SEP>Exposed Piping"
+  },
+  "Cold Weather<SEP>Water Pipe": {
+    "chunk_ids": [
+      "chunk-fd1d5b5c355e30bbea5da430fc9ecd94"
+    ],
+    "count": 1,
+    "create_time": 1762847563,
+    "update_time": 1762847563,
+    "_id": "Cold Weather<SEP>Water Pipe"
+  },
+  "Water Quality Issue<SEP>Water Supply": {
+    "chunk_ids": [
+      "chunk-e4af5a3553056603378e18742081f811"
+    ],
+    "count": 1,
+    "create_time": 1762847618,
+    "update_time": 1762847618,
+    "_id": "Water Quality Issue<SEP>Water Supply"
+  },
+  "Public Water System<SEP>Seoul": {
+    "chunk_ids": [
+      "chunk-e4af5a3553056603378e18742081f811"
+    ],
+    "count": 1,
+    "create_time": 1762847618,
+    "update_time": 1762847618,
+    "_id": "Public Water System<SEP>Seoul"
+  },
+  "Building Plumbing<SEP>Pressure Issue": {
+    "chunk_ids": [
+      "chunk-e4af5a3553056603378e18742081f811"
+    ],
+    "count": 1,
+    "create_time": 1762847618,
+    "update_time": 1762847618,
+    "_id": "Building Plumbing<SEP>Pressure Issue"
+  },
+  "가족돌봄휴가 비용 긴급지원<SEP>근로자": {
+    "chunk_ids": [
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45"
+    ],
+    "count": 1,
+    "create_time": 1762847618,
+    "update_time": 1762847618,
+    "_id": "가족돌봄휴가 비용 긴급지원<SEP>근로자"
+  },
+  "Larvae<SEP>Water Supply": {
+    "chunk_ids": [
+      "chunk-e4af5a3553056603378e18742081f811"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "Larvae<SEP>Water Supply"
+  },
+  "Drain Fly Larvae<SEP>Water Quality Issue": {
+    "chunk_ids": [
+      "chunk-e4af5a3553056603378e18742081f811"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "Drain Fly Larvae<SEP>Water Quality Issue"
+  },
+  "Pressure Issue<SEP>Public Water System": {
+    "chunk_ids": [
+      "chunk-e4af5a3553056603378e18742081f811"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "Pressure Issue<SEP>Public Water System"
+  },
+  "무급휴가<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "무급휴가<SEP>코로나19"
+  },
+  "근로자<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "근로자<SEP>생활지원금"
+  },
+  "가족돌봄휴가 비용 긴급지원<SEP>고용노동부": {
+    "chunk_ids": [
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "가족돌봄휴가 비용 긴급지원<SEP>고용노동부"
+  },
+  "Pressure Issue<SEP>Villa": {
+    "chunk_ids": [
+      "chunk-e4af5a3553056603378e18742081f811"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "Pressure Issue<SEP>Villa"
+  },
+  "무급휴가<SEP>지원금": {
+    "chunk_ids": [
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "무급휴가<SEP>지원금"
+  },
+  "서울시<SEP>수도요금": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "서울시<SEP>수도요금"
+  },
+  "1인 가구<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "1인 가구<SEP>생활지원금"
+  },
+  "가족돌봄휴가 비용 긴급지원<SEP>지원대상": {
+    "chunk_ids": [
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "가족돌봄휴가 비용 긴급지원<SEP>지원대상"
+  },
+  "상수도 요금<SEP>수도요금": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847619,
+    "update_time": 1762847619,
+    "_id": "상수도 요금<SEP>수도요금"
+  },
+  "수도요금<SEP>하수도 요금": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847620,
+    "update_time": 1762847620,
+    "_id": "수도요금<SEP>하수도 요금"
+  },
+  "국민건강보험공단<SEP>보건소": {
+    "chunk_ids": [
+      "chunk-62a1293796b1c03648f5e60f27c99dcb"
+    ],
+    "count": 1,
+    "create_time": 1762847620,
+    "update_time": 1762847620,
+    "_id": "국민건강보험공단<SEP>보건소"
+  },
+  "물이용분담금<SEP>수도요금": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847620,
+    "update_time": 1762847620,
+    "_id": "물이용분담금<SEP>수도요금"
+  },
+  "공공보건포털<SEP>보건소": {
+    "chunk_ids": [
+      "chunk-62a1293796b1c03648f5e60f27c99dcb"
+    ],
+    "count": 1,
+    "create_time": 1762847620,
+    "update_time": 1762847620,
+    "_id": "공공보건포털<SEP>보건소"
+  },
+  "건강검진<SEP>국민건강보험공단": {
+    "chunk_ids": [
+      "chunk-62a1293796b1c03648f5e60f27c99dcb"
+    ],
+    "count": 1,
+    "create_time": 1762847620,
+    "update_time": 1762847620,
+    "_id": "건강검진<SEP>국민건강보험공단"
+  },
+  "국민건강보험공단<SEP>의료지원과": {
+    "chunk_ids": [
+      "chunk-62a1293796b1c03648f5e60f27c99dcb"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "국민건강보험공단<SEP>의료지원과"
+  },
+  "가정용 요금 기준<SEP>수도요금": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "가정용 요금 기준<SEP>수도요금"
+  },
+  "Event<SEP>Prize": {
+    "chunk_ids": [
+      "chunk-89f8ba55525667ff35cc1fd6f781c500"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "Event<SEP>Prize"
+  },
+  "건강검진 결과<SEP>보건소": {
+    "chunk_ids": [
+      "chunk-62a1293796b1c03648f5e60f27c99dcb"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "건강검진 결과<SEP>보건소"
+  },
+  "Address Confirmation<SEP>Delivery": {
+    "chunk_ids": [
+      "chunk-89f8ba55525667ff35cc1fd6f781c500"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "Address Confirmation<SEP>Delivery"
+  },
+  "COVID-19<SEP>Childcare Centre": {
+    "chunk_ids": [
+      "chunk-89f8ba55525667ff35cc1fd6f781c500"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "COVID-19<SEP>Childcare Centre"
+  },
+  "Family Care Leave<SEP>Support Funds": {
+    "chunk_ids": [
+      "chunk-89f8ba55525667ff35cc1fd6f781c500"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "Family Care Leave<SEP>Support Funds"
+  },
+  "1톤<SEP>수도요금": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "1톤<SEP>수도요금"
+  },
+  "30톤 이하<SEP>가정용 요금 기준": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "30톤 이하<SEP>가정용 요금 기준"
+  },
+  "Delivery Period<SEP>Prize": {
+    "chunk_ids": [
+      "chunk-89f8ba55525667ff35cc1fd6f781c500"
+    ],
+    "count": 1,
+    "create_time": 1762847621,
+    "update_time": 1762847621,
+    "_id": "Delivery Period<SEP>Prize"
+  },
+  "국민 외식비 지원<SEP>외식업체": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "국민 외식비 지원<SEP>외식업체"
+  },
+  "Family Care Leave<SEP>Ministry of Employment and Labor": {
+    "chunk_ids": [
+      "chunk-89f8ba55525667ff35cc1fd6f781c500"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "Family Care Leave<SEP>Ministry of Employment and Labor"
+  },
+  "40톤 사용<SEP>가정용 요금 기준": {
+    "chunk_ids": [
+      "chunk-6a20ff5a175948ed968825205f05edf0"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "40톤 사용<SEP>가정용 요금 기준"
+  },
+  "배달앱<SEP>현장 결제": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "배달앱<SEP>현장 결제"
+  },
+  "Announcement Date<SEP>Family Care Leave": {
+    "chunk_ids": [
+      "chunk-89f8ba55525667ff35cc1fd6f781c500"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "Announcement Date<SEP>Family Care Leave"
+  },
+  "국민 외식비 지원<SEP>배달앱": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "국민 외식비 지원<SEP>배달앱"
+  },
+  "Water Pressure Measurement<SEP>World Waterworks Office": {
+    "chunk_ids": [
+      "chunk-35111b7ce7a3ca57ba8b62843ed2d1ed"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "Water Pressure Measurement<SEP>World Waterworks Office"
+  },
+  "국민 외식비 지원<SEP>캐시백": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847622,
+    "update_time": 1762847622,
+    "_id": "국민 외식비 지원<SEP>캐시백"
+  },
+  "Internal Piping<SEP>World Waterworks Office": {
+    "chunk_ids": [
+      "chunk-35111b7ce7a3ca57ba8b62843ed2d1ed"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Internal Piping<SEP>World Waterworks Office"
+  },
+  "국민 외식비 지원<SEP>금요일 오후 4시부터 일요일 밤 12시까지": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "국민 외식비 지원<SEP>금요일 오후 4시부터 일요일 밤 12시까지"
+  },
+  "Multi-Family Housing<SEP>Villa": {
+    "chunk_ids": [
+      "chunk-35111b7ce7a3ca57ba8b62843ed2d1ed"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Multi-Family Housing<SEP>Villa"
+  },
+  "Private Plumbing Company<SEP>World Waterworks Office": {
+    "chunk_ids": [
+      "chunk-35111b7ce7a3ca57ba8b62843ed2d1ed"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Private Plumbing Company<SEP>World Waterworks Office"
+  },
+  "Internal Piping<SEP>Water Pressure Measurement": {
+    "chunk_ids": [
+      "chunk-35111b7ce7a3ca57ba8b62843ed2d1ed"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Internal Piping<SEP>Water Pressure Measurement"
+  },
+  "Water Pressure Drop<SEP>Water Supply Issue": {
+    "chunk_ids": [
+      "chunk-35111b7ce7a3ca57ba8b62843ed2d1ed"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Water Pressure Drop<SEP>Water Supply Issue"
+  },
+  "Address Change<SEP>Website": {
+    "chunk_ids": [
+      "chunk-78343f620400ec356e4f5d6b39f0f2f9"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Address Change<SEP>Website"
+  },
+  "국민 외식비 지원<SEP>정신건강검사 (우울증)": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "국민 외식비 지원<SEP>정신건강검사 (우울증)"
+  },
+  "Email Receipt<SEP>MY Menu": {
+    "chunk_ids": [
+      "chunk-78343f620400ec356e4f5d6b39f0f2f9"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Email Receipt<SEP>MY Menu"
+  },
+  "Basic Certificate<SEP>Name Change": {
+    "chunk_ids": [
+      "chunk-78343f620400ec356e4f5d6b39f0f2f9"
+    ],
+    "count": 1,
+    "create_time": 1762847623,
+    "update_time": 1762847623,
+    "_id": "Basic Certificate<SEP>Name Change"
+  },
+  "Call Center<SEP>Website": {
+    "chunk_ids": [
+      "chunk-78343f620400ec356e4f5d6b39f0f2f9"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "Call Center<SEP>Website"
+  },
+  "목동역<SEP>합정역": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "목동역<SEP>합정역"
+  },
+  "국민 외식비 지원<SEP>인지기능장애 검사": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "국민 외식비 지원<SEP>인지기능장애 검사"
+  },
+  "국민 외식비 지원<SEP>노인신체기능검사": {
+    "chunk_ids": [
+      "chunk-e31a9456709cb4a37cfd38596e664090"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "국민 외식비 지원<SEP>노인신체기능검사"
+  },
+  "1,350원<SEP>버스 요금": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "1,350원<SEP>버스 요금"
+  },
+  "745번 버스<SEP>합정역": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "745번 버스<SEP>합정역"
+  },
+  "Call Center<SEP>서울시 상수도사업본부 아리수 사이버고객센터": {
+    "chunk_ids": [
+      "chunk-78343f620400ec356e4f5d6b39f0f2f9"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "Call Center<SEP>서울시 상수도사업본부 아리수 사이버고객센터"
+  },
+  "6454번 버스<SEP>합정역": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "6454번 버스<SEP>합정역"
+  },
+  "기타 정보<SEP>버스 노선안내": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "기타 정보<SEP>버스 노선안내"
+  },
+  "격리 통지서<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847624,
+    "update_time": 1762847624,
+    "_id": "격리 통지서<SEP>생활지원금"
+  },
+  "1,450원<SEP>버스 요금": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847625,
+    "update_time": 1762847625,
+    "_id": "1,450원<SEP>버스 요금"
+  },
+  "격리 기간<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847625,
+    "update_time": 1762847625,
+    "_id": "격리 기간<SEP>생활지원금"
+  },
+  "30분<SEP>합정역": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847625,
+    "update_time": 1762847625,
+    "_id": "30분<SEP>합정역"
+  },
+  "교통카드<SEP>합정역": {
+    "chunk_ids": [
+      "chunk-b5f6aa65182f580dbb93daccf173fd40"
+    ],
+    "count": 1,
+    "create_time": 1762847625,
+    "update_time": 1762847625,
+    "_id": "교통카드<SEP>합정역"
+  },
+  "가구원 수<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847626,
+    "update_time": 1762847626,
+    "_id": "가구원 수<SEP>생활지원금"
+  },
+  "생활지원금<SEP>온라인(정부24)": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847627,
+    "update_time": 1762847627,
+    "_id": "생활지원금<SEP>온라인(정부24)"
+  },
+  "격리 해제일<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847627,
+    "update_time": 1762847627,
+    "_id": "격리 해제일<SEP>생활지원금"
+  },
+  "무급휴가<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847628,
+    "update_time": 1762847628,
+    "_id": "무급휴가<SEP>생활지원금"
+  },
+  "생활지원금<SEP>조건": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847628,
+    "update_time": 1762847628,
+    "_id": "생활지원금<SEP>조건"
+  },
+  "관할 주민센터<SEP>생활지원금": {
+    "chunk_ids": [
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "count": 1,
+    "create_time": 1762847628,
+    "update_time": 1762847628,
+    "_id": "관할 주민센터<SEP>생활지원금"
+  },
+  "Seoul<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8",
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 2,
+    "update_time": 1762847851,
+    "_id": "Seoul<SEP>Social Distancing Level 2"
+  },
+  "Capital Region<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "count": 1,
+    "create_time": 1762847676,
+    "update_time": 1762847676,
+    "_id": "Capital Region<SEP>Social Distancing Level 2"
+  },
+  "Non-Capital Region<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "count": 1,
+    "create_time": 1762847676,
+    "update_time": 1762847676,
+    "_id": "Non-Capital Region<SEP>Social Distancing Level 2"
+  },
+  "High-Risk Facilities<SEP>Wedding Halls": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "count": 1,
+    "create_time": 1762847676,
+    "update_time": 1762847676,
+    "_id": "High-Risk Facilities<SEP>Wedding Halls"
+  },
+  "Cinemas<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "count": 1,
+    "create_time": 1762847677,
+    "update_time": 1762847677,
+    "_id": "Cinemas<SEP>Social Distancing Level 2"
+  },
+  "동작구<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d"
+    ],
+    "count": 1,
+    "create_time": 1762847677,
+    "update_time": 1762847677,
+    "_id": "동작구<SEP>소상공인"
+  },
+  "도로사용료<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d"
+    ],
+    "count": 1,
+    "create_time": 1762847677,
+    "update_time": 1762847677,
+    "_id": "도로사용료<SEP>소상공인"
+  },
+  "Social Distancing Level 2<SEP>Wedding Halls": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "count": 1,
+    "create_time": 1762847677,
+    "update_time": 1762847677,
+    "_id": "Social Distancing Level 2<SEP>Wedding Halls"
+  },
+  "Cinemas<SEP>High-Risk Facilities": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "count": 1,
+    "create_time": 1762847677,
+    "update_time": 1762847677,
+    "_id": "Cinemas<SEP>High-Risk Facilities"
+  },
+  "도로점용료<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d"
+    ],
+    "count": 1,
+    "create_time": 1762847678,
+    "update_time": 1762847678,
+    "_id": "도로점용료<SEP>소상공인"
+  },
+  "Social Distancing Level 2<SEP>Sports Events": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8",
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 2,
+    "update_time": 1762847851,
+    "_id": "Social Distancing Level 2<SEP>Sports Events"
+  },
+  "Religious Activities<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "count": 1,
+    "create_time": 1762847678,
+    "update_time": 1762847678,
+    "_id": "Religious Activities<SEP>Social Distancing Level 2"
+  },
+  "렘데시비르<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847678,
+    "update_time": 1762847678,
+    "_id": "렘데시비르<SEP>코로나19"
+  },
+  "가로행정과<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d"
+    ],
+    "count": 1,
+    "create_time": 1762847678,
+    "update_time": 1762847678,
+    "_id": "가로행정과<SEP>소상공인"
+  },
+  "자가격리<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847678,
+    "update_time": 1762847678,
+    "_id": "자가격리<SEP>코로나19"
+  },
+  "COVID-19<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-dd3d9738621636ff604645c3110d93d8",
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 2,
+    "update_time": 1762847850,
+    "_id": "COVID-19<SEP>Social Distancing Level 2"
+  },
+  "치료비<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "치료비<SEP>코로나19"
+  },
+  "귀촌인<SEP>농산업 창업교육 프로그램": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "귀촌인<SEP>농산업 창업교육 프로그램"
+  },
+  "소상공인<SEP>홈택스": {
+    "chunk_ids": [
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "소상공인<SEP>홈택스"
+  },
+  "교육 기관<SEP>농산업 창업교육 프로그램": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "교육 기관<SEP>농산업 창업교육 프로그램"
+  },
+  "방역<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "방역<SEP>코로나19"
+  },
+  "Gangnam-gu<SEP>Gangnam-gu Office": {
+    "chunk_ids": [
+      "chunk-2f553536aaaeba92fcd9d0586beb4e4c"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "Gangnam-gu<SEP>Gangnam-gu Office"
+  },
+  "소상공인<SEP>중소기업현황정보시스템": {
+    "chunk_ids": [
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "소상공인<SEP>중소기업현황정보시스템"
+  },
+  "농산업 창업교육 프로그램<SEP>정부 지원": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847679,
+    "update_time": 1762847679,
+    "_id": "농산업 창업교육 프로그램<SEP>정부 지원"
+  },
+  "서울대학교병원<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "서울대학교병원<SEP>소상공인"
+  },
+  "Incheon Station<SEP>Songnae Station": {
+    "chunk_ids": [
+      "chunk-2f553536aaaeba92fcd9d0586beb4e4c",
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52"
+    ],
+    "count": 2,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Incheon Station<SEP>Songnae Station"
+  },
+  "주민센터<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-fb82bd12de86730e4607403d562def87"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "주민센터<SEP>코로나19"
+  },
+  "Gangnam-gu Office<SEP>Official Website": {
+    "chunk_ids": [
+      "chunk-2f553536aaaeba92fcd9d0586beb4e4c"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Gangnam-gu Office<SEP>Official Website"
+  },
+  "COVID-19<SEP>Remdesivir": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "COVID-19<SEP>Remdesivir"
+  },
+  "Bucheon City Hall Station<SEP>Songnae Station": {
+    "chunk_ids": [
+      "chunk-2f553536aaaeba92fcd9d0586beb4e4c"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Bucheon City Hall Station<SEP>Songnae Station"
+  },
+  "Antibodies<SEP>COVID-19": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Antibodies<SEP>COVID-19"
+  },
+  "Gulpocheon Station<SEP>Wolmido": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Gulpocheon Station<SEP>Wolmido"
+  },
+  "Dasan Call Center<SEP>Gangnam-gu Office": {
+    "chunk_ids": [
+      "chunk-2f553536aaaeba92fcd9d0586beb4e4c"
+    ],
+    "count": 1,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Dasan Call Center<SEP>Gangnam-gu Office"
+  },
+  "Incheon Station<SEP>Wolmido": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956",
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52"
+    ],
+    "count": 2,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Incheon Station<SEP>Wolmido"
+  },
+  "Bucheon City Hall Station<SEP>Gulpocheon Station": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956",
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52"
+    ],
+    "count": 2,
+    "create_time": 1762847680,
+    "update_time": 1762847680,
+    "_id": "Bucheon City Hall Station<SEP>Gulpocheon Station"
+  },
+  "Epidemiological Investigation<SEP>Health Center": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847681,
+    "update_time": 1762847681,
+    "_id": "Epidemiological Investigation<SEP>Health Center"
+  },
+  "COVID-19<SEP>Local Government": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847681,
+    "update_time": 1762847681,
+    "_id": "COVID-19<SEP>Local Government"
+  },
+  "Disinfection Action<SEP>Health Center": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847681,
+    "update_time": 1762847681,
+    "_id": "Disinfection Action<SEP>Health Center"
+  },
+  "Large Educational Institute<SEP>Support Fund": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483"
+    ],
+    "count": 1,
+    "create_time": 1762847681,
+    "update_time": 1762847681,
+    "_id": "Large Educational Institute<SEP>Support Fund"
+  },
+  "Bucheon City Hall Station<SEP>Incheon Station": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956",
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52"
+    ],
+    "count": 2,
+    "create_time": 1762847681,
+    "update_time": 1762847681,
+    "_id": "Bucheon City Hall Station<SEP>Incheon Station"
+  },
+  "615 Bus<SEP>Daejeon Station": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483",
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b"
+    ],
+    "count": 2,
+    "create_time": 1762847681,
+    "update_time": 1762847681,
+    "_id": "615 Bus<SEP>Daejeon Station"
+  },
+  "COVID-19<SEP>Health Center": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847681,
+    "update_time": 1762847681,
+    "_id": "COVID-19<SEP>Health Center"
+  },
+  "317 Bus<SEP>Daejeon Station": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483",
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b"
+    ],
+    "count": 2,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "317 Bus<SEP>Daejeon Station"
+  },
+  "615 Bus<SEP>Chungnam National University Hospital": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "615 Bus<SEP>Chungnam National University Hospital"
+  },
+  "COVID-19<SEP>Syndromic Treatment": {
+    "chunk_ids": [
+      "chunk-0cbf32d6c60e826691bf3de959006956"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "COVID-19<SEP>Syndromic Treatment"
+  },
+  "Daejeon<SEP>Public Transportation Guidance": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Daejeon<SEP>Public Transportation Guidance"
+  },
+  "317 Bus<SEP>Chungnam National University Hospital": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "317 Bus<SEP>Chungnam National University Hospital"
+  },
+  "Bucheon City Hall Station<SEP>Wolmido": {
+    "chunk_ids": [
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Bucheon City Hall Station<SEP>Wolmido"
+  },
+  "Daejeon<SEP>Daejeon Station": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483",
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b"
+    ],
+    "count": 2,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Daejeon<SEP>Daejeon Station"
+  },
+  "Gulpocheon Station<SEP>Incheon Station": {
+    "chunk_ids": [
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Gulpocheon Station<SEP>Incheon Station"
+  },
+  "Small Business Market Vitalization Corporation<SEP>Support Fund": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Small Business Market Vitalization Corporation<SEP>Support Fund"
+  },
+  "Large Educational Institute<SEP>Social Distancing Orders": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Large Educational Institute<SEP>Social Distancing Orders"
+  },
+  "Jongno 3-ga<SEP>Seoul National University Hospital": {
+    "chunk_ids": [
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Jongno 3-ga<SEP>Seoul National University Hospital"
+  },
+  "Bucheon<SEP>Wolmido": {
+    "chunk_ids": [
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52"
+    ],
+    "count": 1,
+    "create_time": 1762847682,
+    "update_time": 1762847682,
+    "_id": "Bucheon<SEP>Wolmido"
+  },
+  "Airborne Infection Isolation Room<SEP>COVID-19": {
+    "chunk_ids": [
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "Airborne Infection Isolation Room<SEP>COVID-19"
+  },
+  "Chungnam National University Hospital<SEP>Daejeon": {
+    "chunk_ids": [
+      "chunk-e336c923fb240ea568a7461057773483"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "Chungnam National University Hospital<SEP>Daejeon"
+  },
+  "세종<SEP>오송": {
+    "chunk_ids": [
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "세종<SEP>오송"
+  },
+  "990번<SEP>아름동 소방서": {
+    "chunk_ids": [
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "990번<SEP>아름동 소방서"
+  },
+  "Chungnam National University Hospital<SEP>Daejeon Station": {
+    "chunk_ids": [
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "Chungnam National University Hospital<SEP>Daejeon Station"
+  },
+  "귀촌인<SEP>농산업 창업교육": {
+    "chunk_ids": [
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "귀촌인<SEP>농산업 창업교육"
+  },
+  "Medical Emergency<SEP>Seoul National University Hospital": {
+    "chunk_ids": [
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "Medical Emergency<SEP>Seoul National University Hospital"
+  },
+  "1000번 BRT<SEP>아름동 소방서": {
+    "chunk_ids": [
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "1000번 BRT<SEP>아름동 소방서"
+  },
+  "Dongjak-gu<SEP>Small Business Owners": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "Dongjak-gu<SEP>Small Business Owners"
+  },
+  "귀농귀촌 지원<SEP>농산업 창업교육": {
+    "chunk_ids": [
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930"
+    ],
+    "count": 1,
+    "create_time": 1762847683,
+    "update_time": 1762847683,
+    "_id": "귀농귀촌 지원<SEP>농산업 창업교육"
+  },
+  "범지기마을 10단지<SEP>아름동 소방서": {
+    "chunk_ids": [
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "범지기마을 10단지<SEP>아름동 소방서"
+  },
+  "Road Usage Fee Reduction Support<SEP>Small Business Owners": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "Road Usage Fee Reduction Support<SEP>Small Business Owners"
+  },
+  "Oseong<SEP>Sejong City": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "Oseong<SEP>Sejong City"
+  },
+  "아름동 소방서<SEP>하차후 도보 안내": {
+    "chunk_ids": [
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "아름동 소방서<SEP>하차후 도보 안내"
+  },
+  "Application Process<SEP>Small Business Owners": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "Application Process<SEP>Small Business Owners"
+  },
+  "2020 Road Usage Fee<SEP>Road Usage Fee Reduction Support": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "2020 Road Usage Fee<SEP>Road Usage Fee Reduction Support"
+  },
+  "990 Bus<SEP>Oseong": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "990 Bus<SEP>Oseong"
+  },
+  "Daesan Call Center<SEP>Road Usage Fee Reduction Support": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847684,
+    "update_time": 1762847684,
+    "_id": "Daesan Call Center<SEP>Road Usage Fee Reduction Support"
+  },
+  "Required Documents<SEP>Small Business Owners": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847685,
+    "update_time": 1762847685,
+    "_id": "Required Documents<SEP>Small Business Owners"
+  },
+  "1000 BRT Bus<SEP>Oseong": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847685,
+    "update_time": 1762847685,
+    "_id": "1000 BRT Bus<SEP>Oseong"
+  },
+  "990 Bus<SEP>Aram-dong Fire Station": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847685,
+    "update_time": 1762847685,
+    "_id": "990 Bus<SEP>Aram-dong Fire Station"
+  },
+  "1000 BRT Bus<SEP>Aram-dong Fire Station": {
+    "chunk_ids": [
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631"
+    ],
+    "count": 1,
+    "create_time": 1762847685,
+    "update_time": 1762847685,
+    "_id": "1000 BRT Bus<SEP>Aram-dong Fire Station"
+  },
+  "Seoul<SEP>Water Supply Reduction Benefit": {
+    "chunk_ids": [
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Seoul<SEP>Water Supply Reduction Benefit"
+  },
+  "Application Procedure<SEP>Dasan Call Center": {
+    "chunk_ids": [
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Application Procedure<SEP>Dasan Call Center"
+  },
+  "Application Methods<SEP>Water Fee Reduction Benefits": {
+    "chunk_ids": [
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Application Methods<SEP>Water Fee Reduction Benefits"
+  },
+  "19 to 34 Years Old<SEP>서울시 청년수당": {
+    "chunk_ids": [
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "19 to 34 Years Old<SEP>서울시 청년수당"
+  },
+  "서울시 청년수당<SEP>서울시 청년월세지원": {
+    "chunk_ids": [
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "서울시 청년수당<SEP>서울시 청년월세지원"
+  },
+  "Application Procedure<SEP>Power of Attorney": {
+    "chunk_ids": [
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Application Procedure<SEP>Power of Attorney"
+  },
+  "Self-Reading Meter<SEP>Water Supply Reduction Benefit": {
+    "chunk_ids": [
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Self-Reading Meter<SEP>Water Supply Reduction Benefit"
+  },
+  "Clean Card<SEP>서울시 청년수당": {
+    "chunk_ids": [
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Clean Card<SEP>서울시 청년수당"
+  },
+  "19 to 34 Years Old<SEP>가구": {
+    "chunk_ids": [
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "19 to 34 Years Old<SEP>가구"
+  },
+  "Electronic Billing<SEP>Water Supply Reduction Benefit": {
+    "chunk_ids": [
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Electronic Billing<SEP>Water Supply Reduction Benefit"
+  },
+  "Self-Reading Meter<SEP>Water Business Office": {
+    "chunk_ids": [
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "Self-Reading Meter<SEP>Water Business Office"
+  },
+  "코로나19 방역 수칙<SEP>학교": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847735,
+    "update_time": 1762847735,
+    "_id": "코로나19 방역 수칙<SEP>학교"
+  },
+  "3 Months or Less<SEP>서울시 청년수당": {
+    "chunk_ids": [
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "3 Months or Less<SEP>서울시 청년수당"
+  },
+  "Application Criteria<SEP>Clean Card": {
+    "chunk_ids": [
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "Application Criteria<SEP>Clean Card"
+  },
+  "마스크<SEP>학교": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "마스크<SEP>학교"
+  },
+  "담임선생님<SEP>보건소": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "담임선생님<SEP>보건소"
+  },
+  "손소독제<SEP>학교": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "손소독제<SEP>학교"
+  },
+  "감염병 예방 및 관리에 관한 법률<SEP>코로나19 방역 수칙": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "감염병 예방 및 관리에 관한 법률<SEP>코로나19 방역 수칙"
+  },
+  "서울시 주민등록상<SEP>서울시 청년수당": {
+    "chunk_ids": [
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "서울시 주민등록상<SEP>서울시 청년수당"
+  },
+  "Water Meter<SEP>Water Supply Office": {
+    "chunk_ids": [
+      "chunk-895d23911c039abf2918ff56cb07b552"
+    ],
+    "count": 1,
+    "create_time": 1762847736,
+    "update_time": 1762847736,
+    "_id": "Water Meter<SEP>Water Supply Office"
+  },
+  "사회적 거리두기<SEP>학교": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "사회적 거리두기<SEP>학교"
+  },
+  "Test Results Notification<SEP>Water Charges": {
+    "chunk_ids": [
+      "chunk-895d23911c039abf2918ff56cb07b552"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "Test Results Notification<SEP>Water Charges"
+  },
+  "Citizen's Consultative Center<SEP>Water Supply Office": {
+    "chunk_ids": [
+      "chunk-895d23911c039abf2918ff56cb07b552"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "Citizen's Consultative Center<SEP>Water Supply Office"
+  },
+  "Water Meter<SEP>Water Meter Performance Test Application Form": {
+    "chunk_ids": [
+      "chunk-895d23911c039abf2918ff56cb07b552"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "Water Meter<SEP>Water Meter Performance Test Application Form"
+  },
+  "Seoul Youth Rent Support<SEP>Youth Allowance": {
+    "chunk_ids": [
+      "chunk-895d23911c039abf2918ff56cb07b552"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "Seoul Youth Rent Support<SEP>Youth Allowance"
+  },
+  "발열 체크<SEP>학교": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "발열 체크<SEP>학교"
+  },
+  "소상공인<SEP>이차보전 프로그램": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "소상공인<SEP>이차보전 프로그램"
+  },
+  "Performance Test Application Process<SEP>Water Meter": {
+    "chunk_ids": [
+      "chunk-895d23911c039abf2918ff56cb07b552"
+    ],
+    "count": 1,
+    "create_time": 1762847737,
+    "update_time": 1762847737,
+    "_id": "Performance Test Application Process<SEP>Water Meter"
+  },
+  "방역 책임자<SEP>학교": {
+    "chunk_ids": [
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67"
+    ],
+    "count": 1,
+    "create_time": 1762847738,
+    "update_time": 1762847738,
+    "_id": "방역 책임자<SEP>학교"
+  },
+  "국민은행<SEP>이차보전 프로그램": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847738,
+    "update_time": 1762847738,
+    "_id": "국민은행<SEP>이차보전 프로그램"
+  },
+  "경영난<SEP>소상공인": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847738,
+    "update_time": 1762847738,
+    "_id": "경영난<SEP>소상공인"
+  },
+  "신한은행<SEP>이차보전 프로그램": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847738,
+    "update_time": 1762847738,
+    "_id": "신한은행<SEP>이차보전 프로그램"
+  },
+  "고용유지지원금<SEP>서울시청": {
+    "chunk_ids": [
+      "chunk-a906344898db2026c83c60f663348594"
+    ],
+    "count": 1,
+    "create_time": 1762847738,
+    "update_time": 1762847738,
+    "_id": "고용유지지원금<SEP>서울시청"
+  },
+  "서울시청<SEP>일자리정책과": {
+    "chunk_ids": [
+      "chunk-a906344898db2026c83c60f663348594"
+    ],
+    "count": 1,
+    "create_time": 1762847738,
+    "update_time": 1762847738,
+    "_id": "서울시청<SEP>일자리정책과"
+  },
+  "고용유지지원금<SEP>무급휴직": {
+    "chunk_ids": [
+      "chunk-a906344898db2026c83c60f663348594"
+    ],
+    "count": 1,
+    "create_time": 1762847738,
+    "update_time": 1762847738,
+    "_id": "고용유지지원금<SEP>무급휴직"
+  },
+  "우리은행<SEP>이차보전 프로그램": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "우리은행<SEP>이차보전 프로그램"
+  },
+  "무급휴직<SEP>코로나19": {
+    "chunk_ids": [
+      "chunk-a906344898db2026c83c60f663348594"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "무급휴직<SEP>코로나19"
+  },
+  "고용유지지원금<SEP>서울특별시": {
+    "chunk_ids": [
+      "chunk-a906344898db2026c83c60f663348594"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "고용유지지원금<SEP>서울특별시"
+  },
+  "Daejeon<SEP>General Circulation Bus": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "Daejeon<SEP>General Circulation Bus"
+  },
+  "은행연합회<SEP>이차보전 프로그램": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "은행연합회<SEP>이차보전 프로그램"
+  },
+  "Daejeon<SEP>Village Bus": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "Daejeon<SEP>Village Bus"
+  },
+  "Boromae Park<SEP>Sayiuksin Park": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "Boromae Park<SEP>Sayiuksin Park"
+  },
+  "NICE평가정보<SEP>이차보전 프로그램": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "NICE평가정보<SEP>이차보전 프로그램"
+  },
+  "Daejeon<SEP>Wide Area Bus": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847739,
+    "update_time": 1762847739,
+    "_id": "Daejeon<SEP>Wide Area Bus"
+  },
+  "이차보전 프로그램<SEP>저금리 융자": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "이차보전 프로그램<SEP>저금리 융자"
+  },
+  "Seoul City Hall<SEP>Seoul Job Policy Division": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "Seoul City Hall<SEP>Seoul Job Policy Division"
+  },
+  "5531 Bus<SEP>Sayiuksin Park": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "5531 Bus<SEP>Sayiuksin Park"
+  },
+  "Boromae Park<SEP>Noodle Station": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "Boromae Park<SEP>Noodle Station"
+  },
+  "보라매공원<SEP>사육신공원": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "보라매공원<SEP>사육신공원"
+  },
+  "Seoul Job Policy Division<SEP>Seoul Job Portal": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "Seoul Job Policy Division<SEP>Seoul Job Portal"
+  },
+  "소상공인 금융지원 프로그램<SEP>이차보전 프로그램": {
+    "chunk_ids": [
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "소상공인 금융지원 프로그램<SEP>이차보전 프로그램"
+  },
+  "5531 Bus<SEP>Boromae Park": {
+    "chunk_ids": [
+      "chunk-91daf8a12a8d880b9bff05320a45af57"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "5531 Bus<SEP>Boromae Park"
+  },
+  "수도요금<SEP>자가검침": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "수도요금<SEP>자가검침"
+  },
+  "노들역<SEP>사육신공원": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847740,
+    "update_time": 1762847740,
+    "_id": "노들역<SEP>사육신공원"
+  },
+  "자가검침<SEP>전자고지": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847741,
+    "update_time": 1762847741,
+    "_id": "자가검침<SEP>전자고지"
+  },
+  "150번<SEP>사육신공원": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847741,
+    "update_time": 1762847741,
+    "_id": "150번<SEP>사육신공원"
+  },
+  "수도요금<SEP>전자고지": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847741,
+    "update_time": 1762847741,
+    "_id": "수도요금<SEP>전자고지"
+  },
+  "Seoul<SEP>Water Supply Office": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847741,
+    "update_time": 1762847741,
+    "_id": "Seoul<SEP>Water Supply Office"
+  },
+  "수도요금<SEP>자동납부": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847741,
+    "update_time": 1762847741,
+    "_id": "수도요금<SEP>자동납부"
+  },
+  "Water Supply Application Form<SEP>Water Supply Termination Report": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847741,
+    "update_time": 1762847741,
+    "_id": "Water Supply Application Form<SEP>Water Supply Termination Report"
+  },
+  "User Identification Document<SEP>Water Supply Termination Report": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847742,
+    "update_time": 1762847742,
+    "_id": "User Identification Document<SEP>Water Supply Termination Report"
+  },
+  "Field Visit<SEP>Water Supply Office": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847742,
+    "update_time": 1762847742,
+    "_id": "Field Visit<SEP>Water Supply Office"
+  },
+  "5531번<SEP>사육신공원": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847742,
+    "update_time": 1762847742,
+    "_id": "5531번<SEP>사육신공원"
+  },
+  "150번<SEP>배차간격": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847742,
+    "update_time": 1762847742,
+    "_id": "150번<SEP>배차간격"
+  },
+  "Proxy Authorization Document<SEP>Water Supply Termination Report": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847742,
+    "update_time": 1762847742,
+    "_id": "Proxy Authorization Document<SEP>Water Supply Termination Report"
+  },
+  "Arisu Cyber Customer Center<SEP>Water Supply Office": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847742,
+    "update_time": 1762847742,
+    "_id": "Arisu Cyber Customer Center<SEP>Water Supply Office"
+  },
+  "150번<SEP>버스_소요시간": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847742,
+    "update_time": 1762847742,
+    "_id": "150번<SEP>버스_소요시간"
+  },
+  "버스_도착정보<SEP>사육신공원": {
+    "chunk_ids": [
+      "chunk-a682740acab46c4d831fc64f9458aa6e"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "버스_도착정보<SEP>사육신공원"
+  },
+  "서대전역<SEP>용산역": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "서대전역<SEP>용산역"
+  },
+  "대전역<SEP>서울역": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "대전역<SEP>서울역"
+  },
+  "수도계량기<SEP>수도사업소": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c",
+      "chunk-9658fdb2087e85764dd9afc50a0ef082"
+    ],
+    "count": 2,
+    "update_time": 1762848010,
+    "_id": "수도계량기<SEP>수도사업소"
+  },
+  "Business Day Processing Time<SEP>Water Supply Termination Report": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "Business Day Processing Time<SEP>Water Supply Termination Report"
+  },
+  "기차_운행정보<SEP>대전역": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "기차_운행정보<SEP>대전역"
+  },
+  "DaSan Call Center<SEP>Water Supply Termination Report": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "DaSan Call Center<SEP>Water Supply Termination Report"
+  },
+  "수도사업소<SEP>수도요금": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "수도사업소<SEP>수도요금"
+  },
+  "수도계량기<SEP>수도계량기 시험 신청서": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "수도계량기<SEP>수도계량기 시험 신청서"
+  },
+  "기차_운행정보<SEP>서대전역": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847743,
+    "update_time": 1762847743,
+    "_id": "기차_운행정보<SEP>서대전역"
+  },
+  "Water Supply Resumption Procedure<SEP>Water Supply Termination Report": {
+    "chunk_ids": [
+      "chunk-7d9af6c5ec838421d3638d894a06edce"
+    ],
+    "count": 1,
+    "create_time": 1762847744,
+    "update_time": 1762847744,
+    "_id": "Water Supply Resumption Procedure<SEP>Water Supply Termination Report"
+  },
+  "기차_노선안내<SEP>기차_운행정보": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847744,
+    "update_time": 1762847744,
+    "_id": "기차_노선안내<SEP>기차_운행정보"
+  },
+  "기차_운행정보<SEP>기차_첫차막차": {
+    "chunk_ids": [
+      "chunk-ca8739fd78904ada5332d5488076d84c"
+    ],
+    "count": 1,
+    "create_time": 1762847744,
+    "update_time": 1762847744,
+    "_id": "기차_운행정보<SEP>기차_첫차막차"
+  },
+  "Cultural Events<SEP>Seoul Cultural Portal": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "Cultural Events<SEP>Seoul Cultural Portal"
+  },
+  "Cultural Spaces<SEP>Seoul": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "Cultural Spaces<SEP>Seoul"
+  },
+  "2nd Stage<SEP>Social Distancing": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "2nd Stage<SEP>Social Distancing"
+  },
+  "B16064<SEP>Dasan Call Center": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "B16064<SEP>Dasan Call Center"
+  },
+  "B22678<SEP>Dasan Call Center": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "B22678<SEP>Dasan Call Center"
+  },
+  "Property Tax on Land<SEP>Property Tax on Ships": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "Property Tax on Land<SEP>Property Tax on Ships"
+  },
+  "Cultural Calendar<SEP>Cultural Events": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "Cultural Calendar<SEP>Cultural Events"
+  },
+  "3rd Stage<SEP>Social Distancing": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "3rd Stage<SEP>Social Distancing"
+  },
+  "Late Payment Penalty<SEP>Public Holiday Payment Deadline": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "Late Payment Penalty<SEP>Public Holiday Payment Deadline"
+  },
+  "District Office Taxation Department<SEP>Mask Compliance Reporting": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "District Office Taxation Department<SEP>Mask Compliance Reporting"
+  },
+  "Property Tax on Ships<SEP>Tax Assessment Date": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847791,
+    "update_time": 1762847791,
+    "_id": "Property Tax on Ships<SEP>Tax Assessment Date"
+  },
+  "Baseball Stadium<SEP>Social Distancing": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Baseball Stadium<SEP>Social Distancing"
+  },
+  "Childcare Staff<SEP>Mask Compliance Reporting": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Childcare Staff<SEP>Mask Compliance Reporting"
+  },
+  "Dasan Call Center<SEP>District Office Taxation Department": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Dasan Call Center<SEP>District Office Taxation Department"
+  },
+  "Childcare Center<SEP>Childcare Evaluation Certification": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Childcare Center<SEP>Childcare Evaluation Certification"
+  },
+  "Property Tax on Land<SEP>Tax Assessment Date": {
+    "chunk_ids": [
+      "chunk-b8a521e72858f13aa5823dd1ff96861c"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Property Tax on Land<SEP>Tax Assessment Date"
+  },
+  "Cosmetics<SEP>Mask": {
+    "chunk_ids": [
+      "chunk-4fd50c360c8172eddb13644a1ff21589"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Cosmetics<SEP>Mask"
+  },
+  "Outdoor Activities<SEP>Social Distancing": {
+    "chunk_ids": [
+      "chunk-0928e60540839c3ce03e7a599712cad0"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Outdoor Activities<SEP>Social Distancing"
+  },
+  "Mask<SEP>Tissue": {
+    "chunk_ids": [
+      "chunk-4fd50c360c8172eddb13644a1ff21589"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "Mask<SEP>Tissue"
+  },
+  "운전면허<SEP>행정심판": {
+    "chunk_ids": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3"
+    ],
+    "count": 1,
+    "create_time": 1762847792,
+    "update_time": 1762847792,
+    "_id": "운전면허<SEP>행정심판"
+  },
+  "국민행정심판<SEP>행정심판": {
+    "chunk_ids": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "국민행정심판<SEP>행정심판"
+  },
+  "운전면허<SEP>음주운전": {
+    "chunk_ids": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "운전면허<SEP>음주운전"
+  },
+  "Cotton Mask<SEP>Mask": {
+    "chunk_ids": [
+      "chunk-4fd50c360c8172eddb13644a1ff21589"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "Cotton Mask<SEP>Mask"
+  },
+  "구제 방법<SEP>실업자": {
+    "chunk_ids": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "구제 방법<SEP>실업자"
+  },
+  "음주운전<SEP>혈중알코올농도": {
+    "chunk_ids": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "음주운전<SEP>혈중알코올농도"
+  },
+  "COVID-19<SEP>Mask": {
+    "chunk_ids": [
+      "chunk-4fd50c360c8172eddb13644a1ff21589"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "COVID-19<SEP>Mask"
+  },
+  "미취업청년<SEP>재난지원금": {
+    "chunk_ids": [
+      "chunk-545aac2c4ca5834638d2f86d35a2db33"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "미취업청년<SEP>재난지원금"
+  },
+  "COVID-19<SEP>Personal Protective Equipment": {
+    "chunk_ids": [
+      "chunk-4fd50c360c8172eddb13644a1ff21589"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "COVID-19<SEP>Personal Protective Equipment"
+  },
+  "미취업청년<SEP>서울시": {
+    "chunk_ids": [
+      "chunk-545aac2c4ca5834638d2f86d35a2db33"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "미취업청년<SEP>서울시"
+  },
+  "행정심판<SEP>혈중알코올농도": {
+    "chunk_ids": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "행정심판<SEP>혈중알코올농도"
+  },
+  "우선순위 기준<SEP>재난지원금": {
+    "chunk_ids": [
+      "chunk-545aac2c4ca5834638d2f86d35a2db33"
+    ],
+    "count": 1,
+    "create_time": 1762847793,
+    "update_time": 1762847793,
+    "_id": "우선순위 기준<SEP>재난지원금"
+  },
+  "미취업청년<SEP>청년구직활동지원금": {
+    "chunk_ids": [
+      "chunk-545aac2c4ca5834638d2f86d35a2db33"
+    ],
+    "count": 1,
+    "create_time": 1762847794,
+    "update_time": 1762847794,
+    "_id": "미취업청년<SEP>청년구직활동지원금"
+  },
+  "공주<SEP>시내버스": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847794,
+    "update_time": 1762847794,
+    "_id": "공주<SEP>시내버스"
+  },
+  "구제 가능성<SEP>행정심판": {
+    "chunk_ids": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3"
+    ],
+    "count": 1,
+    "create_time": 1762847794,
+    "update_time": 1762847794,
+    "_id": "구제 가능성<SEP>행정심판"
+  },
+  "구직촉진수당<SEP>미취업청년": {
+    "chunk_ids": [
+      "chunk-545aac2c4ca5834638d2f86d35a2db33"
+    ],
+    "count": 1,
+    "create_time": 1762847794,
+    "update_time": 1762847794,
+    "_id": "구직촉진수당<SEP>미취업청년"
+  },
+  "First Bus<SEP>시내버스": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847794,
+    "update_time": 1762847794,
+    "_id": "First Bus<SEP>시내버스"
+  },
+  "건강보험료<SEP>미취업청년": {
+    "chunk_ids": [
+      "chunk-545aac2c4ca5834638d2f86d35a2db33"
+    ],
+    "count": 1,
+    "create_time": 1762847794,
+    "update_time": 1762847794,
+    "_id": "건강보험료<SEP>미취업청년"
+  },
+  "submission<SEP>청년 몽땅 정보통": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847794,
+    "update_time": 1762847794,
+    "_id": "submission<SEP>청년 몽땅 정보통"
+  },
+  "Last Bus<SEP>시내버스": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "Last Bus<SEP>시내버스"
+  },
+  "6:25 AM<SEP>First Bus": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "6:25 AM<SEP>First Bus"
+  },
+  "support case<SEP>다산콜센터": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "support case<SEP>다산콜센터"
+  },
+  "미취업청년<SEP>지원금": {
+    "chunk_ids": [
+      "chunk-545aac2c4ca5834638d2f86d35a2db33"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "미취업청년<SEP>지원금"
+  },
+  "2023-10-26<SEP>document update": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "2023-10-26<SEP>document update"
+  },
+  "여성새로일하기센터<SEP>중랑구": {
+    "chunk_ids": [
+      "chunk-e6e8510033eeae20473b32ee733bdf38"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "여성새로일하기센터<SEP>중랑구"
+  },
+  "11:45 PM<SEP>Last Bus": {
+    "chunk_ids": [
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "11:45 PM<SEP>Last Bus"
+  },
+  "여의도 불꽃축제<SEP>한강공원": {
+    "chunk_ids": [
+      "chunk-54abb97752a0a7153c93c833f537bc92"
+    ],
+    "count": 1,
+    "create_time": 1762847795,
+    "update_time": 1762847795,
+    "_id": "여의도 불꽃축제<SEP>한강공원"
+  },
+  "새일여성인턴<SEP>여성새로일하기센터": {
+    "chunk_ids": [
+      "chunk-e6e8510033eeae20473b32ee733bdf38"
+    ],
+    "count": 1,
+    "create_time": 1762847796,
+    "update_time": 1762847796,
+    "_id": "새일여성인턴<SEP>여성새로일하기센터"
+  },
+  "여의도역<SEP>한강공원": {
+    "chunk_ids": [
+      "chunk-54abb97752a0a7153c93c833f537bc92"
+    ],
+    "count": 1,
+    "create_time": 1762847796,
+    "update_time": 1762847796,
+    "_id": "여의도역<SEP>한강공원"
+  },
+  "여의나루역<SEP>여의도 불꽃축제": {
+    "chunk_ids": [
+      "chunk-54abb97752a0a7153c93c833f537bc92"
+    ],
+    "count": 1,
+    "create_time": 1762847796,
+    "update_time": 1762847796,
+    "_id": "여의나루역<SEP>여의도 불꽃축제"
+  },
+  "세무회계사무원<SEP>여성새로일하기센터": {
+    "chunk_ids": [
+      "chunk-e6e8510033eeae20473b32ee733bdf38"
+    ],
+    "count": 1,
+    "create_time": 1762847796,
+    "update_time": 1762847796,
+    "_id": "세무회계사무원<SEP>여성새로일하기센터"
+  },
+  "재산세<SEP>주택": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847796,
+    "update_time": 1762847796,
+    "_id": "재산세<SEP>주택"
+  },
+  "마포대교<SEP>여의도 불꽃축제": {
+    "chunk_ids": [
+      "chunk-54abb97752a0a7153c93c833f537bc92"
+    ],
+    "count": 1,
+    "create_time": 1762847796,
+    "update_time": 1762847796,
+    "_id": "마포대교<SEP>여의도 불꽃축제"
+  },
+  "5호선<SEP>여의나루역": {
+    "chunk_ids": [
+      "chunk-54abb97752a0a7153c93c833f537bc92"
+    ],
+    "count": 1,
+    "create_time": 1762847796,
+    "update_time": 1762847796,
+    "_id": "5호선<SEP>여의나루역"
+  },
+  "건축물<SEP>재산세": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "건축물<SEP>재산세"
+  },
+  "20만 원<SEP>납부 기간": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "20만 원<SEP>납부 기간"
+  },
+  "여의나루역<SEP>여의도 세계 불꽃축제": {
+    "chunk_ids": [
+      "chunk-54abb97752a0a7153c93c833f537bc92"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "여의나루역<SEP>여의도 세계 불꽃축제"
+  },
+  "여성새로일하기센터<SEP>청소년진로상담전문가": {
+    "chunk_ids": [
+      "chunk-e6e8510033eeae20473b32ee733bdf38"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "여성새로일하기센터<SEP>청소년진로상담전문가"
+  },
+  "납부 기간<SEP>주택 (1기분)": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "납부 기간<SEP>주택 (1기분)"
+  },
+  "재산세<SEP>토지": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "재산세<SEP>토지"
+  },
+  "선박<SEP>재산세": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "선박<SEP>재산세"
+  },
+  "Festival<SEP>Yeoido Station": {
+    "chunk_ids": [
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "count": 1,
+    "create_time": 1762847797,
+    "update_time": 1762847797,
+    "_id": "Festival<SEP>Yeoido Station"
+  },
+  "재산세<SEP>정기분": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847798,
+    "update_time": 1762847798,
+    "_id": "재산세<SEP>정기분"
+  },
+  "Festival<SEP>Mapo Bridge": {
+    "chunk_ids": [
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "count": 1,
+    "create_time": 1762847798,
+    "update_time": 1762847798,
+    "_id": "Festival<SEP>Mapo Bridge"
+  },
+  "Festival<SEP>Seoul City Official Website": {
+    "chunk_ids": [
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "count": 1,
+    "create_time": 1762847798,
+    "update_time": 1762847798,
+    "_id": "Festival<SEP>Seoul City Official Website"
+  },
+  "납부 기간<SEP>주택 (2기분)": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847798,
+    "update_time": 1762847798,
+    "_id": "납부 기간<SEP>주택 (2기분)"
+  },
+  "Festival<SEP>Yeouido Station": {
+    "chunk_ids": [
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "count": 1,
+    "create_time": 1762847799,
+    "update_time": 1762847799,
+    "_id": "Festival<SEP>Yeouido Station"
+  },
+  "건축물<SEP>납부 기간": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847799,
+    "update_time": 1762847799,
+    "_id": "건축물<SEP>납부 기간"
+  },
+  "문화행사<SEP>서울문화포털": {
+    "chunk_ids": [
+      "chunk-408f94fe431f24a4fef9068021086482"
+    ],
+    "count": 1,
+    "create_time": 1762847799,
+    "update_time": 1762847799,
+    "_id": "문화행사<SEP>서울문화포털"
+  },
+  "납부 기간<SEP>토지": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "납부 기간<SEP>토지"
+  },
+  "Festival<SEP>Sae-gang Station": {
+    "chunk_ids": [
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "Festival<SEP>Sae-gang Station"
+  },
+  "서울톡<SEP>카카오톡": {
+    "chunk_ids": [
+      "chunk-408f94fe431f24a4fef9068021086482"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "서울톡<SEP>카카오톡"
+  },
+  "Daebang Station<SEP>Festival": {
+    "chunk_ids": [
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "Daebang Station<SEP>Festival"
+  },
+  "문화행사_조회<SEP>서울문화포털_안내": {
+    "chunk_ids": [
+      "chunk-408f94fe431f24a4fef9068021086482"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "문화행사_조회<SEP>서울문화포털_안내"
+  },
+  "문화행사<SEP>서울톡": {
+    "chunk_ids": [
+      "chunk-408f94fe431f24a4fef9068021086482"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "문화행사<SEP>서울톡"
+  },
+  "납부 기간<SEP>선박": {
+    "chunk_ids": [
+      "chunk-d80ffff298626140f3fcc173c80b82e9"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "납부 기간<SEP>선박"
+  },
+  "Festival<SEP>Transportation Control": {
+    "chunk_ids": [
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "count": 1,
+    "create_time": 1762847800,
+    "update_time": 1762847800,
+    "_id": "Festival<SEP>Transportation Control"
+  },
+  "서울톡<SEP>챗봇": {
+    "chunk_ids": [
+      "chunk-408f94fe431f24a4fef9068021086482"
+    ],
+    "count": 1,
+    "create_time": 1762847801,
+    "update_time": 1762847801,
+    "_id": "서울톡<SEP>챗봇"
+  },
+  "서울톡<SEP>서울톡_챗봇_이용안내": {
+    "chunk_ids": [
+      "chunk-408f94fe431f24a4fef9068021086482"
+    ],
+    "count": 1,
+    "create_time": 1762847801,
+    "update_time": 1762847801,
+    "_id": "서울톡<SEP>서울톡_챗봇_이용안내"
+  },
+  "국유림관리소<SEP>국유임산물 생장량 대금 면제": {
+    "chunk_ids": [
+      "chunk-cfd312027589e98cdf3d31f7c2152125"
+    ],
+    "count": 1,
+    "create_time": 1762847848,
+    "update_time": 1762847848,
+    "_id": "국유림관리소<SEP>국유임산물 생장량 대금 면제"
+  },
+  "정독도서관<SEP>종로구": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971"
+    ],
+    "count": 1,
+    "create_time": 1762847848,
+    "update_time": 1762847848,
+    "_id": "정독도서관<SEP>종로구"
+  },
+  "정독도서관<SEP>주차장": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971",
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a"
+    ],
+    "count": 2,
+    "create_time": 1762847848,
+    "update_time": 1762847848,
+    "_id": "정독도서관<SEP>주차장"
+  },
+  "노트북<SEP>정독도서관": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971"
+    ],
+    "count": 1,
+    "create_time": 1762847849,
+    "update_time": 1762847849,
+    "_id": "노트북<SEP>정독도서관"
+  },
+  "와이파이<SEP>정독도서관": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971",
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a"
+    ],
+    "count": 2,
+    "create_time": 1762847849,
+    "update_time": 1762847849,
+    "_id": "와이파이<SEP>정독도서관"
+  },
+  "주차 요금<SEP>주차장": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971"
+    ],
+    "count": 1,
+    "create_time": 1762847849,
+    "update_time": 1762847849,
+    "_id": "주차 요금<SEP>주차장"
+  },
+  "국유임산물 생장량 대금 면제<SEP>미벌채목": {
+    "chunk_ids": [
+      "chunk-cfd312027589e98cdf3d31f7c2152125"
+    ],
+    "count": 1,
+    "create_time": 1762847849,
+    "update_time": 1762847849,
+    "_id": "국유임산물 생장량 대금 면제<SEP>미벌채목"
+  },
+  "국유임산물<SEP>임업": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971"
+    ],
+    "count": 1,
+    "create_time": 1762847849,
+    "update_time": 1762847849,
+    "_id": "국유임산물<SEP>임업"
+  },
+  "국유임산물<SEP>생장량 대금": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971"
+    ],
+    "count": 1,
+    "create_time": 1762847850,
+    "update_time": 1762847850,
+    "_id": "국유임산물<SEP>생장량 대금"
+  },
+  "국유임산물 반출기간 연장 신청서<SEP>국유임산물 생장량 대금 면제": {
+    "chunk_ids": [
+      "chunk-cfd312027589e98cdf3d31f7c2152125"
+    ],
+    "count": 1,
+    "create_time": 1762847850,
+    "update_time": 1762847850,
+    "_id": "국유임산물 반출기간 연장 신청서<SEP>국유임산물 생장량 대금 면제"
+  },
+  "Central Disaster Management Headquarters<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 1,
+    "create_time": 1762847850,
+    "update_time": 1762847850,
+    "_id": "Central Disaster Management Headquarters<SEP>Social Distancing Level 2"
+  },
+  "국유임산물 생장량 대금 면제<SEP>임업": {
+    "chunk_ids": [
+      "chunk-cfd312027589e98cdf3d31f7c2152125"
+    ],
+    "count": 1,
+    "create_time": 1762847850,
+    "update_time": 1762847850,
+    "_id": "국유임산물 생장량 대금 면제<SEP>임업"
+  },
+  "국유임산물 매각 계약자<SEP>국유임산물 생장량 대금 면제": {
+    "chunk_ids": [
+      "chunk-cfd312027589e98cdf3d31f7c2152125"
+    ],
+    "count": 1,
+    "create_time": 1762847851,
+    "update_time": 1762847851,
+    "_id": "국유임산물 매각 계약자<SEP>국유임산물 생장량 대금 면제"
+  },
+  "Public Gatherings<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 1,
+    "create_time": 1762847851,
+    "update_time": 1762847851,
+    "_id": "Public Gatherings<SEP>Social Distancing Level 2"
+  },
+  "국유림관리소<SEP>국유임산물 매각 계약자": {
+    "chunk_ids": [
+      "chunk-cfd312027589e98cdf3d31f7c2152125"
+    ],
+    "count": 1,
+    "create_time": 1762847851,
+    "update_time": 1762847851,
+    "_id": "국유림관리소<SEP>국유임산물 매각 계약자"
+  },
+  "사회적 거리두기 2단계<SEP>수도권": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847851,
+    "update_time": 1762847851,
+    "_id": "사회적 거리두기 2단계<SEP>수도권"
+  },
+  "국유림관리소<SEP>국유임산물": {
+    "chunk_ids": [
+      "chunk-f24033bcd28f3629970c65560dbed971"
+    ],
+    "count": 1,
+    "create_time": 1762847851,
+    "update_time": 1762847851,
+    "_id": "국유림관리소<SEP>국유임산물"
+  },
+  "비수도권<SEP>사회적 거리두기 2단계": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "비수도권<SEP>사회적 거리두기 2단계"
+  },
+  "수도권<SEP>집합금지": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "수도권<SEP>집합금지"
+  },
+  "High-Risk Multi-Use Facilities<SEP>Social Distancing Level 2": {
+    "chunk_ids": [
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "High-Risk Multi-Use Facilities<SEP>Social Distancing Level 2"
+  },
+  "사회적 거리두기 2단계<SEP>스포츠 행사": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "사회적 거리두기 2단계<SEP>스포츠 행사"
+  },
+  "비수도권<SEP>집합금지": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "비수도권<SEP>집합금지"
+  },
+  "관할 수도사업소<SEP>세대분할": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "관할 수도사업소<SEP>세대분할"
+  },
+  "High-Risk Multi-Use Facilities<SEP>Mask Wearing": {
+    "chunk_ids": [
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "High-Risk Multi-Use Facilities<SEP>Mask Wearing"
+  },
+  "사회적 거리두기 2단계<SEP>영화관": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "사회적 거리두기 2단계<SEP>영화관"
+  },
+  "수도요금<SEP>이사정산": {
+    "chunk_ids": [
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a",
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 2,
+    "create_time": 1762847852,
+    "update_time": 1762847852,
+    "_id": "수도요금<SEP>이사정산"
+  },
+  "High-Risk Multi-Use Facilities<SEP>Physical Distancing": {
+    "chunk_ids": [
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "High-Risk Multi-Use Facilities<SEP>Physical Distancing"
+  },
+  "수도계량기<SEP>지침": {
+    "chunk_ids": [
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "수도계량기<SEP>지침"
+  },
+  "세대분할<SEP>세대분할 공사": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "세대분할<SEP>세대분할 공사"
+  },
+  "다산콜센터<SEP>이사정산": {
+    "chunk_ids": [
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "다산콜센터<SEP>이사정산"
+  },
+  "열람실<SEP>정독도서관": {
+    "chunk_ids": [
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "열람실<SEP>정독도서관"
+  },
+  "다중이용시설<SEP>사회적 거리두기 2단계": {
+    "chunk_ids": [
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "다중이용시설<SEP>사회적 거리두기 2단계"
+  },
+  "노트북<SEP>열람실": {
+    "chunk_ids": [
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "노트북<SEP>열람실"
+  },
+  "영농정착 지원금<SEP>청년 농업인": {
+    "chunk_ids": [
+      "chunk-2e42fdaab090f90dad1908f4f60a73e0"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "영농정착 지원금<SEP>청년 농업인"
+  },
+  "이사정산<SEP>자동납부": {
+    "chunk_ids": [
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a",
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 2,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "이사정산<SEP>자동납부"
+  },
+  "Dream Account Check Card<SEP>Seoul Youth Allowance": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "Dream Account Check Card<SEP>Seoul Youth Allowance"
+  },
+  "청년 농업인<SEP>청년창업농": {
+    "chunk_ids": [
+      "chunk-2e42fdaab090f90dad1908f4f60a73e0"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "청년 농업인<SEP>청년창업농"
+  },
+  "농협<SEP>영농정착 지원금": {
+    "chunk_ids": [
+      "chunk-2e42fdaab090f90dad1908f4f60a73e0"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "농협<SEP>영농정착 지원금"
+  },
+  "부가서비스<SEP>이사정산": {
+    "chunk_ids": [
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "부가서비스<SEP>이사정산"
+  },
+  "Jeonju Hanok Village<SEP>Ulsan": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847853,
+    "update_time": 1762847853,
+    "_id": "Jeonju Hanok Village<SEP>Ulsan"
+  },
+  "Osong Station<SEP>Ulsan": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "Osong Station<SEP>Ulsan"
+  },
+  "Employment Center<SEP>Seoul Youth Allowance": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "Employment Center<SEP>Seoul Youth Allowance"
+  },
+  "버스<SEP>영농정착 지원금": {
+    "chunk_ids": [
+      "chunk-2e42fdaab090f90dad1908f4f60a73e0"
+    ],
+    "count": 1,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "버스<SEP>영농정착 지원금"
+  },
+  "농협<SEP>직불카드": {
+    "chunk_ids": [
+      "chunk-2e42fdaab090f90dad1908f4f60a73e0",
+      "chunk-fb8bba2214ce478dff23c8d1f134a900"
+    ],
+    "count": 2,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "농협<SEP>직불카드"
+  },
+  "Seoul Youth Allowance<SEP>Youth Allowance Usage Restrictions": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "Seoul Youth Allowance<SEP>Youth Allowance Usage Restrictions"
+  },
+  "Dagaegu Housing<SEP>Water Charges": {
+    "chunk_ids": [
+      "chunk-338619afb67b6532013505721187e7c2"
+    ],
+    "count": 1,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "Dagaegu Housing<SEP>Water Charges"
+  },
+  "Jeonju Station<SEP>Ulsan": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "Jeonju Station<SEP>Ulsan"
+  },
+  "KTX<SEP>Osong Station": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847854,
+    "update_time": 1762847854,
+    "_id": "KTX<SEP>Osong Station"
+  },
+  "Household Division<SEP>Water Charges": {
+    "chunk_ids": [
+      "chunk-338619afb67b6532013505721187e7c2"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "Household Division<SEP>Water Charges"
+  },
+  "Seoul Youth Allowance<SEP>Youth Allowance Documentation": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "Seoul Youth Allowance<SEP>Youth Allowance Documentation"
+  },
+  "Osong Station<SEP>SRT": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "Osong Station<SEP>SRT"
+  },
+  "Jeonju Hanok Village<SEP>Jeonju Station": {
+    "chunk_ids": [
+      "chunk-e8c7676651f1e741dad39444bd4225de"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "Jeonju Hanok Village<SEP>Jeonju Station"
+  },
+  "Gunsan City<SEP>Water Charges": {
+    "chunk_ids": [
+      "chunk-338619afb67b6532013505721187e7c2"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "Gunsan City<SEP>Water Charges"
+  },
+  "Household Division<SEP>Water Supply Business Office": {
+    "chunk_ids": [
+      "chunk-338619afb67b6532013505721187e7c2"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "Household Division<SEP>Water Supply Business Office"
+  },
+  "오송역<SEP>울산": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "오송역<SEP>울산"
+  },
+  "전주역<SEP>전주한옥마을": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "전주역<SEP>전주한옥마을"
+  },
+  "Household Division<SEP>Water Meter": {
+    "chunk_ids": [
+      "chunk-338619afb67b6532013505721187e7c2"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "Household Division<SEP>Water Meter"
+  },
+  "고객번호<SEP>이사정산": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847855,
+    "update_time": 1762847855,
+    "_id": "고객번호<SEP>이사정산"
+  },
+  "울산<SEP>전주한옥마을": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "울산<SEP>전주한옥마을"
+  },
+  "오송역<SEP>전주역": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "오송역<SEP>전주역"
+  },
+  "Household Division<SEP>Rental Property": {
+    "chunk_ids": [
+      "chunk-338619afb67b6532013505721187e7c2"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "Household Division<SEP>Rental Property"
+  },
+  "수도계량기<SEP>이사정산": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "수도계량기<SEP>이사정산"
+  },
+  "영농정착 지원금<SEP>청년농업인": {
+    "chunk_ids": [
+      "chunk-fb8bba2214ce478dff23c8d1f134a900"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "영농정착 지원금<SEP>청년농업인"
+  },
+  "KTX<SEP>오송역": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "KTX<SEP>오송역"
+  },
+  "영농정착 지원금<SEP>청년창업농": {
+    "chunk_ids": [
+      "chunk-fb8bba2214ce478dff23c8d1f134a900"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "영농정착 지원금<SEP>청년창업농"
+  },
+  "지원금_신청자격<SEP>청년농업인": {
+    "chunk_ids": [
+      "chunk-fb8bba2214ce478dff23c8d1f134a900"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "지원금_신청자격<SEP>청년농업인"
+  },
+  "이메일 청구서<SEP>이사정산": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "이메일 청구서<SEP>이사정산"
+  },
+  "SRT<SEP>오송역": {
+    "chunk_ids": [
+      "chunk-b5fd5f90104cdd435a3370d45417fc97"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "SRT<SEP>오송역"
+  },
+  "영농정착 지원금<SEP>직불카드": {
+    "chunk_ids": [
+      "chunk-fb8bba2214ce478dff23c8d1f134a900"
+    ],
+    "count": 1,
+    "create_time": 1762847856,
+    "update_time": 1762847856,
+    "_id": "영농정착 지원금<SEP>직불카드"
+  },
+  "영농정착 지원금<SEP>지원금_지급방식": {
+    "chunk_ids": [
+      "chunk-fb8bba2214ce478dff23c8d1f134a900"
+    ],
+    "count": 1,
+    "create_time": 1762847857,
+    "update_time": 1762847857,
+    "_id": "영농정착 지원금<SEP>지원금_지급방식"
+  },
+  "Geupgang Station<SEP>Regular Train": {
+    "chunk_ids": [
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c"
+    ],
+    "count": 1,
+    "create_time": 1762847907,
+    "update_time": 1762847907,
+    "_id": "Geupgang Station<SEP>Regular Train"
+  },
+  "Express Train<SEP>Yeomchang Station": {
+    "chunk_ids": [
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c"
+    ],
+    "count": 1,
+    "create_time": 1762847907,
+    "update_time": 1762847907,
+    "_id": "Express Train<SEP>Yeomchang Station"
+  },
+  "Daejeon City<SEP>Local Bus": {
+    "chunk_ids": [
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c"
+    ],
+    "count": 1,
+    "create_time": 1762847907,
+    "update_time": 1762847907,
+    "_id": "Daejeon City<SEP>Local Bus"
+  },
+  "알파 코로나 바이러스<SEP>코로나 바이러스": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847907,
+    "update_time": 1762847907,
+    "_id": "알파 코로나 바이러스<SEP>코로나 바이러스"
+  },
+  "First Bus<SEP>Local Bus": {
+    "chunk_ids": [
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "First Bus<SEP>Local Bus"
+  },
+  "8 Minute Wait<SEP>Yeomchang Station": {
+    "chunk_ids": [
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "8 Minute Wait<SEP>Yeomchang Station"
+  },
+  "서울대학교<SEP>서울역": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "서울대학교<SEP>서울역"
+  },
+  "베타 코로나 바이러스<SEP>코로나 바이러스": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "베타 코로나 바이러스<SEP>코로나 바이러스"
+  },
+  "감마 코로나 바이러스<SEP>알파 코로나 바이러스": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "감마 코로나 바이러스<SEP>알파 코로나 바이러스"
+  },
+  "Regular Train<SEP>Yeomchang Station": {
+    "chunk_ids": [
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "Regular Train<SEP>Yeomchang Station"
+  },
+  "Last Bus<SEP>Local Bus": {
+    "chunk_ids": [
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "Last Bus<SEP>Local Bus"
+  },
+  "Seoul National University<SEP>Seoul Station": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847908,
+    "update_time": 1762847908,
+    "_id": "Seoul National University<SEP>Seoul Station"
+  },
+  "SARS-CoV-2<SEP>베타 코로나 바이러스": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847909,
+    "update_time": 1762847909,
+    "_id": "SARS-CoV-2<SEP>베타 코로나 바이러스"
+  },
+  "서울역<SEP>서울역버스환승센터": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847909,
+    "update_time": 1762847909,
+    "_id": "서울역<SEP>서울역버스환승센터"
+  },
+  "750A번<SEP>서울대학교": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847909,
+    "update_time": 1762847909,
+    "_id": "750A번<SEP>서울대학교"
+  },
+  "Bus Line 750A<SEP>Seoul Station": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847909,
+    "update_time": 1762847909,
+    "_id": "Bus Line 750A<SEP>Seoul Station"
+  },
+  "Daesan Call Center<SEP>Seoul City Bus Routes": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847909,
+    "update_time": 1762847909,
+    "_id": "Daesan Call Center<SEP>Seoul City Bus Routes"
+  },
+  "750B번<SEP>서울대학교": {
+    "chunk_ids": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2"
+    ],
+    "count": 1,
+    "create_time": 1762847909,
+    "update_time": 1762847909,
+    "_id": "750B번<SEP>서울대학교"
+  },
+  "Bus Ticket Cancellation<SEP>Bus Ticket Reservation": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847909,
+    "update_time": 1762847909,
+    "_id": "Bus Ticket Cancellation<SEP>Bus Ticket Reservation"
+  },
+  "서울 미식주간<SEP>제로배달 유니온": {
+    "chunk_ids": [
+      "chunk-a7034db657d12d8462cff29d596f4388"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "서울 미식주간<SEP>제로배달 유니온"
+  },
+  "Bus Line 750B<SEP>Seoul Station": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "Bus Line 750B<SEP>Seoul Station"
+  },
+  "Bus Line 750A<SEP>Seoul National University": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "Bus Line 750A<SEP>Seoul National University"
+  },
+  "Bus Ticket Reservation<SEP>Terminal Ticketing Counter": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "Bus Ticket Reservation<SEP>Terminal Ticketing Counter"
+  },
+  "서울사랑상품권<SEP>제로배달 유니온": {
+    "chunk_ids": [
+      "chunk-a7034db657d12d8462cff29d596f4388"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "서울사랑상품권<SEP>제로배달 유니온"
+  },
+  "내 손안에 서울<SEP>서울 미식주간": {
+    "chunk_ids": [
+      "chunk-a7034db657d12d8462cff29d596f4388"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "내 손안에 서울<SEP>서울 미식주간"
+  },
+  "Bus Line 750B<SEP>Seoul National University": {
+    "chunk_ids": [
+      "chunk-19ac6881e2728705998d9fe41b070aa0"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "Bus Line 750B<SEP>Seoul National University"
+  },
+  "Building Owners<SEP>Old Internal Pipes": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "Building Owners<SEP>Old Internal Pipes"
+  },
+  "External Water Pipe Issues<SEP>Municipal Water Authorities": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "External Water Pipe Issues<SEP>Municipal Water Authorities"
+  },
+  "제로배달 유니온<SEP>힘콕 상품권": {
+    "chunk_ids": [
+      "chunk-a7034db657d12d8462cff29d596f4388"
+    ],
+    "count": 1,
+    "create_time": 1762847910,
+    "update_time": 1762847910,
+    "_id": "제로배달 유니온<SEP>힘콕 상품권"
+  },
+  "Building Owners<SEP>Seoul City": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "Building Owners<SEP>Seoul City"
+  },
+  "Old Internal Pipes<SEP>Rusty Water Phenomenon": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "Old Internal Pipes<SEP>Rusty Water Phenomenon"
+  },
+  "Iron (Fe)<SEP>Noxious Water": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "Iron (Fe)<SEP>Noxious Water"
+  },
+  "영수증 경품 행사<SEP>제로배달 유니온": {
+    "chunk_ids": [
+      "chunk-a7034db657d12d8462cff29d596f4388"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "영수증 경품 행사<SEP>제로배달 유니온"
+  },
+  "External Water Pipe Issues<SEP>Rusty Water Phenomenon": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "External Water Pipe Issues<SEP>Rusty Water Phenomenon"
+  },
+  "등촌역<SEP>염창역": {
+    "chunk_ids": [
+      "chunk-d066dadff97b7189b2cc40b475551716"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "등촌역<SEP>염창역"
+  },
+  "Building Owners<SEP>Dasan Call Center": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "Building Owners<SEP>Dasan Call Center"
+  },
+  "서울 미식주간<SEP>영수증 경품 행사": {
+    "chunk_ids": [
+      "chunk-a7034db657d12d8462cff29d596f4388"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "서울 미식주간<SEP>영수증 경품 행사"
+  },
+  "Rusty Water Phenomenon<SEP>Young Children and Individuals with Specific Conditions": {
+    "chunk_ids": [
+      "chunk-94a2bcc44266d0bec6c81b78871ee223"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "Rusty Water Phenomenon<SEP>Young Children and Individuals with Specific Conditions"
+  },
+  "신용카드<SEP>예약 내역": {
+    "chunk_ids": [
+      "chunk-d066dadff97b7189b2cc40b475551716"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "신용카드<SEP>예약 내역"
+  },
+  "급행열차<SEP>염창역": {
+    "chunk_ids": [
+      "chunk-d066dadff97b7189b2cc40b475551716"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "급행열차<SEP>염창역"
+  },
+  "9호선<SEP>등촌역": {
+    "chunk_ids": [
+      "chunk-d066dadff97b7189b2cc40b475551716"
+    ],
+    "count": 1,
+    "create_time": 1762847911,
+    "update_time": 1762847911,
+    "_id": "9호선<SEP>등촌역"
+  },
+  "수도요금<SEP>정수처분": {
+    "chunk_ids": [
+      "chunk-0c88207e7762266f17ec8813caad8533"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "수도요금<SEP>정수처분"
+  },
+  "예약 내역<SEP>차량의 출발 시간": {
+    "chunk_ids": [
+      "chunk-d066dadff97b7189b2cc40b475551716"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "예약 내역<SEP>차량의 출발 시간"
+  },
+  "등촌역<SEP>일반열차": {
+    "chunk_ids": [
+      "chunk-d066dadff97b7189b2cc40b475551716"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "등촌역<SEP>일반열차"
+  },
+  "9호선<SEP>염창역": {
+    "chunk_ids": [
+      "chunk-d066dadff97b7189b2cc40b475551716"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "9호선<SEP>염창역"
+  },
+  "과태료<SEP>정수처분": {
+    "chunk_ids": [
+      "chunk-0c88207e7762266f17ec8813caad8533"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "과태료<SEP>정수처분"
+  },
+  "수도요금<SEP>인터넷지로": {
+    "chunk_ids": [
+      "chunk-0c88207e7762266f17ec8813caad8533"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "수도요금<SEP>인터넷지로"
+  },
+  "교통 정보 앱 활용<SEP>첫차 및 막차 시간": {
+    "chunk_ids": [
+      "chunk-0c88207e7762266f17ec8813caad8533"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "교통 정보 앱 활용<SEP>첫차 및 막차 시간"
+  },
+  "Seoul Love Gift Certificate<SEP>Zero Delivery Union": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "Seoul Love Gift Certificate<SEP>Zero Delivery Union"
+  },
+  "수도사업소<SEP>정수처분": {
+    "chunk_ids": [
+      "chunk-0c88207e7762266f17ec8813caad8533"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "수도사업소<SEP>정수처분"
+  },
+  "과태료<SEP>서울시 수도조례": {
+    "chunk_ids": [
+      "chunk-0c88207e7762266f17ec8813caad8533"
+    ],
+    "count": 1,
+    "create_time": 1762847912,
+    "update_time": 1762847912,
+    "_id": "과태료<SEP>서울시 수도조례"
+  },
+  "수도요금<SEP>정수처분 예고 고지서": {
+    "chunk_ids": [
+      "chunk-0c88207e7762266f17ec8813caad8533"
+    ],
+    "count": 1,
+    "create_time": 1762847913,
+    "update_time": 1762847913,
+    "_id": "수도요금<SEP>정수처분 예고 고지서"
+  },
+  "Discount Event<SEP>Zero Delivery Union": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847913,
+    "update_time": 1762847913,
+    "_id": "Discount Event<SEP>Zero Delivery Union"
+  },
+  "Arius Quality Assurance Program<SEP>Seoul Tap Water": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847913,
+    "update_time": 1762847913,
+    "_id": "Arius Quality Assurance Program<SEP>Seoul Tap Water"
+  },
+  "Lime<SEP>Sink": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847913,
+    "update_time": 1762847913,
+    "_id": "Lime<SEP>Sink"
+  },
+  "Arius Quality Assurance Program<SEP>citizens": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847913,
+    "update_time": 1762847913,
+    "_id": "Arius Quality Assurance Program<SEP>citizens"
+  },
+  "Arisu<SEP>Seoul City Water Supply": {
+    "chunk_ids": [
+      "chunk-fffd9e71d21770dc7f07084c09890a46"
+    ],
+    "count": 1,
+    "create_time": 1762847913,
+    "update_time": 1762847913,
+    "_id": "Arisu<SEP>Seoul City Water Supply"
+  },
+  "Himcock Gift Certificate<SEP>Zero Delivery Union": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847913,
+    "update_time": 1762847913,
+    "_id": "Himcock Gift Certificate<SEP>Zero Delivery Union"
+  },
+  "Raffle Event<SEP>Zero Delivery Union": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "Raffle Event<SEP>Zero Delivery Union"
+  },
+  "Free Water Quality Test<SEP>Seoul City Water Supply": {
+    "chunk_ids": [
+      "chunk-fffd9e71d21770dc7f07084c09890a46"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "Free Water Quality Test<SEP>Seoul City Water Supply"
+  },
+  "Arisu<SEP>White Stains": {
+    "chunk_ids": [
+      "chunk-fffd9e71d21770dc7f07084c09890a46"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "Arisu<SEP>White Stains"
+  },
+  "Arius Quality Assurance Program<SEP>Seoul City Official Website": {
+    "chunk_ids": [
+      "chunk-f56848b0d582666ed9e6dd135df84382"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "Arius Quality Assurance Program<SEP>Seoul City Official Website"
+  },
+  "경비실<SEP>수도관": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "경비실<SEP>수도관"
+  },
+  "Arisu<SEP>Old Pipelines": {
+    "chunk_ids": [
+      "chunk-fffd9e71d21770dc7f07084c09890a46"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "Arisu<SEP>Old Pipelines"
+  },
+  "Seoul City Water Supply<SEP>Water Quality Inspection Items": {
+    "chunk_ids": [
+      "chunk-fffd9e71d21770dc7f07084c09890a46"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "Seoul City Water Supply<SEP>Water Quality Inspection Items"
+  },
+  "Dasan Call Center<SEP>Free Water Quality Test": {
+    "chunk_ids": [
+      "chunk-fffd9e71d21770dc7f07084c09890a46"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "Dasan Call Center<SEP>Free Water Quality Test"
+  },
+  "관리사무소<SEP>수도관": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847914,
+    "update_time": 1762847914,
+    "_id": "관리사무소<SEP>수도관"
+  },
+  "공용부<SEP>전용부": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847915,
+    "update_time": 1762847915,
+    "_id": "공용부<SEP>전용부"
+  },
+  "경비실<SEP>관리사무소": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847915,
+    "update_time": 1762847915,
+    "_id": "경비실<SEP>관리사무소"
+  },
+  "관리사무소<SEP>다산콜센터": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847915,
+    "update_time": 1762847915,
+    "_id": "관리사무소<SEP>다산콜센터"
+  },
+  "경비실<SEP>상수도사업소": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847915,
+    "update_time": 1762847915,
+    "_id": "경비실<SEP>상수도사업소"
+  },
+  "경비실<SEP>시설 관련 문제": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847915,
+    "update_time": 1762847915,
+    "_id": "경비실<SEP>시설 관련 문제"
+  },
+  "경비실<SEP>관리주체": {
+    "chunk_ids": [
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "count": 1,
+    "create_time": 1762847916,
+    "update_time": 1762847916,
+    "_id": "경비실<SEP>관리주체"
+  },
+  "다산콜센터<SEP>서울시": {
+    "chunk_ids": [
+      "chunk-b2b16d42e8f440ba909655499b7dc8fb"
+    ],
+    "count": 1,
+    "create_time": 1762847958,
+    "update_time": 1762847958,
+    "_id": "다산콜센터<SEP>서울시"
+  },
+  "상하수도사업소<SEP>전주시": {
+    "chunk_ids": [
+      "chunk-b2b16d42e8f440ba909655499b7dc8fb"
+    ],
+    "count": 1,
+    "create_time": 1762847958,
+    "update_time": 1762847958,
+    "_id": "상하수도사업소<SEP>전주시"
+  },
+  "Guro G Festival<SEP>Guro-gu": {
+    "chunk_ids": [
+      "chunk-a0c0d7fe3279d51466ea2db023742542"
+    ],
+    "count": 1,
+    "create_time": 1762847958,
+    "update_time": 1762847958,
+    "_id": "Guro G Festival<SEP>Guro-gu"
+  },
+  "Guro G Festival<SEP>Seoul": {
+    "chunk_ids": [
+      "chunk-a0c0d7fe3279d51466ea2db023742542"
+    ],
+    "count": 1,
+    "create_time": 1762847959,
+    "update_time": 1762847959,
+    "_id": "Guro G Festival<SEP>Seoul"
+  },
+  "수도요금<SEP>전주시": {
+    "chunk_ids": [
+      "chunk-b2b16d42e8f440ba909655499b7dc8fb"
+    ],
+    "count": 1,
+    "create_time": 1762847959,
+    "update_time": 1762847959,
+    "_id": "수도요금<SEP>전주시"
+  },
+  "An Yang Cheon Main Stage<SEP>Guro G Festival": {
+    "chunk_ids": [
+      "chunk-a0c0d7fe3279d51466ea2db023742542"
+    ],
+    "count": 1,
+    "create_time": 1762847959,
+    "update_time": 1762847959,
+    "_id": "An Yang Cheon Main Stage<SEP>Guro G Festival"
+  },
+  "G Valley<SEP>Guro G Festival": {
+    "chunk_ids": [
+      "chunk-a0c0d7fe3279d51466ea2db023742542"
+    ],
+    "count": 1,
+    "create_time": 1762847960,
+    "update_time": 1762847960,
+    "_id": "G Valley<SEP>Guro G Festival"
+  },
+  "Guro G Festival<SEP>Seoul Metropolitan Government": {
+    "chunk_ids": [
+      "chunk-a0c0d7fe3279d51466ea2db023742542"
+    ],
+    "count": 1,
+    "create_time": 1762847960,
+    "update_time": 1762847960,
+    "_id": "Guro G Festival<SEP>Seoul Metropolitan Government"
+  },
+  "Property<SEP>Reasan Tax": {
+    "chunk_ids": [
+      "chunk-7459f2a288aa2b51e24609349a9f0871"
+    ],
+    "count": 1,
+    "create_time": 1762847960,
+    "update_time": 1762847960,
+    "_id": "Property<SEP>Reasan Tax"
+  },
+  "Equity Market Ratio<SEP>Taxable Standard": {
+    "chunk_ids": [
+      "chunk-7459f2a288aa2b51e24609349a9f0871"
+    ],
+    "count": 1,
+    "create_time": 1762847960,
+    "update_time": 1762847960,
+    "_id": "Equity Market Ratio<SEP>Taxable Standard"
+  },
+  "Cultural and Tourism Department of Guro-gu<SEP>Guro G Festival": {
+    "chunk_ids": [
+      "chunk-a0c0d7fe3279d51466ea2db023742542"
+    ],
+    "count": 1,
+    "create_time": 1762847960,
+    "update_time": 1762847960,
+    "_id": "Cultural and Tourism Department of Guro-gu<SEP>Guro G Festival"
+  },
+  "전주시<SEP>전주시청 민원실": {
+    "chunk_ids": [
+      "chunk-b2b16d42e8f440ba909655499b7dc8fb"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "전주시<SEP>전주시청 민원실"
+  },
+  "June 1<SEP>Reasan Tax": {
+    "chunk_ids": [
+      "chunk-7459f2a288aa2b51e24609349a9f0871"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "June 1<SEP>Reasan Tax"
+  },
+  "Tax Rate<SEP>Taxable Standard": {
+    "chunk_ids": [
+      "chunk-7459f2a288aa2b51e24609349a9f0871"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "Tax Rate<SEP>Taxable Standard"
+  },
+  "Guro G Festival<SEP>September": {
+    "chunk_ids": [
+      "chunk-a0c0d7fe3279d51466ea2db023742542"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "Guro G Festival<SEP>September"
+  },
+  "B2126<SEP>Dasan Call Center": {
+    "chunk_ids": [
+      "chunk-7459f2a288aa2b51e24609349a9f0871"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "B2126<SEP>Dasan Call Center"
+  },
+  "Comprehensive Aggregate<SEP>Reasan Tax": {
+    "chunk_ids": [
+      "chunk-7459f2a288aa2b51e24609349a9f0871"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "Comprehensive Aggregate<SEP>Reasan Tax"
+  },
+  "세법<SEP>주택": {
+    "chunk_ids": [
+      "chunk-1d8ad8036606e5cc6b85c6c78d0181a8"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "세법<SEP>주택"
+  },
+  "보온재<SEP>수도계량기": {
+    "chunk_ids": [
+      "chunk-1d8ad8036606e5cc6b85c6c78d0181a8"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "보온재<SEP>수도계량기"
+  },
+  "다산콜센터<SEP>전주시": {
+    "chunk_ids": [
+      "chunk-b2b16d42e8f440ba909655499b7dc8fb"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "다산콜센터<SEP>전주시"
+  },
+  "동파<SEP>수도관": {
+    "chunk_ids": [
+      "chunk-1d8ad8036606e5cc6b85c6c78d0181a8"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "동파<SEP>수도관"
+  },
+  "세법<SEP>주거용 오피스텔": {
+    "chunk_ids": [
+      "chunk-1d8ad8036606e5cc6b85c6c78d0181a8"
+    ],
+    "count": 1,
+    "create_time": 1762847961,
+    "update_time": 1762847961,
+    "_id": "세법<SEP>주거용 오피스텔"
+  },
+  "광주<SEP>부산": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "광주<SEP>부산"
+  },
+  "관할 수도사업소<SEP>수도계량기": {
+    "chunk_ids": [
+      "chunk-1d8ad8036606e5cc6b85c6c78d0181a8"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "관할 수도사업소<SEP>수도계량기"
+  },
+  "다산콜센터<SEP>서울시 120 다산콜센터": {
+    "chunk_ids": [
+      "chunk-b2b16d42e8f440ba909655499b7dc8fb"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "다산콜센터<SEP>서울시 120 다산콜센터"
+  },
+  "분양권<SEP>세법": {
+    "chunk_ids": [
+      "chunk-1d8ad8036606e5cc6b85c6c78d0181a8"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "분양권<SEP>세법"
+  },
+  "김포<SEP>부산": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "김포<SEP>부산"
+  },
+  "과세표준<SEP>종합합산": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "과세표준<SEP>종합합산"
+  },
+  "부산<SEP>아시아나 항공": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "부산<SEP>아시아나 항공"
+  },
+  "Subway<SEP>Youth Transportation Card": {
+    "chunk_ids": [
+      "chunk-071711cf12448d821deeaa60deeeffca"
+    ],
+    "count": 1,
+    "create_time": 1762847962,
+    "update_time": 1762847962,
+    "_id": "Subway<SEP>Youth Transportation Card"
+  },
+  "Ticket Barrier<SEP>Youth Transportation Card": {
+    "chunk_ids": [
+      "chunk-071711cf12448d821deeaa60deeeffca"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "Ticket Barrier<SEP>Youth Transportation Card"
+  },
+  "Audio Announcement<SEP>Misuse Prevention Policy": {
+    "chunk_ids": [
+      "chunk-071711cf12448d821deeaa60deeeffca"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "Audio Announcement<SEP>Misuse Prevention Policy"
+  },
+  "과세표준<SEP>별도합산": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "과세표준<SEP>별도합산"
+  },
+  "광주공항<SEP>부산": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "광주공항<SEP>부산"
+  },
+  "Public Transportation Guide<SEP>Seoul City Response Center": {
+    "chunk_ids": [
+      "chunk-071711cf12448d821deeaa60deeeffca"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "Public Transportation Guide<SEP>Seoul City Response Center"
+  },
+  "Automobile Tax<SEP>Bank": {
+    "chunk_ids": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "Automobile Tax<SEP>Bank"
+  },
+  "Misuse Prevention Policy<SEP>Youth Transportation Card": {
+    "chunk_ids": [
+      "chunk-071711cf12448d821deeaa60deeeffca"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "Misuse Prevention Policy<SEP>Youth Transportation Card"
+  },
+  "김포공항<SEP>부산": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "김포공항<SEP>부산"
+  },
+  "Gucheong<SEP>Tax Department": {
+    "chunk_ids": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "Gucheong<SEP>Tax Department"
+  },
+  "과세표준<SEP>분리과세": {
+    "chunk_ids": [
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f"
+    ],
+    "count": 1,
+    "create_time": 1762847963,
+    "update_time": 1762847963,
+    "_id": "과세표준<SEP>분리과세"
+  },
+  "Tax Department<SEP>Unmanned Payment Machine": {
+    "chunk_ids": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "Tax Department<SEP>Unmanned Payment Machine"
+  },
+  "Acquisition Tax<SEP>Apartment": {
+    "chunk_ids": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd",
+      "chunk-68e7f5574b023f44a8ed5633f16b731a"
+    ],
+    "count": 2,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "Acquisition Tax<SEP>Apartment"
+  },
+  "Automobile Tax<SEP>Giro24": {
+    "chunk_ids": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "Automobile Tax<SEP>Giro24"
+  },
+  "수질검사<SEP>저수조": {
+    "chunk_ids": [
+      "chunk-a26015b9d8a0ea3cd28adf86db1fb5b4"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "수질검사<SEP>저수조"
+  },
+  "Automobile Tax<SEP>ETAX": {
+    "chunk_ids": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "Automobile Tax<SEP>ETAX"
+  },
+  "상하수도관리과<SEP>수질검사": {
+    "chunk_ids": [
+      "chunk-a26015b9d8a0ea3cd28adf86db1fb5b4"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "상하수도관리과<SEP>수질검사"
+  },
+  "구로G페스티벌<SEP>안양천 특설무대": {
+    "chunk_ids": [
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "구로G페스티벌<SEP>안양천 특설무대"
+  },
+  "ARS System<SEP>Automobile Tax": {
+    "chunk_ids": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "ARS System<SEP>Automobile Tax"
+  },
+  "계양구청<SEP>파주 금촌초등학교": {
+    "chunk_ids": [
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1"
+    ],
+    "count": 1,
+    "create_time": 1762847964,
+    "update_time": 1762847964,
+    "_id": "계양구청<SEP>파주 금촌초등학교"
+  },
+  "G밸리 기업 및 공원<SEP>구로G페스티벌": {
+    "chunk_ids": [
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "G밸리 기업 및 공원<SEP>구로G페스티벌"
+  },
+  "맑은물관리사업소<SEP>수질검사": {
+    "chunk_ids": [
+      "chunk-a26015b9d8a0ea3cd28adf86db1fb5b4"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "맑은물관리사업소<SEP>수질검사"
+  },
+  "상하수도관리과<SEP>수도계량기": {
+    "chunk_ids": [
+      "chunk-a26015b9d8a0ea3cd28adf86db1fb5b4"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "상하수도관리과<SEP>수도계량기"
+  },
+  "250번 버스<SEP>계양구청": {
+    "chunk_ids": [
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "250번 버스<SEP>계양구청"
+  },
+  "K-POP 콘서트<SEP>구로G페스티벌": {
+    "chunk_ids": [
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "K-POP 콘서트<SEP>구로G페스티벌"
+  },
+  "Acquisition Tax<SEP>Pre-sale Rights": {
+    "chunk_ids": [
+      "chunk-68e7f5574b023f44a8ed5633f16b731a"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "Acquisition Tax<SEP>Pre-sale Rights"
+  },
+  "농협<SEP>맑은물관리사업소": {
+    "chunk_ids": [
+      "chunk-a26015b9d8a0ea3cd28adf86db1fb5b4"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "농협<SEP>맑은물관리사업소"
+  },
+  "250번 버스<SEP>파주 금촌초등학교": {
+    "chunk_ids": [
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "250번 버스<SEP>파주 금촌초등학교"
+  },
+  "Acquisition Tax<SEP>Officetel": {
+    "chunk_ids": [
+      "chunk-68e7f5574b023f44a8ed5633f16b731a"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "Acquisition Tax<SEP>Officetel"
+  },
+  "Contract Rescission<SEP>Refund": {
+    "chunk_ids": [
+      "chunk-68e7f5574b023f44a8ed5633f16b731a"
+    ],
+    "count": 1,
+    "create_time": 1762847965,
+    "update_time": 1762847965,
+    "_id": "Contract Rescission<SEP>Refund"
+  },
+  "구로G페스티벌<SEP>드론 군집 비행 쇼": {
+    "chunk_ids": [
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1"
+    ],
+    "count": 1,
+    "create_time": 1762847966,
+    "update_time": 1762847966,
+    "_id": "구로G페스티벌<SEP>드론 군집 비행 쇼"
+  },
+  "Acquisition Tax<SEP>Goshiwon": {
+    "chunk_ids": [
+      "chunk-68e7f5574b023f44a8ed5633f16b731a"
+    ],
+    "count": 1,
+    "create_time": 1762847966,
+    "update_time": 1762847966,
+    "_id": "Acquisition Tax<SEP>Goshiwon"
+  },
+  "Acquisition Tax<SEP>Dormitory": {
+    "chunk_ids": [
+      "chunk-68e7f5574b023f44a8ed5633f16b731a"
+    ],
+    "count": 1,
+    "create_time": 1762847966,
+    "update_time": 1762847966,
+    "_id": "Acquisition Tax<SEP>Dormitory"
+  },
+  "Acquisition Deadline<SEP>Acquisition Tax": {
+    "chunk_ids": [
+      "chunk-68e7f5574b023f44a8ed5633f16b731a"
+    ],
+    "count": 1,
+    "create_time": 1762847967,
+    "update_time": 1762847967,
+    "_id": "Acquisition Deadline<SEP>Acquisition Tax"
+  },
+  "Overdue Water Fees<SEP>Seoul Metropolitan City": {
+    "chunk_ids": [
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d"
+    ],
+    "count": 1,
+    "create_time": 1762848009,
+    "update_time": 1762848009,
+    "_id": "Overdue Water Fees<SEP>Seoul Metropolitan City"
+  },
+  "Customer Number<SEP>Water Bill": {
+    "chunk_ids": [
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d"
+    ],
+    "count": 1,
+    "create_time": 1762848009,
+    "update_time": 1762848009,
+    "_id": "Customer Number<SEP>Water Bill"
+  },
+  "무임용 교통카드<SEP>버스": {
+    "chunk_ids": [
+      "chunk-c71d6b9a98c2f662e11efcfb8623994b"
+    ],
+    "count": 1,
+    "create_time": 1762848009,
+    "update_time": 1762848009,
+    "_id": "무임용 교통카드<SEP>버스"
+  },
+  "Installment Payment<SEP>Overdue Water Fees": {
+    "chunk_ids": [
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d"
+    ],
+    "count": 1,
+    "create_time": 1762848010,
+    "update_time": 1762848010,
+    "_id": "Installment Payment<SEP>Overdue Water Fees"
+  },
+  "무임용 교통카드<SEP>지하철": {
+    "chunk_ids": [
+      "chunk-c71d6b9a98c2f662e11efcfb8623994b"
+    ],
+    "count": 1,
+    "create_time": 1762848010,
+    "update_time": 1762848010,
+    "_id": "무임용 교통카드<SEP>지하철"
+  },
+  "120 Dasan Call Center<SEP>Customer Number": {
+    "chunk_ids": [
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d"
+    ],
+    "count": 1,
+    "create_time": 1762848010,
+    "update_time": 1762848010,
+    "_id": "120 Dasan Call Center<SEP>Customer Number"
+  },
+  "동주민센터<SEP>장애인 등록자": {
+    "chunk_ids": [
+      "chunk-c71d6b9a98c2f662e11efcfb8623994b"
+    ],
+    "count": 1,
+    "create_time": 1762848010,
+    "update_time": 1762848010,
+    "_id": "동주민센터<SEP>장애인 등록자"
+  },
+  "서울부동산정보광장<SEP>확정일자 제도": {
+    "chunk_ids": [
+      "chunk-c71d6b9a98c2f662e11efcfb8623994b"
+    ],
+    "count": 1,
+    "create_time": 1762848010,
+    "update_time": 1762848010,
+    "_id": "서울부동산정보광장<SEP>확정일자 제도"
+  },
+  "무임용 교통카드<SEP>장애인 등록자": {
+    "chunk_ids": [
+      "chunk-c71d6b9a98c2f662e11efcfb8623994b"
+    ],
+    "count": 1,
+    "create_time": 1762848010,
+    "update_time": 1762848010,
+    "_id": "무임용 교통카드<SEP>장애인 등록자"
+  },
+  "Late Fee<SEP>Overdue Water Fees": {
+    "chunk_ids": [
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "Late Fee<SEP>Overdue Water Fees"
+  },
+  "Installment Payment<SEP>Seoul Metropolitan City": {
+    "chunk_ids": [
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "Installment Payment<SEP>Seoul Metropolitan City"
+  },
+  "5 Days<SEP>수도계량기 교체 신청서": {
+    "chunk_ids": [
+      "chunk-9658fdb2087e85764dd9afc50a0ef082"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "5 Days<SEP>수도계량기 교체 신청서"
+  },
+  "수도사업소<SEP>아리수 사이버고객센터": {
+    "chunk_ids": [
+      "chunk-9658fdb2087e85764dd9afc50a0ef082"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "수도사업소<SEP>아리수 사이버고객센터"
+  },
+  "교체 비용<SEP>수도계량기 고장": {
+    "chunk_ids": [
+      "chunk-9658fdb2087e85764dd9afc50a0ef082"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "교체 비용<SEP>수도계량기 고장"
+  },
+  "교체 비용<SEP>수도사업소": {
+    "chunk_ids": [
+      "chunk-9658fdb2087e85764dd9afc50a0ef082"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "교체 비용<SEP>수도사업소"
+  },
+  "서울역<SEP>일산 호수공원": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "서울역<SEP>일산 호수공원"
+  },
+  "수도계량기<SEP>수도계량기 교체 신청서": {
+    "chunk_ids": [
+      "chunk-9658fdb2087e85764dd9afc50a0ef082"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "수도계량기<SEP>수도계량기 교체 신청서"
+  },
+  "대곡역<SEP>홍대입구역": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "대곡역<SEP>홍대입구역"
+  },
+  "Overdue Water Fees<SEP>Seoul City Waterworks Bureau": {
+    "chunk_ids": [
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "Overdue Water Fees<SEP>Seoul City Waterworks Bureau"
+  },
+  "5 Days<SEP>수도사업소": {
+    "chunk_ids": [
+      "chunk-9658fdb2087e85764dd9afc50a0ef082"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "5 Days<SEP>수도사업소"
+  },
+  "일산 호수공원<SEP>정발산역": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848011,
+    "update_time": 1762848011,
+    "_id": "일산 호수공원<SEP>정발산역"
+  },
+  "서울역<SEP>홍대입구역": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "서울역<SEP>홍대입구역"
+  },
+  "Il-san Lake Park<SEP>Seoul Station": {
+    "chunk_ids": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "Il-san Lake Park<SEP>Seoul Station"
+  },
+  "Airport Railroad<SEP>Seoul Station": {
+    "chunk_ids": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "Airport Railroad<SEP>Seoul Station"
+  },
+  "Gyeongui-Jungang Line<SEP>Hongdae Station": {
+    "chunk_ids": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "Gyeongui-Jungang Line<SEP>Hongdae Station"
+  },
+  "대곡역<SEP>정발산역": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "대곡역<SEP>정발산역"
+  },
+  "Daegok Station<SEP>Line 3": {
+    "chunk_ids": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "Daegok Station<SEP>Line 3"
+  },
+  "경의중앙선<SEP>홍대입구역": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "경의중앙선<SEP>홍대입구역"
+  },
+  "공항철도<SEP>서울역": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "공항철도<SEP>서울역"
+  },
+  "Il-san Lake Park<SEP>Jeongbal-san Station": {
+    "chunk_ids": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "Il-san Lake Park<SEP>Jeongbal-san Station"
+  },
+  "Customer Number<SEP>Dasan Call Center": {
+    "chunk_ids": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "Customer Number<SEP>Dasan Call Center"
+  },
+  "공항<SEP>제주도": {
+    "chunk_ids": [
+      "chunk-720010d9735ee34836c2458a4d25df98"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "공항<SEP>제주도"
+  },
+  "3호선<SEP>대곡역": {
+    "chunk_ids": [
+      "chunk-8b06dbf4914070a59882596578220e1b"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "3호선<SEP>대곡역"
+  },
+  "Travel Health Guidelines<SEP>항공기": {
+    "chunk_ids": [
+      "chunk-720010d9735ee34836c2458a4d25df98"
+    ],
+    "count": 1,
+    "create_time": 1762848012,
+    "update_time": 1762848012,
+    "_id": "Travel Health Guidelines<SEP>항공기"
+  },
+  "COVID-19<SEP>Isolation and Treatment": {
+    "chunk_ids": [
+      "chunk-720010d9735ee34836c2458a4d25df98"
+    ],
+    "count": 1,
+    "create_time": 1762848013,
+    "update_time": 1762848013,
+    "_id": "COVID-19<SEP>Isolation and Treatment"
+  },
+  "Customer Number<SEP>Payment Deadline": {
+    "chunk_ids": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e"
+    ],
+    "count": 1,
+    "create_time": 1762848013,
+    "update_time": 1762848013,
+    "_id": "Customer Number<SEP>Payment Deadline"
+  },
+  "버팀목 전세자금 대출<SEP>신혼부부": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848013,
+    "update_time": 1762848013,
+    "_id": "버팀목 전세자금 대출<SEP>신혼부부"
+  },
+  "Temperature Checks<SEP>공항": {
+    "chunk_ids": [
+      "chunk-720010d9735ee34836c2458a4d25df98"
+    ],
+    "count": 1,
+    "create_time": 1762848013,
+    "update_time": 1762848013,
+    "_id": "Temperature Checks<SEP>공항"
+  },
+  "COVID-19<SEP>Travel Health Guidelines": {
+    "chunk_ids": [
+      "chunk-720010d9735ee34836c2458a4d25df98"
+    ],
+    "count": 1,
+    "create_time": 1762848013,
+    "update_time": 1762848013,
+    "_id": "COVID-19<SEP>Travel Health Guidelines"
+  },
+  "신혼부부<SEP>전세대출": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848013,
+    "update_time": 1762848013,
+    "_id": "신혼부부<SEP>전세대출"
+  },
+  "버팀목 전세자금 대출<SEP>하나은행": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848013,
+    "update_time": 1762848013,
+    "_id": "버팀목 전세자금 대출<SEP>하나은행"
+  },
+  "국민은행<SEP>버팀목 전세자금 대출": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "국민은행<SEP>버팀목 전세자금 대출"
+  },
+  "COVID-19<SEP>생활치료센터": {
+    "chunk_ids": [
+      "chunk-720010d9735ee34836c2458a4d25df98"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "COVID-19<SEP>생활치료센터"
+  },
+  "Low-Income Working Youth<SEP>경기도 일하는 청년 통장": {
+    "chunk_ids": [
+      "chunk-f1a9680fdc4b264ce8def83b977799b4"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "Low-Income Working Youth<SEP>경기도 일하는 청년 통장"
+  },
+  "버팀목 전세자금 대출<SEP>신한은행": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "버팀목 전세자금 대출<SEP>신한은행"
+  },
+  "Recruitment Period<SEP>경기도 일하는 청년 통장": {
+    "chunk_ids": [
+      "chunk-f1a9680fdc4b264ce8def83b977799b4"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "Recruitment Period<SEP>경기도 일하는 청년 통장"
+  },
+  "Application Process<SEP>Low-Income Working Youth": {
+    "chunk_ids": [
+      "chunk-f1a9680fdc4b264ce8def83b977799b4"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "Application Process<SEP>Low-Income Working Youth"
+  },
+  "버팀목 전세자금 대출<SEP>서울시": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "버팀목 전세자금 대출<SEP>서울시"
+  },
+  "서울부동산정보광장<SEP>확정일자": {
+    "chunk_ids": [
+      "chunk-b052a504419a554f97a625030480b61a"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "서울부동산정보광장<SEP>확정일자"
+  },
+  "Support Fund<SEP>경기도 일하는 청년 통장": {
+    "chunk_ids": [
+      "chunk-f1a9680fdc4b264ce8def83b977799b4"
+    ],
+    "count": 1,
+    "create_time": 1762848014,
+    "update_time": 1762848014,
+    "_id": "Support Fund<SEP>경기도 일하는 청년 통장"
+  },
+  "우선변제권<SEP>확정일자": {
+    "chunk_ids": [
+      "chunk-b052a504419a554f97a625030480b61a"
+    ],
+    "count": 1,
+    "create_time": 1762848015,
+    "update_time": 1762848015,
+    "_id": "우선변제권<SEP>확정일자"
+  },
+  "대출 한도<SEP>버팀목 전세자금 대출": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848015,
+    "update_time": 1762848015,
+    "_id": "대출 한도<SEP>버팀목 전세자금 대출"
+  },
+  "경기도 일하는 청년 통장<SEP>저소득층": {
+    "chunk_ids": [
+      "chunk-f1a9680fdc4b264ce8def83b977799b4"
+    ],
+    "count": 1,
+    "create_time": 1762848015,
+    "update_time": 1762848015,
+    "_id": "경기도 일하는 청년 통장<SEP>저소득층"
+  },
+  "전입신고<SEP>확정일자": {
+    "chunk_ids": [
+      "chunk-b052a504419a554f97a625030480b61a"
+    ],
+    "count": 1,
+    "create_time": 1762848015,
+    "update_time": 1762848015,
+    "_id": "전입신고<SEP>확정일자"
+  },
+  "버팀목 전세자금 대출<SEP>전세대출": {
+    "chunk_ids": [
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "count": 1,
+    "create_time": 1762848015,
+    "update_time": 1762848015,
+    "_id": "버팀목 전세자금 대출<SEP>전세대출"
+  },
+  "Villa<SEP>Water Faucet": {
+    "chunk_ids": [
+      "chunk-2d0b085a333803c26889a3c63b1a8e30"
+    ],
+    "count": 1,
+    "create_time": 1762848015,
+    "update_time": 1762848015,
+    "_id": "Villa<SEP>Water Faucet"
+  },
+  "Indoor Leakage<SEP>Leak Detection Institution": {
+    "chunk_ids": [
+      "chunk-2d0b085a333803c26889a3c63b1a8e30"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "Indoor Leakage<SEP>Leak Detection Institution"
+  },
+  "주민센터<SEP>확정일자": {
+    "chunk_ids": [
+      "chunk-b052a504419a554f97a625030480b61a"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "주민센터<SEP>확정일자"
+  },
+  "Damshan Call Center<SEP>Villa": {
+    "chunk_ids": [
+      "chunk-2d0b085a333803c26889a3c63b1a8e30"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "Damshan Call Center<SEP>Villa"
+  },
+  "Leak Detection Institution<SEP>Professional Repair Company": {
+    "chunk_ids": [
+      "chunk-2d0b085a333803c26889a3c63b1a8e30"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "Leak Detection Institution<SEP>Professional Repair Company"
+  },
+  "공증인사무소<SEP>확정일자": {
+    "chunk_ids": [
+      "chunk-b052a504419a554f97a625030480b61a"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "공증인사무소<SEP>확정일자"
+  },
+  "Leakage<SEP>Villa": {
+    "chunk_ids": [
+      "chunk-2d0b085a333803c26889a3c63b1a8e30"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "Leakage<SEP>Villa"
+  },
+  "Damshan Call Center<SEP>Outdoor Leakage": {
+    "chunk_ids": [
+      "chunk-2d0b085a333803c26889a3c63b1a8e30"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "Damshan Call Center<SEP>Outdoor Leakage"
+  },
+  "Indoor Leakage<SEP>Professional Repair Company": {
+    "chunk_ids": [
+      "chunk-2d0b085a333803c26889a3c63b1a8e30"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "Indoor Leakage<SEP>Professional Repair Company"
+  },
+  "계약 증서<SEP>확정일자": {
+    "chunk_ids": [
+      "chunk-b052a504419a554f97a625030480b61a"
+    ],
+    "count": 1,
+    "create_time": 1762848016,
+    "update_time": 1762848016,
+    "_id": "계약 증서<SEP>확정일자"
+  },
+  "법원<SEP>확정일자": {
+    "chunk_ids": [
+      "chunk-b052a504419a554f97a625030480b61a"
+    ],
+    "count": 1,
+    "create_time": 1762848017,
+    "update_time": 1762848017,
+    "_id": "법원<SEP>확정일자"
+  }
+}

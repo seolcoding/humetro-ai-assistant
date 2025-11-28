@@ -1,0 +1,266 @@
+{
+  "doc-92d742ca27eb20273329f0e493860cf4": {
+    "status": "processed",
+    "chunks_count": 11,
+    "chunks_list": [
+      "chunk-798442eb48b371e7be4ca7d3cf14098c",
+      "chunk-3a8b30f520ca5e33de27b8414573087b",
+      "chunk-4736e8e450518f32893cf6635349861c",
+      "chunk-0c32a8037dd59758257a2dfc062def44",
+      "chunk-edb19e6c37e773b5f29773c61b5e0241",
+      "chunk-b6fdd2259269416ad00bf5efa1e3ff75",
+      "chunk-317799b4564220b78af1c973d13748bd",
+      "chunk-5f84e3c36be541c9320f33f8820b3e19",
+      "chunk-0fcdbac5b68ae767114e7bd74f20d2a0",
+      "chunk-245bda255670ccd48c09a947ca704979",
+      "chunk-eb1dd8dc5e2f9c7fcb16fd507922082f"
+    ],
+    "content_summary": "[Document ID: B24034]\n[Category: 코로나19_관련_상담]\n\nQuestion: 저신용자인 개인이 받을 수 있는 대출 지원이 있나요? 소상공인을 위한 1천만원 긴급 대출이 있다고 들었는데, 자격 조건과 한도는 어떻게 되고 직장인도 신청할 수 있는지 궁금합니다.\n\nAnswer: 문의하신 1천만원 긴급 대출은 저신용 소상공인의 경영 안정을 위한 정책 자금입니다. 지원 대상은 청년, 장애인, 여성 기업 중 대표자의 신용등급이 6...",
+    "content_length": 21098,
+    "created_at": "2025-11-11T07:50:21.304215+00:00",
+    "updated_at": "2025-11-11T07:51:41.904092+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165021_da671deb",
+    "metadata": {
+      "processing_start_time": 1762847421,
+      "processing_end_time": 1762847501
+    }
+  },
+  "doc-65ab0c57398562e9526a93f11b4d3c53": {
+    "status": "processed",
+    "chunks_count": 11,
+    "chunks_list": [
+      "chunk-7a9bbf7a94b6250c06b1f762921ca7f1",
+      "chunk-95731aa3d678e7c4783ecbdbe4192ec2",
+      "chunk-04109b981ea9241e20e0cd41acf75c9a",
+      "chunk-f9d2bb0a7a9356cea2eea34580304805",
+      "chunk-a3784934e9c1843ee3a5dab7333fbeb0",
+      "chunk-760fc96eeb75a2dffb0a3ff9ce6121df",
+      "chunk-fd1d5b5c355e30bbea5da430fc9ecd94",
+      "chunk-85b4a19992d0ed0259cc8a47883f3176",
+      "chunk-9cabec045e6de7120641bce6b7cc2ce8",
+      "chunk-294ae62e22a81ccd262ff4e26e729b73",
+      "chunk-b4c20f35db93bd19f5ea218034651bd3"
+    ],
+    "content_summary": "[Document ID: B35901]\n[Category: 생활하수도_관련_문의]\n\nQuestion: 수도요금이 지난달에 비해 갑자기 너무 많이 나왔습니다. 눈으로 보기에 누수되는 곳은 없는데, 원인이 무엇이고 어떻게 해야 하나요? 만약 누수가 맞다면 요금 감면도 받을 수 있는지 궁금합니다.\n\nAnswer: 수도요금이 급증한 경우 옥내 누수를 의심해볼 수 있습니다. 먼저 누수탐지를 신청하여 정확한 원인을 확인해야 하며, 이는 다산콜센터를 통해 ...",
+    "content_length": 21708,
+    "created_at": "2025-11-11T07:51:41.956161+00:00",
+    "updated_at": "2025-11-11T07:52:43.832148+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165141_742ac8af",
+    "metadata": {
+      "processing_start_time": 1762847501,
+      "processing_end_time": 1762847563
+    }
+  },
+  "doc-ae733e98eec7f68ca34255697f6a4c8b": {
+    "status": "processed",
+    "chunks_count": 10,
+    "chunks_list": [
+      "chunk-e4af5a3553056603378e18742081f811",
+      "chunk-35111b7ce7a3ca57ba8b62843ed2d1ed",
+      "chunk-62a1293796b1c03648f5e60f27c99dcb",
+      "chunk-e31a9456709cb4a37cfd38596e664090",
+      "chunk-b5f6aa65182f580dbb93daccf173fd40",
+      "chunk-6a20ff5a175948ed968825205f05edf0",
+      "chunk-78343f620400ec356e4f5d6b39f0f2f9",
+      "chunk-89f8ba55525667ff35cc1fd6f781c500",
+      "chunk-8d5b3f2a0e7e199b157e1ecf282f2f45",
+      "chunk-7409884c6a7155d8a0daaf1585f5e8fd"
+    ],
+    "content_summary": "[Document ID: B35909]\n[Category: 생활/환경]\n\nQuestion: 최근 수돗물에서 유충이 발견되었다고 하는데, 이 물을 그냥 마시거나 생활용수로 사용해도 안전한가요?\n\nAnswer: 수돗물에서 발견된 깔따구 유충이 수도관 내에서 증식하여 공급 과정을 오염시킬 가능성은 낮습니다. 수도관 내에는 유충이 섭취할 유기물이 적고 유충 기간이 길기 때문입니다. 하지만 안전을 위해 해당 수돗물은 직접 음용하는 것은 자제해 주시고, ...",
+    "content_length": 20012,
+    "created_at": "2025-11-11T07:52:43.857554+00:00",
+    "updated_at": "2025-11-11T07:53:49.500033+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165243_c4abead5",
+    "metadata": {
+      "processing_start_time": 1762847563,
+      "processing_end_time": 1762847629
+    }
+  },
+  "doc-bb65e509fb1ab8b493af19bcee767cb0": {
+    "status": "processed",
+    "chunks_count": 10,
+    "chunks_list": [
+      "chunk-e336c923fb240ea568a7461057773483",
+      "chunk-d9a9d4881725e6c5709d00d7ff42824b",
+      "chunk-2448e9f61e18cf63ddc33e28f683ad4d",
+      "chunk-fbc0e4bfdfe07ae02ba11c52d80e8631",
+      "chunk-9ccb6b289d63579e91b40c8ae5fb5930",
+      "chunk-fb82bd12de86730e4607403d562def87",
+      "chunk-0cbf32d6c60e826691bf3de959006956",
+      "chunk-4f572e1d4ab04755ac3cf61fc4ed0d52",
+      "chunk-2f553536aaaeba92fcd9d0586beb4e4c",
+      "chunk-dd3d9738621636ff604645c3110d93d8"
+    ],
+    "content_summary": "[Document ID: B22661]\n[Category: 코로나19_관련_상담]\n\nQuestion: 학원을 운영하고 있는데, 코로나19 관련 지원금을 받을 수 있는지 궁금합니다. 지원 자격 기준, 지원 금액, 신청 방법, 그리고 유의사항에 대해 자세히 알려주세요.\n\nAnswer: 네, 코로나19 방역 조치로 집합금지명령을 이행한 대형학원의 경우 지원금 신청이 가능합니다. 지원 대상은 원생 수 300명 이상인 학원이며, 지원금액은 200만원입니...",
+    "content_length": 20025,
+    "created_at": "2025-11-11T07:53:49.560057+00:00",
+    "updated_at": "2025-11-11T07:54:46.053536+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165349_d61d6e71",
+    "metadata": {
+      "processing_start_time": 1762847629,
+      "processing_end_time": 1762847686
+    }
+  },
+  "doc-67c8aa9f265884710b7d562db3929187": {
+    "status": "processed",
+    "chunks_count": 10,
+    "chunks_list": [
+      "chunk-ca8739fd78904ada5332d5488076d84c",
+      "chunk-895d23911c039abf2918ff56cb07b552",
+      "chunk-e5b8003a07dbe3bd19cc62e0e9ffcc6c",
+      "chunk-f8d1e1a1842bcf0d62427ca219f9ba67",
+      "chunk-a906344898db2026c83c60f663348594",
+      "chunk-91daf8a12a8d880b9bff05320a45af57",
+      "chunk-a682740acab46c4d831fc64f9458aa6e",
+      "chunk-4cda3abda4c6819aedd3f0c6a84c21d6",
+      "chunk-7d9af6c5ec838421d3638d894a06edce",
+      "chunk-fa4d9ad866a9532c9176eb353d9b26b1"
+    ],
+    "content_summary": "[Document ID: B3495]\n[Category: 대중교통_안내]\n\nQuestion: 대전에서 용산역으로 가는 KTX 첫차 시간을 알려주세요.\n\nAnswer: 용산역에 도착하는 KTX는 대전역이 아닌 서대전역에서 출발합니다. 대전역에서 출발하는 KTX는 서울역에 도착하며, 서대전역에서 용산역으로 가는 첫차는 오전 7시 23분에 출발합니다.\n\nContext:\n---\ncategory: 대중교통_안내\nprimary_topic: 기차_운행정보\n...",
+    "content_length": 19763,
+    "created_at": "2025-11-11T07:54:46.138452+00:00",
+    "updated_at": "2025-11-11T07:55:45.170814+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165446_d7e37b82",
+    "metadata": {
+      "processing_start_time": 1762847686,
+      "processing_end_time": 1762847745
+    }
+  },
+  "doc-6bab93bd30cc715f391178aca7e4b471": {
+    "status": "processed",
+    "chunks_count": 11,
+    "chunks_list": [
+      "chunk-2a1032532e7f073f4ff38fb2c5ad38f3",
+      "chunk-d80ffff298626140f3fcc173c80b82e9",
+      "chunk-b8a521e72858f13aa5823dd1ff96861c",
+      "chunk-408f94fe431f24a4fef9068021086482",
+      "chunk-0928e60540839c3ce03e7a599712cad0",
+      "chunk-4fd50c360c8172eddb13644a1ff21589",
+      "chunk-545aac2c4ca5834638d2f86d35a2db33",
+      "chunk-6ef70fab1d8ca03eb7850655b892c6c4",
+      "chunk-e6e8510033eeae20473b32ee733bdf38",
+      "chunk-54abb97752a0a7153c93c833f537bc92",
+      "chunk-929d57cf8eac2df5d89cdb398f19ccd3"
+    ],
+    "content_summary": "[Document ID: B24950]\n[Category: 일반행정_문의]\n\nQuestion: 제가 배송기사로 일하다가 음주운전으로 면허가 취소되어 실업자가 되었습니다. 구제받을 수 있는 방법과 조건, 비용에 대해 알려주시고, 관련 사례나 상담받을 수 있는 곳이 있다면 알려주세요.\n\nAnswer: 음주운전으로 인한 면허 취소는 행정심판 제도를 통해 구제를 시도해볼 수 있습니다. 직업상 운전이 필수적이거나 피치 못할 사정이 있었고, 혈중알코올농도...",
+    "content_length": 20738,
+    "created_at": "2025-11-11T07:55:45.259191+00:00",
+    "updated_at": "2025-11-11T07:56:41.926154+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165545_2fe7685c",
+    "metadata": {
+      "processing_start_time": 1762847745,
+      "processing_end_time": 1762847801
+    }
+  },
+  "doc-082895f5e0168560a95819113320437f": {
+    "status": "processed",
+    "chunks_count": 10,
+    "chunks_list": [
+      "chunk-e8c7676651f1e741dad39444bd4225de",
+      "chunk-b5fd5f90104cdd435a3370d45417fc97",
+      "chunk-2c7b31a8bce1c77f19769ebb31f5750a",
+      "chunk-f24033bcd28f3629970c65560dbed971",
+      "chunk-cfd312027589e98cdf3d31f7c2152125",
+      "chunk-2e42fdaab090f90dad1908f4f60a73e0",
+      "chunk-fb8bba2214ce478dff23c8d1f134a900",
+      "chunk-338619afb67b6532013505721187e7c2",
+      "chunk-696bf3ac1c7785a746a2ba8e034bde06",
+      "chunk-6417f794db060808b5c639a8f93ec8ad"
+    ],
+    "content_summary": "[Document ID: B24246]\n[Category: 일반행정_문의]\n\nQuestion: 서울시 청년수당은 어디에 사용할 수 있나요? 카드 사용료를 내거나 현금으로 인출해서 사용해도 되는지, 그리고 온라인 쇼핑에 사용했을 경우 어떤 증빙 자료를 누구에게 제출해야 하는지 궁금합니다.\n\nAnswer: 서울시 청년수당은 청년의 다양한 필요에 맞게 사용 가능하지만, 반드시 '드림통장 체크카드'를 통해서만 결제해야 합니다. 카드 사용료 납부나 현금...",
+    "content_length": 19619,
+    "created_at": "2025-11-11T07:56:42.020794+00:00",
+    "updated_at": "2025-11-11T07:57:37.913037+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165642_4e43979d",
+    "metadata": {
+      "processing_start_time": 1762847802,
+      "processing_end_time": 1762847857
+    }
+  },
+  "doc-3679c44d48b6a015daf9358ecf3d192d": {
+    "status": "processed",
+    "chunks_count": 10,
+    "chunks_list": [
+      "chunk-bac2bcba467c50a4ab9063db91cbd5c2",
+      "chunk-19ac6881e2728705998d9fe41b070aa0",
+      "chunk-d066dadff97b7189b2cc40b475551716",
+      "chunk-e508fd030fec3cb9bfa9c3be700f690c",
+      "chunk-0c88207e7762266f17ec8813caad8533",
+      "chunk-a7034db657d12d8462cff29d596f4388",
+      "chunk-f56848b0d582666ed9e6dd135df84382",
+      "chunk-fffd9e71d21770dc7f07084c09890a46",
+      "chunk-94a2bcc44266d0bec6c81b78871ee223",
+      "chunk-06e06b842cf957226c2391b99c0f5fdf"
+    ],
+    "content_summary": "[Document ID: B24899]\n[Category: 코로나19 관련 상담]\n\nQuestion: 코로나 바이러스의 종류에는 어떤 것들이 있으며, 분류 기준은 무엇인가요? 또한, 종류별 특징과 현재 유행하는 바이러스는 어떤 종류인지 알려주세요.\n\nAnswer: 코로나 바이러스는 입자 크기에 따라 알파, 베타, 감마, 델타 코로나 바이러스로 분류됩니다. 입자 크기는 알파가 가장 크며, 입자가 클수록 감염률이 높은 특징이 있어 알파 코로나 바이...",
+    "content_length": 19778,
+    "created_at": "2025-11-11T07:57:38.020773+00:00",
+    "updated_at": "2025-11-11T07:58:36.756235+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165738_37d29f7d",
+    "metadata": {
+      "processing_start_time": 1762847858,
+      "processing_end_time": 1762847916
+    }
+  },
+  "doc-db00fbe14834e28d0a144daa09906fa9": {
+    "status": "processed",
+    "chunks_count": 11,
+    "chunks_list": [
+      "chunk-9ee201dbacb2bf91807d512d94a492dd",
+      "chunk-68e7f5574b023f44a8ed5633f16b731a",
+      "chunk-1d8ad8036606e5cc6b85c6c78d0181a8",
+      "chunk-a26015b9d8a0ea3cd28adf86db1fb5b4",
+      "chunk-b2b16d42e8f440ba909655499b7dc8fb",
+      "chunk-a0c0d7fe3279d51466ea2db023742542",
+      "chunk-64c2c142d6ae054f44a631a6dd382fc1",
+      "chunk-7459f2a288aa2b51e24609349a9f0871",
+      "chunk-ad328791d840a2a6635ee78b9ce94a9f",
+      "chunk-071711cf12448d821deeaa60deeeffca",
+      "chunk-043c7e2e4f855e20d85dd1817a3dabbc"
+    ],
+    "content_summary": "[Document ID: B3806]\n[Category: 일반행정_문의]\n\nQuestion: 올해 초에 구입한 자동차의 세금 고지서가 나왔는데, 은행에 직접 가야만 납부할 수 있나요? 인터넷이나 신용카드로 납부하거나 구청에 가서 내는 방법도 있는지 궁금합니다.\n\nAnswer: 자동차세는 은행 방문 외에도 다양한 방법으로 납부하실 수 있습니다. 인터넷 지로 사이트(지로24)를 통해 신용카드로 납부 가능하며, 관할 구청 세무과에 방문하여 직접 납부...",
+    "content_length": 19479,
+    "created_at": "2025-11-11T07:58:36.879397+00:00",
+    "updated_at": "2025-11-11T07:59:27.530676+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165836_2e1660c3",
+    "metadata": {
+      "processing_start_time": 1762847916,
+      "processing_end_time": 1762847967
+    }
+  },
+  "doc-63d929cdcdd781df9b9f19f69143cb55": {
+    "status": "processed",
+    "chunks_count": 10,
+    "chunks_list": [
+      "chunk-ff9e9783dbd8f133cbf76bf641370d7e",
+      "chunk-8b06dbf4914070a59882596578220e1b",
+      "chunk-225cfd3c63e0d9d70f9e4f6756ef3e8d",
+      "chunk-f1a9680fdc4b264ce8def83b977799b4",
+      "chunk-c71d6b9a98c2f662e11efcfb8623994b",
+      "chunk-b052a504419a554f97a625030480b61a",
+      "chunk-9658fdb2087e85764dd9afc50a0ef082",
+      "chunk-720010d9735ee34836c2458a4d25df98",
+      "chunk-2d0b085a333803c26889a3c63b1a8e30",
+      "chunk-3515061ff412aa2e488223a9294e0377"
+    ],
+    "content_summary": "[Document ID: B2819]\n[Category: 생활하수도_관련_문의]\n\nQuestion: 이사 가는데 수도요금을 정산하고 싶습니다. 이사 날짜는 9월 20일이고 고객번호는 OOOO-OOOO입니다. 정산 금액과 납부할 농협 가상계좌, 그리고 납부 기한을 알려주세요.\n\nAnswer: 네, 고객번호 OOOO-OOOO, 이사일 9월 20일 기준으로 수도요금 이사 정산을 진행했습니다. 정산 금액은 총 25,010원이며, 요청하신 농협 가상계좌...",
+    "content_length": 19866,
+    "created_at": "2025-11-11T07:59:27.657062+00:00",
+    "updated_at": "2025-11-11T08:00:18.294104+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251111_165927_38c7f702",
+    "metadata": {
+      "processing_start_time": 1762847967,
+      "processing_end_time": 1762848018
+    }
+  }
+}
