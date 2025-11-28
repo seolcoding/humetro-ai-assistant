@@ -1,22 +1,34 @@
 #!/usr/bin/env python3
 """
-통합 RAG 벤치마크 v4 - Real QA (실제 콜센터 Q&A 기반)
-==========================================================
+LightRAG Benchmark Script
+=========================
 
-v4_real_qa 핵심 차이점:
-1. RAGAS 질문 생성 단계 제거 (이미 실제 Q&A 데이터 존재)
-2. knowledge_docs_full.jsonl에서 직접 샘플링
-3. 실제 콜센터 질문으로 RAG 성능 평가
+Standalone evaluation script for LightRAG performance assessment.
 
-워크플로우:
-1. JSONL에서 Q&A 샘플링 (랜덤 또는 균등)
-2. 각 모델로 답변 생성 (RAG 활용)
-3. RAGAS로 평가 (ground truth와 비교)
+Features:
+- Golden testset support
+- Multi-model evaluation
+- RAGAS metrics (Faithfulness, Answer Relevancy, Answer Correctness)
+- Checkpoint system for resume capability
+- Compatible with existing evaluation infrastructure
 
-장점:
-- 실제 사용자 질문 기반 평가
-- 질문 생성 비용/시간 절약
-- Ground truth 답변 품질 보장
+Usage:
+    # Quick test (10 questions)
+    python src/rag_pipeline/lightrag_benchmark.py \\
+        --num-questions 10 \\
+        --models gpt-4o-mini
+
+    # Full evaluation (golden testset)
+    python src/rag_pipeline/lightrag_benchmark.py \\
+        --golden-testset data/evaluation/testsets/golden_testset_50.csv \\
+        --models thesis \\
+        --query-mode hybrid
+
+    # Compare query modes
+    python src/rag_pipeline/lightrag_benchmark.py \\
+        --golden-testset data/evaluation/testsets/golden_testset_50.csv \\
+        --query-mode local \\
+        --output-dir data/evaluation/lightrag_local
 """
 
 import sys
@@ -30,10 +42,10 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 # Import modules
-from src.data_loader.dasan_qa_sampler import DasanQASampler
+from src.lightrag_agent.lightrag_retriever import create_lightrag_retriever
 from src.rag_pipeline.answer_generator import AnswerGenerator
 from src.evaluation.parallel_evaluator import run_parallel_evaluation
-from src.rag_pipeline.stages.stage_05_vector_store import VectorStoreStage
+from src.data_loader.dasan_qa_sampler import DasanQASampler
 
 # Configure logging
 logging.basicConfig(
@@ -46,7 +58,7 @@ logger = logging.getLogger(__name__)
 # Get Ollama base URL from environment variable
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://100.95.220.92:11434")
 
-# Model configurations
+# Model configurations (same as unified_benchmark_v4_real_qa.py)
 MODEL_CONFIGS = {
     # OpenAI models
     "gpt-4o": {
@@ -62,7 +74,7 @@ MODEL_CONFIGS = {
         "provider": "openai"
     },
 
-    # Ollama models (논문용) - using OLLAMA_BASE_URL from env
+    # Ollama models
     "ollama/exaone3.5:7.8b": {
         "name": "EXAONE-3.5-7.8B",
         "model": "ollama/exaone3.5:7.8b",
@@ -107,7 +119,7 @@ MODEL_GROUPS = {
 
 
 class ExperimentManager:
-    """실험 ID 및 체크포인트 관리"""
+    """실험 ID 및 체크포인트 관리 (from unified_benchmark_v4)"""
 
     def __init__(self, checkpoint_dir: Path):
         self.checkpoint_dir = checkpoint_dir
@@ -116,19 +128,16 @@ class ExperimentManager:
         self.metadata = self._load_metadata()
 
     def _load_metadata(self) -> dict:
-        """실험 메타데이터 로드"""
         if self.metadata_file.exists():
             with open(self.metadata_file, 'r') as f:
                 return json.load(f)
         return {"next_id": 1, "experiments": {}}
 
     def _save_metadata(self):
-        """메타데이터 저장"""
         with open(self.metadata_file, 'w') as f:
             json.dump(self.metadata, f, indent=2)
 
     def create_experiment(self, config: dict) -> int:
-        """새 실험 생성 및 ID 반환"""
         exp_id = self.metadata["next_id"]
         self.metadata["next_id"] += 1
 
@@ -145,22 +154,18 @@ class ExperimentManager:
         return exp_id
 
     def get_experiment(self, exp_id: int) -> Optional[dict]:
-        """실험 정보 가져오기"""
         return self.metadata["experiments"].get(str(exp_id))
 
     def update_experiment(self, exp_id: int, updates: dict):
-        """실험 상태 업데이트"""
         if str(exp_id) in self.metadata["experiments"]:
             self.metadata["experiments"][str(exp_id)].update(updates)
             self._save_metadata()
 
     def save_checkpoint(self, exp_id: int, step: str, data: Any):
-        """체크포인트 저장"""
         checkpoint_file = self.checkpoint_dir / f"exp_{exp_id}_{step}.pkl"
         with open(checkpoint_file, 'wb') as f:
             pickle.dump(data, f)
 
-        # 완료된 단계 기록
         exp = self.metadata["experiments"].get(str(exp_id))
         if exp and step not in exp["completed_steps"]:
             exp["completed_steps"].append(step)
@@ -171,7 +176,6 @@ class ExperimentManager:
         logger.info(f"💾 체크포인트 저장: {step}")
 
     def load_checkpoint(self, exp_id: int, step: str) -> Optional[Any]:
-        """체크포인트 로드"""
         checkpoint_file = self.checkpoint_dir / f"exp_{exp_id}_{step}.pkl"
         if checkpoint_file.exists():
             with open(checkpoint_file, 'rb') as f:
@@ -179,12 +183,12 @@ class ExperimentManager:
         return None
 
 
-class RealQABenchmarkV4:
-    """실제 Q&A 데이터 기반 벤치마크 시스템"""
+class LightRAGBenchmark:
+    """LightRAG 벤치마크 시스템"""
 
-    # AI Hub Dasan QA 데이터셋 기본 설정
+    # Data paths
     DASAN_JSONL = Path("data/AI_HUB_DASAN_QA/05_consolidated/knowledge_docs_full.jsonl")
-    DASAN_VECTOR_STORE = Path("data/AI_HUB_DASAN_QA/07_vector_stores/full")
+    LIGHTRAG_INDEX = Path("data/AI_HUB_DASAN_QA/09_lightrag/test_index")  # Using test index
 
     def __init__(self, args):
         self.args = args
@@ -204,61 +208,59 @@ class RealQABenchmarkV4:
             logger.info(f"🔄 실험 재개: ID={self.exp_id}")
         else:
             config = {
-                "dataset": "AI_HUB_DASAN_QA_real_qa",
-                "qa_source": "knowledge_docs_full.jsonl",
+                "dataset": "AI_HUB_DASAN_QA",
+                "rag_type": "lightrag",
+                "query_mode": args.query_mode,
                 "num_questions": args.num_questions,
-                "sampling_strategy": args.sampling_strategy,
                 "models": args.models,
                 "judge_model": args.judge_model,
                 "k_documents": args.k_documents,
-                "parallel": True,
-                "version": "v4_real_qa"
+                "version": "lightrag_v1"
             }
             self.exp_id = self.exp_manager.create_experiment(config)
             self.experiment = self.exp_manager.get_experiment(self.exp_id)
 
-        # Initialize retriever
-        self.retriever = self._initialize_retrieval() if not args.no_retrieval else None
+        # Initialize LightRAG retriever
+        self.retriever = self._initialize_lightrag_retriever()
 
         self.results = {
             "experiment_id": self.exp_id,
             "timestamp": datetime.now().isoformat(),
-            "dataset": "AI_HUB_DASAN_QA",
-            "qa_source": "real_call_center_data",
+            "rag_type": "lightrag",
+            "query_mode": args.query_mode,
             "config": vars(args)
         }
 
-    def _initialize_retrieval(self):
-        """벡터 스토어 및 리트리버 초기화"""
-        if not self.DASAN_VECTOR_STORE.exists():
-            logger.error("❌ Vector store를 찾을 수 없습니다")
-            logger.info(f"💡 Expected: {self.DASAN_VECTOR_STORE}")
-            logger.info("   Run: python scripts/build_dasan_vector_store.py")
+    def _initialize_lightrag_retriever(self):
+        """Initialize LightRAG retriever"""
+        if not self.LIGHTRAG_INDEX.exists():
+            logger.error("❌ LightRAG index를 찾을 수 없습니다")
+            logger.info(f"💡 Expected: {self.LIGHTRAG_INDEX}")
+            logger.info("   Run: python scripts/build_lightrag_index.py")
             return None
 
         try:
-            logger.info("📚 Vector store 로드 중...")
-            vector_store_stage = VectorStoreStage(model="text-embedding-3-large")
-            vector_store_stage.load_vector_store(self.DASAN_VECTOR_STORE)
-
-            retriever = vector_store_stage.as_retriever(
-                search_type="similarity",
-                search_kwargs={"k": self.args.k_documents}
+            logger.info("🔧 LightRAG Retriever 초기화 중...")
+            retriever = create_lightrag_retriever(
+                working_dir=str(self.LIGHTRAG_INDEX),
+                query_mode=self.args.query_mode,
+                k=self.args.k_documents
             )
 
-            logger.info(f"  ✅ Retriever 초기화 완료 (k={self.args.k_documents})")
+            logger.info(f"  ✅ LightRAG Retriever 초기화 완료")
+            logger.info(f"     Mode: {self.args.query_mode}")
+            logger.info(f"     k: {self.args.k_documents}")
             return retriever
 
         except Exception as e:
-            logger.error(f"❌ 리트리버 초기화 실패: {e}")
+            logger.error(f"❌ LightRAG Retriever 초기화 실패: {e}")
             return None
 
     def is_step_completed(self, step: str) -> bool:
-        """단계 완료 여부 확인"""
         return step in self.experiment.get("completed_steps", [])
 
     def load_or_sample_qa(self) -> List[dict]:
-        """실제 Q&A 데이터 샘플링 또는 골든 테스트셋 로드"""
+        """Q&A 데이터 로드 (골든 테스트셋 또는 샘플링)"""
         step = "qa_sampled"
 
         if self.is_step_completed(step):
@@ -266,77 +268,86 @@ class RealQABenchmarkV4:
             return self.exp_manager.load_checkpoint(self.exp_id, step)
 
         logger.info("="*70)
+        logger.info("📝 Q&A 데이터 로드")
+        logger.info("="*70)
 
         # Check if golden testset is specified
         if self.args.golden_testset:
-            logger.info("📝 골든 테스트셋 로드")
-            logger.info("="*70)
+            logger.info(f"  📁 Golden Testset: {self.args.golden_testset}")
 
             golden_path = Path(self.args.golden_testset)
             if not golden_path.exists():
                 raise FileNotFoundError(f"Golden testset not found: {golden_path}")
 
-            # Load golden testset
-            import json
+            # Load golden testset (CSV format)
+            import csv
             qa_samples = []
             with open(golden_path, 'r', encoding='utf-8') as f:
-                for line in f:
-                    data = json.loads(line)
-                    # Map golden testset fields to expected format
+                reader = csv.DictReader(f)
+                for i, row in enumerate(reader):
+                    # Parse reference_contexts (stringified list)
+                    import ast
+                    try:
+                        contexts = ast.literal_eval(row["reference_contexts"])
+                    except:
+                        contexts = [row["reference_contexts"]]
+
                     qa_samples.append({
-                        "question": data["original_question"],
-                        "answer": data["original_answer"],
-                        "ground_truth": data["original_answer"],  # RAGAS needs this
-                        "reference_document": data["document"],  # Match DasanQASampler format
-                        "id": data.get("dialogue_id", "unknown"),
-                        "category": data["metadata"]["category"],
-                        "metadata": data["metadata"]
+                        "question": row["user_input"],
+                        "answer": row["reference"],
+                        "ground_truth": row["reference"],
+                        "reference_contexts": contexts,  # Keep as list
+                        "reference_document": "\n\n".join(contexts),  # Join for compatibility
+                        "id": f"golden_q{i+1:03d}",
+                        "category": "transport",  # Default category
+                        "metadata": {
+                            "category": "transport",
+                            "synthesizer": row.get("synthesizer_name", "unknown")
+                        }
                     })
 
-            logger.info(f"  📊 Golden Testset: {len(qa_samples)} Q&A pairs")
-            logger.info(f"  📁 Source: {golden_path.name}")
+                    # Limit to num_questions if specified
+                    if self.args.num_questions and len(qa_samples) >= self.args.num_questions:
+                        break
 
-            # Convert to RAGAS format using sampler
-            sampler = DasanQASampler(self.DASAN_JSONL)
-            ragas_dataset = sampler.to_ragas_format(qa_samples)
+            logger.info(f"  ✅ {len(qa_samples)} Q&A pairs loaded")
 
         else:
-            logger.info("📝 실제 Q&A 데이터 샘플링")
-            logger.info("="*70)
+            logger.info("  📁 Sampling from JSONL")
 
             if not self.DASAN_JSONL.exists():
                 raise FileNotFoundError(f"JSONL not found: {self.DASAN_JSONL}")
 
-            # Load and sample
             sampler = DasanQASampler(self.DASAN_JSONL)
-
-            # Get statistics
-            stats = sampler.get_statistics()
-            logger.info(f"  📊 Dataset: {stats['total_qa_pairs']} Q&A pairs")
-
-            # Sample
             qa_samples = sampler.sample(
                 n=self.args.num_questions,
                 seed=self.args.seed,
                 strategy=self.args.sampling_strategy
             )
 
-            # Convert to RAGAS format
-            ragas_dataset = sampler.to_ragas_format(qa_samples)
+            logger.info(f"  ✅ {len(qa_samples)} Q&A pairs sampled")
 
-        # Convert to dict for checkpoint
-        questions = ragas_dataset.to_dict()
+        # Convert to RAGAS format
+        if self.args.golden_testset:
+            # Golden testset is already in proper format
+            questions = {
+                "user_input": [qa["question"] for qa in qa_samples],
+                "reference": [qa["ground_truth"] for qa in qa_samples],
+                "reference_contexts": [qa["reference_contexts"] for qa in qa_samples]  # Already a list
+            }
+        else:
+            # Use DasanQASampler for JSONL format conversion
+            sampler = DasanQASampler(self.DASAN_JSONL)
+            ragas_dataset = sampler.to_ragas_format(qa_samples)
+            questions = ragas_dataset.to_dict()
 
         # Save checkpoint
         self.exp_manager.save_checkpoint(self.exp_id, step, questions)
 
-        logger.info(f"  ✅ {len(qa_samples)}개 Q&A 로드/샘플링 완료")
         return questions
 
     def generate_answers(self, questions: Dict[str, List]) -> Dict[str, Dict[str, List[str]]]:
-        """
-        Phase 1: 모든 모델의 답변 생성
-        """
+        """모든 모델의 답변 생성"""
         step = "answers_generated"
 
         if self.is_step_completed(step):
@@ -344,20 +355,20 @@ class RealQABenchmarkV4:
             return self.exp_manager.load_checkpoint(self.exp_id, step)
 
         logger.info("="*70)
-        logger.info("Phase 1: 답변 생성 (Real QA)")
+        logger.info("Phase 1: 답변 생성 (LightRAG)")
         logger.info("="*70)
 
         # Parse models
         model_keys = self.parse_models()
         models = [MODEL_CONFIGS[key] for key in model_keys]
 
-        # Initialize answer generator
+        # Initialize answer generator with LightRAG retriever
         generator = AnswerGenerator(
             retriever=self.retriever,
             k_documents=self.args.k_documents
         )
 
-        # Convert questions dict to list format for generator
+        # Convert questions dict to list format
         questions_list = [
             {
                 "user_input": q,
@@ -375,22 +386,16 @@ class RealQABenchmarkV4:
         all_datasets = generator.generate_all_answers(
             models=models,
             questions=questions_list,
-            use_fixed_context=not self.args.no_retrieval
+            use_fixed_context=True  # Use LightRAG retrieval
         )
 
         # Save checkpoint
         self.exp_manager.save_checkpoint(self.exp_id, step, all_datasets)
 
-        # ✅ NEW: Save to JSONL if output_generations specified
-        if hasattr(self.args, 'output_generations') and self.args.output_generations:
-            self._save_generations_to_jsonl(all_datasets, questions)
-
         return all_datasets
 
     def evaluate_answers(self, all_datasets: Dict[str, Dict[str, List[str]]]) -> Dict[str, Any]:
-        """
-        Phase 2: 순차/병렬 평가
-        """
+        """RAGAS 평가"""
         step = "evaluation_completed"
 
         if self.is_step_completed(step):
@@ -402,12 +407,12 @@ class RealQABenchmarkV4:
         logger.info(f"Phase 2: {eval_mode} (Vertex AI Gemini)")
         logger.info("="*70)
 
-        # Run evaluation (순차 또는 병렬)
+        # Run evaluation
         evaluation_results = run_parallel_evaluation(
             model_datasets=all_datasets,
             judge_model=self.args.judge_model,
             max_concurrent=self.args.max_concurrent,
-            sequential=self.args.sequential,  # NEW: 순차 평가 옵션
+            sequential=self.args.sequential,
             output_dir=self.output_dir,
             experiment_id=self.exp_id
         )
@@ -422,85 +427,34 @@ class RealQABenchmarkV4:
         models = []
 
         for model_arg in self.args.models:
-            # Check if it's a model group
             if model_arg in MODEL_GROUPS:
                 models.extend(MODEL_GROUPS[model_arg])
-            # Check if it's already a full model key
             elif model_arg in MODEL_CONFIGS:
                 models.append(model_arg)
-            # Try adding ollama/ prefix if not present
             elif f"ollama/{model_arg}" in MODEL_CONFIGS:
                 models.append(f"ollama/{model_arg}")
-                logger.info(f"  ℹ️  '{model_arg}' → 'ollama/{model_arg}'")
             else:
-                logger.warning(f"⚠️ 알 수 없는 모델: {model_arg}")
-                logger.info(f"   사용 가능한 모델: {list(MODEL_CONFIGS.keys())}")
+                logger.warning(f"⚠️ Unknown model: {model_arg}")
 
         return list(dict.fromkeys(models))
-
-    def _save_generations_to_jsonl(self, all_datasets: Dict[str, Dict[str, List]], questions: Dict[str, List]):
-        """
-        답변 생성 결과를 JSONL 파일로 저장 (재사용 가능)
-
-        Args:
-            all_datasets: 모델별 답변 데이터
-            questions: 원본 질문 데이터
-        """
-        output_gen_dir = Path(self.args.output_generations)
-        output_gen_dir.mkdir(parents=True, exist_ok=True)
-
-        logger.info("="*70)
-        logger.info("📁 JSONL 형식으로 답변 저장 중...")
-        logger.info(f"   저장 위치: {output_gen_dir}")
-
-        for model_name, dataset in all_datasets.items():
-            # Sanitize model name for filename
-            safe_model_name = model_name.replace("/", "_").replace(" ", "_").lower()
-            output_file = output_gen_dir / f"{safe_model_name}.jsonl"
-
-            # Write JSONL
-            with open(output_file, 'w', encoding='utf-8') as f:
-                for i in range(len(dataset["user_input"])):
-                    record = {
-                        "question_id": f"q{i+1:03d}",
-                        "question": dataset["user_input"][i],
-                        "answer": dataset["response"][i],
-                        "ground_truth": dataset["reference"][i],
-                        "contexts": dataset["retrieved_contexts"][i]
-                    }
-                    f.write(json.dumps(record, ensure_ascii=False) + "\n")
-
-            logger.info(f"   ✅ {model_name}: {output_file.name} ({len(dataset['user_input'])}개)")
-
-        logger.info(f"📊 총 {len(all_datasets)}개 모델 답변 저장 완료")
-        logger.info("="*70)
 
     def run(self):
         """전체 파이프라인 실행"""
         logger.info("="*70)
-        logger.info(f"🧪 실험 ID: {self.exp_id} (Real QA v4)")
-        logger.info(f"📂 데이터: AI_HUB_DASAN_QA (실제 콜센터 Q&A)")
+        logger.info(f"🧪 실험 ID: {self.exp_id} (LightRAG)")
+        logger.info(f"   Query Mode: {self.args.query_mode}")
         logger.info("="*70)
 
         try:
-            # 1. Q&A 샘플링 (질문 생성 대신)
+            # 1. Q&A 로드
             questions = self.load_or_sample_qa()
             self.results["questions"] = questions
 
-            # 2. Phase 1: 답변 생성
+            # 2. 답변 생성
             all_datasets = self.generate_answers(questions)
             self.results["answers"] = all_datasets
 
-            # ✅ NEW: Skip evaluation if requested
-            if self.args.skip_evaluation:
-                logger.info("="*70)
-                logger.info("⏭️  평가 단계 건너뜀 (--skip-evaluation)")
-                logger.info("="*70)
-                logger.info(f"✅ 답변 생성 완료! (ID: {self.exp_id})")
-                logger.info(f"📁 저장 위치: {self.args.output_generations}")
-                return
-
-            # 3. Phase 2: 병렬 평가
+            # 3. 평가
             evaluation_results = self.evaluate_answers(all_datasets)
             self.results["evaluation"] = evaluation_results
 
@@ -510,13 +464,6 @@ class RealQABenchmarkV4:
             logger.info("="*70)
             logger.info(f"✅ 실험 완료! (ID: {self.exp_id})")
             logger.info("="*70)
-
-            # Print performance summary
-            metadata = evaluation_results.get("metadata", {})
-            logger.info(f"\n병렬 평가 성능:")
-            logger.info(f"  - 평가 시간: {metadata.get('elapsed_seconds', 0):.1f}초")
-            logger.info(f"  - 동시 실행: {metadata.get('max_concurrent', 0)}개 모델")
-            logger.info(f"  - 성공 모델: {metadata.get('successful_models', 0)}/{metadata.get('total_models', 0)}")
 
         except KeyboardInterrupt:
             logger.warning("\n⚠️ 사용자 중단 - 체크포인트 저장됨")
@@ -530,7 +477,7 @@ class RealQABenchmarkV4:
 
     def _save_final_results(self):
         """최종 결과 저장"""
-        results_file = self.output_dir / f"experiment_{self.exp_id}_real_qa_results.json"
+        results_file = self.output_dir / f"experiment_{self.exp_id}_lightrag_results.json"
 
         with open(results_file, 'w', encoding='utf-8') as f:
             json.dump(self.results, f, ensure_ascii=False, indent=2)
@@ -546,94 +493,59 @@ class RealQABenchmarkV4:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="실제 Q&A 기반 RAG 벤치마크 v4",
+        description="LightRAG 벤치마크 평가",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
 
-    # 실험 관리
+    # Experiment management
     parser.add_argument("--resume-id", type=int, help="재시작할 실험 ID")
 
-    # Q&A 샘플링 설정
+    # Q&A settings
     parser.add_argument(
         "--golden-testset",
         type=str,
-        help="골든 테스트셋 JSONL 파일 경로 (지정 시 샘플링 대신 사용)"
+        help="골든 테스트셋 JSONL 파일 경로"
     )
     parser.add_argument(
         "--num-questions", "-q",
         type=int,
         default=25,
-        help="샘플링할 Q&A 개수 (골든 테스트셋 미사용 시)"
+        help="샘플링할 Q&A 개수"
     )
     parser.add_argument(
         "--sampling-strategy",
         choices=["random", "balanced", "stratified"],
-        default="random",
-        help="샘플링 전략 (골든 테스트셋 미사용 시)"
+        default="random"
     )
+    parser.add_argument("--seed", type=int, default=42)
+
+    # LightRAG settings
     parser.add_argument(
-        "--seed",
-        type=int,
-        default=42,
-        help="랜덤 시드 (재현성, 골든 테스트셋 미사용 시)"
+        "--query-mode",
+        choices=["local", "global", "hybrid"],
+        default="hybrid",
+        help="LightRAG query mode"
     )
+    parser.add_argument("--k-documents", type=int, default=4)
 
-    # 모델 설정
-    parser.add_argument("--models", nargs="+", default=["gpt-4o-mini"], help="평가 모델")
+    # Model settings
+    parser.add_argument("--models", nargs="+", default=["gpt-4o-mini"])
 
-    # RAG 설정
-    parser.add_argument("--no-retrieval", action="store_true", help="Retrieval 없이 실행")
-    parser.add_argument("--k-documents", type=int, default=4, help="검색 문서 수")
-
-    # 평가 설정
+    # Evaluation settings
     parser.add_argument(
         "--judge-model",
-        default="vertex_ai/gemini-2.5-pro",
-        help="평가 모델 (Vertex AI Gemini 2.5 Pro)"
+        default="vertex_ai/gemini-2.5-pro"
     )
-    parser.add_argument("--max-concurrent", type=int, default=2, help="최대 동시 평가 수")
-    parser.add_argument(
-        "--sequential",
-        action="store_true",
-        help="순차 평가 모드 (병렬 대신, API 안정성 향상)"
-    )
-    parser.add_argument(
-        "--skip-evaluation",
-        action="store_true",
-        help="평가 단계 건너뛰기 (답변 생성만)"
-    )
+    parser.add_argument("--max-concurrent", type=int, default=2)
+    parser.add_argument("--sequential", action="store_true")
 
-    # 출력 설정
-    parser.add_argument("--output-dir", default="data/evaluation/dasan_real_qa")
-    parser.add_argument(
-        "--output-generations",
-        type=str,
-        help="답변 생성 결과를 JSONL로 저장할 디렉토리 (예: data/evaluation/generations/naive_rag/)"
-    )
-    parser.add_argument("--verbose", action="store_true", help="상세 로깅")
+    # Output settings
+    parser.add_argument("--output-dir", default="data/evaluation/lightrag")
 
     args = parser.parse_args()
 
-    if args.verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
-
-    # 설정 출력
-    print("="*70)
-    print(" "*15 + "Real QA 벤치마크 v4")
-    print("="*70)
-    if args.resume_id:
-        print(f"Resume ID: {args.resume_id}")
-    else:
-        print("New Experiment (실제 콜센터 Q&A)")
-    print(f"Questions: {args.num_questions} (샘플링: {args.sampling_strategy})")
-    print(f"Models: {args.models}")
-    print(f"Judge: {args.judge_model}")
-    print(f"Max Concurrent: {args.max_concurrent}")
-    print(f"Output: {args.output_dir}")
-    print()
-
-    # 실행
-    benchmark = RealQABenchmarkV4(args)
+    # Run benchmark
+    benchmark = LightRAGBenchmark(args)
     benchmark.run()
 
 

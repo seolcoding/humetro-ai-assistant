@@ -1,5 +1,5 @@
 {
-  "next_id": 9,
+  "next_id": 10,
   "experiments": {
     "1": {
       "id": 1,
@@ -195,10 +195,36 @@
       },
       "status": "initialized",
       "completed_steps": [
-        "qa_sampled"
+        "qa_sampled",
+        "answers_generated"
       ],
-      "last_checkpoint": "qa_sampled",
-      "last_updated": "2025-11-11T16:23:25.796329"
+      "last_checkpoint": "answers_generated",
+      "last_updated": "2025-11-11T16:47:02.147915"
+    },
+    "9": {
+      "id": 9,
+      "created_at": "2025-11-11T17:28:48.497476",
+      "config": {
+        "dataset": "AI_HUB_DASAN_QA_real_qa",
+        "qa_source": "knowledge_docs_full.jsonl",
+        "num_questions": 25,
+        "sampling_strategy": "random",
+        "models": [
+          "gpt-4o-mini",
+          "ollama/exaone3.5:7.8b"
+        ],
+        "judge_model": "vertex_ai/gemini-2.5-pro",
+        "k_documents": 4,
+        "parallel": true,
+        "version": "v4_real_qa"
+      },
+      "status": "initialized",
+      "completed_steps": [
+        "qa_sampled",
+        "answers_generated"
+      ],
+      "last_checkpoint": "answers_generated",
+      "last_updated": "2025-11-11T17:41:57.943570"
     }
   }
 }

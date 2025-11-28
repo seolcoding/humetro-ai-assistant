@@ -1,0 +1,55 @@
+{
+  "experiment": {
+    "name": "lightrag_full_evaluation",
+    "description": "Full LightRAG evaluation with 50-question golden testset",
+    "version": "1.0",
+    "tags": ["lightrag", "full-eval", "golden-testset", "thesis"]
+  },
+  "data": {
+    "source": "golden_testset",
+    "golden_testset_path": "data/evaluation/testsets/golden_testset_50.csv",
+    "num_questions": 50,
+    "note": "Uses full golden testset for reproducible evaluation"
+  },
+  "lightrag": {
+    "working_dir": "data/AI_HUB_DASAN_QA/09_lightrag/index",
+    "query_mode": "hybrid",
+    "k_documents": 4,
+    "embedding_model": "text-embedding-3-large",
+    "llm_model": "gpt-4o-mini",
+    "note": "Hybrid mode combines local (single-entity) and global (multi-entity) search"
+  },
+  "models": {
+    "evaluation_targets": [
+      "gpt-4o-mini",
+      "ollama/exaone3.5:7.8b",
+      "ollama/gpt-oss:20b",
+      "ollama/gemma3:12b",
+      "ollama/deepseek-r1:7b"
+    ],
+    "note": "Thesis model set: 1 OpenAI + 4 Ollama models"
+  },
+  "evaluation": {
+    "judge_model": "vertex_ai/gemini-2.5-pro",
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "answer_correctness"
+    ],
+    "execution": {
+      "mode": "sequential",
+      "max_concurrent": 2,
+      "note": "Sequential mode for API stability with Gemini 2.5 Pro"
+    }
+  },
+  "output": {
+    "dir": "data/evaluation/lightrag",
+    "save_intermediate": true,
+    "checkpoint_interval": 10
+  },
+  "notes": {
+    "purpose": "Standalone LightRAG evaluation for comparison with Naive RAG, KG Simple, and KG Cypher",
+    "expected_runtime": "3-4 hours (50 questions × 5 models × 3 metrics)",
+    "comparison_baseline": "See unified_benchmark results for Naive/KG Simple/KG Cypher performance"
+  }
+}

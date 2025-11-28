@@ -1,0 +1,47 @@
+{
+  "experiment": {
+    "name": "lightrag_quick_test",
+    "description": "Quick LightRAG test with 10 questions",
+    "version": "1.0",
+    "tags": ["lightrag", "quick-test", "validation"]
+  },
+  "data": {
+    "source": "golden_testset",
+    "golden_testset_path": "data/evaluation/testsets/golden_testset_50.csv",
+    "num_questions": 10,
+    "sampling": {
+      "strategy": "random",
+      "seed": 42
+    }
+  },
+  "lightrag": {
+    "working_dir": "data/AI_HUB_DASAN_QA/09_lightrag/index",
+    "query_mode": "hybrid",
+    "k_documents": 4,
+    "embedding_model": "text-embedding-3-large",
+    "llm_model": "gpt-4o-mini"
+  },
+  "models": {
+    "evaluation_targets": [
+      "gpt-4o-mini",
+      "ollama/exaone3.5:7.8b"
+    ]
+  },
+  "evaluation": {
+    "judge_model": "vertex_ai/gemini-2.5-pro",
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "answer_correctness"
+    ],
+    "execution": {
+      "mode": "sequential",
+      "max_concurrent": 1
+    }
+  },
+  "output": {
+    "dir": "data/evaluation/lightrag_quick_test",
+    "save_intermediate": true,
+    "checkpoint_interval": 5
+  }
+}
