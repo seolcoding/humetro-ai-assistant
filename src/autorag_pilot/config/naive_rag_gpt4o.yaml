@@ -1,0 +1,43 @@
+# Naive RAG + GPT-4o-mini Baseline
+# 목적: Advanced RAG + 오픈소스 모델과 비교하기 위한 베이스라인
+# 데이터: 8 QA × 10 corpus (파일럿 데이터)
+
+node_lines:
+  # ============================================
+  # 1️⃣ RETRIEVE: Semantic Only (Naive)
+  # ============================================
+  - node_line_name: retrieve_node_line
+    nodes:
+      - node_type: semantic_retrieval
+        strategy:
+          metrics: [retrieval_f1, retrieval_recall, retrieval_precision]
+        top_k: 5
+        modules:
+          - module_type: vectordb
+            embedding_model: openai
+
+  # ============================================
+  # 2️⃣ POST-RETRIEVE: Prompt + Generator Only
+  # ============================================
+  - node_line_name: post_retrieve_node_line
+    nodes:
+      # Prompt Maker (기본)
+      - node_type: prompt_maker
+        strategy:
+          metrics:
+            - metric_name: meteor
+            - metric_name: rouge
+        modules:
+          - module_type: fstring
+            prompt: "다음은 행정 문서에서 발췌한 내용입니다. 이 내용을 참고하여 질문에 정확하게 답변해주세요.\n\n[참고 문서]\n{retrieved_contents}\n\n[질문]\n{query}\n\n[답변]"
+
+      # Generator: GPT-4o-mini Only
+      - node_type: generator
+        strategy:
+          metrics:
+            - metric_name: meteor
+            - metric_name: rouge
+        modules:
+          - module_type: openai_llm
+            llm: gpt-4o-mini
+            batch: 4
