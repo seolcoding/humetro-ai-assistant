@@ -130,3 +130,4 @@ GPT-OSS-20B:      0.795 (+101% improvement)
 3. **Methodology Update**: Reflect Hybrid approach in thesis
 
 **⚠️ IMPORTANT**: All previous KG Cypher results are INVALID. Only use FIXED version going forward.
+- 프로젝트에서 사용할 데이터셋은 @data/016.행정_문서_대상_기계독해_데이터/ 의 데이터임. 기존의 데이터는 deprecated. 부적절해서 사용하지 않을 예정. 따라서 관련 결과들도 폐기
