@@ -222,3 +222,6 @@ vectorstore/
 service_account.json
 
 016.행정_문서_대상_기계독해_데이터/
+# Large data files
+src/data_generation/sampling/corpus_unified.csv
+src/data_generation/sampling/output/*.csv
